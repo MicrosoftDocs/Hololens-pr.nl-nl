@@ -1,0 +1,152 @@
+### YamlMime:Landing
+title: Microsoft HoloLens
+summary: Microsoft HoloLens is de eerste volledig zelfstandige holografische computer die de Windows 10. Nu, met de introductie van HoloLens 2, biedt elk HoloLens-apparaat commerciële beheermogelijkheden die worden verbeterd door de betrouwbaarheid, beveiliging en schaalbaarheid van cloud- en AI-services van Microsoft.
+metadata:
+  title: Microsoft HoloLens
+  description: Landingspagina voor Microsoft HoloLens.
+  ms.prod: hololens
+  ms.subservice: subservice
+  ms.topic: landing-page
+  author: mccoybot
+  ms.author: v-todmc
+  ms.date: 5/22/2020
+  ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
+  ms.openlocfilehash: 040e353d42c97aa6387e5611a3479464cf5ae2e8
+  ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+  ms.translationtype: MT
+  ms.contentlocale: nl-NL
+  ms.lasthandoff: 05/25/2021
+  ms.locfileid: "111377864"
+landingContent:
+- title: Overzicht van HoloLens
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: HoloLens 2 overzicht
+      url: hololens2-options.md
+    - text: HoloLens 2 hardware
+      url: hololens2-hardware.md
+    - text: Microsoft Mesh (preview)
+      url: /mesh/overview
+    - text: Gebruik de Startmenu en Mixed Reality Startpagina
+      url: holographic-home.md
+    - text: Toepassingen zoeken, installeren en verwijderen
+      url: holographic-store-apps.md
+    - text: De kwaliteit en het comfort van de visual verbeteren
+      url: hololens-calibration.md
+    - text: HoloLens bijwerken
+      url: hololens-update-hololens.md
+- title: Implementatiehandleidingen
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: Veel voorkomende implementatiescenario's
+      url: common-scenarios.md
+    - text: Cloud verbonden HoloLens 2 implementatie op schaal met Remote Assist
+      url: hololens2-cloud-connected-overview.md
+    - text: Zakelijke verbonden HoloLens 2 implementatie met Dynamics 365-handleidingen
+      url: hololens2-corp-connected-overview.md
+    - text: Implementatiehandleiding voor externe clients
+      url: hololens2-deployment-guide.md
+    - text: Offline beveiligde implementatie
+      url: hololens-common-scenarios-offline-secure.md
+- title: Voorbereiden
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: HoloLens implementeren in een commerciële omgeving
+      url: hololens-requirements.md
+    - text: Beveiligingsoverzicht
+      url: security-overview.md
+    - text: Licentievereisten
+      url: hololens-licenses-requirements.md
+    - text: Overwegingen voor de HoloLens-omgeving
+      url: hololens-environment-considerations.md
+    - text: Commerciële functies
+      url: hololens-commercial-features.md
+- title: Configureren
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Gebruikersidentiteit en aanmelding beheren voor HoloLens
+      url: hololens-identity.md
+    - text: Uw netwerk configureren voor HoloLens
+      url: hololens-commercial-infrastructure.md
+    - text: HoloLens verbinden met een netwerk
+      url: hololens-network.md
+    - text: Verbindings-eindpunten voor HoloLens beheren
+      url: hololens-offline.md
+    - text: HoloLens configureren met behulp van inrichtingspakketten
+      url: hololens-provisioning.md
+    - text: HoloLens instellen als kiosk
+      url: hololens-kiosk.md
+- title: Implementeren
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: HoloLens inschrijven bij MDM
+      url: hololens-enroll-mdm.md
+    - text: Windows Autopilot voor HoloLens 2
+      url: hololens2-autopilot.md
+    - text: Overzicht van toepassingsbeheer
+      url: app-deploy-overview.md
+    - text: Intune-& Bedrijfsportal
+      url: app-deploy-intune.md
+    - text: Microsoft Store voor Bedrijven
+      url: app-deploy-store-business.md
+    - text: Inrichtingspakket
+      url: app-deploy-provisioning-package.md
+- title: Handleiding voor onderhoud en probleemoplossing
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Problemen met HoloLens oplossen
+      url: hololens-troubleshooting.md
+    - text: Opnieuw opstarten, opnieuw instellen of HoloLens 2
+      url: hololens-recovery.md
+    - text: HoloLens (eerste generatie) opnieuw opstarten, opnieuw instellen of herstellen
+      url: hololens1-recovery.md
+    - text: Bekende problemen voor HoloLens
+      url: hololens-known-issues.md
+    - text: Diagnostische gegevens van HoloLens-apparaten verzamelen en gebruiken
+      url: hololens-diagnostic-logs.md
+    - text: HoloLens-updates beheren
+      url: hololens-updates.md
+- title: Opmerkingen bij de release & feedback
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: HoloLens 2 opmerkingen bij de release
+      url: hololens-release-notes.md
+    - text: Insider-preview voor Microsoft HoloLens
+      url: hololens-insider.md
+    - text: Stuur ons feedback
+      url: hololens-feedback.md
+- title: Meer services
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Dynamics 365 Remote Assist Docs
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview
+    - text: Meer Dynamics 365 Remote Assist
+      url: https://docs.microsoft.com/learn/browse/?products=dynamics-remote-assist
+    - text: Dynamics 365-handleidingen
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
+    - text: Microsoft Dynamics 365 Mixed Reality
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/
+  - linkListType: how-to-guide
+    links:
+    - text: Wat is Mixed Reality?
+      url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality
+    - text: Beginnen met ontwerpen en prototypen
+      url: https://docs.microsoft.com/windows/mixed-reality/design
+    - text: Inleiding tot Mixed Reality ontwikkeling
+      url: https://docs.microsoft.com/windows/mixed-reality/development?tabs=unity
+    - text: Cloud Services overzicht
+      url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
+- title: Handleiding
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Ondersteunings- en helpopties voor HoloLens2
+      url: hololens2-support.md
