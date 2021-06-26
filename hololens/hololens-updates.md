@@ -19,12 +19,12 @@ ms.custom:
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 6c9d1551b2a3348a6ff9962180c2d5552eb100f1
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: faa6bb2b095d69c3538063b1c042c5ce5e215d33
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379417"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924074"
 ---
 # <a name="manage-hololens-updates"></a>HoloLens-updates beheren
 
@@ -41,11 +41,11 @@ Windows Update voor Bedrijven HoloLens-apparaten rechtstreeks met de Windows Upd
 > [!NOTE]  
 > Voor HoloLens-apparaten kunt u automatisch functie-updates beheren (twee keer per jaar uitgebracht) en kwaliteitsupdates (maandelijks of indien nodig uitgebracht, inclusief essentiële beveiligingsupdates). Zie Typen updates die worden beheerd door Windows Update voor Bedrijven voor [meer informatie over updatetypen.](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#types-of-updates-managed-by-windows-update-for-business)
 
-U kunt uw Windows Update voor Bedrijven voor HoloLens configureren met behulp van beleidsregels in een MDM-oplossing (Mobile Device Management), zoals Microsoft Intune.
+U kunt de Windows Update voor Bedrijven voor HoloLens configureren met behulp van beleidsregels in een MDM-oplossing (Mobile Device Management), zoals Microsoft Intune.
 
 ### <a name="managing-windows-update-for-business-by-using-microsoft-intune"></a>Beheer Windows Update voor Bedrijven met behulp van Microsoft Intune
 
-Zie Manage Windows 10 software updates in Intune (Software-updates beheren [in Intune)](https://docs.microsoft.com/intune/protect/windows-update-for-business-configure)Windows Update voor Bedrijven gedetailleerde informatie over het gebruik van Intune om Windows Update voor Bedrijven configureren. Zie Intune updatebeheerfuncties die HoloLens ondersteunt voor meer informatie over de specifieke [Intune-functionaliteit die HoloLens ondersteunt.](#intune-update-management-functions-that-hololens-supports)
+Zie Manage Windows 10 software updates in Intune (Software-updates beheren [in Intune)](https://docs.microsoft.com/intune/protect/windows-update-for-business-configure)Windows Update voor Bedrijven gedetailleerde informatie over het gebruik van Intune om Windows Update voor Bedrijven configureren. Zie Intune-functies voor updatebeheer die HoloLens ondersteunt voor meer informatie over de specifieke [Intune-functionaliteit die door HoloLens wordt ondersteund.](#intune-update-management-functions-that-hololens-supports)
 
 > [!IMPORTANT]  
 > Intune biedt twee beleidstypen voor het beheren van updates: *Windows 10 updatering* en *Windows 10 functie-update.* Het Windows 10 voor het bijwerken van functies is momenteel in openbare preview en wordt niet ondersteund voor HoloLens.
@@ -77,17 +77,17 @@ Gebruik de volgende beleidsregels om te configureren hoe en wanneer updates word
   - Standaardwaarde: **0** (elke dag)
 - [Update/ScheduledInstallTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstalltime)
   - Waarden: 0-23 (0 = middernacht, 23 = 21 PM)
-  - Standaardwaarde: 15:00 uur
+  - Standaardwaarde: 03:00 uur
 
 #### <a name="configure-active-hours"></a>Actieve uren configureren
 Vanaf Windows Holographic kan een IT-beheerder versie [20H2](hololens-release-notes.md#windows-holographic-version-20h2) het bereik voor actieve uren voor HoloLens 2 opgeven.
 
 Actieve uren bepalen de periode waarin u verwacht dat het apparaat in gebruik is. Automatisch opnieuw opstarten na een update wordt uitgevoerd buiten de actieve uren. Het opgegeven bereik wordt geteld vanaf de begintijd van de actieve uren. U kunt MDM gebruiken, zoals beschreven in [Actieve uren configureren met MDM.](https://docs.microsoft.com/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm) MDM maakt gebruik van de instellingen Update/ActiveHoursStart en Update/ActiveHoursEnd en Update/ActiveHoursMaxRange in de beleids-CSP om de actieve uren te configureren.
 
--   [Update/ActiveHoursEnd:](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend) met deze waarde stelt u de eindtijd in. De begintijd is maximaal 12 uur.
+-   [Update/ActiveHoursEnd:](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend) met deze waarde stelt u de eindtijd in. Er geldt een maximum van 12 uur vanaf de begintijd.
     -   Ondersteunde waarden zijn 0-23, waarbij 0 12:00 uur, 1 is 1:00 uur, enzovoort.
     -   De standaardwaarde is 17 (17:00 uur).
--   [Update/ActiveHoursMaxRange:](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange) met deze waarde stelt u het maximum aantal actieve uren in vanaf de begintijd.
+-   [Update/ActiveHoursMaxRange: met](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange) deze waarde stelt u het maximum aantal actieve uren in vanaf de begintijd.
     -   Ondersteunde waarden zijn 8-18.
     -   De standaardwaarde is 18 (uur).
 -   [Update/ActiveHoursStart:](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart) met deze waarde stelt u de begintijd in. De eindtijd is maximaal 12 uur.
@@ -96,7 +96,7 @@ Actieve uren bepalen de periode waarin u verwacht dat het apparaat in gebruik is
 
 #### <a name="for-devices-that-run-windows-10-version-1607-only"></a>Alleen voor apparaten Windows 10 versie 1607
 
-U kunt de volgende updatebeleidsregels gebruiken om apparaten te configureren voor het ontvangen van updates van Windows Server Update Service (WSUS) in plaats van Windows Update:
+U kunt het volgende updatebeleid gebruiken om apparaten te configureren voor het ontvangen van updates van Windows Server Update Service (WSUS), in plaats van Windows Update:
 
 - [Update/AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
 - [Update/RequireUpdateApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
@@ -128,7 +128,7 @@ Hier is te zien hoe de implementatie in de tijd verloopt voor de hele organisati
 
 Een uitstelbeleid geeft het aantal dagen aan tussen de datum waarop een update beschikbaar komt en de datum waarop de update wordt aangeboden aan een apparaat.
 
-U kunt verschillende uitstelen configureren voor functie-updates en kwaliteitsupdates. De volgende tabel bevat de specifieke beleidsregels voor elk type en de maximale uitstel voor elk type.
+U kunt verschillende uitstelinstellingen configureren voor functie-updates en kwaliteitsupdates. De volgende tabel bevat de specifieke beleidsregels voor elk type en de maximale uitstel voor elk type.
 
 |Categorie |Beleid |Maximum uitstellen |
 | --- | --- | --- |
@@ -137,7 +137,7 @@ U kunt verschillende uitstelen configureren voor functie-updates en kwaliteitsup
 
 #### <a name="pause-updates-via-device"></a>Updates onderbreken via apparaat
 
-Als een gebruiker geen toegang heeft tot MDM, kan deze persoon updates maximaal 35 dagen handmatig onderbreken op een HoloLens 2-apparaat op build [Windows Holographic, versie 2004](hololens-release-notes.md#windows-holographic-version-2004) of hoger. Gebruikers kunnen deze instelling bereiken door te navigeren naar Instellingen **-> Update & Security -> Advanced options** schuif omlaag naar **Updates** onderbreken en selecteer de datum tot de datum waarop ze updates zullen onderbreken. Zodra een gebruiker de onderbrekingslimiet heeft bereikt, moet het apparaat nieuwe updates ontvangen, omdat deze opnieuw kunnen worden onderbroken. 
+Als een gebruiker geen toegang heeft tot MDM, kan deze persoon updates maximaal 35 dagen handmatig onderbreken op een HoloLens 2-apparaat op build [Windows Holographic, versie 2004](hololens-release-notes.md#windows-holographic-version-2004) of hoger. Gebruikers kunnen deze instelling bereiken door te navigeren naar Instellingen **> Update & Security > Geavanceerde** opties schuift u omlaag naar **Updates** onderbreken en selecteert u de datum tot de updates worden onderbroken. Zodra een gebruiker de onderbrekingslimiet heeft bereikt, moet het apparaat nieuwe updates ontvangen voordat deze opnieuw kan worden onderbroken. 
 
 Vanaf [Windows Holographic, versie 20H2,](hololens-release-notes.md#windows-holographic-version-20h2)kan deze functie updates onderbreken worden beheerd voor HoloLens 2 apparaten. 
 - [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess).

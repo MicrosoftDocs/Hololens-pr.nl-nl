@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9a1d9eaccb212474f47fd277c77fb41784f9ddc5
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 22b3dad817260175bccdb89faac0bbae7b210038
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379343"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924431"
 ---
 # <a name="get-your-hololens-2-ready-to-use"></a>Uw HoloLens 2 gereed voor gebruik
 
@@ -34,7 +34,7 @@ De laadsnelheid en snelheid kunnen variëren, afhankelijk van de omgeving waarin
 - Wanneer slechts een van de vijf lampen is aan, is het accuniveau lager dan 20 procent.
 - Als het accuniveau kritiek laag is en u het apparaat probeert in te zetten, gaat er kort één lampje knipperen en gaat u uit.
 
-Meer [informatie over het laden van apparaten vindt u hier](hololens-recovery.md#charge-the-device) als er meer informatie nodig is. 
+Meer [informatie over het laden van apparaten vindt u hier](hololens2-charging.md#charging-the-device) als er meer informatie nodig is. 
 
 ## <a name="adjust-fit"></a>Passend aanpassen
 
@@ -69,7 +69,7 @@ Als u uw HoloLens 2, drukt u op de aan/uit-knop.  De LED's onder de aan/uit-knop
 | Naar de slaapstand | Druk op één knop. | Alle vijf de lichten worden aan en daarna één voor één vervaagd. Nadat de lichten zijn uitgeschakeld, wordt er een geluid afgespeeld en wordt op het scherm 'Tot ziens' weergegeven. |
 | Uit slaapstand ontwaken | Druk op één knop. | Alle vijf de lichten worden aan en vervolgens gewijzigd om het accuniveau aan te geven. Er wordt onmiddellijk een geluid afgespeeld. |
 | Uitschakelen | Houd 5-en in de wacht. |  Alle vijf de lichten worden aan en daarna één voor één vervaagd. Nadat de lichten zijn uitgeschakeld, wordt er een geluid afgespeeld en wordt op het scherm 'Tot ziens' weergegeven. |
-| De Hololens opnieuw opstarten als deze niet reageert | Houd tienen in de wacht. | Alle vijf de lichten worden aan en daarna één voor één vervaagd. Nadat de lichten zijn uitgeschakeld. |
+| De HoloLens opnieuw opstarten als deze niet reageert | Houd tienen in de wacht. | Alle vijf de lichten worden aan en daarna één voor één vervaagd. Nadat de lichten zijn uitgeschakeld. |
 
 ## <a name="hololens-behavior-reference"></a>Naslag voor HoloLens-gedrag
 
@@ -125,4 +125,4 @@ Houd uw eerste paar sessies met HoloLens kort en zorg ervoor dat u even pauzes n
 Zie [waarschuwingen en instructies voor product veiligheids.](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions)
 
 > [!div class="nextstepaction"]
-> [Start en configureer uw HoloLens 2](hololens2-start.md)
+> [Uw HoloLens 2](hololens2-start.md)

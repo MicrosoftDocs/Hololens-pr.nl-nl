@@ -16,18 +16,18 @@ ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f855aa84a347edc85e5b9f02458721778eb2515a
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 5963be84a5fbb186c77965d9bbf112713fea8242
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111377845"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923513"
 ---
 # <a name="restart-reset-or-recover-hololens-1st-gen"></a>HoloLens (1st Gen) opnieuw opstarten, opnieuw instellen of herstellen
 
 Als u problemen ondervindt met uw HoloLens, kunt u proberen het apparaat opnieuw op te starten of opnieuw in te stellen, of het apparaat zelfs opnieuw instellen met behulp van apparaatherstel. In dit artikel worden de aanbevolen herstelstappen in de volgorde van de stappen beschreven.
 
-Als u een herstel van een HoloLens 2, zie [Een](https://docs.microsoft.com/hololens/hololens-recovery)HoloLens 2 herstellen, aangezien dat proces verschilt.
+Als u een herstel van een HoloLens 2, zie [Een](hololens-recovery.md)HoloLens 2 herstellen, aangezien dat proces verschilt.
 
 > [!NOTE]
 > Dit artikel is gericht op het HoloLens-apparaat en de software. Als uw hologrammen er niet goed uitzien, bekijkt u Overwegingen voor **[de HoloLens-omgeving](hololens-environment-considerations.md)** voor informatie over factoren die de kwaliteit van hologrammen verbeteren.
@@ -78,7 +78,28 @@ Als uw HoloLens niet opnieuw is opgestart met de vorige methoden, forceer dan op
    - Het is veilig om LED-activiteiten te negeren.
 1. Laat de knop los en wacht 2-3 seconden.
 1. Houd de **aan/uit-knop** 1 seconde ingedrukt.
-1. Als u nog steeds  problemen hebt, drukt u 4 seconden op de aan/uit-knop totdat alle batterijindicatoren verdwijnen en het scherm geen hologrammen meer we weergeven. Wacht 1 minuut en druk vervolgens opnieuw op de **aan/uit-knop** om het apparaat in te zetten.
+1. Als u nog steeds  problemen hebt, drukt u 4 seconden op de aan/uit-knop totdat alle batterijindicatoren verdwijnen en het scherm geen hologrammen meer we weergeven. Wacht 1 minuut en druk vervolgens opnieuw op **de aan/uit-knop** om het apparaat in te zetten.
+
+## <a name="go-back-to-a-previous-version---hololens-1st-gen"></a>Terug naar een eerdere versie - HoloLens (1e Gen)
+
+In sommige gevallen wilt u mogelijk teruggaan naar een eerdere versie van de HoloLens-software. U kunt dit doen door het Hulpprogramma voor herstel van Windows-apparaten te gebruiken om uw HoloLens opnieuw in te stellen op de eerdere versie.
+
+> [!NOTE]
+> Als u terug gaat naar een eerdere versie, worden uw persoonlijke bestanden en instellingen verwijderd.
+
+Als u wilt teruggaan naar een eerdere versie van HoloLens 1, volgt u deze stappen:
+
+1. Zorg ervoor dat er geen telefoons of Windows-apparaten op uw pc zijn aangesloten.
+1. Download windows Device [Recovery Tool (WDRT)](https://support.microsoft.com/help/12379)op uw pc.
+1. Download het [herstelpakket voor HoloLens Jubileumupdate.](https://aka.ms/hololensrecovery)
+1. Wanneer de downloads zijn gedownload, opent u   >  **Bestandenverkenner Downloads.** Klik met de rechtermuisknop op de ingepakte map die u zojuist hebt gedownload en selecteer **Alles** uitpakken  >  **om** deze uit tepakken.
+1. Sluit uw HoloLens aan op uw pc met behulp van de micro-USB-kabel die bij deze kabel is meegeleverd. (Zelfs als u andere kabels hebt gebruikt om uw HoloLens aan te sluiten, werkt deze het beste.)
+1. De WDRT detecteert automatisch uw HoloLens. Selecteer de **Microsoft HoloLens** tegel.
+1. Selecteer in het volgende scherm **Handmatige pakketselectie** en kies het installatiebestand in de map die u in stap 4 hebt uitgepakt. (Zoek naar een bestand met de extensie .ffu.)
+1. Selecteer **Software installeren** en volg de instructies.
+
+> [!NOTE]
+> Als de WDRT uw HoloLens niet detecteert, start u de pc opnieuw op. Als dat niet werkt, selecteert u Mijn apparaat is niet **gedetecteerd,** selecteert u **Microsoft HoloLens** en volgt u de instructies.
 
 ## <a name="reset-to-factory-settings"></a>Fabrieksinstellingen herstellen
 
@@ -121,8 +142,8 @@ Als uw apparaat niet wordt gedetecteerd, volgt u deze stappen om het in de knipp
 
 1. Ontkoppel het apparaat van een voedingsbron.
 1. Als het apparaat is aan staat, houdt u de **aan/uit-knop** ingedrukt totdat het volledig wordt uitgeschakeld.
-2. Houd de **volumeknop omhoog** en tik kort op de **aan/uit-knop.** Het apparaat moet starten en alleen de middelste LED weergeven.
+2. Houd de **volumeknop ingedrukt** en tik kort op **de aan/uit-knop.** Het apparaat moet starten en alleen de middelste LED weergeven.
 3. Sluit het apparaat aan op uw pc.
-4. Open het Hulpprogramma voor herstel van Windows-apparaten.
+4. Open het Hulpprogramma voor apparaatherstel van Windows.
 5. Selecteer **Mijn apparaat is niet gedetecteerd** en selecteer vervolgens **HoloLens**. 
 6. Volg de instructies om uw apparaat te herstellen.

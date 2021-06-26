@@ -1,0 +1,77 @@
+---
+title: Implementatie HoloLens 2 in een commerciële omgeving plannen
+description: Meer informatie over de belangrijkste behoeften voor het implementeren en beheren van HoloLens in bedrijfsomgevingen, waaronder infrastructuur, Azure Active Directory en Mobile Device Management.
+ms.prod: hololens
+ms.sitesec: library
+ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
+author: joyjaz
+ms.author: v-jjaswinski
+audience: ITPro
+ms.topic: article
+ms.localizationpriority: medium
+ms.date: 05/21/2021
+appliesto:
+- HoloLens 2
+ms.openlocfilehash: 684059b1ab91860dc6af63cbd6f0927876fefb8c
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.translationtype: MT
+ms.contentlocale: nl-NL
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112961431"
+---
+# <a name="planning-hololens-2-deployment-in-a-commercial-environment"></a>Implementatie HoloLens 2 in een commerciële omgeving plannen
+
+## <a name="overview"></a>Overzicht
+> [!NOTE]
+> Dit overzicht is bedoeld om IT-professionals inzicht te geven in overwegingen voor het implementeren en beheren Microsoft HoloLens 2 apparaten binnen een organisatie. Zie De basisbeginselen om aan [de slag te gaan voor](hololens2-setup.md) eindgebruikers van apparaten.
+
+HoloLens 2 wordt uitgevoerd op Windows 10 Holographic waarmee organisaties robuuste, flexibele, ingebouwde technologieën voor het beheer van mobiele apparaten en apps kunnen gebruiken. Windows 10 Holographic biedt ondersteuning voor end-to-end levenscyclusbeheer van apparaten, om bedrijven controle te geven over hun apparaten, gegevens en apps. De HoloLens 2 eenvoudig kunnen worden opgenomen in standaard levenscyclusprocedures, van apparaatinschrijving, configuratie en toepassingsbeheer tot onderhoud en pensioen met behulp van een uitgebreide beheeroplossing voor mobiele apparaten.
+
+De volgende stappen kunnen u helpen bij het doorlopen van HoloLens 2 ingebruikname binnen uw organisatie.
+
+| | |
+|--|--|
+| ![Stap 1](images/1green.png)| <br/> **[Algemene implementatiescenario's:](hololens-requirements.md)** inzicht in implementatiescenario's en verken de belangrijkste onderdelen die nodig zijn om HoloLens 2 implementeren. |
+| ![Stap 2](images/2green.png)| <br/> **[Voorbereiden:](#prepare)** vertrouwd raken met de essentiële infrastructuur die nodig is voor HoloLens 2. |
+| ![Stap 3](images/3green.png) | <br/> **[Configureren:](#configure)** meer informatie over het configureren van uw essentiële onderdelen voor een cloudimplementatie. |
+| ![Stap 4](images/4green.png) | <br/> **[Implementeren:](#deploy)** ontdek hoe u uw apparaten implementeert en uw toepassingen veilig en efficiënt distribueert. |
+| ![Stap 5](images/5green.png) | <br/> **[Onderhouden:](#maintain)** ontdek wat er nodig is om de status van uw apparaten op de juiste HoloLens 2 te houden en ervoor te zorgen dat het bedrijfsbeleid wordt nageleefd. |
+
+## <a name="prepare"></a>Voorbereiden
+
+Meer informatie over essentiële infrastructuurservices die nodig zijn om de volledige set HoloLens 2 ondersteunen. 
+
+| Onderdeel | Beschrijving |
+|-----------|------------|
+| [Azure AD](hololens-identity.md) | Biedt identiteits- en toegangsbeheer voor de HoloLens 2  |
+| [Beheer van mobiele apparaten](hololens-mdm-configure.md)| Beheert HoloLens 2 die zijn verbonden met uw tenant  |
+| [Wi-Fi-netwerk](hololens-commercial-infrastructure.md)| Wi-Fi is beschikbaar en apparaten kunnen worden verbonden met internet  |
+
+## <a name="configure"></a>Configureren
+
+Gebruik Intune en Autopilot als low-touch-oplossingen voor het registreren en configureren van HoloLens 2 voor de Azure AD-tenant en MDM van uw organisatie.
+
+| Onderdeel | Beschrijving |
+|-----------|------------|
+| [Automatische inschrijving](hololens-enroll-mdm.md#auto-enrollment-in-mdm) | Na de eerste aanmelding registreren apparaten zich automatisch bij Azure AD en registreren ze zich bij MDM  |
+| [Toepassingslicenties](hololens2-cloud-connected-configure.md#application-licenses)| Kan worden toegepast op gebruikers, gebruikersgroepen of apparaatgroepen  |
+| [Azure-gebruikers en -groepen](hololens2-cloud-connected-configure.md#azure-users-and-groups) | Helpt bij het toewijzen van configuraties en licenties voor HoloLens 2  |
+
+## <a name="deploy"></a>Implementeren
+
+Distribueer uw HoloLens 2 apparaten en valideer de configuratie. 
+
+| Onderdeel | Beschrijving |
+|-----------|------------|
+| [Validatie van inschrijving](hololens2-corp-connected-deploy.md#enrollment-validation) | Controleren of azure AD is samengevoegd op het apparaat via Instellingen of de Azure-portal |
+| [Certificaatvalidatie](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation) | Controleer de instellingen en controleer of deze correct zijn gedistribueerd |
+| [App-installaties valideren](hololens2-corp-connected-deploy.md#validate-lob-app-install) | Controleer of de app aanwezig is en aan uw HoloLens 2 |
+
+## <a name="maintain"></a>Onderhouden
+
+Gebruik Windows Update voor Bedrijven samen met uw MDM-systeem of de Microsoft Store om uw HoloLens 2 apps en apps bijgewerkt te houden.
+
+| Onderdeel | Beschrijving |
+|-----------|------------|
+| [Werk HoloLens 2](hololens-updates.md) | Configure updates as needed through Windows Updates for Business |
+| [Apps bijwerken](app-deploy-overview.md) | Configureren via uw MDM-systeem of de Microsoft Store

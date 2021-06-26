@@ -1,5 +1,5 @@
 ---
-title: veelgestelde HoloLens 2 Development Edition
+title: HoloLens 2 Veelgestelde vragen over development edition
 description: Blijf op de hoogte van de meest gestelde vragen over de HoloLens 2 Development Edition mixed reality apparaat.
 keywords: Aanschafopties voor Hololens 2, HoloLens-opties, Developer Edition
 author: evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f7ee1849e51132f0e3d30585cfed6a89ecfee2a9
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: a3e54bd586502207d24e28d7d2eeadd659b3e019
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111377770"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924550"
 ---
 # <a name="hololens-2-development-edition-faq"></a>veelgestelde HoloLens 2 Development Edition
 
@@ -161,7 +161,7 @@ Ga naar HoloLens 2 Development Edition voor [meer informatie](https://docs.micro
 
 ### <a name="how-do-i-contact-pixyz-support"></a>Hoe kan ik contact opnemen met pixyz-ondersteuning?
 
-Als u hulp nodig hebt bij vragen over uw Unity-id, -account, -organisatie(s) en -abonnementen, gaat u naar support.unity3d.com
+Als u hulp wilt krijgen bij vragen over uw Unity-id, -account, -organisatie(s) en -abonnementen, gaat u naar support.unity3d.com
 
 Voor pixyz-specifieke ondersteuning (na het inwisselen van uw proefversie) gaat u [naar Pixyz-software.com/support](http://pixyz-software.com/support)
 

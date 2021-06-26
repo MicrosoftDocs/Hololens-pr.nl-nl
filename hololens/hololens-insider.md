@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8545b5f23dc81c194b68ea8b40feb83e525dfdf7
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: a4949ab68121cb772fdb8a62411ed70868a6ccb6
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111377895"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924363"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider-preview voor Microsoft HoloLens
 
@@ -31,30 +31,47 @@ Welkom bij de nieuwste Insider Preview-builds voor HoloLens. Het is eenvoudig om
 
 We zijn blij dat we weer nieuwe functies aan Windows Insiders kunnen toevoegen. Nieuwe builds worden naar de dev- en bètakanalen gerouteert voor de nieuwste updates. We blijven deze pagina bijwerken wanneer we meer functies en updates toevoegen aan onze Windows Insider builds. Word enthousiast en bereid u voor om deze updates in uw realiteit te combineren. 
 
-### <a name="onedrive-for-work-or-school-camera-roll-upload"></a>OneDrive voor werk of school Camera Roll uploaden
+### <a name="csp-changes-on-hololens"></a>CSP-wijzigingen in HoloLens
+ 
+- Geïntroduceerd in Windows Insider build, 20348.1403
 
-*Geïntroduceerd in build 20346.1402*
+#### <a name="devdetail-csp"></a>DevDetail CSP
 
-We hebben een nieuwe functie toegevoegd aan de app HoloLens 2 Settings, waarmee klanten automatisch mixed reality foto's en video's van de map Afbeeldingen > Camera Roll kunnen uploaden naar de bijbehorende map OneDrive voor werk of school. Met deze functie wordt een functie-hiaat in de [OneDrive-app](holographic-photos-and-videos.md#share-your-mixed-reality-photos-and-videos) op HoloLens 2 vereend, die alleen ondersteuning biedt voor het automatisch uploaden van camera's naar de persoonlijke Microsoft-account van een klant (en niet naar het werk- of schoolaccount van de klant).
+DevDetail CSP rapporteert nu ook vrije opslagruimte op een HoloLens-apparaat. Dit moet ongeveer overeenkomen met de waarde die wordt weergegeven op de pagina Opslag van de app Instellingen. Hieronder vindt u het specifieke knooppunt met deze informatie.
 
-**Uitleg**
+- ./DevDetail/Ext/Microsoft/FreeStorage (alleen GET-bewerking)
 
-- Ga **naar Instellingen > Systeem > Mixed reality-camera** 'Camera uploaden' in teschakelen.
-- Als u deze  functie instelt op De positie Aan, worden alle mixed reality foto's of video's die op uw apparaat zijn vastgelegd, automatisch in de wachtrij geplaatst om te worden geüpload naar de map Afbeeldingen > Camera Roll van uw OneDrive voor werk- of schoolaccount.
-    >[!NOTE]
-    >Foto's en video's  die zijn vastgelegd voordat u deze functie inschakelen, worden niet in de wachtrij geplaatst voor uploaden en moeten nog steeds handmatig worden geüpload.
-- In een statusbericht op de pagina Instellingen wordt het aantal bestanden weergegeven dat in behandeling is voor uploaden (of 'OneDrive is up-to-date' wanneer alle bestanden in behandeling zijn geüpload).
-- Als u zich zorgen maakt over bandbreedte of de upload om een of andere reden wilt 'onderbreken', kunt u de functie overschakelen naar **de positie Uit.** Het tijdelijk uitschakelen van de functie zorgt ervoor dat de uploadwachtrij blijft toenemen wanneer u nieuwe bestanden toevoegt aan de map Camera Roll, maar bestanden worden pas geüpload wanneer u de functie opnieuw inschakelen.
-- Nieuwste bestanden worden eerst geüpload (laatste in, eerste uit).
-- Als uw OneDrive-account problemen heeft (bijvoorbeeld nadat  uw wachtwoord is gewijzigd), wordt de knop Nu herstellen weergegeven op de pagina Instellingen.
-- Er is geen maximale bestandsgrootte, maar houd er rekening mee dat het uploaden van grote bestanden langer duurt (met name als uw uploadbandbreedte beperkt is). Als u het uploaden 'pauzeert' of uit zet terwijl een groot bestand wordt geüpload, wordt het uploaden onmiddellijk geannuleerd. Het uploaden wordt opnieuw gestart wanneer u de functie opnieuw inschakelen. U verliest geen bestanden, maar de gedeeltelijke upload wordt verwijderd.
+#### <a name="devicestatus-csp"></a>DeviceStatus CSP
 
-**Bekende problemen en waarschuwingen**
+DeviceStatus CSP rapporteert nu ook SSID en BSSID van het Wifi-netwerk waarmee HoloLens actief is verbonden. Hieronder vindt u de specifieke knooppunten die deze informatie bevatten.
 
-- Deze instelling heeft geen ingebouwde beperking op basis van het huidige bandbreedtegebruik. Als u de bandbreedte voor een ander scenario wilt maximaliseren, moet u de instelling handmatig uitschakelen. Het uploaden wordt onderbroken, maar de functie blijft nieuw toegevoegde bestanden controleren op Camera Roll. Schakel uploaden opnieuw in wanneer u klaar bent om door te gaan.
-- Deze functie moet zijn ingeschakeld voor elk gebruikersaccount op het apparaat en kan alleen actief bestanden uploaden voor de gebruiker die momenteel is aangemeld bij het apparaat.
-- Als u foto's of video's maakt tijdens het in realtime bekijken van het aantal uploads op de pagina Instellingen, moet u er rekening mee houden dat het aantal in behandeling zijnde bestanden mogelijk niet verandert totdat het uploaden van het huidige bestand is voltooid.
-- Het uploaden wordt onderbroken als uw apparaat in de slaapstand valt of wordt uitgeschakeld. Om ervoor te zorgen dat de uploads in behandeling zijn voltooid, gebruikt u het apparaat actief totdat op de pagina Instellingen de tekst OneDrive is up-to-date staat of past u de slaapstandinstellingen van **uw Power & aan.**
+- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac-adres van Wi-Fi adapter*/SSID
+- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac-adres van Wi-Fi adapter*/BSSID
+
+Voorbeeld van syncml-blob (voor MDM-leveranciers) om een query uit te voeren voor NetworkIdentifiers
+
+```xml
+<SyncML>
+<SyncBody>
+    <Get>
+        <CmdID>$CmdID$</CmdID>
+        <Item>
+            <Target>
+            <LocURI>
+                ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers?list=StructData
+            </LocURI>
+            </Target>
+        </Item>
+    </Get>
+    <Final/>
+</SyncBody>
+</SyncML>
+```
+
+### <a name="fixes-and-improvements"></a>Oplossingen en verbeteringen:
+
+- Er is een bekend probleem opgelost voor Apparaatportal er geen prompt [was om vergrendelde bestanden te downloaden.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
+- Er is [een bekend probleem opgelost voor Apparaatportal met time-outs voor](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out) het uploaden en downloaden van bestanden.
 
 ## <a name="start-receiving-insider-builds"></a>Beginnen met het ontvangen van Insider-builds
 > [!NOTE]
@@ -69,7 +86,7 @@ Windows Insider wordt nu verplaatst naar Kanalen. De **Fast-ring** wordt het **D
 Selecteer vervolgens **Actieve ontwikkeling van Windows,** kies of u het **Dev-kanaal** wilt ontvangen of bèta-kanaal **builds** en bekijk de programmavoorwaarden.
 Selecteer **Bevestigen > Nu opnieuw opstarten om** te voltooien. Nadat het apparaat opnieuw is opgestart, gaat u naar Instellingen **> Update & Security > Controleren** op updates om de meest recente build op te halen.
 ### <a name="update-error-0x80070490-work-around"></a>Updatefout 0x80070490 work-around
-Als er een updatefout wordt 0x80070490 bij het bijwerken op het kanaal Dev of Beta, kunt u de volgende korte-termijnversie proberen. Dit omvat het verplaatsen van uw insider-kanaal, het ophalen van de update en vervolgens het terug verplaatsen van uw Insider-kanaal.
+Als er een updatefout wordt 0x80070490 bij het bijwerken op het kanaal Dev of Beta, probeert u de volgende kortetermijnversie. Dit omvat het verplaatsen van uw insider-kanaal, het ophalen van de update en vervolgens het terug verplaatsen van uw Insider-kanaal.
 #### <a name="stage-one---release-preview"></a>Fase 1 - preview-versie
 1.  Instellingen, Update & Beveiliging, Windows Insider-programma selecteer **Release Preview-kanaal.**
 2.  Instellingen, & bijwerken, Windows Update, **Controleren op updates.** Na de update gaat u verder met Fase 2.
@@ -90,14 +107,14 @@ Gebruik de [app Feedback-hub uw](hololens-feedback.md) HoloLens om feedback te g
 > [!NOTE]
 > Zorg ervoor dat u de prompt accepteert waarin wordt gevraagd of u Feedback-hub documenten wilt openen (selecteer **Ja** wanneer u hier om wordt gevraagd).
 ## <a name="note-for-developers"></a>Opmerking voor ontwikkelaars
-U wordt aangeraden uw toepassingen te ontwikkelen met insider-builds van HoloLens.  Bekijk de [Documentatie voor HoloLens-ontwikkelaars om](https://developer.microsoft.com/windows/mixed-reality/development) aan de slag te gaan. Dezelfde instructies werken met Insider-builds van HoloLens.  U kunt dezelfde builds van Unity en Visual Studio die u al gebruikt voor HoloLens-ontwikkeling.
+U bent welkom en aangemoedigd om uw toepassingen te ontwikkelen met behulp van Insider-builds van HoloLens.  Bekijk de [Documentatie voor HoloLens-ontwikkelaars om](https://developer.microsoft.com/windows/mixed-reality/development) aan de slag te gaan. Dezelfde instructies werken met Insider-builds van HoloLens.  U kunt dezelfde builds van Unity en Visual Studio die u al gebruikt voor HoloLens-ontwikkeling.
 ## <a name="stop-receiving-insider-builds"></a>Ontvangst van Insider-builds stoppen
 Als u geen Insider-builds van Windows Holographic meer wilt ontvangen, kunt u zich uitloggen [](hololens-recovery.md) wanneer op uw HoloLens een productie-build wordt uitgevoerd, of u kunt uw apparaat herstellen met behulp van advanced recovery companion om uw apparaat te herstellen naar een niet-Insider-versie van Windows Holographic.
 > [!CAUTION]
-> Er is een bekend probleem waarbij gebruikers die de registratie van Insider Preview-builds ongedaan maken nadat ze handmatig een nieuwe preview-build hebben geïnstalleerd, een blauw scherm krijgen. Daarna moeten ze hun apparaat handmatig herstellen. Bekijk meer over dit bekende probleem voor meer informatie over of u hier al dan niet [mee te maken zou krijgen.](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)
+> Er is een bekend probleem waarbij gebruikers die de registratie van Insider Preview-builds ongedaan maken nadat ze handmatig een nieuwe preview-build hebben geïnstalleerd, een blauw scherm krijgen. Daarna moeten ze hun apparaat handmatig herstellen. Bekijk meer over dit bekende probleem voor meer informatie over of u hier al dan niet [mee te maken zou krijgen.](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 Controleren of op uw HoloLens een productie-build wordt uitgevoerd:
 1. Ga naar **Instellingen > Systeem > Over** en zoek het buildnummer.
 1. [Zie de releasenotities voor productie-buildnummers.](hololens-release-notes.md)
-U kunt als volgende kiezen voor Insider-builds:
+Als u zich wilt af melden voor Insider-builds:
 1. Ga op een HoloLens met een productie-build naar Instellingen **> Update & Security > Windows Insider-programma** en selecteer Stop Insider **builds.**
 1. Volg de instructies om uw apparaat uit te kiezen.

@@ -1,5 +1,5 @@
 ---
-title: HoloLens 2 wordt weergegeven
+title: HoloLens 2 problemen met weergaven oplossen
 description: Verwachtingen voor HoloLens 2 weergegeven. Richtlijnen voor het configureren van weergaven voor de beste afbeeldingskwaliteit.
 author: BrandonBray
 ms.author: branbray
@@ -12,29 +12,30 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 71dff00ff75feea4408979d2ce69fb14bf9bf3b7
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 96bacd79d559bc0adcd42665c4a8b4af856b58b0
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379465"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923615"
 ---
-# <a name="hololens-2-display"></a>HoloLens 2 weergeven
+# <a name="hololens-2-display-troubleshooting"></a>HoloLens 2 problemen met weergaven oplossen
 
+## <a name="overview"></a>Overzicht
 De HoloLens 2 is een combinatie van waveguides en lichte projectors. Gebruikers kijken door de waveguides( de lenzen in het visor) bij het dragen van de headset. De lichte projectors bevinden zich in de behuizing boven de brow. HoloLens 2 maakt gebruik van laserlicht om de weergave te belichten.
 
 ## <a name="troubleshooting"></a>Problemen oplossen
 
-Voor HoloLens 2 volgt u de volgende stappen om de hoogste visuele kwaliteit van hologrammen in weergaven te garanderen:
+Volg de volgende stappen om de hoogste visuele kwaliteit van hologrammen in weergaven te garanderen:
 
-* **Vergroot de helderheid van de weergave.** Hologrammen zien er het beste uit wanneer de weergave op het helderste niveau is.
+* **Vergroot de helderheid van de weergave.** Hologrammen zien er het beste uit wanneer de weergave op het helderste niveau is. Wanneer u de HoloLens draagt, staan de helderheidsknoppen aan de linkerkant van het visor in de buurt van uw masker.
 * **Breng de visor dichter bij uw ogen.** Draai de visor omlaag naar de dichtstbijzijnde positie voor uw ogen.
 * **Shift visor omlaag.** Beweeg hetrow-pad naar beneden, wat ertoe leidt dat het visor dichter bij uw neus omlaag beweegt.
-* **Voer oogcontacten uit.** De weergave maakt gebruik van uw interpupillary distance (IPD) en oogcontact om afbeeldingen op de weergave te optimaliseren. Als u geen oogcontacten maakt, kan de kwaliteit van de afbeelding slechter worden. Als u oogsentatie wilt uitvoeren, gaat u naar **Instellingen**  >  **Systeem voor**  >  **kalibratie** Run  >  **eye-kalibratie.**
+* **[Voer oogcontacten uit.](hololens-calibration.md#calibrating-your-hololens-2)** De weergave maakt gebruik van uw interpupillary distance (IPD) en oogcontact om afbeeldingen op de weergave te optimaliseren. Als u geen oogcontacten maakt, kan de kwaliteit van de afbeelding slechter worden. Als u oogsentatie wilt uitvoeren, gaat u naar **Instellingen**  >  **Systeem voor**  >  **kalibratie** Run  >  **eye-kalibratie.**
 * **Voer de weergavekleur uit.** Op [Windows Holographic, versie 21H1](hololens-release-notes.md#windows-holographic-version-21h1) en  meer, kunt u een alternatief kleurprofiel selecteren voor uw HoloLens 2 weergave. Hierdoor kunnen kleuren nauwkeuriger worden weergegeven, met name bij lagere helderheidsniveaus. Kleurenweergave vindt u in de app **Instellingen** op de pagina Systeem > **Kalibratie.**
 
     > [!NOTE]
-    > Omdat deze instelling een nieuw kleurprofiel op uw weergavefirmware opspart, is het een instelling per apparaat (en niet uniek voor elk gebruikersaccount).
+    > Omdat deze instelling een nieuw kleurprofiel op uw weergavefirmware op slaat, is het een instelling per apparaat (en niet uniek voor elk gebruikersaccount).
 
 ### <a name="how-to-use-display-color-calibration"></a>Weergavekleuren gebruiken
 1. Start de **app Instellingen** en navigeer naar System **> Navigate.**
@@ -85,17 +86,17 @@ Af en toe worden HoloLens 2 in de linkeronder- en rechterhoek van de weergave ve
 De HoloLens 2 is ontworpen om door het menselijk oog te worden bekeken. Het apparaat heeft een actief systeem voor kleurcorrectie dat zich aanpast aan de ogen van een gebruiker. Vergeleken met het menselijk oog zien camera's omgevingen anders en hieronder zijn enkele factoren die van invloed kunnen zijn op inconsistenties tussen wat een camera vast legt en wat een gebruiker ziet.
 
 * **Oogpositie.** De HoloLens 2 is specifiek ontworpen voor de oogpositie van de gebruiker. De HoloLens 2 maakt gebruik van technologie voor het bijhouden van de ogen om zich aan te passen aan de oogpositie van de gebruiker. Een camera die door een paar millimeters verkeerd is geseed, kan leiden tot afbeeldingsverstoring. Nauwkeurige positiebepaling met een camera is moeilijk en moet overeenkomen met de exacte locatie en oogvermindering waarvoor het apparaat kleurcorrecties moet uitvoeren.
-* **Oogbewegingen.** De weergave past zich aan de beweging van het oog van een gebruiker aan om kleuren aan te passen. Wat er op de weergave wordt weergegeven, kan verschillen, afhankelijk van of de gebruiker naar het midden, de rand of de hoek van het scherm kijkt. Eén afbeeldingsopname kan in het beste beste alleen laten zien hoe de weergave eruitziet voor de as die overeenkomt met een oogcontactrichting.
+* **Oogbewegingen.** De weergave past zich aan de beweging van het oog van een gebruiker aan om de kleuren aan te passen. Wat er op de weergave wordt weergegeven, kan verschillen, afhankelijk van of de gebruiker naar het midden, de rand of de hoek van het scherm kijkt. Eén afbeeldingsopname kan in het beste beste alleen laten zien hoe de weergave eruitziet voor de as die overeenkomt met een oogcontactrichting.
 * **Binotaalweergave.** De HoloLens 2 is ontworpen om met beide ogen te worden weergegeven. Het brein past zich aan het zien van twee afbeeldingen aan en combineert ze met elkaar. Afbeeldingen van slechts één weergave negeren de informatie van de andere weergave.
 * **Tijd van camerablootstelling.** De blootstellingstijd van de camera moet exact een veelvoud van 1/120e van een seconde zijn. De HoloLens-weergaveframesnelheid is 120 Hz. Vanwege de manier waarop de HoloLens 2 afbeeldingen tekent, is het vastleggen van één frame ook niet voldoende om overeen te komen met de visuele ervaring van een mens. Tegelijkertijd projecteert het systeem de afbeelding opnieuw op de weergave om hologrammen te stabiliseren, zelfs micromovementen. Voor het vastleggen van meerdere frames terwijl de HoloLens niet wordt verplaatst, is meestal een laboratoriuminstallatie vereist.
-* **De grootte van het camera-aperture.** De grootte van de camera moet ten minste 3 mm zijn om een nauwkeurige afbeelding vast te leggen. Mobiele telefooncamera's met kleine openingen integreren licht van een kleiner gebied dan het menselijk oog. Het apparaat past kleurcorrectie toe voor patronen die worden waargenomen door grotere openingen. Bij kleine openingen zijn uniformiteitspatronen steeds beter en blijven ze zichtbaar ondanks kleurcorrecties die door het systeem worden toegepast.
-* **Camera-ingangsdekomer.** De ingang van de camera moet minimaal 3 mm in dediameter zijn om een nauwkeurige afbeelding vast te leggen. Anders legt de camera enkele patronen met een hoge frequentie vast die niet zichtbaar zijn voor het oog. De positie van de insluitingsleerling moet zich vóór de camera bevinden en worden geplaatst bij de afstand tot de verlichting van de ogen om te voorkomen dat er afwijkingen en andere variaties op de vastgelegde afbeelding worden introduceren.
+* **De grootte van het camera-aperture.** De grootte van de camera moet ten minste 3 mm zijn om een nauwkeurige afbeelding vast te leggen. Mobiele telefooncamera's met kleine openingen integreren licht van een kleiner gebied dan het menselijke oog. Het apparaat past kleurcorrectie toe voor patronen die worden waargenomen door grotere openingen. Bij kleine openingen zijn uniformiteitspatronen steeds beter en blijven ze zichtbaar ondanks kleurcorrecties die door het systeem worden toegepast.
+* **Camera-ingangsdekomer.** De ingang van de camera moet minimaal 3 mm in dediameter zijn om een nauwkeurige afbeelding vast te leggen. Anders legt de camera enkele patronen met een hoge frequentie vast die niet zichtbaar zijn voor het oog. De positie van de insluitingsleerling moet zich zowel vóór de camera bevinden als worden geplaatst bij de afstand tot de verlichting van de ogen om te voorkomen dat er afwijkingen en andere variaties op de vastgelegde afbeelding worden introduceren.
 * **Camerapositie.** Camera's die voldoen aan de vereisten om de HoloLens 2-weergave weer te geven, zijn groter en het is moeilijk om de camera dicht genoeg bij de HoloLens 2 te plaatsen om de kleur van de afbeelding te bekijken. Als de camera op de verkeerde plaats staat, kan de kleurcorrectie een negatieve invloed hebben op het vastleggen van HoloLens 2 weergave.
-* **Correctie van afbeeldingen.** Typische digitale camera's en smartphonecamera's passen een toonreproductiecurve (TRC) toe waarmee het contrast en de kleur worden versterkt om een beter resultaat te bieden. Wanneer deze wordt toegepast op HoloLens 2 weergave, versterkt deze tooncurve niet-uniformiteiten.
+* **Correctie van afbeeldingen.** Typische digitale camera's en smartphonecamera's passen een toonreproductiecurve (TRC) toe die het contrast en de kleur verbetert om een beter resultaat te bieden. Wanneer deze wordt toegepast op HoloLens 2 weergave, versterkt deze tooncurve niet-uniformiteiten.
 
-Het is echter nog steeds mogelijk dat gespecialiseerde industriële camera's representatieve afbeeldingen van de HoloLens 2 vastleggen. Helaas kunnen smartphone-, consumenten- en professionele camera's geen afbeeldingen vastleggen die overeenkomen met wat een gebruiker ziet op HoloLens 2.
+Het is echter nog steeds mogelijk dat gespecialiseerde industriële camera's representatieve afbeeldingen van de HoloLens 2 vastleggen. Helaas kunnen smartphone-, consumenten- en professionele camera's geen afbeeldingen vastleggen die overeenkomen met wat een gebruiker in de HoloLens 2.
 
-### <a name="what-does-eye-calibration-do-to-display-image-quality"></a>Wat doet oogcontact om de kwaliteit van de afbeelding weer te geven?
+### <a name="what-does-eye-calibration-do-to-display-image-quality"></a>Wat doet oog kalibratie om de kwaliteit van de afbeelding weer te geven?
 
 De HoloLens 2 actieve kleur corrigeert afbeeldingen op basis van de positie van de ogen van de gebruiker. [Ooginteractie](hololens-calibration.md) biedt twee belangrijke invoer: (1) de interpupillary afstand (IPD) van de gebruiker en (2) de richting waar elk oog naar kijkt. Zonder oogbewegingen krijgt het systeem standaard een nominale oogpositie zonder oogbewegingen. Het verschil tussen actieve kleurcorrectie en geen correctie is afhankelijk van de heid van de gebruiker zelf. Gebruikers met dezelfde IPD als de standaardinstelling van het systeem zien bijvoorbeeld minder kleurcorrectieverbeteringen. Hoewel gebruikers die een veel smallere of bredere IP-adres hebben dan de standaardinstelling van het systeem, zien meer wijzigingen in de weergaveafbeelding.
 

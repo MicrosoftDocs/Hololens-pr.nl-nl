@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2df71baf36d45f0f4737b9c3b6f4eabb1e5e8c4c
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 6ecb881f694ca919f9c37a9d6094a708eafcb414
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379487"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924465"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 Development Edition
 
@@ -78,10 +78,11 @@ Kies uw engine, download uw hulpprogramma's en gebruik het toetsenbord. Welkom b
 
 ## <a name="developer-edition-additional-resources"></a>Aanvullende resources voor Developer Edition
 
+- [HoloLens 2 Veelgestelde vragen over development edition](hololens2-development-edition-faq.md)
 - [Zorg ervoor dat u de hulpprogramma's voor HoloLens-ontwikkeling installeert.](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 - [Meer informatie over het ontwikkelen voor HoloLens 2 met Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
 - [Meer informatie over het combineren van MRTK met Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started).
-- [Meer informatie over het implementeren van uw gebouwde apps.](https://docs.microsoft.com/hololens/app-deploy-overview)
+- [Meer informatie over het implementeren van uw gebouwde apps.](app-deploy-overview.md)
 - [Verken alle mogelijkheden voor Mixed Reality.](https://docs.microsoft.com/windows/mixed-reality/)
 - [Meer informatie over ontwikkelen voor HoloLens 2 met Unreal.](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
 - [Contact op met uw andere ontwikkelaars op ons HoloDevelopers Slack-kanaal](https://holodevelopersslack.azurewebsites.net/).

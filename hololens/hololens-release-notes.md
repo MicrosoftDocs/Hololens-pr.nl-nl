@@ -8,30 +8,105 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 02/16/2021
+ms.date: 06/17/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 554dc796ee793a3f7e81108c6eb614a9555f10d7
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 16aec0e60fde40f0a2bffefa871a7a3774b1eb2e
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111377935"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924533"
 ---
 # <a name="hololens-2-release-notes"></a>HoloLens 2 opmerkingen bij de release
 
-Om ervoor te zorgen dat u een productieve ervaring hebt met uw HoloLens-apparaten, blijven we functie-, fout- en beveiligingsupdates uitbrengen. Op deze pagina ziet u elke maand wat er nieuw is voor HoloLens. Als u de meest recente HoloLens 2 update wilt downloaden, kunt u controleren op [updates](hololens-update-hololens.md#check-for-updates-and-manually-update) en handmatig bijwerken of de FFU (Full Flash Update) downloaden om uw apparaat te flashen [via Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device). De [download](https://aka.ms/hololens2download) wordt up-to-date gehouden en biedt de meest recente algemeen beschikbare build.
+Om ervoor te zorgen dat u een productieve ervaring hebt met uw HoloLens-apparaten, blijven we functie-, fout- en beveiligingsupdates uitbrengen. Op deze pagina ziet u elke maand wat er nieuw is voor HoloLens. Als u de nieuwste HoloLens 2 update wilt downloaden, kunt u controleren op [updates](hololens-update-hololens.md#check-for-updates-and-manually-update) en handmatig bijwerken of de volledige flash-update (FFU) downloaden om uw apparaat te flashen [via Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device). De [download](https://aka.ms/hololens2download) wordt up-to-date gehouden en biedt de meest recente algemeen beschikbare build.
+
+> [!NOTE]
+> De recente aankondiging van Windows 11 was gericht op de pc-versie van Windows. In mei [](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) 2021 hebben we een belangrijke update voor het besturingssysteem voor HoloLens 2 uitgebracht en we werken aan een toekomstige release op basis van feedback van klanten voor dit najaar.
+
+> [!IMPORTANT]
+> Vanwege een bekend probleem in onze [21H1-build](hololens-troubleshooting.md#remote-assist-video-freezes-after-20-minutes)dat van invloed is op Remote Assist-gebruikers, onderbreken we momenteel het aanbod van Windows Holographic-updates van versie 21H1. We hebben ook de standaard Advanced Recovery Companion-build gewijzigd in [de Windows Holographic-versie 20H2 - update van juni 2021.](hololens-release-notes.md#windows-holographic-version-20h2--june-2021-update)Dit is de nieuwste versie van 20H2.
+>
+> Hoewel we de beschikbaarheid van 21H1 beperken om de impact van dit probleem te beperken, begrijpen we dat sommige klanten mogelijk nog steeds willen bijwerken naar 21H1. Voor klanten die willen bijwerken naar 21h1 zijn er twee verschillende paden beschikbaar:
+>
+> - [Schrijf uw apparaat(en)](hololens-insider.md#start-receiving-insider-builds) in als Windows Insiders en selecteer de **bèta-kanaal,** zodat deze apparaten kunnen worden bijgewerkt naar 21H1 en betrouwbare builds hebben.
+> - [Download de nieuwste FFU op uw pc](https://aka.ms/hololens2download) en flash vervolgens [uw apparaat via Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device).
+
+## <a name="windows-holographic-version-21h1---june-2021-update"></a>Windows Holographic, versie 21H1 - update van juni 2021
+- Build 20348.1007
+
+### <a name="onedrive-for-work-or-school-camera-roll-upload"></a>OneDrive voor werk of school: camera-roll uploaden
+
+We hebben een nieuwe functie toegevoegd aan de app HoloLens 2 Settings, waarmee klanten automatisch mixed reality foto's en video's van de map Afbeeldingen > Camera Roll kunnen uploaden naar de bijbehorende map OneDrive voor werk of school. Deze functie pakt een functie-hiaat in de [OneDrive-app](holographic-photos-and-videos.md#share-your-mixed-reality-photos-and-videos) op HoloLens 2 aan, die alleen ondersteuning biedt voor het automatisch uploaden van camera's naar de persoonlijke Microsoft-account van een klant (en niet het werk- of schoolaccount van de klant).
+
+**Uitleg**
+
+- Ga **naar Instellingen > System > Mixed reality-camera** 'Camera uploaden' in te stellen.
+- Door deze functie  in te stellen op De positie Aan, worden alle mixed reality-foto's of video's die op uw apparaat zijn vastgelegd, automatisch in de wachtrij geplaatst voor uploaden naar de map Afbeeldingen > Camera roll van uw OneDrive voor werk- of schoolaccount.
+    >[!NOTE]
+    >Foto's en video's  die zijn vastgelegd voordat u deze functie inschakelen, worden niet in de wachtrij geplaatst voor uploaden en moeten nog steeds handmatig worden geüpload.
+- Een statusbericht op de pagina Instellingen geeft het aantal bestanden weer dat in afwachting is van uploaden (of lees 'OneDrive is up-to-date' wanneer alle bestanden in behandeling zijn geüpload).
+- Als u zich zorgen maakt over bandbreedte of het uploaden om een of andere reden wilt 'onderbreken', kunt u de functie overschakelen naar **de positie Uit.** Het tijdelijk uitschakelen van de functie zorgt ervoor dat de uploadwachtrij blijft toenemen wanneer u nieuwe bestanden toevoegt aan de map Camera Roll, maar bestanden worden pas geüpload als u de functie opnieuw inschakelen.
+- Nieuwste bestanden worden eerst geüpload (last in, first out).
+- Als uw OneDrive-account problemen heeft (bijvoorbeeld nadat  uw wachtwoord is gewijzigd), wordt de knop Nu herstellen weergegeven op de pagina Instellingen.
+- Er is geen maximale bestandsgrootte, maar houd er rekening mee dat het uploaden van grote bestanden langer duurt (vooral als uw uploadbandbreedte beperkt is). Als u het uploaden 'onderbreken' of uitschakelen terwijl een groot bestand wordt geüpload, blijft de gedeeltelijke upload behouden. Als het uploaden binnen enkele uren na het onderbreken of uitschakelen opnieuw is ingeschakeld, wordt het uploaden voortgezet vanaf de plek waar het was gebleven. Als het uploaden na enkele uren opnieuw is ingeschakeld, wordt het uploaden van het grote bestand vanaf het begin opnieuw gestart.
+
+**Bekende problemen en waarschuwingen**
+
+- Deze instelling heeft geen ingebouwde beperking op basis van het huidige bandbreedtegebruik. Als u de bandbreedte voor een ander scenario wilt maximaliseren, moet u de instelling handmatig uitschakelen. Het uploaden wordt onderbroken, maar de functie blijft nieuw toegevoegde bestanden in Camera Roll bewaken. Schakel uploaden opnieuw in wanneer u klaar bent om door te gaan.
+- Deze functie moet zijn ingeschakeld voor elk gebruikersaccount op het apparaat en kan alleen actief bestanden uploaden voor de gebruiker die momenteel is aangemeld bij het apparaat.
+- Als u foto's of video's maakt tijdens het in realtime bekijken van het aantal uploads op de pagina Instellingen, moet u er rekening mee houden dat het aantal in behandeling zijnde bestanden mogelijk niet verandert totdat het uploaden van het huidige bestand is voltooid.
+- Het uploaden wordt onderbroken als uw apparaat in de slaapstand valt of wordt uitgeschakeld. Om ervoor te zorgen dat de uploads in behandeling zijn voltooid, gebruikt u het apparaat actief totdat op de pagina Instellingen de tekst 'OneDrive is up-to-date' wordt weergegeven of de slaapstandinstellingen van uw **Power & aangepast.**
+### <a name="added-support-for-some-telemetry-policies"></a>Ondersteuning toegevoegd voor bepaalde telemetriebeleidsregels
+
+De volgende telemetriebeleidsregels worden nu ondersteund op HoloLens 2:
+- ConfigureTelemetryOptInSettingsUx
+- DisableDeviceDelete
+- AllowDeviceNameInDiagnosticData
+- FeedbackHubAlwaysSaveDiagnosticsLocally
+
+Zowel System\AllowTelemetry als System\ConfigureTelemetryOptInSettingsUx moeten samen worden gebruikt om volledige controle te hebben over de telemetrie en het gedrag in de app Instellingen.
+
+Verbeteringen en oplossingen in de update:
+- Herstelt belangrijke beschadiging van video's met Color-kalibratie.
+- Lost een probleem op waarbij tekst kan worden afgekapt in het power-menu.
+- Hiermee schakelt u ondersteuning in voor het beleid RequirePrivateStoreOnly.
+
+## <a name="windows-holographic-version-20h2--june-2021-update"></a>Windows Holographic, versie 20H2 – update van juni 2021
+- Build 19041.1154
+
+### <a name="added-support-for-some-telemetry-policies"></a>Ondersteuning toegevoegd voor bepaalde telemetriebeleidsregels
+
+De volgende telemetriebeleidsregels worden nu ondersteund op HoloLens 2:
+- ConfigureTelemetryOptInSettingsUx
+- DisableDeviceDelete
+- AllowDeviceNameInDiagnosticData
+- FeedbackHubAlwaysSaveDiagnosticsLocally
+
+Zowel System\AllowTelemetry als System\ConfigureTelemetryOptInSettingsUx moeten samen worden gebruikt om volledige controle te hebben over de telemetrie en het gedrag in de app Instellingen.
+
+We raden u aan onze nieuwste build, Windows Holographic versie 21H1, uit te proberen.
+
+## <a name="windows-holographic-version-1903---june-2021-update"></a>Windows Holographic, versie 1903 - update van juni 2021
+- Build 18362.1116
+
+Verbeteringen en oplossingen in de update:
+- Deze maandelijkse kwaliteitsupdate bevat geen belangrijke wijzigingen. We raden u aan onze nieuwste build, Windows Holographic, versie 21H1, uit te proberen.
+
+>[!IMPORTANT]
+> Deze build wordt niet meer in gebruik genomen.
 
 ## <a name="windows-holographic-version-21h1"></a>Windows Holographic, versie 21H1
 - Build 20346.1002
 
-Deze update bevat functies voor twee doelgroepen; functies die door iedereen op een apparaat kunnen worden gebruikt door de eindgebruiker en nieuwe opties voor apparaatbeheer die kunnen worden geconfigureerd door IT-beheerders. In de onderstaande tabel worden de functies opgegeven die relevant zijn voor elke doelgroep. Als u een IT-beheerder bent, kunt u onze [controlelijst voor IT-beheerders bekijken.](#it-admin---update-checklist)
+Deze update bevat functies voor twee doelgroepen; functies die door iedereen op een apparaat kunnen worden gebruikt door de eindgebruiker en nieuwe opties voor apparaatbeheer die kunnen worden geconfigureerd door IT-beheerders. In de onderstaande tabel worden de functies opgegeven die relevant zijn voor elke doelgroep. Als u een IT-beheerder bent, raadpleegt u onze controlelijst voor [IT-beheerders - Bijwerken.](#it-admin---update-checklist)
 >[!IMPORTANT]
->Als u wilt bijwerken naar deze build, moet op HoloLens 2-apparaten momenteel de update van februari 2021 (build 19041.1136) of hoger worden uitgevoerd. Als u deze functie-update niet beschikbaar ziet, moet u eerst uw apparaat bijwerken en het opnieuw proberen.
+>Als u wilt bijwerken naar deze build, HoloLens 2 op een of meer apparaten momenteel de update van februari 2021 (build 19041.1136) of nieuwer worden uitgevoerd. Als u deze functie-update niet beschikbaar ziet, moet u eerst uw apparaat bijwerken en het opnieuw proberen.
 
 >[!NOTE]
 >Momenteel ondersteunt Microsoft HoloLens 2 maandelijkse onderhoudsupdates (bug- en beveiligingsfixes) voor de volgende releases:
@@ -39,32 +114,32 @@ Deze update bevat functies voor twee doelgroepen; functies die door iedereen op 
 >- Windows Holographic, versie 2004 (build 19041.1103+)
 >- Windows Holographic, versie 1903 (build 18362+) 
 >
-> Met de introductie van Windows Holographic versie 21H1, worden er maandelijkse onderhoudsupdates **voor Windows Holographic versie 1903 uitgebracht.** Hierdoor kunnen we ons richten op recentere releases en waardevolle verbeteringen blijven leveren. 
+> Met de introductie van Windows Holographic-versie 21H1 worden er maandelijkse onderhoudsupdates voor Windows Holographic versie **1903 uitgebracht.** Hierdoor kunnen we ons richten op recentere releases en waardevolle verbeteringen blijven leveren. 
 
 
 | Functienaam                                              | Korte beschrijving                                                                      | Doelgroep | 
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
 | [Nieuwe Microsoft Edge](#introducing-the-new-microsoft-edge)  | De nieuwe, op Chromium gebaseerde Microsoft Edge is nu beschikbaar voor HoloLens 2. | Eindgebruiker | 
-[WebXR en 360 Viewer](#webxr-and-360-viewer) | Probeer immersive web experiences en 360 video's af te spelen. | Eindgebruiker | 
+[WebXR en 360 Viewer](#webxr-and-360-viewer) | Probeer in immersive web experiences en 360 video's af te spelen. | Eindgebruiker | 
 [Nieuwe app Instellingen](#new-settings-app) | De verouderde instellingen-app wordt vervangen door een bijgewerkte versie met nieuwe functies en instellingen. | Eindgebruiker |
-[Kleurenkleuren weergeven](#display-color-calibration) | Selecteer een alternatief kleurprofiel voor uw HoloLens 2 weergave. | Eindgebruiker |
-[Standaard app- kiezen](#default-app-picker) | Kies welke app moet worden starten voor elk bestands- of koppelingstype. | Eindgebruiker |
+[Kalibratie van kleur weergeven](#display-color-calibration) | Selecteer een alternatief kleurprofiel voor uw HoloLens 2 weergave. | Eindgebruiker |
+[Standaard app- kiezen](#default-app-picker) | Kies welke app moet worden gebruikt voor elk bestands- of koppelingstype. | Eindgebruiker |
 [Volumebeheer per app](#per-app-volume-control) | Beheer het volume op app-niveau onafhankelijk van het systeemvolume. | Eindgebruiker |
 [Web-apps installeren](#install-web-apps) | Installeer web-apps op HoloLens 2, zoals Microsoft Office, met de nieuwe Microsoft Edge browser. | Eindgebruiker |
-[Veeg om te typen](#swipe-to-type) | Gebruik de punt van uw vinger om woorden op het holografische toetsenbord te 'swipen'. | Eindgebruiker |
+[Veeg om te typen](#swipe-to-type) | Gebruik het topje van uw vinger om woorden op het holografische toetsenbord te 'swipen'. | Eindgebruiker |
 [Aan/uit-menu vanaf het startmenu](#power-menu-from-start) | Start het HoloLens-apparaat opnieuw op en sluit het af in het menu Start. | Eindgebruiker |
 [Meerdere gebruikers die worden vermeld op het aanmeldingsscherm](#multiple-users-listed-on-sign-in-screen) | Meerdere gebruikersaccounts weergeven op het scherm Aanmelden. | Eindgebruiker |
 [Ondersteuning voor externe USB-C-microfoon](#usb-c-external-microphone-support) | USB-C-microfoons gebruiken voor apps en/of Remote Assist. | Eindgebruiker |
-[Automatische aanmelding van bezoekers voor kiosken](#visitor-auto-logon-for-kiosks) | Hiermee schakelt u in dat de automatische aanmelding bij Bezoekersaccounts kan worden gebruikt voor kioskmodi. | IT-beheerder |
+[Automatische aanmelding van bezoekers voor kiosken](#visitor-auto-logon-for-kiosks) | Hiermee schakelt u in dat de automatische aanmelding bij bezoekersaccounts kan worden gebruikt voor kioskmodi. | IT-beheerder |
 [Nieuwe AUMID's voor nieuwe apps in kioskmodus](#use-the-new-settings-and-edge-apps-in-kiosk-modes)  | AUMID's voor nieuwe instellingen en Edge-apps. | IT-beheerder |
 [Verbeterde fout bij het in de kioskmodus geven](#kiosk-mode-behavior-changes-for-handling-of-failures) | De kioskmodus zoekt naar Algemene toegewezen toegang voordat het menu Start leeg is. | IT-beheerder |
-[Nieuwe InstellingenURI's voor zichtbaarheid van pagina-instellingen](#new-settings-uris-for-page-settings-visibility) | 20+ nieuwe SettingsURIs for Settings/PageVisibilityList policy. | IT-beheerder |
+[Nieuwe instellingen-API's voor zichtbaarheid van pagina-instellingen](#new-settings-uris-for-page-settings-visibility) | 20+ nieuwe SettingsURIs for Settings/PageVisibilityList policy. | IT-beheerder |
 [Terugvaldiagnose configureren](#configuring-fallback-diagnostics-via-settings-app) | Terugvaldiagnosegedrag instellen in de app Instellingen. | IT-beheerder |
-[Dingen delen met apparaten in de buurt](#share-things-with-nearby-devices) | Bestanden of URL's van een HoloLens delen met een pc. | Alles |
+[Dingen delen met apparaten in de buurt](#share-things-with-nearby-devices) | Deel bestanden of URL's van een HoloLens naar een pc. | Alles |
 [Nieuwe diagnostische traceringen van het besturingssysteem](#new-os-diagnostic-traces) | Nieuwe probleemoplosser in Instellingen voor updates van het besturingssysteem. | IT-beheerder |
-[Delivery Optimization Preview](#delivery-optimization-preview) | Verminder het bandbreedteverbruik voor downloads van meerdere HoloLens-apparaten. | IT-beheerder |
+[Delivery Optimization Preview](#delivery-optimization-preview) | Verminder het bandbreedteverbruik voor downloads vanaf meerdere HoloLens-apparaten. | IT-beheerder |
 
-Bekijk de opmerkingen bij de release:
+Bekijk de gerelateerde opmerkingen bij de release:
 
 - [Ga naar het HoloLens Emulator-archief](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)
 - [Dynamics 365 Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/version-history-remote-assist-hololens)
@@ -74,19 +149,19 @@ Bekijk de opmerkingen bij de release:
 
 ![Animatie van verouderd Microsoft Edge logo naar nieuw Microsoft Edge logo](images/new-edge.gif)
 
-De nieuwe Microsoft Edge maakt gebruik van [het Chromium open source-project](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) om betere compatibiliteit voor klanten en minder fragmentatie van het web voor webontwikkelaars te creëren.
+De nieuwe Microsoft Edge maakt gebruik van het [Chromium open source-project](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) voor betere compatibiliteit voor klanten en minder fragmentatie van het web voor webontwikkelaars.
 
 > [!IMPORTANT]
-> Deze nieuwe Microsoft Edge vervangt automatisch verouderde Microsoft Edge, die [niet](https://blogs.windows.com/msedgedev/2021/03/09/microsoft-edge-legacy-end-of-support/) meer wordt ondersteund in nieuwe releases.
+> Deze nieuwe Microsoft Edge vervangt automatisch verouderde Microsoft Edge, die [niet meer wordt ondersteund](https://blogs.windows.com/msedgedev/2021/03/09/microsoft-edge-legacy-end-of-support/) in nieuwe releases.
 
-![Schermopname van Microsoft Edge nieuwe afbeelding](images/new-edge-ui.png)
+![Schermopname Microsoft Edge nieuwe afbeelding](images/new-edge-ui.png)
 
 #### <a name="launching-the-new-microsoft-edge"></a>De nieuwe Microsoft Edge
 
-Het nieuwe Microsoft Edge ![pictogram nieuwe Microsoft Edge](images/new_edge_logo.png) (vertegenwoordigd door een blauw en groen pictogram) wordt vastgemaakt aan de Startmenu en wordt automatisch geactiveerd wanneer u een webkoppeling activeert.
+De nieuwe Microsoft Edge ![pictogram nieuwe Microsoft Edge](images/new_edge_logo.png) (vertegenwoordigd door een blauw en groen pictogram) wordt vastgemaakt aan de Startmenu en wordt automatisch geactiveerd wanneer u een webkoppeling activeert.
 
 > [!NOTE]
-> Wanneer u de nieuwe Microsoft Edge voor HoloLens 2 start, worden uw instellingen en gegevens geïmporteerd uit verouderde Microsoft Edge. Als u verouderde Microsoft Edge blijft gebruiken na het starten van de nieuwe Microsoft Edge, worden die nieuwe gegevens niet gesynchroniseerd van verouderde Microsoft Edge naar de nieuwe Microsoft Edge.
+> Wanneer u de nieuwe Microsoft Edge op HoloLens 2 start, worden uw instellingen en gegevens geïmporteerd uit verouderde Microsoft Edge. Als u verouderde Microsoft Edge blijft gebruiken na het starten van de nieuwe Microsoft Edge, worden die nieuwe gegevens niet gesynchroniseerd van verouderde Microsoft Edge naar de nieuwe Microsoft Edge.
 
 #### <a name="configuring-policy-settings-for-the-new-microsoft-edge"></a>Beleidsinstellingen configureren voor de nieuwe Microsoft Edge
 
@@ -94,8 +169,8 @@ De nieuwe Microsoft Edge biedt IT-beheerders een veel bredere set browserbeleids
 
 Hier vindt u nuttige informatiebronnen voor meer informatie over het beheren van beleidsinstellingen voor de Microsoft Edge:
 
-- [Beleidsinstellingen Microsoft Edge configureren met Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune)
-- [Microsoft Edge (oudere versie) voor Microsoft Edge toewijzen van beleid](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
+- [De Microsoft Edge configureren met Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune)
+- [Microsoft Edge (oudere versie) om Microsoft Edge te maken](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
 - [Google Chrome voor het Microsoft Edge van beleid](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
 - Volledige [Microsoft Edge Enterprise-documentatie](https://docs.microsoft.com/deployedge/)
 
@@ -140,7 +215,7 @@ Omdat de nieuwe Microsoft Edge een native Win32-app is met een nieuwe UWP-adapte
 
 Het Microsoft Edge team maakt drie preview-kanalen beschikbaar voor de Edge Insider-community: Beta, Dev en Canary. Als u een preview-kanaal installeert, wordt de uitgebrachte versie van Microsoft Edge niet verwijderd op uw HoloLens 2 en kunt u er meer dan één tegelijk installeren. 
 
-Ga naar [de Microsoft Edge Insider voor](https://www.microsoftedgeinsider.com) meer informatie over de Edge Insider-community. Ga naar de edge [Insider-downloadpagina](https://www.microsoftedgeinsider.com/download)voor meer informatie over de verschillende Edge Insider-kanalen en om aan de slag te gaan.
+Ga naar [de Microsoft Edge Insider voor](https://www.microsoftedgeinsider.com) meer informatie over de Edge Insider-community. Ga naar de Edge [Insider-downloadpagina](https://www.microsoftedgeinsider.com/download)voor meer informatie over de verschillende Edge Insider-kanalen en om aan de slag te gaan.
 
 Er zijn een aantal methoden beschikbaar voor het installeren van Microsoft Edge Insider-kanalen om HoloLens 2:
 
@@ -148,16 +223,16 @@ Er zijn een aantal methoden beschikbaar voor het installeren van Microsoft Edge 
   1. Ga op HoloLens 2 pagina naar de [Edge Insider-downloadpagina.](https://www.microsoftedgeinsider.com/download)
   1. Selecteer de **knop Downloaden HoloLens 2** voor het Edge Insider-kanaal dat u wilt installeren.
   1. Start het gedownloade MSIX-bestand vanuit de Edge-downloadwachtrij of vanuit de map Downloads van uw apparaat (met behulp van Verkenner).
-  1. [Het app-installatieprogramma](app-deploy-app-installer.md) wordt starten.
+  1. [Het installatieprogramma](app-deploy-app-installer.md) voor de app wordt start.
   1. Selecteer de **knop** Installeren.
   1. Nadat de installatie is geslaagd, vindt u Microsoft Edge Beta, Dev of  Canary als een afzonderlijke vermelding in de Alle apps lijst van de Startmenu.
 
 **Installeren via pc met Windows Apparaatportal (hiervoor moet [de](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) ontwikkelaarsmodus zijn ingeschakeld op HoloLens 2)**
-  1. Ga op uw pc naar de [downloadpagina van Edge Insider.](https://www.microsoftedgeinsider.com/download)
-  1. Selecteer de **vervolgkeuzepijl** naast de knop 'Downloaden voor Windows 10' voor het Edge Insider-kanaal dat u wilt installeren.
+  1. Ga op uw pc naar de [Edge Insider-downloadpagina.](https://www.microsoftedgeinsider.com/download)
+  1. Selecteer de **vervolgkeuzepijl** naast de knop Downloaden voor Windows 10 voor het Edge Insider-kanaal dat u wilt installeren.
   1. Selecteer **HoloLens 2** in de vervolgkeuzelijst.
   1. Sla het MSIX-bestand op in de map Downloads van uw pc (of een andere map die u gemakkelijk kunt vinden).
-  1. Gebruik [Windows Apparaatportal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) op uw pc om het gedownloade MSIX-bestand te installeren op HoloLens 2.
+  1. Gebruik [Windows Apparaatportal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) op uw pc om het gedownloade MSIX-bestand op uw HoloLens 2.
   1. Nadat de installatie is geslaagd, vindt u Microsoft Edge Beta, Dev of  Canary als een afzonderlijke vermelding in de Alle apps lijst van de Startmenu.
 
 #### <a name="using-wdac-to-block-new-microsoft-edge"></a>WDAC gebruiken om nieuwe Microsoft Edge
@@ -170,27 +245,27 @@ IT-beheerders die hun [WDAC-beleid](windows-defender-application-control-wdac.md
 
 Sommige omgevingen hebben mogelijk netwerkbeperkingen om rekening mee te houden als overweging. Schakel deze Microsoft-eindpunten in om een soepele ervaring met de nieuwe [Edge te garanderen.](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints)
 
-Lees meer over de momenteel beschikbare [eindpunten voor HoloLens](hololens-offline.md).
+Meer informatie over de momenteel beschikbare [eindpunten voor HoloLens](hololens-offline.md).
 
 ### <a name="install-web-apps"></a>Web-apps installeren
  > [!Note]
 >Vanaf [Windows Holographic, versie 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)wordt de Office-web-app niet meer vooraf geïnstalleerd.
 
-U kunt de nieuwe Edge gebruiken om web-apps te installeren naast Microsoft Store apps. U kunt bijvoorbeeld de web-app Microsoft Office om bestanden weer te geven en te bewerken die worden gehost op SharePoint of OneDrive. Als u de Office-web-app wilt installeren, gaat u naar en selecteert u de knop https://www.office.com **App beschikbaar** of **Office** installeren in de adresbalk. Selecteer **Installeren om** te bevestigen.
+U kunt de nieuwe Edge gebruiken om web-apps naast de Microsoft Store installeren. U kunt bijvoorbeeld de web-app Microsoft Office om bestanden weer te geven en te bewerken die worden gehost op SharePoint of OneDrive. Als u de Office-web-app wilt installeren, gaat u naar en selecteert u de knop App beschikbaar of https://www.office.com **Office** installeren in de adresbalk.  Selecteer **Installeren om** te bevestigen.
 
 > [!IMPORTANT]
 > Office-web-app-functionaliteit is alleen beschikbaar wanneer uw HoloLens 2 een actieve internetverbinding heeft.
 
 ### <a name="webxr-and-360-viewer"></a>WebXR en 360 Viewer
 
-De nieuwe Microsoft Edge biedt ondersteuning voor WebXR, de nieuwe standaard voor het maken van in immersive web experiences (het vervangen van WebVR). Veel in immersieve webervaringen zijn ontworpen met VR in gedachten (ze vervangen uw weergaveveld door een virtuele omgeving), maar deze ervaringen worden ook ondersteund door HoloLens 2. De WebXR-standaard biedt ook uitgebreide en mixed reality ingebouwde webervaringen die gebruikmaken van uw fysieke omgeving. Naarmate ontwikkelaars meer tijd besteden aan WebXR, verwachten we dat er nieuwe uitgebreide en mixed reality ervaring voor klanten HoloLens 2 om te proberen.
+De nieuwe Microsoft Edge biedt ondersteuning voor WebXR, de nieuwe standaard voor het maken van in immersieve webervaringen (waarbij WebVR wordt vervangen). Veel ingebouwde webervaringen zijn ontworpen met VR in gedachten (ze vervangen uw weergaveveld door een virtuele omgeving), maar deze ervaringen worden ook ondersteund door HoloLens 2. De WebXR-standaard biedt ook uitgebreide en mixed reality ingebouwde webervaringen die gebruikmaken van uw fysieke omgeving. Omdat ontwikkelaars meer tijd besteden aan WebXR, verwachten we dat er nieuwe uitgebreide en mixed reality-ervaringen zullen worden HoloLens 2 klanten kunnen uitproberen.
 
-De 360 Viewer-extensie is gebaseerd op WebXR en wordt automatisch geïnstalleerd naast de nieuwe Microsoft Edge op HoloLens 2. Deze webextensie biedt u de mogelijkheid om uzelf te verdiepen in video's van 360 graden. YouTube biedt de grootste selectie van 360 video's. Daarom raden we u aan om daar te beginnen.
+De 360 Viewer-extensie is gebouwd op WebXR en wordt automatisch geïnstalleerd naast de nieuwe Microsoft Edge op HoloLens 2. Met deze webextensie kunt u zich in een video van 360 graden verdiepen. YouTube biedt de grootste selectie van 360 video's. Daarom raden we u aan om daar te beginnen.
 
 #### <a name="how-to-use-webxr"></a>WebXR gebruiken
 
 1. Navigeer naar een website met WebXR-ondersteuning.
-1. Selecteer de **knop VR** invoeren op de website. De locatie en visuele weergave van deze knop kunnen per website verschillen, maar kunnen er ongeveer als de volgende uitzien:
+1. Selecteer de **knop VR invoeren** op de website. De locatie en visuele weergave van deze knop kunnen per website verschillen, maar kunnen er ongeveer als de volgende uitzien:
 
     ![Voorbeeld van een VR-knop invoeren](images/75px-enter-vr.png)
 
@@ -200,7 +275,7 @@ De 360 Viewer-extensie is gebaseerd op WebXR en wordt automatisch geïnstalleerd
 
 **Aanbevolen WebXR-voorbeelden**
 - 360 Viewer (zie de volgende sectie)
-- [XR- Ens](https://www.xrdinosaurs.com/)
+- [XR-](https://www.xrdinosaurs.com/)
 - [Barista Express](https://constructarca.de/game/barista-express/)
 - [WebXR Paint](https://threejs.org/examples/webxr_vr_paint.html)
 
@@ -209,13 +284,13 @@ De 360 Viewer-extensie is gebaseerd op WebXR en wordt automatisch geïnstalleerd
 1. Navigeer naar een video van 360 graden op YouTube.
 1. Selecteer in het videoframe de knop mixed reality headset:
 
-    ![Knop voor het activeren van 360 Viewer](images/enter-360-viewer.jpg)
+    ![Knop om 360 Viewer te activeren](images/enter-360-viewer.jpg)
 
 1. De eerste keer dat u 360 Viewer op een specifiek domein probeert te starten, wordt in de browser om toestemming gevraagd om een in immersieve weergave in te voeren. selecteer **Toestaan**.
 1. [Tik in de lucht](hololens2-basic-usage.md#select-using-air-tap) om de afspeelbesturingselementen weer te brengen. Gebruik [handfoto's](hololens2-basic-usage.md#select-using-air-tap) en tikken in de lucht om af te spelen/onderbreken, vooruit/terug te gaan, bijschriften in/uit te schakelen of de ervaring te stoppen (waardoor de in immersieve weergave wordt afgesloten). De afspeelbesturingselementen verdwijnen na een paar seconden inactiviteit.
 
 #### <a name="top-webxr-and-360-viewer-known-issues"></a>Meest bekende problemen met WebXR en 360 Viewer
-- Afhankelijk van de complexiteit van de WebXR-ervaring, kan de framesnelheid neerzetten of stutteren.
+- Afhankelijk van de complexiteit van de WebXR-ervaring, kan de framerate worden verwijderd of gesutterd.
 - Ondersteuning voor verwoorde handjes in WebXR is niet standaard ingeschakeld. Ontwikkelaars kunnen ondersteuning inschakelen via `edge://flags` door 'WebXR Hand Input' in te stellen.
 - 360 video's van andere websites dan YouTube werken mogelijk niet zoals verwacht.
 
@@ -225,7 +300,7 @@ Deel feedback en fouten met ons team via de functie **Feedback** verzenden in de
 
 ### <a name="new-settings-app"></a>Nieuwe app Instellingen
 
-In deze release introduceren we een nieuwe versie van de app Instellingen. De nieuwe app Instellingen bevat nieuwe functies en uitgebreide instellingen voor HoloLens 2 in de volgende gebieden: Geluid, De slaapstand van Power &, Network & Internet, Apps, Accounts, Toegankelijkheid en meer.
+Met deze release introduceren we een nieuwe versie van de app Instellingen. De nieuwe app Instellingen bevat nieuwe functies en uitgebreide instellingen voor HoloLens 2 in de volgende gebieden: Geluid, Power &-slaapstand, Network & Internet, Apps, Accounts, Toegankelijkheid en meer.
 
 > [!NOTE]
 > Omdat de nieuwe app Instellingen verschilt van de verouderde app Instellingen, worden alle instellingenvensters die u eerder in uw omgeving hebt geplaatst, verwijderd bij het bijwerken.
@@ -235,28 +310,28 @@ In deze release introduceren we een nieuwe versie van de app Instellingen. De ni
 **Nieuwe functies en instellingen**
 - Zoeken naar instellingen: zoek naar instellingen op de startpagina Instellingen met behulp van trefwoorden of de naam van de instelling.
 - System > Sound:
-  - Audioapparaten voor invoer en uitvoer: kies onafhankelijk uw invoer- en uitvoerapparaten (bijvoorbeeld luisteren naar audio via Bluetooth-hoofdtelefoon of gebruik een USB-C-microfoon voor audio-invoer).
+  - Audioapparaten voor invoer en uitvoer: kies onafhankelijk van elkaar uw invoer- en uitvoer audioapparaten (bijvoorbeeld luisteren naar audio via Bluetooth-microfoons of een USB-C-microfoon gebruiken voor audio-invoer).
     > [!NOTE]
     > Bluetooth-microfoons worden niet ondersteund door HoloLens 2.
   - App-volume: pas het volume van elke app onafhankelijk aan. Zie [volumebeheer per app.](#per-app-volume-control)
-- Systeem> Slaapstand &: kies wanneer het apparaat na een periode van inactiviteit in de slaapstand moet gaan.
-- Systeem> batterij: schakel handmatig de batterijbesparing in of stel een drempelwaarde voor de accu in op welk punt batterijbesparing modus automatisch wordt ingeschakeld.
+- Systeem> slaapstand &: kies wanneer het apparaat na een periode van inactiviteit in de slaapstand moet gaan.
+- Systeem> batterij: schakel handmatig de batterijbesparing in of stel een accudrempel in op welk punt batterijbesparing modus automatisch wordt ingeschakeld.
 - Apparaten > USB: u kunt USB-verbindingen standaard uitschakelen.
 - Netwerkverbinding & internet:
-  - USB-C Ethernet-adapters worden nu weergegeven in Network & Internet.
-  - Instellingen voor USB-C Ethernet-adapter zijn nu beschikbaar, met inbegrip van het IP-adres.
+  - USB-C Ethernet-adapters worden nu weergegeven in & Internet.
+  - Usb-C Ethernet-adapterinstellingen zijn nu beschikbaar, met inbegrip van het IP-adres.
   - U kunt nu de vliegtuigmodus inschakelen op HoloLens 2.
-- Apps: u kunt de standaardapps die worden gebruikt voor bestands- en koppelingstypen opnieuw instellen. Zie Standaard [app- kiezen voor meer informatie.](#default-app-picker)
+- Apps: u kunt de standaardapps die worden gebruikt voor bestands- en koppelingstypen opnieuw instellen. Zie Standaard [app- picker voor meer informatie.](#default-app-picker)
 - Accounts > andere gebruikers: apparaateigenaren kunnen gebruikers toevoegen, standaardgebruikers upgraden naar apparaateigenaren, apparaateigenaren downgraden naar standaardgebruikers en gebruikers verwijderen.
-- Toegankelijkheid: de grootte van de tekst en enkele visuele effecten wijzigen.
+- Toegankelijkheid: wijzig de tekstgrootte en enkele visuele effecten.
 
 **Bekende problemen**
-- Eerder geplaatste instellingenvensters worden verwijderd (zie opmerking hierboven).
-- U kunt de naam van uw apparaat niet meer wijzigen met de app Instellingen. IT-beheerders kunnen de naam van apparaten wijzigen met behulp van de [Windows Autopilot](https://docs.microsoft.com/hololens/hololens2-autopilot) voor HoloLens 2-apparaatnaamsjabloon of het knooppunt MDM [DevDetail CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName.
+- Eerder geplaatste vensters Instellingen worden verwijderd (zie opmerking hierboven).
+- U kunt de naam van uw apparaat niet meer wijzigen met de app Instellingen. IT-beheerders kunnen de naam van apparaten wijzigen met behulp van de [sjabloon Windows Autopilot](https://docs.microsoft.com/hololens/hololens2-autopilot) voor HoloLens 2-apparaatnaam of het knooppunt MDM [DevDetail CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName.
 - Op de Ethernet-pagina wordt te allen tijde een virtueel Ethernet-apparaat (UsbNcm) weergegeven.
-- Accugebruik voor de nieuwe Microsoft Edge mogelijk niet nauwkeurig, vanwege de aard van een Win32-desktoptoepassing die wordt ondersteund door een UWP-adapterlaag (naar verwachting binnenkort geen oplossing).
+- Het accugebruik voor de nieuwe Microsoft Edge mogelijk niet nauwkeurig, vanwege de aard ervan als een Win32-desktoptoepassing die wordt ondersteund door een UWP-adapterlaag (er wordt binnenkort geen oplossing verwacht).
 
-#### <a name="display-color-calibration"></a>Kalibratie van kleur weergeven
+#### <a name="display-color-calibration"></a>Kleurenkleuren weergeven
 
 
 
@@ -309,9 +384,9 @@ Als u Altijd kiest, maar later wilt wijzigen welke app een bepaald bestands- of 
 
 In deze Windows-build kunnen gebruikers nu handmatig het volumeniveau van elke app aanpassen. Hierdoor kunnen gebruikers zich beter richten op de apps die ze nodig hebben, of beter horen wanneer ze meerdere apps gebruiken. Bijvoorbeeld wanneer u het volume van de ene app moet in- of uitroepen terwijl een andere persoon wordt aanroept voor hulp op afstand in een andere app.
 
-Als u het volume van een afzonderlijke app wilt instellen, gaat u naar **Instellingen** Systeemgeluid en selecteert u onder Geavanceerde geluidsopties de optie  ->    ->   **App-volume en apparaatvoorkeuren.**
+Als u het volume van een afzonderlijke app wilt instellen, gaat u naar **Instellingen** Systeemgeluid en selecteert u onder Geavanceerde geluidsopties de optie  ->    ->   **App-volume en apparaatvoorkeuren.**<br/><br/>
 
- <img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
+<img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
 
 #### <a name="swipe-to-type"></a>Veeg om te typen
 
@@ -327,13 +402,13 @@ Een nieuw menu waarmee de gebruiker zich kan af- en afsluiten en het apparaat op
 
 1. Open de HoloLens-Startscherm met behulp van [de beweging Start](hololens2-basic-usage.md#start-gesture) of zeg 'Ga naar start'.
 
-2. Let op het beletselteken (...) naast de afbeelding van het gebruikersprofiel:
+2. Let op het beletselteken (...) naast de afbeelding van het gebruikersprofiel:<br/><br/>
 
    <img alt="ser context dots, ..." src="./images/powertransition_icon_default_cropped.png" width="586" height="330" />
 
 3. Selecteer de afbeelding van het gebruikersprofiel met behulp van uw handen of de spraakopdracht 'Power'.
 
-4. Er wordt een menu weergegeven met opties om het apparaat af te melden, opnieuw op te starten of af te sluiten:
+4. Er wordt een menu weergegeven met opties om het apparaat af te melden, opnieuw op te starten of af te sluiten:<br/><br/>
 
    <img alt="User context menu" src="./images/powertransition_aad_options_cropped.png" width="586" height="330" />
 
@@ -417,24 +492,24 @@ Automatische aanmelding van bezoekers kan worden beheerd via aangepast [OMA-URI-
 
 | Beleid  | Beschrijving   | Configuraties  |
 |---|---|---|
-| MixedReality/BezoekersAutoLogon  | Hiermee kan een bezoekers zich automatisch bij een kiosk laten aanmeldingen   | 1 (Ja), 0 (Nee, standaardinstelling.)  |
+| MixedReality/VisitorAutoLogon  | Hiermee kan een bezoekers zich automatisch bij een kiosk laten aanmeldingen   | 1 (Ja), 0 (Nee, standaard.)  |
 
 ### <a name="use-the-new-settings-and-edge-apps-in-kiosk-modes"></a>De nieuwe instellingen en Edge-apps gebruiken in kioskmodi
 
 Bij het toevoegen van apps in [kiosken](hololens-kiosk.md)voegt een IT-beheerder de app vaak toe aan de kiosk, maar gebruikt deze de AUMID (App User Model ID). Omdat zowel de app Instellingen als de Microsoft Edge-app worden beschouwd als nieuwe apps en anders dan de oudere apps, moeten kiosken die gebruikmaken van AUMID's voor deze apps worden bijgewerkt om de nieuwe AUMID te kunnen gebruiken.
 
-Wanneer u een Kiosk wijzigt om de nieuwe apps op te nemen, raden we u aan om de nieuwe AUMID toe te voegen en de oude te verlaten. Dit zorgt voor een eenvoudige overgang wanneer gebruikers het besturingssysteem bijwerken en geen nieuw beleid hoeven te ontvangen om de Kiosk te blijven gebruiken zoals bedoeld.
+Wanneer u een Kiosk wijzigt om de nieuwe apps op te nemen, raden we u aan om de nieuwe AUMID toe te voegen en de oude te laten staan. Hierdoor wordt een eenvoudige overgang gemaakt wanneer gebruikers het besturingssysteem bijwerken en hoeven ze geen nieuw beleid te ontvangen om de Kiosk te blijven gebruiken zoals bedoeld.
 
 | App                    | AUMID                                                  |
 |------------------------|--------------------------------------------------------|
 | Oude instellingen-app       | HolographicSystemSettings_cw5n1h2txyewy! App            |
-| Nieuwe instellingen-app       | BAEAEF15-9ILE-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy! App |
-| Oude Microsoft Edge app | Microsoft.MicrosoftEdge_8wekyb3d8bbwe! MicrosoftEdge    |
+| Nieuwe instellingen-app       | BAEAEF15-9KIND-47FC-800B-ACECAD2AE94B_cw5n1h2txyewy! App |
+| Oude Microsoft Edge-app | Microsoft.MicrosoftEdge_8wekyb3d8bbwe! MicrosoftEdge    |
 | Nieuwe Microsoft Edge app | Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe! MSEDGE    |
 
 ### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>Wijzigingen in het gedrag van de kioskmodus voor het afhandelen van fouten
 
-Als een apparaat in oudere builds een kioskconfiguratie heeft, een combinatie van zowel globale toegewezen toegang als door een AAD-groepslid[](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)toegewezen toegang, ziet de gebruiker niets in het menu Start als het bepalen van het AAD-groepslidmaatschap is mislukt.
+Als een apparaat in oudere builds een kioskconfiguratie heeft, wat een combinatie is van zowel globale toegewezen toegang als door een AAD-groepslid toegewezen toegang, ziet de gebruiker niets in het menu Start als het bepalen van het AAD-groepslidmaatschap is mislukt.[](https://docs.microsoft.com/hololens/hololens-kiosk#kiosk-mode-behavior-changes-for-handling-of-failures)
 
 Vanaf deze Windows-versie valt de kioskervaring terug op de algemene kioskconfiguratie (indien aanwezig) in het geval van storingen tijdens de kioskmodus van de AAD-groep.
 
@@ -444,12 +519,12 @@ In [Windows Holographic, versie 20H2,](hololens-release-notes.md#windows-hologra
 
 Als u Zichtbaarheid [van pagina-instellingen bezoekt,](settings-uri-list.md)vindt u instructies voor het gebruik van deze CSP en de lijst met URI's die beschikbaar zijn in eerdere versies.
 
-We gaan verder met de lijst met beschikbare instellingen-URI's die IT-beheerders kunnen beheren. Sommige van deze URI's zijn voor nieuw beschikbare gebieden binnen de nieuwe app Instellingen. Als u het beleid Settings/PageVisibilityList gebruikt, bekijkt u de volgende lijst en past u de toegestane of geblokkeerde pagina's zo nodig aan.
+We gaan verder met de lijst met beschikbare instellingen-URI's die IT-beheerders kunnen beheren. Sommige van deze URI's zijn voor nieuw beschikbare gebieden in de nieuwe app Instellingen. Als u het beleid Instellingen/PaginaVisibilityList gebruikt, bekijkt u de volgende lijst en past u de toegestane of geblokkeerde pagina's zo nodig aan.
 
 > [!NOTE]
 > **Afgeschaft: ms-settings:network-proxy**
 >
-> Eén instellingenpagina is afgeschaft in deze nieuwere builds. De oude **pagina &**  >  **internetproxy** is niet meer beschikbaar als algemene instelling. De nieuwe proxyinstellingen per verbinding vindt u onder **Network & Internet**  >  **Wi-Fi** Properties of Network &  >   **Internet**  >  **Ethernet**  >  **Properties**.
+> Eén instellingenpagina is afgeschaft in deze nieuwere builds. De oude **pagina &**  >  **internetproxy** is niet meer beschikbaar als globale instelling. De nieuwe proxyinstellingen per verbinding vindt u onder **Network & Internet**  >  **Wi-Fi** Properties of Network &  >   **Internet**  >  **Ethernet**  >  **Properties**.
 
 <br>
 
@@ -459,36 +534,36 @@ We gaan verder met de lijst met beschikbare instellingen-URI's die IT-beheerders
 | Apps > Apps & functies > Geavanceerde opties          | `ms-settings:appsfeatures-app`                     |
 | Apps > Offline-kaarten                                  | `ms-settings:maps`                                 |
 | Apps > Offline-kaarten > Download-kaarten                  | `ms-settings:maps-downloadmaps`                    |
-| Apparaten > muis                                      | `ms-settings:mouse`                                |
+| Apparaten > Muis                                      | `ms-settings:mouse`                                |
 | Apparaten > USB                                        | `ms-settings:usb`                                  |
 | Netwerkverbinding & internet > vliegtuigmodus                   | `ms-settings:network-airplanemode`                 |
 | Privacy > Algemeen                                    | `ms-settings:privacy-general`                      |
-| Privacy-> Ink-& persoonlijke instellingen te typen             | `ms-settings:privacy-speechtyping`                 |
+| Privacy-> Ink-& te typen             | `ms-settings:privacy-speechtyping`                 |
 | Privacy > Motion                                     | `ms-settings:privacy-motion`                       |
-| Privacy-> Schermopnamegrenzen                         | `ms-settings:privacy-graphicsCaptureWithoutBorder` |
-| Privacy-> schermopnamen en apps                       | `ms-settings:privacy-graphicsCaptureProgrammatic`  |
-| Systeem-> batterij                                     | `ms-settings:batterysaver`                         |
-| Systeem-> batterij                                     | `ms-settings:batterysaver-settings`                |
-| Systeemgeluid > geluid                                       | `ms-settings:sound`                                |
+| Privacy-> Schermopname van randen                         | `ms-settings:privacy-graphicsCaptureWithoutBorder` |
+| Privacy > schermopnamen en apps                       | `ms-settings:privacy-graphicsCaptureProgrammatic`  |
+| Systeem > batterij                                     | `ms-settings:batterysaver`                         |
+| Systeem > batterij                                     | `ms-settings:batterysaver-settings`                |
+| System > Sound                                       | `ms-settings:sound`                                |
 | System > Sound > App-volume en apparaatvoorkeuren | `ms-settings:apps-volume`                          |
 | System > Sound > Geluidsapparaten beheren              | `ms-settings:sound-devices`                        |
 | System > Storage > Configureren Opslaginzicht         | `ms-settings:storagepolicies`                      |
 | Time & Language > Date & time                        | `ms-settings:dateandtime`                          |
-| Time & Language > Keyboard                           | `ms-settings:keyboard`                             |
+| Time & Language > Toetsenbord                           | `ms-settings:keyboard`                             |
 | Time & Language > Language                           | `ms-settings:language`                             |
 | Time & Language > Language                           | `ms-settings:regionlanguage-languageoptions`       |
 | Beveiligingsbeleid & opnieuw > herstellen & bijwerken               | `ms-settings:reset`                                |
 
 #### <a name="updated-uris"></a>Bijgewerkte URI's
 
-Voorheen zouden de volgende twee URI's een gebruiker niet rechtstreeks naar de aangegeven pagina's laten gaan, maar alleen de hoofdupdatepagina blokkeren. De volgende items zijn bijgewerkt om naar de pagina's te gaan:
+Voorheen zouden de volgende twee URI's een gebruiker niet rechtstreeks naar de aangegeven pagina's laten gaan, maar alleen de hoofdupdatepagina blokkeren. De volgende items zijn bijgewerkt om naar hun pagina's te gaan:
 
 - `ms-settings:windowsupdate-options`
 - `ms-settings:windowsupdate-restartoptions`
 
 ### <a name="configuring-fallback-diagnostics-via-settings-app"></a>Terugvaldiagnose configureren via de app Instellingen
 
-In de app Instellingen kan een gebruiker nu het gedrag van [Fallback Diagnostics configureren.](hololens-diagnostic-logs.md) Navigeer in de app Instellingen naar **de pagina**  ->  **Privacyproblemen** oplossen om deze instelling te configureren.
+In de app Instellingen kan een gebruiker nu het gedrag van [Terugvaldiagnose configureren.](hololens-diagnostic-logs.md) Navigeer in de app Instellingen naar **de pagina**  ->  **Privacyproblemen** oplossen om deze instelling te configureren.
 
 > [!NOTE]
 > Als er MDM-beleid is geconfigureerd voor het apparaat, kan de gebruiker dat gedrag niet overschrijven.  
@@ -505,7 +580,7 @@ Naast de vorige probleemoplossers in de app Instellingen is er een nieuwe proble
 
 ### <a name="delivery-optimization-preview"></a>Delivery Optimization Preview
 
-Met deze HoloLens-update maakt Windows Holographic for Business delivery optimization-instellingen mogelijk om het bandbreedteverbruik voor downloads van meerdere HoloLens-apparaten te verminderen. Een volledige beschrijving van deze functionaliteit en de aanbevolen netwerkconfiguratie is hier beschikbaar: Delivery Optimization [voor Windows 10 updates.](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
+Met deze HoloLens-update maakt Windows Holographic for Business delivery optimization-instellingen mogelijk om het bandbreedteverbruik voor downloads van meerdere HoloLens-apparaten te verminderen. U kunt hier een volledige beschrijving van deze functionaliteit en de aanbevolen netwerkconfiguratie vinden: Delivery Optimization [voor Windows 10 updates.](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 
 De volgende instellingen zijn ingeschakeld als onderdeel van het beheeroppervlak en [kunnen worden geconfigureerd vanuit Intune:](https://docs.microsoft.com/mem/intune/configuration/delivery-optimization-settings)
 
@@ -526,25 +601,25 @@ Enkele waarschuwingen over deze preview-aanbieding:
 - HoloLens-ondersteuning is in deze preview beperkt tot alleen updates van het besturingssysteem.
 - Windows Holographic for Business ondersteunt alleen HTTP-downloadmodi en downloads van een [Microsoft Verbonden cache-eindpunt;](https://docs.microsoft.com/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) Peer-to-peer downloadmodi en groepstoewijzingen worden momenteel niet ondersteund voor HoloLens-apparaten.
 - HoloLens biedt geen ondersteuning voor implementatie of delivery optimization voor Windows Server Update Services eindpunten.
-- Voor het oplossen van problemen zijn diagnostische gegevens op de Verbonden cache-server of het verzamelen van een trace op HoloLens op HoloLens vereist via  >  **InstellingenUpdate & Security**  >   **Troubleshooting**  >   **Windows Update**.
+- Voor het oplossen van problemen zijn diagnostische gegevens vereist op de Verbonden cache-server of het verzamelen van een trace op HoloLens op HoloLens via  >  **InstellingenUpdate & Security**  >   **Troubleshooting**  >   **Windows Update**.
 
 ### <a name="it-admin---update-checklist"></a>IT-beheerder - Controlelijst voor bijwerken
 
-Deze controlelijst helpt u de nieuwe items te kennen die functies die worden toegevoegd in deze functie-update die van invloed kunnen zijn op uw huidige configuraties voor apparaatbeheer, of nieuwe functies die u mogelijk wilt gaan gebruiken.
+Deze controlelijst helpt u de nieuwe items te kennen die functies die worden toegevoegd in deze functie-update die van invloed kunnen zijn op uw huidige configuraties voor apparaatbeheer of nieuwe functies die u mogelijk wilt gaan gebruiken.
 
 #### <a name="updates-to-kiosk-mode"></a>Updates voor kioskmodus
 
 ✔️ nieuwe [**AUMID's voor nieuwe apps in kioskmodus**](#use-the-new-settings-and-edge-apps-in-kiosk-modes):
 
-Als u voorheen de app Instellingen of de app Microsoft Edge in een kiosk gebruikte, hebben we deze apps vervangen door nieuwe apps die een andere app-id gebruiken. We raden u ten zeerste aan nieuwe [AUMID's](#use-the-new-settings-and-edge-apps-in-kiosk-modes) voor nieuwe apps in de kioskmodus hieronder te lezen. Dit zorgt ervoor dat u de app Instellingen in uw kiosk blijft gebruiken of dat u de nieuwe app Microsoft Edge opnemen. Deze wijzigingen kunnen nu worden uitgevoerd en op alle apparaten worden geïmplementeerd en zorgen voor een soepelere overgang bij de update.
+Als u voorheen de app Instellingen of Microsoft Edge in een kiosk gebruikte, hebben we deze apps vervangen door nieuwe apps die een andere app-id gebruiken. We raden u ten zeerste aan nieuwe [AUMID's voor nieuwe apps in de kioskmodus](#use-the-new-settings-and-edge-apps-in-kiosk-modes) hieronder te lezen. Zo zorgt u ervoor dat de app Instellingen in uw kiosk blijft staan of dat u de nieuwe app Microsoft Edge opnemen. Deze wijzigingen kunnen nu worden uitgevoerd en geïmplementeerd op alle apparaten en zorgen voor een soepelere overgang bij de update.
 
-✔️ automatische [**aanmelding van bezoekers voor kiosken:**](#visitor-auto-logon-for-kiosks) 
+✔️ Bezoekers [**automatische aanmelding voor kiosken:**](#visitor-auto-logon-for-kiosks) 
 
 Bezoekers kunnen nu automatisch worden aangemeld bij een kiosk. Dit gedrag is standaard ingeschakeld, maar kan worden beheerd en uitgeschakeld.
 
-✔️ [**verbeterde fout in kioskmodus bij het in handen geven**](#kiosk-mode-behavior-changes-for-handling-of-failures)van :
+✔️ [**fout in de kioskmodus die is verbeterd:**](#kiosk-mode-behavior-changes-for-handling-of-failures)
 
-Als het AAD-groepslidmaatschap van de aangemelde AAD-gebruiker niet is vastgesteld, wordt globale kioskconfiguratie gebruikt voor het menu Start (indien aanwezig), anders wordt het menu Start leeg weergegeven. Hoewel het lege startmenu geen configuratie is die u rechtstreeks kunt instellen, kan deze nieuwe verwerking iets zijn om uw ondersteuningsafdeling op de hoogte te stellen van als u kiosken gebruikt. Dit kan van toepassing zijn op uw configuraties of u wilt mogelijk nieuwe aanpassingen aanbrengen in uw toegewezen toegangsconfiguraties.
+Als het AAD-groepslidmaatschap van de aangemelde AAD-gebruiker niet is vastgesteld, wordt globale kioskconfiguratie gebruikt voor het startmenu (indien aanwezig), anders krijgt de gebruiker een leeg startmenu te zien. Hoewel het lege startmenu geen configuratie is die u rechtstreeks kunt instellen, kan deze nieuwe verwerking iets zijn om uw ondersteuningsafdeling te informeren als u Kiosken gebruikt. Dit kan van toepassing zijn op uw configuraties of u wilt mogelijk nieuwe aanpassingen aanbrengen in uw toegewezen toegangsconfiguraties.
 
 #### <a name="updates-to-page-settings-visibility"></a>Updates voor zichtbaarheid van pagina-instellingen
 
@@ -553,30 +628,30 @@ Als het AAD-groepslidmaatschap van de aangemelde AAD-gebruiker niet is vastgeste
 Als u momenteel de zichtbaarheid [van pagina-instellingen](settings-uri-list.md) gebruikt, kunt u wijzigingen aanbrengen in uw bestaande URI's die u hebt toegestaan of geblokkeerd.
 
 #### <a name="updates-for-your-wdac-policy"></a>Updates voor uw WDAC-beleid
-✔️ als u eerder toegang Microsoft Edge via WDAC hebt geblokkeerd, moet u uw WDAC-beleid bijwerken. Controleer het volgende en gebruik de opgegeven voorbeeldcode.
+✔️ als u eerder toegang Microsoft Edge via WDAC blokkeert, moet u uw WDAC-beleid bijwerken. Controleer het volgende en gebruik de meegeleverde voorbeeldcode.
 #### <a name="enable-new-endpoints-for-edge"></a>Nieuwe eindpunten inschakelen voor Edge
-✔️ als u een infrastructuur hebt die netwerk-eindpunten zoals proxy of firewall moet configureren, moet u deze nieuwe eindpunten inschakelen voor de nieuwe Microsoft Edge app.
+✔️ als u een infrastructuur hebt die netwerk eindpunten zoals proxy of firewall moet configureren, moet u deze nieuwe eindpunten inschakelen voor de nieuwe Microsoft Edge app.
 
 #### <a name="newly-configurable-items"></a>Nieuw configureerbare items
 
-✔️ [Terugvaldiagnose configureren:](#configuring-fallback-diagnostics-via-settings-app)u kunt configureren of en wie terugvaldiagnose mogen verzamelen.
+✔️ [Fallback Diagnostics configureren:](#configuring-fallback-diagnostics-via-settings-app)u kunt configureren of en wie terugvaldiagnose kunnen verzamelen.
 
 ✔️ Delen[met apparaten in de buurt:](#share-things-with-nearby-devices)u kunt de nieuwe functie voor delen in de buurt uitschakelen.
 
-✔️ [Beleidsinstellingen configureren voor](#configuring-policy-settings-for-the-new-microsoft-edge)de nieuwe Microsoft Edge: controleer de nieuwe configuraties die beschikbaar zijn voor Microsoft Edge.
+✔️ [Configuring policy settings for the new Microsoft Edge](#configuring-policy-settings-for-the-new-microsoft-edge): Controleer de nieuwe configuraties die beschikbaar zijn voor Microsoft Edge.
 
 #### <a name="new-diagnostic-tool"></a>Nieuw diagnostisch hulpprogramma
 
-✔️[diagnostische traceringen van het besturingssysteem:](#new-os-diagnostic-traces)verzamel logboeken met betrekking tot updates van het besturingssysteem.
+✔️[nieuwe diagnostische traceringen van het besturingssysteem:](#new-os-diagnostic-traces)verzamel logboeken met betrekking tot updates van het besturingssysteem.
 
 ### <a name="improvements-and-fixes-in-the-update"></a>Verbeteringen en oplossingen in de update:
 
 - [Offlinediagnose](hololens-diagnostic-logs.md#offline-diagnostics) bevat ook aanvullende apparaatgegevens voor het serienummer en de versie van het besturingssysteem.
-- Oplossing voor een probleem met de implementatie van Line-Of-Business-toepassingen via runtime-inrichtingspakketten.
-- Er is een probleem opgelost met de rapportage van de installatiestatus van line-of-business-toepassingen.
+- Lost een probleem op met de implementatie van Line-Of-Business-toepassingen via runtime-inrichtingspakketten.
+- Er is een probleem opgelost met de rapportage van de installatiestatus van een Line-Of-Business-toepassing.
 - Hiermee wordt een probleem opgelost met de persistentie van nieuwe app-pakketten bij het opnieuw instellen van apparaten.
 - Lost een probleem op dat ertoe kan leiden dat onjuiste symbolen worden getypt in Edge voor Japanse klanten.
-- Verbetert de tolerantie van updates van het besturingssysteem voor vooraf geïnstalleerde apps, zoals Edge. 
+- Verbetert de tolerantie van updates van het besturingssysteem rond vooraf geïnstalleerde apps, zoals Edge. 
 - Een updatebetrouwbaarheid die van invloed is op de installatie van Microsoft Edge. 
 
 
@@ -586,11 +661,11 @@ Als u momenteel de zichtbaarheid [van pagina-instellingen](settings-uri-list.md)
 Verbeteringen en oplossingen in de update:
 - Deze maandelijkse kwaliteitsupdate bevat geen belangrijke wijzigingen. We raden u aan onze nieuwste build, Windows Holographic, versie 21H1, uit te proberen.
 
-## <a name="windows-holographic-version-1903---may-2021-update"></a>Windows Holographic, versie 1903 - Update van mei 2021
+## <a name="windows-holographic-version-1903---may-2021-update"></a>Windows Holographic, versie 1903 - update van mei 2021
 - Build 18362.1110
 
 Verbeteringen en oplossingen in de update:
-- Deze maandelijkse kwaliteitsupdate bevat geen belangrijke wijzigingen. **Deze build ontvangt geen maandelijkse service-updates meer.** We raden u aan onze nieuwste build, Windows Holographic, versie 21H1, uit te proberen.
+- Deze maandelijkse kwaliteitsupdate bevat geen belangrijke wijzigingen. **Deze build ontvangt geen maandelijkse service-updates meer.** We raden u aan onze nieuwste build, Windows Holographic versie 21H1, uit te proberen.
 
 
 
@@ -599,14 +674,14 @@ Verbeteringen en oplossingen in de update:
 
 Verbeteringen en oplossingen in de update:
 
-- Er is een probleem opgelost met de rapportage van de installatiestatus van line-of-business-toepassingen.
+- Er is een probleem opgelost met de rapportage van de installatiestatus van een Line-Of-Business-toepassing.
 
-## <a name="windows-holographic-version-1903---april-2021-update"></a>Windows Holographic, versie 1903 - Update van april 2021
+## <a name="windows-holographic-version-1903---april-2021-update"></a>Windows Holographic, versie 1903 - update van april 2021
 - Build 18362.1108
 
 Verbeteringen en oplossingen in de update:
 
-- Lost een probleem op waarbij de app Instellingen vast loopt wanneer wordt geprobeerd een wachtwoord voor een lokaal account te wijzigen.
+- Lost een probleem op waarbij de app Instellingen vast loopt bij een poging om een wachtwoord voor een lokaal account te wijzigen.
 
 
 ## <a name="windows-holographic-version-20h2---march-2021-update"></a>Windows Holographic, versie 20H2 - update van maart 2021
@@ -615,10 +690,10 @@ Verbeteringen en oplossingen in de update:
 Verbeteringen en oplossingen in de update:
 
 - Klanten die AdvancedPhotoCapture of LowLagPhotoCapture gebruiken om foto's vast te leggen met HoloLens 2 kunnen nu de camerahouding ophalen tot drie seconden nadat de foto is vastgelegd.
-- Oplossing voor een geheugenlek in Apparaatportal Service, heeft het probleem het toegenomen geheugengebruik veroorzaakt door de service waardoor het toewijzen van geheugen door andere toepassingen is mislukt.
-- Er is een probleem opgelost waarbij gebruikers die zijn ingeschreven bij Gefaseerd uitrollen zich niet kunnen aanmelden bij het apparaat.
+- Oplossing voor een geheugenlek in Apparaatportal-service, heeft het probleem het verhoogde geheugengebruik veroorzaakt door de service waardoor het toewijzen van geheugen door andere toepassingen is mislukt.
+- Er is een probleem opgelost waarbij gebruikers die zijn ingeschreven bij gefaseerd rollout zich niet kunnen aanmelden bij het apparaat.
 
-## <a name="windows-holographic-version-1903---march-2021-update"></a>Windows Holographic, versie 1903 - Update van maart 2021
+## <a name="windows-holographic-version-1903---march-2021-update"></a>Windows Holographic, versie 1903 - update van maart 2021
 - Build 18362.1102
 
 Verbeteringen en oplossingen in de update:
@@ -672,26 +747,26 @@ U kunt nu Apps installeren zonder dat u de ontwikkelaarsmodus hoeft in te schake
 1.  Zorg ervoor dat HoloLens 2 apparaat is ingeschakeld en is verbonden met uw pc
 1.  Zorg ervoor dat u bent aangemeld bij het HoloLens 2 apparaat
 1.  Navigeer op uw pc naar uw aangepaste app en kopieer yourapp.appxbundle naar yourdevicename\Internal Storage\Downloads.   Nadat u klaar bent met het kopiëren van het bestand, kunt u de verbinding met uw apparaat verbreken
-1.  Selecteer op HoloLens 2 apparaat Het startmenu openen, selecteer Alle apps start de Verkenner-app.
-1.  Navigeer naar de map Downloads. Mogelijk moet u eerst Dit apparaat selecteren in het linkerpaneel van de app en vervolgens naar Downloads navigeren.
+1.  Selecteer op HoloLens 2 apparaat Het menu Start openen, selecteer Alle apps start de app Bestandenverkenner.
+1.  Navigeer naar de map Downloads. Mogelijk moet u in het linkerpaneel van de app eerst Dit apparaat selecteren en vervolgens naar Downloads navigeren.
 1.  Selecteer het bestand yourapp.appxbundle.
 1.  De App-installatieprogramma wordt start. Selecteer de knop Installeren om uw app te installeren.
 De geïnstalleerde app wordt automatisch start na voltooiing van de installatie.
 
 U vindt voorbeeld-apps op [GitHub met universele Windows-voorbeelden om](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) deze stroom te testen.
 
-Lees meer over het volledige proces [van het installeren van apps op HoloLens 2 met de App-installatieprogramma](app-deploy-app-installer.md).  
+Lees meer over het volledige proces [voor het installeren van apps op HoloLens 2 met de App-installatieprogramma](app-deploy-app-installer.md).  
 
 ![MRTK-voorbeelden installeren via App-installatieprogramma](images/hololens-app-installer-picture.jpg)
 
 ### <a name="improvements-and-fixes-in-the-update"></a>Verbeteringen en oplossingen in de update:
 
-- Handtracking houdt nu het bijhouden bij in veel nieuwe gevallen waarbij de hand eerder verloren zou zijn gegaan.  In sommige van deze nieuwe gevallen blijft alleen de positie van de functie worden bijgewerkt op basis van de echte hand van de gebruiker, terwijl de andere positie wordt afgeleid op basis van een eerdere houding.  Deze wijziging helpt bij het verbeteren van de consistentie van het bijhouden van verplaatsingen, zoals slapping, throwing,ing en clapping.  Het helpt ook in gevallen waarin de hand zich dicht bij een oppervlak of een object houdt.  Wanneer handgewrichten worden afgeleid, wordt [de waarde per gezamenlijke](https://docs.microsoft.com/uwp/api/windows.perception.people.jointposeaccuracy?view=winrt-19041&preserve-view=true) nauwkeurigheid ingesteld op 'Bij benadering' in plaats van 'Hoog'.
-- Er is een probleem opgelost waarbij het opnieuw instellen van de pincode voor Azure AD-accounts de foutmelding 'Er is iets misgegaan.
-- Gebruikers moeten na het opstarten veel minder OOBE-crashes zien bij het starten van ET, Iris vanuit de instellingen-app, nieuwe gebruiker of pop-up voor meldingen.
+- Handtracking houdt nu het bijhouden bij in veel nieuwe gevallen waarbij de hand eerder verloren zou zijn gegaan.  In sommige van deze nieuwe gevallen blijft alleen de positie van de functie worden bijgewerkt op basis van de echte hand van de gebruiker, terwijl de andere positie wordt afgeleid op basis van een eerdere houding.  Deze wijziging helpt bij het verbeteren van de consistentie van het bijhouden van verplaatsingen zoals slapping, throwing,ing en clapping.  Het helpt ook in gevallen waarin de hand zich dicht bij een oppervlak of een object houdt.  Wanneer handjes worden afgeleid, wordt [de nauwkeurigheidswaarde per gezamenlijke](https://docs.microsoft.com/uwp/api/windows.perception.people.jointposeaccuracy?view=winrt-19041&preserve-view=true) ingesteld op 'Geschatte' in plaats van 'Hoog'.
+- Er is een probleem opgelost waarbij het opnieuw instellen van de pincode voor Azure AD-accounts de foutmelding 'Er is iets misgegaan' wordt weergegeven.
+- Gebruikers moeten veel minder OOBE-crashes na het opstarten zien bij het starten van ET, Iris vanuit de instellingen-app, nieuwe gebruiker of pop-up van meldingen.
 - Gebruikers moeten de juiste tijdzone hebben die afkomstig is uit OOBE.
 
-## <a name="windows-holographic-version-1903--december-2020-update"></a>Windows Holographic, versie 1903 – update van december 2020
+## <a name="windows-holographic-version-1903--december-2020-update"></a>Windows Holographic, versie 1903 – Update van december 2020
 - Build 18362.1088
 
 Deze maandelijkse kwaliteitsupdate bevat geen belangrijke wijzigingen. We raden u aan onze nieuwste Windows Holographic-versie 20H2- december 2020-update en de nieuwe App-installatieprogramma-functie uit te proberen die in de build is toegevoegd.
@@ -700,52 +775,52 @@ Deze maandelijkse kwaliteitsupdate bevat geen belangrijke wijzigingen. We raden 
 ## <a name="windows-holographic-version-20h2"></a>Windows Holographic, versie 20H2
 - Build 19041.1128
 
-Windows Holographic versie 20H2 is nu beschikbaar en biedt een groot aantal nieuwe functies voor HoloLens 2 en IT-professionals. Van automatisch plaatsen van ogen tot Certificaatbeheer in Instellingen tot verbeterde functionaliteit voor de kioskmodus en nieuwe autopilot-installatiemogelijkheden. Met deze nieuwe update kunnen IT-teams gedetailleerdere controle krijgen over het configureren en beheren van HoloLens-apparaten en kunnen ze gebruikers nog meer naadloze holographic-ervaringen bieden. 
+Windows Holographic versie 20H2 is nu beschikbaar en biedt een groot aantal nieuwe functies voor HoloLens 2 en IT-professionals. Van automatisch plaatsen van ogen tot Certificaatbeheer in Instellingen tot verbeterde kioskmodusfunctionaliteit en nieuwe Autopilot-installatiemogelijkheden. Deze nieuwe update stelt IT-teams in staat gedetailleerdere controle te krijgen over het configureren en beheren van HoloLens-apparaten en biedt gebruikers nog naadlozere holografische ervaringen. 
 
-Deze nieuwste versie is een maandelijkse update naar versie 2004, maar deze keer worden er nieuwe functies toegevoegd. Het nummer van de belangrijkste build blijft hetzelfde en Windows Update geeft een maandelijkse release aan van versie 2004 (build 19041). U kunt uw buildnummer bekijken in het scherm Instellingen > Over om te bevestigen dat u de nieuwste beschikbare build 19041.1128+ gebruikt. Als u wilt bijwerken naar de nieuwste versie, opent u de app Instellingen, gaat u naar Update & Security en tikt u op Controleren op updates. Ga naar deze pagina voor meer informatie over het beheren van [HoloLens-updates.](https://docs.microsoft.com/hololens/hololens-updates)
+Deze nieuwste versie is een maandelijkse update naar versie 2004, maar deze keer nemen we nieuwe functies op. Het nummer van de belangrijkste build blijft hetzelfde en Windows Update geeft een maandelijkse versie van versie 2004 (build 19041) aan. U kunt uw buildnummer bekijken in het scherm Instellingen > Over om te bevestigen dat u de nieuwste beschikbare build 19041.1128+ gebruikt. Als u wilt bijwerken naar de nieuwste versie, opent u de app Instellingen, gaat u naar Update & Security en tikt u op Controleren op updates. Ga naar deze pagina voor meer informatie over het beheren van [HoloLens-updates.](https://docs.microsoft.com/hololens/hololens-updates)
 
 ### <a name="whats-new-in-windows-holographic-version-20h2"></a>Wat is er nieuw in Windows Holographic, versie 20H2  
 
 | Functie                                              | Beschrijving                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Ondersteuning voor automatische oogpositie](hololens-release-notes.md#auto-eye-position-support) | Berekent actief oogposities zonder dat gebruikers de kalibratie van Oogtracking moeten doorrekenen.   |
-| [Certificaatbeheerder](hololens-release-notes.md#certificate-manager)   | Hiermee kunt u nieuwe eenvoudigere methoden gebruiken om certificaten te installeren en te verwijderen uit de app Instellingen.     |
+| [Ondersteuning voor automatische oogpositie](hololens-release-notes.md#auto-eye-position-support) | Berekent actief oogposities zonder dat gebruikers oogtracking moeten volgen.   |
+| [Certificaatbeheerder](hololens-release-notes.md#certificate-manager)   | Nieuwe eenvoudigere methoden voor het installeren en verwijderen van certificaten uit de app Instellingen.     |
 | [Inrichting via USB automatisch starten](hololens-release-notes.md#auto-launch-provisioning-from-usb)                    | Inrichtingspakketten op USB-stations vragen automatisch om de inrichtingspagina in OOBE.                                                         |
 | [Inrichtingspakketten automatisch bevestigen in OOBE](hololens-release-notes.md#auto-confirm-provisioning-packages-in-oobe)           | Inrichtingspakketten worden automatisch toegepast tijdens OOBE vanaf de inrichtingspagina.                                                         |
-| [Automatische inrichting zonder gebruik van de gebruikersinterface](hololens-release-notes.md#automatic-provisioning-without-using-ui) | Het combineren van het inrichten van automatisch starten en automatisch bevestigen. |
-| [Autopilot gebruiken met Wi-Fi verbinding](hololens-release-notes.md#using-autopilot-with-wi-fi-connection) | Autopilot gebruiken vanaf apparaatadapterWi-Fi geen ethernetadapter nodig. |
-| [Tenantlockdown CSP en Autopilot](hololens-release-notes.md#tenantlockdown-csp-and-autopilot)                     | Nadat de tenantinschrijving is uitgevoerd en het beleid is toegepast, kan het apparaat alleen worden ingeschreven in die tenant wanneer het apparaat opnieuw wordt ingesteld of opnieuw wordt geflitst. |
+| [Automatisch inrichten zonder gebruik van de gebruikersinterface](hololens-release-notes.md#automatic-provisioning-without-using-ui) | Het combineren van de inrichting voor automatisch starten en automatisch bevestigen. |
+| [Autopilot gebruiken met Wi-Fi verbinding](hololens-release-notes.md#using-autopilot-with-wi-fi-connection) | Gebruik autopilot vanaf apparaat-Wi-Fi geen ethernetadapter nodig. |
+| [Tenantlockdown-CSP en Autopilot](hololens-release-notes.md#tenantlockdown-csp-and-autopilot)                     | Nadat de tenant is ingeschreven en het beleid is toegepast, kan het apparaat alleen worden ingeschreven in die tenant wanneer het apparaat opnieuw wordt ingesteld of opnieuw wordt geflitst. |
 | [Globale toegewezen toegang](hololens-release-notes.md#global-assigned-access--kiosk-mode)                               | Nieuwe configuratiemethode voor de kioskmodus voor meerdere apps waarmee de kiosk op systeemniveau wordt toegepast, waardoor deze van toepassing is op iedereen.                  |
 | [Een app automatisch starten in een kiosk voor meerdere apps](hololens-release-notes.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                | Hiermee stelt u een toepassing in om automatisch te starten wanneer u zich aanmeldt bij een kioskmodus voor meerdere apps.                                                        |
 | [Wijzigingen in het gedrag van de kioskmodus voor het afhandelen van fouten](hololens-release-notes.md#kiosk-mode-behavior-changes-for-handling-of-failures) | De fout in de kioskmodus heeft nu een beperkende terugval.                                                                                                |
 | [HoloLens-beleid](hololens-release-notes.md#hololens-policies)                                    | Nieuw beleid voor HoloLens.     |
 | [Azure AD-groepslidmaatschap cachen voor offline kiosk](hololens-release-notes.md#cache-azure-ad-group-membership-for-offline-kiosk)         | Met nieuw beleid kunnen gebruikers de cache voor groepslidmaatschap gebruiken om de kioskmodus offline te gebruiken voor een vast aantal dagen.                                        |
 | [Nieuw apparaatbeperkingsbeleid voor HoloLens 2](hololens-release-notes.md#new-device-restriction-policies-for-hololens-2)       | Beleid voor apparaatbeheer dat nieuw is ingeschakeld voor HoloLens 2.                                                                                |
-| [Nieuw energiebeleid voor HoloLens 2](hololens-release-notes.md#new-power-policies-for-hololens-2)       | Nieuw ondersteund beleid voor time-outinstellingen voor stroom.  |
-| [Updatebeleid](hololens-release-notes.md#newly-enabled-update-policies-for-hololens)        | Nieuw ingeschakeld beleid voor het beheer van updates.           |
-| [Zichtbaarheid van de pagina Instellingen ingeschakeld voor HoloLens 2](hololens-release-notes.md#enabled-settings-page-visibility-for-hololens-2)      | Beleid om te kiezen welke pagina's worden weergegeven in de app Instellingen.             |
-| [Onderzoeksmodus](hololens-release-notes.md#research-mode) | De onderzoeksmodus op HoloLens 2. |
+| [Nieuw energiebeleid voor HoloLens 2](hololens-release-notes.md#new-power-policies-for-hololens-2)       | Nieuw ondersteund beleid voor time-outinstellingen voor energie.  |
+| [Updatebeleid](hololens-release-notes.md#newly-enabled-update-policies-for-hololens)        | Nieuw ingeschakelde beleidsregels die controle over updates toestaan.           |
+| [Zichtbaarheid van pagina Instellingen ingeschakeld voor HoloLens 2](hololens-release-notes.md#enabled-settings-page-visibility-for-hololens-2)      | Beleid om te kiezen welke pagina's worden weergegeven in de app Instellingen.             |
+| [Onderzoeksmodus](hololens-release-notes.md#research-mode) | De onderzoeksmodus gebruiken in HoloLens 2. |
 | [Opnamelengte verhoogd](hololens-release-notes.md#recording-length-increased) | MRC-opnamen zijn niet langer dan 5 minuten. |
 | [Verbeteringen en oplossingen in de update](hololens-release-notes.md#improvements-and-fixes-in-the-update)                 | Aanvullende oplossingen in de update.   |
 
 ### <a name="auto-eye-position-support"></a>Ondersteuning voor automatische oogpositie
 
-In HoloLens 2 zorgen oogposities voor nauwkeurige positiebepaling van hologrammen, een goede weergave-ervaring en verbeterde weergavekwaliteit. Oogposities worden intern berekend als onderdeel van de berekening voor het bijhouden van de ogen. Dit vereist echter dat elke gebruiker de kalibratie van oogtracking doormaakt, zelfs wanneer voor de ervaring mogelijk geen ooginvoer nodig is.
+In HoloLens 2 zorgen oogposities voor nauwkeurige positie van hologrammen, een goede weergave-ervaring en verbeterde weergavekwaliteit. Oogposities worden intern berekend als onderdeel van de berekening voor het bijhouden van de ogen. Dit vereist echter dat elke gebruiker de kalibratie van oogtracking doormaakt, zelfs wanneer voor de ervaring mogelijk geen ooginvoer nodig is.
 
-**Automatische oogpositie (AEP)** maakt deze scenario's mogelijk met een interactieloze manier om oogposities voor de gebruiker te berekenen. Automatische oogpositie werkt automatisch op de achtergrond vanaf het moment dat de gebruiker het apparaat aan zet. Als de gebruiker geen voorafgaande kalibratie voor het bijhouden van de ogen heeft, geeft Automatische oogpositie de oogposities van de gebruiker aan het weergavesysteem na een verwerkingstijd van 20 tot 30 seconden. De gebruikersgegevens blijven niet op het apparaat behouden. Dit proces wordt daarom herhaald als de gebruiker opstart en het apparaat weer in gebruik neemt of als het apparaat opnieuw wordt opgestart of uit de slaapstand wordt halen.
+**Auto Eye Position (AEP)** maakt deze scenario's mogelijk met een interactieloze manier om oogposities voor de gebruiker te berekenen. Automatische oogpositie werkt automatisch op de achtergrond vanaf het moment dat de gebruiker het apparaat in zet. Als de gebruiker geen voorafgaande kalibratie van oogtracking heeft, geeft Automatische oogpositie de oogposities van de gebruiker aan het weergavesysteem na een verwerkingstijd van 20 tot 30 seconden. De gebruikersgegevens blijven niet behouden op het apparaat. Daarom wordt dit proces herhaald als de gebruiker opstart en het apparaat weer in- of uit de slaapstand zet.
 
-Er zijn enkele wijzigingen in het systeemgedrag met de functie Automatische oogpositie wanneer een niet-gecalibreerde gebruiker het apparaat in gebruik neemt. In deze context verwijst een niet-gecalibreerde gebruiker naar iemand die niet eerder het kalibratieproces voor het bijhouden van de ogen op het apparaat heeft doorlopen.
+Er zijn enkele wijzigingen in het systeemgedrag met de functie Automatische oogpositie wanneer een niet-gecalibreerde gebruiker het apparaat in gebruik neemt. In deze context verwijst een niet-gecalibreerde gebruiker naar iemand die het proces voor het traceren van de ogen op het apparaat niet eerder heeft doorlopen.
 
-| Actieve toepassing | Voorafgaand gedrag | Gedrag van Windows Holographic, versie 20H2 Update |
+| Actieve toepassing | Eerder gedrag | Gedrag van Windows Holographic, versie 20H2 Update |
 |:-------------------|:-----------------|:-----------------------------------|
-| Niet-staren ingeschakelde app of Holographic Shell |Dialoogvenster voor het bijhouden van kalibratieprompts voor de ogen wordt weergegeven. | Er wordt geen prompt weergegeven. |
-| Staren ingeschakelde app | Dialoogvenster voor het bijhouden van kalibratieprompts voor de ogen wordt weergegeven. | De prompt voor het traceren van de kalibratie wordt alleen weergegeven wanneer de toepassing oogcontactstroom gebruikt. |
+| App zonder staren of Holographic Shell |Het dialoogvenster prompt voor het traceren van de ogen wordt weergegeven. | Er wordt geen prompt weergegeven. |
+| Staren-app | Het dialoogvenster prompt voor het traceren van de ogen wordt weergegeven. | De prompt voor het bijhouden van de kalibratie wordt alleen weergegeven wanneer de toepassing toegang heeft tot de oogstream. |
 
-Als de gebruiker overstapt van een toepassing zonder staren naar een toepassing die toegang heeft tot de staringsgegevens, wordt de kalibratieprompt weergegeven. 
+Als de gebruiker overstapt van een toepassing zonder staren naar een toepassing die toegang heeft tot de staringsgegevens, wordt de prompt voor de kalibratie weergegeven. 
 
-Al het andere systeemgedrag is vergelijkbaar met wanneer de huidige gebruiker geen actieve kalibratie van oogtracking heeft. De eenhandige beweging Starten wordt bijvoorbeeld niet ingeschakeld. De Out-Of-Box-Experience wordt niet gewijzigd voor de eerste installatie.
+Al het andere systeemgedrag is vergelijkbaar met wanneer de huidige gebruiker geen actieve kalibratie van oogtracking heeft. Het eenhandige startgebaar wordt bijvoorbeeld niet ingeschakeld. De Out-Of-Box-Experience wordt niet gewijzigd voor de eerste installatie.
 
-Voor ervaringen waarvoor oogcontactgegevens of zeer nauwkeurige positie van hologrammen nodig zijn, raden we niet-gecalibreerde gebruikers aan om kalibratie van de oogtracking uit te voeren. De app is toegankelijk via de prompt voor het bijhouden van de kalibratie van de ogen of door de app Instellingen te starten vanuit het menu Start en vervolgens Systeem **> Kalibratie >** kalibratie van oog > Run eye kalibratie te selecteren.
+Voor ervaringen die oogcontactgegevens of zeer nauwkeurige positie van hologrammen vereisen, raden we niet-gecalibreerde gebruikers aan om de kalibratie van oogtracking uit te voeren. De app is toegankelijk via de prompt voor het bijhouden van de oogvolgvolgending of door de app Instellingen te starten vanuit het menu Start en vervolgens Systeem **> Kalibratie > Ooginding te** selecteren > Oogineratie uitvoeren.
 
 Deze informatie vindt u later met andere [kalibratiegegevens](hololens-calibration.md#auto-eye-position-support). 
 
@@ -753,15 +828,15 @@ Deze informatie vindt u later met andere [kalibratiegegevens](hololens-calibrati
 
 - Verbeterde hulpprogramma's voor controle, diagnose en validatie voor apparaatbeveiliging en -naleving via de nieuwe Certificaatbeheerder. Met deze mogelijkheid kunt u uw certificaten op schaal implementeren, oplossen en valideren in commerciële omgevingen.
 
-In Windows Holographic versie 20H2 voegen we certificaatbeheer toe aan de app HoloLens 2 Instellingen. Ga naar **Instellingen > Beveiliging & beveiligingscertificaten > bijwerken.** Deze functie biedt een eenvoudige en gebruiksvriendelijke manier om certificaten op uw apparaat weer te geven, te installeren en te verwijderen. Met de nieuwe Certificaatbeheer hebben beheerders en gebruikers nu verbeterde hulpprogramma's voor controle, diagnose en validatie om ervoor te zorgen dat apparaten veilig en compatibel blijven. 
+In Windows Holographic versie 20H2 voegen we certificaatbeheer toe aan de app HoloLens 2 Instellingen. Ga naar **Instellingen > Update & Security > Certificates**. Deze functie biedt een eenvoudige en gebruiksvriendelijke manier om certificaten op uw apparaat weer te geven, te installeren en te verwijderen. Met de nieuwe Certificate Manager hebben beheerders en gebruikers nu verbeterde hulpprogramma's voor controle, diagnose en validatie om ervoor te zorgen dat apparaten veilig en compatibel blijven. 
 
--   **Controle:** De mogelijkheid om te valideren dat een certificaat correct is geïmplementeerd of om te bevestigen dat het op de juiste manier is verwijderd. 
--   **Diagnose:** Wanneer er problemen optreden, bespaart het valideren of de juiste certificaten op het apparaat aanwezig zijn tijd en helpt het bij het oplossen van problemen. 
+-   **Controle:** Mogelijkheid om te valideren dat een certificaat correct is geïmplementeerd of om te bevestigen dat het op de juiste wijze is verwijderd. 
+-   **Diagnose:** Wanneer er problemen optreden, bespaart het valideren of de juiste certificaten op het apparaat bestaan tijd en helpt het bij het oplossen van problemen. 
 -   **Validatie:** Controleren of een certificaat het beoogde doel heeft en functioneel is, kan aanzienlijke tijd besparen, met name in commerciële omgevingen voordat certificaten op grotere schaal worden geïmplementeerd.
 
 Als u snel een specifiek certificaat in de lijst wilt vinden, zijn er opties om te sorteren op naam, winkel of vervaldatum. Gebruikers kunnen ook rechtstreeks naar een certificaat zoeken. Als u afzonderlijke certificaateigenschappen wilt weergeven, selecteert u het certificaat en klikt u op **Info.** 
 
-Certificaatinstallatie ondersteunt momenteel CER- en CRT-bestanden. Apparaateigenaren kunnen certificaten installeren in lokale computer en huidige gebruiker;  alle andere gebruikers kunnen alleen installeren in Huidige gebruiker. Gebruikers kunnen alleen certificaten verwijderen die rechtstreeks vanuit de gebruikersinterface Instellingen zijn geïnstalleerd. Als een certificaat op een andere manier is geïnstalleerd, moet het ook door hetzelfde mechanisme worden verwijderd.
+Certificaatinstallatie ondersteunt momenteel CER- en CRT-bestanden. Apparaateigenaren kunnen certificaten installeren op de lokale computer en de huidige gebruiker;  alle andere gebruikers kunnen alleen installeren in Huidige gebruiker. Gebruikers kunnen alleen certificaten verwijderen die rechtstreeks vanuit de gebruikersinterface Instellingen zijn geïnstalleerd. Als een certificaat op een andere manier is geïnstalleerd, moet het ook door hetzelfde mechanisme worden verwijderd.
 
 #### <a name="to-install-a-certificate"></a>Een certificaat installeren: 
 
@@ -776,7 +851,7 @@ Certificaatinstallatie ondersteunt momenteel CER- en CRT-bestanden. Apparaateige
 Het certificaat moet nu op het apparaat zijn geïnstalleerd.
 
 #### <a name="to-remove-a-certificate"></a>Een certificaat verwijderen: 
-1. **Navigeer naar Instellingen App > Update en beveiliging > certificaten.**
+1. **Navigeer naar Instellingen-app > Bijwerken en beveiliging > certificaten.**
 1. Zoek het certificaat op naam in het zoekvak.
 1. Selecteer het certificaat.
 1. Klik op **Verwijderen**
@@ -792,33 +867,33 @@ Deze informatie vindt u later [op een nieuwe certificaatbeheerpagina.](certifica
 
 - Geautomatiseerde processen die minder gebruikersinteractie mogelijk maken wanneer USB-stations met inrichtingspakketten worden gebruikt tijdens OOBE.
 
-Vóór deze release moesten gebruikers het inrichtingsscherm handmatig starten tijdens OOBE om het in terichten met behulp van een combinatie van knoppen. Gebruikers kunnen nu de knopcombinatie overslaan met behulp van een inrichtingspakket op een USB-opslagstation. 
+Vóór deze release moesten gebruikers het inrichtingsscherm handmatig starten tijdens OOBE om in te delen met behulp van een combinatie van knoppen. Gebruikers kunnen nu de combinatie van knoppen overslaan met behulp van een inrichtingspakket op een USB-opslagstation. 
 
 1. Sluit het USB-station aan met het inrichtingspakket tijdens het eerste interactiemoment van OOBE
 1. Wanneer het apparaat gereed is om te worden ingericht, wordt de prompt automatisch geopend met de inrichtingspagina. 
 
-Opmerking: als een USB-station aangesloten blijft terwijl het apparaat wordt opgestart, zal OOBE een bestaand USB-opslagapparaat opsnoemen, evenals extra apparaten die op het net worden aangesloten.
+Opmerking: Als een USB-station op het net aangesloten blijft terwijl het apparaat wordt opgestart, wordt met OOBE een bestaand USB-opslagapparaat opgesierd en worden aanvullende apparaten opgesierd die op het net worden aangesloten.
 
 Ga naar de documentatie voor [HoloLens-inrichting](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup) voor meer informatie over het toepassen van inrichtingspakketten tijdens OOBE.
 
-Meer informatie over [het automatisch starten van inrichting via een USB](hololens-provisioning.md#auto-launch-provisioning-from-usb) vindt u in de documentatie voor HoloLens-inrichting.
+Meer informatie over [het automatisch starten van inrichting via een USB](hololens-provisioning.md#auto-launch-provisioning-from-usb) vindt u in de inrichtingsdocumentatie voor HoloLens.
 
 ### <a name="auto-confirm-provisioning-packages-in-oobe"></a>Inrichtingspakketten automatisch bevestigen in OOBE
-- Geautomatiseerd proces dat minder gebruikersinteractie mogelijk maakt. Wanneer de pagina Inrichtingspakket wordt weergegeven, worden automatisch alle vermelde pakketten toegepast.
+- Geautomatiseerd proces dat minder gebruikersinteractie mogelijk maakt. Wanneer de pagina Inrichtingspakket wordt weergegeven, worden alle vermelde pakketten automatisch toegepast.
 
-Wanneer het hoofdscherm voor inrichting wordt weergegeven, telt OOBE tien seconden af voordat automatisch alle inrichtingspakketten worden toegepast. Gebruikers kunnen binnen [deze tien seconden nog steeds](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe) bevestigen of annuleren nadat ze de verwachte pakketten hebben gecontroleerd.
+Wanneer het hoofdscherm voor inrichting wordt weergegeven, telt OOBE 10 seconden af voordat automatisch alle inrichtingspakketten worden toegepast. Gebruikers kunnen binnen [deze tien seconden nog steeds](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe) bevestigen of annuleren nadat ze de verwachte pakketten hebben gecontroleerd.
 
 ### <a name="automatic-provisioning-without-using-ui"></a>Automatische inrichting zonder gebruik van de gebruikersinterface
 - Gecombineerde automatische processen voor minder apparaatinteracties voor inrichting. 
 
-Door het automatisch starten van het inrichten vanaf USB-apparaten en de automatische bevestiging van het inrichten van pakketten te combineren, kan een gebruiker HoloLens 2-apparaten automatisch inrichten zonder gebruik te maken van de gebruikersinterface van het apparaat of zelfs het apparaat te laten inrichten. U kunt hetzelfde USB-station en inrichtingspakket blijven gebruiken voor meerdere apparaten. Dit is handig voor het implementeren van meerdere apparaten tegelijk in hetzelfde gebied. 
+Door het automatisch starten van het inrichten vanaf USB-apparaten en de automatische bevestiging van inrichtingspakketten te combineren, kan een gebruiker automatisch HoloLens 2-apparaten inrichten zonder de gebruikersinterface van het apparaat te gebruiken of zelfs het apparaat te laten inrichten. U kunt hetzelfde USB-station en inrichtingspakket blijven gebruiken voor meerdere apparaten. Dit is handig voor het implementeren van meerdere apparaten tegelijk in hetzelfde gebied. 
 
-1. [Maak een inrichtingspakket met](hololens-provisioning.md) [Behulp van Windows Configuration Designer.](https://www.microsoft.com/store/productId/9NBLGGH4TX22) 
+1. [Maak een inrichtingspakket met](hololens-provisioning.md) [behulp van Windows Configuration Designer.](https://www.microsoft.com/store/productId/9NBLGGH4TX22) 
 1. Kopieer het pakket naar een USB-opslagstation.
-1. [Flash uw HoloLens 2](hololens-insider.md#ffu-download-and-flash-directions) naar [build 19041.1361 of hoger.](https://aka.ms/hololens2previewdownload) 
+1. [Flash uw HoloLens 2](hololens-insider.md#ffu-download-and-flash-directions) [naar 19041.1361 of nieuwer.](https://aka.ms/hololens2previewdownload) 
 1. Wanneer [Advanced Recovery Companion](https://www.microsoft.com/store/productId/9P74Z35SFRS8) klaar is met het flashen van uw apparaat, moet u de USB-C-kabel loskoppelen. 
 1. Sluit uw USB-station aan op het apparaat.
-1. Wanneer het HoloLens 2 apparaat wordt opstart in OOBE, detecteert het automatisch het inrichtingspakket op het USB-station en start het de inrichtingspagina.
+1. Wanneer het HoloLens 2 oobe wordt opstart, detecteert het automatisch het inrichtingspakket op het USB-station en start het de inrichtingspagina.
 1. Na 10 seconden wordt het inrichtingspakket automatisch toegepast op het apparaat. 
 
 Uw apparaat is nu geconfigureerd en geeft [het scherm Inrichten geslaagd weer.](hololens-provisioning.md#automatic-provisioning-without-using-ui)
@@ -842,7 +917,7 @@ Zodra het knooppunt RequireNetworkInOOBE van tenantLockdown CSP's is ingesteld o
 - Azure AD-joinbewerking uitvoeren via runtime-inrichting 
 - Selecteren wie de eigenaar van het apparaat is in OOBE-ervaring 
 
-#### <a name="how-to-set-this-using-intune"></a>Hoe kunt u dit instellen met Intune? 
+#### <a name="how-to-set-this-using-intune"></a>Hoe kan ik dit instellen met Intune? 
 1. Maak een aangepast OMA URI-apparaatconfiguratieprofiel en geef true op voor het knooppunt RequireNetworkInOOBE, zoals hieronder wordt weergegeven.
 Oma-URI-waarde moet ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE zijn
 
@@ -879,10 +954,10 @@ Deze informatie vindt u nu samen met de rest van Autopilot onder [Tenantlockdown
 ### <a name="global-assigned-access--kiosk-mode"></a>Globale toegewezen toegang - kioskmodus
 - Minder identiteitsbeheer voor Kiosk door de nieuwe kioskmethode in te schakelen waarmee de kioskmodus op systeemniveau wordt toegepast.
 
-Met deze nieuwe functie kan een IT-beheerder een HoloLens 2-apparaat configureren voor de kioskmodus voor meerdere apps, die van toepassing is op systeemniveau, geen affiniteit heeft met een identiteit in het systeem en van toepassing is op iedereen die zich bij het apparaat meldt. Meer informatie over deze nieuwe functie wordt uitgebreid beschreven in de [kiosk voor globale toegewezen toegang van HoloLens.](hololens-global-assigned-access-kiosk.md)
+Met deze nieuwe functie kan een IT-beheerder een HoloLens 2-apparaat configureren voor meerdere app-kioskmodussen die van toepassing is op systeemniveau, geen affiniteit heeft met een identiteit in het systeem en van toepassing is op iedereen die zich bij het apparaat meldt. Meer informatie over deze nieuwe functie kunt u vinden in de kiosk voor [globale toegewezen toegang van HoloLens.](hololens-global-assigned-access-kiosk.md)
 
 ### <a name="automatic-launch-of-an-application-in-multiple-app-kiosk-mode"></a>Automatisch starten van een toepassing in de kioskmodus voor meerdere apps 
-- Gerichte ervaring met het automatisch starten van apps, waardoor de gebruikersinterface en app-selecties die zijn gekozen voor kioskmodus nog verder toenemen.
+- Gerichte ervaring met het automatisch starten van apps, waardoor de gebruikersinterface en app-selecties die zijn gekozen voor kioskmodus nog verder worden vergroten.
 
 Is alleen van toepassing op de kioskmodus voor meerdere apps en er kan slechts één app worden aangewezen voor automatisch starten met behulp van het gemarkeerde kenmerk hieronder in de configuratie toegewezen toegang. 
 
@@ -894,30 +969,30 @@ De toepassing wordt automatisch gestart wanneer de gebruiker zich meldt.
 ```
 
 ### <a name="kiosk-mode-behavior-changes-for-handling-of-failures"></a>Wijzigingen in het gedrag van de kioskmodus voor het afhandelen van fouten
-- Veiligere kioskmodus door beschikbare apps in kioskmodusfouten te elimineren. 
+- Veiligere kioskmodus door het elimineren van beschikbare apps in kioskmodusfouten. 
 
-Voor het optreden van fouten bij het toepassen van de kioskmodus werd HoloLens gebruikt om alle toepassingen weer te geven in het menu Start. In Windows Holographic-versie 20H2 worden in het geval van fouten geen apps weergegeven in het menu Start, zoals hieronder: 
+HoloLens werd eerder bij het toepassen van de kioskmodus gebruikt om alle toepassingen weer te geven in het menu Start. In Windows Holographic-versie 20H2 worden nu in het geval van fouten geen apps weergegeven in het menu Start, zoals hieronder wordt weergegeven: 
 
 ![Afbeelding van de kioskmodus die er nu uitziet wanneer deze mislukt.](images/hololens-kiosk-failure-behavior.png )
 
 ### <a name="hololens-policies"></a>HoloLens-beleid
-- Apparaatbeheeropties specifiek voor HoloLens die zijn gemaakt voor het beheren van het apparaat. 
+- Opties voor apparaatbeheer die specifiek zijn voor HoloLens die zijn gemaakt voor het beheren van het apparaat. 
 
-Er mixed reality nieuwe beleidsregels gemaakt voor HoloLens 2 apparaten in Windows Holographic versie 20H2. Nieuwe beheerbare instellingen zijn onder andere: helderheid instellen, volume instellen, audio-opname uitschakelen in mixed reality-opnamen, instellen wanneer diagnostische gegevens kunnen worden verzameld en cache voor AAD-groepslidmaatschap.  
+Er mixed reality nieuwe beleidsregels gemaakt voor HoloLens 2 apparaten in Windows Holographic versie 20H2. Nieuwe beheerbare instellingen zijn: helderheid instellen, volume instellen, audio-opname uitschakelen in mixed reality-opnamen, instellen wanneer diagnostische gegevens kunnen worden verzameld en AAD-groepslidmaatschapcache.  
 
 | Nieuw HoloLens-beleid                                | Beschrijving                                                                               | Notities                                                                |
 |----------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | MixedReality\BrightnessButtonDisabled              | Hiermee kunnen helderheidsknoppen worden uitgeschakeld, zodat de helderheid niet wordt gewijzigd door op de knop te drukken.       | 1 Ja, 0 Nee (standaard)                                                |
-| MixedReality\VolumeButtonDisabled                  | Hiermee kunt u volumeknoppen worden uitgeschakeld, zodat het volume niet wordt gewijzigd door er op te drukken.               | 1 Ja, 0 Nee (standaard)                                                |
+| MixedReality\VolumeButtonDisabled                  | Hiermee kunnen volumeknoppen worden uitgeschakeld, zodat het volume niet wordt gewijzigd als u er op drukt.               | 1 Ja, 0 Nee (standaard)                                                |
 | MixedReality\MicrophoneDisabled                    | Hiermee schakelt u de microfoon uit, zodat er geen audio-opname mogelijk is op HoloLens 2.                      | 1 Ja, 0 Nee (standaard)                                                |
-| MixedReality\FallbackDiagnostics                   | Hiermee bepaalt u het gedrag van wanneer diagnostische logboeken kunnen worden verzameld.                               | 0 Uitgeschakeld, 1 ingeschakeld voor apparaateigenaren, 2 ingeschakeld voor iedereen (standaard) |
+| MixedReality\FallbackDiagnostics                   | Hiermee bepaalt u het gedrag van wanneer diagnostische logboeken kunnen worden verzameld.                               | 0 uitgeschakeld, 1 ingeschakeld voor apparaateigenaren, 2 ingeschakeld voor iedereen (standaard) |
 | MixedReality\HeadTrackingMode                      | Gereserveerd voor toekomstig gebruik.                                                                  |                                                                      |
-| MixedReality\AADGroupMembershipCacheValidityInDays | Hiermee bepaalt u hoeveel dagen azure AD-groepslidmaatschapcache wordt gebruikt voor kiosken die zijn gericht op Azure AD-groepen. | Zie hieronder.                                                           |
+| MixedReality\AADGroupMembershipCacheValidityInDays | Hiermee bepaalt u hoeveel dagen azure AD-groepslidmaatschapcache wordt gebruikt voor Kiosk die is gericht op Azure AD-groepen. | Zie hieronder.                                                           |
 
 ### <a name="cache-azure-ad-group-membership-for-offline-kiosk"></a>Azure AD-groepslidmaatschap cachen voor offline kiosk
 - Ingeschakelde offline kiosken kunnen maximaal 60 dagen worden gebruikt met AAD-groepen.
 
-Dit beleid bepaalt voor hoeveel dagen Azure AD-groepslidmaatschapcache mag worden gebruikt voor configuraties voor toegewezen toegang die zijn gericht op Azure AD-groepen voor aangemelde gebruikers. Zodra deze beleidswaarde is ingesteld op een waarde die groter is dan 0, wordt de cache anders niet gebruikt.  
+Met dit beleid bepaalt u hoe lang de Cache voor Azure AD-groepslidmaatschap mag worden gebruikt voor configuraties met toegewezen toegang die zijn gericht op Azure AD-groepen voor aangemelde gebruikers. Zodra deze beleidswaarde is ingesteld op waarde groter dan 0, wordt de cache anders niet gebruikt.  
 
 Naam: AADGroupMembershipCacheValidityInDays URI-waarde: ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
 
@@ -928,19 +1003,19 @@ Stappen om dit beleid correct te gebruiken:
 1. Maak een apparaatconfiguratieprofiel voor kiosken die zijn gericht op Azure AD-groepen en wijs dit toe aan HoloLens-apparaten. 
 1. Maak een aangepaste op OMA URI gebaseerde apparaatconfiguratie die deze beleidswaarde in stelt op het gewenste aantal dagen (> 0) en wijs deze toe aan HoloLens-apparaten. 
     1. De URI-waarde moet in het tekstvak OMA-URI worden ingevoerd als ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
-    1. De waarde kan tussen de toegestane minimum/maximumwaarde zijn.
+    1. De waarde kan tussen min. /max. zijn toegestaan.
 1. Schrijf HoloLens-apparaten in en controleer of beide configuraties op het apparaat worden toegepast. 
 1. Laat Azure AD-gebruiker 1 zich aanmelden wanneer internet beschikbaar is. Zodra de gebruiker zich heeft aanmelden en het Azure AD-groepslidmaatschap is bevestigd, wordt de cache gemaakt. 
-1. Azure AD-gebruiker 1 kan HoloLens nu offline halen en gebruiken voor de kioskmodus, zolang de beleidswaarde het aantal dagen toestaat. 
-1. Stap 4 en 5 kunnen worden herhaald voor elke andere Azure AD-gebruiker N. Het belangrijkste punt hier is dat elke Azure AD-gebruiker zich via internet moet aanmelden bij het apparaat, zodat ten minste één keer kan worden vastgesteld dat hij of zij lid is van de Azure AD-groep waarop de Kiosk-configuratie is gericht. 
+1. Azure AD-gebruiker 1 kan HoloLens nu offline halen en gebruiken voor de kioskmodus zolang de beleidswaarde X dagen toestaat. 
+1. Stap 4 en 5 kunnen worden herhaald voor elke andere Azure AD-gebruiker N. Het belangrijkste punt is dat elke Azure AD-gebruiker zich moet aanmelden bij het apparaat via internet, zodat ten minste één keer kan worden vastgesteld dat hij of zij lid is van de Azure AD-groep waarop de Kiosk-configuratie is gericht. 
  
 > [!NOTE]
-> Tot stap 4 voor een Azure AD-gebruiker wordt uitgevoerd, t ervaart u foutgedrag dat wordt vermeld in omgevingen met een verbroken verbinding. 
+> Tot stap 4 voor een Azure AD-gebruiker wordt uitgevoerd, t ervaart deze foutgedrag dat wordt vermeld in omgevingen met een verbroken verbinding. 
 
 ### <a name="new-device-restriction-policies-for-hololens-2"></a>Nieuw apparaatbeperkingsbeleid voor HoloLens 2
 - Hiermee kunnen gebruikers specifieke beleidsregels voor apparaatbeheer beheren, zoals het blokkeren van het toevoegen of verwijderen van inrichtingspakketten.
 
-Nieuw ingeschakelde beleidsregels die meer beheeropties van HoloLens 2 bieden. 
+Nieuw ingeschakeld beleid waarmee meer beheeropties voor apparaten HoloLens 2 ingeschakeld. 
 - [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 - [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
 - [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
@@ -952,18 +1027,18 @@ Deze twee nieuwe polices voor AllowAddProvisioningPackage en AllowRemoveProvisio
 > Met betrekking tot [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)biedt HoloLens alleen ondersteuning voor de configuratie ./Vendor/MSFT/RemoteLock/Lock. De configuraties die te maken hebben met pincodes, zoals opnieuw instellen en herstellen, worden niet ondersteund.
 
 ### <a name="new-power-policies-for-hololens-2"></a>Nieuw energiebeleid voor HoloLens 2
-- Meer opties voor wanneer HoloLens in de slaapstand staat of vergrendelt via energiebeleid. 
+- Meer opties voor wanneer HoloLens slaapstand of vergrendelt via energiebeleid. 
 
-Met deze nieuw toegevoegde beleidsregels kunnen beheerders energiebeheer, zoals time-out voor inactieve gegevens, beheren. Klik op de koppeling voor dat beleid voor meer informatie over elk afzonderlijk beleid.
+Met deze nieuw toegevoegde beleidsregels kunnen beheerders energie-staten beheren, zoals time-out voor inactieve gegevens. Klik op de koppeling voor dat beleid voor meer informatie over elk afzonderlijk beleid.
 
 |     Koppeling beleidsdocumentatie                |     Notities                                                                                                                                       |
 |----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     Voorbeeldwaarde die moet worden gebruikt in Windows Configuration Designer, dat wil zeggen:  `<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
-|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     Voorbeeldwaarde die moet worden gebruikt in Windows Configuration Designer, dat wil zeggen:  `<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
+|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     Voorbeeldwaarde die moet worden gebruikt in Windows Configuration Designer, dat wil zeggen,  `<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
+|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     Voorbeeldwaarde die moet worden gebruikt in Windows Configuration Designer, dat wil zeggen,  `<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
 |     [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  Voorbeeldwaarde die moet worden gebruikt in Windows Configuration Designer, dat wil zeggen 100                                                                             |
 |     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Voorbeeldwaarde die moet worden gebruikt in Windows Configuration Designer, dat wil zeggen 100                                                                          |
-|     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Voorbeeldwaarde die moet worden gebruikt in Windows Configuration Designer, dat wil zeggen:   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
-|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Voorbeeldwaarde die moet worden gebruikt in Windows Configuration Designer, dat wil zeggen:  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
+|     [StandbyTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Voorbeeldwaarde die moet worden gebruikt in Windows Configuration Designer, dat wil zeggen,   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
+|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Voorbeeldwaarde die moet worden gebruikt in Windows Configuration Designer, dat wil zeggen,  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
 
 Deze twee nieuwe polices voor DisplayOffTimeoutOnBattery en DisplayOffTimeoutPluggedIn worden toegevoegd aan [onze Algemene apparaatbeperkingen.](hololens-common-device-restrictions.md)
 
@@ -981,84 +1056,84 @@ Deze updatebeleidsregels zijn nu ingeschakeld op HoloLens 2 apparaten:
 
 Volledige informatie over deze updatebeleidsregels en hoe u deze kunt gebruiken voor HoloLens-apparaten vindt u hier in [HoloLens-updates beheren.](hololens-updates.md)
 
-### <a name="enabled-settings-page-visibility-for-hololens-2"></a>Zichtbaarheid van pagina Instellingen ingeschakeld voor HoloLens 2
-- Meer gebruikersinterfacebeheer in de instellingen-app, wat kan worden verward met het weergeven van een beperkte selectie pagina's.
+### <a name="enabled-settings-page-visibility-for-hololens-2"></a>Zichtbaarheid van de pagina Instellingen ingeschakeld voor HoloLens 2
+- Meer ui-besturingselement in de instellingen-app, wat kan worden verward om een beperkte selectie pagina's weer te geven.
 
 We hebben nu een beleid ingeschakeld waarmee IT-beheerders kunnen voorkomen dat specifieke pagina's in de app Systeeminstellingen zichtbaar of toegankelijk zijn, of om dit te doen voor alle pagina's behalve de pagina's die zijn opgegeven. Als u wilt weten hoe u deze functie volledig kunt aanpassen, klikt u op de onderstaande koppeling.
 
 - [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
 
-Als u wilt weten welke pagina-instellingen u kunt aanpassen HoloLens 2, gaat u naar onze pagina [Instellingen-URI's.](settings-uri-list.md) 
+Als u wilt weten welke pagina-instellingen u kunt aanpassen op HoloLens 2, gaat u naar onze [pagina Instellingen-URI's.](settings-uri-list.md) 
  
 ![Schermopname van actieve uren die worden gewijzigd in de app Instellingen](images/hololens-page-visibility-list.jpg)
 
 ### <a name="research-mode"></a>Onderzoeksmodus
-In de onderzoeksmodus wordt HoloLens 2 een tool voor computer vision-onderzoek. Vergeleken met vorige edities heeft de onderzoeksmodus voor HoloLens 2 de volgende voordelen:
--   Naast sensoren die worden blootgesteld in de onderzoeksmodus van HoloLens (eerste generatie), bieden we nu IMU-sensortoegang, waaronder een versnellingsmeter, eenscope en een teller.
+In de onderzoeksmodus wordt HoloLens 2 een handig hulpmiddel voor Computer Vision-onderzoek. Vergeleken met vorige edities heeft de onderzoeksmodus voor HoloLens 2 de volgende voordelen:
+-   Naast sensoren die worden blootgesteld in de Onderzoeksmodus van HoloLens (eerste generatie), bieden we nu IMU-sensortoegang, waaronder een versnellingsmeter,scope en teller.
 -   HoloLens 2 biedt nieuwe mogelijkheden die samen met de onderzoeksmodus kunnen worden gebruikt. Met name toegang tot verwoorde API's voor handtracking en oogtracking die een uitgebreidere set experimenten kunnen leveren.
 
-Onderzoekers hebben nu de mogelijkheid om de onderzoeksmodus op hun HoloLens-apparaten in te schakelen voor toegang tot al deze extern gerichte onbewerkte sensorenstreams. Onderzoeksmodus voor HoloLens 2 biedt ook toegang tot de snelheidsmeter, descope en de snelheidsmetermetingen. Ter bescherming van de privacy van gebruikers zijn onbewerkte camera's voor het bijhouden van ogen niet beschikbaar via de onderzoeksmodus, maar de richting van de ogen is beschikbaar via bestaande API's.
+Onderzoekers hebben nu de mogelijkheid om de onderzoeksmodus op hun HoloLens-apparaten in te schakelen voor toegang tot al deze extern gerichte onbewerkte sensorenstreams. Onderzoeksmodus voor HoloLens 2 biedt ook toegang tot de snelheidsmeter,scope en snelheidsmetermetingen. Ter bescherming van de privacy van gebruikers zijn onbewerkte cameraafbeeldingen voor het bijhouden van ogen niet beschikbaar via de onderzoeksmodus, maar de richting van de ogen is beschikbaar via bestaande API's.
 
-Raadpleeg de documentatie [over de onderzoeksmodus](https://docs.microsoft.com/windows/mixed-reality/research-mode) voor meer technische details.
+Bekijk de documentatie [voor de onderzoeksmodus](https://docs.microsoft.com/windows/mixed-reality/research-mode) voor meer technische details.
 
 ### <a name="recording-length-increased"></a>Opnamelengte verhoogd
-Vanwege feedback van klanten hebben we de opnamelengte van de mixed reality [opnamen verhoogd.](holographic-photos-and-videos.md) Mixed Reality-opnamen worden niet langer standaard beperkt tot vijf minuten, maar berekenen in plaats daarvan de maximale opnamelengte op basis van de beschikbare schijfruimte. Het apparaat schat de maximale duur van de video-opname op basis van de beschikbare schijfruimte tot 80% van de totale schijfruimte.
+Als gevolg van feedback van klanten hebben we de opnamelengte van mixed reality [opnamen verhoogd.](holographic-photos-and-videos.md) Mixed Reality-opnamen worden niet langer standaard beperkt tot vijf minuten, maar berekenen in plaats daarvan de maximale opnamelengte op basis van de beschikbare schijfruimte. Het apparaat schat de maximale duur van de video-opname op basis van de beschikbare schijfruimte tot 80% van de totale schijfruimte.
 
 > [!NOTE]
 > De HoloLens gebruikt de standaardlengte voor video-opname (5 minuten) als een van de volgende opties wordt gebruikt:
-> - De geschatte maximale opnameduur is kleiner dan de standaard 5 minuten.
+> - De geschatte maximale opnameduur is kleiner dan de standaardduur van 5 minuten.
 > - De beschikbare schijfruimte is minder dan 20% van de totale schijfruimte.
 
-U vindt de volledige vereisten in onze [documentatie over holografische foto's en video's.](holographic-photos-and-videos.md#maximum-recording-length) 
+U vindt de volledige vereisten in onze documentatie over [holografische foto's en video's.](holographic-photos-and-videos.md#maximum-recording-length) 
 
 ### <a name="improvements-and-fixes-in-the-update"></a>Verbeteringen en oplossingen in de update:
-- Meer schermen in OOBE staan nu in de donkere modus.
-- Meer inhoud moet online naar de meest recente privacyverklaring wijzen.
-- Er is een probleem opgelost waarbij gebruikers GEEN VPN-profielen konden inrichten via inrichtingspakketten.
-- Probleem met proxyconfiguratie opgelost voor VPN-verbinding.
+- Meer schermen in OOBE zijn nu in donkere modus.
+- Meer inhoud moet naar de meest recente privacyverklaring online wijzen.
+- Er is een probleem opgelost waarbij gebruikers geen VPN-profielen konden inrichten via inrichtingspakketten.
+- Probleem met proxyconfiguratie voor VPN-verbinding opgelost.
 - Beleid bijgewerkt om de enumeratie van USB-functies via MDM voor NCM voor AllowUsbConnection uit te schakelen.
 - Er is een probleem opgelost waardoor een HoloLens-apparaat niet kon worden weergegeven in Verkenner via Media Transfer Protocol (MTP) wanneer het apparaat is ingesteld als kiosk voor [één app.](hololens-kiosk.md) Houd er rekening mee dat MTP (en USB-verbinding in het algemeen) nog steeds kan worden uitgeschakeld met behulp van het [beleid AllowUSBConnection.](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection)
-- Er is een probleem opgelost waarbij pictogrammen in de Startmenu correct werden geschaald in de kioskmodus.
+- Er is een probleem opgelost waarbij pictogrammen in Startmenu correct werden geschaald in de kioskmodus.
 - Er is een probleem opgelost omdat http-caching de kioskmodus verstoort die is gericht op Azure AD-groepen.
-- Er is een probleem opgelost waarbij gebruikers de knop Paar niet konden gebruiken na het inschakelen van de ontwikkelaarsmodus met inrichtingspakketten, tenzij ze de ontwikkelaarsmodus hebben uitgeschakeld en opnieuw hebben ingeschakeld.
+- Er is een probleem opgelost waarbij gebruikers de knop Koppelen niet konden gebruiken nadat ze de ontwikkelaarsmodus hadden ingeschakeld met inrichtingspakketten, tenzij ze de ontwikkelaarsmodus hebben uitgeschakeld en opnieuw hebben ingeschakeld.
 
-## <a name="windows-holographic-version-1903---november-2020-update"></a>Windows Holographic, versie 1903 - Update van november 2020
+## <a name="windows-holographic-version-1903---november-2020-update"></a>Windows Holographic, versie 1903 - update van november 2020
 - Build 18362.1085
 
-Deze maandelijkse kwaliteitsupdate bevat geen belangrijke wijzigingen. We raden u aan onze nieuwste build voor de functiere release Windows Holographic versie 20H2 uit te proberen.
+Deze maandelijkse kwaliteitsupdate bevat geen belangrijke wijzigingen. We raden u aan om onze nieuwste versie van de functieversie Windows Holographic, versie 20H2, uit te proberen.
 
-## <a name="windows-holographic-version-2004---october-2020-update"></a>Windows Holographic, versie 2004 - Update van oktober 2020
+## <a name="windows-holographic-version-2004---october-2020-update"></a>Windows Holographic, versie 2004 - update van oktober 2020
 - Build 19041.1124
  
 Verbeteringen en oplossingen in de update:
 
-- Er is een onnodige controle verwijderd die een fout in het runtimesysteem heeft veroorzaakt.
+- Er is een onnodige controle verwijderd die een runtimesysteemfout heeft veroorzaakt.
 
-## <a name="windows-holographic-version-1903---october-2020-update"></a>Windows Holographic, versie 1903 - Update van oktober 2020
+## <a name="windows-holographic-version-1903---october-2020-update"></a>Windows Holographic, versie 1903 - update van oktober 2020
 - Build 18362.1081
 
-Deze maandelijkse kwaliteitsupdate bevat geen belangrijke wijzigingen. We raden u aan onze nieuwste builds voor Windows Holographic versie 2004 uit te proberen.
+Deze maandelijkse kwaliteitsupdate bevat geen belangrijke wijzigingen. We raden u aan onze nieuwste builds voor Windows Holographic, versie 2004, uit te proberen.
 
-## <a name="windows-holographic-version-2004---september-2020-update"></a>Windows Holographic, versie 2004 - Update van september 2020
+## <a name="windows-holographic-version-2004---september-2020-update"></a>Windows Holographic, versie 2004 - update van september 2020
 - Build 19041.1117
 
 Verbeteringen en oplossingen in de update:
 
 - Lost een probleem op waardoor Visual Studio een toepassing niet kan debuggen wanneer SupportsMultipleInstances="true" aanwezig is in de appxmanifest.
-- Deze release bevat een ncsi-proxydetectiefix voor het oplossen van mislukte internetdetectie via een netwerkproxy. NCSI kan machineproxy en proxy per profiel gebruiken voor detectie van internetverbinding. Proxy per gebruiker wordt ondersteund door NCSI in een toekomstige versie.
-- Op de Windows Mixed Reality apparaten is de vector voor de voorwaartse richting parallel aan de grond wanneer het hoofd van de gebruiker zich in een neutrale positie op de weg beveilt. Eerdere versies van HoloLens 2 echter de vector uitgelijnd om in plaats daarvan haaks op de weergavepanelen te staan, die een paar graden omlaag wordt gedraaid ten opzichte van de ideale richting. Nieuwere versies van HoloLens 2 hebben dit gecorrigeerd om semantische consistentie tussen formulierfactoren te garanderen.
+- Deze release bevat een NCSI-proxydetectiefix voor het oplossen van mislukte internetdetectie via een netwerkproxy. NCSI kan machineproxy en proxy per profiel gebruiken voor detectie van internetverbinding. Proxy per gebruiker wordt ondersteund door NCSI in de toekomstige versie.
+- Op de Windows Mixed Reality apparaten is de vector voor de voorwaartse richting parallel aan de grond wanneer het hoofd van de gebruiker zich in een neutrale positie in de toekomst kijkt. Eerdere versies van HoloLens 2 echter de vector uitgelijnd om in plaats daarvan perpensaal te zijn ten opzichte van de weergavepanelen, die een paar graden omlaag wordt gekanteld ten opzichte van de ideale richting. Nieuwere versies van HoloLens 2 hebben dit gecorrigeerd om semantische consistentie tussen formulierfactoren te garanderen.
 - Verbeterde robuustheid van handtracking die leidt tot minder traceringsverlies in specifieke scenario's.
-- Deze release bevat een oplossing voor het verbeteren van de kwaliteit van audiotijdstempels, die mogelijk heeft bijgedragen aan problemen met het vastleggen van video's.
+- Deze release bevat een oplossing voor het verbeteren van de kwaliteit van audiotijdstempels die mogelijk hebben bijgedragen aan problemen met het vastleggen van video's.
 
-## <a name="windows-holographic-version-1903---september-2020-update"></a>Windows Holographic, versie 1903 - Update van september 2020
+## <a name="windows-holographic-version-1903---september-2020-update"></a>Windows Holographic, versie 1903 - update van september 2020
 - Build 18362.1079
 
 Verbeteringen en oplossingen in de update:
 
-- Op de Windows Mixed Reality apparaten is de vector voor de voorwaartse richting parallel aan de grond wanneer het hoofd van de gebruiker zich in een neutrale positie op de weg beveilt. Eerdere versies van HoloLens 2 echter de vector uitgelijnd om in plaats daarvan haaks op de weergavepanelen te staan, die een paar graden omlaag wordt gedraaid ten opzichte van de ideale richting. Nieuwere versies van HoloLens 2 hebben dit gecorrigeerd om semantische consistentie tussen formulierfactoren te garanderen.
+- Op de Windows Mixed Reality apparaten is de vector voor de voorwaartse richting parallel aan de grond wanneer het hoofd van de gebruiker zich in een neutrale positie in de toekomst kijkt. Eerdere versies van HoloLens 2 echter de vector uitgelijnd om in plaats daarvan perpensaal te zijn ten opzichte van de weergavepanelen, die een paar graden omlaag wordt gekanteld ten opzichte van de ideale richting. Nieuwere versies van HoloLens 2 hebben dit gecorrigeerd om semantische consistentie tussen formulierfactoren te garanderen.
 - Verbeterde robuustheid van handtracking die leidt tot minder traceringsverlies in specifieke scenario's.
 
-## <a name="windows-holographic-version-2004---august-2020-update"></a>Windows Holographic, versie 2004 - Update van augustus 2020
+## <a name="windows-holographic-version-2004---august-2020-update"></a>Windows Holographic, versie 2004 - update van augustus 2020
 - Build 19041.1113
 
 Verbeteringen en oplossingen in de update:
@@ -1107,14 +1182,14 @@ Verbeteringen en oplossingen in de update:
 - De stabiliteit van hologrammen in opgenomen video's is verbeterd.
 - Er is een probleem opgelost waarbij mixed reality video niet kon opnemen nadat het apparaat meerdere dagen stand-by was.
 - De HolographicSpace.UserPresence-API is doorgaans uitgeschakeld voor Unity-toepassingen. Dit gedrag voorkomt een probleem waardoor sommige apps zijn onderbroken toen het visor werd gespiegeld, zelfs als de instelling 'uitvoeren op de achtergrond' was ingeschakeld. De API is nu ingeschakeld voor Unity-versies 2018.4.18 en hoger en 2019.3.4 en hoger.
-- Wanneer u toegang Apparaatportal via een Wi-Fi verbinding, kan een webbrowser de toegang tot verhinderen vanwege een ongeldig certificaat. De browser rapporteert mogelijk een fout zoals 'ERR_SSL_PROTOCOL_ERROR', zelfs als het apparaatcertificaat eerder is vertrouwd. In dit geval kunt u niet verder met Apparaatportal, omdat er geen optie is om beveiligingswaarschuwingen te negeren. Met deze update is het probleem opgelost. Als het apparaatcertificaat eerder is gedownload en vertrouwd op een pc om browserbeveiligingswaarschuwingen te verwijderen en de SSL-fout optreedt, moet het nieuwe certificaat worden gedownload en vertrouwd om beveiligingswaarschuwingen van de browser te kunnen aanpakken.
+- Wanneer u toegang Apparaatportal via een Wi-Fi verbinding, kan een webbrowser de toegang tot verhinderen vanwege een ongeldig certificaat. De browser rapporteert mogelijk een fout zoals 'ERR_SSL_PROTOCOL_ERROR', zelfs als het apparaatcertificaat eerder is vertrouwd. In dit geval kunt u niet verder met Apparaatportal, omdat er geen optie is om beveiligingswaarschuwingen te negeren. Met deze update is het probleem opgelost. Als het apparaatcertificaat eerder is gedownload en vertrouwd op een pc om browserbeveiligingswaarschuwingen te verwijderen en de SSL-fout optreedt, moet het nieuwe certificaat worden gedownload en vertrouwd om browserbeveiligingswaarschuwingen te kunnen aanpakken.
 - De mogelijkheid ingeschakeld om een runtime-inrichtingspakket te maken waarmee een app kan worden geïnstalleerd met behulp van MSIX-pakketten.
-- Er is een instelling **toegevoegd** in Settings  >  **System**  >  **Holograms** waarmee gebruikers automatisch alle hologrammen van Mixed Reality apparaat kunnen verwijderen wanneer het apparaat wordt afgesloten.
-- Er is een probleem opgelost waardoor HoloLens-apps die hun pixelindeling hebben gewijzigd, zwart worden weergegeven in de HoloLens-emulator.
+- Er is een instelling **toegevoegd** in Settings  >  **System**  >  **Holograms** waarmee gebruikers automatisch alle hologrammen uit Mixed Reality apparaat kunnen verwijderen wanneer het apparaat wordt afgesloten.
+- Er is een probleem opgelost waardoor HoloLens-apps die hun pixelindeling wijzigen, zwart worden weergegeven in de HoloLens-emulator.
 - Er is een fout opgelost die een crash heeft veroorzaakt tijdens het aanmelden bij Iris.
-- Er is een probleem opgelost met herhaalde store-downloads voor apps die al actueel zijn.
-- Er is een fout opgelost om te voorkomen dat in immersive apps Microsoft Edge geopend.
-- Er is een probleem opgelost met de lanceringen van de photos-app in eerste instantie na het bijwerken vanaf de release uit 1903.
+- Er is een probleem opgelost met herhaalde store-downloads voor bestaande apps.
+- Er is een fout opgelost om te voorkomen dat in immersieve apps Microsoft Edge geopend.
+- Er is een probleem opgelost met de lanceringen van de photos-app in de initiële boots na het bijwerken van de release uit 1903.
 - Verbeterde prestaties en betrouwbaarheid.
 
 ## <a name="windows-holographic-version-1903---june-2020-update"></a>Windows Holographic, versie 1903 - update van juni 2020
@@ -1128,38 +1203,38 @@ Verbeteringen en oplossingen in de update:
     - GlobalOpacityCoefficient (0.9 (HoloLens) 1.0 (Immersive headset))
   - Op het *MRC-audio-effect:*
     - LoopbackGain (de huidige waarde 'App Audio Gain' op Vastleggen in mixed reality pagina in Windows Apparaatportal)
-    - MicrophoneGain (de huidige waarde voor 'Mic Audio Gain' op Vastleggen in mixed reality pagina in Windows Apparaatportal)
+    - MicrophoneGain (de huidige waarde 'Mic Audio Gain' op Vastleggen in mixed reality pagina in Windows Apparaatportal)
 - De HolographicSpace.UserPresence-API is doorgaans uitgeschakeld voor Unity-toepassingen. Dit gedrag voorkomt een probleem waardoor sommige apps worden onderbroken wanneer de visor wordt gespiegeld, zelfs als de instelling voor het uitvoeren op de achtergrond is ingeschakeld. De API is nu ingeschakeld voor Unity-versies 2018.4.18 en hoger en 2019.3.4 en hoger.
-- Er is een probleem opgelost waardoor HoloLens-apps die hun pixelindeling hebben gewijzigd, zwart worden weergegeven in de HoloLens-emulator.
-- Er is een probleem opgelost met de lanceringen van de app Photos in eerste instantie na het bijwerken van de release uit 1903.
+- Er is een probleem opgelost waardoor HoloLens-apps die de pixelindeling hebben gewijzigd, zwart worden weergegeven in de HoloLens-emulator.
+- Er is een probleem opgelost met de lanceringen van de photos-app in de eerste keer dat de app werd geboot na het bijwerken van de release uit 1903.
 
 ## <a name="windows-holographic-version-2004"></a>Windows Holographic, versie 2004  
 - Build - 19041.1103
 
-De belangrijkste software-update van mei 2020 voor HoloLens 2, *Windows Holographic, versie 2004* bevat een groot aantal interessante nieuwe mogelijkheden, zoals ondersteuning voor Windows Autopilot, de donkere modus van de app, USB Ethernet-ondersteuning voor 5G/LTE-hotspots en nog veel meer. Als u wilt bijwerken naar de nieuwste versie, opent u de app Instellingen, gaat u naar Update & Security en selecteert u   de knop Controleren op **** **updates.**   
+De belangrijkste software-update van mei 2020 voor HoloLens 2, *Windows Holographic, versie 2004* bevat tal van interessante nieuwe mogelijkheden, zoals ondersteuning voor Windows Autopilot, donkere app-modus, USB Ethernet-ondersteuning voor 5G/LTE-hotspots en nog veel meer. Als u wilt bijwerken naar de nieuwste versie, opent u de app Instellingen, gaat u naar Update & Security en selecteert u   de knop Controleren op **** **updates.**   
 
 |             Functie                              |          Beschrijving                                                                                              |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-|       Windows Autopilot                          |          Nieuwe apparaten vooraf configureren en naadloos instellen voor productie met behulp van Windows AutoPilot                 |
+|       Windows Autopilot                          |          Nieuwe apparaten vooraf configureren en naadloos instellen voor productie met windows AutoPilot                 |
 |       FIDO 2-ondersteuning                             |          Ondersteuning voor FIDO2-beveiligingssleutels om snelle en veilige verificatie voor gedeelde apparaten mogelijk te maken            |
 |       Verbeterde inrichting                      |          Naadloos een inrichtingspakket van een USB-station toepassen op uw HoloLens                              |
-|       Installatiestatus van toepassing                 |          Controleer of de installatiestatus in de app Instellingen voor apps is HoloLens 2 via MDM               |
-|       Configuratieserviceproviders (CSP's)   |          Nieuwe configuratieserviceproviders toegevoegd om de beheermogelijkheden te verbeteren                 |
+|       Installatiestatus van toepassing                 |          Controleer de installatiestatus in de app Instellingen voor apps die zijn HoloLens 2 via MDM               |
+|       Configuratieserviceproviders (CSP's)   |          Nieuwe configuratieserviceproviders toegevoegd om beheermogelijkheden te verbeteren                 |
 |       ONDERSTEUNING voor USB 5G/LTE                       |          Uitgebreide USB Ethernet-mogelijkheid biedt ondersteuning voor 5G/LTE                                    |
 |       Donkere app-modus                              |          Donkere app-modus beschikbaar voor apps die zowel donkere als lichte modi ondersteunen, waardoor de weergave-ervaring wordt verbeterd        |
-|       Spraakopdrachten                             |          Ondersteuning voor aanvullende systeemstemopdrachten voor het handsfree-beheer van HoloLens                           |
-|       Verbeteringen in handtracking                 |          Met verbeteringen in handtracking worden knoppen en 2D-slate-interacties nauwkeuriger                        |
-|       Kwaliteitsverbeteringen en oplossingen                 |          Verschillende verbeteringen in de systeemprestaties en -betrouwbaarheid op het platform                            |
+|       Spraakopdrachten                             |          Ondersteuning voor aanvullende systeemstemopdrachten om HoloLens handsfree te bedienen                           |
+|       Verbeteringen in handtracking                 |          Handtrackingverbeteringen zorgen ervoor dat knoppen en 2D-slate-interacties nauwkeuriger worden                        |
+|       Kwaliteitsverbeteringen en oplossingen                 |          Verschillende verbeteringen in systeemprestaties en betrouwbaarheid op het platform                            |
 
 ### <a name="support-for-windows-autopilot"></a>Ondersteuning voor Windows Autopilot
 
-Windows Autopilot voor HoloLens 2 kan het verkoopkanaal van het apparaat HoloLens vooraf inschrijven bij uw Intune-tenant. Wanneer apparaten binnenkomen, zijn ze klaar om zelf te implementeren als gedeelde apparaten onder uw tenant. Als u wilt profiteren van zelf-implementatie, moet het apparaat verbinding maken met een netwerk tijdens het eerste scherm in de installatie met behulp van een USB-C-naar-Ethernet.
+Windows Autopilot voor HoloLens 2 kan het verkoopkanaal van het apparaat HoloLens vooraf inschrijven bij uw Intune-tenant. Wanneer apparaten binnenkomen, zijn ze klaar om zelf te implementeren als gedeelde apparaten onder uw tenant. Om te profiteren van zelf-implementatie, moet het apparaat verbinding maken met een netwerk tijdens het eerste scherm in de installatie met behulp van een USB-C-naar-Ethernet.
 
 Nadat een gebruiker het zelf-implementerende Autopilot-proces heeft gestart, worden de volgende stappen voltooid:
 
 1. Voeg het apparaat toe aan Azure Active Directory (Azure AD).
 1. Gebruik Azure AD om het apparaat in te schrijven bij Microsoft Intune (of een andere MDM-service).
-1. Download het beleid, de certificaten en de netwerkprofielen die op het apparaat zijn gericht.
+1. Download het op apparaten gerichte beleid, certificaten en netwerkprofielen.
 1. Het apparaat inrichten.
 1. Het aanmeldingsscherm presenteren aan de gebruiker.
 
@@ -1171,7 +1246,7 @@ Meer informatie in de [Windows Autopilot voor HoloLens 2 evaluatiehandleiding.](
 
 Sommige gebruikers delen een HoloLens-apparaat met anderen in een werk- of schoolomgeving. Het is dus belangrijk dat gebruikers eenvoudig lange gebruikersnamen en wachtwoorden kunnen typen. Met Fast Identity Online (FIDO) kan iedereen in uw organisatie (Azure AD-tenant) zich naadloos aanmelden bij HoloLens zonder een gebruikersnaam of wachtwoord in te voeren.
 
-FIDO2-beveiligingssleutels zijn een 'unphishable' op standaarden gebaseerde verificatiemethode zonder wachtwoord die in elke vormfactor kan worden gebruikt. FIDO is een open standaard voor verificatie zonder wachtwoord. Hiermee kunnen gebruikers en organisaties zich aanmelden bij hun resources zonder een gebruikersnaam of wachtwoord. In plaats daarvan gebruiken ze een externe beveiligingssleutel of een platformsleutel die is ingebouwd in een apparaat.
+FIDO2-beveiligingssleutels zijn een op standaarden gebaseerde verificatiemethode zonder wachtwoord die in elke vorm kan worden gebruikt. FIDO is een open standaard voor verificatie zonder wachtwoord. Hiermee kunnen gebruikers en organisaties zich aanmelden bij hun resources zonder een gebruikersnaam of wachtwoord. In plaats daarvan gebruiken ze een externe beveiligingssleutel of een platformsleutel die is ingebouwd in een apparaat.
 
 Zie Aanmelden met een beveiligingssleutel zonder wachtwoord [inschakelen om aan de slag te gaan.](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key)
 
@@ -1188,7 +1263,7 @@ Ga als volgende te werk om het uit te proberen:
 
 ### <a name="line-of-business-application-install-status"></a>Installatiestatus van Line-Of-Business-toepassing
 
-De implementatie en het beheer van MDM-apps voor Line-Of-Business-apps is essentieel voor HoloLens. Beheerders en gebruikers moeten de installatiestatus van de app weergeven voor controle en diagnose. In deze release hebben we meer informatie toegevoegd in  >  **InstellingenAccounts** Toegang tot  >  **werk of school** Klik op uw  >  **account**  >  **Info**.
+De implementatie en het beheer van MDM-apps voor Line-Of-Business-apps is essentieel voor HoloLens. Beheerders en gebruikers moeten de installatiestatus van de app weergeven voor controle en diagnose. In deze release hebben we meer informatie toegevoegd **in**  >  **InstellingenAccounts** Toegang tot  >  **werk of school** Klik op uw  >  **account**  >  **Info**.
 
 ### <a name="additional-csps-and-policies"></a>Aanvullende CSP's en beleidsregels
 
@@ -1218,21 +1293,21 @@ De NetworkQoSPolicy-configuratieserviceprovider maakt QoS-beleid (Quality of Ser
 
 ### <a name="expanded-usb-ethernet-support-for-5glte-tethered-devices"></a>Uitgebreide USB Ethernet-ondersteuning voor 5G/LTE-tethered apparaten
 
-Er is ondersteuning toegevoegd voor het inschakelen van bepaalde mobiele breedbandapparaten, zoals 5G/LTE-telefoons en Wi-Fi-hotspots, wanneer ze via USB aan de HoloLens 2 zijn aangesloten. Deze apparaten worden nu in **netwerkinstellingen** weergegeven als een andere Ethernet-verbinding. (Mobiele breedbandapparaten waarvoor een extern stuurprogramma is vereist, worden niet ondersteund.) Deze functionaliteit maakt verbindingen met hoge bandbreedte mogelijk wanneer Wi-Fi niet beschikbaar is en Wi-Fi tethering niet goed genoeg presteert. Zie Verbinding maken met Bluetooth en USB-C-apparaten voor meer informatie over [ondersteunde USB-apparaten.](https://docs.microsoft.com/hololens/hololens-connect-devices)  
+Er is ondersteuning toegevoegd voor bepaalde mobiele breedbandapparaten, zoals 5G/LTE-telefoons en Wi-Fi-hotspots, wanneer ze via USB aan de HoloLens 2 zijn aangesloten. Deze apparaten worden nu weergegeven in **netwerkinstellingen als** een andere Ethernet-verbinding. (Mobiele breedbandapparaten waarvoor een extern stuurprogramma is vereist, worden niet ondersteund.) Deze functionaliteit maakt verbindingen met hoge bandbreedte mogelijk wanneer Wi-Fi niet beschikbaar is en Wi-Fi tethering niet goed genoeg presteert. Zie Verbinding maken met Bluetooth en USB-C-apparaten voor meer informatie over [ondersteunde USB-apparaten.](https://docs.microsoft.com/hololens/hololens-connect-devices)  
 
 ### <a name="hand-tracking-improvements"></a>Verbeteringen in handtracking
 
 Deze release bevat verschillende verbeteringen voor het bijhouden van de hand:
 
-- **Wijzende houdingstabiliteit:** Het systeem is nu niet meer in staat om de wijsvinger te laten bewegen wanneer deze wordt afgesloten door de vinger. Deze wijziging verbetert de nauwkeurigheid wanneer u knoppen pusht, typt, door inhoud schuift en meer. 
-- **Minder onopzettelijk tikken in de lucht:** We hebben de detectie van het tikgebaar in de lucht verbeterd. Er zijn nu minder onbedoelde activeringen in verschillende veelvoorkomende scenario's, zoals wanneer u uw handen aan uw zijden zet.
-- **Betrouwbaarheid van gebruikerswisselaar:** Het systeem is nu sneller en betrouwbaarder bij het bijwerken van de handgrootte wanneer u een apparaat deelt.
-- **Minder hand steelt:** We hebben de verwerking verbeterd van gevallen waarbij de sensoren meer dan twee handen hebben. Als meerdere personen dicht bij elkaar werken, is de kans veel kleiner dat de bij te houden hand van de gebruiker naar de hand van iemand anders in de scène 'springt'.
-- **Systeembetrouwbaarheid:** Er is een probleem opgelost waardoor het bijhouden van de hand niet meer werkt wanneer het apparaat een hoge belasting heeft.
+- **Wijzende houdingstabiliteit:** Het systeem weerstaat nu het afbuigen van de wijsvinger wanneer deze wordt occludeerd door de man. Deze wijziging verbetert de nauwkeurigheid wanneer u knoppen, type, schuifinhoud en meer pusht. 
+- **Minder onbedoelde tikken in de lucht:** We hebben de detectie van het tikken in de lucht verbeterd. Er zijn nu minder onbedoelde activeringen in verschillende veelvoorkomende scenario's, zoals wanneer u uw handen aan uw zijden laat vallen.
+- **Betrouwbaarheid van gebruikersschakelaar:** Het systeem is nu sneller en betrouwbaarder bij het bijwerken van de handgrootte wanneer u een apparaat deelt.
+- **Minder hand steelt:** We hebben de verwerking van gevallen verbeterd waarbij er meer dan twee handen in beeld zijn van de sensoren. Als meerdere personen dicht bij elkaar werken, is de kans nu veel kleiner dat de bij te houden hand van de gebruiker naar de hand van iemand anders in de scène gaat.
+- **Systeembetrouwbaarheid:** Er is een probleem opgelost waardoor het bijhouden van de hand niet meer werkt wanneer het apparaat wordt belast.
 
 ### <a name="dark-mode"></a>Donkere modus
 
-Veel Windows-apps ondersteunen nu zowel donkere als lichte modi. HoloLens 2 kunnen gebruikers de standaardmodus kiezen voor apps die beide ondersteunen. Na de update is de standaard-app-modus 'donker', maar u kunt deze instelling eenvoudig wijzigen: Navigeer naar Instellingen  >  **Systeemkleuren** Kies uw  >    >  **standaard-app-modus.** 
+Veel Windows-apps ondersteunen nu zowel donkere als lichte modi. HoloLens 2 kunnen de standaardmodus kiezen voor apps die beide ondersteunen. Na de update is de standaard-app-modus 'donker', maar u kunt deze instelling eenvoudig wijzigen: Navigeer naar Instellingen  >  **Systeemkleuren** Kies uw  >    >  **standaard-app-modus.** 
 
 Deze 'in-box'-apps ondersteunen de donkere modus: 
 
@@ -1247,29 +1322,29 @@ Deze 'in-box'-apps ondersteunen de donkere modus:
 - 3D-viewer 
 - Films & TV 
 
-![Tegelvensters in de donkere modus](images/DarkMode.jpg)
+![Tegel van donkere modus voor Windows](images/DarkMode.jpg)
 
-### <a name="system-voice-commands"></a>Systeemsyteme-opdrachten
+### <a name="system-voice-commands"></a>Systeemsytemeopdrachten
 
 U kunt nu spraakopdrachten gebruiken met elke app op het apparaat. Zie Use [your voice to operate HoloLens (Uw stem gebruiken om HoloLens te gebruiken) voor meer informatie.](https://docs.microsoft.com/hololens/hololens-cortana) Zie ook [Ondersteunde talen voor HoloLens 2.](https://docs.microsoft.com/hololens/hololens2-language-support)  
 
 ### <a name="cortana-updates"></a>Cortana-updates
 
-De bijgewerkte app is geïntegreerd met Microsoft 365 om meer gedaan te krijgen op uw apparaten (momenteel alleen US-English beschikbaar). Op HoloLens 2 biedt Cortana geen ondersteuning meer voor bepaalde apparaatspecifieke opdrachten, zoals het aanpassen van het volume of opnieuw opstarten. Deze opties worden nu ondersteund door de nieuwe systeemstemopdrachten. Lees meer over de nieuwe Cortana-app in onze [blog](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/).
+De bijgewerkte app kan worden geïntegreerd met Microsoft 365 om meer gedaan te krijgen op uw apparaten (momenteel alleen US-English beschikbaar). Op HoloLens 2 biedt Cortana geen ondersteuning meer voor bepaalde apparaatspecifieke opdrachten, zoals het aanpassen van het volume of opnieuw opstarten. Deze opties worden nu ondersteund door de nieuwe systeemstemopdrachten. Meer informatie over de nieuwe Cortana-app kunt u vinden in onze [blog](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/).
 
 ### <a name="quality-improvements-and-fixes"></a>Kwaliteitsverbeteringen en oplossingen
 
 Verbeteringen en oplossingen ook in de update:  
-- Er is een actief weergave-kalibratiesysteem geïntroduceerd. Deze functie verbetert de stabiliteit en uitlijning van hologrammen. Ze blijven nu op hun plaats wanneer u uw hoofd van links naar rechts verplaatst.
+- Er is een actief weergave-kalibratiesysteem geïntroduceerd. Deze functie verbetert de stabiliteit en uitlijning van hologrammen. Ze blijven nu op hun plaats wanneer u uw hoofd van de ene naar de andere kant verplaatst.
 - Er is een fout opgelost waarbij Wi-Fi streaming naar HoloLens periodiek werd onderbroken. Als een toepassing aangeeft dat streaming met lage latentie nodig is, implementeert u de oplossing door de [functie SetSocketMediaStreamingMode aan te roepen.](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode)
 - Er is een apparaat vast komen te hangen dat zich tijdens het streamen in de onderzoeksmodus voordeed.
-- Er is een fout opgelost waarbij in sommige gevallen de juiste gebruiker niet op het aanmeldingsscherm zou worden weergegeven bij het hervatten van een sessie.
-- Er is een probleem opgelost waarbij gebruikers MDM-logboeken niet konden exporteren via **Instellingen.**
-- Er is een probleem opgelost waarbij de nauwkeurigheid van het bijhouden van de ogen direct na de out-of-box-installatie mogelijk lager is dan verwacht.
+- Er is een fout opgelost waarbij in sommige gevallen de juiste gebruiker niet op het aanmeldingsscherm zou worden weergegeven bij het hervat van een sessie.
+- Er is een probleem opgelost waarbij gebruikers MDM-logboeken niet konden exporteren via **Instellingen**.
+- Er is een probleem opgelost waarbij de nauwkeurigheid van het volgen van de ogen direct na de out-of-box-installatie mogelijk lager is dan verwacht.
 - Er is een probleem opgelost waarbij het subsysteem voor oogtracking onder bepaalde omstandigheden geen kalibratie kon initialiseren of uitvoeren.
-- Er is een probleem opgelost waarbij de ooginterbrabratie zou worden gevraagd naar een gebruiker die al is ge kalibreerd.
-- Er is een probleem opgelost waarbij een stuurprogramma zou crashen tijdens het maken van een oog.
-- Er is een probleem opgelost waarbij herhaalde aan/uit-knop-drukken een systeem-time-out van 60 seconden en een shell-crash kon veroorzaken.
+- Er is een probleem opgelost waarbij ooginterbratie zou worden gevraagd voor een gebruiker die al is ge kalibreerd.
+- Er is een probleem opgelost waarbij een stuurprogramma crashte tijdens het kalibratieproces van een oog.
+- Er is een probleem opgelost waarbij herhaalde aan/uit-knop-drukken een time-out van het systeem van 60 seconden en een shell-crash kon veroorzaken.
 - Verbeterde stabiliteit voor dieptebuffers.
 - Er is **een knop** Delen toegevoegd aan Feedback-hub zodat gebruikers gemakkelijker feedback kunnen delen.
 - Er is een fout opgelost waarbij RoboRaid WAN niet juist is geïnstalleerd.
@@ -1277,19 +1352,19 @@ Verbeteringen en oplossingen ook in de update:
 ### <a name="known-issues"></a>Bekende problemen
 
 - Een probleem met de systeemtaal zh-CN voorkomt dat spraakopdrachten een mixed reality het IP-adres van het apparaat vastleggen of weergeven.
-- Voor een probleem moet u de Cortana-app starten nadat het apparaat is geactiveerd om spraakactivering 'Hey Cortana' te gebruiken. Als u hebt bijgewerkt van een 18362-build, ziet u mogelijk ook een tweede app-tegel voor de vorige versie van de Cortana-app die niet meer werkt in **Start.**
+- Voor een probleem moet u de Cortana-app starten nadat het apparaat is geactiveerd om spraakactivering "Hey Cortana" te gebruiken. Als u hebt bijgewerkt vanaf een 18362-build, ziet u mogelijk ook een tweede app-tegel voor de vorige versie van de Cortana-app die niet meer werkt in **Start**.
 
-## <a name="windows-holographic-version-1903---may-2020-update"></a>Windows Holographic, versie 1903 - Update van mei 2020 
+## <a name="windows-holographic-version-1903---may-2020-update"></a>Windows Holographic, versie 1903 - update van mei 2020 
 - Build 18362.1061
 
 Deze maandelijkse kwaliteitsupdate bevat geen belangrijke wijzigingen omdat het team aan de Windows Holographic-versie 2004 May Update werkte, zoals eerder beschreven.
 
-## <a name="windows-holographic-version-1903---april-2020-update"></a>Windows Holographic, versie 1903 - Update van april 2020
+## <a name="windows-holographic-version-1903---april-2020-update"></a>Windows Holographic, versie 1903 - update van april 2020
 - Build 18362.1059
 
 **Donkere modus voor ondersteunde apps** 
 
-Veel Windows-apps ondersteunen zowel de donkere als de lichte modus. HoloLens 2 kunnen nu de standaardmodus kiezen voor apps die ondersteuning bieden voor beide kleurenschema's. Op basis van feedback van klanten stellen we de standaard-app-modus in op 'donker', maar u kunt deze instelling eenvoudig op elk moment wijzigen: Navigeer naar Instellingen **> System > Colors** om te zoeken naar 'Kies uw **standaard-app-modus'.**
+Veel Windows-apps ondersteunen zowel donkere als lichte modus. HoloLens 2 kunnen nu de standaardmodus kiezen voor apps die ondersteuning bieden voor beide kleurenschema's. Op basis van feedback van klanten hebben we de standaard-app-modus ingesteld op 'donker', maar u kunt deze instelling eenvoudig op elk moment wijzigen: Navigeer naar Instellingen **> System > Colors** om te zoeken naar 'Kies uw **standaard-app-modus'.**
 
 Deze 'in-box'-apps ondersteunen de donkere modus:
 - Instellingen
@@ -1305,18 +1380,18 @@ Deze 'in-box'-apps ondersteunen de donkere modus:
 
 **Verbeteringen en oplossingen ook in de update:** 
 - Ervoor gezorgd dat shell-overlays zijn opgenomen in mixed reality captures.
-- Onwerkelijke ontwikkelaars kunnen nu de pagina 3D-weergave in Apparaatportal om hun toepassingen te testen en fouten op te sporen.
-- Verbeterde hologramstabiliteit in mixed reality vastleggen wanneer het *holographicDepthReprojectionMethod DepthReprojection-algoritme* wordt gebruikt.
+- Ontwikkelaars van Unreal kunnen nu de pagina 3D-weergave in Apparaatportal om hun toepassingen te testen en fouten op te sporen.
+- Verbeterde hologramstabiliteit in mixed reality vastleggen wanneer het *HolographicDepthReprojectionMethod DepthReprojection-algoritme* wordt gebruikt.
 - De fout 'WinRT IStreamSocketListener API Class not registered' in 32-bits ARM-apps is opgelost.
 
-## <a name="windows-holographic-version-1903---march-2020-update"></a>Windows Holographic, versie 1903 - Update van maart 2020 
+## <a name="windows-holographic-version-1903---march-2020-update"></a>Windows Holographic, versie 1903 - update van maart 2020 
 - Build 18362.1056
 
 Verbeteringen en oplossingen in de update:
 
 - Verbeterde hologramstabiliteit in mixed reality vastleggen wanneer het *HolographicDepthReprojectionMethod AutoPlanar-algoritme* wordt gebruikt.
 - Ervoor gezorgd dat het coördinaatsysteem dat is gekoppeld aan een diepte-MF-voorbeeld consistent is met openbare documentatie.
-- Verbeterde productiviteit voor ontwikkelaars door klanten in staat te stellen grote hoeveelheden tekst via de apparaatportal te plakken.
+- Verbeterde productiviteit van ontwikkelaars door klanten in staat te stellen grote hoeveelheden tekst via de apparaatportal te plakken.
 
 ## <a name="windows-holographic-version-1903---february-2020-update"></a>Windows Holographic, versie 1903 - Update van februari 2020 
 - Build 18362.1053

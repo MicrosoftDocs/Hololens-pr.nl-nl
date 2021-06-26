@@ -16,21 +16,19 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: afd782df1c68e8441b14823e0d961317914140e3
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: be33eb5d06ee7d63f1f598792ff75605b0eb4424
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379423"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923632"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>Opnieuw opstarten, opnieuw instellen of HoloLens 2
-
-## <a name="charge-the-device"></a>Het apparaat in rekening brengen
 
 >[!IMPORTANT]
 > Voordat u een probleemoplossingsprocedure start, moet u ervoor zorgen dat uw apparaat, indien mogelijk, wordt op geladen tot **20 tot 40** procent van de accucapaciteit. De [accuindicatorlichten onder](hololens2-setup.md#lights-that-indicate-the-battery-level) de aan/uit-knop zijn een snelle manier om de accucapaciteit te controleren zonder u aan te melden bij het apparaat.
 
-Gebruik de [kabel en de USB Type-C-kabel](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) die bij de HoloLens 2 omdat dit de beste manier is om uw apparaat op te laden. De goederen leveren 18 W aan stroom (9V bij 2A). Door gebruik te maken van de meegeleverde HoloLens 2 de accu in minder dan 65 minuten vol wanneer het apparaat stand-by is. Als deze accessoires niet beschikbaar zijn, moet u ervoor zorgen dat de beschikbare thee ten minste 15W aan stroom kan ondersteunen.
+Gebruik de [kabel en de USB Type-C-kabel](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) die bij de HoloLens 2 omdat dit de beste manier is om uw apparaat op te laden. De man levert 18 W aan stroom (9V bij 2A). Door gebruik te maken van de meegeleverde HoloLens 2 de accu in minder dan 65 minuten vol wanneer het apparaat stand-by is. Als deze accessoires niet beschikbaar zijn, moet u ervoor zorgen dat de beschikbare thee ten minste 15W aan stroom kan ondersteunen.
 
 > [!NOTE]
 > Vermijd indien mogelijk het gebruik van een pc om het apparaat via USB op te laden, wat traag is.
@@ -39,7 +37,7 @@ Als het apparaat correct is opgestart en wordt uitgevoerd, zijn er drie manieren
 
 - Vanuit het hoofdmenu van de gebruikersinterface van het HoloLens-apparaat.
 - Bekijk de LED dicht bij de aan/uit-knop (voor een kosten van 40 procent ziet u ten minste twee solide LED's).
-    - Wanneer het apparaat wordt op laden, wordt de accu-indicator licht om het huidige laadniveau aan te geven.  Het laatste licht vervaagt in en uit om aan te geven dat de kosten actief zijn.
+    - Wanneer het apparaat wordt op laden, wordt de accu-indicator licht om het huidige laadniveau aan te geven.  Het laatste licht vervaagt in en uit om actieve kosten aan te geven.
     - Wanneer uw HoloLens is aan, geeft de batterijindicator het accuniveau in vijf stappen weer.
     - Wanneer slechts een van de vijf lampen is aan, is het accuniveau lager dan 20 procent.
     - Als het accuniveau kritiek laag is en u het apparaat probeert in te zetten, gaat er kort één lampje uit en gaat u uit.
@@ -77,7 +75,7 @@ Als de standaardprocedure voor opnieuw instellen niet werkt, gebruikt u de proce
 
 5. Open Apparaatbeheer (voor Windows 10 **op de Windows-toets** en vervolgens op de **X-toets** en selecteer **Apparaatbeheer**). Zorg ervoor dat het apparaat op de juiste manier Microsoft HoloLens *zoals* wordt weergegeven in de volgende afbeelding:
 
-   ![HoloLens 2 Microsoft HolooLensRecovery device maanger 2](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 Microsoft HolooLensRecovery-apparaat maanger 2](images/MicrosoftHoloLens_DeviceManager.png)
 
 ## <a name="clean-reflash-the-device"></a>Schone reflash op het apparaat
 
@@ -107,7 +105,7 @@ Voordat u de reflash-procedure start, moet u ervoor zorgen dat de app is geïnst
 
    ![HoloLens 2 eerste scherm nieuwe reflash maken](images/ARC2.png)
 
-3. Selecteer het HoloLens 2 in de gebruikersinterface van de Geavanceerde herstel companion-app en volg de instructies om de reflash te voltooien.
+3. Selecteer het HoloLens 2 in de gebruikersinterface van de Advanced Recovery Companion-app en volg de instructies om de reflash te voltooien.
 
 ### <a name="manual-procedure"></a>Handmatige procedure
 
@@ -156,29 +154,29 @@ Volg deze stappen om het implementatiepad in te stellen:
 
 1. Ga naar **Beheren – Instellingen**. Schakel **Offline-apps tonen in** onder **Winkelervaring.**
 
-1. Ga naar **de winkel voor mijn groep en** zoek naar Advanced Recovery [**_Companion_**](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
+1. Ga naar **winkel voor mijn groep en** zoek naar Advanced Recovery [**_Companion_**](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
 
 1. Wijzig het **licentietype** in **_offline_*_, en selecteer _* Beheren.**
 
-1. Selecteer **onder Het pakket downloaden voor offlinegebruik** de tweede blauwe knop **Downloaden.** Zorg ervoor dat de bestandsextensie *.appxbundle is.*
+1. Selecteer **onder Pakket downloaden voor offlinegebruik** de tweede blauwe knop **Downloaden.** Zorg ervoor dat de bestandsextensie *.appxbundle is.*
 
     - Als de desktop-pc in dit stadium internettoegang heeft, dubbelklikt u op het pakket om de app te installeren.
 
     - Als de doel-pc geen internetverbinding heeft, volgt u deze stappen:
        1. Selecteer de niet-gecodeerde licentie en selecteer vervolgens **Licentie genereren.**
        2. Selecteer **onder Vereiste frameworks** de optie **Downloaden.**
-       3. Gebruik DISM om het pakket toe te passen met de afhankelijkheid en licentie. Voer vanaf een opdrachtprompt van de beheerder de volgende opdracht uit:
+       3. Gebruik DISM om het pakket toe te passen met de afhankelijkheid en licentie. Voer vanaf een administratoropdrachtprompt de volgende opdracht uit:
 
           ```console
           C:\WINDOWS\system32>dism /online /Add-ProvisionedAppxPackage /PackagePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_1.19050.1301.0_neutral_~_8wekyb3d8bbwe.appxbundle" /DependencyPackagePath:"C:\ARCoffline\Microsoft.VCLibs.140.00.UWPDesktop_14.0.27629.0_x86__8wekyb3d8bbwe.appx" /LicensePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_8wekyb3d8bbwe_f72ce112-dd2e-d771-8827-9cbcbf89f8b5.xml" /Region:all
           ```
           > [!NOTE]
-          > Het versienummer in dit codevoorbeeld komt mogelijk niet overeen met de momenteel beschikbare versie. Mogelijk hebt u ook een andere downloadlocatie gekozen dan in het voorbeeld. Wijzig de opdracht naar behoefte.
+          > Het versienummer in dit codevoorbeeld komt mogelijk niet overeen met de momenteel beschikbare versie. Mogelijk hebt u ook een andere downloadlocatie gekozen dan in het voorbeeld. Voer zo nodig wijzigingen aan in de opdracht .
 
 > [!TIP]
-> Wanneer u van plan bent Advanced Recovery Companion te gebruiken om een FFU offline te installeren, kan het handig zijn om uw flash-installatie afbeelding te downloaden. [**Download de huidige afbeelding voor HoloLens 2**](https://aka.ms/hololens2download).
+> Wanneer u van plan bent Advanced Recovery Companion te gebruiken om een FFU offline te installeren, kan het handig zijn om uw flash-installatieafbeelding te downloaden. [**Download de huidige afbeelding voor HoloLens 2**](https://aka.ms/hololens2download).
 
 
 Andere resources:
 - [Offline-apps distribueren](/microsoft-store/distribute-offline-apps) 
-- [Service-opdrachtregelopties voor DISM-app-pakket (.appx of .appxbundle)](/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options)
+- [DISM-app-pakket (.appx of .appxbundle) met opdrachtregelopties](/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options)
