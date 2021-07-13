@@ -1,5 +1,5 @@
 ---
-title: HoloLens opnieuw opstarten, opnieuw instellen of herstellen
+title: Opnieuw opstarten, opnieuw instellen of HoloLens
 ms.reviewer: Follow along with our basic and advanced instructions for rebooting or resetting your HoloLens 2 device.
 description: Advanced Recovery Companion gebruiken om een afbeelding te HoloLens 2.
 keywords: how-to, reboot, reset, recover, hard reset, soft reset, power cycle, HoloLens, shut down, arc, advanced recovery companion
@@ -16,32 +16,32 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: be33eb5d06ee7d63f1f598792ff75605b0eb4424
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 0124453ef9e3b21722acaf2c6b438ebdfbd65043
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923632"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635939"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>Opnieuw opstarten, opnieuw instellen of HoloLens 2
 
 >[!IMPORTANT]
 > Voordat u een probleemoplossingsprocedure start, moet u ervoor zorgen dat uw apparaat, indien mogelijk, wordt op geladen tot **20 tot 40** procent van de accucapaciteit. De [accuindicatorlichten onder](hololens2-setup.md#lights-that-indicate-the-battery-level) de aan/uit-knop zijn een snelle manier om de accucapaciteit te controleren zonder u aan te melden bij het apparaat.
 
-Gebruik de [kabel en de USB Type-C-kabel](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) die bij de HoloLens 2 omdat dit de beste manier is om uw apparaat op te laden. De man levert 18 W aan stroom (9V bij 2A). Door gebruik te maken van de meegeleverde HoloLens 2 de accu in minder dan 65 minuten vol wanneer het apparaat stand-by is. Als deze accessoires niet beschikbaar zijn, moet u ervoor zorgen dat de beschikbare thee ten minste 15W aan stroom kan ondersteunen.
+Gebruik de [kabel en de USB Type-C-kabel](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) die bij de HoloLens 2 omdat dit de beste manier is om uw apparaat op te laden. De goederen leveren 18 W aan stroom (9V bij 2A). Door gebruik te maken van de meegeleverde HoloLens 2 de accu in minder dan 65 minuten vol wanneer het apparaat stand-by is. Als deze accessoires niet beschikbaar zijn, moet u ervoor zorgen dat de beschikbare thee ten minste 15W aan stroom kan ondersteunen.
 
 > [!NOTE]
 > Vermijd indien mogelijk het gebruik van een pc om het apparaat via USB op te laden, wat traag is.
 
 Als het apparaat correct is opgestart en wordt uitgevoerd, zijn er drie manieren om het laadniveau van de accu te controleren:
 
-- Vanuit het hoofdmenu van de gebruikersinterface van het HoloLens-apparaat.
+- Vanuit het hoofdmenu van de HoloLens gebruikersinterface van het apparaat.
 - Bekijk de LED dicht bij de aan/uit-knop (voor een kosten van 40 procent ziet u ten minste twee solide LED's).
-    - Wanneer het apparaat wordt op laden, wordt de accu-indicator licht om het huidige laadniveau aan te geven.  Het laatste licht vervaagt in en uit om actieve kosten aan te geven.
+    - Wanneer het apparaat wordt op laden, wordt de accu-indicator licht om het huidige laadniveau aan te geven.  Het laatste licht vervaagt in en uit om aan te geven dat de kosten actief zijn.
     - Wanneer uw HoloLens is aan, geeft de batterijindicator het accuniveau in vijf stappen weer.
     - Wanneer slechts een van de vijf lampen is aan, is het accuniveau lager dan 20 procent.
     - Als het accuniveau kritiek laag is en u het apparaat probeert in te zetten, gaat er kort één lampje uit en gaat u uit.
-- Open verkenner op uw host-pc **en** zoek uw HoloLens 2 aan de linkerkant onder **Deze pc.** Klik met de rechtermuisknop op het apparaat en selecteer **Eigenschappen.** In een dialoogvenster wordt het acculadingsniveau weergegeven.
+- Open Verkenner op uw host-pc **en** zoek uw apparaat HoloLens 2 aan de linkerkant onder **Deze pc.** Klik met de rechtermuisknop op het apparaat en selecteer **Eigenschappen.** In een dialoogvenster wordt het acculadingsniveau weergegeven.
 
    ![Een scherm HoloLens 2 eigenschappen toont het niveau van de batterijwijziging](images/ResetRecovery2.png)
 
@@ -59,9 +59,9 @@ Onder bepaalde omstandigheden moet u het apparaat mogelijk handmatig opnieuw ins
 
 3. Wacht 2-3 seconden en druk vervolgens kort op de **aan/uit-knop.** De LED's dicht bij de aan/uit-knop worden aan het licht licht en het apparaat wordt opstart.
 
-4. Verbind het apparaat met de host-pc en open Apparaatbeheer. (Voor Windows 10 drukt u op **de Windows-toets** en vervolgens op **de X-toets** en selecteert **u Apparaatbeheer**.) Zorg ervoor dat het apparaat op de juiste manier Microsoft HoloLens *zoals* wordt weergegeven in de volgende afbeelding:
+4. Verbinding maken apparaat naar de host-pc en open Apparaatbeheer. (Voor Windows 10 drukt u op **de Windows** toets en vervolgens op **de X-toets** en selecteert **u Apparaatbeheer**.) Zorg ervoor dat het apparaat op de juiste manier Microsoft HoloLens *zoals* wordt weergegeven in de volgende afbeelding:
 
-   ![HoloLens 2 Microsoft HolooLensRecovery-devive manager](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftOlooLensRecovery-devive manager](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### <a name="hard-reset-procedure"></a>Procedure voor hard opnieuw instellen
 
@@ -71,11 +71,12 @@ Als de standaardprocedure voor opnieuw instellen niet werkt, gebruikt u de proce
 
 2. Houd de **aan/uit-knoppen** op het volume  +   15 seconden in de wacht. Het apparaat wordt automatisch opnieuw opgestart.
 
-4. Verbind het apparaat met de host-pc.
+4. Verbinding maken apparaat naar de host-pc.
 
-5. Open Apparaatbeheer (voor Windows 10 **op de Windows-toets** en vervolgens op de **X-toets** en selecteer **Apparaatbeheer**). Zorg ervoor dat het apparaat op de juiste manier Microsoft HoloLens *zoals* wordt weergegeven in de volgende afbeelding:
 
-   ![HoloLens 2 Microsoft HolooLensRecovery-apparaat maanger 2](images/MicrosoftHoloLens_DeviceManager.png)
+5. Open Apparaatbeheer (voor Windows 10 drukt u op **Windows** toets en vervolgens op de **X-toets** en **selecteert u Apparaatbeheer**). Zorg ervoor dat het apparaat op de juiste manier Microsoft HoloLens *zoals* wordt weergegeven in de volgende afbeelding:
+
+   ![HoloLens 2 MicrosoftOlooLensRecovery-apparaat maanger 2](images/MicrosoftHoloLens_DeviceManager.png)
 
 ## <a name="clean-reflash-the-device"></a>Schone reflash op het apparaat
 
@@ -99,11 +100,11 @@ Voordat u de reflash-procedure start, moet u ervoor zorgen dat de app is geïnst
 
 ### <a name="normal-procedure"></a>Normale procedure
 
-1. Terwijl het HoloLens-apparaat wordt uitgevoerd, verbindt u het met de Windows 10 pc waarop u eerder de Advanced Recovery Companion-app hebt geopend.
+1. Terwijl het HoloLens apparaat wordt uitgevoerd, verbindt u het met de Windows 10 pc waarop u eerder de Advanced Recovery Companion-app hebt geopend.
  
    Het apparaat wordt automatisch gedetecteerd en de gebruikersinterface van de Geavanceerde herstel companion-app start het updateproces:
 
-   ![HoloLens 2 eerste scherm nieuwe reflash maken](images/ARC2.png)
+   ![HoloLens 2 eerste scherm voor schone reflash](images/ARC2.png)
 
 3. Selecteer het HoloLens 2 in de gebruikersinterface van de Advanced Recovery Companion-app en volg de instructies om de reflash te voltooien.
 
@@ -117,15 +118,15 @@ Als de HoloLens 2 niet correct wordt start of als Advanced Recovery Companion he
 
 3. Druk terwijl u **op de volumeknop omhoog** drukt op de **aan/uit-knop** om het apparaat te starten. Wacht 15 seconden en laat het **volume vervolgens los.** Alleen de middelste LED van de vijf LED's wordt licht licht.
 
-4. Verbind het apparaat met de host-pc en open Apparaatbeheer. (Voor Windows 10 op **de Windows-toets** en vervolgens op **de X-toets** en selecteer vervolgens **Apparaatbeheer**.) Zorg ervoor dat het apparaat op de juiste manier Microsoft HoloLens zoals wordt weergegeven in de volgende afbeelding:
+4. Verbinding maken apparaat naar de host-pc en open Apparaatbeheer. (Druk Windows 10 op **Windows** toets en vervolgens op **de X-toets** en selecteer **Apparaatbeheer**.) Zorg ervoor dat het apparaat op de juiste manier Microsoft HoloLens zoals wordt weergegeven in de volgende afbeelding:
 
-   ![HoloLens 2 Microsoft HolooLensRecovery](images/MicrosoftHoloLensRecovery.png)
+   ![HoloLens 2 MicrosoftOlooLensRecovery](images/MicrosoftHoloLensRecovery.png)
 
    Het apparaat wordt automatisch gedetecteerd en de gebruikersinterface van de Geavanceerde herstel companion-app start het updateproces:
 
-   ![HoloLens 2 reflash-scherm maken](images/ARC2.png)
+   ![HoloLens 2 nieuwe reflash-scherm](images/ARC2.png)
 
-6. Selecteer het HoloLens 2 in de gebruikersinterface van de Geavanceerde herstel companion-app en volg de instructies om de reflash te voltooien.
+6. Selecteer het HoloLens 2 in de gebruikersinterface van de Advanced Recovery Companion-app en volg de instructies om de reflash te voltooien.
 
 ## <a name="troubleshoot-advanced-recovery-companion"></a>Problemen met geavanceerde herstel-companion oplossen
 
@@ -133,7 +134,13 @@ Als de HoloLens 2 niet correct wordt start of als Advanced Recovery Companion he
 
 2. Controleer of uw apparaat is ontgrendeld.
 
-3. Als ARC uw apparaat niet detecteert, controleert u of u verbinding kunt maken met uw apparaat via Verkenner op uw pc. Als dat niet mogelijk is,
+1. Controleer of uw apparaat rechtstreeks op de host-pc is aangesloten, niet op een hub.
+
+1. Als uw apparaat niet wordt weergegeven als een HoloLens/HoloLens Recovery-apparaat onder Universal Serial Bus Drivers, controleert u het volgende:
+    1. **Poorten**, als een Qualcomm HS-USB-apparaat
+    1.   **Andere apparaten**, als QUSB_BULK apparaat: op uw host-pc ontbreken de benodigde stuurprogramma's om uw apparaat te HoloLens. Klik met de rechtermuisknop en selecteer Stuurprogramma bijwerken en zoek online naar stuurprogramma's of schakel [Optionele updates in uw](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674)Windows Instellingen bijwerken in. Nadat het stuurprogramma is gedownload, moet ARC het kunnen detecteren.
+ 
+1. Als ARC uw apparaat niet detecteert, controleert u of u verbinding kunt maken met uw apparaat via Verkenner op uw pc. Als dat niet mogelijk is,
 
     1.  Het is mogelijk dat uw apparaat USB-beleidsregels heeft die die verbinding uitschakelen. Probeer in dat opzicht [handmatige knippermodus](hololens-recovery.md#manual-procedure)uit.
     2.  Als er geen beleidsregels zijn, probeert u een andere USB-kabel.
@@ -142,7 +149,7 @@ Als de HoloLens 2 niet correct wordt start of als Advanced Recovery Companion he
 
 ## <a name="download-arc-without-using-the-app-store"></a>ARC downloaden zonder de App Store te gebruiken
 
-Als de IT-omgeving het gebruik van de Windows Store-app voorkomt of de toegang tot de winkel beperkt, kan de IT-beheerder deze app beschikbaar maken via een 'offline' implementatiepad.
+Als de IT-omgeving het gebruik van de Windows Store-app voorkomt of de toegang tot de winkel beperkt, kan de IT-beheerder deze app beschikbaar maken via een offline implementatiepad.
 
  >[!NOTE]
  > - IT-beheerders kunnen deze app ook distribueren via System Center Configuration Manager (SCCM) of Intune.

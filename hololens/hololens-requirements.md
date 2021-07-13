@@ -1,5 +1,5 @@
 ---
-title: Implementatie HoloLens 2 in een commerciële omgeving plannen
+title: Algemene implementatiescenario's
 description: Meer informatie over het implementeren en beheren van HoloLens in bedrijfsomgevingen, waaronder infrastructuur, Azure Active Directory en beheer van mobiele apparaten.
 ms.prod: hololens
 ms.sitesec: library
@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2a0933bb754043934621a22ffa7764c9c88d93da
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 72b9e61c52d6f4f08cf5a29baf7b01c29fae7489
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924601"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635463"
 ---
 # <a name="common-deployment-scenarios"></a>Algemene implementatiescenario's
 
@@ -59,7 +59,7 @@ De bijbehorende handleiding Verbonden met de cloud bevat informatie over het ins
 
 ## <a name="scenario-b-deploy-inside-your-organizations-network"></a>Scenario B: Implementeren binnen het netwerk van uw organisatie
 
-Dit scenario is identiek aan een klassieke implementatie voor de meeste Windows 10-pc's. HoloLens 2 is geïmplementeerd voor gebruik in het bedrijfsnetwerk met toegang tot interne bedrijfsresources. Internet- en cloudservices zijn mogelijk beperkt. 
+Dit scenario is identiek aan een klassieke implementatie voor de meeste Windows 10 pc's. HoloLens 2 is geïmplementeerd voor gebruik in het bedrijfsnetwerk met toegang tot interne bedrijfsresources. Internet- en cloudservices zijn mogelijk beperkt. 
 
  * Algemene basisconfiguraties
    * Wi-Fi netwerk is een intern bedrijfsnetwerk met toegang tot interne resources en beperkte toegang tot internet of cloudservices.
@@ -77,7 +77,7 @@ Dit scenario is identiek aan een klassieke implementatie voor de meeste Windows 
 
 [![Diagram van scenario B1 ](images/deployment-guides-revised-scenario-b-01-1.png)](images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
 
-[![Scenario B2-diagram ](images/deployment-guides-revised-scenario-b-02-1.png)](images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
+[![Diagram van scenario B2 ](images/deployment-guides-revised-scenario-b-02-1.png)](images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
 
 De bijbehorende handleiding Bedrijfsnetwerk geeft informatie over het inschrijven van HoloLens 2 bij uw bestaande apparaatbeheer, het toepassen van licenties naar behoefte en het valideren dat uw eindgebruikers een Dynamics 365-handleiding kunnen gebruiken en aangepaste Line-Of-Business-apps kunnen gebruiken nadat het apparaat is ingesteld.
 
@@ -102,7 +102,7 @@ Dit is een typische implementatie voor zeer veilige of vertrouwelijke locaties. 
 
 [![Offline beveiligd diagram 1 ](images/deployment-guides-revised-scenario-c-01.png)](images/deployment-guides-revised-scenario-c-01.png#lightbox)
 
-De bijbehorende offline beveiligde handleiding bevat instructies voor het toepassen van een voorbeeld van een inrichtingspakket dat een HoloLens 2 wordt vergrendeld voor gebruik in beveiligde omgevingen.
+De bijbehorende offline beveiligde handleiding bevat instructies voor het toepassen van een voorbeeld van een inrichtingspakket dat een HoloLens 2 voor gebruik in beveiligde omgevingen.
 
 > [!div class="nextstepaction"]
 > [Implementatiehandleiding voor offline beveiligde omgevingen](hololens-common-scenarios-offline-secure.md)

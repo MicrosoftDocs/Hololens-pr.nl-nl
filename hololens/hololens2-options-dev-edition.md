@@ -1,7 +1,7 @@
 ---
 title: HoloLens 2 Development Edition
-description: Meer informatie HoloLens 2 Development Edition en wat u moet doen nadat u er een van uw eigen hebt.
-keywords: HoloLens 2, HoloLens-opties, Developer Edition
+description: Meer informatie HoloLens 2 Development Edition en wat u moet doen nadat u een van uw eigen versies hebt.
+keywords: HoloLens 2, HoloLens, Developer Edition
 author: bogenera
 ms.author: bogenera
 ms.reviewer: bogenera
@@ -14,25 +14,25 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6ecb881f694ca919f9c37a9d6094a708eafcb414
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 268e338ad6734b2d951e72dbf8af4d2edf569aae
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924465"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636364"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 Development Edition
 
-Begin met het bouwen mixed reality met deze aanbieding die HoloLens 2 combineert met gratis proefversies van Unity-software en Azure-tegoed voor cloudservices. Meer informatie over het verder gaan van de basisprincipes en het ontwikkelen voor mixed reality.
+Begin met het bouwen mixed reality deze aanbieding die HoloLens 2 combineert met gratis proefversies van Unity-software en Azure-tegoeden voor cloudservices. Meer informatie over het verder gaan van de basisprincipes en het ontwikkelen voor mixed reality.
 
 ## <a name="learn-about-the-development-edition"></a>Meer informatie over de Development Edition
 
 > [!NOTE]
 > De Development Edition mag niet worden geïmplementeerd met een commercieel gedistribueerde oplossing. De Development Edition mag worden geïmplementeerd bij het ontwikkelen en/of testen van toepassingen in een commerciële omgeving.  
 
-De HoloLens 2 Development Edition bevat een HoloLens 2, $ 500 aan Azure-tegoed, een Unity Pro-proefversie van drie maanden en een proefversie van drie maanden voor de PiXYZ-invoegversie:
+De HoloLens 2 Development Edition bevat een HoloLens 2, $ 500 aan Azure-tegoed, een Unity Pro-proefversie van drie maanden en een proefversie van 3 maanden voor pixyz-invoegabonnementen:
 
-| Bundelfunctie | Beschrijving |
+| Bundelfunctie | Description |
 |---|---|
 |  [Unity](https://unity.com/) | Een realtime 3D-ontwikkelplatform.   |
 |  [Pixyz-in plug-in voor Unity](https://www.pixyz-software.com/plugin/) | Een brug voor het verbinden van de &amp; technische CAD-werelden met de ontwikkelingswereld.   |
@@ -43,28 +43,28 @@ De HoloLens 2 Development Edition bevat een HoloLens 2, $ 500 aan Azure-tegoed, 
 ## <a name="redeem-your-credits"></a>Uw tegoed inwisselen
 
 ### <a name="unity"></a>Unity
-U hebt een unieke code ontvangen. Aanwijzingen voor het inwisselen van de Unity Pro-proefversie:
-1. Ga [naar id.unity.com](http://id.unity.com/)
+U hebt een unieke code ontvangen. Aanwijzingen voor het inwisselen van Unity Pro proefversie:
+1. Ga [id.unity.com](http://id.unity.com/)
 1. Meld u aan met uw Unity-id of maak er een
 1. Klik **op Een productcode inwisselen**
 1. Voer productcode in en klik op **Een productcode inwisselen**
 
-Meer informatie over [het activeren van een Unity-licentie](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-). Neem zo nodig contact [op](https://support.unity3d.com/hc) met unity-ondersteuning voor hulp.  
+Meer informatie over [het activeren van een Unity-licentie](https://support.unity3d.com/hc/articles/211438683-How-do-I-activate-my-license-). Neem zo [nodig contact op](https://support.unity3d.com/hc) met unity-ondersteuning voor hulp.  
 
 ### <a name="pixyz"></a>Pixyz
 U hebt een unieke code ontvangen. Aanwijzingen voor het inwisselen van de proefversie van de Pixyz-invoegversie:
-1. Ga [naar id.unity.com](http://id.unity.com/)
+1. Ga [id.unity.com](http://id.unity.com/)
 1. Klik **op Een productcode inwisselen**
 1. Voer de productcode van uw Pixyz-invoegcode in en klik op **Een productcode inwisselen**
 
-Meer informatie over het inwisselen [van uw Pixyz-licentie.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html) Neem zo nodig contact [op met pixyz-ondersteuning](https://www.pixyz-software.com/support/) voor hulp.
+Meer informatie over het inwisselen [van uw Pixyz-licentie.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html) Neem zo [nodig contact op met pixyz-ondersteuning](https://www.pixyz-software.com/support/) voor hulp.
 
 ### <a name="azure"></a>Azure
 Hier vindt u enkele algemene [Azure-producten voor Mixed Reality](https://azure.microsoft.com/topic/mixed-reality/) u mogelijk uw Azure-tegoed wilt inwisselen.
-Azure-tegoed inwisselen: als u uw Azure-tegoed van $ 500 wilt inwisselen, wisselt u uw promotiecode Azure Pass en activeert u uw abonnement. [Meer informatie.](hololens2-development-edition-faq.md#how-can-i-redeem-my-500-azure-credit)
+Azure-tegoed inwisselen: als u uw Azure-tegoed van $ 500 wilt inwisselen, moet u uw promotiecode Azure Pass en uw abonnement activeren. [Meer informatie.](hololens2-development-edition-faq.yml#how-can-i-redeem-my--500-azure-credit-)
 
-- [Meer informatie over hoe Azure Spatial Anchors u kunt helpen bij het bouwen van apps die 3D-inhoud kunnen in kaart brengen, delen en persistent maken](https://azure.microsoft.com/services/spatial-anchors/)
-- [Leer hoe Azure Remote Rendering interactieve 3D-inhoud van hoge kwaliteit kunt renderen en deze in realtime naar uw apparaten kunt streamen](https://azure.microsoft.com/services/remote-rendering/)
+- [Meer informatie over hoe Azure Spatial Anchors u kunt helpen bij het bouwen van apps die 3D-inhoud in kaart brengen, delen en persistent maken](https://azure.microsoft.com/services/spatial-anchors/)
+- [Meer informatie Azure Remote Rendering interactieve 3D-inhoud van hoge kwaliteit kan renderen en deze in realtime naar uw apparaten kunt streamen](https://azure.microsoft.com/services/remote-rendering/)
 
 ## <a name="get-started-developing"></a>Aan de slag met ontwikkelen
 
@@ -72,24 +72,24 @@ Kies uw engine, download uw hulpprogramma's en gebruik het toetsenbord. Welkom b
 
 |     Controlepunt                              |     Resultaat                                                                                                                    |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-|     [Beginnen met ontwerpen en prototypen](https://docs.microsoft.com/windows/mixed-reality/design/design)         |     Begin uw adventure met het ontwerpen van Mixed Reality toepassingen in basisconcepten, interactiemodellen en UX-elementen.     |
-|     [Beginnen met ontwikkelen voor Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)    |     Kies uw engine, download uw hulpprogramma's, voeg kernbouwstenen toe en begin vandaag nog met bouwen.                                  |
-|     [Verken Azure Cloud Services](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Bouw aantrekkelijke in immersive experiences met Azure Remote Rendering en Azure Spatial Anchors.                                 |
+|     [Beginnen met ontwerpen en prototypen](/windows/mixed-reality/design/design)         |     Begin uw adventure met het ontwerpen van Mixed Reality toepassingen in verschillende kernconcepten, interactiemodellen en UX-elementen.     |
+|     [Beginnen met ontwikkelen voor Mixed Reality](/windows/mixed-reality/develop/development?tabs=unity)    |     Kies uw engine, download uw hulpprogramma's, voeg kernbouwstenen toe en begin vandaag nog met bouwen.                                  |
+|     [De Azure Cloud Services](/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Bouw aantrekkelijke indringende ervaringen met Azure Remote Rendering en Azure Spatial Anchors.                                 |
 
 ## <a name="developer-edition-additional-resources"></a>Aanvullende resources voor Developer Edition
 
-- [HoloLens 2 Veelgestelde vragen over development edition](hololens2-development-edition-faq.md)
-- [Zorg ervoor dat u de hulpprogramma's voor HoloLens-ontwikkeling installeert.](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
-- [Meer informatie over het ontwikkelen voor HoloLens 2 met Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
-- [Meer informatie over het combineren van MRTK met Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started).
+- [HoloLens 2 Veelgestelde vragen over Development Edition](hololens2-development-edition-faq.yml)
+- [Zorg ervoor dat u de hulpprogramma's voor HoloLens ontwikkeling installeert.](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
+- [Meer informatie over het ontwikkelen voor HoloLens 2 met Unity](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
+- [Meer informatie over het combineren van MRTK met Unity](/windows/mixed-reality/develop/unity/mrtk-getting-started).
 - [Meer informatie over het implementeren van uw gebouwde apps.](app-deploy-overview.md)
-- [Verken alle mogelijkheden voor Mixed Reality.](https://docs.microsoft.com/windows/mixed-reality/)
-- [Meer informatie over ontwikkelen voor HoloLens 2 met Unreal.](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
-- [Contact op met uw andere ontwikkelaars op ons HoloDevelopers Slack-kanaal](https://holodevelopersslack.azurewebsites.net/).
+- [Verken alle mogelijkheden voor het Mixed Reality](/windows/mixed-reality/).
+- [Meer informatie over ontwikkelen voor HoloLens 2 met Unreal.](/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
+- [Contact met uw andere ontwikkelaars op ons HoloDevelopers Slack-kanaal](https://holodevelopersslack.azurewebsites.net/).
 
 ## <a name="next-steps"></a>Volgende stappen
 
-1. Ga direct aan de slag met Mixed Reality en navigeer naar Windows 10 op uw HoloLens. Bekijk de **tips-app** voor praktische zelfstudies voor handinteracties. Gebruik de startbewegingen om naar Start te gaan of zeg 'Ga naar start' en selecteer Tips.
+1. Ga direct aan de slag met Mixed Reality en navigeer naar Windows 10 op uw HoloLens. Bekijk de **Tips-app** voor praktijkzelfstudies voor handinteracties. Gebruik de startbewegingen om naar Start te gaan of 'Ga naar start' te zeggen en selecteer Tips.
 1. Klik hieronder om door te gaan met het lezen van HoloLens 2.
 
 > [!div class="nextstepaction"]

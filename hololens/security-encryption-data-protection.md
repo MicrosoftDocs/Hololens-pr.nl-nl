@@ -1,6 +1,6 @@
 ---
 title: Versleuteling en gegevensbeveiliging
-description: Meer informatie over versleuteling en gegevensbeveiliging op HoloLens 2 apparaten, waaronder BitLocker en Azure-integratie.
+description: Meer informatie over versleuteling en gegevensbeveiliging HoloLens 2 apparaten, waaronder BitLocker en Azure-integratie.
 author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
@@ -13,12 +13,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ebe1d072f36cdf4ad9b3543882e61fa2ed4a0300
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: e156fc21bfd1541dd8718a7349e7ba82b45576be
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111379382"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639366"
 ---
 # <a name="encryption-and-data-protection"></a>Versleuteling en gegevensbeveiliging
 
@@ -26,7 +26,7 @@ Versleuteling en gegevensbeveiliging beschermt gegevens wanneer het apparaat is 
 
 ## <a name="bitlocker-device-encryption"></a>BitLocker-apparaatversleuteling
 
-BitLocker is een functie voor volledige versleuteling voor integriteitsbeveiliging van ro-media (alleen-lezen) en privacybeveiliging van beschrijfbare media.  Sinds de start is het een effectief beschermingsscherm tegen onbevoegde toegang tot de gegevens tijdens offline-aanvallen. HoloLens 2 bitlocker Apparaatversleuteling (BDE) standaard ingeschakeld om gegevens te beveiligen tegen onbevoegde fysieke toegang tot het apparaat. Microsoft blijft voortdurend investeren en deze technologie verbeteren en blijft zich ontwikkelen om te voldoen aan de behoeften van de toekomst.
+BitLocker is een functie voor volledige versleuteling voor integriteitsbeveiliging van ro-media (alleen-lezen) en privacybeveiliging van beschrijfbare media.  Sinds de start is het een effectief beschermingsscherm tegen onbevoegde toegang tot de gegevens tijdens offline-aanvallen. HoloLens 2 schakelt Bitlocker Apparaatversleuteling (BDE) standaard in om gegevens te beveiligen tegen onbevoegde fysieke toegang tot het apparaat. Microsoft blijft voortdurend investeren en deze technologie verbeteren en blijft zich ontwikkelen om te voldoen aan de behoeften van de toekomst.
 
 BDE is een functie voor gegevensbeveiliging die gebruik maakt van AES-XTS-256-versleuteling op alle volumes in de status-gescheiden indeling van het apparaat. BDE biedt versleuteling op apparaatniveau in een indeling met statussen gescheiden. BitLocker Apparaatversleuteling automatisch ingeschakeld op het besturingssysteem en vaste gegevensvolumes en kan niet worden uitgeschakeld, zelfs niet door IT-beheerders, zodat het apparaat altijd wordt beveiligd.
 
@@ -34,6 +34,6 @@ BDE-versleutelingssleutels worden vervolgens gebruikt voor het transparant ontsl
 
 ## <a name="azure-integration"></a>Azure-integratie 
 
-HoloLens 2 stelt klanten in staat om hun apparaten te integreren met Azure-services. Communicatie tussen HoloLens 2-apparaten en Het Azure-protocol maakt gebruik van het TLS-protocol (Transport Layer Security) om gegevens te beveiligen die tussen zichzelf en cloudservices onderweg zijn en die sterke verificatie, privacy van berichten en integriteit bieden. Alle Azure-services ondersteunen volledig TLS 1.2 en services waarbij klanten alleen TLS 1.2 gebruiken, accepteren alleen TLS 1.2-verkeer. De versleutelingsstandaarden van Azure voor gegevens die onderweg zijn, worden beschreven in [Overzicht van Azure-versleuteling.](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview) Ga naar de Documentatie van Azure voor meer informatie over [best practices voor azure-gegevensbeveiliging en -versleuteling.](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices) 
+HoloLens 2 stelt klanten in staat om hun apparaten te integreren met Azure-services. Communicatie tussen HoloLens 2-apparaten en Azure maakt gebruik van het TLS-protocol (Transport Layer Security) om gegevens te beveiligen die tussen zichzelf en cloudservices onderweg zijn en die sterke verificatie, privacy van berichten en integriteit bieden. Alle Azure-services ondersteunen volledig TLS 1.2 en services waarbij klanten alleen TLS 1.2 gebruiken, accepteren alleen TLS 1.2-verkeer. De versleutelingsstandaarden van Azure voor gegevens die onderweg zijn, worden beschreven in [Overzicht van Azure-versleuteling.](/azure/security/fundamentals/encryption-overview) Ga naar de Documentatie van Azure voor meer informatie over [best practices voor azure-gegevensbeveiliging en -versleuteling.](/azure/security/fundamentals/data-encryption-best-practices) 
 
 OneDrive, een voorbeeld van cloudintegratie met HoloLens 2, heeft een functie voor automatisch uploaden, waarbij uw bestanden en documenten automatisch kunnen worden geüpload naar de cloud wanneer ze zijn verbonden met internet. Het onderbreken van automatische synchronisatie van bestanden kan niet worden uitgeschakeld via beleid, maar kan rechtstreeks worden geconfigureerd via de UX. 

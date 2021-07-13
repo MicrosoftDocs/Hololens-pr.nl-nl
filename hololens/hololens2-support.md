@@ -7,75 +7,77 @@ description: Mixed Reality ondersteuningsopties voor kleine tot grote zakelijke 
 ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
-ms.openlocfilehash: 18178e35e93005f386c3d6f2fa6c637694bc60cc
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: ee75944575cacb75b213fcd9d732e5bd91265061
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111377993"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636211"
 ---
 # <a name="what-are-the-mixed-reality-support-and-help-options"></a>Wat zijn de Mixed Reality ondersteunings- en helpopties?
 
-Wilt u deblokkeering krijgen bij het ontwikkelen van uw toepassing of hebt u een probleem met uw HoloLens 2 of Windows Mixed Reality Headset? Misschien gebruikt u een Azure mixed reality service en hebt u een technische vraag. 
+Bent u op zoek naar de blokkeering bij het ontwikkelen van uw toepassing of hebt u een probleem met uw HoloLens 2 of Windows Mixed Reality Headset? Misschien gebruikt u een Azure mixed reality service en hebt u een technische vraag. 
 
 Hier vindt u de ondersteuningsopties voor de volgende opties om ervoor te zorgen dat u op de juiste plaats bent verbonden. We hebben ook informatie over communityresources en opties voor selfservice-inhoud die u kunt verkennen:
 
 - [Help-opties voor ontwikkelaars in de community](#community-help-options)
 - [Hulp krijgen bij het gebruik en configureren van HoloLens 2 apparaat](#help-with-technical-support-for-your-hololens-2)
-- [Hulp krijgen bij het kopen van een HoloLens 2 apparaat](#help-with-commercial-store-support-for-your-hololens-2)
+- [Hulp krijgen bij het kopen van HoloLens 2 apparaat](#help-with-commercial-store-support-for-your-hololens-2)
 - [Hulp krijgen bij het programmeren van HoloLens 2 apparaat of een Immersive Headset](#help-with-technical-support-for-your-hololens-2) 
 - [Hulp krijgen met Azure mixed reality services](#azure-mixed-reality-services-support)
 
-## <a name="community-help-options"></a>Help-opties voor de community
+## <a name="community-help-options"></a>Help-opties voor community's
 
 ### <a name="post-a-question-on-microsoft-qa"></a>Een vraag stellen op Microsoft Q&A
 <div class='icon is-large'>
-    <img alt='Azure Q&A' src='https://docs.microsoft.com/media/logos/logo_azure.svg'>
+    <img alt='Azure Q&A' src='/media/logos/logo_azure.svg'>
 </div><br/>
 Voor snelle en betrouwbare antwoorden op uw Azure Mixed Reality- en HoloLens 2-programmeervragen van Microsoft-technici, MSP's (Most Valuable Professionals) of onze deskundige community kunt u contact met ons opvragen via Microsoft Q&A, de voorkeursbestemming van Microsoft voor ondersteuning door de community.
 
 Als u via zoeken geen antwoord op uw probleem kunt vinden, dient u een nieuwe vraag in bij Microsoft Q&A. Gebruik een van de volgende tags wanneer u uw vraag stelt:
-- [Azure Spatial Anchors](https://docs.microsoft.com/answers/topics/azure-spatial-anchors.html)
-- [Azure Remote Rendering](https://docs.microsoft.com/answers/topics/azure-remote-rendering.html)
-- [Azure Object Anchors](https://docs.microsoft.com/answers/topics/azure-object-anchors.html)
-- [HoloLens Programming](https://docs.microsoft.com/answers/topics/hololens-development.html)
-- [Windows-producten](https://docs.microsoft.com/answers/products/windows)
+
+- [Azure Spatial Anchors](/answers/topics/azure-spatial-anchors.html)
+- [Azure Remote Rendering](/answers/topics/azure-remote-rendering.html)
+- [Azure Object Anchors](/answers/topics/azure-object-anchors.html)
+- [HoloLens Programmering](/answers/topics/hololens-development.html)
+- [Windows Producten](/answers/products/windows)
 
 
 ### <a name="post-a-question-on-stack-overflow"></a>Een vraag stellen op Stack Overflow
 <div class='icon is-large'>
-    <img alt='Stack Overflow' src='https://docs.microsoft.com/media/logos/logo_stackoverflow.svg'>
+    <img alt='Stack Overflow' src='/media/logos/logo_stackoverflow.svg'>
 </div><br/>
 
 Voor antwoorden op uw ontwikkelaarsvragen in het grootste communityecosysteem voor ontwikkelaars kunt u uw vraag stellen op Stack Overflow.
 
 Als u een nieuwe vraag indient bij Stack Overflow, moet u een of meer van de volgende tags gebruiken wanneer u de vraag opstelt:
 
-- [HoloLens Programming](https://stackoverflow.com/questions/tagged/hololens)
+- [HoloLens Programmering](https://stackoverflow.com/questions/tagged/hololens)
 - [Windows Mixed Reality](https://stackoverflow.com/questions/tagged/windows-mixed-reality)
 - [Azure Spatial Anchors](https://stackoverflow.com/questions/tagged/azure-spatial-anchors)
 - [Azure Remote Rendering](https://stackoverflow.com/questions/tagged/azure-remote-rendering)
 - [Azure Object Anchors](https://stackoverflow.com/questions/tagged/azure-object-anchors)
 - [Mixed Reality Toolkit (MRTK)](https://stackoverflow.com/questions/tagged/MRTK)
 
-#### <a name="other-communities"></a>Andere community's: 
+#### <a name="other-communities"></a>Andere community's:
+
 - [HoloDevelopers Slack](https://holodevelopersslack.azurewebsites.net/)
 - [Windows Mixed Reality Headsets Reddit](https://www.reddit.com/r/WindowsMR/)
 - [HoloLens Reddit](https://www.reddit.com/r/HoloLens/)
 
-## <a name="hololens-2-support"></a>HoloLens 2-ondersteuning
+## <a name="hololens-2-support"></a>HoloLens 2 Ondersteuning
 
 ### <a name="help-with-technical-support-for-your-hololens-2"></a>Hulp bij technische ondersteuning voor uw HoloLens 2
 
 - Krijg HoloLens 2 programmeerhulp van de community op [Microsoft Q&A](#post-a-question-on-microsoft-qa)
 - Meer informatie over Help en ondersteuning en service health van uw [Azure mixed reality services](#azure-mixed-reality-services-support)
-- Een ondersteuningsaanvraag maken voor HoloLens 2 of In immersive headset-programmering op [MR-ondersteuning](https://aka.ms/mrsupport) 
+- Een ondersteuningsaanvraag maken voor HoloLens 2 of In immersive headset programmeren op [MR-ondersteuning](https://aka.ms/mrsupport) 
 - Een ondersteuningsaanvraag maken voor HoloLens 2 problemen met apparaten, waaronder hardware, & configuratie op [HoloLens 2 apparaatondersteuning](https://aka.ms/hlsupport) 
 
 
 ### <a name="help-with-commercial-store-support-for-your-hololens-2"></a>Hulp bij de ondersteuning voor commerciële winkels voor uw HoloLens 2
 
-- [Aankoop HoloLens 2](https://www.microsoft.com/hololens/buy) deze optie gebruiken voor meer informatie over HoloLens 2 en opties
+- [Aankoopopties HoloLens 2](https://www.microsoft.com/hololens/buy) deze optie gebruiken voor meer informatie over HoloLens 2 en opties
 - Zie de onderstaande lijst met business desknummers om contact op te vragen met onze commerciële winkelondersteunings collega's als u hulp nodig hebt via telefonische ondersteuning
 
 ### <a name="commercial-store-support-numbers"></a>Ondersteuningsnummers voor commerciële winkels
@@ -111,7 +113,7 @@ Als u een nieuwe vraag indient bij Stack Overflow, moet u een of meer van de vol
 | Nieuw-Zeeland | 0800 471 640 |  Ma tot vr, 8:00 tot 18:00 uur |
 
 >[!IMPORTANT]
->Als u een volledige btw-factuur nodig hebt, kunt u rechtstreeks contact opnemen met het commerciële ondersteuningsteam en geen online apparaat aanschaffen. Alle aankopen die online worden gedaan, ontvangen alleen een vereenvoudigde btw-factuur die later niet kan worden bewerkt.
+>Als u een volledige btw-factuur nodig hebt, moet u rechtstreeks contact opnemen met het commerciële ondersteuningsteam en geen onlineapparaat aanschaffen. Alle aankopen die online worden gedaan, ontvangen alleen een vereenvoudigde btw-factuur die later niet kan worden bewerkt.
 
 ## <a name="azure-mixed-reality-services-support"></a>Ondersteuning voor Azure mixed reality-services
 
@@ -121,18 +123,18 @@ Als u een technisch ondersteuningsticket wilt openen op de Azure Portal voor Azu
 
 1. Selecteer met [Azure Portal](https://azure.microsoft.com/account/) geopend het Help-pictogram in de bovenste menubalk en selecteer vervolgens de **knop Help en** ondersteuning.
 
-   ![Azure Portal help en ondersteuning](../hololens/images/azure-help-support.png)
+   ![Azure Portal en ondersteuning](../hololens/images/azure-help-support.png)
 
-2. Selecteer + Nieuwe ondersteuningsaanvraag als de pagina Help **en ondersteuning is geopend.**
+2. Selecteer + Nieuwe ondersteuningsaanvraag als de pagina Help en ondersteuning **is geopend.**
 
    ![Azure Portal nieuwe ondersteuningsaanvraag indienen](../hololens/images/azure-help-support2.png)
 
-3. Wanneer u de velden voor ondersteuningstickets invullen:
+3. Bij het invullen van de velden voor ondersteuningstickets:
 
     + Type probleem: Technisch
     + Service: Azure Spatial Anchors, Azure Remote Rendering of Azure Object Anchors
 
-    ![Azure Portal-ondersteuningsticketvelden](../hololens/images/azure-help-support3.png)
+    ![Azure Portal voor ondersteuningstickets](../hololens/images/azure-help-support3.png)
 
     1. Klik **op Volgende: Oplossingen** onder aan de pagina om meer informatie over het probleem toe te voegen.
 
@@ -142,24 +144,24 @@ Als u een technisch ondersteuningsticket wilt openen op de Azure Portal voor Azu
 
 ### <a name="provide-documentation-content-feedback"></a>Feedback geven over documentatie-inhoud
 
-Onder aan elk inhoudsartikel kunt u een GitHub-probleem openen en feedback geven over inhoud in mixed reality documentatieopslagplaats. 
+Onder aan elk inhoudsartikel kunt u een GitHub openen en feedback geven over inhoud in een mixed reality-documentatieopslagplaats. 
 
 ### <a name="provide-product-feedback"></a>Productfeedback geven
 
 >[!Note]
->Feedback geven is een uitstekende manier om uw stem te laten horen, maar feedback is geen manier om een antwoord te ontvangen. Feedback-hub kunnen worden gecombineerd met andere ondersteuningsopties.
+>Feedback geven is een uitstekende manier om uw stem te laten horen, maar feedback is geen manier om een reactie te ontvangen. Feedback-hub kunnen worden gecombineerd met andere ondersteuningsopties.
 
-Als u feedback wilt geven, een idee of suggesties wilt delen voor Microsoft mixed reality-services, of stemmen op de ideeën die anderen hebben ingediend, gaat u naar: 
+Als u feedback wilt geven, een idee of suggesties wilt delen voor Microsoft mixed reality services, of stemmen op de ideeën die anderen hebben ingediend, gaat u naar: 
 
-- [HoloLens 2 productfeedback](https://docs.microsoft.com/hololens/hololens-feedback)
-- [Productfeedback voor Microsoft Mesh-app](https://docs.microsoft.com/hololens/hololens-feedback)
+- [HoloLens 2 Productfeedback](/hololens/hololens-feedback)
+- [Productfeedback voor Microsoft Mesh-apps](/hololens/hololens-feedback)
 - [Azure Remote Rendering Feedback](https://feedback.azure.com/forums/928696-azure-remote-rendering)
 - [Azure Spatial Anchors Feedback](https://feedback.azure.com/forums/919252-azure-spatial-anchors)
 
 ### <a name="faqs--troubleshooting"></a>Veelgestelde vragen & oplossen
 
-- HoloLens 2 de pagina Problemen met [HoloLens](../hololens/hololens-troubleshooting.md) oplossen
-- Windows Mixed Reality de pagina [Veelgestelde](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality) vragen
-- Azure Remote Rendering de pagina Met [veelgestelde](https://docs.microsoft.com/azure/remote-rendering/resources/troubleshoot) vragen
-- Azure Spatial Anchors, zie de pagina [Veelgestelde](https://docs.microsoft.com/azure/spatial-anchors/spatial-anchor-faq) vragen
-- Azure Object Anchors de pagina [Veelgestelde](https://docs.microsoft.com/azure/object-anchors/faq) vragen
+- HoloLens 2 de pagina Probleemoplossing [HoloLens voor meer](../hololens/hololens-troubleshooting.md) informatie
+- Windows Mixed Reality de pagina [Veelgestelde](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality) vragen
+- Azure Remote Rendering de pagina [Veelgestelde](/azure/remote-rendering/resources/troubleshoot) vragen
+- Azure Spatial Anchors, zie de pagina [Veelgestelde](/azure/spatial-anchors/spatial-anchor-faq) vragen
+- Azure Object Anchors de pagina [Veelgestelde](/azure/object-anchors/faq) vragen

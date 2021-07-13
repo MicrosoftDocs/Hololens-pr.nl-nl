@@ -1,6 +1,6 @@
 ---
 title: 3D-viewer Beta gebruiken op HoloLens (1e generatie)
-description: Beschrijft de typen bestanden en functies die 3D-viewer Beta op HoloLens (1e generatie) ondersteunt en hoe u de app kunt gebruiken en problemen met de app kunt oplossen.
+description: Beschrijft de typen bestanden en functies die 3D-viewer Beta op HoloLens (eerste generatie) ondersteunt en hoe u de app kunt gebruiken en problemen met de app kunt oplossen.
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -13,22 +13,22 @@ audience: ITPro
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f5481d6466459667deb99232fdd67c4491798cbe
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 00e99d3f67e9e4371da12612b9b01c3ce58e71bd
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111379378"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635480"
 ---
 # <a name="using-3d-viewer-beta-on-hololens-1st-gen"></a>3D-viewer Beta gebruiken op HoloLens (1e generatie)
 
-3D-viewer Beta kunt u 3D-modellen bekijken op HoloLens (1e generatie). U kunt ondersteunde  FBX-bestanden openen en weergeven vanuit Microsoft Edge, OneDrive en andere apps.
+3D-viewer Beta kunt u 3D-modellen weergeven op HoloLens (1e generatie). U kunt ondersteunde  FBX-bestanden openen en weergeven vanuit Microsoft Edge, OneDrive en andere apps.
 
 >[!NOTE]
->Dit artikel is van toepassing op de in immersive Unity **3D-viewer Beta-app,** die .fbx-bestanden ondersteunt en alleen beschikbaar is op HoloLens (eerste generatie). De vooraf geïnstalleerde **3D-viewer-app** op HoloLens 2 ondersteunt het openen van aangepaste .kunnen 3D-modellen in de Mixed Reality Startpagina (zie Overzicht [assetvereisten](https://docs.microsoft.com/windows/mixed-reality/creating-3d-models-for-use-in-the-windows-mixed-reality-home#asset-requirements-overview) voor meer informatie.
+>Dit artikel is van toepassing op de in immersive Unity **3D-viewer Beta-app,** die .fbx-bestanden ondersteunt en alleen beschikbaar is op HoloLens (eerste generatie). De vooraf geïnstalleerde **3D-viewer-app** op HoloLens 2 ondersteunt het openen van aangepaste .Mixed Reality Startpagina-modellen in de Mixed Reality Startpagina (zie Overzicht [assetvereisten](/windows/mixed-reality/creating-3d-models-for-use-in-the-windows-mixed-reality-home#asset-requirements-overview) voor meer informatie.
 
 >[!IMPORTANT]
->Hoewel 3D-viewer Beta beschikbaar kan blijven in de Microsoft Store voor HoloLens (1e generatie), is het niet langer in actieve ontwikkeling en wordt het niet meer ondersteund.
+>Hoewel 3D-viewer Beta beschikbaar kan blijven in de Microsoft Store voor HoloLens (eerste generatie), is het niet langer in actieve ontwikkeling en wordt deze niet meer ondersteund.
 
 Zie Ondersteunde inhoudsspecificaties hieronder als u problemen hebt met het openen van een 3D-model in 3D-viewer Beta of als bepaalde functies van uw 3D-model niet worden [ondersteund.](#supported-content-specifications)
 
@@ -111,7 +111,7 @@ Er zijn harde limieten voor de grootte van bestanden, evenals het aantal modelle
 
 ### <a name="performance-optimization"></a>Optimalisatie van prestaties
 
-Houd rekening met de prestaties tijdens het maken van inhoud en valideer in de 3D-viewer Beta-app op HoloLens tijdens het ontwerpproces voor de beste resultaten. 3D-viewer Beta geeft realtime inhoud weer en de prestaties zijn onderhevig aan de hardwaremogelijkheden van HoloLens.  
+Houd rekening met de prestaties tijdens het maken van inhoud en valideer in de 3D-viewer Beta-app op HoloLens tijdens het ontwerpproces voor de beste resultaten. 3D-viewer Beta geeft inhoud realtime weer en de prestaties zijn onderhevig aan HoloLens hardwaremogelijkheden.  
 
 Er zijn veel variabelen in een 3D-model die van invloed kunnen zijn op de prestaties. 3D-viewer bèta toont een waarschuwing bij belasting als er meer dan 150.000 vertices of meer dan 400 meshes zijn. Animaties kunnen invloed hebben op de prestaties van andere open modellen. Er zijn ook harde limieten voor het totale aantal modellen, vertices en meshes dat tegelijkertijd kan worden geopend in 3D-viewer Beta (zie Beperkingen voor bestanden [en modellen).](#file-and-model-limitations)  
 
@@ -143,25 +143,25 @@ FBX-bestanden kunnen rechtstreeks vanaf een website worden geopend met behulp Mi
 1. Selecteer het bestand om het te downloaden.
 1. Wanneer het downloaden is voltooid, selecteert u de knop **Openen** in Microsoft Edge om het bestand te openen in 3D-viewer Beta.
 
-Het gedownloade bestand kan later worden geopend en geopend met downloads in Microsoft Edge. Als u een 3D-model wilt opslaan en de toegang wilt waarborgen, downloadt u het bestand op uw pc en sla u het op in uw OneDrive-account. Het bestand kan vervolgens worden geopend vanuit de OneDrive-app op HoloLens.
+Het gedownloade bestand kan later worden geopend en geopend met downloads in Microsoft Edge. Als u een 3D-model wilt opslaan en ervoor wilt zorgen dat het bestand blijft worden gebruikt, downloadt u het op uw pc en sla u het op in uw OneDrive-account. Het bestand kan vervolgens worden geopend vanuit de OneDrive app op HoloLens.
 
 > [!NOTE]
-> Sommige websites met downloadbare FBX-modellen bieden deze in gecomprimeerde ZIP-indeling. 3D-viewer Beta kunnen zip-bestanden niet rechtstreeks openen. Gebruik in plaats daarvan uw pc om het FBX-bestand uit te extraheren en op te slaan in uw OneDrive-account. Het bestand kan vervolgens worden geopend vanuit de OneDrive-app op HoloLens.
+> Sommige websites met downloadbare FBX-modellen bieden deze in gecomprimeerde ZIP-indeling. 3D-viewer Beta kan zip-bestanden niet rechtstreeks openen. Gebruik in plaats daarvan uw pc om het FBX-bestand uit te extraheren en op te slaan in OneDrive account. Het bestand kan vervolgens worden geopend vanuit de OneDrive app op HoloLens.
 
-### <a name="open-an-fbx-file-from-onedrive"></a>Een FBX-bestand openen vanuit OneDrive
+### <a name="open-an-fbx-file-from-onedrive"></a>Open een FBX-bestand vanuit OneDrive
 
-FBX-bestanden kunnen worden geopend vanuit OneDrive met behulp van de OneDrive-app op HoloLens. Zorg ervoor dat u OneDrive hebt geïnstalleerd met behulp van Microsoft Store-app op HoloLens en dat u het FBX-bestand al hebt geüpload naar OneDrive op uw pc.
+FBX-bestanden kunnen worden geopend vanuit OneDrive met behulp van de OneDrive-app op HoloLens. Zorg ervoor dat u een OneDrive hebt geïnstalleerd met behulp van Microsoft Store-app op HoloLens en dat u het FBX-bestand al hebt geüpload naar OneDrive op uw pc.
 
-In OneDrive kunnen FBX-bestanden op een van de volgende twee manieren worden geopend op HoloLens met 3D-viewer Beta:
+Eenmaal in OneDrive kunnen FBX-bestanden op twee manieren worden geopend op HoloLens met 3D-viewer Beta:
 
 - Start OneDrive op HoloLens en selecteer het FBX-bestand om het te openen in 3D-viewer Beta.
-- Start 3D-viewer Beta, tik in de lucht om de werkbalk weer te geven en selecteer **Bestand openen.** OneDrive wordt start, zodat u een FBX-bestand kunt selecteren.
+- Start 3D-viewer Beta, tik in de lucht om de werkbalk weer te geven en selecteer **Bestand openen.** OneDrive start, zodat u een FBX-bestand kunt selecteren.
 
 ## <a name="troubleshooting"></a>Problemen oplossen
 
 ### <a name="i-see-a-warning-when-i-open-a-3d-model"></a>Ik zie een waarschuwing wanneer ik een 3D-model open
 
-U ziet een waarschuwing als u probeert een 3D-model te openen dat functies bevat die niet worden ondersteund door 3D-viewer Beta, of als het model te complex is en de prestaties kunnen worden beïnvloed. 3D-viewer Beta laadt nog steeds het 3D-model, maar de prestaties of visuele betrouwbaarheid kunnen worden aangetast.
+U ziet een waarschuwing als u probeert een 3D-model te openen dat functies bevat die niet worden ondersteund door 3D-viewer Beta, of als het model te complex is en de prestaties kunnen worden beïnvloed. 3D-viewer bèta wordt het 3D-model nog steeds geladen, maar de prestaties of visuele betrouwbaarheid kunnen worden aangetast.
 
 Zie Supported content specifications (Specificaties van [ondersteunde inhoud)](#supported-content-specifications) [en Optimizing 3D models for 3D-viewer Beta (3D-modellen](#optimizing-3d-models-for-3d-viewer-beta)optimaliseren voor 3D-viewer Beta).
 
@@ -185,13 +185,13 @@ Prestaties bij het laden en weergeven van een 3D-model kunnen worden beïnvloed 
 
 Zie [Optimizing 3D models for 3D-viewer Beta](#optimizing-3d-models-for-3d-viewer-beta) and File and model limitations (3D-modellen optimaliseren voor bèta- en bestands- en [modelbeperkingen)](#file-and-model-limitations)voor meer informatie.
 
-### <a name="when-i-open-an-fbx-file-on-hololens-it-doesnt-open-in-3d-viewer-beta"></a>Wanneer ik een FBX-bestand op HoloLens open, wordt het niet geopend in 3D-viewer Beta
+### <a name="when-i-open-an-fbx-file-on-hololens-it-doesnt-open-in-3d-viewer-beta"></a>Wanneer ik een FBX-bestand open op HoloLens, wordt het niet geopend in 3D-viewer Beta
 
 3D-viewer Beta wordt automatisch gekoppeld aan de bestandsextensie .fbx wanneer deze wordt geïnstalleerd.
 
-Als u probeert een FBX-bestand te openen en een dialoogvenster ziet waarin u naar Microsoft Store wordt doorverweken, hebt u momenteel geen app gekoppeld aan de FBX-bestandsextensie op HoloLens.
+Als u probeert een FBX-bestand te openen en een dialoogvenster ziet waarin u naar Microsoft Store wordt doorverweken, hebt u momenteel geen app gekoppeld aan de .fbx-bestandsextensie op HoloLens.
 
-Controleer of 3D-viewer Beta is geïnstalleerd. Als deze niet is geïnstalleerd, downloadt u het Microsoft Store hololens.
+Controleer of 3D-viewer Beta is geïnstalleerd. Als deze niet is geïnstalleerd, downloadt u deze vanuit Microsoft Store op HoloLens.
 
 Als 3D-viewer Beta al is geïnstalleerd, start u 3D-viewer Beta en opent u het bestand opnieuw. Als het probleem zich blijft voordoen, verwijdert en installeert u 3D-viewer Beta. Hiermee wordt de .fbx-bestandsextensie opnieuw aan 3D-viewer Beta.
 
@@ -199,13 +199,13 @@ Als u probeert een FBX-bestand te openen, wordt er een andere app dan 3D-viewer 
 
 ### <a name="the-open-file-button-in-3d-viewer-beta-doesnt-launch-an-app"></a>Met de knop Bestand openen in 3D-viewer Beta wordt geen app geopend
 
-Met **de knop Bestand** openen wordt de app geopend die is gekoppeld aan de functie voor het kiezen van bestanden op HoloLens. Als OneDrive is geïnstalleerd, wordt OneDrive met **de** knop Bestand openen geopend. Als er momenteel echter geen app is gekoppeld aan de functie voor het kiezen van bestanden die is geïnstalleerd op HoloLens, wordt u omgeleid naar Microsoft Store.
+Met **de knop Bestand** openen wordt de app geopend die is gekoppeld aan de functie voor het kiezen van bestanden op HoloLens. Als OneDrive is geïnstalleerd, **wordt** de knop Bestand openen OneDrive. Als er momenteel echter geen app is gekoppeld aan de functie voor het kiezen van bestanden die is geïnstalleerd op HoloLens, wordt u omgeleid naar Microsoft Store.
 
-Als met **de knop Bestand** openen een andere app dan OneDrive wordt geopend, is die app waarschijnlijk geïnstalleerd nadat OneDrive is overgenomen en de functie voor het kiezen van bestanden heeft overgenomen. Als u OneDrive liever start  wanneer u de knop Bestand openen selecteert in 3D-viewer Beta, verwijdert en installeert u OneDrive opnieuw.
+Als met **de** knop Bestand openen een andere app dan OneDrive wordt geopend, is die app waarschijnlijk geïnstalleerd na OneDrive en heeft deze de associatie met de functie voor het kiezen van bestanden overgenomen. Als u liever OneDrive te starten  wanneer u de knop Bestand openen selecteert in 3D-viewer Beta, verwijdert en installeert u OneDrive.
 
-Als de **knop Bestand** openen niet actief is, is het mogelijk dat u de limiet hebt bereikt van modellen die in één keer kunnen worden geopend in 3D-viewer Beta. Als er 40 modellen zijn geopend in 3D-viewer Beta, moet u een aantal modellen sluiten voordat u aanvullende modellen kunt openen.
+Als de **knop Bestand** openen niet actief is, is het mogelijk dat u de limiet hebt bereikt van modellen die in één keer kunnen worden geopend in 3D-viewer Beta. Als er 40 modellen zijn geopend in 3D-viewer Beta, moet u er een aantal sluiten voordat u extra modellen kunt openen.
 
 ## <a name="additional-resources"></a>Aanvullende bronnen
 
 - [Ondersteuningsforums:](http://forums.hololens.com/categories/3d-viewer-beta) alleen voor archiveringsdoeleinden. Dit forum is niet meer actief.
-- [Kennisgevingen van derden](https://www.microsoft.com/{lang-locale}/legal/products)
+- [Mededelingen van derden](https://www.microsoft.com/{lang-locale}/legal/products)

@@ -1,6 +1,6 @@
 ---
 title: Overzicht van cloud verbonden HoloLens 2 met Remote Assist
-description: Meer informatie over het inschrijven HoloLens 2 apparaten via een met de cloud verbonden netwerk met behulp van Dynamics 365 Remote Assist.
+description: Meer informatie over het inschrijven van HoloLens 2 via een cloudnetwerk met behulp van Dynamics 365 Remote Assist.
 keywords: HoloLens, beheer, verbonden met de cloud, Remote Assist, AAD, Azure AD, MDM, Mobile Device Management
 author: evmill
 ms.author: v-evmill
@@ -14,28 +14,27 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a44247b4afea747e4b75c974fcae344380909989
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 86d36275d5cf1296ca3e9fec90684a188a29f3f0
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923530"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635123"
 ---
-# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Implementatiehandleiding - Cloud verbonden HoloLens 2 met Remote Assist – Overzicht
+# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Implementatiehandleiding : Cloud verbonden HoloLens 2 met Remote Assist – Overzicht
 
 Deze handleiding helpt IT-professionals bij het plannen en implementeren van Microsoft HoloLens 2 apparaten met Remote Assist in hun organisatie. Dit dient als een model voor proof-of-concept-implementaties in uw organisatie in HoloLens 2 gebruiksgevallen. De installatie is vergelijkbaar met [Scenario A: Implementeren naar apparaten die verbinding maken met de cloud.](https://docs.microsoft.com/hololens/common-scenarios#scenario-a) 
 
-Tijdens de handleiding wordt be kwijt hoe u uw apparaten kunt registreren bij uw apparaatbeheer, licenties kunt toepassen als dat nodig is en hoe u kunt valideren dat uw eindgebruikers direct gebruik kunnen maken van Remote Assist bij de installatie van het apparaat. Hiervoor gaan we in op de belangrijke onderdelen van de infrastructuur die nodig zijn om te kunnen werken: implementatie op schaal bereiken met HoloLens 2. Er worden geen andere apparaatbeperkingen of configuraties toegepast in deze handleiding, maar we raden u aan deze opties na het afronden te verkennen.
+Tijdens de handleiding wordt be kwijt hoe u uw apparaten kunt registreren bij uw apparaatbeheer, licenties kunt toepassen als dat nodig is en hoe u kunt valideren dat uw eindgebruikers direct gebruik kunnen maken van Remote Assist bij de installatie van het apparaat. Hiervoor gaan we in op de belangrijke onderdelen van de infrastructuur die nodig zijn om alles in te stellen en te laten werken: implementatie op schaal bereiken met HoloLens 2. Er worden geen andere apparaatbeperkingen of configuraties toegepast in deze handleiding, maar we raden u aan deze opties na het afronden te verkennen.
 
 ## <a name="prerequisites"></a>Vereisten
 
 De volgende infrastructuur moet zijn geïmplementeerd om de HoloLens 2. Zo niet, dan is het instellen van Azure en Intune opgenomen in deze handleiding:
 
-- Wi-Fi
-    - Netwerken zijn doorgaans geopend voor internet en cloudservices
-- Azure Active Directory (Azure AD) Deelnemen met automatische MDM-inschrijving[(Azure AD P1-abonnement vereist)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
-- MDM (Intune) Beheerd
-    - Een of meer toepassingen worden geïmplementeerd via MDM.
+Dit is een set die vergelijkbaar is met [Scenario A:](/hololens/common-scenarios#scenario-a)Implementeren op apparaten die zijn verbonden met de cloud. Dit is een goede optie voor veel Proof of Concept-implementaties, waaronder:
+
+- Wi-Fi netwerken zijn doorgaans volledig open voor internet- en cloudservices
+- Azure AD Join met MDM Auto Enrollment -- MDM (Intune) Managed
 - Gebruikers melden zich aan met hun eigen bedrijfsaccount (Azure AD)
     - Eén of meerdere gebruikers per apparaat worden ondersteund.
 
@@ -44,7 +43,7 @@ De volgende infrastructuur moet zijn geïmplementeerd om de HoloLens 2. Zo niet,
 
 ## <a name="learn-about-remote-assist"></a>Meer informatie over Remote Assist
 
-Remote Assist kunt samenwerkend onderhoud en herstel, externe inspectie, evenals kennis delen en trainen. Door verbinding te maken met personen met verschillende rollen en locaties kan een technicus Remote Assist verbinding maken met een externe medewerker in Microsoft Teams. Ze kunnen video's, schermopnamen en aantekeningen combineren om problemen in realtime op te lossen, zelfs wanneer&#39;zich niet op dezelfde locatie bevinden. Externe samenwerkers kunnen referentieafbeeldingen, schema's en andere nuttige informatie invoegen die de technicus&#39;de fysieke ruimte, zodat ze kunnen verwijzen naar het schema tijdens het werken zonder kop en zonder problemen met HoloLens.
+Remote Assist kunt samenwerkend onderhoud en herstel, externe inspectie, evenals kennis delen en trainen. Door verbinding te maken met personen met verschillende rollen en locaties kan een monteur Remote Assist verbinding maken met een externe medewerker op Microsoft Teams. Ze kunnen video's, schermopnamen en aantekeningen combineren om problemen in realtime op te lossen, zelfs wanneer&#39;zich niet op dezelfde locatie bevinden. Externe samenwerkers kunnen referentieafbeeldingen, schema's en andere nuttige informatie invoegen die de technicus&#39;de fysieke ruimte, zodat ze naar het schema kunnen verwijzen tijdens het werken met de HoloLens.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -58,7 +57,7 @@ Remote Assist kunt samenwerkend onderhoud en herstel, externe inspectie, evenals
 - Remote Assist licentie
 - Netwerkverbinding
 
-#### <a name="microsoft-teams-user"></a>Microsoft Teams-gebruiker
+#### <a name="microsoft-teams-user"></a>Microsoft Teams gebruiker
 
 - Microsoft Teams of [Teams Freemium](https://products.office.com/microsoft-teams/free).
 - Netwerkverbinding

@@ -11,12 +11,12 @@ ms.sitesec: library
 ms.localizationpriority: medium
 audience: HoloLens
 manager: yannisle
-ms.openlocfilehash: 52036b9e17fe6685bd05693b06e3120b4655c863
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: d7d5ad05dc675cf07afd075f4fb52d24cd4d3e15
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111377810"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635531"
 ---
 # <a name="microsoft-store-for-business"></a>Microsoft Store voor Bedrijven
 
@@ -30,11 +30,12 @@ Wanneer Microsoft Store voor Bedrijven wordt gebruikt door een eindgebruiker, wo
 > Microsoft Store voor Bedrijven apps worden niet automatisch gedownload (push) naar apparaten. Apps van de Microsoft Store voor Bedrijven kunnen echter worden gekoppeld aan uw MDM-server (Device Management) om apps te targeten en te synchroniseren met apparaten.
 
 Ga naar de volgende pagina's voor meer informatie over het gebruik van de Microsoft Store voor Bedrijven:
-* [Machtigingsniveaus die worden gebruikt voor het installeren van toepassingen](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-holographic#app-store)
-* [Een app toevoegen aan uw Store voor Bedrijven](https://docs.microsoft.com/mem/intune/apps/store-apps-windows)
-* [Apps toewijzen aan groepen werknemers](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business)
 
-Als u uw Microsoft Store voor Bedrijven wilt koppelen, gaat u naar [Uw Microsoft Store voor Bedrijven koppelen aan Intune.](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business#associate-your-microsoft-store-for-business-account-with-intune)
+* [Machtigingsniveaus die worden gebruikt voor het installeren van toepassingen](/mem/intune/configuration/device-restrictions-windows-holographic#app-store)
+* [Een app toevoegen aan uw Store voor Bedrijven](/mem/intune/apps/store-apps-windows)
+* [Apps toewijzen aan groepen werknemers](/mem/intune/apps/windows-store-for-business)
 
-> [!Tip] 
-> Meer informatie over [het distribueren van offline-apps](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) bij het gebruik van apps zoals Advanced Recovery Companion (ARC) en Windows Configuration Designer (WCD).
+Als u uw Microsoft Store voor Bedrijven wilt koppelen, gaat u naar [Uw Microsoft Store voor Bedrijven koppelen aan Intune.](/mem/intune/apps/windows-store-for-business#associate-your-microsoft-store-for-business-account-with-intune)
+
+> [!Tip]
+> Meer informatie over [het distribueren van offline-apps](/microsoft-store/distribute-offline-apps) bij het gebruik van apps zoals Advanced Recovery Companion (ARC) en Windows Configuration Designer (WCD).

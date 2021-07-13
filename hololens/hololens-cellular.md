@@ -1,6 +1,6 @@
 ---
-title: Verbinding maken met mobiel en 5G
-description: Verbinding maken met mobiele netwerken vanaf uw HoloLens-mixed reality apparaten.
+title: Verbinding maken naar mobiel en 5G
+description: Verbinding maken met mobiele netwerken vanaf uw HoloLens mixed reality apparaten.
 ms.assetid: f1aaadce-8762-41f8-bfeb-3b6067a2ec78
 ms.prod: hololens
 ms.sitesec: library
@@ -12,16 +12,16 @@ ms.date: 02/24/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8318d011d6a593c1036b6bcf6f7973870b0dc294
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 6f7da0263e8637486f0151fd2b9da55da8feccc1
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379359"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635837"
 ---
-# <a name="connect-to-cellular-and-5g"></a>Verbinding maken met mobiel en 5G
+# <a name="connect-to-cellular-and-5g"></a>Verbinding maken naar mobiel en 5G
 
-HoloLens 2 ondersteunt twee methoden om verbinding te maken met mobiele en 5G-netwerken:
+HoloLens 2 ondersteunt twee methoden om verbinding te maken met mobiele netwerken en 5G-netwerken:
 
 - Een ad-hoc Wi-Fi-netwerk dat wordt geleverd door het mobiele apparaat, meestal aangeduid als een 'Hotspot'
 - Beperkte ondersteuning voor USB-C-tethered apparaten
@@ -38,13 +38,13 @@ Aan de meeste mobiele connectiviteitsbehoeften kan een hotspot worden voldaan. H
 
 ## <a name="usb-c-tethering"></a>USB-C-tethering
 
-USB-C-tethering kan een lagere latentie bieden voor geavanceerde werkbelastingen die dit nodig hebben. [Azure Remote Rendering](https://azure.microsoft.com/services/remote-rendering)kan bijvoorbeeld profiteren van tethering. Houd er rekening mee dat voor tethering een kabel tussen het mobiele apparaat en HoloLens is vereist en dat tethering wordt ondersteund door een beperkt aantal apparaten.
+USB-C-tethering kan een lagere latentie bieden voor geavanceerde werkbelastingen die dit nodig hebben. [Azure Remote Rendering](https://azure.microsoft.com/services/remote-rendering)kan bijvoorbeeld profiteren van tethering. Houd er rekening mee dat voor tethering een kabel is vereist tussen het mobiele apparaat en HoloLens en tethering wordt ondersteund door een beperkt aantal apparaten.
 
 ### <a name="usb-c-compatibility"></a>COMPATIBILITEIT MET USB-C
 
-Een beperkt aantal apparaten die zichzelf als ethernetadapter presenteren, kan worden gebruikt met Windows Holographic versie 2004 en hoger.
+Een beperkt aantal apparaten die zich als ethernetadapter presenteren, kan worden gebruikt met Windows Holographic-versie 2004 en hoger.
 
-Apparaten die zichzelf niet als een ethernetadapter presenteren, moeten het algemene Microsoft [RNDIS-stuurprogramma](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) ondersteunen. Maar slechts een beperkt aantal van deze apparaten is compatibel met HoloLens 2. Raadpleeg de fabrikant van uw apparaat voor meer informatie over of het ondersteuning biedt voor het algemene Microsoft RNDIS-stuurprogramma.
+Apparaten die zichzelf niet als een ethernetadapter presenteren, moeten het algemene Microsoft [RNDIS-stuurprogramma](/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) ondersteunen. Maar slechts een beperkt aantal van deze apparaten is compatibel met HoloLens 2. Raadpleeg de fabrikant van uw apparaat voor meer informatie over of het ondersteuning biedt voor het algemene Microsoft RNDIS-stuurprogramma.
 
 Apparaten die niet compatibel zijn met RNDIS of waarvoor een stuurprogramma of toepassing moet worden geïnstalleerd, worden niet ondersteund.
 
@@ -54,5 +54,5 @@ Hoewel Microsoft geen lijst met compatibele apparaten bijhoudt, is er een commun
 
 1. Raadpleeg de handleiding van uw apparaat over het inschakelen van gegevensdeling via USB. Deze instelling wordt vaak aangeduid als 'USB-tethering', 'Gegevens delen' of 'USB-modem'.
 1. Gegevens delen via USB inschakelen.
-1. Verbind uw apparaat met de Usb-C-poort van HoloLens.
+1. Verbinding maken apparaat naar de HoloLens USB-C-poort.
 1. In HoloLens 2 Netwerkinstellingen wordt het apparaat automatisch weergegeven als een Ethernet-verbinding.

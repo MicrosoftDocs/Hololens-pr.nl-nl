@@ -14,20 +14,20 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 951c79e49d67c1a0308e236e4283ffa498a7139f
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: ca87f34718319d489b69ba33ad24731628d87fac
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111377817"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635548"
 ---
 # <a name="app-management-overview"></a>App-beheer: Overzicht
 
-U kunt apps implementeren op vier verschillende paden: **Mobile Device Management (MDM),** **Microsoft Store voor Bedrijven**, **Microsoft Store** of door ze te installeren via **Inrichting.**
+U kunt apps implementeren op vier verschillende paden: **Mobile Device Management (MDM),** **Microsoft Store voor Bedrijven**, **Microsoft Store** of door ze te installeren via **Inrichten.**
 
 ## <a name="mobile-device-management-mdm"></a>het beheren van mobiele apparaten
 
-Met een MDM-oplossing kunnen IT-besluitvormers en -beheerders hun in-house line-of-business-apps privé automatisch installeren (pushen) of apps aanschaffen via de Store voor een groep gebruikers. HoloLens-apparaten werken het beste met Microsoft Endpoint Manager (Intune) voor [toepassingsbeheer.](app-deploy-intune.md) Intune biedt gebruikers ook een fijner beheer over door IT beheerde apps via Bedrijfsportal downloadbare ervaring.
+Met een MDM-oplossing kunnen IT-besluitvormers en -beheerders hun in-house line-of-business-apps privé automatisch installeren (pushen) of apps aanschaffen via de Store voor een groep gebruikers. HoloLens apparaten werken het beste met Microsoft Endpoint Manager (Intune) voor [toepassingsbeheer.](app-deploy-intune.md) Intune biedt gebruikers ook een fijner beheer over it-beheerde apps via de Bedrijfsportal downloadbare ervaring.
 
 > [!NOTE]
 > De volgende instructies zijn voor gebruikers die hun toepassingen willen beheren met Intune. Microsoft raadt u aan Intune te gebruiken voor toepassings- en apparaatbeheer.
@@ -42,7 +42,7 @@ Mobile Device Management (MDM) is van toepassing op:
 
 ## <a name="microsoft-store-for-business"></a>Microsoft Store voor Bedrijven
 
-De [Microsoft Store voor Bedrijven](app-deploy-store-business.md) it-besluitvormers en -beheerders in bedrijven om gratis en betaalde apps te zoeken, te verkrijgen, te beheren en te distribueren. IT-beheerders kunnen Microsoft Store apps en persoonlijke Line-Of-Business-apps in één inventaris beheren, plus licenties toewijzen en opnieuw gebruiken als dat nodig is. Ga naar Vereisten voor het [gebruik van de](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business)Microsoft Store voor Bedrijven.
+De [Microsoft Store voor Bedrijven](app-deploy-store-business.md) it-besluitvormers en -beheerders in bedrijven om gratis en betaalde apps te zoeken, te verkrijgen, te beheren en te distribueren. IT-beheerders kunnen Microsoft Store apps en persoonlijke Line-Of-Business-apps in één inventaris beheren, plus licenties toewijzen en opnieuw gebruiken als dat nodig is. Ga naar Vereisten voor het [gebruik van de](/microsoft-store/prerequisites-microsoft-store-for-business)Microsoft Store voor Bedrijven.
 
 De Microsoft Store voor Bedrijven is van toepassing op:
 
@@ -53,7 +53,7 @@ De Microsoft Store voor Bedrijven is van toepassing op:
 
 ## <a name="microsoft-store-apps"></a>Microsoft Store-apps
 
-De Microsoft Store IT-besluitvormers en -beheerders in bedrijven om openbare apps te zoeken, te verkrijgen, te beheren en te distribueren.
+De Microsoft Store it-besluitvormers en -beheerders in bedrijven om openbare apps te zoeken, te verkrijgen, te beheren en te distribueren.
 
 Deze Microsoft Store is van toepassing op:
 
@@ -61,7 +61,7 @@ Deze Microsoft Store is van toepassing op:
 * Gebruiker downloadt apps handmatig
 * Automatisch bijwerken als er verbinding is met internet
 
-Ga naar [Holographic Store-apps voor meer informatie.](https://docs.microsoft.com/hololens/holographic-store-apps)
+Ga naar [Holographic Store-apps voor meer informatie.](/hololens/holographic-store-apps)
 
 ## <a name="install-via-provisioning-packages"></a>Installeren via Inrichtingspakketten
 
@@ -76,7 +76,7 @@ Installeren via Inrichtingspakketten is van toepassing op:
 
 ## <a name="install-apps-on-hololens-2-via-app-installer"></a>Apps installeren op HoloLens 2 via App-installatieprogramma
 
-Met de [App-installatieprogramma](app-deploy-app-installer.md) kunnen gebruikers een eenvoudige ervaring hebben voor het installeren van apps op lokale apparaten of het delen van een app met iemand anders die niet bekend is met andere installatiemethoden voor apps op HoloLens. Dit kan worden gedaan zonder dat u de ontwikkelaarsmodus hoeft in te schakelen of Apparaatportal. Dit is een eenvoudige methode voor het distribueren van een volledig gebouwde app. Ongeacht of u uw app gewoon wilt demo's geven aan een andere gebruiker met een HoloLens of als u uw app wilt implementeren, werkt deze methode eenvoudig.
+Met behulp [van de App-installatieprogramma](app-deploy-app-installer.md) kunnen gebruikers een eenvoudige ervaring hebben voor het installeren van apps op lokale apparaten of het delen van een app met iemand anders die niet bekend is met andere installatiemethoden voor apps op HoloLens. Dit kan worden gedaan zonder dat u de ontwikkelaarsmodus hoeft in te schakelen of Apparaatportal. Dit is een eenvoudige methode voor het distribueren van een volledig gebouwde app. Ongeacht of u uw app gewoon wilt demo's geven aan een andere gebruiker met een HoloLens of als u uw app wilt implementeren, werkt deze methode eenvoudig.
 
 Installeren via App-installatieprogramma is van toepassing op:
 

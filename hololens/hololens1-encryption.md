@@ -1,6 +1,6 @@
 ---
 title: HoloLens BitLocker-versleuteling
-description: Meer informatie over het inschakelen van BitLocker-apparaatversleuteling om bestanden te beveiligen die zijn opgeslagen op uw HoloLens-mixed reality apparaten.
+description: Meer informatie over het inschakelen van BitLocker-apparaatversleuteling om bestanden te beveiligen die zijn opgeslagen op HoloLens mixed reality apparaten.
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -13,26 +13,26 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 2929cbea826e0cc92a72550c7874995506b94257
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 37efab3ef3d68a9641320e144619008612f6efa2
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111377763"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635242"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>HoloLens (1e generatie) BitLocker-versleuteling
 
-HoloLens (eerste generatie) en HoloLens 2 ondersteunen apparaatversleuteling met bitLocker, maar BitLocker is altijd ingeschakeld op HoloLens 2.
+HoloLens (eerste generatie) en HoloLens 2 ondersteunen apparaatversleuteling met BitLocker, maar BitLocker is altijd ingeschakeld op HoloLens 2.
 
-In dit artikel vindt u hulp bij het inschakelen en beheren van BitLocker op HoloLens (eerste generatie).
+In dit artikel vindt u hulp bij het inschakelen en beheren van BitLocker op HoloLens (1e generatie).
 
-Op HoloLens (1e generatie) kunt u BitLocker-apparaatversleuteling handmatig inschakelen of met behulp van Mobile Device Management (MDM). Volg deze instructies om [BitLocker-apparaatversleuteling in teschakelen](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) om bestanden en informatie te beveiligen die zijn opgeslagen op de HoloLens. Apparaatversleuteling helpt uw gegevens te beveiligen met behulp van de AES-CBC 128-versleutelingsmethode, die gelijk is aan [EncryptionMethodByDriveType-methode 3](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) in de BitLocker-configuratieserviceprovider (CSP). Medewerkers met de juiste versleutelingssleutel (zoals een wachtwoord) kunnen deze ontsleutelen of gegevensherstel uitvoeren.
+Op HoloLens (eerste generatie) kunt u BitLocker-apparaatversleuteling handmatig inschakelen of MDM (Mobile Device Management) gebruiken. Volg deze instructies om [BitLocker-apparaatversleuteling in te](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) HoloLens. Apparaatversleuteling helpt uw gegevens te beveiligen met behulp van de AES-CBC 128-versleutelingsmethode, die gelijk is aan [EncryptionMethodByDriveType-methode 3](/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) in de BitLocker-configuratieserviceprovider (CSP). Medewerkers met de juiste versleutelingssleutel (zoals een wachtwoord) kunnen deze ontsleutelen of gegevensherstel uitvoeren.
 
 ## <a name="enable-device-encryption-using-mdm"></a>Apparaatversleuteling inschakelen met MDM
 
-U kunt uw MDM-provider (Mobile Device Management) gebruiken om een beleid toe te passen dat apparaatversleuteling vereist. Het beleid dat moet worden gebruikt, is de instelling [Security/RequireDeviceEncryption](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) in de beleids-CSP.
+U kunt uw MDM-provider (Mobile Device Management) gebruiken om een beleid toe te passen dat apparaatversleuteling vereist. Het beleid dat moet worden gebruikt, is de instelling [Security/RequireDeviceEncryption](/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) in de beleids-CSP.
 
-[Zie de instructies voor het inschakelen van apparaatversleuteling met Microsoft Intune.](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-holographic-for-business)
+[Zie de instructies voor het inschakelen van apparaatversleuteling met Microsoft Intune.](/intune/compliance-policy-create-windows#windows-holographic-for-business)
 
 Zie de documentatie van uw MDM-provider voor instructies voor andere MDM-hulpprogramma's. Als uw MDM-provider aangepaste URI vereist voor apparaatversleuteling, gebruikt u de volgende configuratie:
 
@@ -74,7 +74,7 @@ Inrichtingspakketten zijn bestanden die zijn gemaakt door het hulpprogramma Wind
     > U kunt wijzigingen aanbrengen in bestaande pakketten en het versienummer wijzigen om eerder toegepaste pakketten bij te werken.
 
 1. Klik in **Beveiligingsdetails selecteren voor het inrichtingspakket** op **Volgende.**
-1. Klik **op** Volgende om de uitvoerlocatie op te geven waar u het inrichtingspakket naartoe wilt laten gaan zodra het is gebouwd. Windows ICD gebruikt standaard de projectmap als uitvoerlocatie.
+1. Klik **op** Volgende om de uitvoerlocatie op te geven waar u het inrichtingspakket naartoe wilt laten gaan zodra het is gebouwd. Standaard gebruikt Windows ICD de projectmap als uitvoerlocatie.
 
     U kunt desgewenst op Bladeren klikken om de standaarduitvoerlocatie te wijzigen.
 
@@ -82,9 +82,9 @@ Inrichtingspakketten zijn bestanden die zijn gemaakt door het hulpprogramma Wind
 1. Klik **op Bouwen** om te beginnen met het bouwen van het pakket. De projectgegevens worden weergegeven op de buildpagina en de voortgangsbalk geeft de buildstatus aan.
 1. Wanneer de build is voltooid, klikt u op **Voltooien.**
 
-### <a name="apply-the-provisioning-package-to-hololens"></a>Het inrichtingspakket toepassen op HoloLens
+### <a name="apply-the-provisioning-package-to-hololens"></a>Pas het inrichtingspakket toe op HoloLens
 
-1. Sluit het apparaat via USB aan op een pc en  start het apparaat, maar ga niet verder dan de pagina voor passend maken van de eerste installatie (de eerste pagina met het blauwe vak).
+1. Verbinding maken apparaat via USB naar een pc en start het apparaat  op, maar ga niet verder dan de pagina voor passend maken van de eerste installatie (de eerste pagina met het blauwe vak).
 1. Druk kort op de knoppen **Volume down en** **Aan/uit.**
 1. HoloLens wordt weergegeven als een apparaat in Verkenner op de pc.
 1. Sleep in Verkenner het inrichtingspakket (.ppkg) naar de apparaatopslag en zet het neer.
@@ -97,8 +97,8 @@ Inrichtingspakketten zijn bestanden die zijn gemaakt door het hulpprogramma Wind
 
 ## <a name="verify-device-encryption"></a>Apparaatversleuteling controleren
 
-Versleuteling wordt stil op HoloLens. De versleutelingsstatus van het apparaat controleren:
+Versleuteling wordt op de HoloLens. De versleutelingsstatus van het apparaat controleren:
 
-- Ga op HoloLens naar  >  **Instellingensysteem**  >  **over**. **BitLocker** is **ingeschakeld als** het apparaat is versleuteld. 
+- Ga HoloLens naar **Instellingen**  >  **Systeem**  >  **over**. **BitLocker** is **ingeschakeld als** het apparaat is versleuteld. 
 
     ![Over het scherm met BitLocker ingeschakeld](images/about-encryption.png)

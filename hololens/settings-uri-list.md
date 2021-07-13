@@ -1,6 +1,6 @@
 ---
-title: Zichtbaarheid van pagina-instellingen
-description: Blijf op de hoogte van onze lijst met ondersteunde URI's voor PageVisibilityList en Guide on HoloLens mixed reality apparaten.
+title: Zichtbaarheid Instellingen pagina's
+description: Blijf op de hoogte van onze lijst met ondersteunde URI's voor PageVisibilityList en guide on HoloLens mixed reality apparaten.
 author: evmill
 ms.author: v-evmill
 ms.date: 10/13/2020
@@ -13,156 +13,180 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d28994d911532a940d82756aa45609571ee80ac3
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 5ac3ff27085fd2f7c5bc1de0e461079a673bbb23
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924329"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113637163"
 ---
-# <a name="page-settings-visibility"></a>Zichtbaarheid van pagina-instellingen
+# <a name="page-settings-visibility"></a>Zichtbaarheid Instellingen pagina's
 
-Een van de beheerbare functies voor HoloLens-apparaten is het gebruik van het beleid [Instellingen/PaginaVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) om de pagina's in de app Instellingen te beperken. PageVisibilityList is een beleid waarmee IT-beheerders kunnen voorkomen dat specifieke pagina's in de app Systeeminstellingen zichtbaar of toegankelijk zijn, of om dit te doen voor alle pagina's behalve de pagina's die zijn opgegeven.
+Een van de beheerbare functies voor HoloLens-apparaten is het gebruik van het [Instellingen/PageVisibilityList-beleid](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) om de pagina's te beperken die worden weergegeven in de Instellingen app. PageVisibilityList is een beleid waarmee IT-beheerders kunnen voorkomen dat specifieke pagina's in de System Instellingen-app zichtbaar of toegankelijk zijn, of om dit te doen voor alle pagina's, met uitzondering van de opgegeven pagina's.
 
 > [!NOTE]
 > Deze functie is alleen beschikbaar in [Windows Holographic, versie 20H2](hololens-release-notes.md#windows-holographic-version-20h2) of hoger voor HoloLens 2 apparaten. Zorg ervoor dat de apparaten voor wie u dit wilt gebruiken, zijn bijgewerkt.
 
-In het volgende voorbeeld ziet u een beleid dat alleen toegang toestaat tot de about- en bluetooth-pagina's, die respectievelijk URI 'ms-settings:network-wifi' en 'ms-settings:bluetooth' hebben:
+
+## <a name="examples"></a>Voorbeelden
+Pagina's worden geïdentificeerd door een verkorte versie van de gepubliceerde URI's, de URI min het voorvoegsel 'ms-settings:'.
+
+In het volgende voorbeeld ziet u een beleid waarmee alleen toegang kan worden toegestaan tot de about- en Bluetooth-pagina's, die respectievelijk URI 'network-wifi' en 'bluetooth' hebben:
 - `showonly:network-wifi;network-proxy;bluetooth`
 
-Dit instellen via een inrichtingspakket:
+In het volgende voorbeeld ziet u een beleid dat de pagina Voor het opnieuw instellen van het besturingssysteem verbergt:
+- `hide:reset`
 
-1. Navigeer tijdens het maken van uw pakket in Windows Configuration Designer **naar Beleidsregels > Instellingen > PageVisibilityList**
+
+## <a name="deploying-this-policy-via-intune"></a>Dit beleid implementeren via Intune
+
+Dit zijn de configuratiewaarden die aan Intune worden opgegeven:
+
+- **Naam:** Een door de beheerder gewenste weergavenaam voor het profiel.
+- **OMA-URI:** De volledig gekwalificeerde URI van de instellingspagina, inclusief het [bereik](/windows/client-management/mdm/policy-configuration-service-provider). In deze voorbeelden op deze pagina wordt het bereik `./Device` gebruikt.
+- **Waarde:** Een tekenreekswaarde die aangeeft of  alleen de opgegeven pagina's moeten worden verborgen of weergegeven. Mogelijke waarden zijn `hide:<pagename>` en `showonly:<pagename>` . 
+ 
+U kunt meerdere pagina's specificeren door ze te scheiden met puntkomma's. Hieronder vindt u een lijst met algemene pagina's.
+
+1. Maak een **aangepast beleid.**
+1. Bij het instellen van **de OMA-URI** voert u de URI met volledig bereik in. Bijvoorbeeld: **`./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList`**
+1. Kies bij het selecteren van de gegevens de optie **Tekenreeks:**
+1. Gebruik de **bovenstaande richtlijnen bij** het opgeven van Waarde. Bijvoorbeeld: **`showonly:network-wifi;network-proxy;bluetooth`** of **`hide:reset`** 
+> [!IMPORTANT]
+> Zorg ervoor dat u de aangepaste apparaatconfiguratie toewijst aan een groep waarin het apparaat is bedoeld. Als deze stap niet wordt uitgevoerd, wordt het beleid gep pusht, maar niet toegepast.
+
+Zie [HoloLens MDM-configuratie voor](hololens-mdm-configure.md) meer informatie over Intune-groepen en apparaatconfiguraties.
+
+
+## <a name="deploying-this-policy-via-a-provisioning-package"></a>Dit beleid implementeren via een inrichtingspakket
+
+Dit zijn de configuratiewaarden die worden opgegeven in Windows Configuration Designer:
+
+**Waarde:** Een tekenreekswaarde die aangeeft of  alleen de opgegeven pagina's moeten worden verborgen of weergegeven. Mogelijke waarden zijn `hide:<pagename>` en `showonly:<pagename>` . U kunt meerdere pagina's specificeren door ze te scheiden met puntkomma's. Hieronder vindt u een lijst met algemene pagina's.
+
+
+1. Tijdens het maken van uw pakket in Windows Configuration Designer naar **Beleidsregels > Instellingen > PageVisibilityList**
 1. Voer de tekenreeks in: **`showonly:network-wifi;network-proxy;bluetooth`**
 1. Exporteert u uw inrichtingspakket.
 1. Pas het pakket toe op uw apparaat.
-Ga naar deze pagina voor meer informatie over het maken en toepassen van een [inrichtingspakket.](hololens-provisioning.md)
+Ga naar HoloLens inrichtingspagina voor meer informatie over het maken en toepassen [van een inrichtingspakket.](hololens-provisioning.md)
 
-U kunt dit doen via Intune met oma-URI:
 
-1. Maak een **aangepast beleid.**
-1. Gebruik de tekenreeks bij het instellen van de OMA-URI: **`./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList`**
-1. Kies bij het selecteren van de gegevens de optie **Tekenreeks:**
-1. Wanneer u de waarde typt, gebruikt u: **`showonly:network-wifi;network-proxy;bluetooth`**
-1. Zorg ervoor dat u de aangepaste apparaatconfiguratie toewijst aan een groep waarin het apparaat is bedoeld.
+Ongeacht de gekozen methode ontvangt uw apparaat nu de wijzigingen en krijgen gebruikers de volgende Instellingen app.
 
-Zie [HoloLens MDM-configuratie](hololens-mdm-configure.md) voor meer informatie over Intune-groepen en apparaatconfiguraties.
+![Schermopname van actieve uren die worden gewijzigd in de Instellingen app](images/hololens-page-visibility-list.jpg)
 
-Ongeacht de gekozen methode ontvangt uw apparaat nu de wijzigingen en krijgen gebruikers de volgende instellingen-app te zien.
+Als u de pagina Instellingen app wilt configureren om uw eigen selectie pagina's weer te geven of te verbergen, bekijkt u de Instellingen URI's die beschikbaar zijn op HoloLens.
 
-![Schermopname van actieve uren die worden gewijzigd in de app Instellingen](images/hololens-page-visibility-list.jpg)
+## <a name="settings-uris"></a>Instellingen Uris
 
-Als u de app-pagina's Instellingen wilt configureren om uw eigen selectie pagina's weer te geven of te verbergen, bekijkt u de instellingen-URI's die beschikbaar zijn op HoloLens.
-
-## <a name="settings-uris"></a>Instellingen-URI's
-
-HoloLens-apparaten Windows 10 apparaten hebben een andere selectie pagina's in de app Instellingen. Op deze pagina vindt u alleen de instellingen die bestaan op HoloLens.
+HoloLens apparaten en Windows 10 apparaten hebben een andere selectie pagina's in de Instellingen app. Op deze pagina vindt u alleen de instellingen die aanwezig zijn op HoloLens.
 
 ### <a name="accounts"></a>Accounts
 | Pagina Instellingen           | URI                                            |
 |-------------------------|------------------------------------------------|
-| Werk- of schoolaccount openen | `ms-settings:workplace`                         |
-| Iris-inschrijving       | `ms-settings:signinoptions-launchirisenrollment` |
-| Aanmeldingsopties         | ` ms-settings:signinoptions `                   |
+| Werk- of schoolaccount openen | `workplace`                         |
+| Iris-inschrijving       | `signinoptions-launchirisenrollment` |
+| Aanmeldingsopties         | ` signinoptions `                   |
 
 ### <a name="apps"></a>Apps
 | Pagina Instellingen | URI                          |
 |---------------|------------------------------|
-| Apps & functies<sup>2</sup>     | `ms-settings:appsfeatures` <br> |
-| Apps & functies > Geavanceerde opties <sup>2</sup>     | `ms-settings::appsfeatures-app` <br> |
-| Apps & functies > Offline Maps <sup>2</sup>     | `ms-settings:maps-maps` <br> |
-| Apps & functies > Offline maps > Download maps <sup>2</sup>     | `ms-settings:maps-downloadmaps` <br> |
+| Apps & functies <sup>2</sup>     | `appsfeatures` <br> |
+| Apps & functies > Geavanceerde opties <sup>2</sup>     | `appsfeatures-app` <br> |
+| Apps & functies > Offline Kaarten <sup>2</sup>     | `maps-maps` <br> |
+| Apps & functies > Offline Kaarten > Download maps <sup>2</sup>     | `maps-downloadmaps` <br> |
 
 ### <a name="devices"></a>Apparaten
 | Pagina Instellingen | URI                          |
 |---------------|------------------------------|
-| Bluetooth     | `ms-settings:bluetooth` <br> `ms-settings:connecteddevices` |
-| Muis <sup>2</sup>      | `ms-settings:mouse` <br>  |
-| USB <sup>2</sup>      | `ms-settings:usb` <br>  |
+| Bluetooth     | `bluetooth` <br> `connecteddevices` |
+| Muis <sup>2</sup>      | `mouse` <br>  |
+| USB <sup>2</sup>      | `usb` <br>  |
 
 ### <a name="privacy"></a>Privacy
 | Pagina Instellingen            | URI                                             |
 |--------------------------|-------------------------------------------------|
-| Accountgegevens             | `ms-settings:privacy-accountinfo`              |
-| App Diagnostics        | `ms-settings:privacy-appdiagnostics`              |
-| Achtergrond-apps        | `ms-settings:privacy-backgroundapps`              |
-| Kalender                 | `ms-settings:privacy-calendar`                    |
-| Oproepgeschiedenis             | `ms-settings:privacy-callhistory`                 |
-| Camera                   | `ms-settings:privacy-webcam`                      |
-| Contactpersonen                 | `ms-settings:privacy-contacts`                    |
-| Feedback over & diagnostische gegevens | `ms-settings:privacy-feedback`                    |
-| Documenten                | `ms-settings:privacy-documents`                   |
-| E-mail                    | `ms-settings:privacy-email`                       |
-| Bestandssysteem              | `ms-settings:privacy-broadfilesystemaccess`       |
-| Algemeen <sup>2</sup>             | `ms-settings:privacy-general`       |
-| Ink & personalisatie <sup>typen 2</sup>             | `ms-settings:privacy-speechtyping`       |
-| Locatie                 | `ms-settings:privacy-location`                    |
-| Berichten                | `ms-settings:privacy-messaging`                   |
-| Microfoon               | `ms-settings:privacy-microphone`                  |
-| Beweging <sup>2</sup>               | `ms-settings:privacy-motion`                  |
-| Meldingen            | `ms-settings:privacy-notifications`               |
-| Andere apparaten            | `ms-settings:privacy-customdevices`               |
-| Afbeeldingen                 | `ms-settings:privacy-pictures`                    |
-| Radios                   | `ms-settings:privacy-radios`                      |
-| Schermopname van randen <sup>2</sup>             | `ms-settings:privacy-graphicsCaptureWithoutBorder`       |
-| Schermopnamen en apps <sup>2</sup>             | `ms-settings:privacy-graphicsCaptureProgrammatic`       |
-| Spraak                   | `ms-settings:privacy-speech`                      |
-| Taken                    | `ms-settings:privacy-tasks`                       |
-| Gebruikersverloop           | `ms-settings:privacy-backgroundspatialperception` |
-| Video's                   | `ms-settings:privacy-videos`                      |
-| Spraakactivering       | `ms-settings:privacy-voiceactivation`             |
+| Accountgegevens             | `privacy-accountinfo`              |
+| App Diagnostics        | `privacy-appdiagnostics`              |
+| Achtergrond-apps        | `privacy-backgroundapps`              |
+| Kalender                 | `privacy-calendar`                    |
+| Oproepgeschiedenis             | `privacy-callhistory`                 |
+| Camera                   | `privacy-webcam`                      |
+| Contactpersonen                 | `privacy-contacts`                    |
+| Feedback over & diagnostische gegevens | `privacy-feedback`                    |
+| Documenten                | `privacy-documents`                   |
+| E-mail                    | `privacy-email`                       |
+| Bestandssysteem              | `privacy-broadfilesystemaccess`       |
+| Algemeen <sup>2</sup>             | `privacy-general`       |
+| Ink & het typen van personalisatie <sup>2</sup>             | `privacy-speechtyping`       |
+| Locatie                 | `privacy-location`                    |
+| Berichten                | `privacy-messaging`                   |
+| Microfoon               | `privacy-microphone`                  |
+| Beweging <sup>2</sup>               | `privacy-motion`                  |
+| Meldingen            | `privacy-notifications`               |
+| Andere apparaten            | `privacy-customdevices`               |
+| Afbeeldingen                 | `privacy-pictures`                    |
+| Radios                   | `privacy-radios`                      |
+| Schermopname van randen <sup>2</sup>             | `privacy-graphicsCaptureWithoutBorder`       |
+| Schermopnamen en apps <sup>2</sup>             | `privacy-graphicsCaptureProgrammatic`       |
+| Spraak                   | `privacy-speech`                      |
+| Taken                    | `privacy-tasks`                       |
+| Gebruikersverloop           | `privacy-backgroundspatialperception` |
+| Video's                   | `privacy-videos`                      |
+| Spraakactivering       | `privacy-voiceactivation`             |
 
 ### <a name="network--internet"></a>Netwerk en internet
 | Pagina Instellingen | URI                              |
 |---------------|----------------------------------|
-| Vliegtuigmodus <sup>2</sup> | `ms-settings:network-airplanemode`        |
-| Proxy | `ms-settings:network-proxy`        |
-| VPN   | `ms-settings:network-vpn`          |
-| Wi-Fi  | `ms-settings:network-wifi`<br>`ms-settings:network-wifisettings`<br>`ms-settings:network-status`<br>`ms-settings:wifi-provisioning`    |
+| Vliegtuigmodus <sup>2</sup> | `network-airplanemode`        |
+| Proxy | `network-proxy`        |
+| VPN   | `network-vpn`          |
+| Wi-Fi  | `network-wifi`<br>`network-wifisettings`<br>`network-status`<br>`wifi-provisioning`    |
 
 
 
 ### <a name="system"></a>Systeem
 | Pagina Instellingen      | URI                                |
 |--------------------|------------------------------------|
-| Accu <sup>2</sup>           | `ms-settings:batterysaver`<br>|
-| Accu <sup>2</sup>           | `ms-settings:batterysaver-settings`<br>|
-| Kleuren             | `ms-settings:colors`<br>`ms-settings:personalization-colors` |
-| Hologrammen <sup>2</sup>  |  `ms-settings:holograms`  |
-| <sup>Kalibratie 2</sup> |  `ms-settings:calibration` |
-| Meldingen & acties  | `ms-settings:notifications`          |
-| Gedeelde ervaringen | `ms-settings:crossdevice` 
-| Geluid <sup>2</sup>           | `ms-settings:sound`<br>|
-| Geluids > app-volume en apparaatvoorkeur <sup>2</sup>           | `ms-settings:apps-volume`<br>|
-| Geluidsapparaten > beheren <sup>2</sup>           | `ms-settings:sound-devices`<br>|
-| Storage            | `ms-settings:storagesense`           |
-| Opslag > configureren Opslaginzicht <sup>2</sup>           | `ms-settings:storagepolicies`<br>|
+| Accu <sup>2</sup>           | `batterysaver`<br>|
+| Accu <sup>2</sup>           | `batterysaver-settings`<br>|
+| Kleuren             | `colors`<br>`personalization-colors` |
+| Hologrammen <sup>2</sup>  |  `holograms`  |
+| <sup>Kalibratie 2</sup> |  `calibration` |
+| Meldingen & acties  | `notifications`          |
+| Gedeelde ervaringen | `crossdevice` 
+| Geluid <sup>2</sup>           | `sound`<br>|
+| Geluids > app-volume en apparaatvoorkeur <sup>2</sup>           | `apps-volume`<br>|
+| Geluidsapparaten > beheren <sup>2</sup>           | `sound-devices`<br>|
+| Storage            | `storagesense`           |
+| Storage > Sense 2 Storage <sup>configureren</sup>           | `storagepolicies`<br>|
 
 ### <a name="time--language"></a>Time & Language
 | Pagina Instellingen | URI                                           |
 |---------------|-----------------------------------------------|
-| Datum & tijd <sup>2</sup> | `ms-settings:dateandtime`                  |
-| Toetsenbord <sup>2</sup> | `ms-settings:keyboard`                  |
-| Taal <sup>2</sup> | `ms-settings:language`                  |
-| Taal <sup>2</sup> | `ms-settings:regionlanguage-languageoptions`                  |
-| Taal      | `ms-settings:regionlanguage`<br>`ms-settings:regionlanguage-adddisplaylanguage`<br>`ms-settings:regionlanguage-setdisplaylanguage` |
-| Region        | `ms-settings:regionformatting`                  |
+| Datum & tijd <sup>2</sup> | `dateandtime`                  |
+| Toetsenbord <sup>2</sup> | `keyboard`                  |
+| Taal <sup>2</sup> | `language`                  |
+| Taal <sup>2</sup> | `regionlanguage-languageoptions`                  |
+| Taal      | `regionlanguage`<br>`regionlanguage-adddisplaylanguage`<br>`regionlanguage-setdisplaylanguage` |
+| Region        | `regionformatting`                  |
 
 ### <a name="update--security"></a>Beveiliging & bijwerken
 | Pagina Instellingen                         | URI                                       |
 |---------------------------------------|-------------------------------------------|
-| Geavanceerde opties                    | `ms-settings:windowsupdate-options`         |
-| Herstel & opnieuw <sup>instellen 2</sup>      | `ms-settings:reset`         |
-| Windows Insider-programma               | `ms-settings:windowsinsider` <br>`ms-settings:windowsinsider-optin`          |
-| Windows Update                        | `ms-settings:windowsupdate`<br> `ms-settings:windowsupdate-activehours`  <br> `ms-settings:windowsupdate-history` <br> `ms-settings:windowsupdate-optionalupdates` <br><sup>1</sup>`ms-settings:windowsupdate-options`<br><sup>1</sup>`ms-settings:windowsupdate-restartoptions` |
-| Windows Update: controleert op updates | `ms-settings:windowsupdate-action`          |
+| Geavanceerde opties                    | `windowsupdate-options`         |
+| Herstel & <sup>2 opnieuw instellen</sup>      | `reset`         |
+| Windows Insider-programma               | `windowsinsider` <br>`windowsinsider-optin`          |
+| Windows Update                        | `windowsupdate`<br> `windowsupdate-activehours`  <br> `windowsupdate-history` <br> `windowsupdate-optionalupdates` <br><sup>1</sup>`windowsupdate-options`<br><sup>1</sup>`windowsupdate-restartoptions` |
+| Windows Update: controleert op updates | `windowsupdate-action`          |
 
 
-- <sup>1:</sup> voor versies vóór Windows Holographic, versie 21H1, gaan de  volgende twee URI's niet daadwerkelijk naar de pagina's Geavanceerde opties **of** Opties; Ze blokkeren of tonen alleen de hoofdpagina Windows Update pagina.
-  -  ms-settings:windowsupdate-options
-  -  ms-settings:windowsupdate-restartoptions
+- <sup>1:</sup> voor versies vóór Windows Holographic, versie 21H1, gaan de volgende  twee URI's niet daadwerkelijk naar de pagina's Geavanceerde opties of **Opties;** Ze blokkeren of tonen alleen de hoofdpagina Windows Update.
+  -  windowsupdate-options
+  -  windowsupdate-restartoptions
 
-- <sup>2:</sup> beschikbaar in Windows Holographic 21H1 of hoger.
+- <sup>2</sup> : beschikbaar in Windows Holographic 21H1 of hoger.
 
 
-Ga voor een volledige lijst met Windows 10 Instellingen-URI's naar de [documentatie voor startinstellingen.](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)
+Raadpleeg de documentatie voor startinstellingen Windows 10 Instellingen een volledige lijst met [URI's.](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)

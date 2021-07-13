@@ -7,18 +7,18 @@ ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.prod: hololens
 ms.topic: article
-keywords: beveiliging, hololens, hardware-ondersteuning integriteit, runtime attestation, UEFI, UEFI beveiligd opstarten, beveiligd opstarten, TPM, beveiliging tegen bedreigingen, Windows Anti-Persistence Assurance, code-integriteit, codebeveiliging,
+keywords: beveiliging, hololens, integriteit van hardware,runtime attestation, UEFI, UEFI beveiligd opstarten, beveiligd opstarten, TPM, beveiliging tegen bedreigingen, Windows Anti-Persistentie assurance, code-integriteit, codebeveiliging,
 ms.sitesec: library
 ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0a89fa5e61e560f629444efd2728f6dd41db60d3
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 037f9325555244314518c81d7814bf983c345af6
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111379414"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639332"
 ---
 # <a name="hardware-backed-integrity-and-runtime-attestation"></a>Hardware-back-integriteit en runtime attestation
 
@@ -26,12 +26,12 @@ Hardware-back-integriteit en runtime attestation beschermen tegen bedreigingen d
 
 ## <a name="uefi-secure-boot"></a>Beveiligd opstarten met UEFI
 
-HoloLens 2 UEFI (Unified Extensible Firmware Interface) Beveiligd opstarten altijd afdwingen en UEFI wordt alleen Windows Holographic for Business.
-Beveiligd opstarten zorgt ervoor dat de volledige opstartketen wordt gecontroleerd op integriteit en dat Windows altijd wordt opgestart met het juiste beveiligingsbeleid dat erop is toegepast. Meer informatie over [Beveiligd opstarten.](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot)
+HoloLens 2 UEFI (Unified Extensible Firmware Interface) beveiligd opstarten altijd afdwingen en UEFI wordt alleen Windows Holographic for Business.
+Beveiligd opstarten zorgt ervoor dat de volledige opstartketen wordt gecontroleerd op integriteit en dat Windows altijd wordt opgestart met het juiste beveiligingsbeleid dat erop is toegepast. Meer informatie over [Beveiligd opstarten.](/windows-hardware/design/device-experiences/oem-secure-boot)
 
 ## <a name="tpm"></a>TPM
 
-De Trusted Platform Module (TPM) is een gespecialiseerde chip op een eindpuntapparaat. HoloLens 2 maakt gebruik van TPM 2.0, dat hardware-afgedwongen sleutelisolatie biedt. Meer informatie over [de grondbeginselen van TPM.](https://docs.microsoft.com/windows/security/information-protection/tpm/tpm-fundamentals)
+De Trusted Platform Module (TPM) is een gespecialiseerde chip op een eindpuntapparaat. HoloLens 2 gebruikt een TPM 2.0, die hardware-afgedwongen sleutelisolatie biedt. Meer informatie over [de grondbeginselen van TPM.](/windows/security/information-protection/tpm/tpm-fundamentals)
 
 ## <a name="persistence-access-threat-protection"></a>Bedreigingsbeveiliging voor persistentietoegang
 
@@ -41,16 +41,16 @@ Gerichte aanvallen worden in feite beschouwd als 'geavanceerde permanente bedrei
 
 ### <a name="secure-boot"></a>Beveiligd opstarten
 
-HoloLens 2 UEFI (Unified Extensible Firmware Interface) wordt beveiligd opstarten afgedwongen op alle basisbesturingssysteemtoestanden. UEFI start alleen vertrouwde Microsoft-platforms op, wat ervoor zorgt dat de volledige opstartketen wordt gecontroleerd op integriteit en dat Windows altijd wordt opgestart met het juiste beveiligingsbeleid dat erop is toegepast. HoloLens 2 beveiligd opstarten wordt niet uitgeschakeld en staat geen opstartbelastingen van derden toe.
+HoloLens 2 UEFI (Unified Extensible Firmware Interface) beveiligd opstarten afdwingen op alle basisbesturingssysteemtoestanden. UEFI start alleen vertrouwde Microsoft-platforms op, wat ervoor zorgt dat de volledige opstartketen wordt gecontroleerd op integriteit en dat Windows altijd wordt opgestart met het juiste beveiligingsbeleid dat erop is toegepast. HoloLens 2 beveiligd opstarten wordt niet uitgeschakeld en staat geen opstartbelastingen van derden toe.
 
 > [!Tip]
-> Meer informatie over [Beveiligd opstarten.](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot)
+> Meer informatie over [Beveiligd opstarten.](/windows-hardware/design/device-experiences/oem-secure-boot)
 
-### <a name="windows-anti-persistence-assurance"></a>Windows Anti-Persistence Assurance
+### <a name="windows-anti-persistence-assurance"></a>Windows Anti-persistentiegarantie
 
-HoloLens 2 anti-persistentie garandeert de gebruikers dat zelfs in de zeldzame situatie dat er ooit een runtimecompromitting van het systeem zou plaatsvinden, zoals een externe exploit, een dergelijke gebeurtenis zou worden vereenvoudigd met alle schadelijke code die uit het systeem is verwijderd door het apparaat uit te schakelen. Om de anti-persistentie verder te versterken, HoloLens 2 krachtige integriteitsbeveiliging toegevoegd en is er alleen-lezenbeveiliging toegevoegd.
+HoloLens 2 anti-persistentie garandeert de gebruikers dat een dergelijke gebeurtenis, zelfs in de zeldzame situatie waarin het systeem ooit is gecompromitteerd door een runtime, zoals een externe exploit, wordt beperkt door alle schadelijke code uit het systeem te verwijderen door het apparaat uit te schakelen. Om de anti-persistentie verder te versterken, HoloLens 2 krachtige integriteitsbeveiliging toegevoegd en is er alleen-lezenbeveiliging toegevoegd.
 
-Persistentie van besturingssysteemgegevens in de vorm van gegevens is nog steeds mogelijk, tenzij de gebruiker push-button reset (PBR) uitvoert van het apparaat dat alle veranderlijke partities wist. Hoewel persistentie voor onveranderbare partities veel moeilijker wordt gemaakt, moet de gebruiker de HoloLens 2 PBR gebruiken om mogelijke persistentie van bedreigingen van veranderlijke onderdelen te verwijderen.
+Persistentie van besturingssysteemgegevens in de vorm van gegevens is nog steeds mogelijk, tenzij de gebruiker push-button reset (PBR) uitvoert van het apparaat dat alle veranderlijke partities wist. Hoewel persistentie voor onveranderbare partities veel moeilijker wordt, moet de gebruiker de HoloLens 2 PBR gebruiken om mogelijke persistentie van bedreigingen van veranderlijke onderdelen te verwijderen.
 
 ## <a name="code-integrity-protection"></a>Beveiliging van code-integriteit
 
