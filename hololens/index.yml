@@ -11,21 +11,23 @@ metadata:
   ms.author: v-jjaswinski
   ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 6c73b6fbad7a2968e1f75b361b2b8a015cb1769c
-  ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+  ms.openlocfilehash: 8cb5b881e880adec2b59bde9b36fa700bfce3a91
+  ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
   ms.translationtype: MT
   ms.contentlocale: nl-NL
-  ms.lasthandoff: 06/25/2021
-  ms.locfileid: "112924312"
+  ms.lasthandoff: 07/12/2021
+  ms.locfileid: "113637146"
 landingContent:
 - title: De HoloLens 2
   linkLists:
   - linkListType: learn
     links:
-    - text: Over HoloLens 2 hardware
-      url: hololens2-hardware.md
-    - text: Opties HoloLens 2 vergelijken
+    - text: HoloLens 2 en oplossingen
+      url: hololens-commercial-features.md
+    - text: HoloLens 2 opties
       url: hololens2-options.md
+    - text: HoloLens 2 hardware
+      url: hololens2-hardware.md
   - linkListType: overview
     links:
     - text: Alleen apparaat
@@ -62,7 +64,7 @@ landingContent:
       url: hololens2-cloud-connected-overview.md
     - text: Implementatiehandleiding - Externe clients (verbonden met de cloud)
       url: hololens2-deployment-guide.md
-    - text: 'Implementatiehandleiding: zakelijke verbonden HoloLens 2 implementatie met Dynamics 365-handleidingen'
+    - text: Implementatiehandleiding- Bedrijfsgeconnecteerde HoloLens 2 implementatie met Dynamics 365 Guides
       url: hololens2-corp-connected-overview.md
     - text: Implementatiehandleiding - Offline beveiligd
       url: hololens-common-scenarios-offline-secure.md
@@ -78,7 +80,7 @@ landingContent:
       url: hololens2-display.md
     - text: Implementatie en beheerde apparaten
       url: hololens2-enterprise-troubleshooting.md
-    - text: Diagnostische gegevens van HoloLens-apparaten verzamelen en gebruiken
+    - text: Diagnostische gegevens verzamelen en gebruiken van HoloLens apparaten
       url: hololens-diagnostic-logs.md
     - text: Opnieuw opstarten, opnieuw instellen of HoloLens 2
       url: hololens-recovery.md
@@ -116,7 +118,7 @@ landingContent:
     links:
     - text: Dynamics 365 Remote Assist Docs
       url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview
-    - text: Dynamics 365-handleidingen
+    - text: Dynamics 365 Guides
       url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
     - text: Microsoft Dynamics 365 Mixed Reality
       url: https://docs.microsoft.com/dynamics365/mixed-reality/
