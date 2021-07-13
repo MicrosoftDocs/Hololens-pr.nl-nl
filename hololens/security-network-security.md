@@ -13,12 +13,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f1e5304408a9a9543eb0703ad7321725484eef01
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 416a4f7b9e3cf2e52b79fb29f50424a9c573a18a
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111379391"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113640488"
 ---
 # <a name="network-security"></a>Netwerkbeveiliging
 
@@ -32,4 +32,4 @@ TLS-protocollen (Transport Layer Security) zijn voortdurend in ontwikkeling. Om 
 
 De Windows Defender Firewall biedt essentiële functionaliteit om de connectiviteit van apparaten te beveiligen. Met HoloLens 2 is de firewall altijd ingeschakeld en zijn er geen manieren om deze programmatisch of via de gebruikersinterface uit te schakelen.
 
-De privacy van externe toegang en verbindingen voor mobiele clients kan worden gegarandeerd via het [UWP VPN-internetverbindingsplatform.](https://docs.microsoft.com/uwp/api/Windows.Networking.Vpn?view=winrt-19041) Externe VPN-providers kunnen hun eigen in plug-ins maken met behulp van WinRT-API's die worden uitgevoerd in de AppContainer-sandbox, waardoor de complexiteit en problemen die vaak worden geassocieerd met het schrijven van stuurprogramma's op systeemniveau, worden voorkomen.
+De privacy van externe toegang en verbindingen voor mobiele clients kan worden gegarandeerd via het [UWP VPN-internetverbindingsplatform.](/uwp/api/Windows.Networking.Vpn?view=winrt-19041) Externe VPN-providers kunnen hun eigen in plug-ins maken met behulp van WinRT-API's die worden uitgevoerd in de AppContainer-sandbox, waardoor de complexiteit en problemen die vaak worden geassocieerd met het schrijven van stuurprogramma's op systeemniveau, worden voorkomen.

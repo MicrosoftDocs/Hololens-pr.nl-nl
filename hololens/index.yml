@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft HoloLens
-summary: Microsoft HoloLens is de eerste volledig zelfstandige holografische computer die de Windows 10. Nu, met de introductie van HoloLens 2, biedt elk HoloLens-apparaat commerciële beheermogelijkheden die worden verbeterd door de betrouwbaarheid, beveiliging en schaalbaarheid van cloud- en AI-services van Microsoft.
+summary: Microsoft HoloLens is de eerste volledig zelfstandige holografische computer die wordt uitgevoerd Windows 10. Nu, met de introductie van HoloLens 2, biedt elk HoloLens-apparaat commerciële beheermogelijkheden die worden verbeterd door de betrouwbaarheid, beveiliging en schaalbaarheid van cloud- en AI-services van Microsoft.
 metadata:
   title: Microsoft HoloLens
   description: Landingspagina voor Microsoft HoloLens.
@@ -11,12 +11,12 @@ metadata:
   ms.author: v-jjaswinski
   ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 8cb5b881e880adec2b59bde9b36fa700bfce3a91
-  ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+  ms.openlocfilehash: a37ddd0867a0ea3dfa6f016e01728f2576663aaf
+  ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
   ms.translationtype: MT
   ms.contentlocale: nl-NL
   ms.lasthandoff: 07/12/2021
-  ms.locfileid: "113637146"
+  ms.locfileid: "113639417"
 landingContent:
 - title: De HoloLens 2
   linkLists:
@@ -38,7 +38,7 @@ landingContent:
       url: hololens2-options-industrial-edition.md
     - text: Ontwikkelingseditie
       url: hololens2-options-dev-edition.md
-    - text: Trimble XR10 with HoloLens 2
+    - text: XR10 inkorten met HoloLens 2
       url: hololens2-options-trimble-xr10-edition.md
 - title: Aan de slag
   linkLists:
@@ -60,11 +60,11 @@ landingContent:
       url: hololens2-autopilot-registration-support.md
   - linkListType: deploy
     links:
-    - text: 'Implementatiehandleiding: cloudgeconnecteerde HoloLens 2 implementatie op schaal met Remote Assist'
+    - text: Implementatiehandleiding - Cloudgeconnecteerde HoloLens 2 implementatie op schaal met Remote Assist
       url: hololens2-cloud-connected-overview.md
     - text: Implementatiehandleiding - Externe clients (verbonden met de cloud)
       url: hololens2-deployment-guide.md
-    - text: Implementatiehandleiding- Bedrijfsgeconnecteerde HoloLens 2 implementatie met Dynamics 365 Guides
+    - text: Implementatiehandleiding - Implementatie van bedrijfsgeconnecteerde HoloLens 2 met Dynamics 365 Guides
       url: hololens2-corp-connected-overview.md
     - text: Implementatiehandleiding - Offline beveiligd
       url: hololens-common-scenarios-offline-secure.md
@@ -103,22 +103,22 @@ landingContent:
   - linkListType: how-to-guide
     links:
     - text: Wat is Mixed Reality?
-      url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality
+      url: /windows/mixed-reality/mixed-reality
     - text: Beginnen met ontwerpen en prototypen
-      url: https://docs.microsoft.com/windows/mixed-reality/design
+      url: /windows/mixed-reality/design
     - text: Inleiding tot Mixed Reality ontwikkeling
-      url: https://docs.microsoft.com/windows/mixed-reality/development?tabs=unity
+      url: /windows/mixed-reality/development?tabs=unity
     - text: Cloud Services overzicht
-      url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
+      url: /windows/mixed-reality/mixed-reality-cloud-services#overview
     - text: Microsoft Mesh (preview)
-      url: https://docs.microsoft.com/mesh/overview
+      url: /mesh/overview
 - title: Meer services
   linkLists:
   - linkListType: reference
     links:
     - text: Dynamics 365 Remote Assist Docs
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview
+      url: /dynamics365/mixed-reality/remote-assist/ra-overview
     - text: Dynamics 365 Guides
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
+      url: /dynamics365/mixed-reality/guides/
     - text: Microsoft Dynamics 365 Mixed Reality
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/
+      url: /dynamics365/mixed-reality/

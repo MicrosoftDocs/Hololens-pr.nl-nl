@@ -14,43 +14,43 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 86d36275d5cf1296ca3e9fec90684a188a29f3f0
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 26fd2def8ce1fa8f960ab930e209c74fb37e2e0a
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635123"
+ms.locfileid: "113639757"
 ---
-# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Implementatiehandleiding : Cloud verbonden HoloLens 2 met Remote Assist – Overzicht
+# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Implementatiehandleiding – Cloud verbonden HoloLens 2 met Remote Assist – Overzicht
 
-Deze handleiding helpt IT-professionals bij het plannen en implementeren van Microsoft HoloLens 2 apparaten met Remote Assist in hun organisatie. Dit dient als een model voor proof-of-concept-implementaties in uw organisatie in HoloLens 2 gebruiksgevallen. De installatie is vergelijkbaar met [Scenario A: Implementeren naar apparaten die verbinding maken met de cloud.](https://docs.microsoft.com/hololens/common-scenarios#scenario-a) 
+Deze handleiding helpt IT-professionals bij het plannen en implementeren van Microsoft HoloLens 2 apparaten met Remote Assist in hun organisatie. Dit dient als een model voor proof-of-concept-implementaties in uw organisatie in HoloLens 2 gebruiksgevallen. De installatie is vergelijkbaar met [Scenario A: Implementeren naar apparaten die verbinding maken met de cloud.](common-scenarios.md#scenario-a) 
 
-Tijdens de handleiding wordt be kwijt hoe u uw apparaten kunt registreren bij uw apparaatbeheer, licenties kunt toepassen als dat nodig is en hoe u kunt valideren dat uw eindgebruikers direct gebruik kunnen maken van Remote Assist bij de installatie van het apparaat. Hiervoor gaan we in op de belangrijke onderdelen van de infrastructuur die nodig zijn om alles in te stellen en te laten werken: implementatie op schaal bereiken met HoloLens 2. Er worden geen andere apparaatbeperkingen of configuraties toegepast in deze handleiding, maar we raden u aan deze opties na het afronden te verkennen.
+Tijdens de handleiding wordt be kwijt hoe u uw apparaten kunt registreren bij uw apparaatbeheer, licenties kunt toepassen wanneer dat nodig is en hoe u valideert dat uw eindgebruikers direct Remote Assist kunnen gebruiken bij het instellen van het apparaat. Hiervoor gaan we in op de belangrijke onderdelen van de infrastructuur die nodig zijn om te worden ingesteld en uitgevoerd: implementatie op schaal bereiken met HoloLens 2. Er worden geen andere apparaatbeperkingen of configuraties toegepast in deze handleiding, maar we raden u aan deze opties na het afronden te verkennen.
 
 ## <a name="prerequisites"></a>Vereisten
 
 De volgende infrastructuur moet zijn geïmplementeerd om de HoloLens 2. Zo niet, dan is het instellen van Azure en Intune opgenomen in deze handleiding:
 
-Dit is een set die vergelijkbaar is met [Scenario A:](/hololens/common-scenarios#scenario-a)Implementeren op apparaten die zijn verbonden met de cloud. Dit is een goede optie voor veel Proof of Concept-implementaties, waaronder:
+Dit is een installatie die vergelijkbaar is met [scenario A:](/hololens/common-scenarios#scenario-a)Implementeren op apparaten die verbinding maken met de cloud. Dit is een goede optie voor veel Proof of Concept-implementaties, waaronder:
 
-- Wi-Fi netwerken zijn doorgaans volledig open voor internet- en cloudservices
-- Azure AD Join met MDM Auto Enrollment -- MDM (Intune) Managed
+- Wi-Fi netwerken zijn doorgaans volledig open voor internet en cloudservices
+- Azure AD Join with MDM Auto Enrollment — MDM-managed (Intune)
 - Gebruikers melden zich aan met hun eigen bedrijfsaccount (Azure AD)
     - Eén of meerdere gebruikers per apparaat worden ondersteund.
 
-:::image type="content" alt-text="Scenario voor verbonden cloud" source="./images/deployment-guides-revised-scenario-a.png" lightbox="./images/deployment-guides-revised-scenario-a.png":::
+:::image type="content" alt-text="Scenario met verbonden cloud" source="./images/deployment-guides-revised-scenario-a.png" lightbox="./images/deployment-guides-revised-scenario-a.png":::
 
 
 ## <a name="learn-about-remote-assist"></a>Meer informatie over Remote Assist
 
-Remote Assist kunt samenwerkend onderhoud en herstel, externe inspectie, evenals kennis delen en trainen. Door verbinding te maken met personen met verschillende rollen en locaties kan een monteur Remote Assist verbinding maken met een externe medewerker op Microsoft Teams. Ze kunnen video's, schermopnamen en aantekeningen combineren om problemen in realtime op te lossen, zelfs wanneer&#39;zich niet op dezelfde locatie bevinden. Externe samenwerkers kunnen referentieafbeeldingen, schema's en andere nuttige informatie invoegen die de technicus&#39;de fysieke ruimte, zodat ze naar het schema kunnen verwijzen tijdens het werken met de HoloLens.
+Remote Assist biedt samenwerking voor onderhoud en reparatie, externe inspectie, evenals kennis delen en trainen. Door mensen in verschillende rollen en locaties met elkaar te verbinden, kan een technicus die gebruikmaakt van Remote Assist verbinding maken met een externe medewerker op Microsoft Teams. Ze kunnen video's, schermopnamen en aantekeningen combineren om problemen in realtime op te lossen, zelfs wanneer ze zich niet op dezelfde locatie bevinden. Externe samenwerkers kunnen referentieafbeeldingen, schema's en andere nuttige informatie invoegen over de fysieke ruimte van de technicus, zodat ze kunnen verwijzen naar de schematische gegevens tijdens het werken met hun werk aan HoloLens.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### <a name="remote-assist-licensing-and-requirements"></a>Remote Assist licentieverlening en vereisten
 
 - Azure AD-account (vereist voor het kopen van het abonnement en het toewijzen van licenties)
-- [Remote Assist abonnement](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (of [Remote Assist proefversie](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist))
+- [Remote Assist abonnement](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (of [Remote Assist proefversie](/dynamics365/mixed-reality/remote-assist/try-remote-assist))
     
 #### <a name="dynamics-365-remote-assist-user"></a>Dynamics 365 Remote Assist gebruiker
 
@@ -62,7 +62,7 @@ Remote Assist kunt samenwerkend onderhoud en herstel, externe inspectie, evenals
 - Microsoft Teams of [Teams Freemium](https://products.office.com/microsoft-teams/free).
 - Netwerkverbinding
 
-Als u van plan bent dit scenario voor [verschillende tenants te implementeren,](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)hebt u mogelijk een licentie voor informatiebarrières nodig. Zie [dit artikel om](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) te bepalen of een licentie voor een gegevensbarrière is vereist.
+Als u van plan bent dit scenario voor verschillende [tenants te implementeren,](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)hebt u mogelijk een licentie voor informatiebarrières nodig. Zie Vendors and customers use full Dynamics 365 Remote Assist capabilities (Leveranciers en klanten gebruiken volledige mogelijkheden voor [Dynamics 365 Remote Assist informatiebarrièrelicentie).](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation)
 
 ## <a name="in-this-guide-you-will"></a>In deze handleiding gaat u het volgende doen:
 

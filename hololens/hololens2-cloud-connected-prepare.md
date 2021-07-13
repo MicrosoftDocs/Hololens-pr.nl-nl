@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f747a2893ed3551e91a81bdbf5971deefbf6ce46
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 21fffdc24f8682bc44779e1cebe8cd6eacb59619
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637129"
+ms.locfileid: "113639655"
 ---
 # <a name="prepare---cloud-connected-guide"></a>Voorbereiden - Handleiding voor verbonden cloud
 
@@ -34,7 +34,7 @@ Voor zowel persoonlijke als zakelijke implementatiescenario's is een MDM-systeem
 Azure AD is een cloudgebaseerde adreslijstservice die identiteits- en toegangsbeheer biedt. Organisaties die gebruikmaken van Microsoft Office 365 of Intune, maken al gebruik van Azure AD. Deze heeft drie edities: Free, Premium P1 en Premium P2 (zie [Azure Active Directory editions](https://azure.microsoft.com/documentation/articles/active-directory-editions).) Alle edities ondersteunen Azure AD-apparaatregistratie, maar Premium P1 is vereist voor het inschakelen van automatische inschrijving bij MDM, die we later in deze handleiding gaan gebruiken.
 
 > [!IMPORTANT]
-> Het is essentieel om een Azure Active Directory te HoloLens on-premises AD-join niet ondersteunen. Als u&#39;nog geen Azure Active Directory hebt ingesteld, gaat u naar Een nieuwe [tenant maken in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
+> Het is essentieel om een Azure Active Directory te HoloLens on-premises AD-join niet ondersteunen. Als u&#39;nog geen Azure Active Directory hebt ingesteld, gaat u naar Een nieuwe [tenant maken in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
 
 ## <a name="identity-management"></a>Identiteitsbeheer
 

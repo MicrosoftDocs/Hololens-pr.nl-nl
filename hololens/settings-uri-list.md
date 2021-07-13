@@ -13,16 +13,16 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5ac3ff27085fd2f7c5bc1de0e461079a673bbb23
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 454d79e8b719feb73d5a39280794dcd76f134952
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637163"
+ms.locfileid: "113639230"
 ---
 # <a name="page-settings-visibility"></a>Zichtbaarheid Instellingen pagina's
 
-Een van de beheerbare functies voor HoloLens-apparaten is het gebruik van het [Instellingen/PageVisibilityList-beleid](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) om de pagina's te beperken die worden weergegeven in de Instellingen app. PageVisibilityList is een beleid waarmee IT-beheerders kunnen voorkomen dat specifieke pagina's in de System Instellingen-app zichtbaar of toegankelijk zijn, of om dit te doen voor alle pagina's, met uitzondering van de opgegeven pagina's.
+Een van de beheerbare functies voor HoloLens-apparaten is het gebruik van het [Instellingen/PageVisibilityList-beleid](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) om de pagina's te beperken die worden weergegeven in de Instellingen app. PageVisibilityList is een beleid waarmee IT-beheerders kunnen voorkomen dat specifieke pagina's in de System Instellingen-app zichtbaar of toegankelijk zijn, of om dit te doen voor alle pagina's, met uitzondering van de opgegeven pagina's.
 
 > [!NOTE]
 > Deze functie is alleen beschikbaar in [Windows Holographic, versie 20H2](hololens-release-notes.md#windows-holographic-version-20h2) of hoger voor HoloLens 2 apparaten. Zorg ervoor dat de apparaten voor wie u dit wilt gebruiken, zijn bijgewerkt.
@@ -189,4 +189,4 @@ HoloLens apparaten en Windows 10 apparaten hebben een andere selectie pagina's i
 - <sup>2</sup> : beschikbaar in Windows Holographic 21H1 of hoger.
 
 
-Raadpleeg de documentatie voor startinstellingen Windows 10 Instellingen een volledige lijst met [URI's.](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)
+Raadpleeg de documentatie voor startinstellingen Windows 10 Instellingen een volledige lijst met [URI's.](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)

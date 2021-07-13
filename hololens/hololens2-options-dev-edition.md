@@ -2,7 +2,7 @@
 title: HoloLens 2 Development Edition
 description: Meer informatie HoloLens 2 Development Edition en wat u moet doen nadat u een van uw eigen versies hebt.
 keywords: HoloLens 2, HoloLens, Developer Edition
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 268e338ad6734b2d951e72dbf8af4d2edf569aae
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 613f0a24d1d0d0740ebc448b2c92238a76350958
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636364"
+ms.locfileid: "113639672"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 Development Edition
 

@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cfe4206790b12d77a7f5be4267387cdd0299c3fe
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 4c476a2adc8f03c37e17e6324960318b4806534e
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: MT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636857"
+ms.locfileid: "113639740"
 ---
 # <a name="about-hololens-2"></a>Over HoloLens 2
 
@@ -58,22 +58,22 @@ Als u het percentage interne acculadingen wilt behouden/verhogen terwijl het app
 
 ### <a name="display"></a>Weergave
 
-|   |   |
-| - | - |
-| Optica | Kijk eens naar holografische lenzen (waveguides) |
-| Holographic resolution | 2k 3:2 lichte motoren |
-| Holographic density | >2,5.500 punten (lichtpunten per radiale) |
-| Weergave op basis van een oog | Weergaveoptimalisatie voor 3D-oogpositie |
+|   | &nbsp; |
+|---|---|
+| **Optica** | Kijk eens naar holografische lenzen (waveguides) |
+| **Holographic resolution** | 2k 3:2 lichte motoren |
+| **Holographic density** | >2,5.500 punten (lichtpunten per radiale) |
+| **Weergave op basis van een oog** | Weergaveoptimalisatie voor 3D-oogpositie |
 
 ### <a name="sensors"></a>Sensoren
 
-|   |   |
-| - | - |
-| Head tracking | 4 zichtbare lichte camera's |
-| Oogtracking | 2 Bewakingscamera's (IR) |
-| Diepte | 1 MP Time-of-Flight-dieptesensor |
-| Inertial measurement unit (IMU) | Versnellingsmeter,scope, snelheidsmeter |
-| Camera | 8-MP stills, 1080p30 video |
+|   | &nbsp; |
+|---|---|
+| **Head tracking** | 4 zichtbare lichte camera's |
+| **Oogtracking** | 2 Bewakingscamera's (IR) |
+| **Diepte** | 1 MP Time-of-Flight-dieptesensor |
+| **Inertial measurement unit (IMU)** | Versnellingsmeter,scope, snelheidsmeter |
+| **Camera** | 8-MP stills, 1080p30 video |
 
 ![HoloLens 2 Sensoren](images/hololens2-front-view.png)
 
@@ -82,77 +82,77 @@ Als u het percentage interne acculadingen wilt behouden/verhogen terwijl het app
 
 ### <a name="audio-and-speech"></a>Audio en spraak
 
-|   |   |
-| - | - |
-| Microfoon array | 5 kanalen |
-| Luidsprekers | Ingebouwd ruimtelijk geluid |
+|   | &nbsp; |
+|---|---|
+| **Microfoon array** | 5 kanalen |
+| **Luidsprekers** | Ingebouwd ruimtelijk geluid |
 
 ### <a name="compute-and-connectivity"></a>Compute en connectiviteit
 
-|   |   |
-| - | - |
-| Systeem op chip | Details van het Qualcomm Snapdragon 850 Compute [Platform](https://www.qualcomm.com/products/snapdragon-850-mobile-compute-platform) |
-| Holographic Processing Unit | Tweede generatie, aangepast gebouwde holografische verwerkingseenheid |
-| Geheugen | 4 GB LPDDR4x systeem DRAM |
-| Storage | 64 GB UFS 2.1 |
-| WiFi | 802.11ac 2x2 |
-| Bluetooth | 5,0 |
-| USB | USB Type-C DRP |
+|   | &nbsp; |
+|---|---|
+| **Systeem op chip** | Details van het Qualcomm Snapdragon 850 Compute [Platform](https://www.qualcomm.com/products/snapdragon-850-mobile-compute-platform) |
+| **Holographic Processing Unit** | Tweede generatie, aangepast gebouwde holografische verwerkingseenheid |
+| **Geheugen** | 4 GB LPDDR4x systeem DRAM |
+| **Storage** | 64 GB UFS 2.1 |
+| **Wi-Fi** | 802.11ac 2x2 |
+| **Bluetooth** | 5,0 |
+| **USB** | USB Type-C DRP |
 
 ### <a name="power"></a>Stroom
 
-|   |   |
-| - | - |
-| Batterijleven | 2-3 uur actief gebruik. Maximaal twee weken stand-bytijd. |
-| Batterijtechnologie | [Lithium-accu's](https://www.microsoft.com/download/details.aspx?id=43388) |
-| Laadgedrag | Volledig functioneel bij het laden |
-| Koeltype | Passief gekoeld (geen ventilatoren) |
-| Stroomkabels | Als u het percentage interne acculadingen wilt behouden/verhogen terwijl het apparaat is aan, moet het minimaal zijn verbonden met een capaciteit van 15 W. |
+|   | &nbsp; |
+|---|---|
+| **Batterijleven** | 2-3 uur actief gebruik. Maximaal twee weken stand-bytijd. |
+| **Batterijtechnologie** | [Lithium-accu's](https://www.microsoft.com/download/details.aspx?id=43388) |
+| **Laadgedrag** | Volledig functioneel bij het laden |
+| **Koeltype** | Passief gekoeld (geen ventilatoren) |
+| **Stroomkabels** | Als u het percentage interne acculadingen wilt behouden/verhogen terwijl het apparaat is aan, moet het minimaal zijn verbonden met een capaciteit van 15 W. |
 
 ### <a name="fit"></a>Geschikt voor
 
-|   |   |
-| - | - |
-| Grootte aanpassen | Eén formaat met aanpasbare band.  Past over een bril |
-| Gewicht | 566 gram |
+|   | &nbsp; |
+|---|---|
+| **Grootte aanpassen** | Eén formaat met aanpasbare band.  Past over een bril |
+| **Gewicht** | 566 gram |
 
 ## <a name="device-capabilities"></a>Apparaatmogelijkheden
 
 ### <a name="human-understanding"></a>Menselijk begrip
 
-|   |   |
-| - | - |
-| Handtracking | Tweehandig volledig verwoord model, directe manipulatie |
-| Oogtracking | Realtime tracering |
-| Spraak | Opdracht en beheer op apparaat; Cortana natuurlijke taal met internetverbinding |
+|   | &nbsp; |
+|---|---|
+| **Handtracking** | Tweehandig volledig verwoord model, directe manipulatie |
+| **Oogtracking** | Realtime tracering |
+| **Spraak** | Opdracht en beheer op apparaat; Cortana natuurlijke taal met internetverbinding |
 
 ### <a name="environment-understanding"></a>Omgevingskennis
 
-|   |   |
-| - | - |
-| 6DoF-tracering (Six Degrees of Freedom) | Positievolgsysteem op wereldschaal |
-| Ruimtelijke toewijzing | Realtime-omgevings-mesh |
-| Mixed Reality Capture | Foto's en video's van gemengde hologrammen en fysieke omgevingen |
+|   | &nbsp; |
+|---|---|
+| **6DoF-tracering (Six Degrees of Freedom)** | Positievolgsysteem op wereldschaal |
+| **Ruimtelijke toewijzing** | Realtime-omgevings-mesh |
+| **Mixed Reality Capture** | Foto's en video's van gemengde hologrammen en fysieke omgevingen |
 
 ## <a name="pre-installed-software"></a>Vooraf geïnstalleerde software
 
-|   |   |
-| - | - |
-| Windows Holographic Operating System | Met [Windows Holographic OS](hololens-release-notes.md)kunnen Windows 10 sommige van hun apps en games in een mixed reality-omgeving gebruiken via de HoloLens 2.
-| 3D-viewer | [3D-viewer](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) kunt u eenvoudig 3D-modellen en animaties in realtime bekijken.|
-| Cortana | [Cortana,](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab)uw persoonlijke productiviteitsassistent, kunt u op de hoogte blijven van wat belangrijk is en tijd besparen bij het vinden van wat u nodig hebt.  |
-| Dynamics 365 Guides |  [Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) helpt werknemers om sneller nieuwe vaardigheden te leren op HoloLens apparaten. |
-| Dynamics 365 Remote Assist | [Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) technici kunnen samenwerken en problemen met externe samenwerkers oplossen met behulp van Microsoft Teams of Dynamics 365 Remote Assist.  |
-| Feedback-hub | [Feedback-hub](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) kunt u feedback geven over Windows apps door uw suggesties of problemen te delen.  |
-| Verkenner | Verkenner biedt een grafische gebruikersinterface voor toegang tot de bestandssystemen. |
-| E-mail en agenda | Met [de apps E-mail](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) en Agenda kunt u op de hoogte blijven van uw e-mail, uw planning beheren en op de hoogte blijven van uw contactpersonen. |
-| Microsoft Edge | Microsoft Edge biedt u prestaties van wereldklasse met meer privacy, meer productiviteit en meer waarde tijdens het bladeren. |
-| Microsoft Store | De [Microsoft Store](https://www.microsoft.com) is uw go-to-bron voor apps en games die werken met HoloLens.|
-| Films & TV | [Films & TV](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab) biedt u de nieuwste entertainment in één eenvoudige, snelle en elegante app. |
-| OneDrive | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) kunt u uw bestanden vanaf al uw apparaten overal openen en bewerken.  |
-| Foto's | [Foto's](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab) kunt u uw foto's en video's bekijken en bewerken, films maken en maken.  |
-| Instellingen | De Instellingen app is de plek waar u kunt aanpassen hoe Windows Holographic in detail werkt.  |
-| Tips | [Tips](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab) kunt u verrassende en minder bekende dingen leren die u kunt doen in Windows Holographic. |
+| &nbsp; | &nbsp; |
+|---|---|
+| **Windows Holographic Operating System** | Met [Windows Holographic OS](hololens-release-notes.md)kunnen Windows 10 sommige van hun apps en games in een mixed reality-omgeving gebruiken via de HoloLens 2.
+| **3D-viewer** | [3D-viewer](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) kunt u eenvoudig 3D-modellen en animaties in realtime bekijken.|
+| **Cortana** | [Cortana,](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab)uw persoonlijke productiviteitsassistent, kunt u op de hoogte blijven van wat belangrijk is en tijd besparen bij het vinden van wat u nodig hebt.  |
+| **Dynamics 365 Guides** |  [Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) helpt werknemers om sneller nieuwe vaardigheden te leren op HoloLens apparaten. |
+| **Dynamics 365 Remote Assist** | [Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) technici kunnen samenwerken en problemen met externe samenwerkers oplossen met behulp van Microsoft Teams of Dynamics 365 Remote Assist.  |
+| **Feedback-hub** | [Feedback-hub](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) kunt u feedback geven over Windows apps door uw suggesties of problemen te delen.  |
+| **Verkenner** | Verkenner biedt een grafische gebruikersinterface voor toegang tot de bestandssystemen. |
+| **E-mail en agenda** | Met [de apps E-mail](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) en Agenda kunt u op de hoogte blijven van uw e-mail, uw planning beheren en op de hoogte blijven van uw contactpersonen. |
+| **Microsoft Edge** | Microsoft Edge biedt u prestaties van wereldklasse met meer privacy, meer productiviteit en meer waarde tijdens het bladeren. |
+| **Microsoft Store** | De [Microsoft Store](https://www.microsoft.com) is uw go-to-bron voor apps en games die werken met HoloLens.|
+| **Films & TV** | [Films & TV](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab) biedt u de nieuwste entertainment in één eenvoudige, snelle en elegante app. |
+| **OneDrive** | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) kunt u uw bestanden vanaf al uw apparaten overal openen en bewerken.  |
+| **Foto's** | [Foto's](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab) kunt u uw foto's en video's bekijken en bewerken, films maken en maken.  |
+| **Instellingen** | De Instellingen app is de plek waar u kunt aanpassen hoe Windows Holographic in detail werkt.  |
+| **Tips** | [Tips](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab) kunt u verrassende en minder bekende dingen leren die u kunt doen in Windows Holographic. |
 
 ## <a name="device-certifications"></a>Apparaatcertificeringen
 
@@ -202,7 +202,7 @@ Het serienummer voor HoloLens 2 apparaten wordt onder de visor afgedrukt.
 1. Kijk in de buurt van hetrow-pad.
 1. U vindt het serienummer dat zich dicht bij de auto bevindt.
 
-<img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
+   <img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 
 Het serienummer kan ook worden gevonden via een verbonden pc:
 
@@ -211,7 +211,7 @@ Het serienummer kan ook worden gevonden via een verbonden pc:
 1. Klik met de rechtermuisknop en **selecteer Eigenschappen** van HoloLens apparaat
 1. Hiermee wordt het reeksnummer van het apparaat weergegeven, zoals wordt weergegeven in de onderstaande schermopname.
 
-<img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
+   <br/><img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
 
 ## <a name="next-steps"></a>Volgende stap(en)
 
