@@ -12,14 +12,13 @@
 ### [Ontwikkelingseditie](hololens2-options-dev-edition.md)
 #### [HoloLens 2 Veelgestelde vragen over de Ontwikkelingseditie](hololens2-development-edition-faq.yml)
 ### [Trimble XR10-editie](hololens2-options-trimble-xr10-edition.md)
-### [Commerciële functies](hololens-commercial-features.md)
 
 # Uw HoloLens
 ## Eerste gebruik
 ### [Uw HoloLens 2 klaar voor gebruik](hololens2-setup.md)
 ### [Uw HoloLens 2](hololens2-start.md)
 ### [Kennismaken met HoloLens 2](hololens2-basic-usage.md)
-### [Werk HoloLens](hololens-update-hololens.md)
+### [De HoloLens](hololens-update-hololens.md)
 ## Dagelijks gebruik
 ### Navigeren in Windows Holographic-interface
 #### [Gebruik de Startmenu en Mixed Reality Startpagina](holographic-home.md)
@@ -51,7 +50,7 @@
 #### [Configureerer](hololens2-cloud-connected-configure.md)
 #### [Implementeren](hololens2-cloud-connected-deploy.md)
 #### [Onderhouden](hololens2-cloud-connected-maintain.md)
-#### [Implementatiehandleiding voor cloud verbonden omgevingen (externe clients)](hololens2-deployment-guide.md)
+#### [Implementatiehandleiding voor cloud verbonden omgeving (externe clients)](hololens2-deployment-guide.md)
 ### Implementatiehandleiding voor bedrijfsnetwerk
 #### [Overzicht](hololens2-corp-connected-overview.md)
 #### [Voorbereiden](hololens2-corp-connected-prepare.md)
@@ -110,6 +109,7 @@
 ## [De HoloLens 2](hololens-recovery.md)
 
 # Resources
+## [Waar u een HoloLens 2](hololens2-purchase.md)
 ## [Opties voor ondersteuning en hulp](hololens2-support.md)
 ## [Autopilot-ondersteuningsaanvragen](hololens2-autopilot-registration-support.md)
 ## [HoloLens 2 opmerkingen bij de release](hololens-release-notes.md)
@@ -124,18 +124,18 @@
 #### [Uw HoloLens (eerste generatie) instellen](hololens1-start.md)
 ### Dagelijks gebruik
 #### [Gebruik de HoloLens (eerste generatie)](hololens1-clicker.md)
-#### [Gebruik 3D-viewer op HoloLens (eerste generatie)](holographic-3d-viewer-beta.md)
-#### [Aan de HoloLens (eerste generatie)](hololens1-basic-usage.md)
-#### [Aangepaste apps beheren voor HoloLens](holographic-custom-apps.md)
-#### [Gelokaliseerde versie van HoloLens (1e generatie) installeren](hololens1-install-localized.md)
-#### [Functies voor Windows Holographic for Business ontgrendelen](hololens1-upgrade-enterprise.md)
+#### [Gebruik 3D-viewer op HoloLens (1e generatie)](holographic-3d-viewer-beta.md)
+#### [Een HoloLens (eerste generatie)](hololens1-basic-usage.md)
+#### [Aangepaste apps voor HoloLens](holographic-custom-apps.md)
+#### [Gelokaliseerde versie van HoloLens (eerste generatie) installeren](hololens1-install-localized.md)
+#### [Functies Windows Holographic for Business ontgrendelen](hololens1-upgrade-enterprise.md)
 #### [Opnieuw HoloLens (eerste generatie)](hololens1-recovery.md)
 ### HoloLens (eerste generatie) Beveiliging
-#### [Veelgestelde vragen HoloLens (eerste generatie)](hololens1-faq-security.yml)
+#### [Veelgestelde vragen HoloLens (eerste generatie) Beveiligingsvragen](hololens1-faq-security.yml)
 #### [HoloLens (1e generatie) BitLocker-versleuteling](hololens1-encryption.md)
 ### [Bekende problemen en tijdelijke oplossingen voor HoloLens (eerste generatie)](hololens-known-issues.md)
-### [HoloLens (eerste generatie) release-opmerkingen](hololens1-release-notes.md)
+### [HoloLens (1e Gen) release-opmerkingen](hololens1-release-notes.md)
 
 # Stuur ons feedback
 ## [Geef ons feedback via Feedback-hub](hololens-feedback.md)
-## [HoloLens docs contributing guide (Handleiding voor bijdragen aan documenten)](contributing.md)
+## [HoloLens docs-handleiding voor bijdragen](contributing.md)

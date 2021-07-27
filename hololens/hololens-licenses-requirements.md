@@ -1,6 +1,6 @@
 ---
 title: Licentievereisten
-description: Blijf op de hoogte van alle licentievereisten en richtlijnen die u nodig hebt voor mobile device management, HoloLens en Remote Assist.
+description: Blijf op de hoogte van alle licentievereisten en richtlijnen die u nodig hebt voor het beheer van mobiele apparaten, HoloLens en Remote Assist.
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -13,51 +13,45 @@ ms.reviewer: ''
 manager: bradke
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bd7a7d03c81dced4fb66d8ebb176887811e823c9
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 6284a8e3ce3ea77aaf98dcf8238df3920719dded
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640272"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659553"
 ---
 # <a name="license-requirements"></a>Licentievereisten
 
-## <a name="hololens-2-device-managed"></a>HoloLens 2 Apparaat (beheerd)
+## <a name="overview"></a>Overzicht
+Deze pagina biedt een overzicht op hoog niveau van de licenties en accounts die nodig zijn voor het implementeren van zowel beheerde als HoloLens 2-apparaten in uw organisatie. Het bevat ook informatie over licentieverlening voor Dynamics 365 [Remote Assist](#dynamics-365-remote-assist) en [Guides.](#dynamics-365-guides)
 
-[Azure AD-account](/azure/active-directory/)
+## <a name="hololens-2-license-and-account-requirements"></a>HoloLens 2 licentie- en accountvereisten
+
+
+|                   | Beheerde HoloLens | Niet-HoloLens |
+|-------------------|-----------------|---------------------|
+| **Business Use Case** | | |
+| [Implementeren naar met de cloud verbonden apparaten - proof of concept/pilot-implementatie](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices)  | ✔️| |
+| [Implementeren binnen het netwerk van uw organisatie - implementatie op schaal](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) | ✔️| |
+| [Implementeren in een beveiligde offlineomgeving](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) | | ✔️ |
+| **Licenties** | | |
+| Azure Active Directory | ✔️ | |
+| MDM (Intune<sup>1</sup> of <sup>2</sup>) | ✔️  | |
+| **Accounts** |  | |
+| Azure AD-beheerdersaccount | ✔️ |  |
+| Azure AD-gebruikersaccount | ✔️ | |
+| [Microsoft-account (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts)| | ✔️ |
+| [Lokaal account](/windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | | ✔️ |
+- <sup>1</sup> [Automatische inschrijving tijdens de](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) eerste installatie van het apparaat, waarmee apparaten worden geregistreerd en Azure Active Directory en het apparaat kan worden beheerd met Intune.
+- <sup>2</sup> [Windows Autopilot voor HoloLens 2](hololens2-autopilot.md) vereenvoudigt de inrichtingservaring voor zowel IT-beheerders als eindgebruikers. IT-beheerders kunnen vooraf HoloLens 2 configureren en bij de eerste keer opstarten worden apparaten geïmplementeerd in een bedrijfsklaar status zonder tussenkomst van de eindgebruiker.
+- <sup>3</sup> Dit account moet [van tevoren](hololens-provisioning.md#provisioning-package-hololens-wizard) worden ingericht met Windows Configuration Designer (WCD).
 
 > [!IMPORTANT]
 > Active Directory (AD) kan niet worden gebruikt voor het beheren van HoloLens apparaten.
-
-[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) of een andere MDM.
-- [Windows Autopilot voor HoloLens 2](hololens2-autopilot.md)vereenvoudigt de inrichtingservaring voor zowel IT-beheerders als eindgebruikers. IT-beheerders kunnen vooraf HoloLens 2 configureren en bij de eerste keer opstarten worden apparaten geïmplementeerd in de status Gereed voor bedrijf, zonder tussenkomst van de eindgebruiker. 
-
-  > [!NOTE]
-  > Windows Autopilot vereist [dat Azure P1](/azure/active-directory/fundamentals/active-directory-whatis) en [Automatische](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) inschrijving eerst worden geconfigureerd voor de Autopilot-stroom met weinig aanraking en apparaatimplementatie. 
-
-### <a name="business-use-case"></a>Bedrijfsgebruikscase: 
-
-- [Implementatiescenario A:](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices) proof-of-concept of testimplementatie.
-
-- [Implementatiescenario B:](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) implementatie op schaal.
-
-## <a name="hololens-2-device-only-non-managed"></a>HoloLens 2 Alleen apparaat (niet-beheerd)
-
-Wanneer u een Microsoft-account (MSA) of een lokaal account gebruikt, zijn er geen extra licenties vereist voor deze accounts.
-
-[Lokaal account](/windows/security/identity-protection/access-control/local-accounts)
-
-- Dit account moet [van tevoren worden ingericht](hololens-provisioning.md#provisioning-package-hololens-wizard) met Windows Configuration Designer (WCD).
-
-[Microsoft-account (MSA)](/windows/security/identity-protection/access-control/microsoft-accounts)
-
-> [!WARNING]
-> Meerdere gebruikers worden niet ondersteund voor een apparaat dat een van deze accounts gebruikt.
-
-### <a name="business-use-case"></a>Bedrijfsgebruikscase: 
-
-- [Implementatiescenario C:](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) offline of beveiligde implementatie.
  
+> [!WARNING]
+> Meerdere gebruikers worden niet ondersteund voor een apparaat met een MSA- of lokaal account.
+
 ## <a name="dynamics-365-licensing-and-requirements"></a>Licenties en vereisten voor Dynamics 365
 
 ### <a name="dynamics-365-remote-assist"></a>Dynamics 365 Remote Assist 
@@ -82,24 +76,24 @@ Wanneer u een Microsoft-account (MSA) of een lokaal account gebruikt, zijn er ge
 
 - Azure AD-account
 
-- Microsoft Teams of [Teams Freemium](https://products.office.com/microsoft-teams/free).
+- Microsoft Teams of [Teams Freemium](https://products.office.com/microsoft-teams/free)
 
 - Netwerkverbinding
 
-Als u van plan bent dit scenario voor [verschillende tenants te implementeren,](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)hebt u mogelijk een licentie voor informatiebarrières nodig. Zie [dit artikel om](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) te bepalen of een licentie voor een gegevensbarrière is vereist.
+Als u van plan bent dit scenario voor verschillende [tenants te implementeren,](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)hebt u mogelijk een licentie voor informatiebarrières nodig. Zie [dit artikel om](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) te bepalen of een licentie voor een informatiebarrière is vereist.
 
 ### <a name="dynamics-365-guides"></a>Dynamics 365 Guides 
 
 #### <a name="admin"></a>Beheerder
 
-- Azure AD-account (vereist voor het kopen van het abonnement en het toewijzen van licenties)
-- Dynamics 365 [Guides-abonnement of gratis proefversie](/dynamics365/mixed-reality/guides/setup-step-one)
+1. Azure AD-account (vereist voor het kopen van het abonnement en het toewijzen van licenties)
+2. Abonnement op Dynamics 365 [Guides of gratis proefversie](/dynamics365/mixed-reality/guides/setup-step-one)
 
 #### <a name="guides-author"></a>Auteur van handleidingen
 
 1. Azure AD-account
 1. [Dynamics 365 Guides licentie](/dynamics365/mixed-reality/guides/requirements)
-1. Dynamics 365 Guides toepassing geïnstalleerd op een pc of HoloLens
+1. Dynamics 365 Guides geïnstalleerd op een pc of HoloLens
 1. [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (gebruikt om het analytics-dashboard weer te geven)
 1. Rol auteur (voor het maken van handleidingen)
 1. Netwerkverbinding

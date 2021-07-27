@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft HoloLens
-summary: Microsoft HoloLens is de eerste volledig zelfstandige holografische computer die wordt uitgevoerd Windows 10. Nu, met de introductie van HoloLens 2, biedt elk HoloLens-apparaat commerciële beheermogelijkheden die worden verbeterd door de betrouwbaarheid, beveiliging en schaalbaarheid van cloud- en AI-services van Microsoft.
+summary: Microsoft HoloLens is de eerste volledig zelfstandige holografische computer die de Windows 10. Nu, met de introductie van HoloLens 2, biedt elk HoloLens-apparaat commerciële beheermogelijkheden die worden verbeterd door de betrouwbaarheid, beveiliging en schaalbaarheid van cloud- en AI-services van Microsoft.
 metadata:
   title: Microsoft HoloLens
   description: Landingspagina voor Microsoft HoloLens.
@@ -11,12 +11,12 @@ metadata:
   ms.author: v-jjaswinski
   ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: a37ddd0867a0ea3dfa6f016e01728f2576663aaf
-  ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+  ms.openlocfilehash: c0189c7a75ad27d6d301721e78de6391f6ac76f7
+  ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
   ms.translationtype: MT
   ms.contentlocale: nl-NL
-  ms.lasthandoff: 07/12/2021
-  ms.locfileid: "113639417"
+  ms.lasthandoff: 07/24/2021
+  ms.locfileid: "114659570"
 landingContent:
 - title: De HoloLens 2
   linkLists:
@@ -38,7 +38,7 @@ landingContent:
       url: hololens2-options-industrial-edition.md
     - text: Ontwikkelingseditie
       url: hololens2-options-dev-edition.md
-    - text: XR10 inkorten met HoloLens 2
+    - text: Trimble XR10 with HoloLens 2
       url: hololens2-options-trimble-xr10-edition.md
 - title: Aan de slag
   linkLists:
@@ -60,11 +60,11 @@ landingContent:
       url: hololens2-autopilot-registration-support.md
   - linkListType: deploy
     links:
-    - text: Implementatiehandleiding - Cloudgeconnecteerde HoloLens 2 implementatie op schaal met Remote Assist
+    - text: 'Implementatiehandleiding: cloudgeconnecteerde HoloLens 2 implementatie op schaal met Remote Assist'
       url: hololens2-cloud-connected-overview.md
     - text: Implementatiehandleiding - Externe clients (verbonden met de cloud)
       url: hololens2-deployment-guide.md
-    - text: Implementatiehandleiding - Implementatie van bedrijfsgeconnecteerde HoloLens 2 met Dynamics 365 Guides
+    - text: Implementatiehandleiding- Bedrijfsgeconnecteerde HoloLens 2 implementatie met Dynamics 365 Guides
       url: hololens2-corp-connected-overview.md
     - text: Implementatiehandleiding - Offline beveiligd
       url: hololens-common-scenarios-offline-secure.md
@@ -94,6 +94,8 @@ landingContent:
       url: hololens-insider.md
   - linkListType: reference
     links:
+    - text: Waar u een HoloLens 2
+      url: hololens2-purchase.md
     - text: Opties voor ondersteuning en hulp
       url: hololens2-support.md
     - text: Stuur ons feedback
