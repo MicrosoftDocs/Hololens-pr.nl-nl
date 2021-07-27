@@ -13,12 +13,12 @@ ms.reviewer: ''
 manager: bradke
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6284a8e3ce3ea77aaf98dcf8238df3920719dded
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 6224cd5e07794d9fca3c0a406e787d1a3fd88b43
+ms.sourcegitcommit: bd55edcc855e20d6709c7e535573f43785155d41
 ms.translationtype: MT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659553"
+ms.locfileid: "114661709"
 ---
 # <a name="license-requirements"></a>Licentievereisten
 
@@ -27,8 +27,8 @@ Deze pagina biedt een overzicht op hoog niveau van de licenties en accounts die 
 
 ## <a name="hololens-2-license-and-account-requirements"></a>HoloLens 2 licentie- en accountvereisten
 
-
-|                   | Beheerde HoloLens | Niet-HoloLens |
+ 
+|       &nbsp;      | Beheerde HoloLens | Niet-HoloLens |
 |-------------------|-----------------|---------------------|
 | **Business Use Case** | | |
 | [Implementeren naar met de cloud verbonden apparaten - proof of concept/pilot-implementatie](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices)  | ✔️| |
@@ -44,7 +44,7 @@ Deze pagina biedt een overzicht op hoog niveau van de licenties en accounts die 
 | [Lokaal account](/windows/security/identity-protection/access-control/local-accounts)<sup>3</sup> | | ✔️ |
 - <sup>1</sup> [Automatische inschrijving tijdens de](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment) eerste installatie van het apparaat, waarmee apparaten worden geregistreerd en Azure Active Directory en het apparaat kan worden beheerd met Intune.
 - <sup>2</sup> [Windows Autopilot voor HoloLens 2](hololens2-autopilot.md) vereenvoudigt de inrichtingservaring voor zowel IT-beheerders als eindgebruikers. IT-beheerders kunnen vooraf HoloLens 2 configureren en bij de eerste keer opstarten worden apparaten geïmplementeerd in een bedrijfsklaar status zonder tussenkomst van de eindgebruiker.
-- <sup>3</sup> Dit account moet [van tevoren](hololens-provisioning.md#provisioning-package-hololens-wizard) worden ingericht met Windows Configuration Designer (WCD).
+- <sup>3</sup> Dit account moet [van tevoren worden ingericht](hololens-provisioning.md#provisioning-package-hololens-wizard) met Windows Configuration Designer (WCD).
 
 > [!IMPORTANT]
 > Active Directory (AD) kan niet worden gebruikt voor het beheren van HoloLens apparaten.
