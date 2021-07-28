@@ -1,6 +1,6 @@
 ---
 title: Insider-preview voor Microsoft HoloLens
-description: Meer informatie over hoe u aan de slag gaat met Insider-builds en waardevolle feedback geeft voor onze volgende belangrijke update van het besturingssysteem voor HoloLens.
+description: Leer hoe u aan de slag gaat met Insider-builds en waardevolle feedback kunt geven voor onze volgende belangrijke update van het besturingssysteem voor HoloLens.
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -16,32 +16,32 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b7e5a7cbaa746f58fe0344dd8bf5b027e2e8cea7
-ms.sourcegitcommit: dc5d6f3802c997749775be04de522af8cb6d0850
+ms.openlocfilehash: 52503c0e1ff8c937211500203b91a30806cd317d
+ms.sourcegitcommit: 74f5b64c67026881c8ae46410f272b22862ff582
 ms.translationtype: MT
 ms.contentlocale: nl-NL
 ms.lasthandoff: 07/26/2021
-ms.locfileid: "114693705"
+ms.locfileid: "114696322"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider-preview voor Microsoft HoloLens
 
-Welkom bij de nieuwste Insider Preview-builds voor HoloLens. Het is eenvoudig om aan de slag [te gaan](hololens-insider.md#start-receiving-insider-builds) en waardevolle feedback te geven voor onze volgende belangrijke update van het besturingssysteem voor HoloLens.
+Welkom bij de nieuwste Insider Preview-builds voor HoloLens. Het is eenvoudig om aan de [slag te gaan](hololens-insider.md#start-receiving-insider-builds) en waardevolle feedback te geven voor onze volgende belangrijke update van het besturingssysteem voor HoloLens.
 
 ## <a name="windows-insider-release-notes"></a>Windows Opmerkingen bij de release van Insider
 
-We zijn blij om weer nieuwe functies te kunnen Windows Insiders. Nieuwe builds worden naar de dev- en bètakanalen gerouteert voor de nieuwste updates. We blijven deze pagina bijwerken wanneer we meer functies en updates toevoegen aan onze Windows Insider-builds. Word enthousiast en bereid u voor om deze updates in uw realiteit te combineren.
+We zijn blij om weer nieuwe functies te kunnen Windows Insiders. Voor nieuwe builds worden de dev- en bètakanalen gebruikt voor de nieuwste updates. We blijven deze pagina bijwerken wanneer we meer functies en updates toevoegen aan onze Windows Insider-builds. Word enthousiast en bereid u voor om deze updates in uw realiteit te combineren.
 
 | Functie                 | Beschrijving                | Gebruiker of scenario | Build geïntroduceerd |
 |-------------------------|----------------------------|--------------|------------------|
-| [CSP-wijzigingen voor rapportagegegevens HoloLens details](#csp-changes-for-reporting-hololens-details) | Nieuwe CSP's voor om query's uit te voeren op gegevens | IT-beheerders    | 20348.1403                 |
+| [CSP-wijzigingen voor rapportage HoloLens details](#csp-changes-for-reporting-hololens-details) | Nieuwe CSP's voor om gegevens op te vragen | IT-beheerders    | 20348.1403                 |
 | [Beleid voor automatisch aanmelden beheerd door CSP](#auto-login-policy-controlled-by-csp) | Wordt gebruikt om automatisch aan te melden bij een account | IT-beheerders | 20348.1405 |
-| [Ondersteuning van PFX-bestanden voor Certificaatbeheer](#pfx-file-support-for-certificate-manager) | PFX-certificaten toevoegen via Instellingen UI | Eindgebruiker | 20348.1405 |
-| [Geavanceerd diagnostisch rapport weergeven in Instellingen op HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Diagnostische MDM-logboeken op het apparaat weergeven | Problemen oplossen | 20348.1405 |
+| [PfX-bestandsondersteuning voor Certificaatbeheer](#pfx-file-support-for-certificate-manager) | PFX-certificaten toevoegen via Instellingen UI | Eindgebruiker | 20348.1405 |
+| [Geavanceerd diagnostisch rapport weergeven in Instellingen op HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Diagnostische MDM-logboeken weergeven op apparaat | Problemen oplossen | 20348.1405 |
 | [Offline diagnostische meldingen](#offline-diagnostics-notifications) | Feedback geven over het verzamelen van logboeken | Problemen oplossen | 20348.1405 |
 | [Alleen persoonlijke Store-apps gebruiken voor Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | De Store-app configureren om alleen apps van de organisatie weer te geven | IT-beheerder | 20348.1408 |
 | [Oplossingen en verbeteringen](hololens-insider.md#fixes-and-improvements) | Oplossingen en verbeteringen voor HoloLens. | Alles | 20348.1408 |
 
-### <a name="csp-changes-for-reporting-hololens-details"></a>CSP-wijzigingen voor rapportagegegevens HoloLens details
+### <a name="csp-changes-for-reporting-hololens-details"></a>CSP-wijzigingen voor rapportage HoloLens details
 
 - Geïntroduceerd in Windows Insider-build, 20348.1403
 
@@ -49,7 +49,7 @@ De volgende CSP's zijn bijgewerkt met nieuwe manieren om informatie van uw HoloL
 
 #### <a name="devdetail-csp---free-storage"></a>DevDetail CSP - Gratis Storage
 
-DevDetail CSP rapporteert nu ook vrije opslagruimte op HoloLens apparaat. Dit moet ongeveer overeenkomen met de waarde die wordt weergegeven op Instellingen pagina van Storage app. Hieronder vindt u het specifieke knooppunt met deze informatie.
+DevDetail CSP rapporteert nu ook vrije opslagruimte op HoloLens apparaat. Dit moet ongeveer overeenkomen met de waarde die wordt weergegeven op Instellingen pagina van Storage app. Hieronder volgt het specifieke knooppunt met deze informatie.
 
 - ./DevDetail/Ext/Microsoft/FreeStorage (alleen GET-bewerking)
 
@@ -57,8 +57,8 @@ DevDetail CSP rapporteert nu ook vrije opslagruimte op HoloLens apparaat. Dit mo
 
 DeviceStatus CSP rapporteert nu ook SSID en BSSID van Wi-Fi netwerk waarmee HoloLens actief is verbonden. Hieronder vindt u de specifieke knooppunten die deze informatie bevatten.
 
-- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac-adres van Wi-Fi adapter*/SSID
-- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac-adres van Wi-Fi adapter*/BSSID
+- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/mac address *of Wi-Fi adapter*/SSID
+- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/mac address *of Wi-Fi adapter*/BSSID
 
 Voorbeeld van syncml-blob (voor MDM-leveranciers) om een query uit te voeren voor NetworkIdentifiers
 
@@ -82,7 +82,7 @@ Voorbeeld van syncml-blob (voor MDM-leveranciers) om een query uit te voeren voo
 
 ### <a name="auto-login-policy-controlled-by-csp"></a>Beleid voor automatisch aanmelden beheerd door CSP
 
-Met dit nieuwe beleid AutoLogonUser bepaalt u of een gebruiker automatisch wordt aangemeld. Sommige klanten willen apparaten instellen die zijn gekoppeld aan een identiteit, maar geen aanmeldingservaring willen. Imagine apparaat ophalen en direct hulp op afstand gebruiken. Of hebben een voordeel van het snel distribueren van HoloLens apparaten en hun eindgebruikers in staat stellen zich sneller aan te melden.
+Dit nieuwe beleid AutoLogonUser bepaalt of een gebruiker automatisch wordt aangemeld. Sommige klanten willen apparaten instellen die zijn gekoppeld aan een identiteit, maar geen aanmeldingservaring willen. Imagine een apparaat op te halen en direct hulp op afstand te gebruiken. Of u hebt het voordeel dat u snel apparaten HoloLens distribueert en hun eindgebruikers in staat stelt om de aanmelding te versnellen.
 
 Wanneer het beleid is ingesteld op een niet-lege waarde, wordt het e-mailadres van de gebruiker voor automatische aanmelding opgegeven. De opgegeven gebruiker moet zich ten minste één keer bij het apparaat laten aanmelding inschakelen.
 
@@ -90,47 +90,47 @@ De OMA-URI van nieuwe `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogon
 
 - De gebruiker met hetzelfde e-mailadres heeft automatische aanmelding ingeschakeld.
 
-Op een apparaat waarop dit beleid is geconfigureerd, moet de gebruiker die is opgegeven in het beleid ten minste één keer worden aanmelding. Als het apparaat na de eerste aanmelding opnieuw wordt opgestart, wordt de opgegeven gebruiker automatisch aangemeld. Er wordt slechts één gebruiker voor automatische aanmelding ondersteund. Zodra deze is ingeschakeld, kan de automatisch aangemelde gebruiker zich niet meer handmatig afmelden. Als u zich als een andere gebruiker wilt laten aanmeldingen, moet het beleid eerst worden uitgeschakeld.
+Op een apparaat waarop dit beleid is geconfigureerd, moet de gebruiker die is opgegeven in het beleid ten minste één keer worden aanmelding. Na het opnieuw opstarten van het apparaat na de eerste aanmelding wordt de opgegeven gebruiker automatisch aangemeld. Er wordt slechts één gebruiker voor automatische aanmelding ondersteund. Zodra deze functie is ingeschakeld, kan de automatisch aangemelde gebruiker zich niet meer handmatig afmelden. Als u zich als een andere gebruiker wilt laten aanmeldingen, moet het beleid eerst worden uitgeschakeld.
 
 > [!NOTE]
 > - Voor sommige gebeurtenissen, zoals belangrijke updates van het besturingssysteem, moet de opgegeven gebruiker zich mogelijk opnieuw bij het apparaat laten aanmeldingen om automatisch aanmeldingsgedrag te hervatten. 
 > - Automatische aanmelding wordt alleen ondersteund voor MSA- en AAD-gebruikers.
 
-### <a name="pfx-file-support-for-certificate-manager"></a>Ondersteuning van PFX-bestanden voor Certificaatbeheer
+### <a name="pfx-file-support-for-certificate-manager"></a>PfX-bestandsondersteuning voor Certificaatbeheer
 
-Geïntroduceerd in Windows Insider-build 20348.1405. Er is nu ondersteuning toegevoegd aan [Certificaatbeheer om PFX-certificaten](certificate-manager.md) te gebruiken. Wanneer gebruikers naar **Instellingen** Update & Security Certificates gaan en Een certificaat installeren selecteren, ondersteunt de gebruikersinterface nu het  >    >  PFX-certificaatbestand. 
+Geïntroduceerd in Windows Insider-build 20348.1405. We hebben nu ondersteuning toegevoegd aan [Certificaatbeheer om PFX-certificaten](certificate-manager.md) te gebruiken. Wanneer gebruikers naar **Instellingen** Update & Security Certificates gaan en Een certificaat installeren selecteren, ondersteunt de gebruikersinterface nu het  >    >  PFX-certificaatbestand. 
 Gebruikers kunnen een PFX-certificaat met een persoonlijke sleutel importeren in een gebruikers- of machineopslag.
 
 ### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>Geavanceerd diagnostisch rapport weergeven in Instellingen op HoloLens
 
-Voor beheerde apparaten bij het oplossen van problemen is het bevestigen dat een verwachte beleidsconfiguratie wordt toegepast een belangrijke stap. Voorheen moest dit voor deze nieuwe functie via MDM of in de buurt van het apparaat worden gedaan na het exporteren van diagnostische MDM-logboeken die zijn verzameld via  ->  **Instellingen-accounts** Toegang tot werk of  >  **school,** en selecteert u **Uw beheerlogboeken** exporteren en weergeven op een pc in de buurt.
+Voor beheerde apparaten bij het oplossen van problemen is het bevestigen dat een verwachte beleidsconfiguratie wordt toegepast een belangrijke stap. Voorheen moest dit voor deze nieuwe functie worden gedaan buiten het apparaat via MDM of in de buurt van het apparaat na het exporteren van diagnostische MDM-logboeken die zijn verzameld via  ->  **Instellingen-accounts** Toegang tot werk of  >  **school,** en selecteert u **Uw** beheerlogboeken exporteren en weergeven op een pc in de buurt.
 
-De MDM-diagnostische gegevens kunnen nu worden weergegeven op het apparaat met behulp van de Edge-browser. Als u het diagnostischE MDM-rapport eenvoudiger wilt weergeven, gaat u naar de pagina Werk of school openen en **selecteert u Geavanceerd diagnostisch rapport weergeven.** Hiermee wordt het rapport gegenereerd en geopend in een nieuw Edge-venster.
+De MDM-diagnose kan nu worden weergegeven op het apparaat met behulp van de Edge-browser. Als u het diagnostische MDM-rapport eenvoudiger wilt weergeven, gaat u naar de pagina Werk- of schoolrapport openen en **selecteert u Geavanceerd diagnostisch rapport weergeven.** Hiermee wordt het rapport gegenereerd en geopend in een nieuw Edge-venster.
 
 ![Bekijk het geavanceerde diagnostische rapport in Instellingen app.](./images/view-advanced-diagnostic-report.jpg)
 
 ### <a name="offline-diagnostics-notifications"></a>Offline diagnostische meldingen
 
-Dit is een update voor een bestaande functie met de [naam Offlinediagnose.](hololens-diagnostic-logs.md#offline-diagnostics) Voorheen was er geen duidelijke indicator voor gebruikers dat ze de diagnostische verzameling hadden geactiveerd of dat deze was voltooid.
-Nu toegevoegd aan Windows Insider-builds, zijn er twee vormen feedback over offlinediagnose. De eerste zijn pop-upmeldingen die worden weergegeven voor zowel wanneer de verzameling wordt gestart als voltooid. Deze worden weergegeven wanneer de gebruiker is aangemeld en visuals heeft.
+Dit is een update voor een bestaande functie met de [naam Offline Diagnostics](hololens-diagnostic-logs.md#offline-diagnostics). Voorheen was er geen duidelijke indicator voor gebruikers dat ze het verzamelen van diagnostische gegevens hadden geactiveerd of dat deze was voltooid.
+Nu toegevoegd aan Windows Insider-builds, zijn er twee soorten feedback over offlinediagnose. De eerste is pop-upmeldingen die worden weergegeven voor zowel wanneer de verzameling wordt gestart als voltooid. Deze worden weergegeven wanneer de gebruiker is aangemeld en visuals heeft.
 
 ![Pop-up voor het verzamelen van logboeken.](./images/logcollection1.jpg)
 
 ![Pop-up wanneer het verzamelen van logboeken is voltooid.](./images/logcollection2.jpg)
  
-Omdat gebruikers vaak offlinediagnose gebruiken als mechanisme voor het verzamelen van terugvallogboeken wanneer ze geen toegang hebben tot een weergave, zich niet kunnen aanmelden of zich nog steeds in OOBE kunnen aanmelden, wordt er ook een audio-cue afgespeeld wanneer logboeken worden verzameld. Dit geluid wordt afgespeeld naast de pop-upmelding.
+Omdat gebruikers vaak offlinediagnose gebruiken als mechanisme voor het verzamelen van terugvallogboeken voor wanneer ze geen toegang hebben tot een weergave, zich niet kunnen aanmelden of zich nog steeds in OOBE aanmelden, wordt er ook een audio-cue afgespeeld wanneer logboeken worden verzameld. Dit geluid wordt afgespeeld naast de pop-upmelding.
 
 Deze nieuwe functie wordt ingeschakeld wanneer uw apparaat wordt bijgewerkt en hoeft niet te worden ingeschakeld of beheerd. In elk geval dat deze nieuwe feedback niet kan worden weergegeven of gehoord, wordt offlinediagnose nog steeds gegenereerd.
 
-We hopen dat het met deze nieuwere toevoeging van feedback gemakkelijker is om diagnostische gegevens te verzamelen en sneller in staat te zijn om uw problemen op te lossen.
+We hopen dat het met deze nieuwere toevoeging van feedback gemakkelijker is om diagnostische gegevens te verzamelen en sneller in staat zijn om uw problemen op te lossen.
 
 ### <a name="use-only-private-store-apps-for-microsoft-store"></a>Alleen persoonlijke Store-apps gebruiken voor Microsoft Store
 
-Het beleid RequirePrivateStoreOnly is ingeschakeld voor HoloLens. Met dit beleid kan Microsoft Store-app zodanig worden geconfigureerd dat alleen de persoonlijke opslag wordt weer te geven die voor uw organisatie is geconfigureerd. De toegang beperken tot alleen de apps die u beschikbaar hebt gemaakt.
+Het beleid RequirePrivateStoreOnly is ingeschakeld voor HoloLens. Met dit beleid kan de Microsoft Store-app zodanig worden geconfigureerd dat alleen de persoonlijke opslag wordt weer geven die voor uw organisatie is geconfigureerd. De toegang beperken tot alleen de apps die u beschikbaar hebt gemaakt.
 
 Meer informatie over [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
 
-### <a name="fixes-and-improvements"></a>Oplossingen en verbeteringen:
+### <a name="fixes-and-improvements"></a>Oplossingen en verbeteringen
 
 - Er is een bekend probleem opgelost Apparaatportal er geen prompt [was om vergrendelde bestanden te downloaden.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - Er is [een bekend probleem opgelost Apparaatportal problemen met time-outs](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out) voor het uploaden en downloaden van bestanden.
