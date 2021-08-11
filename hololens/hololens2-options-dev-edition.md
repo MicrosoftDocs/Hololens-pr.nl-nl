@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 613f0a24d1d0d0740ebc448b2c92238a76350958
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: a4e2bc30d1141fcc1c6a648ccc7c3573f6afda2ba3f5cd413a8e9a69203ea617
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639672"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658898"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 Development Edition
 
@@ -43,7 +43,7 @@ De HoloLens 2 Development Edition bevat een HoloLens 2, $ 500 aan Azure-tegoed, 
 ## <a name="redeem-your-credits"></a>Uw tegoed inwisselen
 
 ### <a name="unity"></a>Unity
-U hebt een unieke code ontvangen. Aanwijzingen voor het inwisselen van Unity Pro proefversie:
+U hebt een unieke code ontvangen. Aanwijzingen voor het inwisselen van unity Pro proefversie:
 1. Ga [id.unity.com](http://id.unity.com/)
 1. Meld u aan met uw Unity-id of maak er een
 1. Klik **op Een productcode inwisselen**
@@ -72,7 +72,7 @@ Kies uw engine, download uw hulpprogramma's en gebruik het toetsenbord. Welkom b
 
 |     Controlepunt                              |     Resultaat                                                                                                                    |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-|     [Beginnen met ontwerpen en prototypen](/windows/mixed-reality/design/design)         |     Begin uw adventure met het ontwerpen van Mixed Reality toepassingen in verschillende kernconcepten, interactiemodellen en UX-elementen.     |
+|     [Beginnen met ontwerpen en prototypen](/windows/mixed-reality/design/design)         |     Begin uw adventure met het ontwerpen van Mixed Reality toepassingen in basisconcepten, interactiemodellen en UX-elementen.     |
 |     [Beginnen met ontwikkelen voor Mixed Reality](/windows/mixed-reality/develop/development?tabs=unity)    |     Kies uw engine, download uw hulpprogramma's, voeg kernbouwstenen toe en begin vandaag nog met bouwen.                                  |
 |     [De Azure Cloud Services](/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Bouw aantrekkelijke indringende ervaringen met Azure Remote Rendering en Azure Spatial Anchors.                                 |
 

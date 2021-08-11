@@ -1,7 +1,7 @@
 ---
 title: HoloLens 2 Veelgestelde vragen over Industrial Edition
 description: Veelgestelde vragen over de HoloLens 2 Industrial Edition
-keywords: HoloLens 2, HoloLens,Industrial Edition
+keywords: HoloLens 2, HoloLens, Industrial Edition
 author: evmill
 ms.author: v-evmill
 ms.reviewer: sekerawa
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: af116578dbbeec1d364c2c04f2827a4b7df43efe
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 1363920182107137ce3441990e429e71f7533923e066cdeaa8f9c105e453c757
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636347"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659844"
 ---
 # <a name="hololens-2---industrial-edition-faq"></a>HoloLens 2 - Veelgestelde vragen over Industrial Edition
 
@@ -57,7 +57,7 @@ Ja. De HoloLens 2 Industrial Edition is ontworpen met deze omgevingsoverwegingen
 
 De HoloLens 2 Industrial Edition heeft een garantie van twee jaar en een snel vervangingsprogramma.
 
-Ga naar deze pagina voor HoloLens [informatie over de garantie.](https://support.microsoft.com/warranty)
+Ga naar deze pagina voor [HoloLens informatie over de garantie.](https://support.microsoft.com/warranty)
 
 ### <a name="what39s-the-rapid-replacement-program"></a>Wat&#39;het snelle vervangingsprogramma?
 
@@ -86,7 +86,7 @@ Veel van het advies voor het opsnuiten van de HoloLens 2 is van toepassing op de
 
 ### <a name="how-should-i-hold-hololens-2-industrial-edition-when-cleaning-it"></a>Hoe kan ik een industriële HoloLens 2 houden wanneer ik deze opschoon?
 
-Goed van hetrow-pad af. Door de HoloLens 2 van hetrow-pad houdt u de minste druk op de arm van het apparaat en zorgt u ervoor dat het zich in de lucht houdt.
+Goed van hetrow-pad af. Door de HoloLens 2 van het pad in de lucht te houden, zet u de arm van het apparaat zo klein mogelijk onder druk en zorgt u ervoor dat het goed is.
 
 ## <a name="general-questions"></a>Algemene vragen
 

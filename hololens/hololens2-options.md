@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2-edities
-description: Meer informatie over hoe HoloLens 2 apparaateditie hetzelfde of anders is en wat u moet doen nadat u een eigen editie hebt.
+description: Meer informatie over HoloLens 2 apparaateditie hetzelfde of anders is en wat u moet doen nadat u een eigen apparaat hebt.
 keywords: HoloLens 2 aankoopopties, HoloLens, Developer Edition
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2da84a11a8f9613999e2b376fefeb6cb2b83cd00
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 4ba759dfa491725011977c39d6e51ed583a21919ea271f0c3d6482c0847938fb
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659026"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658934"
 ---
 # <a name="compare-hololens-2-options"></a>Opties HoloLens 2 vergelijken
 
@@ -45,7 +45,7 @@ Of u nu een [IT-professional](https://www.microsoft.com/hololens/apps) bent [](h
 
 - <sup>1:</sup> bevat $ 500 Azure-tegoed en proefversies van drie maanden voor Unity Pro en Pixyz-invoegversie.
 - <sup>2</sup> - Ontvang 's nachts een vervangend apparaat of verzend sneller (sneller van de beschikbare opties) voordat het defecte apparaat wordt ontvangen door Microsoft.
-- <sup>3</sup> - Neem contact op met Trimble voor vragen over garantie, ondersteuning en certificering voor trimble XR10 met HoloLens 2 [edition.](https://fieldtech.trimble.com/en/contact-support)
+- <sup>3</sup> - Voor vragen over garantie, ondersteuning en certificering voor de Trimble XR10 met HoloLens 2-editie, neem dan contact op met [Trimble.](https://fieldtech.trimble.com/en/contact-support)
 
 
 ## <a name="options-overview"></a>Overzicht van opties
@@ -54,11 +54,11 @@ Of u nu een [IT-professional](https://www.microsoft.com/hololens/apps) bent [](h
 
 **[HoloLens 2 met Dynamics 365 Remote Assist:](hololens2-options-remote-assist.md)** ga op dag één aan de slag met HoloLens 2 en de ultieme mixed reality communicatie-app van Microsoft, samen beschikbaar. Help uw hele bedrijf productiever te zijn en te innoveren met een beter doel. Ervaring mixed reality met Dynamics 365 en oplossingen van branchepartners.
 
-**[HoloLens 2 Industrial Edition:](hololens2-options-industrial-edition.md)** De HoloLens 2 Industrial Edition is ontworpen, gebouwd en getest ter ondersteuning van omgevingen met schone ruimten met standaarden die variëren van ISO-klasse 6 tot ISO-klasse 8. De HoloLens 2 Industrial Edition is UL Klasse I, Division 2 gecertificeerd en wordt ondersteund met een garantie van twee jaar en een snel vervangingsprogramma.
+**[HoloLens 2 Industrial Edition:](hololens2-options-industrial-edition.md)** De HoloLens 2 Industrial Edition is ontworpen, gebouwd en getest om omgevingen met schone ruimten te ondersteunen met standaarden die variëren van ISO-klasse 6 tot ISO-klasse 8. De HoloLens 2 Industrial Edition is UL Klasse I, Division 2 gecertificeerd en wordt ondersteund met een garantie van twee jaar en een snel vervangingsprogramma.
 
 **[Trimble XR10 met HoloLens 2:](hololens2-options-trimble-xr10-edition.md)** Met het doel dat is gebouwd voor werknemers in vervuilde, hard en met veiligheid beheerde omgevingen, brengt de Trimble XR10 met HoloLens 2 mixed reality direct naar uw werksite.
 
-**[HoloLens 2 Development Edition:](hololens2-options-dev-edition.md)** begin met het bouwen voor mixed reality met deze aanbieding die HoloLens 2 combineert met gratis proefversies van Unity-software en Azure-tegoed voor cloudservices. Meer informatie over het verder gaan van de basisprincipes en het ontwikkelen voor mixed reality.
+**[HoloLens 2 Development Edition:](hololens2-options-dev-edition.md)** begin met het bouwen voor mixed reality met deze aanbieding die HoloLens 2 combineert met gratis proefversies van Unity-software en Azure-tegoed voor cloudservices. Meer informatie over het verder gaan van de basisbeginselen en het ontwikkelen voor mixed reality.
 
 Meer informatie over ons uitgebreide [HoloLens 2 portfolio](https://www.microsoft.com/hololens/buy).
 

@@ -1,6 +1,6 @@
 ---
 title: Een nieuwe HoloLens
-description: Meer informatie over het voorbereiden, aanpassen en instellen van uw HoloLens (eerste generatie) mixed reality apparaat voor de eerste keer.
+description: Meer informatie over het voorbereiden, aanpassen en instellen van uw HoloLens (1e generatie) mixed reality apparaat voor de eerste keer.
 ms.prod: hololens
 ms.sitesec: library
 author: JesseMcCulloch
@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - Hololens (1st gen)
-ms.openlocfilehash: f5b16e579eca725158ed99ef7a912b72a7cab7ab
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 03a84f1035154660fe51ec5be07c3f32f4746564b95616ec45ef3978fb49b911
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639944"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662215"
 ---
 # <a name="get-your-hololens-1st-gen-ready-to-use"></a>Uw HoloLens (eerste generatie) gereed maken voor gebruik
 
@@ -61,7 +61,7 @@ Zie Opnieuw opstarten, opnieuw instellen of herstellen als uw apparaat niet reag
 Wanneer uw HoloLens is uitgeschakeld of stand-by is, schakelt u deze in door één seconde op de aan/uit-knop te drukken. Als dit niet het geval is, sluit u deze aan en laadt u deze ten minste 30 minuten.
 
 > [!TIP]
-> Als u de HoloLens, zegt u 'Hey Cortana, start u het apparaat opnieuw op.'
+> Als u de HoloLens wilt starten, zegt u 'Hey Cortana, start u het apparaat opnieuw op.'
 
 ### <a name="put-hololens-in-standby"></a>De HoloLens stand-by plaatsen
 
@@ -73,7 +73,7 @@ HoloLens wordt automatisch in stand-by gezet na 3 minuten inactiviteit. Wanneer 
 
 Als u de stroom wilt afsluiten (uitschakelen) HoloLens u de aan/uit-knop vier seconden ingedrukt. De accuindicatoren worden één voor één uitgeschakeld en het apparaat wordt afgesloten.
 
-HoloLens wordt automatisch afgesloten wanneer het accuniveau daalt tot één procent, zelfs als het net is aangesloten. Nadat u de accu hebt op geladen tot drie procent, kunt u de accu HoloLens weer in.
+HoloLens wordt automatisch afgesloten wanneer het accuniveau daalt tot één procent, zelfs als deze is aangesloten. Nadat u de accu hebt op geladen tot drie procent, kunt u de accu HoloLens weer in.
 
 ## <a name="adjust-volume-and-brightness"></a>Volume en helderheid aanpassen
 
@@ -94,18 +94,18 @@ Weet u niet zeker wat de indicator op uw HoloLens betekent? Hier is wat hulp.
 |Schuif, licht op en schuif vervolgens. |HoloLens is aan en wordt in rekening brengen. De levensduur van de accu wordt in stappen van 20 procent weergegeven. |
 |Schakel één voor één uit. |HoloLens wordt afgesloten. |
 |Schakel alles in één keer uit. |HoloLens wordt stand-by gezet. |
-|Alles wordt licht, er gaat een kort knipperen en vervolgens wordt alles uitgeschakeld. |De accu is kritiek laag. HoloLens moet kosten in rekening brengen. |
-|Alle schuiven, er gaat een knipperen en vervolgens allemaal schuiven. |De accu is kritiek laag. HoloLens wordt in rekening brengen. |
+|Alles wordt licht, er gaat een kort knipperen en vervolgens wordt alles uitgeschakeld. |De accu is zeer laag. HoloLens moet kosten in rekening brengen. |
+|Alle schuiven, er gaat een knipperen en vervolgens alle schuiven. |De accu is zeer laag. HoloLens wordt in rekening brengen. |
 
 ## <a name="safety-and-comfort"></a>Veiligheid en comfort
 
 ### <a name="use-in-safe-surroundings"></a>Gebruiken in een veilige omgeving
 
-Gebruik uw HoloLens in een veilige ruimte zonder obstakels en tripping-risico's. Gebruik deze niet wanneer u een duidelijk gezichtsveld en uw volledige aandacht nodig hebt, zoals wanneer u een voertuig gebruikt of andere mogelijk gevaarlijke activiteiten doet.
+Gebruik uw HoloLens in een veilige ruimte zonder obstakels en trippingsgelasten. Gebruik deze niet wanneer u een duidelijk gezichtsveld en uw volledige aandacht nodig hebt, zoals wanneer u een voertuig gebruikt of andere mogelijk gevaarlijke activiteiten doet.
 
 ### <a name="stay-comfortable"></a>Blijf vertrouwd
 
-Houd uw eerste paar sessies met HoloLens kort en zorg ervoor dat u even pauzes neemt. Als u het behaaglijk vindt, stopt u en rest u totdat u zich beter gaat voelen. Dit kan bestaan uit tijdelijke gevoelens van het bewegen, bewegen, gevoel, desoriëntatie, angst, angst, overbelasting van de ogen of het gebruik van een bloedig gezicht.
+Houd uw eerste paar sessies met HoloLens kort en zorg ervoor dat u even pauzes neemt. Als u het behaaglijk vindt, stopt u en rest u totdat u zich beter voelen. Dit kan bestaan uit tijdelijke gevoelens van het bewegen, bewegen, gevoel, desoriëntatie, angst, angst, overbelasting van de ogen of het gebruik van een bloedig gezicht.
 
 > [!div class="nextstepaction"]
 > [Uw HoloLens (eerste generatie) starten en configureren](hololens1-start.md)

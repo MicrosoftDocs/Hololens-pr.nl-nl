@@ -1,6 +1,6 @@
 ---
 title: Ondersteunde talen voor HoloLens 2
-description: Meer informatie over alle talen die HoloLens 2, het wijzigen van toetsenbordindelingen en het bijwerken van de Windows-weergavetaal.
+description: Meer informatie over alle talen die HoloLens 2 ondersteunt, het wijzigen van toetsenbordindelingen en het bijwerken Windows weergavetaal.
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -17,12 +17,12 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: dc3de0c95f17c821816bad278de5717bc24a2c29
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 32f4cce668b2f8a483dbef3f4b41a0ceb8267dcc202f2be9d32ecec4061d0c21
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111377928"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659573"
 ---
 # <a name="supported-languages-for-hololens-2"></a>Ondersteunde talen voor HoloLens 2
 
@@ -46,7 +46,7 @@ HoloLens 2 ondersteunt ook de volgende talen. Deze ondersteuning omvat echter ge
 - Nederlands (Nederland)
 - Koreaans (Korea)
 
-Sommige functies van HoloLens 2 de Windows-weergavetaal gebruiken. De Windows-weergavetaal is van invloed op de volgende instellingen voor Windows en voor apps die lokalisatie ondersteunen:
+Sommige functies van HoloLens 2 gebruiken de Windows weergavetaal. De Windows weergavetaal is van invloed op de volgende instellingen voor Windows en voor apps die lokalisatie ondersteunen:
 
 - De teksttaal van de gebruikersinterface.
 - De spraaktaal.
@@ -54,29 +54,29 @@ Sommige functies van HoloLens 2 de Windows-weergavetaal gebruiken. De Windows-we
 
 ## <a name="change-the-language-or-keyboard-layout"></a>De taal of toetsenbordindeling wijzigen
 
-Tijdens het installatieproces wordt uw HoloLens geconfigureerd voor een specifieke regio en taal. U kunt deze configuratie wijzigen met behulp van de sectie **Tijd & taal** van **Instellingen.**
+Het installatieproces configureert uw HoloLens voor een specifieke regio en taal. U kunt deze configuratie wijzigen met behulp van de **sectie Time & language** van **Instellingen**.
 
 > [!NOTE]  
-> Uw spraak- en dicteertaal is afhankelijk van (en is gelijk aan) de Windows-weergavetaal.
+> Uw spraak- en dicteertaal is afhankelijk van (en is hetzelfde als) de Windows weergavetaal.
 
-### <a name="to-change-the-windows-display-language"></a>De Windows-weergavetaal wijzigen
+### <a name="to-change-the-windows-display-language"></a>De weergavetaal Windows wijzigen
 
-1. Open het **menu Start** en selecteer instellingen **Tijd**  >  **en taal**  >  **taal.**
-2. Selecteer **Windows-weergavetaal** en selecteer vervolgens een taal.  
+1. Open het **menu Start** en selecteer vervolgens **Instellingen** Tijd  >  **en**  >  **taaltaal**.
+2. Selecteer **Windows weergavetaal en** selecteer vervolgens een taal.  
 
 Als de ondersteunde taal die u zoekt niet in het menu staat, volgt u deze stappen:  
 
 1. Selecteer **onder Voorkeurstalen** de optie **Een taal toevoegen.**
 2. Zoek de taal en voeg deze toe.
-3. Selecteer opnieuw **het menu Weergavetaal** van Windows en selecteer vervolgens de taal die u in de vorige stap hebt toegevoegd.
+3. Selecteer opnieuw **Windows menu Weergavetaal** en selecteer vervolgens de taal die u in de vorige stap hebt toegevoegd.
 
 ### <a name="to-change-the-keyboard-layout"></a>De toetsenbordindeling wijzigen
 
-Als u een toetsenbordindeling wilt toevoegen of verwijderen, opent u het menu **Start** en selecteert u instellingen   >  **tijd & taal**  >  **Toetsenbord.**
+Als u een toetsenbordindeling wilt toevoegen of verwijderen, opent u het menu **Start** en selecteert u Instellingen   >  **Tijd & taal**  >  **Toetsenbord.**
 
-Als uw HoloLens meer dan één toetsenbordindeling heeft, gebruikt u **de lay-outtoets** om ertussen te schakelen. De **indelingssleutel** staat in de rechterbenedenhoek van het schermtoetsenbord.
+Als uw HoloLens meerdere toetsenbordindelingen heeft,  gebruikt u de lay-outtoets om ertussen te schakelen. De **indelingssleutel** staat in de rechterbenedenhoek van het schermtoetsenbord.
 
 > [!NOTE]  
-> Het toetsenbord op het scherm kan IME (Input Method Editor) gebruiken om tekens in te voeren in talen, zoals Japans. HoloLens biedt echter geen ondersteuning voor externe Bluetooth-toetsenborden die gebruikmaken van IME.
+> Het toetsenbord op het scherm kan IME (Input Method Editor) gebruiken om tekens in te voeren in talen, zoals Japans. De HoloLens echter geen ondersteuning voor Bluetooth toetsenborden die gebruikmaken van IME.
 >  
-> Terwijl u IME samen met het toetsenbord op het scherm gebruikt, kunt u een Bluetooth-toetsenbord blijven gebruiken om Engels te typen. Als u wilt schakelen tussen toetsenborden, drukt u op de knop tilde teken ( **~** ).
+> Terwijl u IME samen met het toetsenbord op het scherm gebruikt, kunt u een toetsenbord Bluetooth in het Engels te typen. Als u wilt schakelen tussen toetsenborden, drukt u op de knop tilde teken ( **~** ).

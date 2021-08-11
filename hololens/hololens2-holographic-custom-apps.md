@@ -16,12 +16,12 @@ ms.custom:
 - CSSTroubleshooting
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d2280a794455090c61a7bf30bc5dc5b8faf5adbe
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 99149c24922c582a66669685df20520b29f692677859d1408328fc9f2ee8ddf3
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636398"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659807"
 ---
 # <a name="manage-custom-apps-for-hololens-2"></a>Aangepaste apps voor HoloLens 2
 
@@ -37,4 +37,4 @@ Als u een van beide ontwikkelaarsmethodes voor app-installatie voor HoloLens 2 z
 - [Apparaatportal: Een app installeren](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)
 - [Apps Visual Studio implementeren en fouten opsporen](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
 
-Zie onze [handleiding](holographic-custom-apps.md) als u aangepaste apps wilt implementeren op HoloLens (eerste generatie).
+Zie onze [handleiding](holographic-custom-apps.md) als u aangepaste apps wilt implementeren op HoloLens (1e generatie).

@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 540bdcaefafcc50cc38d5e9a67dea3b9cb596f05
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 24fefeb941fd75e4f6a6b18fbfd8a1c80a7bbf54dcdee233c6513338b44f9ab5
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639468"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658784"
 ---
 # <a name="hololens-2-with-remote-assist"></a>HoloLens 2 met Remote Assist
 
@@ -31,15 +31,15 @@ Ga op dag één aan de slag met HoloLens 2 en de ultieme mixed reality communica
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## <a name="heres-what-to-do-next-with-the-hololens-2-with-dynamics-365-remote-assist-edition"></a>Dit is wat u nu moet doen met de HoloLens 2 met Dynamics 365 Remote Assist edition
+## <a name="heres-what-to-do-next-with-the-hololens-2-with-dynamics-365-remote-assist-edition"></a>Dit is wat u nu gaat doen met de HoloLens 2 met Dynamics 365 Remote Assist edition
 
-We hebben een specifieke handleiding gemaakt om u te helpen bij het op schaal HoloLens implementeren van apparaten. De handleiding bevat end-to-end-instellingen voor Azure Active Directory valideren van een Remote Assist-aanroep. Bekijk onze [implementatiehandleiding - Cloud verbonden HoloLens 2 met Remote Assist](hololens2-cloud-connected-overview.md) voor meer informatie.
+We hebben een specifieke handleiding gemaakt om u te helpen bij het implementeren HoloLens apparaten op schaal. De handleiding bevat end-to-end-instellingen voor Azure Active Directory valideren van een Remote Assist-aanroep. Bekijk onze [implementatiehandleiding - Cloud verbonden HoloLens 2 met Remote Assist](hololens2-cloud-connected-overview.md) voor meer informatie.
 
 | Controlepunt  | Resultaat                                |
 |-------------|----------------------------------------|
 | [Aan de slag](/dynamics365/mixed-reality/remote-assist/overview-hololens) | Aan de slag met Remote Assist.        |
 | [Licentie](/dynamics365/mixed-reality/remote-assist/deploy-remote-assist#add-and-assign-licenses)     | Licentie inwisselen voor Remote Assist.      |
-| [Verbinding maken](/hololens/hololens-network)     | Verbinding maken uw apparaat(en) naar Wi-Fi.       |
+| [Verbinding maken](/hololens/hololens-network)     | Verbinding maken apparaat(en) naar Wi-Fi.       |
 | [Inschrijven](/hololens/hololens-enroll-mdm)      | Apparaten inschrijven bij uw organisatie. |
 
 ## <a name="next-steps"></a>Volgende stappen

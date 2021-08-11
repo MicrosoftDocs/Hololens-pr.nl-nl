@@ -1,6 +1,6 @@
 ---
 title: Uw HoloLens 2
-description: Informatie over het instellen van uw HoloLens 2 voor de eerste keer via Wi-Fi-netwerk met een Microsoft-account (MSA) of Azure Active Directory (AAD)-account.
+description: Meer informatie over het instellen van uw HoloLens 2 voor de eerste keer via Wi-Fi-netwerk met een Microsoft-account (MSA) of een Azure Active Directory (AAD)-account.
 ms.assetid: 507305f4-e85a-47c5-a055-a3400ae8a10e
 ms.date: 6/09/2021
 keywords: hololens
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ef2f8723868e14beaf19cb057fffbcbd9e9f51f9
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 6f50874c39d8bffa43ff94101c81dcffe3dc1b3c34c69e940ed503dc7bd8b4ba
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659269"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659263"
 ---
 # <a name="set-up-your-hololens-2"></a>Uw HoloLens 2
 
@@ -70,17 +70,17 @@ Er wordt een knop met een Microsoft-logo weergeven. Druk op de knop om HoloLens 
     
     <img src="images/06-et-corners.png" width="500px" alt="Calibration selection screen">
     
-    2. Als u wilt kalibreren, bekijkt u een set doelen (gems genoemd). Het is prima als u tijdens de kalibratie knippert of uw ogen sluit, maar probeer niet naar andere objecten in de ruimte of fysieke ruimte te staren. HoloLens gebruikt dit proces om meer te weten te komen over uw oogpositie, zodat uw holografische wereld beter kan worden weergegeven. 
+    2. Als u wilt kalibreren, bekijkt u een set doelen (gems genoemd). Het is prima als u tijdens de kalibratie knippert of uw ogen sluit, maar probeer niet naar andere objecten in de ruimte of fysieke ruimte te staren. HoloLens maakt gebruik van dit proces om meer te weten te komen over uw oogpositie, zodat uw holografische wereld beter kan worden weergegeven. 
 
         <img src="images/07-adjust-eyes.png" width="500px" alt="Adjust for your eyes">
 
-        Na kalibratie worden hologrammen correct weergegeven, zelfs wanneer de visor op uw hoofd verschuift. Kalibratiegegevens worden lokaal op het apparaat opgeslagen en zijn niet gekoppeld aan accountgegevens. Zie Kalibratiegegevens en beveiliging [voor meer informatie.](hololens-calibration.md#calibration-data-and-security)
+        Na kalibratie worden hologrammen correct weergegeven, zelfs wanneer de visor naar uw hoofd verschuift. Kalibratiegegevens worden lokaal op het apparaat opgeslagen en zijn niet gekoppeld aan accountgegevens. Zie Kalibratiegegevens [en beveiliging voor meer informatie.](hololens-calibration.md#calibration-data-and-security)
 
         <img src="images/calibration-complete.png" width="500px" alt="Calibration is complete">
 
 1. Verbinding maken verbinding maken met internet (selecteer Wi-Fi of uw ethernetverbinding).
 
-     HoloLens stelt uw tijdzone automatisch in op basis van gegevens die zijn verkregen van Wi-Fi netwerk. Nadat de installatie is voltooien, kunt u de tijdzone wijzigen met behulp van de Instellingen app.
+     HoloLens wordt uw tijdzone automatisch op basis van gegevens die zijn verkregen van het Wi-Fi netwerk. Nadat de installatie is geïnstalleerd, kunt u de tijdzone wijzigen met behulp van de Instellingen app.
 
     ![Verbinding maken met Wi-Fi](images/11-network.png)
 
@@ -97,7 +97,7 @@ Er wordt een knop met een Microsoft-logo weergeven. Druk op de knop om HoloLens 
 
     ![Windows licentieovereenkomst](images/windows-license-agreement.png)
 
-1. Meld u aan bij uw gebruikersaccount. U kiest tussen Mijn werk of **school is eigenaar en** ik ben **eigenaar.**
+1. Meld u aan bij uw gebruikersaccount. U kiest tussen **Mijn werk** of school is eigenaar en ik ben **eigenaar.**
 
     ![Gebruiker instellen](images/13-device-owner.png)
     - Wanneer u Mijn **werk of school is eigenaar kiest,** meldt u zich aan met een Azure AD-account. Als uw organisatie gebruikmaakt Azure AD Premium automatische MDM-inschrijving heeft geconfigureerd, HoloLens automatisch ingeschreven bij MDM. Als uw organisatie geen gebruik maakt Azure AD Premium, is automatische MDM-inschrijving niet beschikbaar. In dat geval moet u de inschrijving [handmatig HoloLens in apparaatbeheer.](hololens-enroll-mdm.md#different-ways-to-enroll)
