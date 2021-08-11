@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d2804742fdcf9d6562fce0c693552d4a9241398f
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 452a032896d7b1959e706313d83f023588507c0882962cf689508edc63921bdb
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635208"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115661933"
 ---
 # <a name="getting-around-hololens-2"></a>Kennismaken met HoloLens 2
 
@@ -99,7 +99,7 @@ Met de beweging Start wordt de **Startmenu.**  Als u de beweging Start wilt uitv
 > - U kunt de beweging Start gebruiken zolang uw handen zich in het handtrackingframe houden.  U hoeft niet op het pictogram Start te kijken. Houd uw elleboog laag en vertrouwd en kijk in de richting waarin u de Startmenu wilt openen.
 > - Als de Startmenu niet is geopend op de 9e positie, gaat u gewoon met uw hoofd om de positie ervan te verplaatsen.
 > - Als u problemen hebt met het lezen van de kleinere tekst op Startmenu, komt u er dichter bij nadat deze is geopend.
-> - Als uw hand iets buiten het kader ligt, kunt u de Startmenu mogelijk nog steeds weergeven door op uw binnenste hand te tikken, zelfs als u het pictogram niet ziet.
+> - Als uw hand iets aan de zijkant van het frame ligt, kunt u de Startmenu mogelijk nog steeds weergeven door op uw binnenste hand te tikken, zelfs als u het pictogram niet ziet.
 
 ![Afbeelding met het pictogram Start en de beweging Start](./images/hololens-2-start-gesture.png)
 
@@ -123,7 +123,7 @@ Klaar om al deze handinteracties te testen?
 
 U vindt uw geïnstalleerde apps in de [Startmenu](holographic-home.md) en u vindt aanvullende apps voor HoloLens in [de Microsoft Store.](holographic-store-apps.md)
 
-Net zoals Windows pc altijd op het bureaublad wordt gestart, HoloLens altijd **in** Mixed Reality Startpagina ingeschakeld.  Met behulp Startmenu kunt u app-vensters openen en plaatsen, evenals starters voor apps en 3D-inhoud in Mixed Reality Startpagina. Hun plaatsingen in uw fysieke ruimte worden onthouden door HoloLens.
+Net zoals Windows pc altijd de ervaring op het bureaublad start, HoloLens altijd **in** Mixed Reality Startpagina ingeschakeld.  Met behulp Startmenu kunt u app-vensters openen en plaatsen, evenals starters voor apps en 3D-inhoud in Mixed Reality Startpagina. Hun plaatsingen in uw fysieke ruimte worden onthouden door HoloLens.
 
 Open de **Startmenu** en selecteer vervolgens de **Instellingen** app. Er wordt een app-venster voor u geopend.
 
@@ -147,7 +147,7 @@ Een nieuw menu waarmee de gebruiker zich kan af- en afsluiten en opnieuw kan ops
 
 3. Selecteer de afbeelding van het gebruikersprofiel met behulp van uw handen of de spraakopdracht 'Power'.
 
-4. Er wordt een menu weergegeven met opties voor Afloggen, Opnieuw opstarten of Afsluiten van het apparaat:
+4. Er wordt een menu weergegeven met opties om het apparaat af te melden, opnieuw op te starten of af te sluiten:
 
    <img alt="User context menu" src="./images/powertransition_aad_options_cropped.png" width="586" height="330" />
 
@@ -159,7 +159,7 @@ Een nieuw menu waarmee de gebruiker zich kan af- en afsluiten en opnieuw kan ops
 
 ## <a name="move-resize-and-rotate-holograms"></a>Hologrammen verplaatsen, het izeseren en draaien
 
-In Mixed Reality Startpagina kunt u app-vensters en 3D-objecten verplaatsen, het izeseren en draaien met behulp van uw handen, hand ray en spraakopdrachten.
+In Mixed Reality Startpagina kunt u app-vensters en 3D-objecten verplaatsen, het iseren en draaien met behulp van uw handen, hand ray en spraakopdrachten.
 
 ### <a name="moving-holograms"></a>Hologrammen verplaatsen
 
@@ -173,7 +173,7 @@ Ga als volgt te werk om een hologram of app te verplaatsen:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3ZYIb]
 
-Pak de grepen **voor het resize** die worden weergegeven in de hoeken van 3D-hologrammen en app-vensters, en gebruik deze om de grepen in te delen.
+Pak de grepen voor **het resize** die worden weergegeven in de hoeken van 3D hologrammen en app-vensters, en gebruik deze om de grepen in te delen.
 
 Wanneer de grootte van een app-venster op deze manier wordt vergroot, wordt de inhoud van het venster groter en gemakkelijker te lezen.
 
@@ -190,11 +190,11 @@ Voor app-vensters zorgt het verplaatsen van een app-venster ervoor dat het autom
 U kunt ook een 3D-hologram of app-venster met beide **handen** (of hand ray) tegelijk pakken en vervolgens:
 
 - Verplaats uw handen dichter bij elkaar of verder uit elkaar om het hologram te iseren.
-- Verplaats uw handen dichter bij uw hoofd om het hologram te draaien.
+- Verplaats uw handen steeds dichter bij uw hoofd om het hologram te draaien.
 
 ### <a name="follow-me-stop-following"></a>Volg mij, stop met volgen
 
-Hologrammen en app-vensters blijven waar u ze ter wereld hebt geplaatst.  Dat is niet altijd handig als u wilt verplaatsen en u wilt dat een toepassing zichtbaar blijft. Als u een app wilt vragen om u te starten of te stoppen, selecteert u Volg **mij** in de rechterbovenhoek van het app-venster (naast de **knop** Sluiten).  In een app-venster dat volgt, wordt u ook in een uit-app in een in immersive app doorvervolgd.
+Hologrammen en app-vensters blijven waar u ze ter wereld hebt geplaatst.  Dat is niet altijd handig als u wilt verplaatsen en u wilt dat een toepassing zichtbaar blijft. Als u een app wilt vragen om u te starten of te stoppen, selecteert u Volg **mij** in de rechterbovenhoek van het app-venster (naast de **knop** Sluiten).  In een app-venster dat volgt, wordt u ook in een uit-app doorvervolgd.
 
 ## <a name="use-hololens-with-your-voice"></a>Uw HoloLens gebruiken
 
@@ -210,7 +210,7 @@ U kunt uw stem gebruiken om de meeste dingen die u doet met hands on-HoloLens te
 
 ## <a name="swipe-to-type"></a>Veeg om te typen
 
-Sommige klanten vinden het sneller 'typen' op virtuele toetsenborden door de vorm te vegen van het woord dat ze willen typen. Met [Windows Holographic, versie 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)kunt u nu met één woord tegelijk vegen door de punt van uw vinger door het vlak van het holografische toetsenbord te laten gaan, de vorm van het woord te vegen en vervolgens de token van uw vinger uit het vlak van het toetsenbord te halen. U kunt de volgende woorden swipen zonder op de spatiebalk te hoeven drukken door uw vinger tussen woorden van het toetsenbord te verwijderen. U weet dat de functie werkt als u een veegtrail ziet na de beweging van uw vinger op het toetsenbord.
+Sommige klanten vinden het sneller 'typen' op virtuele toetsenborden door de vorm te vegen van het woord dat ze willen typen. Met [Windows Holographic, versie 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)kunt u nu met één woord tegelijk vegen door de punt van uw vinger door het vlak van het holografische toetsenbord te laten vegen, de vorm van het woord te vegen en vervolgens de token van uw vinger uit het vlak van het toetsenbord te halen. U kunt woorden uit de vervolgvolgende tekst vegen zonder op de spatiebalk te hoeven drukken door uw vinger tussen woorden van het toetsenbord te verwijderen. U weet dat de functie werkt als u een veegtrail ziet na de beweging van uw vinger op het toetsenbord.
 
 Houd er rekening mee dat deze functie lastig te gebruiken en te beheersen kan zijn vanwege de aard van een holografische toetsenbord waar u geen bescherming tegen uw vinger hebt (in tegenstelling tot een mobiele telefoonweergave). We evalueren deze functie voor openbare release, dus uw feedback is belangrijk; Of u de functie nuttig vindt of dat u opbouwende feedback hebt, laat het ons weten via [Feedback-hub](hololens-feedback.md).
 

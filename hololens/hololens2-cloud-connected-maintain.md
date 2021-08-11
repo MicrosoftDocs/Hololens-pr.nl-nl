@@ -1,6 +1,6 @@
 ---
 title: 'Implementatiehandleiding : Cloudgeconnecteerde HoloLens 2 implementatie op schaal met Remote Assist - Onderhouden'
-description: Blijf op de hoogte met onze tips voor het onderhouden en ondersteunen van HoloLens via een verbonden cloudnetwerk.
+description: Blijf op de hoogte met onze tips voor het onderhouden en ondersteunen HoloLens apparaten via een verbonden cloudnetwerk.
 keywords: HoloLens, beheer, verbonden met de cloud, Remote Assist, AAD, Azure AD, MDM, Mobile Device Management
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 941de296d59713c098718b16431fa793bd1b60e6
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 879f89d84bbae5b4cc187bc8b1fca627036269145b1c2dd82787e3789fef259d
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635157"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660372"
 ---
 # <a name="maintain---cloud-connected-guide"></a>Onderhouden - Handleiding voor verbonden cloud
 
@@ -27,13 +27,13 @@ ms.locfileid: "113635157"
 
 Microsoft heeft Windows Update voor Bedrijven ontworpen om IT-beheerders aanvullende Windows op updates gerichte beheermogelijkheden te bieden, zoals de mogelijkheid om updates te implementeren op groepen apparaten en om onderhoudsvensters te definiëren voor het installeren van updates.
 
-Meer informatie over [het HoloLens van](/hololens/hololens-updates) updates, waaronder geplande dagen, geplande tijd en het instellen van actieve uren op het apparaat, zodat deze buiten werkuren worden bijgewerkt.
+Meer informatie over [het HoloLens van updates,](/hololens/hololens-updates) waaronder geplande dagen, geplande tijd en het instellen van actieve uren op het apparaat, zodat deze buiten werkuren worden bijgewerkt.
 
 Remote Assist is een In-Box-app en kan worden bijgewerkt via de Microsoft Store app. Voor alle apps die worden gedownload via de Microsoft Store kunnen ze handmatig worden bijgewerkt [via Microsoft Store](/hololens/holographic-store-apps#update-apps) app zelf.
 
 ## <a name="support-plan"></a>Ondersteuningsplan
 
-Een ondersteuningsplan is uitstekend om te hebben. Het is handig om iemand of een groep te laten trainen voor het oplossen van problemen met het inschrijvingsproces op HoloLens-apparaten en voor algemeen gebruik van het HoloLens-apparaat binnen uw organisatie. Om uw gebruikers in staat te stellen hun problemen sneller op te lossen, raden we u aan uw escalatieproces op een vergelijkbare manier te laten verlopen als in deze volgorde:
+Een ondersteuningsplan is uitstekend om te hebben. Het is handig om iemand of een groep te laten trainen voor het oplossen van problemen met het inschrijvingsproces op HoloLens-apparaten en voor algemeen gebruik van het HoloLens-apparaat binnen uw organisatie. Om uw gebruikers in staat te stellen hun problemen sneller op te lossen, raden we u aan uw escalatieproces op een vergelijkbare manier te verwerken als in deze volgorde:
 
 1. Uw ondersteuningsdesk.
 2. Uw HoloLens Expert-team
@@ -52,7 +52,7 @@ Als u nog&#39;LOB-app wilt maken of nog bezig bent met het maken, bekijkt u onze
 
 Hoewel in deze handleiding werd gesproken over het instellen van Mobile Device Management (MDM), werd het niet gebruikt om apparaatbeperkingen of beleidsregels toe te passen op apparaten. Apparaatbeheer kan worden gebruikt om toegang toe te staan door certificaten te pushen of de toegang te beperken met verschillende apparaatbeperkingen. 
 
-In veel gevallen kunnen apparaten verbindingsbeperkingen hebben, zoals Bluetooth, VPN, USB of zelfs het uitschakelen van de toegang tot de camera of microfoon. Als u een van deze interesses hebt, raden we u aan onze algemene pagina met [apparaatbeperkingen te lezen.](hololens-common-device-restrictions.md)
+In veel gevallen kunnen apparaten verbindingsbeperkingen hebben, zoals Bluetooth, VPN, USB of zelfs het uitschakelen van de toegang tot de camera of microfoon. Als u een van deze interesses hebt, raden we u aan onze pagina met algemene [apparaatbeperkingen te lezen.](hololens-common-device-restrictions.md)
 
 Er zijn andere complexere apparaatbeperkingen die u kunt gebruiken. Zoals:
 

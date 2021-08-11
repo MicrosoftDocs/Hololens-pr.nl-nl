@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 769cacc1803af9d9e9bf1079f8cd5671f194c3bc
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 6a09766a06fff912aae20dc07974b723d812bd370562a33297552dc0d2f7f12c
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639213"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664280"
 ---
 # <a name="common-device-restrictions"></a>Algemene apparaatbeperkingen 
 
@@ -49,6 +49,6 @@ Hieronder vindt u een lijst met veelgebruikte MDM-instellingen die Windows 10 Ho
 -   [Camera beperken:](/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccesscamera) Hiermee geeft u op Windows apps toegang hebben tot de camera.
 -   [Microfoons beperken:](/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccessmicrophone) Hiermee geeft u op Windows apps toegang hebben tot de microfoon.
 
-Toegevoegd aan [Windows Holographic, versie 20H2](hololens-release-notes.md#windows-holographic-version-20h2) voor HoloLens 2 apparaten. 
+Toegevoegd in [Windows Holographic, versie 20H2](hololens-release-notes.md#windows-holographic-version-20h2) voor HoloLens 2 apparaten. 
 - [DisplayOffTimeoutOnBattery](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery) Stel de hoeveelheid tijd in totdat de weergave wordt uitgeschakeld en door het scherm uit te schakelen, wordt het apparaat vergrendeld. 
 - [DisplayOffTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin) Stel de hoeveelheid tijd in totdat de weergave wordt uitgeschakeld en door het scherm uit te schakelen, wordt het apparaat vergrendeld. 

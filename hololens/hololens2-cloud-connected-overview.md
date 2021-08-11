@@ -14,14 +14,14 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 26fd2def8ce1fa8f960ab930e209c74fb37e2e0a
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 8bba313e7b5ee3d055c2b6ff2c60810baf428ecfa7d5554a1efb4e0aa9e1e98b
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639757"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660310"
 ---
-# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Implementatiehandleiding – Cloud verbonden HoloLens 2 met Remote Assist – Overzicht
+# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Implementatiehandleiding : Cloud verbonden HoloLens 2 met Remote Assist – Overzicht
 
 Deze handleiding helpt IT-professionals bij het plannen en implementeren van Microsoft HoloLens 2 apparaten met Remote Assist in hun organisatie. Dit dient als een model voor proof-of-concept-implementaties in uw organisatie in HoloLens 2 gebruiksgevallen. De installatie is vergelijkbaar met [Scenario A: Implementeren naar apparaten die verbinding maken met de cloud.](common-scenarios.md#scenario-a) 
 
@@ -43,7 +43,7 @@ Dit is een installatie die vergelijkbaar is met [scenario A:](/hololens/common-s
 
 ## <a name="learn-about-remote-assist"></a>Meer informatie over Remote Assist
 
-Remote Assist biedt samenwerking voor onderhoud en reparatie, externe inspectie, evenals kennis delen en trainen. Door mensen in verschillende rollen en locaties met elkaar te verbinden, kan een technicus die gebruikmaakt van Remote Assist verbinding maken met een externe medewerker op Microsoft Teams. Ze kunnen video's, schermopnamen en aantekeningen combineren om problemen in realtime op te lossen, zelfs wanneer ze zich niet op dezelfde locatie bevinden. Externe samenwerkers kunnen referentieafbeeldingen, schema's en andere nuttige informatie invoegen over de fysieke ruimte van de technicus, zodat ze kunnen verwijzen naar de schematische gegevens tijdens het werken met hun werk aan HoloLens.
+Remote Assist biedt samenwerking voor onderhoud en reparatie, externe inspectie, evenals kennis delen en trainen. Door mensen in verschillende rollen en locaties met elkaar te verbinden, kan een technicus die gebruikmaakt van Remote Assist verbinding maken met een externe medewerker op Microsoft Teams. Ze kunnen video's, schermopnamen en aantekeningen combineren om problemen in realtime op te lossen, zelfs wanneer ze zich niet op dezelfde locatie bevinden. Externe samenwerkers kunnen referentieafbeeldingen, schema's en andere nuttige informatie invoegen over de fysieke ruimte van de technicus, zodat ze naar het schema kunnen verwijzen tijdens het werken met hun werk aan HoloLens.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -92,7 +92,7 @@ Implementatie:
 Handhaven:
 
 > [!div class="checklist"]
-> - [Informatie over het bijwerken Remote Assist de Microsoft Store app.](hololens2-cloud-connected-maintain.md#updates)
+> - [Informatie over het bijwerken Remote Assist met behulp van de Microsoft Store app.](hololens2-cloud-connected-maintain.md#updates)
 > - [Een ondersteuningsplan maken.](hololens2-cloud-connected-maintain.md#support-plan)
 > - [Ontwikkelplan.](hololens2-cloud-connected-maintain.md#development-plan)
 

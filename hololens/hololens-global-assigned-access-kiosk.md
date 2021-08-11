@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d89c630da76060fe6c2a049e5fa162e88779bb99
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: d36192e7f65f7fe2ccc7ff8699484a19b3d5d3a7ccab0167d2dbdcaf64bb5880
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640420"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664036"
 ---
 # <a name="global-assigned-access--kiosk"></a>Globale toegewezen toegang – Kiosk
 
@@ -47,11 +47,11 @@ Deze functie configureert HoloLens 2 apparaat voor de kioskmodus voor meerdere a
 
 1. Werk de HIERBOVEN genoemde XML-blob bij en sla deze op als XML-bestand. 
 
-2. Volg de stappen in [Een inrichtingspakket gebruiken om](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)een kiosk voor één app of meerdere apps in te stellen, met name de sectie Prov. package, step 2– Add the kiosk configuration XML file to a provisioning package' (pakket, stap 2: het XML-bestand voor de kioskconfiguratie toevoegen aan een inrichtingspakket) en verwijzen naar het XML-bestand dat in de vorige stap is opgeslagen.
+2. Volg de stappen in [Use a provisioning package to set up a single-app or multi-app kiosk](hololens-kiosk.md#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)(Een inrichtingspakket gebruiken om een kiosk voor één app of meerdere apps in te stellen) in het bijzonder de sectie "Prov. package, step 2– Add the kiosk configuration XML file to a provisioning package' (pakket, stap 2: het XML-bestand voor de kioskconfiguratie toevoegen aan een inrichtingspakket) en verwijzen naar het XML-bestand dat in de vorige stap is opgeslagen.
 
 ## <a name="can-i-create-a-configuration-where-global-applies-to-everyone-and-separate-configuration-applies-to-1-azure-ad-account-or-azure-ad-group"></a>Kan ik een configuratie maken waarbij globaal van toepassing is op iedereen en afzonderlijke configuratie van toepassing is op 1 Azure AD-account of Azure AD-groep? 
 
-Ja, raadpleeg de voorbeeld-XML-blob hieronder. Het profiel Voor globale toegewezen toegang wordt toegepast op HoloLens wanneer er geen specifiek profiel voor de aangemelde gebruiker wordt gevonden. Dit is dus de standaardconfiguratie voor de kioskmodus voor de aangemelde gebruiker.
+Ja, raadpleeg de voorbeeld-XML-blob hieronder. Het profiel Voor globale toegewezen toegang wordt toegepast op HoloLens wanneer er geen specifiek profiel voor de aangemelde gebruiker wordt gevonden. Dit is dus de standaardconfiguratie voor de kioskmodus voor aangemelde gebruikers.
 Hier volgt een voorbeeld van een XML-blob die moet worden gebruikt:
 
 > [!NOTE]

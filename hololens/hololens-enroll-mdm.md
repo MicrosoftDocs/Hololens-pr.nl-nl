@@ -1,6 +1,6 @@
 ---
-title: Registratie van HoloLens in MDM
-description: Meer informatie over het registreren HoloLens in Mobile Device Management (MDM) voor eenvoudiger beheer van meerdere apparaten.
+title: Apparaten inschrijven HoloLens MDM
+description: Meer informatie over het inschrijven HoloLens in Mobile Device Management (MDM) voor eenvoudiger beheer van meerdere apparaten.
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 2a9b3fca-8370-44ec-8b57-fb98b8d317b0
@@ -14,14 +14,14 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 6c279664fa6051fab2f5e2e8f61e70b55704ae7c
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 3c17ad2397d87660cb2013604029864f9c36abdbf520710c4fe5952e3440e3a5
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640403"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664228"
 ---
-# <a name="enroll-hololens-in-mdm"></a>Registratie van HoloLens in MDM
+# <a name="enroll-hololens-in-mdm"></a>Apparaten inschrijven HoloLens MDM
 
 U kunt meerdere apparaten Microsoft HoloLens tegelijkertijd beheren met behulp van oplossingen zoals [Microsoft Intune](/intune/windows-holographic-for-business). U kunt instellingen beheren, apps selecteren om beveiligingsconfiguraties te installeren en instellen die zijn afgestemd op de behoefte van uw organisatie. Zie Apparaten met [Windows Holographic](/intune/windows-holographic-for-business)beheren met Microsoft Intune, de configuratieserviceproviders [(CSP's)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference#hololens)die worden ondersteund in Windows Holographic en de beleidsregels die worden ondersteund [door Windows Holographic for Business](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#hololenspolicies).
 
@@ -36,10 +36,10 @@ U kunt meerdere apparaten Microsoft HoloLens tegelijkertijd beheren met behulp v
 
 Afhankelijk van het type identiteit [dat is gekozen](hololens-identity.md) tijdens OOBE of na het aanmelden, zijn er verschillende registratiemethoden.
 
-- Als Identiteit Azure AD is, klikt u tijdens OOBE of Instellingen **de** knop App Access Work Verbinding maken  ->  **school.**  ->  
+- Als Identiteit Azure AD is, klikt u tijdens OOBE of Instellingen de knop **App** Access Work of  ->  **School**  ->  **Verbinding maken** op.
     - Voor Azure AD [vindt automatische MDM-inschrijving](hololens-enroll-mdm.md#auto-enrollment-in-mdm) alleen plaats als Azure AD is geconfigureerd met inschrijvings-URL's.
      
-- Als de identiteit Azure AD is en het apparaat vooraf is geregistreerd bij de Intune MDM-server met een specifiek configuratieprofiel dat is toegewezen, vinden Azure AD-Join en automatische [MDM-inschrijving](hololens-enroll-mdm.md#auto-enrollment-in-mdm) plaats tijdens OOBE.
+- Als Identiteit Azure AD is en het apparaat vooraf is geregistreerd bij de Intune MDM-server met een specifiek configuratieprofiel dat is toegewezen, vinden Azure AD-Join en automatische [MDM-inschrijving](hololens-enroll-mdm.md#auto-enrollment-in-mdm) plaats tijdens OOBE.
     - Ook wel [autopilot-stroom beschikbaar](hololens2-autopilot.md) in [builds van 19041.1103+](hololens-release-notes.md#windows-holographic-version-2004).
     
 
@@ -62,6 +62,6 @@ Wanneer een apparaat lid is van Azure AD, kan dit van invloed zijn op wie de eig
 
 Afhankelijk van de inschrijvingsmethode is het uitschrijving van uw apparaat mogelijk niet beschikbaar.
 
-Als uw apparaat is ingeschreven met een Azure AD-account of Autopilot, kan het niet worden uitgeschreven bij Intune. Als u de aaneenvoeging wilt HoloLens Azure AD of opnieuw wilt worden lid van een andere Azure AD-tenant, moet u het apparaat opnieuw [instellen/reflashen.](hololens-recovery.md#reset-the-device)
+Als uw apparaat is ingeschreven met een Azure AD-account of Autopilot, kan het niet worden uitgeschreven bij Intune. Als u de aaneenvoeging HoloLens Azure AD wilt verwijderen of opnieuw wilt aanvoegen in een andere Azure AD-tenant, moet u het apparaat opnieuw [instellen/reflashen.](hololens-recovery.md#reset-the-device)
 
-Als uw apparaat is ingeschreven vanuit een MSA-account dat een werkaccount heeft toegevoegd of van een lokaal account dat alleen is ingeschreven bij apparaatbeheer, kunt u de registratie van het apparaat in de uitschrijving van het apparaat in- of verwijderen. Open de Startmenu selecteer vervolgens Instellingen de knop **Verbinding** verbreken met werk- of  ->    ->  *schoolaccount* van App  ->  **Access.**
+Als uw apparaat is ingeschreven vanuit een MSA-account dat een werkaccount heeft toegevoegd of van een lokaal account dat alleen is ingeschreven bij apparaatbeheer, kunt u de registratie van het apparaat in- of verwijderen. Open de Startmenu selecteer vervolgens Instellingen de knop **Verbinding** verbreken met werk- of  ->    ->  *schoolaccount* van App  ->  **Access.**

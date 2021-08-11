@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft HoloLens
-summary: Microsoft HoloLens is de eerste volledig zelfstandige holografische computer die de Windows 10. Nu, met de introductie van HoloLens 2, biedt elk HoloLens-apparaat commerciële beheermogelijkheden die worden verbeterd door de betrouwbaarheid, beveiliging en schaalbaarheid van cloud- en AI-services van Microsoft.
+summary: Microsoft HoloLens is de eerste volledig zelfstandige holografische computer die wordt uitgevoerd Windows 10. Nu, met de introductie van HoloLens 2, biedt elk HoloLens-apparaat commerciële beheermogelijkheden die worden verbeterd door de betrouwbaarheid, beveiliging en schaalbaarheid van cloud- en AI-services van Microsoft.
 metadata:
   title: Microsoft HoloLens
   description: Landingspagina voor Microsoft HoloLens.
@@ -11,12 +11,12 @@ metadata:
   ms.author: v-jjaswinski
   ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: c0189c7a75ad27d6d301721e78de6391f6ac76f7
-  ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+  ms.openlocfilehash: fb887c40771d371d90580c0bb29c08d9686dfefab5515ba1fdc768fbc01551de
+  ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
   ms.translationtype: MT
   ms.contentlocale: nl-NL
-  ms.lasthandoff: 07/24/2021
-  ms.locfileid: "114659570"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "115665315"
 landingContent:
 - title: De HoloLens 2
   linkLists:
@@ -32,7 +32,7 @@ landingContent:
     links:
     - text: Alleen apparaat
       url: hololens2-options-device-only.md
-    - text: Remote Assist-editie
+    - text: Remote Assist edition
       url: hololens2-options-remote-assist.md
     - text: Industriële editie
       url: hololens2-options-industrial-edition.md
@@ -60,7 +60,7 @@ landingContent:
       url: hololens2-autopilot-registration-support.md
   - linkListType: deploy
     links:
-    - text: 'Implementatiehandleiding: cloudgeconnecteerde HoloLens 2 implementatie op schaal met Remote Assist'
+    - text: Implementatiehandleiding - Cloudgeconnecteerde HoloLens 2 implementatie op schaal met Remote Assist
       url: hololens2-cloud-connected-overview.md
     - text: Implementatiehandleiding - Externe clients (verbonden met de cloud)
       url: hololens2-deployment-guide.md

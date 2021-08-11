@@ -1,5 +1,5 @@
 ---
-title: Windows Autopilot registratieondersteuning voor HoloLens 2
+title: Windows Ondersteuning voor Autopilot-registratie voor HoloLens 2
 description: Meer informatie over het krijgen van registratieondersteuning voor Autopilot op HoloLens 2 apparaten.
 author: joyjaz
 ms.author: v-jjaswinski
@@ -13,29 +13,29 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Automatische piloot
 manager: ylempidakis
-ms.openlocfilehash: cdd2ab68905d5cc82b1c5ccc50640112e857f2f4
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 2304e7ec18eb531cce431fb93c7abf38f2c9a1cef30f0d6c6fcaac6c95281f8e
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "111379497"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115661789"
 ---
-# <a name="hololens-2-registration-support-for-autopilot"></a>HoloLens 2 registratieondersteuning voor Autopilot
+# <a name="hololens-2-registration-support-for-autopilot"></a>HoloLens 2 Registratieondersteuning voor Autopilot
 
-Klanten en Microsoft Cloud Solution Providers (CSP's) kunnen zich nu registreren HoloLens 2 apparaten door rechtstreeks aanvragen te verzenden naar Microsoft-ondersteuning. Deze pagina bevat een overzicht van de vereisten voor de volgende ondersteunde Autopilot-registratiescenario's:
+Klanten en Microsoft Cloud Solution Providers (CSP's) kunnen zich nu registreren HoloLens 2 apparaten door rechtstreeks aanvragen te verzenden naar Microsoft-ondersteuning. Op deze pagina worden de vereisten beschreven voor de volgende ondersteunde Autopilot-registratiescenario's:
 
-- **HoloLens 2 Autopilot-registratie voor apparaten.** Verstuurt een aanvraag voor het registreren HoloLens 2 apparaten in Windows Autopilot.
-- **HoloLens 2-hashaanvraag voor apparaathardware in.** Verstuurt een aanvraag naar Microsoft-ondersteuning om u hardwarehashes te bieden die klanten of CSP's kunnen gebruiken om apparaten zelf te registreren via Microsoft Intune of microsoft Partner Center.
-- **HoloLens 2 Autopilot-registratie van het apparaat.** Hiermee wordt een aanvraag ingediend om apparaten uit Windows Autopilot verwijderen, die doorgaans worden gebruikt in scenario's met het einde van de levensduur van apparaten.
+- **HoloLens 2 Autopilot-apparaatregistratie.** Verstuurt een aanvraag om apparaten HoloLens 2 registreren bij Windows Autopilot.
+- **HoloLens 2 hardware-hashaanvraag voor het apparaat.** Verstuurt een aanvraag naar Microsoft-ondersteuning om u hardwarehashes te bieden die klanten of CSP's kunnen gebruiken om apparaten zelf te registreren via Microsoft Intune of microsoft Partner Center.
+- **HoloLens 2 Device Autopilot-deregistration .** Hiermee wordt een aanvraag ingediend om apparaten te verwijderen uit Windows Autopilot, meestal gebruikt in scenario's met het einde van de levensduur van apparaten.
 
-In de volgende tabel vindt u informatie over de gegevens die u moet verzamelen *voordat* u registratieaanvragen indient bij Microsoft-ondersteuning.
+In de volgende tabel vindt u informatie over de informatie die u moet verzamelen *voordat* u registratieaanvragen naar Microsoft-ondersteuning.
 
-| Vereiste informatie | Beschrijving | Autopilot-registratie  | Hardware-hashaanvraag | Autopilot-registratie |
+| Vereiste informatie | Description | Autopilot-registratie  | Hardware-hashaanvraag | Autopilot-registratie |
 ------------|-------------------------------|--------------------------------------------------|------------------------------|--------------------------------|
-|  Azure Active Directory tenant-id    |    Uw Azure Active Directory tenant-id is een guid (Globally Unique Identifier) die anders is dan de naam of het domein van uw organisatie.    Meld u aan bij Azure Portal om uw tenant-id [te vinden.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)    |     ✔️                         |                              |                         ✔️                        |
-|  Azure Active Directory Domain Name    |   Uw domeinnaam op het hoogste niveau; Bijvoorbeeld: contoso.com.    |     ✔️                         |                              |                         ✔️                        |
+|  Azure Active Directory Tenant-id    |    Uw Azure Active Directory tenant-id is een guid (globally unique identifier) die anders is dan de naam of het domein van uw organisatie.    Meld u aan bij Azure Portal om uw tenant-id [te vinden.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)    |     ✔️                         |                              |                         ✔️                        |
+|  Azure Active Directory Domeinnaam    |   Uw domeinnaam op het hoogste niveau; bijvoorbeeld contoso.com.    |     ✔️                         |                              |                         ✔️                        |
 |  Bewijs van eigendom    |   Controleer het eigendomsbewijs door de oorspronkelijke factuur van de verkoop of factuur in PDF-indeling te uploaden. Schermopnamen worden niet geaccepteerd. De factuur voor verkoop of factuur moet het volgende bevatten: Serienummers van apparaten. Bedrijfsnaam.     |     ✔️                         |              ✔️                |                         ✔️                        |
-|  Serienummers van apparaten    |   Upload een Excel-bestand in CSV-indeling met elk serienummer van een apparaat op een nieuwe regel.     |     ✔️                         |              ✔️                |                         ✔️                        |
+|  Serienummers van apparaten    |   Upload Excel bestand in CSV-indeling met elk serienummer van elk apparaat in een nieuwe regel.     |     ✔️                         |              ✔️                |                         ✔️                        |
 
 ## <a name="submit-support-requests"></a>Ondersteuningsaanvragen indienen
 

@@ -5,7 +5,7 @@ ms.assetid: cbe9aa3a-884f-4a92-bf54-8d4917bc3435
 ms.reviewer: v-miegge
 ms.date: 10/27/2020
 manager: jarrettr
-keywords: hololens, store, uwp, app, installeren
+keywords: hololens, store, uwp, app, install
 ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: bbbc60decb74942bd7930afb04297f78df33028a
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: c26c3a236a1047e62d480c27ec1bbb09faa63630eb29e0e1103546842d6a76d3
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635854"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664777"
 ---
 # <a name="find-install-and-uninstall-applications-from-the-microsoft-store"></a>Toepassingen zoeken, installeren en verwijderen uit de Microsoft Store
 
@@ -28,16 +28,16 @@ De Microsoft Store is uw go-to-bron voor apps en games die werken met HoloLens. 
 
 Apps op HoloLens een 2D-weergave of een holografische weergave. Apps die gebruikmaken van een 2D-weergave, zien eruit als vensters en kunnen overal om u heen worden geplaatst. Apps die gebruikmaken van een holografische weergave, omringen u en worden de enige app die u ziet.
 
-HoloLens biedt ondersteuning voor veel bestaande toepassingen van de Microsoft Store en nieuwe apps die specifiek zijn gebouwd voor HoloLens.  Dit artikel is gericht op holografische toepassingen van de Microsoft Store.
+HoloLens ondersteunt veel bestaande toepassingen uit de Microsoft Store en nieuwe apps die speciaal zijn gebouwd voor HoloLens.  Dit artikel is gericht op holografische toepassingen van de Microsoft Store.
 
 Lees Aangepaste holographic-toepassingen voor meer informatie over het installeren en uitvoeren [van aangepaste apps.](holographic-custom-apps.md)
 
 ## <a name="find-apps"></a>Apps zoeken
 
-Open de Microsoft Store in **het** menu Start. Blader vervolgens naar apps en games. U kunt [spraakopdrachten](hololens-cortana.md) gebruiken om te zoeken door 'Zoeken' te zeggen. Zodra het zoekvenster wordt geopend, wordt 'Beginnen met dicteren' weergegeven en wanneer u hier om wordt gevraagd, begint u met het zeggen van uw zoektermen.
+Open de Microsoft Store in **het** menu Start. Blader vervolgens naar apps en games. U kunt [spraakopdrachten](hololens-cortana.md) gebruiken om te zoeken door 'Zoeken' te zeggen. Zodra het zoekvenster wordt geopend, zegt u 'Beginnen met dicteren' en begint u vervolgens met het zeggen van uw zoektermen.
 
 > [!NOTE]
-> De systeemvereisten voor HoloLens zijn gebaseerd op de architectuur van de app-build. Als een app-build voor HoloLens (eerste generatie) niet is bijgewerkt met naar een nieuwere UWP in de store om het ARM-architectuurpakket op te nemen, is het niet beschikbaar voor HoloLens 2-apparaten. En als een HoloLens 2-app niet het x86-architectuurpakket bevat, is deze niet beschikbaar voor HoloLens (1e generatie). HoloLens van apparaten:
+> De systeemvereisten voor HoloLens zijn gebaseerd op de architectuur van de app-build. Als een app-build voor HoloLens (1e generatie) niet is bijgewerkt met naar een nieuwere UWP in de store om het ARM-architectuurpakket op te nemen, is het niet beschikbaar voor HoloLens 2-apparaten. En als een HoloLens 2-app niet het x86-architectuurpakket bevat, is deze niet beschikbaar voor HoloLens (1e generatie). HoloLens van apparaten:
 > - x86 = HoloLens (1e generatie)
 > - ARM = HoloLens 2
 
@@ -55,25 +55,25 @@ Open de Microsoft Store in **het** menu Start. Blader vervolgens naar apps en ga
 Als u apps wilt downloaden, moet u zijn aangemeld met een Microsoft-account. Sommige apps zijn gratis en kunnen direct worden gedownload. Voor apps waarvoor een aankoop is vereist, moet u zijn aangemeld bij de Store met uw Microsoft-account een geldige betalingswijze hebben.
 
 > [!NOTE]
-> Het account dat u gebruikt Microsoft Store hoeft niet hetzelfde te zijn als het account bij wie u bent aangemeld. Als u een werk- of schoolaccount op uw HoloLens moet u zich mogelijk aanmelden met uw persoonlijke account in de Store-app om een aankoop te doen.
+> Het account dat u gebruikt op Microsoft Store hoeft niet hetzelfde te zijn als het account waarin u bent aangemeld. Als u een werk- of schoolaccount op uw HoloLens moet u zich mogelijk aanmelden met uw persoonlijke account in de Store-app om een aankoop te doen.
 
 > [!TIP]
-> Als u een betalingswijze wilt instellen, gaat u [naar account.microsoft.com](https://account.microsoft.com/) selecteert u **Betalingswijze**& betalingsopties Betalingsopties  >    >  **toevoegen.**
+> Als u een betalingswijze wilt instellen, gaat u [naar account.microsoft.com](https://account.microsoft.com/) en selecteert u **Betalingsopties &** betalingsopties betalingsopties voor betaling  >    >  toevoegen.
 
-1. Als u het [ **menu Start** wilt openen,](holographic-home.md)voert u een [startbewegingen](/hololens/hololens2-basic-usage#start-gesture) of [een bloeibewegingen](hololens1-basic-usage.md) uit op HoloLens (1e generatie).
+1. Als u het [ **menu Start** wilt openen,](holographic-home.md)voert u een [startbewegingen](/hololens/hololens2-basic-usage#start-gesture) [of](hololens1-basic-usage.md) een bloembewegingen uit op HoloLens (1e generatie).
 
 1. Selecteer de Microsoft Store app. Nadat de Store-app is geopend:
    1. Gebruik de zoekbalk om te zoeken naar toepassingen. 
    1. Selecteer essentiële apps of apps die specifiek zijn gemaakt HoloLens uit een van de gecureerde categorieën.
    1. Selecteer rechtsboven in de Store-app de knop **'...'** en selecteer vervolgens **Mijn** bibliotheek om eerder gekochte apps weer te geven.
 
-1. Selecteer **Downloaden** of **installeren** op de pagina van de toepassing (mogelijk is een aankoop vereist).
+1. Selecteer **Downloaden** of **Installeren** op de pagina van de toepassing (mogelijk is een aankoop vereist).
 
 ## <a name="update-apps"></a>Apps bijwerken
 
-Als u een app wilt bijwerken die u hebt geïnstalleerd vanuit Microsoft Store, kunt u de app bijwerken vanuit de Microsoft Store app. Voor apps die voor de Microsoft Store voor Bedrijven zijn geïnstalleerd, kunt u deze apps ook bijwerken vanuit de Microsoft Store voor Bedrijven. 
+Als u een app wilt bijwerken die u hebt geïnstalleerd Microsoft Store, kunt u de app bijwerken vanuit de Microsoft Store app. Voor apps die voor de Microsoft Store voor Bedrijven zijn geïnstalleerd, kunt u deze apps ook bijwerken vanuit Microsoft Store voor Bedrijven. 
 
-1. Als u het [ **menu Start** wilt openen,](holographic-home.md)voert u een [startbewegingen](/hololens/hololens2-basic-usage#start-gesture) of [een bloeibewegingen](hololens1-basic-usage.md) uit op HoloLens (1e generatie).
+1. Als u het [ **menu Start** wilt openen,](holographic-home.md)voert u een [startbewegingen](/hololens/hololens2-basic-usage#start-gesture) [of](hololens1-basic-usage.md) een bloembewegingen uit op HoloLens (1e generatie).
 
 1. Selecteer de Store-app.
 
@@ -85,7 +85,7 @@ Als u een app wilt bijwerken die u hebt geïnstalleerd vanuit Microsoft Store, k
    > ![Microsoft Store app-schermopname.](images/store-update-1.png)
 
 1. Selecteer **Downloads en updates.**
-    1. Als uw apparaat eerder updates heeft geïdentificeerd, is er mogelijk een pijl-omlaag en een getal dat staat voor updates die in behandeling zijn.
+    1. Als uw apparaat eerder updates heeft geïdentificeerd, is er mogelijk een pijl-omlaag en een getal dat updates in behandeling vertegenwoordigt.
 
 1. Selecteer **Updates downloaden.** Uw apparaat zoekt nu naar updates en stelt deze in op downloaden en installeren. 
  
@@ -93,9 +93,9 @@ Als u een app wilt bijwerken die u hebt geïnstalleerd vanuit Microsoft Store, k
    > ![Microsoft Store app-schermopname van het ontvangen van updates.](images/store-update-2.png.jpg)
 
 > [!NOTE]
-> Als de apps op uw apparaat door uw organisatie zijn gedistribueerd, kunnen ze worden bijgewerkt via dezelfde commerciële app-beheermethoden. Als dit van toepassing is op uw situatie, leest u meer via ons overzicht van de implementatie [van commerciële apps.](app-deploy-overview.md)
+> Als de apps op uw apparaat zijn gedistribueerd door uw organisatie, kunnen ze worden bijgewerkt via dezelfde commerciële app-beheermethoden. Als dit van toepassing is op uw situatie, kunt u meer lezen via ons overzicht van de implementatie [van commerciële apps.](app-deploy-overview.md)
 >
-> Als u een aangepaste app wilt bijwerken die sideloaden of geïmplementeerd is, moet u dezelfde methode gebruiken met de bijgewerkte versie van uw app. Lees Aangepaste holographic-toepassingen voor meer informatie over het installeren en uitvoeren [van aangepaste apps.](holographic-custom-apps.md)
+> Als u een aangepaste app wilt bijwerken die is ge sideload of geïmplementeerd, moet u dezelfde methode gebruiken met de bijgewerkte versie van uw app. Lees aangepaste holographic-toepassingen voor meer informatie over het installeren en uitvoeren [van aangepaste apps.](holographic-custom-apps.md)
 
 ## <a name="uninstall-apps"></a>Apps verwijderen
 
@@ -109,13 +109,13 @@ Er zijn drie manieren om toepassingen te verwijderen. U kunt toepassingen verwij
 
 ### <a name="uninstall-from-the-microsoft-store"></a>Verwijderen van de Microsoft Store
 
-Open de Microsoft Store in het menu **Start** en blader naar de toepassing die u wilt verwijderen.  Op de pagina Store heeft elke geïnstalleerde toepassing een **knop Verwijderen.**
+Open de Microsoft Store in het menu **Start** en blader naar de toepassing die u wilt verwijderen.  Op de pagina Store heeft elke geïnstalleerde toepassing de **knop Verwijderen.**
 
 ### <a name="uninstall-from-the-start-menu"></a>Verwijderen van de Startmenu
 
 Blader in **het** menu Start of in **Alle apps** lijst naar de app. Selecteer en houd in de wacht totdat het menu wordt weergegeven. Selecteer **vervolgens Verwijderen.**
 
-### <a name="uninstall-from-settings"></a>Verwijderen uit Instellingen
-Selecteer in **het** menu Start **de optie Instellingen -> Apps.** Zoek de app in de lijst, selecteer deze en klik vervolgens **op Verwijderen.**
+### <a name="uninstall-from-settings"></a>Verwijderen van Instellingen
+Selecteer in **het** menu Start de **optie Instellingen -> Apps.** Zoek de app in de lijst, selecteer deze en klik vervolgens **op Verwijderen.**
 
 Als u een app niet kunt verwijderen, kunt u [feedback verzenden](/hololens/hololens-feedback) met behulp van de Feedback-hub.

@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e8adb2f796299c99a9152a5b245e8bdd0b768f05
-ms.sourcegitcommit: 78e5f26014e55c13fee9c2b75a80810fd2e77877
+ms.openlocfilehash: de5b8f052cfdd176f5b883661b2339764fd8ec24113e06b1286d9406acf3790f
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/31/2021
-ms.locfileid: "115009337"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664115"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider-preview voor Microsoft HoloLens
 
@@ -123,29 +123,29 @@ Omdat gebruikers vaak offlinediagnose gebruiken als mechanisme voor het verzamel
 
 Deze nieuwe functie wordt ingeschakeld wanneer uw apparaat wordt bijgewerkt en hoeft niet te worden ingeschakeld of beheerd. In elk geval dat deze nieuwe feedback niet kan worden weergegeven of gehoord, wordt offlinediagnose nog steeds gegenereerd.
 
-We hopen dat het met deze nieuwere toevoeging van feedback gemakkelijker is om diagnostische gegevens te verzamelen en sneller in staat zijn om uw problemen op te lossen.
+We hopen dat het met deze nieuwere toevoeging van feedback gemakkelijker is om diagnostische gegevens te verzamelen en sneller in staat te zijn om uw problemen op te lossen.
 
 ### <a name="use-only-private-store-apps-for-microsoft-store"></a>Alleen persoonlijke Store-apps gebruiken voor Microsoft Store
 
-Het beleid RequirePrivateStoreOnly is ingeschakeld voor HoloLens. Met dit beleid kan de Microsoft Store-app zodanig worden geconfigureerd dat alleen de persoonlijke opslag wordt weer geven die voor uw organisatie is geconfigureerd. De toegang beperken tot alleen de apps die u beschikbaar hebt gemaakt.
+Het beleid RequirePrivateStoreOnly is ingeschakeld voor HoloLens. Met dit beleid kan Microsoft Store-app zodanig worden geconfigureerd dat alleen de persoonlijke opslag wordt weer te geven die voor uw organisatie is geconfigureerd. Beperk de toegang tot alleen de apps die u beschikbaar hebt gemaakt.
 
 Meer informatie over [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
 
-### <a name="low-storage-log-collection-improvements"></a>Verbeteringen in het verzamelen van logboeken met weinig opslag
+### <a name="low-storage-log-collection-improvements"></a>Verbeteringen in de verzameling met logboeken met weinig opslag
 
-In scenario's waarin een apparaat weinig schijfruimte lijkt te hebben wanneer diagnostische logboeken worden verzameld, wordt een extra rapport met de **StorageDiagnostics.zip** gemaakt. De drempelwaarde voor lage opslag wordt automatisch bepaald door de Windows [opslag.](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)
+In scenario's waarin een apparaat weinig schijfruimte lijkt te hebben wanneer diagnostische logboeken worden verzameld, wordt er een extra rapport met de **StorageDiagnostics.zip** gemaakt. De drempelwaarde voor lage opslag wordt automatisch bepaald door de Windows [opslag te bepalen.](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)
 
 ### <a name="fixes-and-improvements"></a>Oplossingen en verbeteringen
 
-- Er is een bekend probleem opgelost Apparaatportal er geen prompt [was om vergrendelde bestanden te downloaden.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
-- Er is [een bekend probleem opgelost Apparaatportal problemen met time-outs](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out) voor het uploaden en downloaden van bestanden.
-- Behandelt problemen met het rapporteren van nalevingseigenschappen van HoloLens apparaten; Opnieuw opstarten kan vereist zijn om de juiste rapportage te kunnen triggeren op Insider-builds.  
+- Er is een bekend probleem opgelost voor Apparaatportal er geen prompt [was om vergrendelde bestanden te downloaden.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
+- Er is [een bekend probleem opgelost voor Apparaatportal met time-outs voor](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out) het uploaden en downloaden van bestanden.
+- Behandelt problemen met het rapporteren van nalevingseigenschappen van HoloLens apparaten; Opnieuw opstarten kan vereist zijn om de juiste rapportage te kunnen starten op Insider-builds.  
 - De in-box-versie van de Remote Assist is geïnstalleerd op nieuwe flashes.
 
 ## <a name="start-receiving-insider-builds"></a>Beginnen met het ontvangen van Insider-builds
 
 > [!NOTE]
-> Als u het apparaat niet recent hebt bijgewerkt, start u het apparaat opnieuw op om de status bij te werken en de meest recente build op te halen.
+> Als u het apparaat niet recent hebt bijgewerkt, start u het apparaat opnieuw op om de status bij te werken en de nieuwste build op te halen.
 > - De spraakopdracht 'Apparaat opnieuw opstarten' werkt goed. 
 > - U kunt ook de knop Opnieuw opstarten kiezen in Instellingen/Windows Insider-programma.
 >
@@ -153,19 +153,19 @@ In scenario's waarin een apparaat weinig schijfruimte lijkt te hebben wanneer di
 
 Ga op HoloLens 2 apparaat naar **Instellingen**  >  **Update & Security**  >  **Windows Insider-programma** en selecteer **Aan de slag.** Koppel het account dat u hebt gebruikt om u te registreren als Windows Insider.
 
-Windows insider wordt verplaatst naar Kanalen. De **fast-ring** wordt **het Dev-kanaal,** de langzame **ring** wordt de **bèta-kanaal** en de **Release Preview-ring** wordt het **Release Preview-kanaal.** Deze toewijzing ziet er als volgende uit:
+Windows insider gaat nu over op Kanalen. De **Fast-ring** wordt het **Dev-kanaal,** de langzame **ring** wordt de **bèta-kanaal** en de **Release Preview-ring** wordt het **Release Preview-kanaal.** Deze toewijzing ziet er als volgende uit:
 
-![Windows Uitleg insider-kanalen](images/WindowsInsiderChannels.png)
+![Windows Uitleg van Insider Channels](images/WindowsInsiderChannels.png)
 
-Zie [Introducing Windows Insider Channels (Introductie Windows Insider-kanalen)](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) op Windows Blogs.
-Selecteer vervolgens **Actieve ontwikkeling van Windows**, kies of u **Dev Channel-** of **bèta-kanaal-builds** wilt ontvangen en bekijk de programmavoorwaarden.
+Zie [Introducing Windows Insider Channels](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) (Introductie Windows Insider Channels) op Windows Blogs.
+Selecteer vervolgens **Actieve ontwikkeling van Windows**, kies of u het **Dev-kanaal** wilt ontvangen of bèta-kanaal **builds** en bekijk de programmavoorwaarden.
 Selecteer **Bevestigen > Nu opnieuw opstarten om** te voltooien. Nadat het apparaat opnieuw is opgestart, gaat u naar **Instellingen > Update & Security > Controleren** op updates om de nieuwste build op te halen.
 
 ### <a name="update-error-0x80070490-work-around"></a>Updatefout 0x80070490 work-around
 
-Als er een updatefout wordt 0x80070490 bij het bijwerken op het kanaal Dev of Beta, kunt u de volgende kortetermijnwerkfase proberen. Het omvat het verplaatsen van uw insider-kanaal, het ophalen van de update en vervolgens het terug verplaatsen van uw Insider-kanaal.
+Als er een updatefout wordt 0x80070490 bij het bijwerken op het kanaal Dev of Beta, probeert u de volgende kortetermijnversie. Dit omvat het verplaatsen van uw insider-kanaal, het ophalen van de update en vervolgens het terug verplaatsen van uw Insider-kanaal.
 
-#### <a name="stage-one---release-preview"></a>Fase 1 - releasevoorbeeld
+#### <a name="stage-one---release-preview"></a>Fase 1 - preview-versie
 
 1.  Instellingen, Update & Security en selecteer Windows Insider-programma **Release Preview Channel.**
 
@@ -173,49 +173,49 @@ Als er een updatefout wordt 0x80070490 bij het bijwerken op het kanaal Dev of Be
 
 #### <a name="stage-two---dev-channel"></a>Fase 2 - Dev-kanaal
 
-1. Instellingen, Update & Security Windows Insider-programma selecteer **Dev Channel.**
+1. Instellingen, Update & Security en selecteer Windows Insider-programma **Dev Channel.**
 
 2. Instellingen, & bijwerken, Windows Bijwerken, Controleren op **updates.**
 
 ## <a name="ffu-download-and-flash-directions"></a>FFU-download- en flashbeschrijvingen
 
-Als u wilt testen met een ffu die is ondertekend met een vlucht, moet u eerst uw apparaat ontgrendelen voordat de ffu met een ondertekende vlucht wordt geflitst.
+Als u wilt testen met een met een vlucht ondertekende ffu, moet u eerst uw apparaat ontgrendelen voordat de met de vlucht ondertekende ffu wordt geflitst.
 
 1. Op pc:
     1. Download ffu naar uw pc vanaf [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) .
     
     1. Installeer ARC (Advanced Recovery Companion) vanuit de Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) .
     
-1. On HoloLens- Flight Unlock: Open **Instellingen** Update & Security Windows Insider-programma registreer het apparaat en start  >    >   het opnieuw op.
+1. On HoloLens - Flight Unlock: open **Instellingen** Update & Security Windows Insider-programma registreer het apparaat  >    >   en start het opnieuw op.
 
-1. Flash-FFU: u kunt nu de met vlucht ondertekende FFU flashen met behulp van ARC.
+1. Flash-FFU: u kunt nu de met de vlucht ondertekende FFU flashen met behulp van ARC.
 
 ### <a name="provide-feedback-and-report-issues"></a>Feedback geven en problemen rapporteren
 
-Gebruik de [Feedback-hub-app op](hololens-feedback.md) uw HoloLens feedback te geven en problemen te melden. Door Feedback-hub zorgt u ervoor dat alle benodigde diagnostische gegevens worden opgenomen om onze technici te helpen het probleem snel op te sporen en op te lossen.  Problemen met de Chinese en Japanse versie van HoloLens moeten op dezelfde manier worden gerapporteerd.
+Gebruik de [Feedback-hub-app op](hololens-feedback.md) uw HoloLens feedback te geven en problemen te melden. Het Feedback-hub zorgt ervoor dat alle benodigde diagnostische gegevens worden opgenomen om onze technici te helpen snel fouten op te sporen en het probleem op te lossen.  Problemen met de Chinese en Japanse versie van HoloLens moeten op dezelfde manier worden gerapporteerd.
 
 > [!NOTE]
 > Zorg ervoor dat u de prompt accepteert waarin wordt gevraagd of u Feedback-hub documenten wilt openen (selecteer **Ja** wanneer u hier om wordt gevraagd).
 
 ## <a name="note-for-developers"></a>Opmerking voor ontwikkelaars
 
-U bent welkom en aangemoedigd om uw toepassingen te ontwikkelen met insider-builds van HoloLens.  Bekijk de documentatie [HoloLens ontwikkelaars om aan](https://developer.microsoft.com/windows/mixed-reality/development) de slag te gaan. Deze instructies werken met Insider-builds van HoloLens.  U kunt dezelfde builds van Unity en Visual Studio die u al gebruikt voor HoloLens ontwikkeling.
+U bent welkom en aangemoedigd om uw toepassingen te ontwikkelen met behulp van Insider-builds van HoloLens.  Bekijk de documentatie [HoloLens ontwikkelaars om](https://developer.microsoft.com/windows/mixed-reality/development) aan de slag te gaan. Deze instructies werken met Insider-builds van HoloLens.  U kunt dezelfde builds van Unity en Visual Studio die u al gebruikt voor HoloLens ontwikkeling.
 
-## <a name="stop-receiving-insider-builds"></a>Geen Insider-builds meer ontvangen
+## <a name="stop-receiving-insider-builds"></a>Ontvangst van Insider-builds stoppen
 
-Als u geen Insider-builds van Windows Holographic meer wilt ontvangen, kunt u zich uitloggen wanneer op [](hololens-recovery.md) uw HoloLens een productie-build wordt uitgevoerd, of u kunt uw apparaat herstellen met behulp van Advanced Recovery Companion om uw apparaat te herstellen naar een niet-Insider-versie van Windows Holographic.
+Als u geen Insider-builds van Windows Holographic meer wilt ontvangen, kunt u zich uitloggen wanneer uw [](hololens-recovery.md) HoloLens een productie-build wordt uitgevoerd. U kunt uw apparaat ook herstellen met behulp van advanced recovery companion om uw apparaat te herstellen naar een niet-Insider-versie van Windows Holographic.
 
 > [!CAUTION]
 > Er is een bekend probleem waarbij gebruikers die de registratie van Insider Preview-builds ongedaan maken nadat ze handmatig een nieuwe preview-build hebben geïnstalleerd, een blauw scherm krijgen. Daarna moeten ze hun apparaat handmatig herstellen. Bekijk meer over dit bekende probleem voor meer informatie over of u hier al dan niet [mee te maken zou krijgen.](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 
-Om te controleren of uw HoloLens een productie-build wordt uitgevoerd:
+Controleren of uw HoloLens een productie-build wordt uitgevoerd:
 
 1. Ga naar **Instellingen > System > About** en zoek het buildnummer.
 
 1. [Zie de releasenotities voor productie-buildnummers.](hololens-release-notes.md)
 
-Als u zich wilt af melden voor Insider-builds:
+U kunt als volgende kiezen voor Insider-builds:
 
-1. Ga op HoloLens een productie-build naar Update **Instellingen > & Security > Windows Insider-programma** en selecteer Stop Insider **builds.**
+1. Ga op HoloLens met een productie-build naar Instellingen > **Update & Security > Windows Insider-programma** en selecteer Stop Insider **builds.**
 
 1. Volg de instructies om uw apparaat uit te kiezen.

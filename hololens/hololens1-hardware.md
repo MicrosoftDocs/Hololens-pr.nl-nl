@@ -13,12 +13,12 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 02496d90f2dee320e62a99e07527f32b7a209a69
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: f76c8bb669f45ddde539c0149159287724b73707765703bf310530adb4e300c6
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639961"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662058"
 ---
 # <a name="hololens-1st-gen-hardware"></a>HoloLens hardware (1e generatie)
 
@@ -44,14 +44,14 @@ Uw HoloLens bevat de volgende functies:
 
 Het HoloLens bevat de volgende items:
 
-- **Neuspaden**. Selecteer een neusblok dat past bij de vorm van uw neus en plaats uw oog.
-- **Overheadband**. Wanneer u het apparaat HoloLens tijdens het verplaatsen, gebruikt u de overheadband om het apparaat op zijn plek te houden. Als u het apparaat bovendien langere tijd HoloLens dragen, is het mogelijk dat u het apparaat beter kunt laten dragen met behulp van de overheadband.
-- **Micro USB-kabel.** Gebruik de micro-USB-kabel om uw HoloLens te verbinden met de voeding voor laden of gebruik deze om uw HoloLens te verbinden met uw computer.
+- **Neuspaden**. Selecteer een neusblok dat past bij de vorm van uw neus en die geschikt is voor uw oog.
+- **Overheadband**. Wanneer u het apparaat HoloLens bewegen, gebruikt u de overheadband om het apparaat op zijn plek te houden. Als u het apparaat bovendien langere tijd HoloLens dragen, is het mogelijk dat u het apparaat beter kunt laten dragen met behulp van de overheadband.
+- **Micro USB-kabel.** Gebruik de micro-USB-kabel om uw HoloLens te verbinden met de voeding voor laden, of gebruik deze om uw apparaat te HoloLens uw computer.
 - **Voeding .** Sluit aan op een power-aansluiting.
 - **Microfiber-1.** Gebruik de energie om uw HoloLens op te schonen.
 
 >[!TIP]
->De [clicker](hololens1-clicker.md) wordt geleverd met HoloLens (1e Generatie), in een afzonderlijk vak.
+>De [clicker](hololens1-clicker.md) wordt geleverd met HoloLens (1e generatie), in een afzonderlijk vak.
 
 ### <a name="power-supply-details"></a>Stroomvoorzieningsdetails
 
@@ -70,7 +70,7 @@ Als u het interne acculadingspercentage wilt behouden/verhogen terwijl het appar
 | &nbsp; | &nbsp; |
 |---|---|
 | **Optica** | See-through holographic lenses (waveguides) |
-| **Holographic resolution** | 2 HD 16:9-lichtmotoren die in totaal 2,3 miljoen lichtpunten produceren |
+| **Holographic resolution** | 2 HD 16:9-lichte motoren die in totaal 2,3 miljoen lichtpunten produceren |
 | **Holographic density** | \>2,5.500 mensen (lichtpunten per radianus) |
 | **Weergave op basis van een oog** | Automatische kalibratie van de afstand van de leerlingen/studenten |
 
@@ -158,22 +158,22 @@ HoloLens is getest en voldoet aan de basisvereisten voor beveiliging tegen impac
 
 ## <a name="care-and-cleaning"></a>Zorg en ops cleaning
 
-Zorg dat u HoloLens gegevens zorgvuldig verwerkt. Als u uw apparaat wilt optillen, HoloLens en aanpassen, gebruikt u de arm van het &mdash; apparaat, niet de overheadband. Om het visor vrij te houden van handen en vingerafdrukken en om te voorkomen dat u er iets aan kunt doen. Herhaalde opsporing kan de visor beschadigen, dus probeer het apparaat schoon te houden.
+Uw gegevens HoloLens zorgvuldig afhandelen. Als u uw apparaat wilt optillen, HoloLens en aanpassen, gebruikt u de arm van het apparaat en niet de &mdash; overheadband. Om het visor vrij te houden van vingerafdrukken en om te voorkomen dat u er iets aan moet doen. Herhaalde opsporing kan de visor beschadigen, dus probeer uw apparaat schoon te houden.
 
-Gebruik geen schoonmakers of schoonmakers op uw HoloLens en verstop het niet in water of pas er water rechtstreeks op toe.
+Gebruik geen schoonmakers of schappen op uw HoloLens en verstop het niet in water of pas er rechtstreeks water op toe.
 
-Als u de visor wilt opsnetsen, verwijdert u alle welke welke met behulp van een haarlens of een bril in de vorm van een bril. Maak de microfiber een beetje koud met een kleine hoeveelheid gedisteerd water en gebruik het vervolgens om de visor in een cirkelvormige beweging te wissen.
+Als u de visor wilt opsnetsen, verwijdert u alle water met behulp van een bril of een bril in de vorm van een bril. Maak de microfiber licht koud met een kleine hoeveelheid gedistilleerd water en gebruik het vervolgens om de visor in een cirkelvormige beweging te wissen.
 
-Als u de rest van het apparaat wilt ops schonen, met inbegrip van de hoofdband en de apparaatarmen, gebruikt u een lint-vrije 120000000000000. Laat uw HoloLens volledig leeg voordat u deze opnieuw gebruikt.
+Als u de rest van het apparaat, met inbegrip van de hoofdband en de arm van het apparaat, wilt ops schonen, gebruikt u een lint-vrije 1200000000000000000000. Laat uw HoloLens volledig leeg voordat u deze opnieuw gebruikt.
 
-![Afbeelding die laat zien hoe u het visor kunt ops schonen](images/hololens-cleaning-visor.png)
+![Afbeelding die laat zien hoe u de visor opschoont](images/hololens-cleaning-visor.png)
 
 ## <a name="finding-the-serial-number"></a>Het serienummer zoeken
 
-Het serienummer voor HoloLens apparaten (eerste generatie) wordt onder de rechterlens afgedrukt.
-1. Houd het apparaat voor u in de hand alsof u het op uw hoofd zou dragen. Met het apparaat naar voren en naar voren gericht.
+Het serienummer voor HoloLens apparaten (eerste generatie) wordt afgedrukt onder de rechterlens.
+1. Houd het apparaat voor u vast alsof u het op uw hoofd zou gaan dragen. Met het apparaat naar voren en naar voren gericht.
 1. Met de lens nog steeds naar voren, spiegelt u het apparaat omlaag zodat u de onderkant ziet.
-1. De rechterlens is nu aan de linkerkant. Onder de lens op de band wordt het serienummer afgedrukt. 
+1. De rechterlens wordt nu aan de linkerkant afgedrukt onder de lens op de band is het serienummer. 
 
 Het serienummer kan ook worden gevonden via een verbonden pc:
 

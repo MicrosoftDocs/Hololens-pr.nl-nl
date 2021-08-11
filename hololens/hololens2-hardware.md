@@ -12,47 +12,47 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4c476a2adc8f03c37e17e6324960318b4806534e
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 759ef671e9a831e23809d5974595ce5928433e3e50ddb26e25a7a74ebe2559a3
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639740"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660016"
 ---
 # <a name="about-hololens-2"></a>Over HoloLens 2
 
 ![HoloLens 2 zijweergave](images/hololens2-breakdown.png)
 
-Microsoft HoloLens 2 is een niet-thered holografische computer.  Het verfijnt het holographic computing-traject dat is gestart door HoloLens (eerste generatie) om een meer vertrouwd en innige ervaring te bieden in combinatie met meer opties voor samenwerking in mixed reality. HoloLens 2 wordt uitgevoerd op [het Windows Holographic OS,](hololens-release-notes.md)dat is gebaseerd op een 'smaak' van Windows 10, waarmee gebruikers, beheerders en ontwikkelaars een robuust, krachtig en veilig platform hebben. 
+Microsoft HoloLens 2 is een niet-thered holografische computer.  Het verfijnt het holographic computing-traject dat is gestart door HoloLens (1e generatie) om een meer vertrouwd en onderdompelingservaring te bieden in combinatie met meer opties voor samenwerking in mixed reality. HoloLens 2 wordt uitgevoerd op [de Windows Holographic OS,](hololens-release-notes.md)die is gebaseerd op een 'smaak' van Windows 10, waarmee gebruikers, beheerders en ontwikkelaars een robuust, goed presterend en veilig platform hebben. 
 
 > [!NOTE]
-> De recente Windows 11 was gericht op de pc-versie van Windows. In mei [](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) 2021 hebben we een belangrijke update van het besturingssysteem voor HoloLens 2 uitgebracht en we werken aan een toekomstige release op basis van feedback van klanten voor dit najaar.
+> De recente aankondiging Windows 11 was gericht op de pc-versie van Windows. In mei [](https://techcommunity.microsoft.com/t5/mixed-reality-blog/what-s-new-in-windows-holographic-version-21h1/ba-p/2337067) 2021 hebben we een belangrijke update van het besturingssysteem voor HoloLens 2 uitgebracht en we werken aan een toekomstige release op basis van feedback van klanten voor dit najaar.
 
 Een gebruikersaccount is vereist voor het gebruik van HoloLens 2.
 
 ## <a name="hololens-components"></a>HoloLens onderdelen
 
-- **Visor**. Bevat de HoloLens sensoren en weergaven. U kunt het visor omhoog draaien terwijl u de HoloLens.
-- **Hoofdband**. Als u de hoofdband HoloLens, gebruikt u het aanpassingswiel om de hoofdband uit te vouwen. Als de HoloLens is, verstrapt u het aanpassingswiel door naar rechts te gaan, totdat de hoofdband vertrouwd is.
+- **Visor**. Bevat de HoloLens sensoren en worden weergegeven. U kunt de visor omhoog draaien terwijl u de HoloLens.
+- **Hoofdband**. Als u de hoofdband HoloLens, gebruikt u het aanpassingswiel om de hoofdband uit te vouwen. Nu de HoloLens is, vererk u het aanpassingswiel door naar rechts te gaan, totdat de hoofdband vertrouwd is.
 - **Helderheidsknoppen.** Wanneer u de HoloLens, staan de helderheidsknoppen aan de linkerkant van het visor in de buurt van uw masker.
-- **Volumeknoppen.** Wanneer u de HoloLens, staan de volumeknoppen aan de rechterkant van het visor bij uw masker.
+- **Volumeknoppen.** Wanneer u de HoloLens, staan de volumeknoppen aan de rechterkant van het visor in de buurt van uw masker.
 - **Aan/uit-knop**. Wanneer u de HoloLens, bevindt de aan/uit-knop zich aan de rechterkant van de buitenste buitenste omslag.
-- **USB-C-poort.** Wanneer u de HoloLens, bevindt de USB-C-poort zich aan de rechterkant van de buitenste buitenste bekabeling onder de aan/uit-knop.
+- **USB-C-poort.** Wanneer u de HoloLens, bevindt de USB-C-poort zich aan de rechterkant van de buitenste buitenste omslag onder de aan/uit-knop.
 
 ## <a name="in-the-box"></a>In het vak
 
 - **[Brow-pad](https://www.microsoft.com/p/microsoft-hololens-2-brow-pad/90z10rsslqp0)**. U kunt het pad naar behoefte verwijderen en vervangen.
-- **[Overheadband](https://www.microsoft.com/p/microsoft-hololens-2-overhead-strap/8wxl8wmk1f7z)**. Wanneer u het apparaat HoloLens bewegen, gebruikt u de overheadband om het apparaat op zijn plaats te houden. Wanneer u de HoloLens langere tijd draagt, kan de overheadband het apparaat beter laten dragen.
-- **[USB-C-kabel en kabel](https://www.microsoft.com/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5)**. De voeding wordt aangesloten op het voedingsuitvoer. Gebruik de USB-C-kabel om uw HoloLens te verbinden met de voeding voor laden of om uw HoloLens op uw computer.
-- **Microfiber 1.** Gebruik om uw HoloLens op te schonen.
+- **[Overheadband](https://www.microsoft.com/p/microsoft-hololens-2-overhead-strap/8wxl8wmk1f7z)**. Wanneer u het apparaat tijdens het verplaatsen HoloLens dragen, gebruikt u de overheadband om het apparaat op zijn plek te houden. Wanneer u de HoloLens langere tijd draagt, kan de overhead het apparaat beter laten dragen.
+- **[USB-C-kabel en kabel](https://www.microsoft.com/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5)**. De voeding wordt aangesloten op de voedingskabel. Gebruik de USB-C-kabel om uw HoloLens te verbinden met de voeding voor laden of om uw HoloLens te verbinden met uw computer.
+- **Microfiber-1.** Gebruik om uw HoloLens op te schonen.
 
-### <a name="power-supply-details"></a>Voedingdetails
+### <a name="power-supply-details"></a>Stroomvoorzieningsdetails
 
-De voeding en de USB-kabel die bij het apparaat worden meegeleverd, zijn het beste ondersteunde mechanisme voor laden. De voeding is een 18W-voorraad.  Het levert 9V op 2A.
+De voeding en de USB-kabel die bij het apparaat worden meegeleverd, zijn het meest ondersteunde mechanisme voor laden. De voeding is 18W groot.  Het levert 9V op 2A.
 
 De laadsnelheid en snelheid kunnen variëren, afhankelijk van de omgeving waarin het apparaat wordt uitgevoerd.
 
-Als u het percentage interne acculadingen wilt behouden/verhogen terwijl het apparaat is aan, moet het minimaal zijn verbonden met een capaciteit van 15 W.
+Als u het interne acculadingspercentage wilt behouden/verhogen terwijl het apparaat is aan, moet het minimaal zijn verbonden met een accu van 15W.
 
 ## <a name="device-specifications"></a>Apparaatspecificaties
 
@@ -60,9 +60,9 @@ Als u het percentage interne acculadingen wilt behouden/verhogen terwijl het app
 
 |   | &nbsp; |
 |---|---|
-| **Optica** | Kijk eens naar holografische lenzen (waveguides) |
+| **Optica** | See-through holographic lenses (waveguides) |
 | **Holographic resolution** | 2k 3:2 lichte motoren |
-| **Holographic density** | >2,5.500 punten (lichtpunten per radiale) |
+| **Holographic density** | >2,5.500 mensen (lichtpunten per radiale) |
 | **Weergave op basis van een oog** | Weergaveoptimalisatie voor 3D-oogpositie |
 
 ### <a name="sensors"></a>Sensoren
@@ -70,7 +70,7 @@ Als u het percentage interne acculadingen wilt behouden/verhogen terwijl het app
 |   | &nbsp; |
 |---|---|
 | **Head tracking** | 4 zichtbare lichte camera's |
-| **Oogtracking** | 2 Bewakingscamera's (IR) |
+| **Oog bijhouden** | 2 IR-camera's |
 | **Diepte** | 1 MP Time-of-Flight-dieptesensor |
 | **Inertial measurement unit (IMU)** | Versnellingsmeter,scope, snelheidsmeter |
 | **Camera** | 8-MP stills, 1080p30 video |
@@ -78,13 +78,13 @@ Als u het percentage interne acculadingen wilt behouden/verhogen terwijl het app
 ![HoloLens 2 Sensoren](images/hololens2-front-view.png)
 
 > [!NOTE]
-> Bestrijken geen van de sensoren die in de afbeelding worden genoemd. De camera's voor headtracking hebben een zeer breed FOV. Bovendien mag er niets om de camera's heen staan.
+> Bedekking geen van de sensoren die in de afbeelding worden genoemd. De head tracking camera's hebben een zeer brede FOV, mag er niets omheen naast ze niet dekt.
 
 ### <a name="audio-and-speech"></a>Audio en spraak
 
 |   | &nbsp; |
 |---|---|
-| **Microfoon array** | 5 kanalen |
+| **Microfoon-matrix** | 5 kanalen |
 | **Luidsprekers** | Ingebouwd ruimtelijk geluid |
 
 ### <a name="compute-and-connectivity"></a>Compute en connectiviteit
@@ -104,10 +104,10 @@ Als u het percentage interne acculadingen wilt behouden/verhogen terwijl het app
 |   | &nbsp; |
 |---|---|
 | **Batterijleven** | 2-3 uur actief gebruik. Maximaal twee weken stand-bytijd. |
-| **Batterijtechnologie** | [Lithium-accu's](https://www.microsoft.com/download/details.aspx?id=43388) |
+| **Accutechnologie** | [Lithium-accu's](https://www.microsoft.com/download/details.aspx?id=43388) |
 | **Laadgedrag** | Volledig functioneel bij het laden |
 | **Koeltype** | Passief gekoeld (geen ventilatoren) |
-| **Stroomkabels** | Als u het percentage interne acculadingen wilt behouden/verhogen terwijl het apparaat is aan, moet het minimaal zijn verbonden met een capaciteit van 15 W. |
+| **Stroomkabels** | Als u het interne acculadingspercentage wilt behouden/verhogen terwijl het apparaat is aan, moet het minimaal zijn verbonden met een accu van 15W. |
 
 ### <a name="fit"></a>Geschikt voor
 
@@ -151,7 +151,7 @@ Als u het percentage interne acculadingen wilt behouden/verhogen terwijl het app
 | **Films & TV** | [Films & TV](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab) biedt u de nieuwste entertainment in één eenvoudige, snelle en elegante app. |
 | **OneDrive** | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) kunt u uw bestanden vanaf al uw apparaten overal openen en bewerken.  |
 | **Foto's** | [Foto's](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab) kunt u uw foto's en video's bekijken en bewerken, films maken en maken.  |
-| **Instellingen** | De Instellingen app is de plek waar u kunt aanpassen hoe Windows Holographic in detail werkt.  |
+| **Instellingen** | De Instellingen app is de plek waar u de manier waarop Windows Holographic werkt, kunt aanpassen.  |
 | **Tips** | [Tips](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab) kunt u verrassende en minder bekende dingen leren die u kunt doen in Windows Holographic. |
 
 ## <a name="device-certifications"></a>Apparaatcertificeringen
@@ -164,7 +164,7 @@ Als u het percentage interne acculadingen wilt behouden/verhogen terwijl het app
 * [SAR-informatie](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ### <a name="regulatory-information"></a>Informatie over regelgeving
-[HoloLens Regelgeving:](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)bevat informatie over temperatuur, verwijdering, radio- en tv-interferentie, en meer.
+[HoloLens Regelgeving:](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)bevat informatie over temperatuur, verwijdering, radio- en tv-interferentie en meer.
 
 ## <a name="warranty-information"></a>Garantiegegevens
 
@@ -192,15 +192,15 @@ Niet bedoeld voor gebruik door kinderen die jonger zijn dan 13.
 
 > [!NOTE]
 > - Eenheid: De zwarte doos in HoloLens 2 wordt verkocht.
-> - 100000 verzender: De verpakking van de beschermde verzending rond eenheid.
+> - 10000 verzender: de verpakking van de beschermde verzending rond Eenheid.
 
 ## <a name="finding-the-serial-number"></a>Het serienummer zoeken
 
-Het serienummer voor HoloLens 2 apparaten wordt onder de visor afgedrukt.
+Het serienummer voor HoloLens 2 apparaten wordt onder het visor afgedrukt.
 
 1. Til de visor van het apparaat omhoog.
 1. Kijk in de buurt van hetrow-pad.
-1. U vindt het serienummer dat zich dicht bij de auto bevindt.
+1. U vindt het serienummer in de buurt van het serienummer.
 
    <img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 

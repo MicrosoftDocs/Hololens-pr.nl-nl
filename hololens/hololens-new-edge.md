@@ -9,12 +9,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: 41978c626328903cf480a3315d56841f187bc123
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 35d3b38cd442198aec8aaabf46ff7d842c1bf599dbada68718c1d0fa548b2030
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640182"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663224"
 ---
 # <a name="introducing-the-new-microsoft-edge"></a>Introductie van de nieuwe Microsoft Edge
 
@@ -48,7 +48,7 @@ Hier vindt u nuttige informatiebronnen voor meer informatie over het beheren van
 - Volledige [Microsoft Edge Enterprise-documentatie](/deployedge/)
 
 > [!IMPORTANT]
-> Vanwege het grote aantal browserbeleidsregels dat door de nieuwe Microsoft Edge wordt ondersteund, kan ons team niet garanderen dat elk nieuw beleid werkt op HoloLens 2. We hebben echter getest en bevestigd dat het nieuwe Microsoft Edge-equivalent van elk verouderd Microsoft Edge-beleid dat eerder werd ondersteund op HoloLens 2 werken zoals verwacht. Zie Microsoft Edge (oudere versie) voor [Microsoft Edge-toewijzing](/deployedge/microsoft-edge-policy-map-legacy-to-newedge) van beleid om de nieuwe Microsoft Edge-equivalent te vinden van elk verouderd Microsoft Edge-browserbeleid dat u gebruikte met HoloLens 2.
+> Vanwege het grote aantal browserbeleidsregels dat door de nieuwe Microsoft Edge wordt ondersteund, kan ons team niet garanderen dat elk nieuw beleid werkt op HoloLens 2. We hebben echter getest en bevestigd dat de nieuwe Microsoft Edge equivalent is van elk verouderd Microsoft Edge-beleid dat eerder werd ondersteund op HoloLens 2 zoals verwacht. Zie Microsoft Edge (oudere versie) voor [Microsoft Edge-toewijzing](/deployedge/microsoft-edge-policy-map-legacy-to-newedge) van beleid om de nieuwe Microsoft Edge-equivalent te vinden van elk verouderd Microsoft Edge-browserbeleid dat u gebruikte met HoloLens 2.
 >
 > Er zijn ten minste twee nieuwe Microsoft Edge beleidsregels die niet *werken* met HoloLens 2:
 > - EnterpriseModeSiteList
@@ -143,7 +143,7 @@ De 360 Viewer-extensie is gebouwd op WebXR en wordt automatisch geïnstalleerd n
 
 1. De eerste keer dat u een WebXR-ervaring op een specifiek domein probeert te starten, vraagt de browser om toestemming om een in immersieve weergave in te voeren. Selecteer **Toestaan.**
 1. Gebruik [HoloLens 2 om de ervaring](hololens2-basic-usage.md#the-hand-tracking-frame) te manipuleren.
-1. Als de ervaring geen  knop Afsluiten heeft, gebruikt u de beweging [Start om](hololens2-basic-usage.md#start-gesture) terug te keren.
+1. Als de ervaring geen  knop Afsluiten heeft, gebruikt u de beweging [Start om](hololens2-basic-usage.md#start-gesture) terug te keren naar huis.
 
 **Aanbevolen WebXR-voorbeelden**
 - 360 Viewer (zie de volgende sectie)
@@ -168,4 +168,4 @@ De 360 Viewer-extensie is gebouwd op WebXR en wordt automatisch geïnstalleerd n
 
 ### <a name="providing-feedback-on-webxr-and-360-viewer"></a>Feedback geven over WebXR en 360 Viewer
 
-Deel feedback en fouten met ons team via de functie **Feedback** verzenden in de nieuwe Microsoft Edge.
+Deel feedback en bugs met ons team via de functie **Feedback** verzenden in de nieuwe Microsoft Edge.

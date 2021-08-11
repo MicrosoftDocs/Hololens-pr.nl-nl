@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6407517bca9efd02fdaf45a78cba7a215ec05670
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: f9435ce94986a851bb7744eeea48fa6e411454f5090d7ae11c869ba6f27dc942
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637061"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660246"
 ---
 # <a name="deploy---corporate-connected-guide"></a>Implementeren - Handleiding voor verbonden bedrijfsgegevens
 
@@ -31,7 +31,7 @@ Daarna kunt u bevestigen dat u zowel een testhandleiding kunt maken als gebruike
 
 ## <a name="enrollment-validation"></a>Validatie van inschrijving
 
-Nu alles goed is geconfigureerd voor Azure AD- en MDM-inschrijving, moet de rest een uitlijning zijn. U hebt een Wi-Fi- en HoloLens-apparaat en een van de eerder geconfigureerde Azure AD-gebruikersaccounts nodig.
+Nu alles goed is geconfigureerd voor Azure AD- en MDM-inschrijving, is de rest nu een module. U hebt een Wi-Fi- en HoloLens-apparaat en een van de eerder geconfigureerde Azure AD-gebruikersaccounts nodig.
 
 Als uw apparaat momenteel niet de status fabrieksinstellingen heeft, is het nu een goed moment om het apparaat te [reflashen.](/hololens/hololens-recovery#clean-reflash-the-device)
 
@@ -43,7 +43,7 @@ Als uw apparaat momenteel niet de status fabrieksinstellingen heeft, is het nu e
 
 4. Wanneer de inschrijving is geslaagd, wordt u gevraagd een pincode in te stellen. Deze pincode is uniek voor dit apparaat voor deze gebruiker. U wordt ook gevraagd om Iris-scans, spraakgegevens en telemetrie-instellingen en tot slot kunt u leren hoe u het startmenu opent en OOBE voltooit.
 
-5. Zodra u op de start Mixed Reality, opent u de Startmenu met behulp van de **beweging Start** die u zojuist hebt geleerd.
+5. Zodra u in de Mixed Reality start bent, opent u de Startmenu met behulp van de **beweging Start** die u zojuist hebt geleerd.
 
 6. Selecteer de **Instellingen app** en selecteer **Systeem.** Het eerste stukje informatie dat u ziet, is de Apparaatnaam, die voor uw HoloLens 2 HOLOLENS wordt, gevolgd door een &quot; &quot; tekenreeks van zes tekens.
 
@@ -69,7 +69,7 @@ Als uw apparaat momenteel niet de status fabrieksinstellingen heeft, is het nu e
 
 ## <a name="wi-fi-certificate-validation"></a>Wi-Fi certificaatvalidatie
 
-Op dit moment moet het apparaat het Wi-Fi ontvangen. De eenvoudigste validatie die u kunt uitvoeren, is proberen verbinding te maken met Wi-Fi verbinding waarvoor&#39;het certificaat hebt ontvangen. Open de  Instellingen app, navigeer naar **Network &amp; Internet**  ->  **Wi-Fi** en selecteer de Wi-Fi-verbinding. Nadat u verbinding hebt gemaakt, opent u Microsoft Edge app en bevestigt u dat u naar een website kunt navigeren.
+Op dit moment moet het apparaat het Wi-Fi ontvangen. De eenvoudigste validatie die u kunt uitvoeren, is proberen verbinding te maken met Wi-Fi verbinding waarvoor u&#39;certificaat hebt ontvangen. Open de  Instellingen app, navigeer naar **Network &amp; Internet**  ->  **Wi-Fi** en selecteer de Wi-Fi-verbinding. Nadat u verbinding hebt gemaakt, opent u Microsoft Edge app en bevestigt u dat u naar een website kunt navigeren.
 
 Als u wilt bevestigen dat u het certificaat op het apparaat hebt ontvangen, kunt u [Certificaatbeheer gebruiken.](/hololens/certificate-manager)
 

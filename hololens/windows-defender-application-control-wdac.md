@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a27a16913873c5245f734dbe084eb2b7ed007c20
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: ab05f1bbe1570d4966932d6f8ac857e5bd2d8a7d3a8f5b93aaba0335eda05b01
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639927"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665553"
 ---
 # <a name="windows-defender-application-control---wdac"></a>Windows Defender Toepassingsbeheer - WDAC
 
@@ -69,7 +69,7 @@ Hier is een lijst met veelgebruikte en In-Box apps voor HoloLens 2 apparaten.
 | Instellingen                   | HolographicSystemSettings_cw5n1h2txyewy            |
 | Tips                       | Microsoft.HoloLensTips_8wekyb3d8bbwe               |
 
-- 1: als u App-installatieprogramma blokkeert, wordt alleen de App-installatieprogramma-app geblokkeerd en niet apps die zijn geïnstalleerd vanuit andere bronnen, zoals de Microsoft Store of van uw MDM-oplossing.
+- 1: als App-installatieprogramma blokkeert, wordt alleen de App-installatieprogramma-app geblokkeerd en niet apps die zijn geïnstalleerd vanuit andere bronnen, zoals de Microsoft Store of van uw MDM-oplossing.
 
 ### <a name="how-to-find-a-package-family-name"></a>Een pakketfamilienaam zoeken
 

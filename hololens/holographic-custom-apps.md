@@ -16,18 +16,18 @@ ms.custom:
 - CSSTroubleshooting
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: a179032978e1fc062273a6754e3b0a1ad50a5211
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 7d564fd00567033060428d5b47b34ddf827dea2fdeeb8955c73bc22e4ba87164
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635905"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664949"
 ---
 # <a name="manage-custom-apps-for-hololens-1st-gen"></a>Aangepaste apps voor HoloLens beheren (eerste generatie)
 
 HoloLens ondersteunt veel bestaande toepassingen uit de Microsoft Store, evenals nieuwe apps die specifiek zijn gebouwd voor HoloLens. Dit artikel is gericht op aangepaste holografische toepassingen.  
 
-Zie Apps beheren met de Store voor meer informatie over [Store-apps.](holographic-store-apps.md)
+Zie Apps beheren met de Store voor meer [informatie over Store-apps.](holographic-store-apps.md)
 
 > [!IMPORTANT]
 > De volgende informatie is gemaakt voor de HoloLens (1e generatie), op dat moment ook wel de HoloLens Developer Edition genoemd. Het sideloaden van apps via de apparaatportal en het installeren van apps via Visual Studio waren toen heel gebruikelijk. Voor bedrijfsimplementaties wordt niet aangeraden om de ontwikkelaarsmodus in te schakelen, die door beide methoden wordt gebruikt. Als u geïnteresseerd bent in een implementatiemethode voor beveiligde apps, raadpleegt u [appbeheer: overzicht.](app-deploy-overview.md)
@@ -71,7 +71,7 @@ U kunt uw eigen toepassingen op HoloLens installeren met behulp van de Apparaatp
    
 1. Bouw uw oplossing.
 
-1. Als u de app wilt implementeren vanaf uw ontwikkel-pc naar HoloLens, selecteert u **Externe machine.** Als u al een bestaande build op de HoloLens, selecteert u **Ja om** deze nieuwere versie te installeren.  
+1. Als u de app wilt implementeren vanaf uw ontwikkel-pc naar HoloLens, selecteert **u Externe machine.** Als u al een bestaande build op de HoloLens, selecteert u **Ja om** deze nieuwere versie te installeren.  
 
    ![Implementatie van externe machines voor apps Microsoft HoloLens in Visual Studio](images/vs2015-remotedeployment.jpg)  
    

@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5fed56d7a0beeda0a0d96eddc63aaee872f3e52d
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 1e478e366b8ad70243f6fffc47cd62e847af837637a992ebb60fc80bf6774186
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639094"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664306"
 ---
 # <a name="connect-to-bluetooth-and-usb-c-devices"></a>Verbinding maken voor Bluetooth USB-C-apparaten
 
@@ -26,7 +26,7 @@ ms.locfileid: "113639094"
 
 HoloLens 2 ondersteunt de volgende klassen van Bluetooth apparaten:
 
-- [HADOEEN:](/windows-hardware/drivers/hid/)
+- [HADOE:](/windows-hardware/drivers/hid/)
     - Muis
     - Toetsenbord
 - Audio-uitvoerapparaten (A2DP)
@@ -35,7 +35,7 @@ HoloLens 2 ondersteunt de volgende Bluetooth API's:
 - [GATT-server](/windows/uwp/devices-sensors/gatt-server) en [-client](/windows/uwp/devices-sensors/gatt-client)
 - [Rfcomm](/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm)
 >[!IMPORTANT]
-> Mogelijk moet u bijbehorende companion-apps installeren vanuit Microsoft Store om daadwerkelijk gebruik te kunnen maken van de APPARATEN VAN HET PROGRAMMA en de GATT.
+> Mogelijk moet u bijbehorende companion-apps installeren van Microsoft Store om daadwerkelijk gebruik te kunnen maken van de APPARATEN VAN HET PROGRAMMA en de GATT.
 
 HoloLens (eerste generatie) ondersteunt de volgende klassen van Bluetooth apparaten:
 
@@ -58,7 +58,7 @@ HoloLens (eerste generatie) ondersteunt de volgende klassen van Bluetooth appara
 
 ## <a name="disable-bluetooth"></a>Schakel Bluetooth
 
-Met deze procedure worden de RF-onderdelen van de Bluetooth uitgeschakeld en worden alle Bluetooth uitgeschakeld op Microsoft HoloLens.
+Met deze procedure worden de RF-onderdelen van het Bluetooth uitgeschakeld en worden alle Bluetooth uitgeschakeld op Microsoft HoloLens.
 
 1. Gebruik de bloembewegingen (HoloLens (eerste generatie)) of het beginbewegingen (HoloLens 2) om naar **Start** te gaan en selecteer vervolgens **Instellingen**  >  **Apparaten.**
 
@@ -84,7 +84,7 @@ HoloLens 2 ondersteunt de volgende klassen USB-C-apparaten:
 ### <a name="usb-c-external-microphone-support"></a>Ondersteuning voor externe USB-C-microfoon
 
 > [!IMPORTANT]
-> Als u een **USB-microfoon aansluit, wordt deze niet automatisch ingesteld als invoerapparaat.** Bij het aansluiten van een set USB-C-hoofdtelefoon zien gebruikers dat de audio van de hoofdtelefoon automatisch wordt omgeleid naar de hoofdtelefoon, maar het HoloLens-besturingssysteem geeft prioriteit aan de interne microfoon array boven elk ander invoerapparaat. **Volg de onderstaande stappen om een USB-C-microfoon te gebruiken.**
+> Als u een **USB-microfoon aansluit, wordt deze niet automatisch ingesteld als invoerapparaat.** Bij het aansluiten van een set USB-C-hoofdtelefoon zien gebruikers dat de audio van de hoofdtelefoon automatisch wordt omgeleid naar de hoofdtelefoon, maar het besturingssysteem van de HoloLens geeft prioriteit aan de interne microfoon array boven elk ander invoerapparaat. **Volg de onderstaande stappen om een USB-C-microfoon te gebruiken.**
 
 > [!NOTE]
 > Externe microfoons kunnen niet worden gebruikt in builds vóór [Windows Holographic, versie 21H1](hololens-release-notes.md#windows-holographic-version-21h1) en hoger. 

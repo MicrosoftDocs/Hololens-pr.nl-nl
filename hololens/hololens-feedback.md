@@ -1,6 +1,6 @@
 ---
 title: Stuur ons feedback
-description: Feedback voor HoloLens- en Windows Mixed Reality maken met behulp van de Feedback-hub.
+description: Feedback voor ontwikkelaars die actie kunnen ondernemen HoloLens en Windows Mixed Reality maken met behulp van de Feedback-hub.
 ms.assetid: b9b24c72-ff86-44a9-b30d-dd76c49479a9
 author: mattzmsft
 ms.author: mazeller
@@ -17,57 +17,57 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f8704b7e1b75cd08bc282eb0c2df22b8266cb9fd
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 1f59c76fa760710d1b1333e1318784f5a488851b640c1cbd4ed6f673ae60029a
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "111377900"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664191"
 ---
 # <a name="feedback-for-hololens"></a>Feedback voor HoloLens
 
-Gebruik de Feedback-hub om ons te laten weten welke functies u geweldig vindt, welke functies u zonder kunt doen en hoe iets beter kan. Het technische team gebruikt intern hetzelfde mechanisme om fouten op te sporen en op te lossen. Gebruik daarom Feedback-hub om eventuele fouten te melden die u ziet. We luisteren!
+Gebruik de Feedback-hub ons te laten weten van welke functies u houdt, welke functies u zonder kunt doen en hoe iets beter kan. Het technische team gebruikt intern hetzelfde mechanisme om fouten bij te houden en op te lossen. Gebruik daarom Feedback-hub om eventuele fouten te melden die u ziet. We luisteren!
 
-Feedback-hub is een uitstekende manier om het technische team te waarschuwen voor fouten en ervoor te zorgen dat toekomstige updates zijn bijgewerkt en consistenter zonder fouten. Er Feedback-hub echter geen antwoord. Als u direct hulp nodig hebt, kunt u feedback geven, de samenvatting noteren die u hebt  opgegeven voor uw feedback en vervolgens contact op nemen met [hololens-ondersteuning:](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) gebruik de functie Delen in Feedback-hub om een directe koppeling naar de URL te delen. Feedback-hub haalt dagelijks veel gegevens op. De URL helpt ons uw feedback snel te identificeren.
+Feedback-hub is een uitstekende manier om het technische team te waarschuwen voor fouten en om ervoor te zorgen dat toekomstige updates gezond zijn en consistenter zonder fouten zijn. Er Feedback-hub echter geen antwoord. Als u direct hulp nodig hebt, kunt u feedback geven, de samenvatting noteren die u hebt  opgegeven voor uw feedback en vervolgens contact op nemen met HoloLens-ondersteuning: gebruik de functie Delen in Feedback-hub om een directe koppeling naar de URL [te](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) delen. Feedback-hub dagelijks veel gegevens op haalt, helpt de URL ons uw feedback snel te identificeren.
 
 > [!NOTE]  
 >  
-> - Zorg ervoor dat u de huidige versie van Feedback-hub. Hiervoor selecteert u **Start**  >  **Microsoft Store** en selecteert u vervolgens het beletselletsel **(...**). Selecteer vervolgens **Downloads en updates Updates**  >  **downloaden.**  
+> - Zorg ervoor dat u de huidige versie van Feedback-hub. Als u dit wilt doen,  >  **selecteert Microsoft Store**, en selecteert u vervolgens het beletsel **(...**). Selecteer vervolgens **Downloads en updates Updates**  >  **downloaden.**  
 >  
-> - We raden u ten zeerste aan om de telemetrie van uw apparaat in te stellen op Optioneel om de best mogelijke gegevens te bieden voor het **oplossen van problemen.** U kunt deze waarde instellen tijdens de OOBE (Out-of-Box-Experience) of met behulp van de app Instellingen. Als u dit wilt doen met behulp van Instellingen, **selecteert u**  >    >  **Instellingen starten Privacy** App  >  **Diagnostics**  >  **op**.
+> - We raden u ten zeerste aan om de telemetrie van uw apparaat in te stellen op Optioneel om de best mogelijke gegevens te bieden voor het **oplossen van problemen.** U kunt deze waarde instellen tijdens de OoBE (Out-of-Box-Experience) of met behulp van de Instellingen app. Als u dit wilt doen met behulp Instellingen, **selecteert u**  >  **Start Instellingen**  >  **Privacy**  >  **App Diagnostics**  >  **op**.
 
 ## <a name="use-the-feedback-hub"></a>Gebruik de Feedback-hub
 
-1. Gebruik de **beweging Starten** om het menu **Start te** openen en selecteer vervolgens **Feedback-hub.** De app wordt geopend in uw omgeving.
+1. Gebruik de **beweging Starten** om het menu **Start te** openen en selecteer vervolgens **Feedback-hub**. De app wordt geopend in uw omgeving.
 
    ![Feedback-app op HoloLens Startmenu](./images/hololens2-feedbackhub-tile.png)
    > [!NOTE]  
    > Als u de lijst **Feedback-hub,** selecteert u **Alle apps om** de volledige lijst met apps op het apparaat weer te geven.
 
-1. Als u wilt zien of iemand anders vergelijkbare feedback heeft gegeven, voert u enkele trefwoorden over het onderwerp in het **zoekvak Feedback** in.
+1. Als u wilt zien of iemand anders soortgelijke feedback heeft gegeven, voert u enkele trefwoorden over het onderwerp in het **zoekvak Feedback** in.
 1. Als u vergelijkbare feedback vindt, selecteert u deze,  voegt u eventuele aanvullende informatie toe in het vak Een opmerking schrijven en selecteert u **vervolgens Upvote**.
 1. Als u geen vergelijkbare feedback vindt, selecteert u **Nieuwe feedback toevoegen.**
 
    ![Nieuwe feedback toevoegen](./images/hololens-feedback-1.png)
 
-1. Voer **in Uw feedback samenvatten** een korte samenvatting van uw feedback in. Voeg vervolgens details toe in **het vak Uitleg in meer** detail. Hoe meer details u op geeft, zoals hoe u dit probleem reproduceert en wat het effect ervan is, hoe nuttiger uw feedback is. Wanneer u klaar bent, selecteert u **Volgende.**
+1. Voer **in Uw feedback samenvatten** een korte samenvatting van uw feedback in. Voeg vervolgens details toe in **het vak Uitleg in meer** details. Hoe meer details u op geeft, zoals hoe u dit probleem reproduceert en wat het effect ervan is, hoe nuttiger uw feedback is. Wanneer u klaar bent, selecteert u **Volgende.**
 
-1. Selecteer een onderwerp **in Een categorie kiezen** en selecteer vervolgens een subcategorie in Een **subcategorie selecteren.** In de volgende tabel worden de categorieën beschreven die beschikbaar zijn in de categorie Windows Holographic.
+1. Selecteer een onderwerp **in Een categorie kiezen** en selecteer vervolgens een subcategorie in Een **subcategorie selecteren.** In de volgende tabel worden de categorieën beschreven die beschikbaar zijn in Windows Holographic-categorie.
 
    > [!NOTE]  
    > **Commerciële klanten:** als u een fout wilt melden die is gerelateerd aan MDM, inrichting of een ander aspect van apparaatbeheer, selecteert u de categorie **Enterprise Management** en de **subcategorie** Apparaat.
 
    |Categorie |Beschrijving |
    | --- | --- |
-   |Oogtracking |Feedback over oogtracking, aanmelden bij irissen of kalibratie. |
-   |Nauwkeurigheid, stabiliteit en betrouwbaarheid van hologrammen |Feedback over de manier waarop hologrammen in de ruimte voorkomen. |
+   |Oog bijhouden |Feedback over het bijhouden van ogen, aanmelden bij irissen of kalibratie. |
+   |Hologramnauwkeurigheid, stabiliteit en betrouwbaarheid |Feedback over hoe hologrammen in de ruimte worden weergegeven. |
    |Apps starten, plaatsen, aanpassen en afsluiten |Feedback over het starten of stoppen van 2D- of 3D-apps. |
    |Miracast |Feedback over Miracast. |
    |Spaties en persistentie |Feedback over hoe HoloLens ruimten herkent en hologrammen in de ruimte behoudt. |
-   |Startmenu lijst met apps en alle apps |Feedback over het **menu Start** en de lijst met alle apps. |
+   |Startmenu lijst met alle apps |Feedback over het **menu Start** en de lijst met alle apps. |
    |Toewijzing van surface |Feedback over surface mapping. |
-   |Foto's en video's maken |Feedback over mixed reality vastleggen. |
-   |Video hologram afspelen |Feedback over het afspelen van video hologrammen. |
+   |Foto's en video's maken |Feedback over mixed reality vast leggen. |
+   |Video hologram afspelen |Feedback over het afspelen van hologrammen van video's. |
    |Alle andere problemen |Alle andere problemen. |
 
 1. U wordt mogelijk gevraagd om te zoeken naar vergelijkbare feedback. Als uw probleem lijkt op feedback van andere gebruikers, selecteert u die feedback. Anders selecteert **u Nieuwe feedback** en vervolgens **Volgende.**
@@ -76,11 +76,11 @@ Feedback-hub is een uitstekende manier om het technische team te waarschuwen voo
 
 1. Voeg relevante gegevens toe aan uw feedback of reproduceer het probleem. U kunt een van de volgende opties selecteren:
 
-   - **Voeg een schermopname toe.** Selecteer deze optie als u een schermopname wilt toevoegen waarin de situatie wordt geïllustreerd die u beschrijft.
+   - **Voeg een schermopname toe.** Selecteer deze optie om een schermopname te koppelen waarin de situatie wordt geïllustreerd die u beschrijft.
    - **Voeg een bestand toe.** Selecteer deze optie om gegevensbestanden bij te koppelen. Als u bestanden hebt die relevant zijn voor uw probleem of die ons kunnen helpen uw probleem te reproduceren, koppelt u ze.
    - **Maak mijn probleem opnieuw.** Selecteer deze optie als u het probleem zelf kunt reproduceren. Nadat u Mijn **probleem opnieuw maken hebt geselecteerd,** volgt u deze stappen:  
 
-     1. Selecteer **Gegevens opnemen over** en zorg ervoor dat de meest relevante typen gegevens worden weergegeven. In de meeste gevallen zijn de standaardselecties gebaseerd op de categorie en subcategorie die u voor uw feedback hebt geselecteerd.  
+     1. Selecteer **Gegevens opnemen over** en zorg ervoor dat de meest relevante typen gegevens worden vermeld. In de meeste gevallen zijn de standaardselecties gebaseerd op de categorie en subcategorie die u voor uw feedback hebt geselecteerd.  
      1. Selecteer **Opname starten.**
 
      1. Reproduceer uw probleem. U hoeft zich geen zorgen te maken als dit betekent dat u een in immersieve app moet invoeren. U keert terug naar de feedbackpagina wanneer u klaar bent.

@@ -1,6 +1,6 @@
 ---
 title: Zichtbaarheid Instellingen pagina's
-description: Blijf op de hoogte van onze lijst met ondersteunde URI's voor PageVisibilityList en guide on HoloLens mixed reality apparaten.
+description: Blijf op de hoogte van onze lijst met ondersteunde URI's voor PageVisibilityList en guide op HoloLens mixed reality apparaten.
 author: evmill
 ms.author: v-evmill
 ms.date: 10/13/2020
@@ -13,25 +13,25 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 454d79e8b719feb73d5a39280794dcd76f134952
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: d2747da37ae198f7a2c051593da3ffd4cb4476dfaa7a3078a7749fa1fc912ba2
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639230"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665621"
 ---
 # <a name="page-settings-visibility"></a>Zichtbaarheid Instellingen pagina's
 
-Een van de beheerbare functies voor HoloLens-apparaten is het gebruik van het [Instellingen/PageVisibilityList-beleid](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) om de pagina's te beperken die worden weergegeven in de Instellingen app. PageVisibilityList is een beleid waarmee IT-beheerders kunnen voorkomen dat specifieke pagina's in de System Instellingen-app zichtbaar of toegankelijk zijn, of om dit te doen voor alle pagina's, met uitzondering van de opgegeven pagina's.
+Een van de beheerbare functies voor HoloLens-apparaten is het gebruik van het [Instellingen/PageVisibilityList-beleid](/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist) om de pagina's te beperken die worden weergegeven in de Instellingen app. PageVisibilityList is een beleid waarmee IT-beheerders kunnen voorkomen dat specifieke pagina's in de System Instellingen-app zichtbaar of toegankelijk zijn, of om dit te doen voor alle pagina's behalve de pagina's die zijn opgegeven.
 
 > [!NOTE]
-> Deze functie is alleen beschikbaar in [Windows Holographic, versie 20H2](hololens-release-notes.md#windows-holographic-version-20h2) of hoger voor HoloLens 2 apparaten. Zorg ervoor dat de apparaten voor wie u dit wilt gebruiken, zijn bijgewerkt.
+> Deze functie is alleen beschikbaar in [Windows Holographic versie 20H2](hololens-release-notes.md#windows-holographic-version-20h2) of hoger voor HoloLens 2 apparaten. Zorg ervoor dat de apparaten voor wie u deze wilt gebruiken, zijn bijgewerkt.
 
 
 ## <a name="examples"></a>Voorbeelden
-Pagina's worden geïdentificeerd door een verkorte versie van de gepubliceerde URI's, de URI min het voorvoegsel 'ms-settings:'.
+Pagina's worden aangeduid met een verkorte versie van de gepubliceerde URI's. Dit is de URI min het voorvoegsel 'ms-settings:'.
 
-In het volgende voorbeeld ziet u een beleid waarmee alleen toegang kan worden toegestaan tot de about- en Bluetooth-pagina's, die respectievelijk URI 'network-wifi' en 'bluetooth' hebben:
+In het volgende voorbeeld ziet u een beleid waarmee alleen toegang kan worden toegestaan tot de pagina's about en Bluetooth, die respectievelijk URI 'network-wifi' en 'bluetooth' hebben:
 - `showonly:network-wifi;network-proxy;bluetooth`
 
 In het volgende voorbeeld ziet u een beleid dat de pagina Voor het opnieuw instellen van het besturingssysteem verbergt:
@@ -40,47 +40,47 @@ In het volgende voorbeeld ziet u een beleid dat de pagina Voor het opnieuw inste
 
 ## <a name="deploying-this-policy-via-intune"></a>Dit beleid implementeren via Intune
 
-Dit zijn de configuratiewaarden die aan Intune worden opgegeven:
+Dit zijn de configuratiewaarden die worden opgegeven voor Intune:
 
 - **Naam:** Een door de beheerder gewenste weergavenaam voor het profiel.
 - **OMA-URI:** De volledig gekwalificeerde URI van de instellingspagina, inclusief het [bereik](/windows/client-management/mdm/policy-configuration-service-provider). In deze voorbeelden op deze pagina wordt het bereik `./Device` gebruikt.
-- **Waarde:** Een tekenreekswaarde die aangeeft of  alleen de opgegeven pagina's moeten worden verborgen of weergegeven. Mogelijke waarden zijn `hide:<pagename>` en `showonly:<pagename>` . 
+- **Waarde:** Een tekenreekswaarde die aangeeft of alleen de *opgegeven* pagina's moeten worden verborgen of weergegeven. Mogelijke waarden zijn `hide:<pagename>` en `showonly:<pagename>` . 
  
-U kunt meerdere pagina's specificeren door ze te scheiden met puntkomma's. Hieronder vindt u een lijst met algemene pagina's.
+U kunt meerdere pagina's specificeren door ze te scheiden met een puntkomma. Hieronder vindt u een lijst met algemene pagina's.
 
 1. Maak een **aangepast beleid.**
 1. Bij het instellen van **de OMA-URI** voert u de URI met volledig bereik in. Bijvoorbeeld: **`./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList`**
-1. Kies bij het selecteren van de gegevens de optie **Tekenreeks:**
-1. Gebruik de **bovenstaande richtlijnen bij** het opgeven van Waarde. Bijvoorbeeld: **`showonly:network-wifi;network-proxy;bluetooth`** of **`hide:reset`** 
+1. Kies bij het selecteren van de gegevens kiezen: **Tekenreeks**
+1. Gebruik de **bovenstaande richtlijnen wanneer** u Waarde opgeeft. Bijvoorbeeld: **`showonly:network-wifi;network-proxy;bluetooth`** of **`hide:reset`** 
 > [!IMPORTANT]
 > Zorg ervoor dat u de aangepaste apparaatconfiguratie toewijst aan een groep waarin het apparaat is bedoeld. Als deze stap niet wordt uitgevoerd, wordt het beleid gep pusht, maar niet toegepast.
 
-Zie [HoloLens MDM-configuratie voor](hololens-mdm-configure.md) meer informatie over Intune-groepen en apparaatconfiguraties.
+Zie [HoloLens MDM-configuratie](hololens-mdm-configure.md) voor meer informatie over Intune-groepen en apparaatconfiguraties.
 
 
 ## <a name="deploying-this-policy-via-a-provisioning-package"></a>Dit beleid implementeren via een inrichtingspakket
 
 Dit zijn de configuratiewaarden die worden opgegeven in Windows Configuration Designer:
 
-**Waarde:** Een tekenreekswaarde die aangeeft of  alleen de opgegeven pagina's moeten worden verborgen of weergegeven. Mogelijke waarden zijn `hide:<pagename>` en `showonly:<pagename>` . U kunt meerdere pagina's specificeren door ze te scheiden met puntkomma's. Hieronder vindt u een lijst met algemene pagina's.
+**Waarde:** Een tekenreekswaarde die aangeeft of alleen de *opgegeven* pagina's moeten worden verborgen of weergegeven. Mogelijke waarden zijn `hide:<pagename>` en `showonly:<pagename>` . U kunt meerdere pagina's specificeren door ze te scheiden met een puntkomma. Hieronder vindt u een lijst met algemene pagina's.
 
 
 1. Tijdens het maken van uw pakket in Windows Configuration Designer naar **Beleidsregels > Instellingen > PageVisibilityList**
 1. Voer de tekenreeks in: **`showonly:network-wifi;network-proxy;bluetooth`**
 1. Exporteert u uw inrichtingspakket.
 1. Pas het pakket toe op uw apparaat.
-Ga naar HoloLens inrichtingspagina voor meer informatie over het maken en toepassen [van een inrichtingspakket.](hololens-provisioning.md)
+Ga naar de pagina HoloLens inrichting voor meer informatie over het maken en toepassen [van een inrichtingspakket.](hololens-provisioning.md)
 
 
-Ongeacht de gekozen methode ontvangt uw apparaat nu de wijzigingen en krijgen gebruikers de volgende Instellingen app.
+Ongeacht de gekozen methode moet uw apparaat nu de wijzigingen ontvangen en krijgen gebruikers de volgende Instellingen app.
 
 ![Schermopname van actieve uren die worden gewijzigd in de Instellingen app](images/hololens-page-visibility-list.jpg)
 
-Als u de pagina Instellingen app wilt configureren om uw eigen selectie pagina's weer te geven of te verbergen, bekijkt u de Instellingen URI's die beschikbaar zijn op HoloLens.
+Als u de pagina'Instellingen-app wilt configureren om uw eigen selectie pagina's weer te geven of te verbergen, bekijkt u de Instellingen URI's die beschikbaar zijn op HoloLens.
 
 ## <a name="settings-uris"></a>Instellingen Uris
 
-HoloLens apparaten en Windows 10 apparaten hebben een andere selectie pagina's in de Instellingen app. Op deze pagina vindt u alleen de instellingen die aanwezig zijn op HoloLens.
+HoloLens apparaten en Windows 10 apparaten hebben een andere selectie pagina's in de Instellingen app. Op deze pagina vindt u alleen de instellingen die op deze pagina HoloLens.
 
 ### <a name="accounts"></a>Accounts
 | Pagina Instellingen           | URI                                            |
@@ -114,12 +114,12 @@ HoloLens apparaten en Windows 10 apparaten hebben een andere selectie pagina's i
 | Oproepgeschiedenis             | `privacy-callhistory`                 |
 | Camera                   | `privacy-webcam`                      |
 | Contactpersonen                 | `privacy-contacts`                    |
-| Feedback over & diagnostische gegevens | `privacy-feedback`                    |
+| Feedback over diagnostische & | `privacy-feedback`                    |
 | Documenten                | `privacy-documents`                   |
 | E-mail                    | `privacy-email`                       |
 | Bestandssysteem              | `privacy-broadfilesystemaccess`       |
 | Algemeen <sup>2</sup>             | `privacy-general`       |
-| Ink & het typen van personalisatie <sup>2</sup>             | `privacy-speechtyping`       |
+| Ink-& te typen <sup>2</sup>             | `privacy-speechtyping`       |
 | Locatie                 | `privacy-location`                    |
 | Berichten                | `privacy-messaging`                   |
 | Microfoon               | `privacy-microphone`                  |
@@ -157,8 +157,8 @@ HoloLens apparaten en Windows 10 apparaten hebben een andere selectie pagina's i
 | Meldingen & acties  | `notifications`          |
 | Gedeelde ervaringen | `crossdevice` 
 | Geluid <sup>2</sup>           | `sound`<br>|
-| Geluids > app-volume en apparaatvoorkeur <sup>2</sup>           | `apps-volume`<br>|
-| Geluidsapparaten > beheren <sup>2</sup>           | `sound-devices`<br>|
+| Geluidsvolume > app-volume en apparaatvoorkeur <sup>2</sup>           | `apps-volume`<br>|
+| Geluidsapparaten > geluidsapparaten beheren <sup>2</sup>           | `sound-devices`<br>|
 | Storage            | `storagesense`           |
 | Storage > Sense 2 Storage <sup>configureren</sup>           | `storagepolicies`<br>|
 
@@ -176,7 +176,7 @@ HoloLens apparaten en Windows 10 apparaten hebben een andere selectie pagina's i
 | Pagina Instellingen                         | URI                                       |
 |---------------------------------------|-------------------------------------------|
 | Geavanceerde opties                    | `windowsupdate-options`         |
-| Herstel & <sup>2 opnieuw instellen</sup>      | `reset`         |
+| Herstel & opnieuw <sup>instellen 2</sup>      | `reset`         |
 | Windows Insider-programma               | `windowsinsider` <br>`windowsinsider-optin`          |
 | Windows Update                        | `windowsupdate`<br> `windowsupdate-activehours`  <br> `windowsupdate-history` <br> `windowsupdate-optionalupdates` <br><sup>1</sup>`windowsupdate-options`<br><sup>1</sup>`windowsupdate-restartoptions` |
 | Windows Update: controleert op updates | `windowsupdate-action`          |
@@ -189,4 +189,4 @@ HoloLens apparaten en Windows 10 apparaten hebben een andere selectie pagina's i
 - <sup>2</sup> : beschikbaar in Windows Holographic 21H1 of hoger.
 
 
-Raadpleeg de documentatie voor startinstellingen Windows 10 Instellingen een volledige lijst met [URI's.](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)
+Ga voor een volledige lijst met Windows 10 Instellingen-URI's naar de [documentatie voor startinstellingen.](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)

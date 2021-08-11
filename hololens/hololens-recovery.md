@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0124453ef9e3b21722acaf2c6b438ebdfbd65043
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 7d8f2f8bf6aaaeb7f6f0ddbd339d428dad9335faeb99bfca48a19e68929921ed
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635939"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662951"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>Opnieuw opstarten, opnieuw instellen of HoloLens 2
 
@@ -41,11 +41,11 @@ Als het apparaat correct is opgestart en wordt uitgevoerd, zijn er drie manieren
     - Wanneer uw HoloLens is aan, geeft de batterijindicator het accuniveau in vijf stappen weer.
     - Wanneer slechts een van de vijf lampen is aan, is het accuniveau lager dan 20 procent.
     - Als het accuniveau kritiek laag is en u het apparaat probeert in te zetten, gaat er kort één lampje uit en gaat u uit.
-- Open Verkenner op uw host-pc **en** zoek uw apparaat HoloLens 2 aan de linkerkant onder **Deze pc.** Klik met de rechtermuisknop op het apparaat en selecteer **Eigenschappen.** In een dialoogvenster wordt het acculadingsniveau weergegeven.
+- Open verkenner op uw host-pc **en** zoek uw HoloLens 2 aan de linkerkant onder **Deze pc.** Klik met de rechtermuisknop op het apparaat en selecteer **Eigenschappen.** In een dialoogvenster wordt het acculadingsniveau weergegeven.
 
    ![Een scherm HoloLens 2 eigenschappen toont het niveau van de batterijwijziging](images/ResetRecovery2.png)
 
-Als het apparaat niet kan worden opgestart naar het opstartmenu, noteer dan de LED-weergave en apparaatinsemulatie op de host-pc. Volg vervolgens de gids [voor probleemoplossing.](hololens-troubleshooting.md) Als de status van het apparaat niet overeen komt met een van de statussen die worden vermeld in de gids voor probleemoplossing, voert u de [procedure](hololens-recovery.md#hard-reset-procedure) voor het opnieuw instellen uit met het apparaat dat is verbonden met de voeding en niet met uw host-pc. Wacht ten minste één uur totdat het apparaat wordt op belast.
+Als het apparaat niet kan worden opgestart naar het opstartmenu, noteer dan het LED-uiterlijk en de apparaatinsemulatie op de host-pc. Volg vervolgens de gids [voor probleemoplossing.](hololens-troubleshooting.md) Als de status van het apparaat niet overeen komt met een van de statussen die worden vermeld in de gids voor probleemoplossing, voert u de [procedure](hololens-recovery.md#hard-reset-procedure) voor het opnieuw instellen uit met het apparaat dat is verbonden met de voeding en niet met uw host-pc. Wacht ten minste één uur totdat het apparaat wordt op belast.
 
 ## <a name="reset-the-device"></a>Het apparaat opnieuw instellen
 
@@ -55,7 +55,7 @@ Onder bepaalde omstandigheden moet u het apparaat mogelijk handmatig opnieuw ins
 
 1. Koppel de Type-C-kabel los om het apparaat los te koppelen van de voeding of de host-pc.
 
-2. Houd de **aan/uit-knop** 15 seconden ingedrukt. Alle LED's moeten uit zijn.
+2. Houd de **aan/uit-knop** 15 seconden ingedrukt. Alle LED's moeten zijn uitgeschakeld.
 
 3. Wacht 2-3 seconden en druk vervolgens kort op de **aan/uit-knop.** De LED's dicht bij de aan/uit-knop worden aan het licht licht en het apparaat wordt opstart.
 
@@ -94,7 +94,7 @@ Er zijn twee manieren om het apparaat te reflashen. Voor beide moet u eerst [Adv
 
 Advanced Recovery Companion is standaard ingesteld om de meest recente build van de functiere release te downloaden. Lees hier onze [release-opmerkingen](hololens-release-notes.md#) voor meer informatie over de nieuwste functiere release. Als u het meest recente HoloLens 2 FFU-pakket (Full Flash Update) wilt downloaden om uw apparaat te reflashen via Advanced Recovery Companion, klikt u hier om de meest recente maandelijkse HoloLens 2 [downloaden.](https://aka.ms/hololens2download) Deze versie is de meest recente algemeen beschikbare build.
 
-Voordat u de reflash-procedure start, moet u ervoor zorgen dat de app is geïnstalleerd en wordt uitgevoerd op uw Windows 10 pc en klaar is om het apparaat te detecteren. Zorg er ook voor dat uw HoloLens minimaal 40% in rekening wordt gebracht.
+Voordat u de reflash-procedure start, moet u ervoor zorgen dat de app is geïnstalleerd en wordt uitgevoerd op uw Windows 10 pc en klaar is om het apparaat te detecteren. Zorg er ook voor HoloLens dat er kosten in rekening worden gebracht op minimaal 40%.
 
 ![HoloLens 2 scherm met schone reflash](images/ARC1.png)
 
@@ -104,7 +104,7 @@ Voordat u de reflash-procedure start, moet u ervoor zorgen dat de app is geïnst
  
    Het apparaat wordt automatisch gedetecteerd en de gebruikersinterface van de Geavanceerde herstel companion-app start het updateproces:
 
-   ![HoloLens 2 eerste scherm voor schone reflash](images/ARC2.png)
+   ![HoloLens 2 eerste scherm nieuwe reflash maken](images/ARC2.png)
 
 3. Selecteer het HoloLens 2 in de gebruikersinterface van de Advanced Recovery Companion-app en volg de instructies om de reflash te voltooien.
 
@@ -120,7 +120,7 @@ Als de HoloLens 2 niet correct wordt start of als Advanced Recovery Companion he
 
 4. Verbinding maken apparaat naar de host-pc en open Apparaatbeheer. (Druk Windows 10 op **Windows** toets en vervolgens op **de X-toets** en selecteer **Apparaatbeheer**.) Zorg ervoor dat het apparaat op de juiste manier Microsoft HoloLens zoals wordt weergegeven in de volgende afbeelding:
 
-   ![HoloLens 2 MicrosoftOlooLensRecovery](images/MicrosoftHoloLensRecovery.png)
+   ![HoloLens 2 MicrosoftOloLensRecovery](images/MicrosoftHoloLensRecovery.png)
 
    Het apparaat wordt automatisch gedetecteerd en de gebruikersinterface van de Geavanceerde herstel companion-app start het updateproces:
 
@@ -140,7 +140,7 @@ Als de HoloLens 2 niet correct wordt start of als Advanced Recovery Companion he
     1. **Poorten**, als een Qualcomm HS-USB-apparaat
     1.   **Andere apparaten**, als QUSB_BULK apparaat: op uw host-pc ontbreken de benodigde stuurprogramma's om uw apparaat te HoloLens. Klik met de rechtermuisknop en selecteer Stuurprogramma bijwerken en zoek online naar stuurprogramma's of schakel [Optionele updates in uw](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674)Windows Instellingen bijwerken in. Nadat het stuurprogramma is gedownload, moet ARC het kunnen detecteren.
  
-1. Als ARC uw apparaat niet detecteert, controleert u of u verbinding kunt maken met uw apparaat via Verkenner op uw pc. Als dat niet mogelijk is,
+1. Als ARC uw apparaat niet detecteert, moet u ervoor zorgen dat u verbinding kunt maken met uw apparaat via Verkenner op uw pc. Als dat niet mogelijk is,
 
     1.  Het is mogelijk dat uw apparaat USB-beleidsregels heeft die die verbinding uitschakelen. Probeer in dat opzicht [handmatige knippermodus](hololens-recovery.md#manual-procedure)uit.
     2.  Als er geen beleidsregels zijn, probeert u een andere USB-kabel.
@@ -165,7 +165,7 @@ Volg deze stappen om het implementatiepad in te stellen:
 
 1. Wijzig het **licentietype** in **_offline_*_, en selecteer _* Beheren.**
 
-1. Selecteer **onder Pakket downloaden voor offlinegebruik** de tweede blauwe knop **Downloaden.** Zorg ervoor dat de bestandsextensie *.appxbundle is.*
+1. Selecteer **onder Het pakket downloaden voor offlinegebruik** de tweede blauwe knop **Downloaden.** Zorg ervoor dat de bestandsextensie *.appxbundle is.*
 
     - Als de desktop-pc in dit stadium internettoegang heeft, dubbelklikt u op het pakket om de app te installeren.
 
@@ -178,7 +178,7 @@ Volg deze stappen om het implementatiepad in te stellen:
           C:\WINDOWS\system32>dism /online /Add-ProvisionedAppxPackage /PackagePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_1.19050.1301.0_neutral_~_8wekyb3d8bbwe.appxbundle" /DependencyPackagePath:"C:\ARCoffline\Microsoft.VCLibs.140.00.UWPDesktop_14.0.27629.0_x86__8wekyb3d8bbwe.appx" /LicensePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_8wekyb3d8bbwe_f72ce112-dd2e-d771-8827-9cbcbf89f8b5.xml" /Region:all
           ```
           > [!NOTE]
-          > Het versienummer in dit codevoorbeeld komt mogelijk niet overeen met de momenteel beschikbare versie. Mogelijk hebt u ook een andere downloadlocatie gekozen dan in het voorbeeld. Voer zo nodig wijzigingen aan in de opdracht .
+          > Het versienummer in dit codevoorbeeld komt mogelijk niet overeen met de momenteel beschikbare versie. Mogelijk hebt u ook een andere downloadlocatie gekozen dan in het voorbeeld. Wijzig zo nodig de opdracht.
 
 > [!TIP]
 > Wanneer u van plan bent Advanced Recovery Companion te gebruiken om een FFU offline te installeren, kan het handig zijn om uw flash-installatieafbeelding te downloaden. [**Download de huidige afbeelding voor HoloLens 2**](https://aka.ms/hololens2download).

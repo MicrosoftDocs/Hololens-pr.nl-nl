@@ -12,28 +12,28 @@ ms.localizationpriority: medium
 ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 529dde590c30d4a51fa8ae61e9d37d22170dc271
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 27fd7f81d2868134344c7563ebc0a93133a18c0a217d6eff820b5f322e9271a7
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659060"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662901"
 ---
 # <a name="common-deployment-scenarios"></a>Algemene implementatiescenario's
 
 ## <a name="overview"></a>Overzicht
 
-Het kan lastig zijn om te weten hoe u een nieuw apparaat implementeert wanneer u het de eerste keer probeert. Hier delen we verschillende manieren voor het implementeren en beheren van Microsoft HoloLens twee apparaten binnen de organisatie.
+Het kan lastig zijn om erachter te komen hoe u een nieuw apparaat implementeert wanneer u het de eerste keer probeert. Hier delen we verschillende manieren voor het implementeren en beheren van Microsoft HoloLens twee apparaten binnen de organisatie.
 
-U wilt oplossingen die op schaal worden geïmplementeerd. We willen u graag helpen. Laten we eerst eens kijken naar de stappen voor het implementeren van apparaten, dus hologrammen, om waarde te bereiken voor uw doel-mixed reality-scenario, of u nu D365 Remote Assist, Guides of een Azure mixed reality-toepassing met service ingeschakeld die u hebt gemaakt.
+U wilt oplossingen die op schaal worden geïmplementeerd. We willen u graag helpen. Laten we eerst eens kijken naar de stappen voor het implementeren van apparaten, dus hologrammen, om waarde te bereiken voor uw doel-mixed reality-scenario, of u nu D365 Remote Assist, Guides of een Azure mixed reality-servicetoepassing gebruikt die u hebt gemaakt.
 
 Mogelijk bent u een zakelijke beslisser, IT-professional of een innovatieteam dat op zoek is naar HoloLens binnen uw organisatie. Tijdens het bouwen van een proof-of-concept tot een geschaalde implementatie, zijn onze implementatiehandleidingen zinvol HoloLens binnen uw IT-infrastructuur, ongeacht hoe groot of klein. De volgende implementatiescenario's komen het meest voor:
 
 | Scenario |Gebruik | Belangrijkste punten |
 |---------|---------|---------|
-| [Scenario A: Met de cloud verbonden apparaten](hololens2-cloud-connected-overview.md) | Wanneer u de implementatie voor het eerst start, kunt u klein beginnen en één apparaat implementeren dat is verbonden met de cloud om het basisproces te zien. | Apparaten worden verbonden met cloudservices en openbaar internet. Dit is het meest geschikt voor gebruiksgevallen van klanten, veldservices en proof-of-concept.|
+| [Scenario A: Met de cloud verbonden apparaten](hololens2-cloud-connected-overview.md) | Wanneer u de implementatie voor het eerst start, kunt u klein beginnen en één apparaat implementeren dat is verbonden met de cloud om alleen het basisproces te zien. | Apparaten worden verbonden met cloudservices en openbaar internet. Dit is het meest geschikt voor gebruiksgevallen van klanten, veldservices en proof-of-concept.|
 | [Scenario B: Netwerk van de organisatie](hololens2-corp-connected-overview.md) | Wanneer u op schaal in productie implementeert, moet u mogelijk integreren met het netwerk van uw eigen organisatie. | Apparaten worden verbonden met een 'zakelijk' Wi-Fi-netwerk. Dit is het meest geschikt voor interne gebruikers of voor gebruik binnen de bedrijfsomgeving.|
-| [Scenario C: Offline beveiligde omgeving](hololens-common-scenarios-offline-secure.md) | Voor sommige bedrijfskritieke processen of bepaalde bedrijfsbeleidsregels kan het gebruik van offlineomgevingen worden vereist. | Apparaten worden verbonden met een zeer beperkend netwerk of zijn uitsluitend offlineapparaten. Dit is het meest geschikt voor uiterst veilige omgevingen of internetverbindingsbeperkingen in externe gebieden. |
+| [Scenario C: Offline beveiligde omgeving](hololens-common-scenarios-offline-secure.md) | Sommige bedrijfskritieke processen of een aantal bedrijfsbeleidsregels kunnen het gebruik van offlineomgevingen eisen. | Apparaten worden verbonden met een zeer beperkend netwerk of zijn uitsluitend offlineapparaten. Dit is het meest geschikt voor uiterst veilige omgevingen of internetverbindingsbeperkingen in externe gebieden. |
 
 ## <a name="scenario-a-deploy-to-cloud-connected-devices"></a>Scenario A: Implementeren op met de cloud verbonden apparaten
 
@@ -98,7 +98,7 @@ Overweeg dit implementatiemodel voor:
 
 ### <a name="common-challenges"></a>Veelvoorkomende uitdagingen
 
-* HoloLens 2 biedt geen ondersteuning voor on-premises AD-join of System Center Configuration Manager (SCCM). Alleen Azure AD-join met MDM. Veel bedrijven implementeren momenteel nog steeds Windows 10-pc's in dit scenario als on-premises AD-apparaten die worden beheerd door SCCM en hebben mogelijk niet de infrastructuur geïmplementeerd/geconfigureerd voor het beheren van interne Windows 10-apparaten via MDM-oplossingen in de cloud.
+* HoloLens 2 biedt geen ondersteuning voor on-premises AD-join of System Center Configuration Manager (SCCM). Alleen Azure AD-join met MDM. Veel bedrijven implementeren momenteel nog steeds Windows 10-pc's in dit scenario als on-premises AD-apparaten die worden beheerd door SCCM en hebben mogelijk niet de infrastructuur geïmplementeerd/geconfigureerd voor het beheren van interne Windows 10-apparaten via cloudgebaseerde MDM-oplossingen.
 * Omdat HoloLens 2 een eerste cloudapparaat is, is het sterk afhankelijk van internet- en cloudservices voor gebruikersverificatie, updates van het besturingssysteem, MDM-beheer, en meer. Wanneer u verbinding maakt met een bedrijfsnetwerk, moeten proxy-/firewallregels waarschijnlijk worden aangepast om toegang mogelijk te maken voor HoloLens 2 en de toepassingen die erop worden uitgevoerd.
 * Voor Wi-Fi bedrijfsconnectiviteit zijn doorgaans certificaten vereist om het apparaat of de gebruiker bij het netwerk te verifiëren. De vereiste infrastructuur of instellingen voor het implementeren van certificaten Windows 10 apparaten via MDM kan lastig zijn om te configureren.
 

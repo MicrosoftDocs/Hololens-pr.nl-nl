@@ -1,5 +1,5 @@
 ---
-title: Apps side loaden en installeren via HoloLens 2 App-installatieprogramma
+title: Apps side loaden en apps installeren via HoloLens 2 App-installatieprogramma
 description: Meer informatie over het installeren en oplossen van problemen met apps met het app-installatieprogramma en het side loaden en installeren van apps via de gebruikersinterface.
 keywords: app-beheer, app, hololens, app-installatieprogramma
 author: evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8f236ee27903069b65d3ded8eb7a1f37c65f535e
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 0b0de9039ce4d0c1eeab968b0f7c2f5eee8cdc34739391b6022b409325955350
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635582"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665264"
 ---
 # <a name="install-apps-on-hololens-2-via-app-installer"></a>Apps installeren op HoloLens 2 via App-installatieprogramma
 
@@ -84,7 +84,7 @@ Als de installatie van uw app is mislukt, controleert u het volgende om het prob
 - U bent [verbonden met internet.](hololens-network.md)
 - Uw [eindpunten voor de Microsoft Store](hololens-offline.md) juist geconfigureerd.  
 
-## <a name="web-installer"></a>Web-installatieprogramma
+## <a name="web-installer"></a>Web Installer
 
 Gebruikers kunnen een app rechtstreeks vanaf een webserver installeren. Deze stroom maakt gebruik van de App-installatieprogramma gecombineerd met een distributiemethode voor eenvoudig downloaden en installeren.
 

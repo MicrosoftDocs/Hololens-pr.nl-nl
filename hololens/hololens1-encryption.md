@@ -13,16 +13,16 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 37efab3ef3d68a9641320e144619008612f6efa2
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 4b07bb87b34ec966472bcbde000106590570fd7e7063ab503724884fa266bb34
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635242"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662716"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>HoloLens (1e generatie) BitLocker-versleuteling
 
-HoloLens (eerste generatie) en HoloLens 2 ondersteunen apparaatversleuteling met BitLocker, maar BitLocker is altijd ingeschakeld op HoloLens 2.
+HoloLens (eerste generatie) en HoloLens 2 ondersteunen apparaatversleuteling met bitLocker, maar BitLocker is altijd ingeschakeld op HoloLens 2.
 
 In dit artikel vindt u hulp bij het inschakelen en beheren van BitLocker op HoloLens (1e generatie).
 
@@ -36,7 +36,7 @@ U kunt uw MDM-provider (Mobile Device Management) gebruiken om een beleid toe te
 
 Zie de documentatie van uw MDM-provider voor instructies voor andere MDM-hulpprogramma's. Als uw MDM-provider aangepaste URI vereist voor apparaatversleuteling, gebruikt u de volgende configuratie:
 
-- **Naam:** een naam naar keuze
+- **Naam:** een naam van uw keuze
 - **Beschrijving:** optioneel
 - **OMA-URI:**`./Vendor/MSFT/Policy/Config/Security/RequireDeviceEncryption`
 - **Gegevenstype:** geheel getal
@@ -55,7 +55,7 @@ Inrichtingspakketten zijn bestanden die zijn gemaakt door het hulpprogramma Wind
 
 1. Zoek het XML-licentiebestand dat is opgegeven toen u de Commercial Suite hebt gekocht.
 
-1. Blader naar en selecteer het XML-licentiebestand dat is opgegeven bij de aankoop van de Commerciële suite.
+1. Blader naar en selecteer het XML-licentiebestand dat is opgegeven bij de aankoop van de commerciële suite.
     > [!NOTE]
     > U kunt aanvullende [instellingen configureren in het inrichtingspakket](hololens-provisioning.md).
 
@@ -76,7 +76,7 @@ Inrichtingspakketten zijn bestanden die zijn gemaakt door het hulpprogramma Wind
 1. Klik in **Beveiligingsdetails selecteren voor het inrichtingspakket** op **Volgende.**
 1. Klik **op** Volgende om de uitvoerlocatie op te geven waar u het inrichtingspakket naartoe wilt laten gaan zodra het is gebouwd. Standaard gebruikt Windows ICD de projectmap als uitvoerlocatie.
 
-    U kunt desgewenst op Bladeren klikken om de standaarduitvoerlocatie te wijzigen.
+    U kunt eventueel op Bladeren klikken om de standaarduitvoerlocatie te wijzigen.
 
 1. Klik op **Volgende**.
 1. Klik **op Bouwen** om te beginnen met het bouwen van het pakket. De projectgegevens worden weergegeven op de buildpagina en de voortgangsbalk geeft de buildstatus aan.

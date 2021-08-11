@@ -1,6 +1,6 @@
 ---
 title: Beveiliging van besturingssysteem met beheerdersrechten
-description: Meer informatie over besturingssystemen die geen beheerder zijn, apparaateigenaren en beveiliging op HoloLens mixed reality apparaten.
+description: Meer informatie over besturingssystemen, eigenaren van apparaten en beveiliging van besturingssystemen HoloLens mixed reality beheerapparaten.
 ms.prod: hololens
 author: evmill
 ms.author: v-evmill
@@ -13,16 +13,16 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ed2d5134a6bc5952063f7dc5dc5d0e31db972b08
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: f4fc79b7f51933418cdda8368c6b4b070e854dd0978754647ce864075c772cfd
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639400"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665536"
 ---
 # <a name="admin-less-operating-system"></a>Besturingssysteem met beheerdersrechten
 
-HoloLens 2 minimaliseert de surface area voor escalatie van bevoegdheden door ondersteuning voor de groep Administrators uit te uitschakelen en alle UWP-toepassingscode van derden te beperken tot alleen uitvoeren als standaardgebruikers in de AppContainer-sandbox. Aan deze code wordt alleen toegang verleend tot de resources die zijn beveiligd door mogelijkheden die expliciet in de toepassing worden manifesteerd voor een niet-opleving gebruiker, naast resources die toegankelijk zijn voor alle AppContainers.
+HoloLens 2 minimaliseert de surface area voor escalatie van bevoegdheden door ondersteuning voor de groep Administrators uit te uitschakelen en alle CODE van uwP-toepassingen van derden te beperken tot alleen uitvoeren als standaardgebruikers in de AppContainer-sandbox. Aan deze code wordt alleen toegang verleend tot de resources die worden beveiligd door mogelijkheden die expliciet in de toepassing worden manifesteerd voor een niet-toegankelijke gebruiker, naast resources die toegankelijk zijn voor alle AppContainers.
 Deze toepassingsmogelijkheden blijven het classificatiemodel met drie lagen hebben:
   * Algemeen
   * Beperkt
@@ -35,7 +35,7 @@ Windows-onderdelen kunnen ook gebruikmaken van de AppContainer-sandbox via Syste
 Ten slotte is het uitvoeren van specifieke apparaatbrede bewerkingen, zoals het samenvoegen van het apparaat aan een tenant of gebruikersbeheer, alleen toegestaan voor 'apparaateigenaren'. Deze groep wordt door gebruikers op het apparaat ingevuld via een van de volgende stappen:
   * De eerste gebruiker op het apparaat wordt altijd aangewezen als Eigenaar. 
 > [!IMPORTANT]
->Voor Azure AD-gebruikers is de uitzondering op deze regel dat als het apparaat is samengevoegd met Azure AD via Autopilot of bulksgewijs Azure AD-inschrijving, dat gebruikmaakt van een niet-echte gebruiker. In dit geval wordt de eerste AAD-gebruiker die zich bij het apparaat heeft aanmelden mogelijk niet automatisch eigenaar van het apparaat, tenzij aan die gebruiker de rol 'globale beheerder' of 'apparaatbeheerder' is toegewezen in Azure Portal. Zie de opmerking hieronder voor meer informatie.  
+>Voor Azure AD-gebruikers is de uitzondering op deze regel dat als het apparaat is samengevoegd met Azure AD via Autopilot of bulksgewijs Azure AD-inschrijving, waarbij een niet-echte gebruiker wordt gebruikt. In dit geval wordt de eerste AAD-gebruiker die zich bij het apparaat heeft aanmelden mogelijk niet automatisch eigenaar van het apparaat, tenzij aan die gebruiker de rol 'globale beheerder' of 'apparaatbeheerder' is toegewezen in Azure Portal. Zie de opmerking hieronder voor meer informatie.  
 
   * Wanneer een gebruiker wordt gepromoveerd als eigenaar van de Instellingen UX door een andere eigenaar op het apparaat.
   * Als de eigenaar van het apparaat niet meer beschikbaar is (het bedrijf verlaat) en het apparaat lid is van Azure AD, kan de tenantbeheerder de eigenaar van het apparaat wijzigen in een nieuwe gebruiker in Azure Portal. Globale beheerders en apparaatbeheerders van een Azure AD-tenant worden impliciet aangemeld als eigenaren op het apparaat zonder dat een van de vorige stappen is vereist.  

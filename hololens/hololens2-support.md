@@ -7,16 +7,16 @@ description: Mixed Reality ondersteuningsopties voor kleine tot grote zakelijke 
 ms.prod: hololens
 ms.topic: article
 ms.date: 3/19/2021
-ms.openlocfilehash: 0ddc4eb15036a4f5aa2ecf86893d5f671584f9bf
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 43940fca03dec957c2afc6108e1ce77979aa000c1366bdc873056107d0b7da20
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659094"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115658750"
 ---
 # <a name="what-are-the-mixed-reality-support-and-help-options"></a>Wat zijn de Mixed Reality ondersteunings- en helpopties?
 
-Wilt u deblokkeering krijgen bij het ontwikkelen van uw toepassing of hebt u een probleem met uw HoloLens 2 of Windows Mixed Reality Headset? Misschien gebruikt u een Azure mixed reality service en hebt u een technische vraag. 
+Bent u op zoek naar de blokkeering bij het ontwikkelen van uw toepassing of hebt u een probleem met uw HoloLens 2 of Windows Mixed Reality Headset? Misschien gebruikt u een Azure mixed reality service en hebt u een technische vraag. 
 
 Hier vindt u de ondersteuningsopties voor de volgende opties om ervoor te zorgen dat u op de juiste plaats bent verbonden. We hebben ook informatie over communityresources en opties voor selfservice-inhoud die u kunt verkennen:
 
@@ -77,7 +77,7 @@ Als u een nieuwe vraag indient bij Stack Overflow, moet u een of meer van de vol
 
 ### <a name="help-with-commercial-store-support-for-your-hololens-2"></a>Hulp bij de ondersteuning voor commerciële winkels voor uw HoloLens 2
 
-- [Aankoopopties HoloLens 2](https://www.microsoft.com/hololens/buy) deze optie gebruiken voor meer informatie over HoloLens 2 en opties
+- [Aankoop HoloLens 2](https://www.microsoft.com/hololens/buy) deze optie gebruiken voor meer informatie over HoloLens 2 en opties
 - Zie de onderstaande lijst met helpdesknummers om contact op te vragen met onze commerciële winkelondersteunings collega's als u hulp nodig hebt via telefonische ondersteuning
 - Voor aankopen buiten de Microsoft Store verwijst u naar deze lijst met geautoriseerde [HoloLens 2 resellers](hololens2-purchase.md) en landen waar HoloLens 2 beschikbaar is.
 
@@ -114,7 +114,7 @@ Als u een nieuwe vraag indient bij Stack Overflow, moet u een of meer van de vol
 | Nieuw-Zeeland | 0800 471 640 |  Ma tot vr, 8:00 tot 18:00 uur |
 
 >[!IMPORTANT]
->Als u een volledige btw-factuur nodig hebt, moet u rechtstreeks contact opnemen met het commerciële ondersteuningsteam en geen apparaat online aanschaffen. Alle aankopen die online worden gedaan, ontvangen alleen een vereenvoudigde btw-factuur die later niet kan worden bewerkt.
+>Als u een volledige btw-factuur nodig hebt, kunt u rechtstreeks contact opnemen met het commerciële ondersteuningsteam en geen online apparaat aanschaffen. Alle aankopen die online worden gedaan, ontvangen alleen een vereenvoudigde btw-factuur die later niet kan worden bewerkt.
 
 ## <a name="azure-mixed-reality-services-support"></a>Ondersteuning voor Azure mixed reality-services
 

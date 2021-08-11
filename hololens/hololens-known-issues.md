@@ -14,12 +14,12 @@ manager: jarrettr
 ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
-ms.openlocfilehash: 36991d62da91011b807dfb9ff52ab16eadac8bc7
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: d2a8ae420a0c1d646625fe81b166e2daae07e44652b70f2e4a1b19ccba240cfb
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640301"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663941"
 ---
 # <a name="known-issues-for-hololens-1st-gen"></a>Bekende problemen voor HoloLens (eerste generatie)
 
@@ -46,7 +46,7 @@ Hier is de huidige lijst met bekende problemen voor HoloLens apparaten. Controle
 
 - Op de pagina Virtuele invoer zijn de besturingselementen Beweging en Scroll onder de sectie Virtuele gebaren niet functioneel. Het gebruik ervan heeft geen effect. Het virtuele toetsenbord op de virtuele invoerpagina werkt correct.
 
-- Nadat u de ontwikkelaarsmodus in Instellingen ingeschakeld, kan het enkele seconden duren voordat de schakelknop is ingeschakeld Apparaatportal ingeschakeld.
+- Nadat de ontwikkelaarsmodus is ingeschakeld in Instellingen, kan het enkele seconden duren voordat de schakelknop is ingeschakeld Apparaatportal ingeschakeld.
 
 ### <a name="onedrive-camera-upload"></a>OneDrive camera uploaden
 
@@ -67,11 +67,11 @@ Oplossingen:
 
 Visual Studio VS 2019 versie 16.2 is uitgebracht, met een oplossing voor dit probleem. U wordt aangeraden bij te werken naar deze nieuwste versie om deze fout te voorkomen.
 
-Hoofdoorzaak van probleem: gebruikers die Visual Studio 2015 of vroege versies van Visual Studio 2017 gebruikten om toepassingen te implementeren en fouten op te sporen op hun HoloLens en vervolgens de nieuwste versies van Visual Studio 2017 of Visual Studio 2019 met dezelfde HoloLens hebben gebruikt, worden beïnvloed. De nieuwere versies van Visual Studio een nieuwe versie van een onderdeel implementeren, maar bestanden van de oudere versie worden overgeslagen op het apparaat, waardoor de nieuwere versie mislukt.  Dit veroorzaakt het volgende foutbericht: DEP0100: Zorg ervoor dat de ontwikkelaarsmodus voor het doelapparaat is ingeschakeld. Kan geen ontwikkelaarslicentie verkrijgen op \<ip\> vanwege fout 80004005.
+Hoofdoorzaak van het probleem: gebruikers die Visual Studio 2015 of vroege versies van Visual Studio 2017 gebruikten om toepassingen te implementeren en fouten op te sporen op hun HoloLens en vervolgens de nieuwste versies van Visual Studio 2017 of Visual Studio 2019 met dezelfde HoloLens hebben gebruikt, worden beïnvloed. De nieuwere versies van Visual Studio een nieuwe versie van een onderdeel implementeren, maar bestanden van de oudere versie worden overgelaten op het apparaat, waardoor de nieuwere versie mislukt.  Dit veroorzaakt het volgende foutbericht: DEP0100: Zorg ervoor dat de ontwikkelaarsmodus voor het doelapparaat is ingeschakeld. Kan geen ontwikkelaarslicentie verkrijgen op \<ip\> vanwege een 80004005.
 
 #### <a name="workaround"></a>Tijdelijke oplossing
 
-Ons team werkt momenteel aan een oplossing. In de tussentijd kunt u de volgende stappen gebruiken om het probleem op te lossen en de blokkering van implementatie en debuggen op te lossen:  
+Ons team werkt momenteel aan een oplossing. In de tussentijd kunt u de volgende stappen gebruiken om het probleem op te lossen en de blokkering van de implementatie en debuggen op te lossen:  
 
 1. Open Visual Studio.
 
@@ -134,7 +134,7 @@ We zullen verdere updates leveren zodra deze beschikbaar komen.
 > [!NOTE]
 > Laatste update: 4/2 @ 10:00 uur - Probleem opgelost.
 
-U kunt problemen ervaren bij het starten van de Microsoft Store apps op HoloLens. We hebben vastgesteld dat het probleem optreedt wanneer updates van achtergrond-apps een nieuwere versie van frameworkpakketten in specifieke reeksen implementeren terwijl een of meer van hun afhankelijke apps nog steeds worden uitgevoerd. In dit geval heeft een automatische app-update een nieuwe versie van het systeemeigen .NET Framework geleverd (versie 10.0.25531 tot 10.0.27413) waardoor de apps die worden uitgevoerd, niet correct zijn bijgewerkt voor alle apps die de eerdere versie van het framework gebruiken.  De stroom voor frameworkupdates is als volgt:
+U kunt problemen ervaren bij het starten van de Microsoft Store apps op HoloLens. We hebben vastgesteld dat het probleem optreedt wanneer updates van achtergrond-apps een nieuwere versie van frameworkpakketten in specifieke reeksen implementeren terwijl een of meer van hun afhankelijke apps nog steeds worden uitgevoerd. In dit geval heeft een automatische app-update een nieuwe versie van het systeemeigen .NET Framework geleverd (versie 10.0.25531 tot 10.0.27413) waardoor de apps die worden uitgevoerd, niet correct zijn bijgewerkt voor alle apps die de vorige versie van het framework gebruiken.  De stroom voor frameworkupdates is als volgt:
 
 1. Het nieuwe frameworkpakket wordt gedownload uit de Store en geïnstalleerd.
 
@@ -144,15 +144,15 @@ Als stap 2 vóór voltooiing wordt onderbroken, kunnen apps waarvoor het nieuwer
 
 Sommige gebruikers hebben gerapporteerd dat het probleem voor hen wordt opgelost door apps te sluiten en andere apps te starten, zoals Feedback-hub, 3D-viewer of Foto's. Dit werkt echter niet altijd.
 
-De hoofdoorzaak is dat dit probleem niet de update zelf heeft veroorzaakt, maar een fout in het besturingssysteem die ertoe heeft geleid dat de systeemeigen .NET frameworkupdate onjuist is verwerkt. We zijn blij te kunnen aankondigen dat we een oplossing hebben geïdentificeerd en een update hebben uitgebracht (besturingssysteemversie 17763.380) met de oplossing.  
+De hoofdoorzaak is dat dit probleem niet de update zelf heeft veroorzaakt, maar een bug in het besturingssysteem die ertoe heeft geleid dat de systeemeigen .NET frameworkupdate onjuist is verwerkt. We zijn blij te kunnen aankondigen dat we een oplossing hebben geïdentificeerd en een update hebben uitgebracht (besturingssysteemversie 17763.380) met de oplossing.  
 
-Ga als volgende te werk om te zien of uw apparaat de update kan gebruiken:
+Ga als volgende te werk om te zien of uw apparaat de update kan ontvangen:
 
 1. Ga naar de Instellingen-app en open **Update & Security**.
 
 1. Selecteer **Controleren op updates.**
 
-1. Als update naar 17763.380 beschikbaar is, werkt u bij naar deze build om de oplossing voor de app-fout vast te stellen.
+1. Als de update naar 17763.380 beschikbaar is, werkt u bij naar deze build om de oplossing voor de app-fout vast te stellen.
 
 1. Bij het bijwerken naar deze versie van het besturingssysteem moeten de apps werken zoals verwacht.
 
@@ -204,7 +204,7 @@ We waarderen uw geduld omdat we het proces hebben doorlopen om dit probleem op t
 
 - Xbox Wireless Controller S moet worden bijgewerkt voordat deze kan worden gebruikt met HoloLens. Zorg ervoor dat u [up-to-date bent](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) voordat u uw controller aan een HoloLens.
 
-- Als u de HoloLens opnieuw opstart terwijl de Xbox Wireless Controller is verbonden, maakt de controller niet automatisch opnieuw verbinding met HoloLens. Het lampje van de knop Gids knippert langzaam totdat de controller na 3 minuten wordt uitgeschakeld. Als u de controller onmiddellijk opnieuw wilt verbinden, schakelt u de controller uit door de knop Gids ingedrukt te houden totdat het licht wordt uitgeschakeld. Wanneer u de controller opnieuw in bedrijf neemt, wordt er opnieuw verbinding met de HoloLens.
+- Als u de HoloLens opnieuw opstart terwijl de Xbox Wireless Controller is verbonden, maakt de controller niet automatisch opnieuw verbinding met HoloLens. Het lampje van de knop Gids blijft langzaam knipperen totdat de controller na 3 minuten wordt uitgeschakeld. Als u de controller onmiddellijk opnieuw wilt verbinden, schakelt u de controller uit door de knop Gids ingedrukt te houden totdat het licht wordt uitgeschakeld. Wanneer u de controller weer in bedrijf neemt, wordt er opnieuw verbinding met de HoloLens.
 
 - Als uw HoloLens stand-by komt terwijl de Xbox Wireless Controller is verbonden, wordt het apparaat door invoer op de controller HoloLens. U kunt dit voorkomen door uw controller uit te schakelen wanneer u klaar bent met het gebruik ervan.
 

@@ -9,12 +9,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: e6da84c180ef596b63b6d41229bd094354ab1221
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 4187ae99a25fc6dd3f407410da27568d4b2b6865934b0c615680f295ec7977be
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640165"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663058"
 ---
 # <a name="new-settings-app"></a>Nieuwe Instellingen app
 
@@ -34,12 +34,12 @@ Met [Windows Holographic, versie 21H1,](hololens-release-notes.md#windows-hologr
     > [!NOTE]
     > Bluetooth microfoons worden niet ondersteund door HoloLens 2.
   - App-volume: pas het volume van elke app onafhankelijk aan. Zie [volumebeheer per app.](holographic-home.md#per-app-volume-control)
-- Systeem> Slaapstand &: kies wanneer het apparaat na een periode van inactiviteit in de slaapstand moet gaan.
-- Systeem> batterij: schakel handmatig de batterijbesparing in of stel een drempelwaarde voor de accu in op welk punt batterijbesparing modus automatisch wordt ingeschakeld.
+- Systeem> slaapstand &: kies wanneer het apparaat na een periode van inactiviteit in de slaapstand moet gaan.
+- Systeem> batterij: schakel handmatig de batterijbesparing in of stel een drempelwaarde voor de accu in op het punt waarop batterijbesparing modus automatisch wordt ingeschakeld.
 - Apparaten > USB: u kunt USB-verbindingen standaard uitschakelen.
 - Netwerkverbinding & internet:
   - USB-C Ethernet-adapters worden nu weergegeven in Network & Internet.
-  - Instellingen voor USB-C Ethernet-adapter zijn nu beschikbaar, met inbegrip van het IP-adres.
+  - Instellingen voor USB-C Ethernet-adapters zijn nu beschikbaar, met inbegrip van het IP-adres.
   - U kunt nu de vliegtuigmodus inschakelen op HoloLens 2.
 - Apps: u kunt de standaardapps die worden gebruikt voor bestands- en koppelingstypen opnieuw instellen. Zie Standaard [app- kiezen voor meer informatie.](holographic-home.md#default-app-picker)
 - Accounts > andere gebruikers: apparaateigenaren kunnen gebruikers toevoegen, standaardgebruikers upgraden naar apparaateigenaren, apparaateigenaren downgraden naar standaardgebruikers en gebruikers verwijderen.

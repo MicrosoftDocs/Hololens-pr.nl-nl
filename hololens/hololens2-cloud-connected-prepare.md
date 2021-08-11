@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 21fffdc24f8682bc44779e1cebe8cd6eacb59619
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: f6c2e514024a171661b182a310145e26280e114a1cff65ef5b03b16feae8371a
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639655"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660173"
 ---
 # <a name="prepare---cloud-connected-guide"></a>Voorbereiden - Handleiding voor verbonden cloud
 
@@ -40,7 +40,7 @@ Azure AD is een cloudgebaseerde adreslijstservice die identiteits- en toegangsbe
 
 Werknemers kunnen slechts één account gebruiken om een apparaat te initialiseren, zodat&#39;belangrijk is dat uw organisatie bepaalt welk account het eerst wordt ingeschakeld. Het gekozen account bepaalt wie het apparaat beheert en beïnvloedt uw beheermogelijkheden.
 
-In deze handleiding hebben we ervoor gekozen om voor de identiteit die [wordt](/hololens/hololens-identity) gebruikt, Azure AD-accounts of Azure Active Directory gebruiken. Er zijn verschillende voordelen voor Azure AD-accounts die we willen gebruiken, zoals:
+In deze handleiding hebben we [](/hololens/hololens-identity) ervoor gekozen om voor de gebruikte identiteit Azure AD-accounts of Azure Active Directory gebruiken. Er zijn verschillende voordelen voor Azure AD-accounts die we willen gebruiken, zoals:
 
 - Werknemers gebruiken hun Azure AD-account om het apparaat te registreren bij Azure AD en registreren het automatisch bij de organisatie&#39;s MDM-oplossing (Azure AD+ MDM- vereist Azure AD Premium).
 - Azure AD-accounts bieden ondersteuning [voor een enkele aanmelding.](/azure/active-directory/manage-apps/what-is-single-sign-on) Wanneer een gebruiker zich Remote Assist, wordt de identiteit van de aangemelde Azure AD-gebruiker herkend en wordt de gebruiker aangemeld bij de app voor een gestroomlijnde ervaring.
@@ -54,7 +54,7 @@ Microsoft [Intune,](/mem/intune/fundamentals/what-is-intune)onderdeel van de Ent
 > Het is essentieel om Mobile Device Management te hebben. Als u deze&#39;nog niet hebt ingesteld, volgt u deze handleiding en [gaat u aan de slag met Intune.](/mem/intune/fundamentals/free-trial-sign-up)
 
 > [!NOTE]
-> Meerdere MDM-systemen ondersteunen Windows 10 en bieden de meeste ondersteuning voor implementatiescenario's voor persoonlijke en zakelijke apparaten. MDM-providers die ondersteuning Windows 10 Holographic zijn onder andere: AirWatch, MobileIron en andere. De meeste toonaangevende MDM-leveranciers ondersteunen al integratie met Azure AD. U vindt de MDM-leveranciers die Ondersteuning bieden voor Azure AD in [Azure Marketplace.](https://azure.microsoft.com/marketplace/)
+> Meerdere MDM-systemen ondersteunen Windows 10 en bieden de meeste ondersteuning voor implementatiescenario's voor persoonlijke en zakelijke apparaten. MDM-providers die ondersteuning Windows 10 Holographic zijn onder andere: AirWatch, MobileIron en andere. De meeste toonaangevende MDM-leveranciers ondersteunen al integratie met Azure AD. U vindt de MDM-leveranciers die Azure AD ondersteunen in [Azure Marketplace.](https://azure.microsoft.com/marketplace/)
 
 ## <a name="network"></a>Netwerk
 
@@ -73,7 +73,7 @@ Meer informatie:
 
 ### <a name="optional-connect-your-hololens-to-vpn"></a>Optioneel: Verbinding maken verbinding HoloLens VPN
 
-De apparaten die in deze handleiding worden verbonden, gaan verbinding maken met het netwerk via en het externe cloudnetwerk. Het kan zijn dat u voor toegang tot bedrijfsbronnen&#39;uw apparaten via VPN moet verbinden. Er zijn verschillende manieren om uw apparaten te verbinden met VPN, zowel waar de eindgebruiker verbinding kan maken via de gebruikersinterface van het apparaat, als de apparaten kunnen worden beheerd en het VPN-profiel kunnen ontvangen van een PPKG of MDM. Het instellen van VPN zal&#39;niet worden behandeld in dit artikel. Als u dus meer wilt weten over de verschillende VPN-protocollen of manieren om VPN te beheren&#39;, gaat u naar deze handleidingen voor informatie over [HoloLens en VPN.](/hololens/hololens-network#vpn)
+De apparaten die in deze handleiding worden verbonden, gaan verbinding maken met het netwerk via en het externe cloudnetwerk. Het kan zijn dat u voor toegang tot bedrijfsbronnen&#39;uw apparaten via VPN moet verbinden. Er zijn verschillende manieren om uw apparaten te verbinden met VPN, zowel waar de eindgebruiker verbinding kan maken via de gebruikersinterface van het apparaat, als de apparaten kunnen worden beheerd en het VPN-profiel kunnen ontvangen van een PPKG of MDM. Het instellen van VPN zal&#39;niet worden behandeld in dit artikel. Als u meer wilt weten over de verschillende VPN-protocollen of manieren om VPN te beheren&#39;, gaat u naar deze handleidingen voor informatie over [HoloLens en VPN.](/hololens/hololens-network#vpn)
 
 ## <a name="next-step"></a>Volgende stap
 

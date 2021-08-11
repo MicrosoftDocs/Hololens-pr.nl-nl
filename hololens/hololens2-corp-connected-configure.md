@@ -1,7 +1,7 @@
 ---
 title: Implementatiehandleiding - Zakelijk verbonden HoloLens 2 met Dynamics 365 Guides - Configureren
-description: Meer informatie over het instellen van configuraties voor het implementeren van HoloLens 2 via een bedrijfsnetwerk verbonden met Dynamics 365 Guides.
-keywords: HoloLens, beheer, zakelijk verbonden, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Device Management
+description: Meer informatie over het instellen van configuraties voor het implementeren HoloLens 2 apparaten via een bedrijfsnetwerk verbonden met Dynamics 365 Guides.
+keywords: HoloLens, beheer, verbonden bedrijf, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Device Management
 author: joyjaz
 ms.author: v-jjaswinski
 ms.reviewer: aboeger
@@ -14,35 +14,35 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9457acd2f53d0d3127d6c68d620b660f6e09866d
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 2b855f5891dfa4ca695e4ae3b2a2e82510c5b626f08b434643169be239b48291
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637078"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660186"
 ---
-# <a name="configure---corporate-connected-guide"></a>Configureren - Handleiding voor verbonden bedrijfsgegevens
+# <a name="configure---corporate-connected-guide"></a>Configureren - Corporate Connected Guide
 
 ## <a name="azure-users-and-groups"></a>Azure-gebruikers en -groepen
 
-Azure, en Intune door die extensie, maakt gebruik van gebruikers en groepen om configuraties en licenties toe te wijzen. Om deze implementatiestroom te valideren en te kunnen controleren of u een handleiding kunt maken en gebruiken, hebt&#39;een gebruikersaccount nodig.
+Azure en Intune met deze extensie gebruiken gebruikers en groepen om configuraties en licenties toe te wijzen. Omwille van het valideren van deze implementatiestroom en de mogelijkheid om te controleren of u een handleiding kunt schrijven en gebruiken, hebt&#39;een gebruikersaccount nodig.
 
-We kunnen één gebruikersgroep specifiek maken voor het toewijzen van licenties.
+We kunnen één gebruikersgroep maken die specifiek is voor het toewijzen van licenties.
 
-Als u geen&#39;hebt tot twee Azure AD-accounts in een gebruikersgroep, kunt u deze gebruiken; hier zijn de snelstartgidsen voor:
+Als u geen&#39;hebt tot twee Azure AD-accounts in een gebruikersgroep, kunt u deze gebruiken; dit zijn de snelstartgidsen voor:
 
 - [Een gebruiker maken](/mem/intune/fundamentals/quickstart-create-user)
 - [Een groep maken](/mem/intune/fundamentals/quickstart-create-group)
-- [Gebruikers toevoegen aan een groep:](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal) gemaakte gebruikers toevoegen om een groep te maken
+- [Gebruikers toevoegen aan een groep](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal) : gemaakte gebruikers toevoegen om een groep te maken
 - [Azure AD configureren zodat een gebruikersgroep apparaten kan deelnemen:](/azure/active-directory/devices/azureadjoin-plan#configure-your-device-settings) zorg ervoor dat de nieuwe gebruikersgroep toestemming heeft om apparaten in te schrijven bij Azure AD
 
 ## <a name="auto-enrollment-on-hololens-2"></a>Automatische inschrijving op HoloLens 2
 
-Voor een soepele en naadloze ervaring kunt u Azure Active Directory Join (AADJ) en automatische inschrijving bij Intune instellen voor HoloLens 2-apparaten. Hierdoor kunnen gebruikers hun aanmeldingsreferenties voor de organisatie invoeren tijdens OOBE, zich automatisch registreren bij Azure AD en het apparaat registreren bij MDM.
+Voor een soepele en naadloze ervaring is het instellen van Azure Active Directory Join (AADJ) en automatische inschrijving bij Intune voor HoloLens 2-apparaten de beste manier. Hierdoor kunnen gebruikers hun aanmeldingsreferenties van de organisatie invoeren tijdens OOBE en automatisch registreren bij Azure AD en het apparaat registreren bij MDM.
 
-Met behulp [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home)kunt u services selecteren en door een paar pagina's navigeren totdat u Een gratis proefversie Premium selecteren. U merkt misschien dat er Azure Active Directory Premium 1 en 2 is: voor Automatische inschrijving is P1 voldoende. We kunnen Intune selecteren, het gebruikersbereik voor automatische inschrijving selecteren en de groep selecteren die eerder is gemaakt.
+Met behulp [Microsoft Endpoint Manager](https://endpoint.microsoft.com/#home)kunt u services selecteren en door een paar pagina's navigeren totdat u Een gratis proefversie Premium selecteren. Mogelijk ziet u dat er Azure Active Directory Premium 1 en 2 is. Voor Automatische inschrijving is P1 voldoende. We kunnen Intune selecteren, het gebruikersbereik voor automatische inschrijving selecteren en de groep selecteren die eerder is gemaakt.
 
-Lees de handleiding over het inschakelen van automatische inschrijving [voor Intune](/mem/intune/enrollment/quickstart-setup-auto-enrollment)voor meer informatie en stappen.
+Lees de handleiding over het inschakelen van automatische inschrijving voor [Intune](/mem/intune/enrollment/quickstart-setup-auto-enrollment)voor meer informatie en stappen.
 
 ## <a name="corporate-wi-fi-connectivity"></a>Connectiviteit Wi-Fi bedrijfsnetwerk
 
@@ -52,7 +52,7 @@ Voor Wi-Fi bedrijfsverbindingen is doorgaans verificatie op basis van certificat
 
 Als u certificaten en profielen wilt implementeren via Microsoft Endpoint Manager, volgt u deze stappen:
 
-1. Maak een profiel voor elk van de basis- en tussencertificaten (zie [Vertrouwde certificaatprofielen maken).](/intune/protect/certificates-configure#create-trusted-certificate-profiles) Elk van deze profielen moet een beschrijving hebben die een vervaldatum in DD/MM/YYYY-indeling bevat.
+1. Maak een profiel voor elk van de basiscertificaten en tussenliggende certificaten (zie [Vertrouwde certificaatprofielen maken).](/intune/protect/certificates-configure#create-trusted-certificate-profiles) Elk van deze profielen moet een beschrijving hebben met een vervaldatum in DD/MM/YYY-indeling.
 
     > [!CAUTION]
     > **Certificaatprofielen zonder een vervaldatum worden niet geïmplementeerd.**
@@ -63,9 +63,9 @@ Als u certificaten en profielen wilt implementeren via Microsoft Endpoint Manage
     > **Certificaatprofielen zonder een vervaldatum worden niet geïmplementeerd.**
 
     > [!Note]
-    > Omdat de HoloLens 2 wordt beschouwd als een gedeeld apparaat, dat wil zeggen meerdere gebruikers per apparaat, wordt het aanbevolen om waar mogelijk Apparaatcertificaten te implementeren in plaats van gebruikerscertificaten voor Wi-Fi-verificatie.
+    > Omdat de HoloLens 2 wordt beschouwd als een gedeeld apparaat, dat wil zeggen meerdere gebruikers per apparaat, wordt het aanbevolen om waar mogelijk Apparaatcertificaten te implementeren in plaats van gebruikerscertificaten voor Wi-Fi verificatie.
 
-3. Maak een profiel voor uw bedrijfsnetwerk Wi-Fi (zie [Wi-Fi-instellingen voor Windows 10 en latere apparaten).](/intune/wi-fi-settings-windows) Binnen uw Wi-Fi kunt u de proxyinstellingen binnen uw organisatie gebruiken.
+3. Maak een profiel voor uw bedrijfsnetwerk Wi-Fi (zie [Wi-Fi-instellingen voor](/intune/wi-fi-settings-windows)Windows 10 en latere apparaten). Binnen uw Wi-Fi kunt u de proxyinstellingen binnen uw organisatie gebruiken.
 
     Uw opties zijn:
     - **Geen**: Er zijn geen proxyinstellingen geconfigureerd.
@@ -75,37 +75,37 @@ Als u certificaten en profielen wilt implementeren via Microsoft Endpoint Manage
     Zie [PAC-bestand (Proxy Auto-Configuration)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (hiermee opent u een niet-Microsoft-site) voor meer informatie over PAC-bestanden.
  
     > [!Note]
-    > Het wordt aanbevolen om het Wi-Fi waar mogelijk toe te Wi-Fi aan Apparaatgroepen in plaats van Gebruikersgroepen.
+    > Het wordt aanbevolen om het Wi-Fi waar mogelijk toe te Wi-Fi aan Apparaatgroepen in plaats van gebruikersgroepen.
      
     > [!Tip]
-    > U kunt ook een werkprofiel Wi-Fi exporteren vanaf een Windows 10 pc in uw bedrijfsnetwerk. Met deze export maakt u een XML-bestand met alle huidige instellingen. Importeer dit bestand vervolgens in Intune en gebruik het als het Wi-Fi voor uw HoloLens 2 apparaten. Zie [Wi-Fi-instellingen voor Windows-apparaten exporteren en importeren](/mem/intune/configuration/wi-fi-settings-import-windows-8-1).
+    > U kunt ook een werkprofiel Wi-Fi exporteren vanaf een Windows 10 pc in uw bedrijfsnetwerk. Met deze export maakt u een XML-bestand met alle huidige instellingen. Importeer dit bestand vervolgens in Intune en gebruik het als het Wi-Fi profiel voor uw HoloLens 2 apparaten. Zie [Wi-Fi-instellingen voor Windows-apparaten exporteren en importeren](/mem/intune/configuration/wi-fi-settings-import-windows-8-1).
 
 1.  [Wijs](/mem/intune/configuration/device-profile-assign) de apparaatprofielen toe aan HoloLens apparaatgroep.
 
 2.  [Controleer](/mem/intune/configuration/device-profile-monitor) de apparaatprofielen in Intune.
 
-Als er problemen zijn met Wi-Fi profielen, verwijzen wij u naar Problemen met [Wi-Fi-apparaatconfiguratieprofielen in Intune oplossen.](/troubleshoot/mem/intune/troubleshoot-wi-fi-profiles)
+Als er problemen zijn met Wi-Fi-profielen, verwijzen wij u [naar Problemen Wi-Fi apparaatconfiguratieprofielen in Intune oplossen.](/troubleshoot/mem/intune/troubleshoot-wi-fi-profiles)
 
 ## <a name="troubleshooting-external-internet-access-when-corp-connected"></a>Problemen met externe internettoegang oplossen wanneer Corp verbonden is
-Wanneer services proberen geen proxy te gebruiken, kunnen ze proberen verbinding te maken via de firewall. U kunt een lijst met specifieke eindpunten toevoegen aan uw firewallregels om deze problemen op te lossen.
+Wanneer services proberen geen proxy te gebruiken, kunnen ze proberen verbinding te maken via de firewall. U kunt een lijst met specifieke eindpunten aan uw firewallregels toevoegen om deze problemen op te lossen.
 
-Als u bent geblokkeerd op firewallpoorten, moet u enkele algemene [eindpunten inschakelen](/hololens/hololens-offline) voor HoloLens.
+Als u bent geblokkeerd op firewallpoorten, moet u enkele algemene eindpunten [inschakelen](/hololens/hololens-offline) voor HoloLens.
 
-U kunt ook de gidsen specifieke poorten inschakelen: [via internet toegankelijke URL's die vereist zijn voor connectiviteit met Microsoft Dynamics CRM Online.](https://support.microsoft.com/help/2655102/internet-accessible-urls-required-for-connectivity-to-microsoft-dynami)
+U kunt ook de gidsen specifieke poorten inschakelen: Url's die toegankelijk zijn voor internet [die vereist zijn voor connectiviteit met Microsoft Dynamics CRM Online.](https://support.microsoft.com/help/2655102/internet-accessible-urls-required-for-connectivity-to-microsoft-dynami)
 
 ## <a name="app-deployment"></a>App-implementatie
 
 Het implementeren van een LOB-app via MDM is een methode die eenvoudig schaalbaar is en automatisch op uw apparaten kan worden geïmplementeerd bij inschrijving in een gemaakte groep.
 
-Als u nog steeds apps ontwikkelt of nog geen apps hebt, kunt u een voorbeeld-app van de MRTK-voorbeeldhub gebruiken. Deze voorbeeld-app is klaar voor gebruik en vereist niet het gebruik van Unity of Visual Studio. [Download de mrtk-voorbeeld-app](https://aka.ms/HoloLensDocs-Sample-MRTK-Examples-App).
+Als u nog steeds apps ontwikkelt of nog geen apps hebt, kunt u een voorbeeld-app van de MRTK-voorbeeldenhub gebruiken. Deze voorbeeld-app is klaar voor gebruik en vereist geen Unity- of Visual Studio. [Download de voorbeeld-app MRTK-voorbeelden.](https://aka.ms/HoloLensDocs-Sample-MRTK-Examples-App)
 
-Als u liever uw eigen app gebruikt of geïnteresseerd bent in app-ontwikkeling voor Mixed Reality, kunt u onze documentatie voor ontwikkelaars [Mixed Reality lezen.](/windows/mixed-reality/design/design)
+Als u liever uw eigen app gebruikt of geïnteresseerd bent in app-ontwikkeling voor Mixed Reality, kunt u onze documentatie voor [Mixed Reality-ontwikkelaars bekijken.](/windows/mixed-reality/design/design)
 
 > [!NOTE]
 > De systeemvereisten voor HoloLens zijn gebaseerd op de architectuur van de app-build. HoloLens 2 gebruiken ARM-architectuur. Wanneer u uw apps in Visual Studio, moet u ervoor zorgen dat u de juiste architectuur voor het apparaat hebt geselecteerd en eventuele benodigde afhankelijkheden hebt op te nemen.
 
 > [!IMPORTANT]
-> Bij het implementeren van LOB-apps is het belangrijk dat u ook het certificaat uploadt naar Intune en dit toewijst aan dezelfde groep die is bedoeld om de app te gebruiken, anders wordt het certificaat niet goed geïnstalleerd.
+> Bij het implementeren van LOB-apps is het belangrijk dat u ook het certificaat uploadt naar Intune en dit toewijst aan dezelfde groep die bedoeld is om de app te gebruiken, anders wordt het certificaat niet goed geïnstalleerd.
 
 ### <a name="upload-and-assign-the-app"></a>Upload app installeren en toewijzen
 
@@ -129,28 +129,28 @@ Als u liever uw eigen app gebruikt of geïnteresseerd bent in app-ontwikkeling v
 
 Meer informatie: [Apps toewijzen aan groepen in Microsoft Intune](/mem/intune/apps/apps-deploy#assign-an-app)
 
-## <a name="setup-guides-application-licenses-dataverse-and-authoring"></a>Installatiehandleidingen: toepassingslicenties, gegevensverse en ontwerp
+## <a name="setup-guides-application-licenses-dataverse-and-authoring"></a>Installatiehandleidingen: Toepassingslicenties, gegevensverse en ontwerp
 
-Als u deze Dynamics 365 Guides, moet u enige voorbereidingen treffen. Er zijn drie gebieden waarop we ons moeten voorbereiden; gebruikers, gegevensverse en de handleidingen zelf.
+Als u de Dynamics 365 Guides wilt gebruiken, moet u enige voorbereidingen treffen. Er zijn drie gebieden waarop we ons moeten voorbereiden: gebruikers, dataverse en de handleidingen zelf.
 
-### <a name="users-and-application-licenses"></a>Gebruikers en toepassingslicenties
+### <a name="users-and-application-licenses"></a>Gebruikers- en toepassingslicenties
 
-Iemand die Gebruikshandleidingen wil gebruiken, moet een Azure AD-account gebruiken dat we eerder in deze handleiding hebben ingesteld.
+Iemand die Handleidingen kan gebruiken, moet een Azure AD-account gebruiken dat we eerder in deze handleiding hebben ingesteld.
 
 U moet ook een Dynamics 365 Guides toewijzen aan de gebruiker die u hebt gemaakt. U doet dit vanuit de [Microsoft 365-beheercentrum](https://admin.microsoft.com/AdminPortal/Home). Wijs ook de licentie toe aan uw primaire Azure-account.
 
 Volg [deze korte handleiding](/dynamics365/mixed-reality/guides/setup-step-one#assign-the-dynamics-365-guides-license-to-user-accounts) met afbeeldingen voor stapsgewijs instructies voor het toepassen van toepassingslicenties.
 
-### <a name="set-up-the-dataverse"></a>Dataverse instellen
+### <a name="set-up-the-dataverse"></a>De Dataverse instellen
 
-Als u een [productieomgeving wilt instellen,](/dynamics365/mixed-reality/guides/setup-step-two#set-up-a-production-environment-for-purchased-licenses-only) moet u aan twee vereisten voldoen. U moet de rol [**Systeembeheerder**](/power-platform/admin/database-security) hebben **en** u moet een [**Power Apps-licentie**](/power-platform/admin/signup-question-and-answer) (of een [**Dynamics 365 Guides-licentie**](/dynamics365/mixed-reality/guides/setup-step-one) met een Power Apps licentie). Als u de Azure AD hebt gemaakt door deze handleiding te volgen, voldoet u aan de rolvereisten voor systeembeheerder. In de vorige stap hebben we ook een gidsenlicentie toegewezen.
+Als u een [productieomgeving wilt instellen,](/dynamics365/mixed-reality/guides/setup-step-two#set-up-a-production-environment-for-purchased-licenses-only) moet u aan twee vereisten voldoen. U moet [**de rol**](/power-platform/admin/database-security)  Systeembeheerder hebben en u moet een [**Power Apps-licentie**](/power-platform/admin/signup-question-and-answer) (of een [**Dynamics 365 Guides-licentie**](/dynamics365/mixed-reality/guides/setup-step-one) met Power Apps licentie). Als u deze handleiding volgt die u hebt gemaakt, voldoet u aan de rolvereisten voor systeembeheerder. In de vorige stap hebben we ook een licentie voor gidsen toegewezen.
 
 In deze handleiding voor het [maken van een Microsoft Dataverse-omgeving:](/dynamics365/mixed-reality/guides/setup-step-two)
 
-1. Begin met de [Power Platform-beheercentrum](https://admin.powerplatform.microsoft.com/environments) en maak een nieuwe omgeving.
+1. Begin met het gebruik van [Power Platform-beheercentrum](https://admin.powerplatform.microsoft.com/environments) en het maken van een nieuwe omgeving.
 2. Wanneer u de **nieuwe omgeving maakt** voor het **type** dat u&#39;selecteert u **Productie**.
-3. Is het belangrijk dat u De database **voor deze omgeving maken in-/uitschakelen?**  optie op **Ja.**
-4. Stel in  **het dialoogvenster Database**  toevoegen de optie  **Dynamics 365-apps inschakelen**  in op  **Ja.**
+3. Is het belangrijk dat u Een database maken **voor deze omgeving in-/uitschakelen?**  op **Ja.**
+4. Stel in  **het dialoogvenster Database**  toevoegen de optie  **Dynamics 365-apps**  inschakelen in op  **Ja.**
 
 U kunt het beste de maximale bestandsgrootte van items in uw dataverse verhogen. Door de maximale bestandsgrootte te vergroten, kunt u grotere 3D-modellen of videobestanden uploaden die u later in uw handleidingen gaat gebruiken. Volg een korte handleiding om [de maximale grootte van het uploadbestand te wijzigen.](/dynamics365/mixed-reality/guides/setup-step-two#change-the-maximum-upload-file-size)
 
@@ -168,9 +168,9 @@ Als u meer wilt weten over het maken van handleidingen, begint u hier met het [o
 
 ## <a name="optional-kiosk-mode"></a>Optioneel: Kioskmodus
 
-De kioskmodus is een modus waarmee een IT-beheerder de gebruikersinterface van het menu Start kan configureren om slechts één app of een selectie apps weer te geven. Een kiosk kan ook worden toegepast op specifieke gebruikers, groepen of op apparaatniveau; en in sommige gevallen moet u bepaalde gebruikers uitsluiten van de kiosk, zodat ze nog steeds toegang hebben tot het normale menu Start.
+Kioskmodus is een modus waarmee een IT-beheerder de gebruikersinterface van het menu Start kan configureren om slechts één app of een selectie apps weer te geven. Een kiosk kan ook worden toegepast op specifieke gebruikers, groepen of op apparaatniveau; en in sommige gevallen moet u bepaalde gebruikers uitsluiten van de kiosk, zodat ze nog steeds toegang hebben tot het normale menu Start.
 
-De kioskmodus heeft veel verschillende variabelen, zowel in het bereik als in configuraties die kunnen worden ingesteld, evenals methoden voor het implementeren van de kiosk op HoloLens. Vanwege al deze variabelen wordt de kioskmodus voor deze handleiding optioneel gelaten en komt deze niet meer terug.  Als u van mening bent dat u de beschikbare apps wilt beperken tot gebruikers of meer wilt weten, kunt u hier lezen hoe u HoloLens als [kiosk kunt instellen.](/hololens/hololens-kiosk)
+De kioskmodus heeft veel verschillende variabelen, zowel in het bereik als in configuraties die kunnen worden ingesteld, evenals methoden voor het implementeren van de kiosk op HoloLens. Vanwege al deze variabelen wordt de kioskmodus voor deze handleiding optioneel gelaten en wordt deze niet opnieuw bezocht.  Als u van mening bent dat u de beschikbare apps wilt beperken tot gebruikers of meer wilt weten, kunt u hier lezen hoe u HoloLens als kiosk kunt [instellen.](/hololens/hololens-kiosk)
 
 ## <a name="optional-wdac"></a>Optioneel: WDAC
 

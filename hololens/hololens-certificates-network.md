@@ -13,12 +13,12 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 62eedd0c05bb23f11a4e17a97b4ab5441a2931cf
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: d9b752c820af8dbceb2b6b9f3c7a7be4df910805b5a5014bb3e3650551392ce8
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639264"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664310"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-hololens-2"></a>Certificaten en netwerkprofielen voorbereiden voor HoloLens 2
 
@@ -36,12 +36,12 @@ Basiscertificaten zijn vereist voor het implementeren van certificaten via een S
 Als u wilt toestaan dat een apparaat automatisch wordt voorzien van de vereiste Wi-Fi-configuratie voor uw bedrijfsnetwerk, hebt u een Wi-Fi configuratieprofiel nodig. U kunt Intune of een andere MDM-provider configureren om deze profielen op uw apparaten te implementeren. Als uw netwerkbeveiliging vereist dat apparaten deel uitmaken van het lokale domein, moet u mogelijk ook uw Wi-Fi-netwerkinfrastructuur evalueren om ervoor te zorgen dat deze compatibel is met HoloLens 2-apparaten (HoloLens 2-apparaten zijn alleen lid van Azure AD).
 
 ## <a name="deploy-certificate-infrastructure"></a>Certificaatinfrastructuur implementeren
-Als er nog geen SCEP- of PKCS-infrastructuur bestaat, moet u er een voorbereiden. Ter ondersteuning van het gebruik van SCEP- of PKCS-certificaten voor verificatie, vereist Intune het gebruik van een [certificaatconnector](/mem/intune/protect/certificate-connectors).
+Als er nog geen SCEP- of PKCS-infrastructuur bestaat, moet u er een voorbereiden. Ter ondersteuning van het gebruik van SCEP- of PKCS-certificaten voor verificatie, vereist Intune het gebruik van een [certificaatconnector.](/mem/intune/protect/certificate-connectors)
 
 > [!NOTE]
 > Wanneer u SCEP gebruikt met een Microsoft-CA, moet u ook de Registratieservice voor netwerkapparaten [(NDES) configureren](/mem/intune/protect/certificates-scep-configure#set-up-ndes)
 
-Zie Een certificaatprofiel configureren voor uw apparaten in de [Microsoft Intune.](/intune/certificates-configure)
+Zie Een certificaatprofiel configureren [voor uw apparaten in Microsoft Intune.](/intune/certificates-configure)
 
 ## <a name="deploy-certificates-and-wi-fivpn-profile"></a>Certificaten en Wi-Fi-/VPN-profiel implementeren
 Volg deze stappen om certificaten en profielen te implementeren:
