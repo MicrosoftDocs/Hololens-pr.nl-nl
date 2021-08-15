@@ -1,6 +1,6 @@
 ---
 title: Insider-preview voor Microsoft HoloLens
-description: Meer informatie over hoe u aan de slag gaat met Insider-builds en waardevolle feedback geeft voor onze volgende belangrijke update van het besturingssysteem voor HoloLens.
+description: Leer hoe u aan de slag gaat met Insider-builds en waardevolle feedback kunt geven voor onze volgende belangrijke update van het besturingssysteem voor HoloLens.
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -16,20 +16,20 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: de5b8f052cfdd176f5b883661b2339764fd8ec24113e06b1286d9406acf3790f
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: df0cb555c8445ef4d8f8165996a33e0f8c1a38653b45514594f893e3c761f65a
+ms.sourcegitcommit: 9615ed824bdf3f1747ec346da6136704d8eed015
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120364282"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider-preview voor Microsoft HoloLens
 
-Welkom bij de nieuwste Insider Preview-builds voor HoloLens. Het is eenvoudig om aan de slag [te gaan](hololens-insider.md#start-receiving-insider-builds) en waardevolle feedback te geven voor onze volgende belangrijke update van het besturingssysteem voor HoloLens.
+Welkom bij de nieuwste Insider Preview-builds voor HoloLens. Het is eenvoudig om aan [de slag te gaan](hololens-insider.md#start-receiving-insider-builds) en waardevolle feedback te geven voor onze volgende belangrijke update van het besturingssysteem voor HoloLens.
 
 ## <a name="windows-insider-release-notes"></a>Windows Opmerkingen bij de release van Insider
 
-We zijn blij om weer nieuwe functies te kunnen Windows Insiders. Nieuwe builds worden naar de dev- en bètakanalen gerouteert voor de nieuwste updates. We blijven deze pagina bijwerken wanneer we meer functies en updates toevoegen aan onze Windows Insider-builds. Word enthousiast en bereid u voor om deze updates in uw realiteit te combineren.
+We zijn blij dat we weer nieuwe functies kunnen Windows Insiders. Nieuwe builds worden naar de dev- en bètakanalen gerouteert voor de nieuwste updates. We blijven deze pagina bijwerken wanneer we meer functies en updates toevoegen aan onze Windows Insider-builds. Word enthousiast en bereid u voor om deze updates in uw realiteit te combineren.
 
 | Functie                 | Beschrijving                | Gebruiker of scenario | Build geïntroduceerd |
 |-------------------------|----------------------------|--------------|------------------|
@@ -39,8 +39,9 @@ We zijn blij om weer nieuwe functies te kunnen Windows Insiders. Nieuwe builds w
 | [Geavanceerd diagnostisch rapport weergeven in Instellingen op HoloLens](#view-advanced-diagnostic-report-in-settings-on-hololens) | Diagnostische MDM-logboeken op het apparaat weergeven | Problemen oplossen | 20348.1405 |
 | [Offline diagnostische meldingen](#offline-diagnostics-notifications) | Feedback geven over het verzamelen van logboeken | Problemen oplossen | 20348.1405 |
 | [Alleen persoonlijke Store-apps gebruiken voor Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | De Store-app configureren om alleen apps van de organisatie weer te geven | IT-beheerder | 20348.1408 |
-| [Verbeteringen in de verzameling met logboeken met weinig opslag](#low-storage-log-collection-improvements) | Verbeteringen in scenario's voor logboekverzameling tijdens situaties met weinig opslag. | IT-beheerder | 20348.1412 |
-| [Oplossingen en verbeteringen](hololens-insider.md#fixes-and-improvements) | Oplossingen en verbeteringen voor HoloLens. | Alles | 20348.1411 |
+| [Verbeteringen aan logboekverzameling met lage opslag](#low-storage-log-collection-improvements) | Verbeteringen in scenario's voor logboekverzameling tijdens situaties met weinig opslag. | IT-beheerder | 20348.1412 |
+| [Platformmodus verplaatsen](#moving-platform-mode) | Introduceert de bètaversie van de moving platformmodus, die, wanneer deze is geconfigureerd, het gebruik van HoloLens 2 mogelijk maakt op grote zeepaden die te maken hebben met weinig dynamische beweging. | Alles | 20348.1411 |
+| [Oplossingen en verbeteringen](#fixes-and-improvements) | Oplossingen en verbeteringen voor HoloLens. | Alles | 20348.1411 |
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>CSP-wijzigingen voor rapportagegegevens HoloLens details
 
@@ -83,7 +84,7 @@ Voorbeeld van syncml-blob (voor MDM-leveranciers) om een query uit te voeren voo
 
 ### <a name="auto-login-policy-controlled-by-csp"></a>Beleid voor automatisch aanmelden beheerd door CSP
 
-Met dit nieuwe beleid AutoLogonUser bepaalt u of een gebruiker automatisch wordt aangemeld. Sommige klanten willen apparaten instellen die zijn gekoppeld aan een identiteit, maar geen aanmeldingservaring willen. Imagine apparaat ophalen en direct hulp op afstand gebruiken. Of hebben een voordeel van het snel distribueren van HoloLens apparaten en hun eindgebruikers in staat stellen zich sneller aan te melden.
+Dit nieuwe beleid AutoLogonUser bepaalt of een gebruiker automatisch wordt aangemeld. Sommige klanten willen apparaten instellen die zijn gekoppeld aan een identiteit, maar geen aanmeldingservaring willen. Imagine apparaat ophalen en direct hulp op afstand gebruiken. Of hebben een voordeel van het snel distribueren van HoloLens apparaten en hun eindgebruikers in staat stellen zich sneller aan te melden.
 
 Wanneer het beleid is ingesteld op een niet-lege waarde, wordt het e-mailadres van de gebruiker voor automatische aanmelding opgegeven. De opgegeven gebruiker moet zich ten minste één keer bij het apparaat laten aanmelding inschakelen.
 
@@ -104,16 +105,16 @@ Gebruikers kunnen een PFX-certificaat met een persoonlijke sleutel importeren in
 
 ### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>Geavanceerd diagnostisch rapport weergeven in Instellingen op HoloLens
 
-Voor beheerde apparaten bij het oplossen van problemen is het bevestigen dat een verwachte beleidsconfiguratie wordt toegepast een belangrijke stap. Voorheen moest dit voor deze nieuwe functie via MDM of in de buurt van het apparaat worden gedaan na het exporteren van diagnostische MDM-logboeken die zijn verzameld via  ->  **Instellingen-accounts** Toegang tot werk of  >  **school,** en selecteert u **Uw beheerlogboeken** exporteren en weergeven op een pc in de buurt.
+Voor beheerde apparaten bij het oplossen van problemen is het bevestigen dat een verwachte beleidsconfiguratie wordt toegepast een belangrijke stap. Voorheen moest dit voor deze nieuwe functie buiten het apparaat worden uitgevoerd via MDM of in de buurt van het apparaat na het exporteren van diagnostische MDM-logboeken die zijn verzameld via  ->  **Instellingen-accounts** Toegang tot werk of  >  **school,** en selecteert u **Uw beheerlogboeken** exporteren en weergeven op een pc in de buurt.
 
-De MDM-diagnostische gegevens kunnen nu worden weergegeven op het apparaat met behulp van de Edge-browser. Als u het diagnostischE MDM-rapport eenvoudiger wilt weergeven, gaat u naar de pagina Werk of school openen en **selecteert u Geavanceerd diagnostisch rapport weergeven.** Hiermee wordt het rapport gegenereerd en geopend in een nieuw Edge-venster.
+De MDM-diagnostische gegevens kunnen nu worden weergegeven op het apparaat met behulp van de Edge-browser. Als u het diagnostischE MDM-rapport eenvoudiger wilt weergeven, gaat u naar de pagina Werk- of schoolrapport openen en **selecteert u Geavanceerd diagnostisch rapport weergeven.** Hiermee wordt het rapport gegenereerd en geopend in een nieuw Edge-venster.
 
-![Bekijk het geavanceerde diagnostische rapport in Instellingen app.](./images/view-advanced-diagnostic-report.jpg)
+![Geavanceerde diagnostische gegevens weergeven in Instellingen app.](./images/view-advanced-diagnostic-report.jpg)
 
 ### <a name="offline-diagnostics-notifications"></a>Offline diagnostische meldingen
 
 Dit is een update voor een bestaande functie met de [naam Offlinediagnose.](hololens-diagnostic-logs.md#offline-diagnostics) Voorheen was er geen duidelijke indicator voor gebruikers dat ze de diagnostische verzameling hadden geactiveerd of dat deze was voltooid.
-Nu toegevoegd aan Windows Insider-builds, zijn er twee vormen feedback over offlinediagnose. De eerste zijn pop-upmeldingen die worden weergegeven voor zowel wanneer de verzameling wordt gestart als voltooid. Deze worden weergegeven wanneer de gebruiker is aangemeld en visuals heeft.
+Nu toegevoegd aan Windows Insider-builds, zijn er twee soorten feedback voor offlinediagnose. De eerste zijn pop-upmeldingen die worden weergegeven voor zowel wanneer de verzameling wordt gestart als voltooid. Deze worden weergegeven wanneer de gebruiker is aangemeld en visuals heeft.
 
 ![Pop-up voor het verzamelen van logboeken.](./images/logcollection1.jpg)
 
@@ -131,16 +132,23 @@ Het beleid RequirePrivateStoreOnly is ingeschakeld voor HoloLens. Met dit beleid
 
 Meer informatie over [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
 
-### <a name="low-storage-log-collection-improvements"></a>Verbeteringen in de verzameling met logboeken met weinig opslag
+### <a name="low-storage-log-collection-improvements"></a>Verbeteringen aan logboekverzameling met lage opslag
 
 In scenario's waarin een apparaat weinig schijfruimte lijkt te hebben wanneer diagnostische logboeken worden verzameld, wordt er een extra rapport met de **StorageDiagnostics.zip** gemaakt. De drempelwaarde voor lage opslag wordt automatisch bepaald door de Windows [opslag te bepalen.](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)
+
+### <a name="moving-platform-mode"></a>Platformmodus verplaatsen
+
+Vanaf **Insider build 20348.1411** hebben we bètaondersteuning toegevoegd voor het bijhouden van laag dynamische bewegingsplatforms op HoloLens 2. Nadat u de build hebt geïnstalleerd en de Moving Platform-modus hebt inschakelen, kunt u uw HoloLens 2 gebruiken in eerder ontoegankelijke omgevingen, zoals grote schip en grote 12-30-2018. Op dit moment is de functie gericht op het inschakelen van deze specifieke platformen voor verplaatsen. Hoewel niets u verhindert om de functie in andere omgevingen te gebruiken, is de functie gericht op het toevoegen van ondersteuning voor deze omgevingen.
+
+Ga naar de platformpagina voor verplaatsen voor meer informatie over wat wordt ondersteund en hoe u deze nieuwe functie [kunt inschakelen.](hololens2-moving-platform.md)
 
 ### <a name="fixes-and-improvements"></a>Oplossingen en verbeteringen
 
 - Er is een bekend probleem opgelost voor Apparaatportal er geen prompt [was om vergrendelde bestanden te downloaden.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
 - Er is [een bekend probleem opgelost voor Apparaatportal met time-outs voor](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out) het uploaden en downloaden van bestanden.
 - Behandelt problemen met het rapporteren van nalevingseigenschappen van HoloLens apparaten; Opnieuw opstarten kan vereist zijn om de juiste rapportage te kunnen starten op Insider-builds.  
-- De in-box-versie van de Remote Assist is geïnstalleerd op nieuwe flashes.
+- Een TOEGEWEZEN [toegangs-API](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348) ingeschakeld, zodat apps nu kunnen bepalen of een HoloLens wordt uitgevoerd in een kioskmodus voor de gebruiker die is aangemeld bij de HoloLens.
+- De in-box-versie van Remote Assist bijgewerkt die is geïnstalleerd op nieuwe flashes.
 
 ## <a name="start-receiving-insider-builds"></a>Beginnen met het ontvangen van Insider-builds
 
@@ -153,13 +161,13 @@ In scenario's waarin een apparaat weinig schijfruimte lijkt te hebben wanneer di
 
 Ga op HoloLens 2 apparaat naar **Instellingen**  >  **Update & Security**  >  **Windows Insider-programma** en selecteer **Aan de slag.** Koppel het account dat u hebt gebruikt om u te registreren als Windows Insider.
 
-Windows insider gaat nu over op Kanalen. De **Fast-ring** wordt het **Dev-kanaal,** de langzame **ring** wordt de **bèta-kanaal** en de **Release Preview-ring** wordt het **Release Preview-kanaal.** Deze toewijzing ziet er als volgende uit:
+Windows insider gaat nu over op Kanalen. De **Snelle** ring wordt het **Dev-kanaal,** de langzame **ring** wordt de **bèta-kanaal** en de **Release Preview-ring** wordt het **Release Preview-kanaal.** Deze toewijzing ziet er als volgende uit:
 
 ![Windows Uitleg van Insider Channels](images/WindowsInsiderChannels.png)
 
 Zie [Introducing Windows Insider Channels](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) (Introductie Windows Insider Channels) op Windows Blogs.
 Selecteer vervolgens **Actieve ontwikkeling van Windows**, kies of u het **Dev-kanaal** wilt ontvangen of bèta-kanaal **builds** en bekijk de programmavoorwaarden.
-Selecteer **Bevestigen > Nu opnieuw opstarten om** te voltooien. Nadat het apparaat opnieuw is opgestart, gaat u naar **Instellingen > Update & Security > Controleren** op updates om de nieuwste build op te halen.
+Selecteer **Bevestigen > Nu opnieuw opstarten om** te voltooien. Nadat het apparaat opnieuw is opgestart, gaat u naar **Instellingen > Update & Security > Controleren** op updates om de nieuwste build te downloaden.
 
 ### <a name="update-error-0x80070490-work-around"></a>Updatefout 0x80070490 work-around
 
@@ -169,13 +177,13 @@ Als er een updatefout wordt 0x80070490 bij het bijwerken op het kanaal Dev of Be
 
 1.  Instellingen, Update & Security en selecteer Windows Insider-programma **Release Preview Channel.**
 
-2.  Instellingen, & bijwerken, Windows Bijwerken, Controleren op **updates.** Na de update gaat u verder met Fase 2.
+2.  Instellingen, Update & Security, Windows Update, Check **for updates**. Na de update gaat u verder met Fase 2.
 
 #### <a name="stage-two---dev-channel"></a>Fase 2 - Dev-kanaal
 
 1. Instellingen, Update & Security en selecteer Windows Insider-programma **Dev Channel.**
 
-2. Instellingen, & bijwerken, Windows Bijwerken, Controleren op **updates.**
+2. Instellingen, Update & Security, Windows Update, Check **for updates**.
 
 ## <a name="ffu-download-and-flash-directions"></a>FFU-download- en flashbeschrijvingen
 
@@ -186,7 +194,7 @@ Als u wilt testen met een met een vlucht ondertekende ffu, moet u eerst uw appar
     
     1. Installeer ARC (Advanced Recovery Companion) vanuit de Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) .
     
-1. On HoloLens - Flight Unlock: open **Instellingen** Update & Security Windows Insider-programma registreer het apparaat  >    >   en start het opnieuw op.
+1. Op HoloLens- Ontgrendelen met vlucht: **open** Instellingen Update & Security Windows Insider-programma registreer u en start  >    >   het apparaat opnieuw op.
 
 1. Flash-FFU: u kunt nu de met de vlucht ondertekende FFU flashen met behulp van ARC.
 
@@ -199,14 +207,14 @@ Gebruik de [Feedback-hub-app op](hololens-feedback.md) uw HoloLens feedback te g
 
 ## <a name="note-for-developers"></a>Opmerking voor ontwikkelaars
 
-U bent welkom en aangemoedigd om uw toepassingen te ontwikkelen met behulp van Insider-builds van HoloLens.  Bekijk de documentatie [HoloLens ontwikkelaars om](https://developer.microsoft.com/windows/mixed-reality/development) aan de slag te gaan. Deze instructies werken met Insider-builds van HoloLens.  U kunt dezelfde builds van Unity en Visual Studio die u al gebruikt voor HoloLens ontwikkeling.
+U bent welkom en aangemoedigd om uw toepassingen te ontwikkelen met insider-builds van HoloLens.  Bekijk de documentatie [HoloLens ontwikkelaars om](https://developer.microsoft.com/windows/mixed-reality/development) aan de slag te gaan. Deze instructies werken met Insider-builds van HoloLens.  U kunt dezelfde builds van Unity en Visual Studio die u al gebruikt voor HoloLens ontwikkeling.
 
 ## <a name="stop-receiving-insider-builds"></a>Ontvangst van Insider-builds stoppen
 
-Als u geen Insider-builds van Windows Holographic meer wilt ontvangen, kunt u zich uitloggen wanneer uw [](hololens-recovery.md) HoloLens een productie-build wordt uitgevoerd. U kunt uw apparaat ook herstellen met behulp van advanced recovery companion om uw apparaat te herstellen naar een niet-Insider-versie van Windows Holographic.
+Als u geen Insider-builds van Windows Holographic meer wilt ontvangen, kunt u zich uitloggen wanneer uw [](hololens-recovery.md) HoloLens een productie-build wordt uitgevoerd. U kunt uw apparaat ook herstellen met behulp van advanced recovery Companion om uw apparaat te herstellen naar een niet-Insider-versie van Windows Holographic.
 
 > [!CAUTION]
-> Er is een bekend probleem waarbij gebruikers die de registratie van Insider Preview-builds ongedaan maken nadat ze handmatig een nieuwe preview-build hebben geïnstalleerd, een blauw scherm krijgen. Daarna moeten ze hun apparaat handmatig herstellen. Bekijk meer over dit bekende probleem voor meer informatie over of u hier al dan niet [mee te maken zou krijgen.](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
+> Er is een bekend probleem waarbij gebruikers die de registratie van Insider Preview-builds ongedaan maken nadat ze handmatig een nieuwe preview-build hebben geïnstalleerd, een blauw scherm krijgen. Daarna moeten ze hun apparaat handmatig herstellen. Bekijk meer over dit bekende probleem voor meer informatie over of dit al dan niet [wordt beïnvloed.](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 
 Controleren of uw HoloLens een productie-build wordt uitgevoerd:
 
@@ -214,8 +222,8 @@ Controleren of uw HoloLens een productie-build wordt uitgevoerd:
 
 1. [Zie de releasenotities voor productie-buildnummers.](hololens-release-notes.md)
 
-U kunt als volgende kiezen voor Insider-builds:
+Als u zich wilt af melden voor Insider-builds:
 
-1. Ga op HoloLens met een productie-build naar Instellingen > **Update & Security > Windows Insider-programma** en selecteer Stop Insider **builds.**
+1. Ga op HoloLens met een productie-build naar Instellingen > **Update & Security > Windows Insider-programma** en selecteer **Stop Insider builds.**
 
 1. Volg de instructies om uw apparaat uit te kiezen.
