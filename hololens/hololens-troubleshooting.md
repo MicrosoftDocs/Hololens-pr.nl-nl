@@ -13,12 +13,12 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: problemen, bug, probleemoplossing, oplossing, hulp, ondersteuning, HoloLens, emulator
-ms.openlocfilehash: ecbc2dc6197e4e72c77a01dcbfc0f73778f4c49c7fc38cba2c87d40d5e769547
-ms.sourcegitcommit: 07f25ebcd68c4680dd4f157015a31a897034290a
+ms.openlocfilehash: c634b90b03468073887397b59f072258ad7a3ccc
+ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121495924"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121858562"
 ---
 # <a name="device-troubleshooting"></a>Problemen met apparaten oplossen
 
@@ -35,7 +35,7 @@ In dit artikel wordt beschreven hoe u verschillende veelvoorkomende problemen Ho
 - [Microsoft Edge kan niet worden starten](#microsoft-edge-fails-to-launch)
 - [Toetsenbord schakelt niet over naar speciale tekens](#keyboard-doesnt-switch-to-special-characters)
 - [Er wordt geen fout weergegeven bij het downloaden van vergrendelde bestanden](#downloading-locked-files-doesnt-error)
-- [Apparaatportal voor het uploaden/downloaden van bestanden](#device-portal-file-uploaddownload-times-out)
+- [Apparaatportal-out voor uploaden/downloaden van bestanden](#device-portal-file-uploaddownload-times-out)
 - [Blauw scherm na uitschrijving van Insider Preview op een apparaat dat is geflitst met een Insider-build](#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 - [OneDrive uploadt niet automatisch afbeeldingen](#onedrive-doesnt-automatically-upload-pictures)
 
@@ -43,7 +43,7 @@ In dit artikel wordt beschreven hoe u verschillende veelvoorkomende problemen Ho
 - [HoloLens reageert niet of start niet](#hololens-is-unresponsive-or-wont-start)
 - [Fout : Weinig schijfruimte](#low-disk-space-error)
 - [Kalibrering mislukt](#calibration-fails)
-- [Kan niet aanmelden omdat mijn HoloLens eerder is ingesteld voor iemand anders](#cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else)
+- [Kan niet aanmelden omdat mijn HoloLens is ingesteld voor iemand anders](#cant-sign-in-because-my-hololens-was-previously-set-up-for-someone-else)
 - [Unity werkt niet](#unity-isnt-working)
 - [Windows Apparaatportal werkt niet goed](#windows-device-portal-isnt-working-correctly)
 - [De HoloLens Emulator werkt niet](#the-hololens-emulator-isnt-working)
@@ -66,25 +66,25 @@ In dit artikel wordt beschreven hoe u verschillende veelvoorkomende problemen Ho
 > Er is een nieuwere versie van Remote Assist met een oplossing voor dit probleem. Werk [de Remote Assist](holographic-store-apps.md#update-apps) naar de nieuwste versie om dit probleem te voorkomen.
 
 > [!NOTE]
-> Vanwege de ernst van dit bekende probleem is de beschikbaarheid van Windows Holographic, versie 21H1, tijdelijk onderbroken. De 21H1-build is nu weer beschikbaar, dus apparaten kunnen opnieuw worden bijgewerkt naar de nieuwste 21H1-build.
+> Vanwege de ernst van dit bekende probleem is de beschikbaarheid van Windows Holographic versie 21H1 tijdelijk onderbroken. De 21H1-build is nu weer beschikbaar, dus apparaten kunnen opnieuw worden bijgewerkt naar de nieuwste 21H1-build.
 
-In de nieuwste versie [van Windows Holographic, versie 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)hebben sommige gebruikers van Remote Assist te maken gehad met video's die meer dan 20 minuten aanroepen hebben gehad. Dit is een **bekend probleem.**
+In de nieuwste versie [van Windows Holographic, versie 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)hebben sommige gebruikers van Remote Assist te maken gehad met video's die gedurende meer dan 20 minuten vastvijfden tijdens oproepen. Dit is een **bekend probleem.**
 
 ### <a name="workarounds"></a>Tijdelijke oplossingen
 
-Als u de update niet kunt Remote Assist naar een nieuwere build, kunt u het volgende proberen.
+Als u de update niet kunt Remote Assist naar een nieuwere build, kunt u de volgende stappen proberen.
 
 #### <a name="restart-in-between-calls"></a>Opnieuw opstarten tussen aanroepen
 
 Als uw aanroepen langer duren dan 20 minuten en u dit probleem ondervindt, kunt u uw apparaat opnieuw opstarten. Als u het apparaat opnieuw opstart Remote Assist aanroepen, wordt uw apparaat vernieuwd en weer in een goede staat gezet.
 
-Als u snel een apparaat op Windows Holographic wilt opstarten, opent u versie [21H1](hololens-release-notes.md#windows-holographic-version-21h1) het menu Start en selecteert u het gebruikerspictogram. Selecteer vervolgens **Opnieuw opstarten.**
+Als u een apparaat snel opnieuw wilt opstarten op Windows Holographic, opent u versie [21H1](hololens-release-notes.md#windows-holographic-version-21h1) het menu Start en selecteert u het gebruikerspictogram en selecteert u vervolgens **Opnieuw opstarten.**
 
 [Terug naar lijst](#list)
 
 ## <a name="auto-login-asks-for-log-in"></a>Auto-login vraagt om aanmelden
 
-Een HoloLens 2 kan worden geconfigureerd om automatisch aan te melden via **Instellingen**  ->  **Accounts**  ->  **Aanmeldingsopties** ->  en onder Vereist de waarde instellen op **Nooit.** Sommige gebruikers moeten zich mogelijk opnieuw aanmelden bij het apparaat wanneer ze een apparaat bijwerken met een aanzienlijk grote update, zoals een functie-update. Dit is een **bekend probleem.**
+Een HoloLens 2 kan worden geconfigureerd om automatisch aan te melden via **aanmeldingsopties voor**  ->    ->  **Instellingen-accounts**  -> en onder Vereist de waarde instellen op **Nooit.** Sommige gebruikers moeten zich mogelijk opnieuw aanmelden bij het apparaat wanneer ze een apparaat bijwerken met een aanzienlijk grote update, zoals een functie-update. Dit is een **bekend probleem.**
 
 Voorbeeld van wanneer dit kan gebeuren:
 
@@ -243,7 +243,7 @@ Als u alle richtlijnen hebt gevolgd en kalibratie nog steeds mislukt, kunt u de 
 
 Zie ook gerelateerde informatie voor het oplossen [van problemen met de kleur of helderheid van afbeeldingen.](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right)
 
-Het instellen van ip-adressen is niet van toepassing HoloLens 2, omdat oogposities worden berekend door het systeem. 
+Het instellen van IPD is niet van toepassing HoloLens 2, omdat oogposities worden berekend door het systeem. 
 
 [Terug naar lijst](#list)
 
@@ -257,7 +257,7 @@ U kunt [het apparaat in de **flashmodus zetten** en Advanced Recovery Companion]
 ## <a name="unity-isnt-working"></a>Unity werkt niet
 
 - Zie [Install the tools](/windows/mixed-reality/install-the-tools) for the most-to-date version of Unity recommended for HoloLens development (De hulpprogramma's installeren voor de meest recente versie van Unity die wordt HoloLens ontwikkeling).
-- Bekende problemen met unity HoloLens Technical Preview worden beschreven in de [HoloLens Unity-forums.](https://forum.unity3d.com/threads/known-issues.394627/)
+- Bekende problemen met Unity HoloLens Technical Preview worden beschreven in de [HoloLens Unity-forums.](https://forum.unity3d.com/threads/known-issues.394627/)
 
 [Terug naar lijst](#list)
 
@@ -271,7 +271,7 @@ U kunt [het apparaat in de **flashmodus zetten** en Advanced Recovery Companion]
 
 [Terug naar lijst](#list)
 
-## <a name="the-hololens-emulator-isnt-working"></a>De HoloLens Emulator werkt niet
+## <a name="the-hololens-emulator-isnt-working"></a>Het HoloLens Emulator werkt niet
 
 Informatie over de HoloLens emulator vindt u in onze documentatie voor ontwikkelaars.  Lees meer over [het oplossen van problemen HoloLens emulator](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting).
 
@@ -284,11 +284,11 @@ Informatie over de HoloLens emulator vindt u in onze documentatie voor ontwikkel
 
 ## <a name="voice-commands-arent-working"></a>Spraakopdrachten werken niet
 
-Als Cortana niet reageert op uw spraakopdrachten, moet u ervoor zorgen Cortana is ingeschakeld. Selecteer in Alle apps lijst de optie Menu Notebook **Cortana Instellingen** om wijzigingen aan  >    >    >   te brengen. Zie Uw stem gebruiken met HoloLens voor meer informatie [over wat u kunt HoloLens.](hololens-cortana.md)
+Als Cortana niet reageert op uw spraakopdrachten, moet u ervoor zorgen Cortana is ingeschakeld. Selecteer in Alle apps lijst menunote **Cortana**  >    >  **om**  >  **Instellingen** wijzigingen aan te brengen. Zie Uw stem gebruiken met HoloLens voor meer informatie [over wat u kunt HoloLens.](hololens-cortana.md)
 
-Op HoloLens (eerste generatie) kan ingebouwde spraakherkenning niet worden geconfigureerd. Deze is altijd ingeschakeld. Op HoloLens 2 kunt u kiezen of u zowel spraakherkenning als Cortana tijdens de installatie van het apparaat in wilt stellen.
+Op HoloLens (eerste generatie) kan ingebouwde spraakherkenning niet worden geconfigureerd. Deze is altijd ingeschakeld. Op HoloLens 2 kunt u kiezen of u zowel spraakherkenning als spraakherkenning Cortana tijdens de installatie van het apparaat.
 
-Als uw HoloLens 2 reageert op uw stem, moet u ervoor zorgen dat Spraakherkenning is ingeschakeld. Ga naar **Start**  >  **Instellingen**  >  **Privacy**  >  **Speech** en schakel **Spraakherkenning in.**
+Als uw HoloLens 2 niet op uw stem reageert, zorgt u ervoor dat Spraakherkenning is ingeschakeld. Ga naar **Start**  >  **Instellingen**  >  **Privacy**  >  **Speech** en schakel **Spraakherkenning in.**
 
 [Terug naar lijst](#list)
 
@@ -296,56 +296,56 @@ Als uw HoloLens 2 reageert op uw stem, moet u ervoor zorgen dat Spraakherkenning
 
 Om ervoor te HoloLens dat u uw handen kunt zien, moet u ze in het bewegingsframe houden.  De Mixed Reality Start geeft feedback waarmee u kunt zien wanneer uw handen worden bijgespoord.  De feedback verschilt van de verschillende versies van HoloLens:
 - Op HoloLens (eerste generatie) verandert de muisaanwijzer van een punt in een ring
-- Op HoloLens 2 wordt een cursor met de muisaanwijzer weergegeven wanneer uw hand zich dicht bij een slate en een hand ray wordt weergegeven wanneer de slates verder weg zijn
+- Op HoloLens 2 wordt een cursor met de hand weergegeven wanneer uw hand dicht bij een slate ligt en er een hand ray wordt weergegeven wanneer de slates verder weg zijn
 
-Veel in immersieve apps volgen invoerpatronen die vergelijkbaar zijn met Mixed Reality Start.  Meer informatie over het gebruik van [handinvoer op HoloLens (eerste generatie)](hololens1-basic-usage.md#use-hololens-with-your-hands) en [HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame).
+Veel in immersieve apps volgen invoerpatronen die vergelijkbaar zijn met Mixed Reality Start.  Meer informatie over het gebruik van handinvoer [op HoloLens (1e generatie)](hololens1-basic-usage.md#use-hololens-with-your-hands) en [HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame).
 
-Als u een handje draagt, moet u er rekening mee houden dat sommige soorten handjes niet werken bij het bijhouden van de hand.  Een veelvoorkomende voorbeeld is zwarte rubberen pakken, die de neiging hebben om licht te nemen en niet worden opgepikt door de dieptecamera.  Als uw werk bestaat uit een blauwe of grijze kleur, raden we u aan om een lichtere kleur te gebruiken, zoals blauw of grijs.  Een ander voorbeeld is een grote baggy gloves, die de vorm van uw hand doorgaans verborgen houden. We raden u aan om voor de beste resultaten zo goed mogelijk vorm te geven.
+Houd er rekening mee dat sommige typen schoenen niet werken met handtracking.  Een veelvoorkomende voorbeeld is zwarte rubberen pakken, die vaak licht van de diepte opnemen en niet worden opgepikt door de dieptecamera.  Als uw werk bestaat uit een elastiekje, raden we u aan om een lichtere kleur te gebruiken, zoals blauw of grijs.  Een ander voorbeeld zijn grote baggy-pakken, die de vorm van uw hand doorgaans verborgen houden. We raden u aan om de beste resultaten te krijgen door gebruik te maken van zo goed mogelijk vormfitting.
 
-Als uw visor vingerafdrukken of smudges heeft, gebruikt u de microfiberschoonmaak die bij de HoloLens om uw visorgemiddelde op te schonen.
+Als uw visor vingerafdrukken of smudges heeft, gebruikt u de microfiberschoonmaak die bij de visor is HoloLens om uw visor op te schonen.
 
 [Terug naar lijst](#list)
 
 ## <a name="cant-connect-to-wi-fi"></a>Kan geen verbinding maken met Wi-Fi
 
-Hier zijn enkele dingen die u kunt proberen als u uw netwerk niet kunt HoloLens met een Wi-Fi netwerk:
+Hier zijn enkele dingen die u kunt proberen als u uw HoloLens niet kunt verbinden met Wi-Fi netwerk:
 
-- Zorg ervoor dat Wi-Fi is ingeschakeld. Als u dit wilt controleren, gebruikt u de beweging Starten en selecteert **u Instellingen**  >  **Wi-Fi-netwerkinternet. &amp;**  >   Als Wi-Fi is, probeert u deze uit te schakelen en vervolgens weer aan.
+- Zorg ervoor dat Wi-Fi is ingeschakeld. Als u dit wilt controleren, gebruikt u de beweging Starten en selecteert **u Instellingen**  >  **&amp; Wi-Fi voor netwerkinternet.**  >   Als Wi-Fi is aan, probeert u deze uit te schakelen en vervolgens weer aan.
 - Ga dichter bij de router of het toegangspunt zitten.
-- Start uw Wi-Fi router opnieuw op en start [HoloLens](hololens-recovery.md). Probeer opnieuw verbinding te maken.
+- Start de router Wi-Fi opnieuw op en start [HoloLens](hololens-recovery.md). Probeer opnieuw verbinding te maken.
 - Als geen van deze dingen werkt, controleert u of uw router de meest recente firmware gebruikt. U vindt deze informatie op de website van de fabrikant.
 
 [Terug naar lijst](#list)
 
-## <a name="bluetooth-devices-arent-pairing"></a>Bluetooth apparaten zijn niet gekoppeld
+## <a name="bluetooth-devices-arent-pairing"></a>Bluetooth apparaten worden niet gekoppeld
 
 Als u problemen hebt met het [koppelen van een Bluetooth apparaat,](hololens-connect-devices.md)probeert u het volgende:
 
-- Ga naar **Instellingen**  >  **Apparaten** en zorg ervoor dat Bluetooth is ingeschakeld. Als dat het zo is, kunt u deze uitschakelen en opnieuw in- en uitschakelen.
+- Ga naar **Instellingen**  >  **Apparaten** en zorg ervoor dat Bluetooth is ingeschakeld. Als dat zo is, kunt u deze uitschakelen en opnieuw in- en uitschakelen.
 - Zorg ervoor dat uw Bluetooth volledig is geladen of nieuwe accu's heeft.
 - Als u nog steeds geen verbinding kunt maken, start [u de HoloLens](hololens-recovery.md).
 
 [Terug naar lijst](#list)
 
 ## <a name="usb-c-microphone-isnt-working"></a>USB-C-microfoon werkt niet
-Let erop dat sommige USB-C-microfoons zich onjuist melden als zowel een microfoon *als* een spreker. Dit is een probleem met de microfoon en niet met HoloLens. Wanneer u een van deze microfoons op de HoloLens, gaat het geluid mogelijk verloren. Gelukkig is er een eenvoudige oplossing.  
+Let erop dat sommige USB-C-microfoons zichzelf ten onrechte als microfoon en *spreker* melden. Dit is een probleem met de microfoon en niet met HoloLens. Wanneer u een van deze microfoons op de HoloLens, gaat het geluid mogelijk verloren. Gelukkig is er een eenvoudige oplossing.  
 
-Stel **Instellingen** systeemgeluid expliciet de  ->    ->  ingebouwde sprekers **(Analog Feature Audio Driver)** in als **het standaardapparaat.** HoloLens moet deze instelling onthouden, zelfs als de microfoon is verwijderd en later opnieuw is verbonden.
+Stel **Instellingen** in het systeemgeluid expliciet  ->    ->  de ingebouwde sprekers **(audio-stuurprogramma** voor analoge functie) in als **het standaardapparaat**. HoloLens moet deze instelling onthouden, zelfs als de microfoon wordt verwijderd en later opnieuw wordt verbonden.
 
 ![Problemen met USB-C-microfoons oplossen](images/usbc-mic-4.png)
 
 ## <a name="devices-listed-as-available-in-settings-dont-work"></a>Apparaten die worden vermeld als beschikbaar in Instellingen werken niet
 
-HoloLens (eerste generatie) biedt geen ondersteuning voor Bluetooth audioprofielen. Bluetooth audioapparaten, zoals sprekers en headsets, kunnen als beschikbaar worden weergegeven in HoloLens instellingen, maar ze worden niet ondersteund.
+HoloLens (eerste generatie) biedt geen ondersteuning voor Bluetooth audioprofielen. Bluetooth audioapparaten, zoals sprekers en headsets, worden mogelijk weergegeven als beschikbaar in HoloLens instellingen, maar ze worden niet ondersteund.
 
-HoloLens 2 ondersteunt het Bluetooth A2DP-audioprofiel voor stereo afspelen. Het Bluetooth Hands Free-profiel waarmee microfoonopname van een Bluetooth randapparaat wordt niet ondersteund op HoloLens 2.
+HoloLens 2 biedt ondersteuning voor het Bluetooth A2DP-audioprofiel voor stereo afspelen. Het Bluetooth Hands Free-profiel waarmee microfoonopname van een Bluetooth randapparaat wordt niet ondersteund op HoloLens 2.
 
-Als u problemen hebt met het gebruik van Bluetooth apparaat, moet u ervoor zorgen dat het een ondersteund apparaat is. Ondersteunde apparaten zijn onder andere:
+Als u problemen hebt met het gebruik van een Bluetooth, moet u ervoor zorgen dat het een ondersteund apparaat is. Ondersteunde apparaten zijn onder andere:
 
-- QWERTY in het Engels Bluetooth toetsenborden (u kunt deze overal gebruiken waar u het holografische toetsenbord gebruikt).
+- In het Engels QWERTY Bluetooth toetsenborden (u kunt deze overal gebruiken waar u het holografische toetsenbord gebruikt).
 - Bluetooth mice.
-- Klik [HoloLens op](hololens1-clicker.md)de knop .
+- Klik [HoloLens de knop](hololens1-clicker.md).
 
-U kunt andere Bluetooth-EN GATT-apparaten koppelen aan uw HoloLens. Mogelijk moet u echter bijbehorende bijbehorende companion-apps van Microsoft Store om de apparaten daadwerkelijk te kunnen gebruiken.
+U kunt andere BLUETOOTH EN GATT-apparaten koppelen aan uw HoloLens. Mogelijk moet u echter bijbehorende companion-apps installeren vanuit Microsoft Store om de apparaten daadwerkelijk te kunnen gebruiken.
 
 [Terug naar lijst](#list)
