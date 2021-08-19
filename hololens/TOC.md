@@ -6,54 +6,54 @@
 ## Ontdek HoloLens 2-edities
 ### [Opties HoloLens 2 vergelijken](hololens2-options.md)
 ### [Alleen-apparaateditie](hololens2-options-device-only.md)
-### [Remote Assist-editie](hololens2-options-remote-assist.md)
+### [Remote Assist edition](hololens2-options-remote-assist.md)
 ### [Industriële editie](hololens2-options-industrial-edition.md)
 #### [HoloLens 2 Veelgestelde vragen over industriële edities](hololens2-industrial-edition-faq.md)
 ### [Ontwikkelingseditie](hololens2-options-dev-edition.md)
-#### [HoloLens 2 Veelgestelde vragen over ontwikkelingseditie](hololens2-development-edition-faq.yml)
-### [Trimble XR10-editie](hololens2-options-trimble-xr10-edition.md)
+#### [HoloLens 2 Veelgestelde vragen over de ontwikkelingseditie](hololens2-development-edition-faq.yml)
+### [Trimble XR10 edition](hololens2-options-trimble-xr10-edition.md)
 
 # Uw HoloLens
 ## Eerste gebruik
 ### [Uw HoloLens 2 gereed voor gebruik](hololens2-setup.md)
 ### [Uw HoloLens 2](hololens2-start.md)
 ### [Kennismaken met HoloLens 2](hololens2-basic-usage.md)
-### [De HoloLens](hololens-update-hololens.md)
+### [Werk HoloLens](hololens-update-hololens.md)
 ## Dagelijks gebruik
 ### Navigeren in Windows Holographic-interface
 #### [Gebruik de Startmenu en Mixed Reality Startpagina](holographic-home.md)
-#### [Uw stem gebruiken om uw stem te HoloLens](hololens-cortana.md)
+#### [Uw stem gebruiken om de HoloLens](hololens-cortana.md)
 #### [Bestanden zoeken, openen en opslaan op HoloLens](holographic-data.md)
 #### [Uw mixed reality en video's maken](holographic-photos-and-videos.md)
 #### [Nieuwe Instellingen app](hololens-new-settings.md)
 #### [Nieuwe Microsoft Edge](hololens-new-edge.md)
 ### Toepassingen beheren
 #### [Toepassingen zoeken, installeren en verwijderen](holographic-store-apps.md)
-#### [Aangepaste apps beheren voor HoloLens 2](hololens2-holographic-custom-apps.md)
+#### [Aangepaste apps voor HoloLens 2](hololens2-holographic-custom-apps.md)
 ### Hologramoptiek en plaatsing in ruimte
-#### [De kwaliteit en het comfort van visuele elementen verbeteren](hololens-calibration.md)
+#### [De kwaliteit en het comfort van de visual verbeteren](hololens-calibration.md)
 #### [Fysieke ruimten met een HoloLens](hololens-spaces.md)
 #### [HoloLens omgevingsoverwegingen](hololens-environment-considerations.md)
 #### [Platformen verplaatsen](hololens2-moving-platform.md)
 ### Verbinding maken uw HoloLens 2
 #### [Verbinding maken HoloLens aan een netwerk](hololens-network.md)
-#### [Verbinding maken voor Bluetooth en USB-C-apparaten](hololens-connect-devices.md)
+#### [Verbinding maken naar Bluetooth USB-C-apparaten](hololens-connect-devices.md)
 #### [Verbinding maken naar mobiel en 5G](hololens-cellular.md)
 ### [HoloLens 2 accu en laden](hololens2-charging.md)
 ### [HoloLens 2 veelgestelde vragen over fit en comfort](hololens2-fit-comfort-faq.md)
-### [HoloLens 2 veelgestelde vragen over het ops HoloLens 2 opruimen](hololens2-maintenance.md)
+### [HoloLens 2 veelgestelde vragen over ops cleaning](hololens2-maintenance.md)
 
-# Een HoloLens 2
+# Implementatie van HoloLens 2
 ## [Veel voorkomende implementatiescenario's](hololens-requirements.md)
 ## [Implementatie HoloLens 2 plannen](hololens-core-components.md)
 ## Implementatiehandleidingen
-### Implementatiehandleiding voor cloud verbonden omgevingen
+### Implementatiehandleiding voor verbonden omgevingen in de cloud
 #### [Overzicht](hololens2-cloud-connected-overview.md)
 #### [Voorbereiden](hololens2-cloud-connected-prepare.md)
 #### [Configureerer](hololens2-cloud-connected-configure.md)
 #### [Implementeren](hololens2-cloud-connected-deploy.md)
 #### [Onderhouden](hololens2-cloud-connected-maintain.md)
-#### [Implementatiehandleiding voor cloud verbonden omgevingen (externe clients)](hololens2-deployment-guide.md)
+#### [Implementatiehandleiding voor cloud verbonden omgeving (externe clients)](hololens2-deployment-guide.md)
 ### Implementatiehandleiding voor bedrijfsnetwerk
 #### [Overzicht](hololens2-corp-connected-overview.md)
 #### [Voorbereiden](hololens2-corp-connected-prepare.md)
@@ -63,25 +63,25 @@
 ### [Implementatiehandleiding voor offline beveiligde omgeving](hololens-common-scenarios-offline-secure.md)
 ### [Licentievereisten](hololens-licenses-requirements.md)
 ## Identiteit
-### [Gebruikersidentiteit en -aanmelding beheren voor HoloLens](hololens-identity.md)
+### [Gebruikersidentiteit en aanmelding beheren voor HoloLens](hololens-identity.md)
 ### [Uw HoloLens met meerdere personen delen](hololens-multiple-users.md)
 ## Beveiliging
 ### [Beveiligingsoverzicht](security-overview.md)
 ### [Architectuur](security-architecture.md)
-### [Statusscheiding en isolatie](security-state-separation-isolation.md)
+### [Scheiding en isolatie van staten](security-state-separation-isolation.md)
 ### [Besturingssysteem met beheerdersrechten ](security-adminless-os.md)
 ### [Wachtwoordgebruik beperken](security-limiting-password-use.md)
-### [Beveiliging en runtime-attestation met hardware](security-hardware-backed-integrity.md)
+### [Hardware-backed security and runtime attestation](security-hardware-backed-integrity.md)
 ### [Versleuteling en gegevensbeveiliging](security-encryption-data-protection.md)
 ### [Netwerkbeveiliging](security-network-security.md)
 ### [Beveiligingsent engineering ](security-engineering.md)
-### [HoloLens 2 Privacyverklaring](hololens2-compliance.md)
+### [HoloLens 2 Privacy en gegevensbescherming](hololens2-privacy.md)
 ## Apparaatbeheer
 ### [MDM gebruiken voor het beheren HoloLens apparaten](hololens-mdm-configure.md)
 ## Apparaatregistratie
-### [Registratie van HoloLens in MDM](hololens-enroll-mdm.md)
+### [Apparaten inschrijven HoloLens MDM](hololens-enroll-mdm.md)
 ### [Windows Autopilot voor HoloLens 2](hololens2-autopilot.md) 
-### [Registreren in een omgeving met beperkte MAC-Wi-Fi adres](mac-address-options.md)
+### [Registreren in een omgeving met beperkte MACWi-Fi adressen](mac-address-options.md)
 ## Toepassingsimplementatie
 ### [Overzicht van toepassingsbeheer](app-deploy-overview.md)
 ### [Intune-& Bedrijfsportal](app-deploy-intune.md)
@@ -90,13 +90,13 @@
 ### [App-installatieprogramma](app-deploy-app-installer.md)
 ## Beleid (CSP's)
 ### [Overzicht van CSP's en apparaatbeheer configureren](hololens-csp-policy-overview.md)
-### [Een HoloLens configureren met behulp van inrichtingspakketten](hololens-provisioning.md)
+### [Een HoloLens met behulp van inrichtingspakketten](hololens-provisioning.md)
 ### [Algemene apparaatbeperkingen](hololens-common-device-restrictions.md)
-### [Een HoloLens als kiosk instellen](hololens-kiosk.md)
-### [Algemeen toegewezen toegang - Kiosk](hololens-global-assigned-access-kiosk.md)
+### [Een HoloLens kiosk instellen](hololens-kiosk.md)
+### [Globale toegewezen toegang - Kiosk](hololens-global-assigned-access-kiosk.md)
 ### [Windows Defender Toepassingsbeheer - WDAC](windows-defender-application-control-wdac.md)
 ### [Pagina Instellingen CSP en URI's voor HoloLens](settings-uri-list.md)
-## Netwerkverbinding &
+## Netwerkverbinding & netwerkverbinding
 ### [Uw netwerk configureren voor HoloLens](hololens-commercial-infrastructure.md)
 ### [Certificaten en netwerkprofielen voorbereiden voor HoloLens 2](hololens-certificates-network.md)
 ### [Verbindings-eindpunten beheren voor HoloLens](hololens-offline.md)
@@ -129,9 +129,9 @@
 #### [Gebruik de HoloLens (eerste generatie)](hololens1-clicker.md)
 #### [Gebruik 3D-viewer op HoloLens (eerste generatie)](holographic-3d-viewer-beta.md)
 #### [Aan de HoloLens (eerste generatie)](hololens1-basic-usage.md)
-#### [Aangepaste apps beheren voor HoloLens](holographic-custom-apps.md)
-#### [Gelokaliseerde versie van HoloLens (1e generatie) installeren](hololens1-install-localized.md)
-#### [Functies voor Windows Holographic for Business ontgrendelen](hololens1-upgrade-enterprise.md)
+#### [Aangepaste apps voor HoloLens](holographic-custom-apps.md)
+#### [Gelokaliseerde versie van HoloLens (eerste generatie) installeren](hololens1-install-localized.md)
+#### [Functies Windows Holographic for Business ontgrendelen](hololens1-upgrade-enterprise.md)
 #### [De HoloLens opnieuw instellen (eerste generatie)](hololens1-recovery.md)
 ### HoloLens (eerste generatie) Beveiliging
 #### [Veelgestelde HoloLens (eerste generatie) Beveiligingsvragen](hololens1-faq-security.yml)
