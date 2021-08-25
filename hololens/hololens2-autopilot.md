@@ -13,19 +13,19 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Automatische piloot
 manager: jarrettr
-ms.openlocfilehash: b8bfa5359436151bcae9579c78674a93ae0db88d
-ms.sourcegitcommit: dab46153e0948310a96b1a6f47d788b7130cfa14
+ms.openlocfilehash: 7dbe77c8c5999d5be1a61ca9deaa8071d152c87a
+ms.sourcegitcommit: d0c7bf5b055fa1fa8ac5562eef904583a655da99
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122620808"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122782804"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>Windows Autopilot voor HoloLens 2
 
 > [!NOTE]
 > Autopilot-configuratie voor HoloLens in Microsoft Endpoint Manager wordt overstappen van **openbare preview** naar **algemene beschikbaarheid.** Alle tenants kunnen Autopilot instellen in het MEM-beheercentrum.
 
-Vanaf Windows Holographic-versie 2004 ondersteunt HoloLens 2 de Windows [Autopilot-modus](/mem/autopilot/self-deploying) voor zelf implementeren met Microsoft Intune (MDM's van derden worden niet ondersteund). Beheerders kunnen de out-of-box experience (OOBE) configureren in Microsoft Endpoint Manager en eindgebruikers in staat stellen om apparaten met weinig tot geen interactie voor te bereiden op zakelijk gebruik. Dit vermindert de overhead van het voorraadbeheer, de kosten van de voorbereiding van een praktijkapparaat en ondersteuningsoproepen van werknemers tijdens de installatie. Meer informatie in de [Windows Autopilot-documentatie.](/mem/autopilot/windows-autopilot)
+Vanaf Windows Holographic-versie 2004 ondersteunt HoloLens 2 de Windows [Autopilot-modus](/mem/autopilot/self-deploying) voor zelf implementeren met Microsoft Intune (MDM's van derden worden niet ondersteund). Beheerders kunnen de out-of-box experience (OOBE) configureren in Microsoft Endpoint Manager en eindgebruikers in staat stellen apparaten voor te bereiden op zakelijk gebruik met weinig tot geen interactie. Door dit te configureren, vermindert u de overhead voor voorraadbeheer, de kosten van praktijkvoorbereiding van apparaten en ondersteuningsoproepen van werknemers tijdens de installatie. Meer informatie in de [Windows Autopilot-documentatie.](/mem/autopilot/windows-autopilot)
 
 Net als bij Surface-apparaten wordt het aanbevolen dat klanten met hun Microsoft [Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider) (reseller of distributor) werken om apparaten die zijn geregistreerd bij de Autopilot-service via een Partner Center. Andere methoden voor apparaatregistratie worden [](/mem/autopilot/add-devices) beschreven in de apparaatdocumentatie toevoegen, maar het gebruik van de kanaalpartners van Microsoft zorgt voor het meest effectieve end-to-end-pad.
 
@@ -51,15 +51,17 @@ Volg de onderstaande stappen om uw omgeving in te stellen:
 
 1. [Automatische MDM-inschrijving inschakelen](#2-enable-automatic-mdm-enrollment)
 
-1. [Registreer apparaten in Windows Autopilot.](#3-register-devices-in-windows-autopilot)
+1. (Alleen voor Intune) [Zorg ervoor dat MDM-inschrijving niet wordt](/mem/intune/enrollment/enrollment-restrictions-set) geblokkeerd voor Windows apparaten.
 
-1. [Maak een apparaatgroep.](#4-create-a-device-group)
+1. [Registreer apparaten in Windows Autopilot.](#4-register-devices-in-windows-autopilot)
 
-1. [Maak een implementatieprofiel.](#5-create-a-deployment-profile)
+1. [Maak een apparaatgroep.](#5-create-a-device-group)
 
-1. [Controleer de configuratie van de pagina Status van de inschrijving (ESP).](#6-verify-the-esp-configuration)
+1. [Maak een implementatieprofiel.](#6-create-a-deployment-profile)
 
-1. [Controleer de profielstatus van de HoloLens apparaten.](#7-verify-the-profile-status-of-the-hololens-devices)
+1. [Controleer de configuratie van de pagina Status van de inschrijving (ESP).](#7-verify-the-esp-configuration)
+
+1. [Controleer de profielstatus van de HoloLens apparaten.](#8-verify-the-profile-status-of-the-hololens-devices)
 
 ### <a name="1-review-requirements-for-windows-autopilot-for-hololens-2"></a>1. Controleer de vereisten voor Windows Autopilot voor HoloLens 2
 
@@ -71,11 +73,11 @@ Volg de onderstaande stappen om uw omgeving in te stellen:
 
 **Lees de sectie [Vereisten](/windows/deployment/windows-autopilot/self-deploying#requirements)van het artikel Windows Autopilot Self-Deploying-modus.** Uw omgeving moet voldoen aan deze vereisten, evenals de standaardvereisten Windows Autopilot. U hoeft de secties 'Stap voor stap' en 'Validatie' van het artikel niet te lezen. De procedures verder in dit artikel bieden bijbehorende stappen die specifiek zijn voor HoloLens.
 
-Zie 2 voor meer informatie over het registreren van apparaten en het configureren van [profielen. Registreer apparaten in Windows Autopilot](#3-register-devices-in-windows-autopilot) en [4. Maak een implementatieprofiel](#5-create-a-deployment-profile) in dit artikel. Als u de autopilot-profielen voor de modus voor zelf-implementatie wilt configureren en beheren, moet u ervoor zorgen dat u toegang hebt [tot Microsoft Endpoint Manager-beheercentrum.](https://endpoint.microsoft.com)
+Zie 4 voor meer informatie over het registreren van apparaten en het configureren van [profielen. Registreer apparaten in Windows Autopilot](#4-register-devices-in-windows-autopilot) en [6. Maak een implementatieprofiel](#6-create-a-deployment-profile) in dit artikel. Als u de autopilot-profielen voor de modus voor zelf-implementatie wilt configureren en beheren, moet u ervoor zorgen dat u toegang hebt [tot Microsoft Endpoint Manager-beheercentrum.](https://endpoint.microsoft.com)
 
 #### <a name="review-hololens-os-requirements"></a>Bekijk HoloLens vereisten voor het besturingssysteem:
 
-- Apparaten moeten zich op [Windows Holographic, versie 2004](hololens-release-notes.md#windows-holographic-version-2004) (build 19041.1103) of hoger. Als u de buildversie op uw apparaat wilt bevestigen of opnieuw wilt flashen naar het nieuwste besturingssysteem, gebruikt u [de Arc (Advanced Recovery Companion)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab) en de instructies voor het opnieuw [flashen van het apparaat.](/hololens/hololens-recovery#clean-reflash-the-device) Houd er rekening mee dat op apparaten die worden geleverd tot eind september 2020 Windows Holographic-versie 1903 vooraf is geïnstalleerd. Neem contact op met uw wederverkoper om ervoor te zorgen dat autopilot-apparaten naar u worden verzonden.
+- Apparaten moeten zich op [Windows Holographic, versie 2004](hololens-release-notes.md#windows-holographic-version-2004) (build 19041.1103) of hoger. Als u de buildversie op uw apparaat wilt bevestigen of wilt overschakelen naar het meest recente besturingssysteem, gebruikt u [de Arc (Advanced Recovery Companion)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab) en de instructies voor [de reflash van het apparaat.](/hololens/hololens-recovery#clean-reflash-the-device) Houd er rekening mee dat op apparaten die worden geleverd tot eind september 2020 Windows Holographic-versie 1903 vooraf is geïnstalleerd. Neem contact op met uw reseller om ervoor te zorgen dat autopilot-apparaten naar u worden verzonden.
 
 - Windows Holographic versie 2004 ondersteunt alleen Autopilot via ethernet-verbinding. Zorg ervoor HoloLens is verbonden met ethernet met behulp van een USB-C naar Ethernet-adapter **voordat u deze instroomt.** Bij het opstarten van het apparaat is geen gebruikersinteractie vereist. Als u van plan bent een Autopilot-implementatie uit te voeren op veel HoloLens apparaten, raden we u aan om de infrastructuur van de adapter te plannen. Usb-hubs worden niet aanbevolen, omdat er vaak extra stuurprogramma's van derden moeten worden geïnstalleerd die niet worden ondersteund op HoloLens.
 
@@ -96,9 +98,13 @@ Als u wilt dat Autopilot slaagt, moet u Automatische MDM-inschrijving inschakele
 
 Selecteer in [Azure Portal](https://portal.azure.com/#home) de **Azure Active Directory**  ->  **Mobility (MDM en MAM)**  ->  **Microsoft Intune**. Configureer vervolgens **het MDM-gebruikersbereik**. U moet Alle **selecteren.**
 
-Raadpleeg de volgende korte handleiding voor het inschakelen [](/mem/intune/enrollment/quickstart-setup-auto-enrollment) van [automatische MDM-inschrijving](/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) of de Snelstartgids voor automatische inschrijving voor nog meer informatie over het instellen.
+Bekijk de volgende korte handleiding voor het inschakelen van [automatische MDM-inschrijving](/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) of de Quick [Start-handleiding](/mem/intune/enrollment/quickstart-setup-auto-enrollment) voor automatische inschrijving voor nog meer informatie over het instellen.
 
-### <a name="3-register-devices-in-windows-autopilot"></a>3. Apparaten registreren in Windows Autopilot
+### <a name="3-ensure-that-mdm-enrollment-isnt-blocked-for-windows-devices"></a>3. Zorg ervoor dat MDM-inschrijving niet wordt geblokkeerd voor Windows apparaten.
+
+Als u wilt dat Autopilot slaagt, moet u ervoor zorgen dat uw HoloLens kunnen worden ingeschreven. Aangezien HoloLens wordt beschouwd als een Windows apparaat, hoeven er geen inschrijvingsbeperkingen te zijn die uw implementatie kunnen blokkeren. [Bekijk deze lijst met beperkingen](/mem/intune/enrollment/enrollment-restrictions-set) en zorg ervoor dat u uw apparaten kunt registreren.
+
+### <a name="4-register-devices-in-windows-autopilot"></a>4. Apparaten registreren in Windows Autopilot
 
 Uw apparaten moeten zijn geregistreerd in Windows Autopilot vóór de eerste installatie. Zie Apparaten toevoegen aan Autopilot voor MEM-documentatie [over apparaatregistratie.](/mem/autopilot/add-devices)  
 
@@ -117,24 +123,24 @@ Er zijn twee manieren om de hardware-hash op te halen.
 1. U kunt [rechtstreeks een ondersteuningsaanvraag](hololens2-autopilot-registration-support.md) indienen bij Microsoft.
 2. U kunt deze ophalen van het apparaat. Het apparaat registreert de hardware-hash in een CSV-bestand tijdens het OOBE-proces of later wanneer de eigenaar van het apparaat het verzamelen van diagnostische logboeken start (beschreven in de volgende procedure). Normaal gesproken is de eigenaar van het apparaat de eerste gebruiker die zich bij het apparaat heeft aanmelden.
      > [!WARNING]
-     > Als u in builds vóór 20h2 OOBE hebt gebruikt en de telemetrie is ingesteld op Vereist, kunt u de hardware-hash voor Autopilot niet verzamelen via deze methode. Als u uw hardware-hash wilt verzamelen via deze methode, stelt u de telemetrieoptie in op Volledig via de Instellingen-app en selecteert u Privacy -> Diagnostics.
+     > Als u in builds vóór 20h2 OOBE hebt doorgegaan en de telemetrie is ingesteld op Vereist, kunt u de hardware-hash voor Autopilot niet verzamelen via deze methode. Als u uw hardware-hash wilt verzamelen via deze methode, stelt u de telemetrieoptie in op Volledig via de Instellingen-app en selecteert u Privacy -> Diagnostics.
 
     1. Start het HoloLens 2 apparaat.
 
     1. Druk op het apparaat  tegelijkertijd op de knoppen **In-/uit-** en volume-omlaag en laat ze vervolgens los. Het apparaat verzamelt diagnostische logboeken en de hardware-hash en slaat deze op in een set .zip bestanden.
 
-   1. Lees meer over [offlinediagnose](hololens-diagnostic-logs.md#offline-diagnostics)voor meer informatie en een instructievideo over hoe u dit kunt uitvoeren.
+   1. Voor volledige details en een instructievideo voor het vooraf inlezen van deze informatie over [offlinediagnose.](hololens-diagnostic-logs.md#offline-diagnostics)
 
     1. Gebruik een USB-C-kabel om het apparaat te verbinden met een computer.
 
-    1. Open Verkenner op de computer. Open **Deze interne pc Storage \\ \<*HoloLens device name*> \\ \\ documenten** en zoek het AutopilotDiagnostics.zip bestand.  
+    1. Open Verkenner op de computer. Open **This PC Internal Storage \\ \<*HoloLens device name*> \\ \\ Documents** en zoek het AutopilotDiagnostics.zip bestand.  
 
        > [!NOTE]  
        > Het .zip bestand is mogelijk niet onmiddellijk beschikbaar. Als het bestand nog niet gereed is, ziet u mogelijk het bestand HoloLensDiagnostics.temp in de map Documents. Vernieuw het venster om de lijst met bestanden bij te werken.
     
     1. Extraheren van de inhoud van AutopilotDiagnostics.zip bestand.
 
-    1. Zoek in de uitgepakte bestanden het CSV-bestand met het voorvoegsel 'DeviceHash'. Kopieer het bestand naar een station op de computer waar u het later kunt openen.  
+    1. Zoek in de uitgepakte bestanden het CSV-bestand met het voorvoegsel 'DeviceHash'. Kopieer dat bestand naar een station op de computer waar u het later kunt openen.  
 
        > [!IMPORTANT]  
        > De gegevens in het CSV-bestand moeten de volgende header- en regelindeling gebruiken:
@@ -144,7 +150,7 @@ Er zijn twee manieren om de hardware-hash op te halen.
 
 #### <a name="register-device-through-mem"></a>Apparaat registreren via MEM
 
-1. Selecteer [Microsoft Endpoint Manager](https://endpoint.microsoft.com)het beheercentrum De apparaten Windows Windows en selecteer vervolgens Apparaten importeren  >    >  onder   >   **Windows Autopilot Deployment Programma.**
+1. Selecteer [Microsoft Endpoint Manager het](https://endpoint.microsoft.com)beheercentrum De apparaten  >  **Windows** Windows  >  **en**   >   selecteer vervolgens Apparaten importeren onder Windows Autopilot Deployment Programma .
 
 1. Selecteer **onder Windows Autopilot-apparaten** toevoegen het CSV-bestand DeviceHash, selecteer **Openen** en selecteer **vervolgens Importeren.**  
 
@@ -156,7 +162,7 @@ Er zijn twee manieren om de hardware-hash op te halen.
    > [!div class="mx-imgBorder"]
    > ![Gebruik de opdrachten Synchroniseren en Vernieuwen om de apparatenlijst weer te geven.](./images/hololens-ap-devices-sync.png)  
 
-### <a name="4-create-a-device-group"></a>4. Een apparaatgroep maken
+### <a name="5-create-a-device-group"></a>5. Een apparaatgroep maken
 
 1. Selecteer [Microsoft Endpoint Manager nieuwe groep in het](https://endpoint.microsoft.com)   >  **beheercentrum.**
 
@@ -176,7 +182,7 @@ Er zijn twee manieren om de hardware-hash op te halen.
      > Deze regels zijn gericht op kenmerken die uniek zijn voor Autopilot-apparaten.
 1. Selecteer **Opslaan** en selecteer vervolgens **Maken.**
 
-### <a name="5-create-a-deployment-profile"></a>5. Een implementatieprofiel maken
+### <a name="6-create-a-deployment-profile"></a>6. Een implementatieprofiel maken
 
 1. Selecteer [Microsoft Endpoint Manager](https://endpoint.microsoft.com)het beheercentrum de optie Apparaten Windows Windows en Windows  >    >    >  **Autopilot-implementatieprofielen**  >    >  Profiel maken HoloLens .
    ![De vervolgkeuzepagina Profiel maken bevat een HoloLens item.](./images/hololens-ap-enrollment-profiles.png)
@@ -214,14 +220,14 @@ Er zijn twee manieren om de hardware-hash op te halen.
    > [!div class="mx-imgBorder"]
    > ![Controleren en maken](./images/hololens-ap-profile-summ.png)
 
-### <a name="6-verify-the-esp-configuration"></a>6. De ESP-configuratie controleren
+### <a name="7-verify-the-esp-configuration"></a>7. De ESP-configuratie controleren
 
 Op de pagina Status van de inschrijving (ESP) wordt de status weergegeven van het volledige apparaatconfiguratieproces dat wordt uitgevoerd wanneer een door MDM beheerde gebruiker zich voor de eerste keer bij een apparaat aan meldt. Zorg ervoor dat uw ESP-configuratie op het volgende lijkt en controleer of de toewijzingen juist zijn.  
 
 > [!div class="mx-imgBorder"]
 > ![ESP-configuratie](./images/hololens-ap-profile-settings.png)
 
-### <a name="7-verify-the-profile-status-of-the-hololens-devices"></a>7. Controleer de profielstatus van de HoloLens apparaten
+### <a name="8-verify-the-profile-status-of-the-hololens-devices"></a>8. Controleer de profielstatus van de HoloLens apparaten
 
 1. Selecteer Microsoft Endpoint Manager in het beheercentrum **de** optie  >  **Apparaten Windows**  >  **Windows-inschrijvingsapparaten.**  >  
 
@@ -243,7 +249,7 @@ Zodra de bovenstaande instructies zijn voltooid, HoloLens 2 gebruikers de volgen
 
     - Verbinding maken uw apparaat met Ethernet met behulp van USB-C-naar-Ethernet-adapters voor bekabelde internetverbinding en HoloLens 2 autopilot-ervaring automatisch voltooien.
 
-    - Verbinding maken apparaat met USB-C-naar-Wifi-adapters voor draadloze internetverbinding en HoloLens 2 autopilot-ervaring automatisch voltooien.
+    - Verbinding maken apparaat installeren met USB-C-naar-Wi-Fi-adapters voor draadloze internetverbinding en HoloLens 2 Autopilot-ervaring automatisch voltooien.
 
         > [!IMPORTANT]  
        > Apparaten die gebruikmaken van Wi-Fi-netwerken in OOBE voor Autopilot moeten zich op [Windows Holographic, versie 20H2.](hololens-release-notes.md#windows-holographic-version-20h2)
@@ -269,11 +275,11 @@ Zodra de bovenstaande instructies zijn voltooid, HoloLens 2 gebruikers de volgen
 
 HoloLens 2 ondersteunen TenantLockdown CSP vanaf Windows Holographic versie 20H2. Deze CSP houdt apparaten op de tenant van de organisatie door ze te vergrendelen voor die tenant, zelfs door het apparaat opnieuw in te stellen of een reflash uit te voeren.
 
-[TenantLockdown](/windows/client-management/mdm/tenantlockdown-csp) Met CSP HoloLens 2 gekoppeld aan MDM-inschrijving met alleen Autopilot. Zodra het knooppunt RequireNetworkInOOBE van de TenantLockdown CSP is ingesteld op waar of onwaar (in eerste instantie ingesteld) op HoloLens 2, blijft die waarde op het apparaat staan ondanks het opnieuw knipperen, updates van het besturingssysteem, enzovoort.
+[TenantLockdown](/windows/client-management/mdm/tenantlockdown-csp) Met CSP HoloLens 2 gekoppeld aan MDM-inschrijving met alleen Autopilot. Zodra het knooppunt RequireNetworkInOOBE van de TenantLockdown CSP is ingesteld op waar of onwaar (in eerste instantie ingesteld) op HoloLens 2, blijft die waarde op het apparaat staan ondanks reflashing, updates van het besturingssysteem, enzovoort.
 
 Zodra het knooppunt RequireNetworkInOOBE van tenantLockdown-CSP's is ingesteld op true op HoloLens 2, wacht OOBE voor onbepaalde tijd totdat het Autopilot-profiel is gedownload en toegepast, na de netwerkverbinding.
 
-Zodra het knooppunt RequireNetworkInOOBE van tenantLockdown CSP's is ingesteld op true op HoloLens 2, zijn de volgende bewerkingen niet toegestaan in OOBE:
+Zodra het knooppunt RequireNetworkInOOBE van tenantLockdown CSP's is ingesteld op true op HoloLens 2, worden de volgende bewerkingen niet toegestaan in OOBE:
 
 - Lokale gebruiker maken met runtime-inrichting 
 - Azure AD Join-bewerking uitvoeren via runtime-inrichting 
@@ -292,7 +298,7 @@ Oma-URI-waarde moet ./Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE zijn
 
 Controleer in de Intune-portal of de apparaatconfiguratie is toegepast. Zodra deze apparaatconfiguratie is toegepast op HoloLens 2 apparaat, zijn de effecten van TenantLockdown actief.
 
-#### <a name="how-to-unset-tenantlockdowns-requirenetworkinoobe-on-hololens-2-using-intune"></a>Hoe kan ik RequireNetworkInOOBE van TenantLockdown op een HoloLens 2 in Intune?
+#### <a name="how-to-unset-tenantlockdowns-requirenetworkinoobe-on-hololens-2-using-intune"></a>RequireNetworkInOOBE van TenantLockdown in een HoloLens 2 in Intune?
 
 1. Verwijder de HoloLens 2 uit de apparaatgroep waaraan de hierboven gemaakte apparaatconfiguratie eerder is toegewezen.
 
