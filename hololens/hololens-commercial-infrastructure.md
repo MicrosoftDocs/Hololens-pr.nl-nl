@@ -1,6 +1,6 @@
 ---
 title: Infrastructuurrichtlijnen voor HoloLens
-description: Meer informatie over de infrastructuurrichtlijnen HoloLens apparaten, waaronder draadloze netwerkondersteuning, hulp op afstand en beheer van mobiele apparaten.
+description: Meer informatie over de richtlijnen voor infrastructuur HoloLens apparaten, waaronder draadloze netwerkondersteuning, hulp op afstand en beheer van mobiele apparaten.
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 3aa5ed676a9f8864904752da3d965cba5fab7ce98db51abb4ff9444f1a0a370b
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 9b306b10ff82603fd238f195beacc300f1a82bf6
+ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664463"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "122858997"
 ---
 # <a name="configure-your-network-for-hololens"></a>Uw netwerk configureren voor HoloLens
 
@@ -29,7 +29,7 @@ Voor dit gedeelte van het document zijn de volgende personen vereist:
 2. Azure Active Directory Admin
 3. Mobile Apparaatbeheer Admin
 
-## <a name="infrastructure-requirements"></a>Vereisten voor de infrastructuur
+## <a name="infrastructure-requirements"></a>Infrastructuurvereisten
 
 HoloLens is in de kern een Windows mobiel apparaat dat is geïntegreerd met Azure.  Het werkt het beste in commerciële omgevingen met draadloze netwerkbeschikbaarheid (Wi-Fi) en toegang tot Microsoft-services.
 
@@ -40,7 +40,7 @@ Essentiële cloudservices zijn onder andere:
 
 Commerciële klanten hebben een enterprise mobility management-infrastructuur (EMM) of MDM-infrastructuur (Mobile Device Management) nodig om apparaten op schaal HoloLens beheren.  In deze handleiding [Microsoft Intune](https://www.microsoft.com/enterprise-mobility-security/microsoft-intune) als voorbeeld gebruikt, hoewel elke provider met volledige ondersteuning voor Microsoft Policy ondersteuning kan bieden HoloLens.  Vraag uw provider voor het beheer van mobiele apparaten of deze ondersteuning HoloLens 2.
 
-HoloLens biedt ondersteuning voor een beperkte set niet-verbonden ervaringen in de cloud.
+HoloLens biedt ondersteuning voor een beperkte set niet-verbonden cloudervaringen.
 
 ### <a name="wireless-network-eap-support"></a>EAP-ondersteuning voor draadloze netwerken
 
@@ -57,18 +57,18 @@ HoloLens biedt ondersteuning voor een beperkte set niet-verbonden ervaringen in 
 
 Zorg ervoor dat [deze lijst met](hololens-offline.md) eindpunten is toegestaan op uw netwerkfirewall. Hierdoor kunnen HoloLens goed werken.
 
-### <a name="remote-assist-specific-network-requirements"></a>Remote Assist specifieke netwerkvereisten
+### <a name="remote-assist-specific-network-requirements"></a>Remote Assist netwerkvereisten
 
-1. De aanbevolen bandbreedte voor optimale prestaties van Remote Assist is 1,5 Mbps. Zie de [gedetailleerde netwerkvereisten](/MicrosoftTeams/prepare-network) voor meer informatie.
-**(Houd er rekening mee dat als u geen netwerksnelheid van ten minste 1,5 Mbps hebt, Remote Assist nog steeds werken. Kwaliteit kan echter wel leiden tot een slechte kwaliteit).**
-1. Zorg ervoor dat deze poorten en URL's zijn toegestaan op uw netwerkfirewall om ervoor te zorgen dat Microsoft Teams werken. Blijf op de hoogte van de [meest recente lijst met poorten.](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)
+1. De aanbevolen bandbreedte voor optimale prestaties van Remote Assist is 1,5 Mbps. Zie de [gedetailleerde netwerkvereisten voor](/MicrosoftTeams/prepare-network) meer informatie.
+**(Als u geen netwerksnelheid van ten minste 1,5 Mbps hebt, werkt Remote Assist nog steeds. De kwaliteit kan echter wel onder het werk gaan).**
+1. Zorg ervoor dat deze poorten en URL's zijn toegestaan op uw netwerkfirewall om ervoor te zorgen dat Microsoft Teams werken. Blijf up-to-date met [de meest recente lijst met poorten](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams).
 
-- Meer informatie over de specifieke [netwerkvereisten voor Remote Assist.](/dynamics365/mixed-reality/remote-assist/requirements#network-requirements) 
-- Meer informatie over het voorbereiden [van het netwerk van uw](/MicrosoftTeams/prepare-network) organisatie op Microsoft Teams
+- Meer informatie over de specifieke [netwerkvereisten voor Remote Assist](/dynamics365/mixed-reality/remote-assist/requirements#network-requirements). 
+- Meer informatie over het [voorbereiden van het netwerk van uw](/MicrosoftTeams/prepare-network) organisatie op Microsoft Teams
 
-### <a name="guides-specific-network-requirements"></a>Specifieke netwerkvereisten voor gidsen
+### <a name="guides-specific-network-requirements"></a>Handleidingen Specifieke netwerkvereisten
 
-Voor handleidingen is alleen netwerktoegang vereist om de app te downloaden en te gebruiken.
+Handleidingen vereisen alleen netwerktoegang om de app te downloaden en te gebruiken.
 
 ## <a name="azure-active-directory-guidance"></a>Azure Active Directory Begeleiding
 
@@ -81,23 +81,23 @@ Raadpleeg [HoloLens licentievereisten](hololens-licenses-requirements.md) voor m
 1. Als u van plan bent automatische inschrijving te gebruiken, moet u [Azure AD-inschrijving configureren.](/intune/deploy-use/.set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment)
 
 1. Zorg ervoor dat de gebruikers van uw bedrijf zich in Azure Active Directory (Azure AD).
-Zie de volgende instructies [voor het](/azure/active-directory/fundamentals/add-users-azure-active-directory) toevoegen van gebruikers.
+Zie de volgende [instructies voor](/azure/active-directory/fundamentals/add-users-azure-active-directory) het toevoegen van gebruikers.
 
-1. We raden u aan dat gebruikers die vergelijkbare licenties nodig hebben, worden toegevoegd aan dezelfde groep.
+1. We raden aan dat gebruikers die vergelijkbare licenties nodig hebben, aan dezelfde groep worden toegevoegd.
     1. [Een groep maken](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
     1. [Gebruikers toevoegen aan groepen](/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal)
 
-1. Zorg ervoor dat aan de gebruikers (of groep gebruikers) van uw bedrijf de benodigde licenties zijn toegewezen.
+1. Zorg ervoor dat aan de gebruikers van uw bedrijf (of een groep gebruikers) de benodigde licenties zijn toegewezen.
 Als u licenties moet toewijzen, volgt u [deze instructies.](/azure/active-directory/fundamentals/license-users-groups)
 
-1. Doe deze stap alleen als wordt verwacht dat gebruikers hun HoloLens/mobiel apparaat bij u inschrijven (er zijn drie opties) Met deze stappen zorgt u ervoor dat de gebruikers van uw bedrijf (of een groep gebruikers) apparaten kunnen toevoegen.
-    1. **Optie 1:** Geef alle gebruikers toestemming om apparaten toe tevoegen aan Azure AD.
-**Meld u als beheerder Azure Portal aan bij de Azure Portal**  >  **Azure Active Directory**  >  **Apparaten**  >  **Apparaat Instellingen**  >
+1. Doe deze stap alleen als van gebruikers wordt verwacht dat ze hun HoloLens/mobiel apparaat bij u inschrijven (er zijn drie opties) Met deze stappen zorgt u ervoor dat de gebruikers van uw bedrijf (of een groep gebruikers) apparaten kunnen toevoegen.
+    1. **Optie 1:** Geef alle gebruikers toestemming om apparaten aan Azure AD toe te sluiten.
+**Meld u als Azure Portal aan bij de Azure Portal**  >  **Azure Active Directory**  >  **Apparaten**  >  **Apparaat Instellingen**  >
  **Stel Gebruikers mogen apparaten aan Azure AD deelnemen in op *Alle***
 
-    1. **Optie 2:** Geselecteerde gebruikers/groepen toestemming geven om apparaten als beheerder aan te melden bij azure AD Aanmelden bij de **Azure Portal** als beheerder Azure Active Directory Apparaten Apparaat Instellingen Gebruikers mogen apparaten  >    >    >  **aan**  >
+    1. **Optie 2:** Geselecteerde gebruikers/groepen toestemming geven om apparaten toe te laten bij Azure AD Meld u als beheerder aan bij de **Azure Portal** als beheerder Azure Active Directory Apparaten Apparaat Instellingen Gebruikers kunnen apparaten  >    >    >  **aan**  >
  **Azure AD** 
- ![ deelnemen aan geselecteerde installatie afbeelding waarin Configuratie van apparaten die zijn samengevoegd met Azure AD wordt weer gegeven](images/azure-ad-image.png)
+ ![ deelnemen aan Geselecteerde afbeelding waarin Configuratie van apparaten die zijn samengevoegd met Azure AD wordt weer gegeven](images/azure-ad-image.png)
 
     1. **Optie 3:** U kunt blokkeren dat alle gebruikers hun apparaten toevoegen aan het domein. Dit betekent dat alle apparaten handmatig moeten worden ingeschreven.
 
@@ -110,13 +110,13 @@ Als u licenties moet toewijzen, volgt u [deze instructies.](/azure/active-direct
 
 Doorlopend apparaatbeheer is afhankelijk van uw infrastructuur voor het beheer van mobiele apparaten.  De meeste hebben dezelfde algemene functionaliteit, maar de gebruikersinterface kan sterk variëren.
 
-1. [Met CSP's (Configuration Service Providers)](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices) kunt u beheerinstellingen maken en implementeren voor de apparaten in uw netwerk. Zie de [lijst met HoloLens CSP's voor](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices) naslag.
+1. [Met CSP's (Configuration Service Providers)](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices) kunt u beheerinstellingen maken en implementeren voor de apparaten in uw netwerk. Zie de [lijst met HoloLens CSP's](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices) voor naslag.
 
-1. [Nalevingsbeleid](/intune/device-compliance-get-started) zijn regels en instellingen waar apparaten aan moeten voldoen om compatibel te zijn in uw bedrijfsinfrastructuur. Gebruik dit beleid met voorwaardelijke toegang om de toegang tot bedrijfsbronnen te blokkeren voor apparaten die niet compatibel zijn. U kunt bijvoorbeeld een beleid maken waarvoor Bitlocker moet zijn ingeschakeld.
+1. [Nalevingsbeleid](/intune/device-compliance-get-started) zijn regels en instellingen waar apparaten aan moeten voldoen om te voldoen aan het beleid in uw bedrijfsinfrastructuur. Gebruik dit beleid met voorwaardelijke toegang om de toegang tot bedrijfsbronnen te blokkeren voor apparaten die niet compatibel zijn. U kunt bijvoorbeeld een beleid maken waarvoor Bitlocker moet zijn ingeschakeld.
 
 1. [Nalevingsbeleid maken.](/intune/protect/compliance-policy-create-windows)
 
-1. Met voorwaardelijke toegang kunnen mobiele apparaten en mobiele toepassingen geen toegang krijgen tot bedrijfsbronnen. Twee documenten die u mogelijk nuttig vindt, zijn [Plan your CA Deployment](/azure/active-directory/conditional-access/plan-conditional-access) en Best [Practices](/azure/active-directory/conditional-access/best-practices).
+1. Met voorwaardelijke toegang kunnen mobiele apparaten en mobiele toepassingen geen toegang krijgen tot bedrijfsbronnen. Twee documenten die u mogelijk nuttig vindt, zijn [Plan your CA Deployment (CA-implementatie plannen)](/azure/active-directory/conditional-access/plan-conditional-access) en Best Practices [(Best practices).](/azure/active-directory/conditional-access/best-practices)
 
 1. [In dit artikel](/intune/fundamentals/windows-holographic-for-business) worden de beheerhulpprogramma's van Intune voor HoloLens.
 
@@ -128,30 +128,30 @@ Intune bevat een functie met de naam Updateringen voor Windows 10-apparaten, waa
 
 U kunt bijvoorbeeld een onderhoudsvenster maken om updates te installeren of instellen dat opnieuw moet worden opgestart nadat updates zijn geïnstalleerd.  U kunt er ook voor kiezen om updates voor onbepaalde tijd te onderbreken totdat u klaar bent om bij te werken.
 
-Lees meer over [het configureren van updateringen met Intune](/intune/windows-update-for-business-configure).
+Meer informatie over [het configureren van updateringen met Intune](/intune/windows-update-for-business-configure).
 
 ### <a name="application-management"></a>Toepassingsbeheer
 
 Beheer HoloLens toepassingen via:
 
 1. Microsoft Store  
-  De Microsoft Store is de beste manier om toepassingen te distribueren en te gebruiken op HoloLens.  Er is al een geweldige set kerntoepassingen HoloLens beschikbaar in de Store of u kunt [uw eigen publiceren.](/windows/uwp/publish/)  
-  Alle toepassingen in de store zijn openbaar beschikbaar voor iedereen, maar als dit niet acceptabel is, bekijkt u de Microsoft Store voor Bedrijven.  
+  De Microsoft Store is de beste manier om toepassingen te distribueren en te gebruiken op HoloLens.  Er is al een groot aantal kerntoepassingen HoloLens beschikbaar in de store of u kunt [uw eigen publiceren.](/windows/uwp/publish/)  
+  Alle toepassingen in de store zijn voor iedereen openbaar beschikbaar, maar als dit niet acceptabel is, checkt u de Microsoft Store voor Bedrijven.  
 
 1. [Microsoft Store voor Bedrijven](/microsoft-store/)  
-  Microsoft Store voor Bedrijven en Education is een aangepast winkel voor uw bedrijfsomgeving.  Hiermee kunt u de ingebouwde Microsoft Store gebruiken Windows 10 en HoloLens apps voor uw organisatie te zoeken, verkrijgen, distribueren en beheren.  U kunt hiermee ook apps implementeren die specifiek zijn voor uw commerciële omgeving, maar niet voor de hele wereld.
+  Microsoft Store voor Bedrijven en Education is een aangepaste winkel voor uw bedrijfsomgeving.  Hiermee kunt u de Microsoft Store ingebouwde Windows 10 en HoloLens apps voor uw organisatie zoeken, verkrijgen, distribueren en beheren.  U kunt hiermee ook apps implementeren die specifiek zijn voor uw commerciële omgeving, maar niet voor de hele wereld.
 
 1. Implementatie en beheer van toepassingen via Intune of een andere beheeroplossing voor mobiele apparaten  
-  De meeste oplossingen voor het beheer van mobiele apparaten, waaronder Intune, bieden een manier om Line-Of-Business-toepassingen rechtstreeks te implementeren op een set geregistreerde apparaten.  Zie dit artikel voor de [installatie van de Intune-app.](/intune/apps-deploy)
+  De meeste oplossingen voor het beheer van mobiele apparaten, waaronder Intune, bieden een manier om Line-Of-Business-toepassingen rechtstreeks te implementeren op een set ingeschreven apparaten.  Zie dit artikel voor installatie [van de Intune-app.](/intune/apps-deploy)
 
 1. _niet aanbevolen_ Apparaatportal  
-  Toepassingen kunnen ook rechtstreeks op een HoloLens met behulp van de Windows Apparaatportal.  Dit wordt niet aanbevolen omdat de ontwikkelaarsmodus moet worden ingeschakeld voor het gebruik van de apparaatportal.
+  Toepassingen kunnen ook rechtstreeks op de HoloLens worden geïnstalleerd met behulp van Windows Apparaatportal.  Dit wordt niet aanbevolen omdat de ontwikkelaarsmodus moet worden ingeschakeld voor het gebruik van de apparaatportal.
 
 Lees meer over [het installeren van apps op HoloLens](hololens-install-apps.md).
 
 ### <a name="certificates"></a>Certificaten
 
-U kunt certificaten distribueren via uw MDM-provider. Als uw bedrijf certificaten vereist, ondersteunt Intune PKCS, PFX en SCEP. Het is belangrijk om te begrijpen welk certificaat het juiste is voor uw bedrijf. Raadpleeg de documentatie [over certificaatconfiguraties](/intune/protect/certificates-configure) om te bepalen welk certificaat het meest voor u is. Als u certificaten wilt gebruiken voor HoloLens verificatie, is PFX of SCEP mogelijk de juiste voor u.
+U kunt certificaten distribueren via uw MDM-provider. Als uw bedrijf certificaten vereist, ondersteunt Intune PKCS, PFX en SCEP. Het is belangrijk om te begrijpen welk certificaat het meest voor uw bedrijf is. Raadpleeg de documentatie [over certificaatconfiguraties](/intune/protect/certificates-configure) om te bepalen welk certificaat het beste voor u is. Als u van plan bent certificaten te gebruiken voor HoloLens verificatie, is PFX of SCEP mogelijk de juiste voor u.
 
 Zie de volgende stappen voor het gebruik van [SCEP.](/intune/protect/certificates-profile-scep)
 
@@ -160,7 +160,7 @@ Zie de volgende stappen voor het gebruik van [SCEP.](/intune/protect/certificate
 > [!NOTE]
 > Windows Holographics for Business (commerciële suite) is alleen bedoeld voor apparaten HoloLens eerste generatie. Het profiel wordt niet toegepast op HoloLens 2 apparaten.
 
-U vindt de aanwijzingen voor het upgraden naar de commerciële suite in de [documentatie voor holographic upgrade.](/intune/configuration/holographic-upgrade)
+U vindt de aanwijzingen voor het upgraden naar de commerciële suite in de [documentatie voor holographic-upgrades.](/intune/configuration/holographic-upgrade)
 
 ### <a name="how-to-configure-kiosk-mode-using-microsoft-intune"></a>Kioskmodus configureren met Microsoft Intune
 
@@ -168,10 +168,10 @@ U vindt de aanwijzingen voor het upgraden naar de commerciële suite in de [docu
 
 1. Uw app-instellingen controleren
     1. Meld u aan bij Microsoft Store Business-account
-    1. **> producten en services beheren >-apps en software-> Selecteer de app die u wilt synchroniseren > Beschikbaarheid van privéopslag > Selecteer 'Iedereen' of 'Specifieke groepen'**
+    1. **> producten en services beheren > apps en software-> Selecteer de app die u wilt synchroniseren > De beschikbaarheid van de persoonlijke store > Selecteer 'Iedereen' of 'Specifieke groepen'**
         >[!NOTE]
         >Als u de gezochte app niet ziet, moet u de app 'downloaden' door in de Store naar uw app te zoeken. Klik op de balk Zoeken in de rechterbovenhoek > typ de naam van de app > klik op de **app > selecteer 'Get'**.
-    1. Als u uw apps niet ziet in **Intune > Client-apps > Apps,** moet u uw apps mogelijk [opnieuw](/intune/apps/windows-store-for-business#synchronize-apps) synchroniseren.
+    1. Als u uw apps niet ziet in **Intune > Client Apps > Apps,** moet u uw apps mogelijk [opnieuw](/intune/apps/windows-store-for-business#synchronize-apps) synchroniseren.
 
 1. [Een apparaatprofiel maken voor de kioskmodus](/intune/configuration/kiosk-settings#create-the-profile)
 
@@ -180,11 +180,11 @@ U vindt de aanwijzingen voor het upgraden naar de commerciële suite in de [docu
 
 ![Afbeelding van de configuratie van de kioskmodus in Intune](images/aad-kioskmode.png)
 
-Raadpleeg de documentatie van uw provider voor instructies voor andere MDM-services. Raadpleeg de [kioskinstructies HoloLens](hololens-kiosk.md#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk) u een aangepaste instelling en een volledige XML-configuratie moet gebruiken om een kiosk in uw MDM-service in te stellen.
+Voor andere MDM-services raadpleegt u de documentatie van uw provider voor instructies. Raadpleeg de instructies [HoloLens kiosk als](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) u een aangepaste instelling en volledige XML-configuratie moet gebruiken om een kiosk in uw MDM-service in te stellen.
 
 ## <a name="certificates-and-authentication"></a>Certificaten en verificatie
 
-Certificaten kunnen worden geïmplementeerd via uw MDM (zie Certificaten in de [sectie MDM).](hololens-commercial-infrastructure.md#mobile-device-manager-guidance) Certificaten kunnen ook worden geïmplementeerd op de HoloLens via pakket inrichten. Zie HoloLens [Inrichting voor](hololens-provisioning.md) meer informatie.
+Certificaten kunnen worden geïmplementeerd via uw MDM (zie Certificaten in de [sectie MDM).](hololens-commercial-infrastructure.md#mobile-device-manager-guidance) Certificaten kunnen ook worden geïmplementeerd op de HoloLens via pakket inrichten. Raadpleeg de [HoloLens voor](hololens-provisioning.md) meer informatie.
 
 ### <a name="additional-intune-quick-links"></a>Aanvullende Snelle koppelingen voor Intune
 
