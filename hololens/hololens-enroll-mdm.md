@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5ded375d88740b9367eec87e4e902c423f131689
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: a368c622c137374ea9cc544490d3492fa9d3f8c1
+ms.sourcegitcommit: 749d617f3f0ce3e6363ff6cd1a03f87b9280f418
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122858980"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122979352"
 ---
 # <a name="enroll-hololens-in-mdm"></a>Registratie HoloLens in MDM
 
@@ -64,8 +64,8 @@ Afhankelijk van de inschrijvingsmethode is het mogelijk dat de registratie van u
 
 Als uw apparaat is ingeschreven met een Azure AD-account of Autopilot, kan het niet worden uitgeschreven bij Intune. Als u de aaneenvoeging HoloLens Azure AD wilt verwijderen of opnieuw wilt worden lid van een andere Azure AD-tenant, moet u het apparaat opnieuw [instellen/reflashen.](hololens-recovery.md#reset-the-device)
 
-Als uw apparaat is ingeschreven via een MSA-account dat een werkaccount heeft toegevoegd of van een lokaal account dat alleen is ingeschreven bij apparaatbeheer, kunt u de registratie van het apparaat in de hand nemen. Open het Startmenu selecteer vervolgens Instellingen **knop App** Access Work  ->  **or School**  ->  *YourAccount*  ->  **Disconnect** te selecteren.
+Als uw apparaat is ingeschreven via een MSA-account dat een werkaccount heeft toegevoegd of van een lokaal account dat alleen is ingeschreven bij apparaatbeheer, kunt u de registratie van het apparaat in de hand nemen. Open het Startmenu en selecteer vervolgens Instellingen **knop Toegang** tot werk of  ->  **school**  ->  *uwaccount*  ->  **verbreken.**
 
 ## <a name="ensure-that-mdm-enrollment-isnt-blocked-for-windows-devices"></a>Zorg ervoor dat MDM-inschrijving niet is geblokkeerd voor Windows apparaten
 
-Als u wilt dat Autopilot slaagt, moet u ervoor zorgen dat uw HoloLens kunnen worden ingeschreven. Aangezien HoloLens wordt beschouwd als een Windows apparaat, hoeven er geen inschrijvingsbeperkingen te zijn die uw implementatie kunnen blokkeren. [Bekijk deze lijst met beperkingen](/mem/intune/enrollment/enrollment-restrictions-set) en zorg ervoor dat u uw apparaten kunt registreren.
+Als u de inschrijving wilt laten slagen, moet u ervoor zorgen dat uw HoloLens kunnen inschrijven. Aangezien HoloLens wordt beschouwd als een Windows apparaat, hoeven er geen inschrijvingsbeperkingen te zijn die uw implementatie kunnen blokkeren. [Bekijk deze lijst met beperkingen](/mem/intune/enrollment/enrollment-restrictions-set) en zorg ervoor dat u uw apparaten kunt registreren.
