@@ -1,6 +1,6 @@
 ---
 title: HoloLens BitLocker-versleuteling
-description: Meer informatie over het inschakelen van BitLocker-apparaatversleuteling om bestanden te beveiligen die zijn opgeslagen op HoloLens mixed reality apparaten.
+description: Informatie over het inschakelen van BitLocker-apparaatversleuteling om bestanden te beveiligen die zijn opgeslagen op HoloLens mixed reality apparaten.
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -13,18 +13,18 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 4b07bb87b34ec966472bcbde000106590570fd7e7063ab503724884fa266bb34
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d5cf7385dd0a53c6b17f79e16364e84ab6ec867d
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662716"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189933"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>HoloLens (1e generatie) BitLocker-versleuteling
 
-HoloLens (eerste generatie) en HoloLens 2 ondersteunen apparaatversleuteling met bitLocker, maar BitLocker is altijd ingeschakeld op HoloLens 2.
+HoloLens (eerste generatie) en HoloLens 2 ondersteunen apparaatversleuteling met BitLocker, maar BitLocker is altijd ingeschakeld op HoloLens 2.
 
-In dit artikel vindt u hulp bij het inschakelen en beheren van BitLocker op HoloLens (1e generatie).
+In dit artikel vindt u hulp bij het inschakelen en beheren van BitLocker op HoloLens (eerste generatie).
 
 Op HoloLens (eerste generatie) kunt u BitLocker-apparaatversleuteling handmatig inschakelen of MDM (Mobile Device Management) gebruiken. Volg deze instructies om [BitLocker-apparaatversleuteling in te](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) HoloLens. Apparaatversleuteling helpt uw gegevens te beveiligen met behulp van de AES-CBC 128-versleutelingsmethode, die gelijk is aan [EncryptionMethodByDriveType-methode 3](/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) in de BitLocker-configuratieserviceprovider (CSP). Medewerkers met de juiste versleutelingssleutel (zoals een wachtwoord) kunnen deze ontsleutelen of gegevensherstel uitvoeren.
 
@@ -36,7 +36,7 @@ U kunt uw MDM-provider (Mobile Device Management) gebruiken om een beleid toe te
 
 Zie de documentatie van uw MDM-provider voor instructies voor andere MDM-hulpprogramma's. Als uw MDM-provider aangepaste URI vereist voor apparaatversleuteling, gebruikt u de volgende configuratie:
 
-- **Naam:** een naam van uw keuze
+- **Naam:** een naam naar keuze
 - **Beschrijving:** optioneel
 - **OMA-URI:**`./Vendor/MSFT/Policy/Config/Security/RequireDeviceEncryption`
 - **Gegevenstype:** geheel getal
@@ -44,14 +44,14 @@ Zie de documentatie van uw MDM-provider voor instructies voor andere MDM-hulppro
 
 ## <a name="enable-device-encryption-using-a-provisioning-package"></a>Apparaatversleuteling inschakelen met behulp van een inrichtingspakket
 
-Inrichtingspakketten zijn bestanden die zijn gemaakt door het hulpprogramma Windows Configuration Designer waarmee een opgegeven configuratie op een apparaat wordt toegepast. 
+Inrichtingspakketten zijn bestanden die zijn gemaakt door Windows Configuration Designer-hulpprogramma waarmee een opgegeven configuratie op een apparaat wordt toegepast. 
 
 ### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition-and-enables-encryption"></a>Een inrichtingspakket maken waarmee de Windows Holographic-editie wordt geupgraded en versleuteling wordt mogelijk gemaakt
 
 1. [Maak een inrichtingspakket voor HoloLens.](hololens-provisioning.md)
-1. Ga naar **Runtime settings**  >  **Policies**  >  **Security** en selecteer **RequireDeviceEncryption.**
+1. Ga naar **Runtime settings**  >  **Policies**  >  **Security** en selecteer **RequireDeviceEncryption**.
 
-    ![Instelling apparaatversleuteling vereisen die is geconfigureerd op Ja](images/device-encryption.png)
+    ![Instelling apparaatversleuteling vereisen die is geconfigureerd op Ja.](images/device-encryption.png)
 
 1. Zoek het XML-licentiebestand dat is opgegeven toen u de Commercial Suite hebt gekocht.
 
@@ -76,7 +76,7 @@ Inrichtingspakketten zijn bestanden die zijn gemaakt door het hulpprogramma Wind
 1. Klik in **Beveiligingsdetails selecteren voor het inrichtingspakket** op **Volgende.**
 1. Klik **op** Volgende om de uitvoerlocatie op te geven waar u het inrichtingspakket naartoe wilt laten gaan zodra het is gebouwd. Standaard gebruikt Windows ICD de projectmap als uitvoerlocatie.
 
-    U kunt eventueel op Bladeren klikken om de standaarduitvoerlocatie te wijzigen.
+    U kunt desgewenst op Bladeren klikken om de standaarduitvoerlocatie te wijzigen.
 
 1. Klik op **Volgende**.
 1. Klik **op Bouwen** om te beginnen met het bouwen van het pakket. De projectgegevens worden weergegeven op de buildpagina en de voortgangsbalk geeft de buildstatus aan.
@@ -85,7 +85,7 @@ Inrichtingspakketten zijn bestanden die zijn gemaakt door het hulpprogramma Wind
 ### <a name="apply-the-provisioning-package-to-hololens"></a>Pas het inrichtingspakket toe op HoloLens
 
 1. Verbinding maken apparaat via USB naar een pc en start het apparaat  op, maar ga niet verder dan de pagina voor passend maken van de eerste installatie (de eerste pagina met het blauwe vak).
-1. Druk kort op de knoppen **Volume down en** **Aan/uit.**
+1. Druk kort op de knoppen **Volume down en** **Aan/uit** en laat deze tegelijkertijd los.
 1. HoloLens wordt weergegeven als een apparaat in Verkenner op de pc.
 1. Sleep in Verkenner het inrichtingspakket (.ppkg) naar de apparaatopslag en zet het neer.
 1. Druk kort op de knoppen **Volume down en** **Aan/uit** terwijl u op de pagina aanpassen **staat.**
@@ -101,4 +101,4 @@ Versleuteling wordt op de HoloLens. De versleutelingsstatus van het apparaat con
 
 - Ga HoloLens naar **Instellingen**  >  **Systeem**  >  **over**. **BitLocker** is **ingeschakeld als** het apparaat is versleuteld. 
 
-    ![Over het scherm met BitLocker ingeschakeld](images/about-encryption.png)
+    ![Over het scherm met BitLocker ingeschakeld.](images/about-encryption.png)

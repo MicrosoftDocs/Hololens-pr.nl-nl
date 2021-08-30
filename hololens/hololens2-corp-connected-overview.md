@@ -1,7 +1,7 @@
 ---
 title: 'Implementatiehandleiding : Zakelijk verbonden HoloLens 2 met Dynamics 365 Guides - Overzicht'
-description: Meer informatie over het inschrijven HoloLens 2 apparaten met Dynamics 365 Guides via een verbonden bedrijfsnetwerk.
-keywords: HoloLens, beheer, zakelijk verbonden, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Device Management
+description: Meer informatie over het inschrijven HoloLens 2 apparaten met Dynamics 365 Guides via een zakelijk verbonden netwerk.
+keywords: HoloLens, beheer, verbonden bedrijf, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Device Management
 author: joyjaz
 ms.author: v-jjaswinski
 ms.reviewer: aboeger
@@ -14,18 +14,18 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 67e34ea275ef73adda840ee4f44d9c0c3c9440ef0bd2aef48cb7aaa971219220
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 541c1080d7f5fe9491d6cb11179ea98b160f687c
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660100"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190171"
 ---
-# <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>Implementatiehandleiding - Bedrijfsgeconnecteerde HoloLens 2 met Dynamics 365 Guides - Overzicht
+# <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>Implementatiehandleiding - Corporate Connected HoloLens 2 met Dynamics 365 Guides - Overzicht
 
-Deze handleiding helpt IT-professionals bij het plannen en implementeren van Microsoft HoloLens 2 apparaten met Dynamics 365 Guides (Guides) in hun organisatie. Deze handleiding is geweldig voor zowel gidsen als productie-implementaties en is vergelijkbaar met [scenario B: Implementeren binnen](/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) de netwerkhandleiding van uw organisatie. Nadat u uw proof-of-concept hebt getest, gebruikt u deze handleiding om verder te gaan met het integreren HoloLens in uw organisatie.
+Deze handleiding helpt IT-professionals bij het plannen en implementeren van Microsoft HoloLens 2 apparaten met Dynamics 365 Guides (Guides) in hun organisatie. Deze handleiding is zeer goed voor zowel luchtvaart- als productie-implementaties en is vergelijkbaar met [scenario B: Implementeren in](/hololens/common-scenarios#scenario-b-deploy-inside-your-organizations-network) de netwerkhandleiding van uw organisatie. Nadat u uw proof-of-concept hebt getest, gebruikt u deze handleiding om verder te gaan met het integreren HoloLens in uw organisatie.
 
-In deze handleiding wordt begrensd hoe u uw apparaten kunt registreren bij uw bestaande apparaatbeheer, licenties kunt toepassen als dat nodig is, en hoe u valideert dat uw eindgebruikers een Dynamics 365-handleiding kunnen gebruiken, en hoe u aangepaste Line-Of-Business-apps kunt gebruiken nadat het apparaat is ingesteld. 
+In deze handleiding wordt beland hoe u uw apparaten kunt registreren bij uw bestaande apparaatbeheer, licenties kunt toepassen als dat nodig is, en hoe u kunt valideren dat uw eindgebruikers een Dynamics 365-handleiding kunnen gebruiken en aangepaste Line-Of-Business-apps kunnen gebruiken nadat het apparaat is ingesteld. 
 
 ## <a name="prerequisites"></a>Vereisten
 
@@ -33,15 +33,15 @@ De volgende infrastructuur moet al zijn gebruikt:
 - Wi-Fi
     - Intern bedrijfsnetwerk met toegang tot interne resources en beperkte toegang tot internet of cloudservices
     - Verificatie op basis van apparaatcertificaten.
-- Azure Active Directory (Azure AD) Deelnemen met automatische MDM-inschrijving[(Azure AD P1-abonnement](/azure/active-directory/fundamentals/active-directory-whatis) vereist)
+- Azure Active Directory (Azure AD) Deelnemen met automatische MDM-inschrijving[(Azure AD P1-abonnement vereist)](/azure/active-directory/fundamentals/active-directory-whatis)
 - MDM (Intune) Beheerd
     - Een of meer toepassingen worden geïmplementeerd via MDM.
 - Netwerk 
     - Certificaten (SCEP of PKCS)
     - Proxyconfiguratie
 - Gebruikers melden zich aan met hun eigen bedrijfsaccount (Azure AD)
-    - Eén of meerdere gebruikers per apparaat wordt ondersteund.
-- Verschillende niveaus van vergrendelingsconfiguraties voor apparaten die worden toegepast op basis van specifieke gebruiksgevallen, van Volledig geopend tot Kiosk voor één app.
+    - Eén of meerdere gebruikers per apparaat worden ondersteund.
+- Verschillende niveaus van vergrendelingsconfiguraties voor apparaten die zijn toegepast op basis van specifieke gebruiksgevallen, van Volledig geopend tot Kiosk voor één app.
 
 ## <a name="guides-licensing-and-requirements"></a>[Handleidingen licentieverlening en vereisten](/dynamics365/mixed-reality/guides/requirements#licensing-and-product-requirements)
 
@@ -53,9 +53,9 @@ De volgende infrastructuur moet al zijn gebruikt:
 - Power BI Desktop
 - Netwerkverbinding
 
-[![Diagram van verbonden corp-netwerk, fase 1 ](./images/deployment-guides-revised-scenario-b-01-1.png)](./images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
+[![Corp verbonden netwerkdiagram, fase 1. ](./images/deployment-guides-revised-scenario-b-01-1.png)](./images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
 
-[![Diagram van met corp verbonden netwerk, fase 2 ](./images/deployment-guides-revised-scenario-b-02-1.png)](./images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
+[![Corp verbonden netwerkdiagram, fase 2. ](./images/deployment-guides-revised-scenario-b-02-1.png)](./images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
 
 ## <a name="in-this-guide-you-will"></a>In deze handleiding gaat u het volgende doen:
 ### <a name="prepare"></a>Voorbereiden
@@ -73,7 +73,7 @@ De volgende infrastructuur moet al zijn gebruikt:
 >- [Gebruikers en groepen maken.](hololens2-corp-connected-configure.md#azure-users-and-groups)
 >- [Automatische inschrijving instellen.](hololens2-corp-connected-configure.md#auto-enrollment-on-hololens-2)
 >- [How to set up Wi-Fi certificates and profiles for Corporate Wi-Fi Connectivity.](hololens2-corp-connected-configure.md#corporate-wi-fi-connectivity)
->- [Upload lob-app-pakketten (Line-Of-Business) toewijzen.](hololens2-corp-connected-configure.md#app-deployment)
+>- [Upload LOB-app-pakketten (Line-Of-Business) toewijzen.](hololens2-corp-connected-configure.md#app-deployment)
 >- [Stel Dynamics 365 Guides.](hololens2-corp-connected-configure.md#setup-guides-application-licenses-dataverse-and-authoring)
 >- [Kioskmodus configureren (optioneel).](hololens2-corp-connected-configure.md#optional-kiosk-mode)
 >- [WDAC configureren (optioneel).](hololens2-corp-connected-configure.md#optional-wdac)

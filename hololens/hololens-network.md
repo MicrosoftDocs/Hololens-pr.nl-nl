@@ -4,27 +4,27 @@ description: Leer hoe u internet instelt en er verbinding mee maakt met HoloLens
 ms.assetid: 0895606e-96c0-491e-8b1c-52e56b00365d
 author: mattzmsft
 ms.author: mazeller
-keywords: HoloLens, Wi-Fi, draadloos, internet, IP, IP-adres
+keywords: HoloLens, Wi-Fi, draadloos, internet, IP-adres, IP-adres
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: a230538a2bbf33481ef33c992a5b6c76107bb3829774744bc7e9a888f9102692
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: fe1c47de48e413a6f45921ba1e247016873ca996
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663142"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189100"
 ---
 # <a name="connect-hololens-to-a-network"></a>Verbinding maken HoloLens aan een netwerk
 
 Als u de meeste dingen op uw HoloLens, moet u zijn verbonden met een netwerk. HoloLens bevat een 802.11ac-geschikt 2x2 Wi-Fi-radio en verbinding maken met een netwerk is vergelijkbaar met het verbinden van een Windows 10 Desktop- of Mobile-apparaat met een Wi-Fi-netwerk. Deze handleiding helpt u bij het volgende:
 
-- Verbinding maken verbinding maken met een netwerk via Wi-Fi of alleen HoloLens 2, Wi-Fi Direct of Ethernet via USB-C
-- Schakel de Wi-Fi en schakel deze opnieuw Wi-Fi
+- Verbinding maken verbinding maken met een netwerk met behulp van Wi-Fi of alleen HoloLens 2, Wi-Fi Direct of Ethernet via USB-C
+- Uitschakelen en opnieuw inschakelen Wi-Fi
 
-Lees meer over [het gebruik HoloLens offline.](hololens-offline.md)
+Lees meer over het [gebruik HoloLens offline.](hololens-offline.md)
 
 ## <a name="connecting-for-the-first-time"></a>Voor de eerste keer verbinding maken
 
@@ -34,29 +34,29 @@ Op HoloLens 2 apparaten kan een gebruiker ook een [USB-C-naar-Ethernet-adapter](
 
 ## <a name="connecting-to-wi-fi-after-setup"></a>Verbinding maken met Wi-Fi na de installatie
 
-1. Maak de beweging **Start voor** en selecteer **Instellingen**. De Instellingen app wordt automatisch voor u geplaatst.
+1. Maak de beweging **Start vooraf en** selecteer **Instellingen**. De Instellingen-app wordt automatisch voor u geplaatst.
 1. Selecteer **Network & Internet**  >  **Wi-Fi.** Controleer of Wi-Fi is ingeschakeld. Als u uw netwerk niet ziet, schuift u omlaag in de lijst.
-1. Selecteer een netwerk en selecteer vervolgens **Verbinding maken.**
+1. Selecteer een netwerk en selecteer vervolgens **Verbinding maken**.
 1. Als u wordt gevraagd om een netwerkwachtwoord typt u dit en selecteert u **volgende.**
 
-![HoloLens Wi-Fi instellingen](./images/hololens-2-wifi-settings.jpg)
+![HoloLens Wi-Fi instellingen.](./images/hololens-2-wifi-settings.jpg)
 
-Controleer de status van Wi-Fi netwerk in het menu Start om Wi-Fi te **controleren:**
+Controleer de status van de Wi-Fi Wi-Fi in het menu **Start** om te controleren of Wi-Fi verbonden bent:
 
 1. Open het **menu** Start.
-1. Bekijk linksboven in het menu **Start** de status Wi-Fi weergeven. De status van Wi-Fi en de SSID van het verbonden netwerk wordt weergegeven.
+1. Bekijk linksboven in het menu **Start** de Wi-Fi status. De status van Wi-Fi en de SSID van het verbonden netwerk worden weergegeven.
 
 > [!TIP]
 > Als Wi-Fi niet beschikbaar is, kunt u ook verbinding [maken met mobiele en 5G-netwerken.](hololens-cellular.md)
 
 > [!IMPORTANT]
-> Gebruikers kunnen het Wi-Fi-roaminggedrag van de HoloLens 2 niet afstemmen. De enige manier om de **Wi-Fi-lijst** te vernieuwen, is door de Wi-Fi Uit en Aan te zetten. Dit voorkomt veel problemen, zoals wanneer een apparaat 'vastloopt' aan een AP wanneer het buiten het bereik valt.
+> Gebruikers kunnen het Wi-Fi-roaminggedrag van de HoloLens 2 niet afstemmen. De enige manier om de Wi-Fi-lijst te **vernieuwen, is door** de Wi-Fi Uit en Aan in te schakelen. Dit voorkomt veel problemen, zoals wanneer een apparaat 'vastloopt' aan een AP wanneer het buiten het bereik valt.
 
 ## <a name="connect-hololens-to-enterprise-wi-fi-network"></a>Verbinding maken HoloLens naar Enterprise Wi-Fi Network
 
-Enterprise Wi-Fi-profielen gebruiken Extensible Authentication Protocol (EAP) om verbinding Wi-Fi verifiëren. HoloLens Enterprise Wi-Fi-profiel kan worden geconfigureerd via MDM of een inrichtingspakket dat is gemaakt [door Windows Configuration Designer.](/windows/configuration/provisioning-packages/provisioning-packages)
+Enterprise Wi-Fi-profielen gebruiken Extensible Authentication Protocol (EAP) om verbinding Wi-Fi verifiëren. HoloLens Enterprise Wi-Fi kan worden geconfigureerd via MDM of het inrichtingspakket dat is gemaakt [door Windows Configuration Designer.](/windows/configuration/provisioning-packages/provisioning-packages)
 
-Raadpleeg Microsoft Intune [Intune](/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) voor configuratie-instructies voor meer informatie over het beheerde apparaat.
+Voor Microsoft Intune beheerd apparaat raadpleegt u [Intune voor](/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) configuratie-instructies.
 
 Als u een Wi-Fi inrichtingspakket in WCD wilt maken, is een vooraf geconfigureerd Wi-Fi-.xml vereist. Hier is een voorbeeld van Wi-Fi voor WPA2-Enterprise EAP-TLS-verificatie:
 
@@ -125,13 +125,13 @@ Het CA-basiscertificaat van de server en het clientcertificaat moeten mogelijk w
 Aanvullende bronnen:
 
 - WLANv1Profile Schema: [[MS-GPWL]: Draadloos LAN-profiel v1 Schema | Microsoft Docs](/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
-- EAP-TLS-schema: [[MS-GPWL]: Microsoft EAP TLS-schema | Microsoft Docs](/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
+- EAP-TLS-schema: [[MS-GPWL]: Microsoft EAP TLS Schema | Microsoft Docs](/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
 Raadpleeg onze [pagina Voor probleemoplossing](hololens2-enterprise-troubleshooting.md#) als u problemen hebt met het maken van verbinding met uw Wi-Fi.
 
 ## <a name="configure-network-proxy"></a>Netwerkproxy configureren
 
-In deze sectie worden netwerkproxy's voor HoloLens OS- en UWP-apps (Universal Windows Platform) met behulp van Windows HTTP-stack besturingssysteem. Toepassingen die gebruikmaken van niet-Windows HTTP-stack hebben mogelijk hun eigen proxyconfiguratie en -verwerking. 
+In deze sectie wordt de netwerkproxy voor HoloLens OS- en UWP-apps (Universal Windows Platform) met behulp van Windows HTTP-stack besturingssysteem. Toepassingen die gebruikmaken van niet-Windows HTTP-stack hebben mogelijk hun eigen proxyconfiguratie en -verwerking. 
 
 ### <a name="proxy-configurations"></a>Proxyconfiguraties 
 
@@ -140,11 +140,11 @@ In deze sectie worden netwerkproxy's voor HoloLens OS- en UWP-apps (Universal Wi
 - Web Proxy Auto-Discovery Protocol (WPAD): geef de URL van het proxyconfiguratiebestand op via DHCP of DNS. 
 
 ### <a name="proxy-provisioning-methods"></a>Proxy-inrichtingsmethoden 
-Er zijn drie manieren om -proxies in te stellen:
+Er zijn drie manieren om -proxies in terichten:
 
  
 
-1.  **Instellingen Ui:** 
+1.  **Instellingen UI:** 
     1. Proxy per gebruiker (20H2 of eerder):
         1. Open het Startmenu en selecteer Instellingen.
         2. Selecteer Network & Internet en vervolgens Proxy in het menu links.
@@ -161,12 +161,12 @@ Er zijn drie manieren om -proxies in te stellen:
           1. Klik op Toepassen.
         
  2. **MDM** 
-     1. Intune: gebruik deze stappen [om een](/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) proxy in Intune te configureren. U moet naar de onderkant van de sectie schuiven.
+     1. Intune: gebruik deze stappen [om de](/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile) proxy in Intune te configureren. U moet naar de onderkant van de sectie schuiven.
      1. Andere MDM-oplossingen van derden: gebruik een [Wi-Fi-CSP.](/windows/client-management/mdm/wifi-csp)
 
 3. **PPKG** 
     1. Open Windows Configuration Designer
-    1. Klik op Geavanceerde inrichting, voer de naam in voor de nieuwe Project klik op Volgende.
+    1. Klik op Geavanceerde inrichting, voer de naam in voor uw nieuwe Project klik op Volgende.
     1. Selecteer Windows Holographic (HoloLens 2) en klik op Volgende.
     1. Importeer uw PPKG (optioneel) en klik op Voltooien.
     1. Vouw Runtime Instellingen -> Connectivity Profiles -> WLAN -> WLAN Proxy uit.
@@ -175,7 +175,7 @@ Er zijn drie manieren om -proxies in te stellen:
     1. Klik op Opslaan en afsluiten.
     1. [Pas](hololens-provisioning.md#applyremove-a-provisioning-package-to-hololens-after-setup) het inrichtingspakket toe op de HoloLens.
 
-[CSP's](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) staan achter veel van de beheertaken en het beleid voor Windows 10, zowel in Microsoft Intune als bij niet-Microsoft MDM-serviceproviders. U kunt configuration designer [Windows ook gebruiken om](/windows/configuration/provisioning-packages/provisioning-install-icd) een inrichtingspakket [te](/windows/configuration/provisioning-packages/provisioning-packages) maken en dit toe te passen op de HoloLens 2.
+[CSP's](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) staan achter veel van de beheertaken en het beleid voor Windows 10, zowel in Microsoft Intune als bij niet-Microsoft MDM-serviceproviders. U kunt ook Windows [Configuration Designer gebruiken om](/windows/configuration/provisioning-packages/provisioning-install-icd) een inrichtingspakket [te](/windows/configuration/provisioning-packages/provisioning-packages) maken en dit toe te passen op de HoloLens 2.
 De meest waarschijnlijke CSP's die worden toegepast op uw HoloLens 2 zijn:
 
 - [Wi-Fi-CSP:](/windows/client-management/mdm/wifi-csp)proxy voor Wi-Fi profiel 
@@ -187,7 +187,7 @@ De meest waarschijnlijke CSP's die worden toegepast op uw HoloLens 2 zijn:
 
 
 ## <a name="vpn"></a>VPN
-Een VPN-verbinding kan u helpen een veiligere verbinding en toegang tot het netwerk van uw bedrijf en internet te bieden. HoloLens 2 biedt ondersteuning voor ingebouwde VPN-client en UNIVERSAL Windows Platform (UWP)-VPN-in plug-in. 
+Een VPN-verbinding kan u helpen een veiligere verbinding en toegang tot het netwerk van uw bedrijf en internet te bieden. HoloLens 2 ondersteunt ingebouwde VPN-client en UNIVERSAL Windows Platform (UWP)-VPN-in plug-in. 
 
 Ondersteunde ingebouwde VPN-protocollen:
 - IKEv2
@@ -211,7 +211,7 @@ VPN is niet standaard ingeschakeld, maar kan handmatig worden ingeschakeld door 
 1. Voeg desgewenst een gebruikersnaam en wachtwoord toe.
 1. Pas de VPN-instellingen toe. 
 
-![HoloLens VPN-instellingen](./images/vpn-settings-ui.jpg)
+![HoloLens VPN-instellingen.](./images/vpn-settings-ui.jpg)
 
 ### <a name="vpn-set-via-provisioning-package"></a>VPN ingesteld via inrichtingspakket
 
@@ -219,17 +219,17 @@ VPN is niet standaard ingeschakeld, maar kan handmatig worden ingeschakeld door 
 > In onze Windows Holographic, versie 20H2, hebben we een proxyconfiguratieprobleem opgelost voor de VPN-verbinding. Overweeg apparaten te upgraden naar deze build als u van plan bent deze stroom te gebruiken.
 
 1. Start Windows Configuration Designer.
-1. Klik **op HoloLens apparaten inrichten** en selecteer vervolgens doelapparaat en **Volgende.**
+1. Klik **op HoloLens apparaten inrichten,** selecteer vervolgens doelapparaat en **Volgende.**
 1. Voer de pakketnaam en het pad in.
 1. Klik **op Overschakelen naar geavanceerde editor.**
-1. Open **Runtime-instellingen**  ->  **ConnectivityProfiles**  ->  **VPN**  ->  **VPNSettings.**
+1. Open **Runtime-instellingen**  ->  **ConnectivityProfiles**  ->  **VPN**  ->  **VPNSettings**.
 1. VPNProfileName configureren
 1. Selecteer ProfileType: **Native** of **Third Party.**
     1. Voor Systeemeigen profiel selecteert **u SysteemeigenProtocolType** en configureert u vervolgens server, routeringsbeleid, verificatietype en andere instellingen.
-    1. Configureer voor het profiel 'Externe partij' de server-URL, de familienaam van de VPN-in plug-in-app-pakket (slechts 3 vooraf gedefinieerde) en aangepaste configuraties.
+    1. Configureer voor het profiel 'Externe partij' de server-URL, de familienaam van de VPN-in plug-in-app-pakket (slechts drie vooraf gedefinieerde) en aangepaste configuraties.
 1. Exporteert u uw pakket.
 1. Verbinding maken uw HoloLens en kopieer het PPKG-bestand naar het apparaat. 
-1. Pas HoloLens VPN .ppkg toe door de Startmenu te openen en **werk- of** schoolaccounttoegang voor Instellingen accounttoegang te selecteren. Inrichtingspakket toevoegen of verwijderen - > Selecteer uw  ->    ->    ->   VPN-pakket.
+1. Pas HoloLens VPN .ppkg toe door de Startmenu te openen en **werk- of** schoolaccounttoegang voor Instellingen-account te selecteren. Inrichtingspakket toevoegen of verwijderen - > Selecteer uw  ->    ->    ->   VPN-pakket.
 
 
 ### <a name="setting-up-vpn-via-intune"></a>VPN instellen via Intune
@@ -331,12 +331,12 @@ Native IKEv2 VPN-voorbeeld:
         </Item>
       </Add>
 ```
-## <a name="disabling-wi-fi-on-hololens-1st-gen"></a>Uitschakelen van Wi-Fi op HoloLens (eerste generatie)
+## <a name="disabling-wi-fi-on-hololens-1st-gen"></a>Wi-Fi HoloLens (eerste generatie) uitschakelen
 
 ### <a name="using-the-settings-app-on-hololens"></a>De Instellingen-app op HoloLens
 
 1. Open het **menu** Start.
-1. Selecteer de **Instellingen app** **op Start** of in de **lijst Alle apps** rechts van het menu Start.  De **Instellingen** app wordt automatisch voor u geplaatst.
+1. Selecteer de **Instellingen app** **in Start** of in de **lijst Alle apps** rechts van het **menu** Start. De **Instellingen-app** wordt automatisch voor u geplaatst.
 1. Selecteer **Netwerk & Internet.**
 1. Selecteer de Wi-Fi schuifregelaar om deze naar de **uit-positie te** verplaatsen. Hiermee worden de RF-onderdelen van het Wi-Fi uitgeschakeld en worden alle Wi-Fi uitgeschakeld op HoloLens.
 
@@ -350,21 +350,21 @@ Native IKEv2 VPN-voorbeeld:
 ### <a name="by-using-the-settings-app"></a>Met behulp van de Instellingen app
 
 1. Open het **menu** Start.
-1. Selecteer de **Instellingen app** **op Start** of in de **lijst Alle apps** rechts van het menu Start.  De **Instellingen** app wordt automatisch voor u geplaatst.
+1. Selecteer de **Instellingen app** **in Start** of in de **lijst Alle apps** rechts van het **menu** Start. De **Instellingen-app** wordt automatisch voor u geplaatst.
 1. Selecteer **Netwerk & Internet.**
 1. Schuif omlaag naar onder de lijst met beschikbare Wi-Fi netwerken en selecteer **Hardware-eigenschappen.**
 
-    ![Hardware-eigenschappen in Wi-Fi instellingen](./images/wifi-hololens-hwdetails.jpg)
+    ![Hardware-eigenschappen in Wi-Fi instellingen.](./images/wifi-hololens-hwdetails.jpg)
 
    Het IP-adres wordt weergegeven naast **IPv4-adres**.
 
 ### <a name="by-using-voice-commands"></a>Met behulp van spraakopdrachten
 
-Afhankelijk van de build van uw apparaten kunt u ingebouwde spraakopdrachten gebruiken of Cortana IP-adres weer te geven. Op builds na [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) spreekt u "Wat is mijn IP-adres?" en worden weergegeven. Voor eerdere builds of HoloLens (eerste generatie) zegt u "Hey Cortana, Wat is mijn IP-adres?" en Cortana worden uw IP-adres weergegeven en gelezen.
+Afhankelijk van de build van uw apparaten kunt u ingebouwde spraakopdrachten gebruiken of Cortana IP-adres weer te geven. Op builds na [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) spreekt u "Wat is mijn IP-adres?" en worden weergegeven. Voor eerdere builds of HoloLens (eerste generatie) zegt u "Hey Cortana, What's my IP address?" en Cortana worden uw IP-adres weergegeven en gelezen.
 
 ### <a name="by-using-windows-device-portal"></a>Met behulp van Windows Apparaatportal
 
-1. Open de apparaatportal in een webbrowser op [uw pc.](/windows/mixed-reality/using-the-windows-device-portal.md#networking)
+1. Open de portal van het apparaat in een [webbrowser op uw pc.](/windows/mixed-reality/using-the-windows-device-portal.md#networking)
 1. Navigeer naar **de sectie** Netwerken.  
    In deze sectie worden uw IP-adres en andere netwerkgegevens weergegeven. Met deze methode kunt u het IP-adres kopiëren en plakken op uw ontwikkel-pc.
 
@@ -372,15 +372,15 @@ Afhankelijk van de build van uw apparaten kunt u ingebouwde spraakopdrachten geb
 ### <a name="by-using-settings"></a>Met behulp van Instellingen
  
 1. Open het **menu** Start.
-1. Selecteer de **Instellingen app** **op Start** of in de **lijst Alle apps** rechts van het menu Start.  De **Instellingen** app wordt automatisch voor u geplaatst.
+1. Selecteer de **Instellingen app** **in Start** of in de **lijst Alle apps** rechts van het **menu** Start. De **Instellingen-app** wordt automatisch voor u geplaatst.
 1. Selecteer **Netwerk & Internet.**
 1. Schuif omlaag naar onder de lijst met beschikbare Wi-Fi netwerken en selecteer **Hardware-eigenschappen.**
 1. Wijzig in **het venster IP-instellingen** bewerken het eerste veld in **Handmatig.**
-1. Voer de gewenste IP-configuratie in de overige velden in en klik vervolgens op **Opslaan.**
+1. Voer de gewenste IP-configuratie in de resterende velden in en klik vervolgens op **Opslaan.**
 
 ### <a name="by-using-windows-device-portal"></a>Met behulp van Windows Apparaatportal
 
-1. Open de apparaatportal in een webbrowser op [uw pc.](/windows/mixed-reality/using-the-windows-device-portal.md#networking)
+1. Open de portal van het apparaat in een [webbrowser op uw pc.](/windows/mixed-reality/using-the-windows-device-portal.md#networking)
 1. Navigeer naar **de sectie** Netwerken.
 1. Selecteer de **knop IPv4-configuratie.**
 1. Selecteer **Het volgende IP-adres gebruiken en** voer de gewenste TCP/IP-configuratie in.

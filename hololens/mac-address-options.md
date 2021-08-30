@@ -13,12 +13,12 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1be1a8aa021c2a588b120fc9fa148b6c5dafd2840bbefa0d8ea9701751834521
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d21a63aae94f5ea5269f61fe319a9036626de1b4
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665578"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189525"
 ---
 # <a name="enterprise-enrollment-of-hololens-devices-in-mac-address-restricted-wi-fi-environment"></a>Enterprise Enrollment of HoloLens Devices in MAC address restricted Wi-Fi Environment
 
@@ -26,9 +26,9 @@ In dit document wordt een veelvoorkomende scenario beschreven dat we hebben geï
 
 ## <a name="example-scenario"></a>Voorbeeldscenario
 
-Veel klanten in beveiligde omgevingen hebben beperkingen voor hun draadloze of bekabelde netwerken waardoor alleen goedgekeurde apparaten (op basis van MAC-adressen) verbinding kunnen maken. Dit kan worden afgedwongen via mac-adresfiltering op een draadloos toegangspunt of via een DHCP-server. Bovendien sommige draadloze netwerken kunnen worden beveiligd met PEAP, waarvoor een certificaat moet worden toegepast op het apparaat vóór de authenticatie op het draadloze netwerk.
+Veel klanten in beveiligde omgevingen hebben beperkingen voor hun draadloze of bekabelde netwerken waardoor alleen goedgekeurde apparaten (op basis van MAC-adressen) verbinding kunnen maken. Dit kan worden afgedwongen door mac-adresfiltering op een draadloos toegangspunt of via een DHCP-server. Bovendien sommige draadloze netwerken kunnen worden beveiligd met PEAP, waarvoor een certificaat moet worden toegepast op het apparaat vóór de authenticatie op het draadloze netwerk.
 
-In dit scenario kunnen twee belangrijke vereisten vertragingen tot gevolg hebben of handmatige interventie vereisen bij het HoloLens apparaten aan het netwerk:
+In dit scenario kunnen twee belangrijke vereisten vertragingen tot gevolg hebben of handmatig ingrijpen vereisen bij het HoloLens apparaten aan het netwerk:
 
 - Het draadloze PEAP-certificaat moet worden toegepast op het apparaat voordat het apparaat kan worden aangesloten op het draadloze netwerk.
 - Het MAC-adres van de HoloLens Wi-Fi adapter moet worden geregistreerd.
@@ -61,7 +61,7 @@ Er zijn veel manieren om deze situatie te verbeteren, afhankelijk van de infrast
 - Bekabelde netwerkpoort met toegang tot het klantnetwerk
 - HoloLens Compatibele USB-C Hub met Ethernet-adapter: elke adapter waarvoor geen extra stuurprogramma's of toepassings installeren nodig is, moet geschikt zijn.
 - Inrichtingspakket met:
-  - Informatie over draadloze netwerken en certificaat
+  - Informatie over draadloze netwerken en certificaat bevatten
   - Optioneel met inschrijvingsgegevens voor De Azure AD van de organisatie
   - Met alle andere vereiste inrichtingsinstellingen
 
@@ -74,7 +74,7 @@ Het proces kan variëren, afhankelijk van het softwareniveau van het apparaat. A
 3. Verbinding maken USB-C Hub naar HoloLens apparaat.
 4. Schakel de HoloLens in en zet het apparaat op.
 5. Druk op **de knop Volume omlaag en Aan/uit om** het inrichtingspakket toe te passen.
-6. De technicus kan oobe nu volgen en na het voltooien de Instellingen-app openen om het MAC-adres van het apparaat op te halen.
+6. De technicus kan nu OOBE volgen en, wanneer dit is voltooid, de Instellingen-app openen om het MAC-adres van het apparaat op te halen.
 
 Als het apparaat een build van het besturingssysteem heeft vóór de update van mei [2004,](hololens-release-notes.md#windows-holographic-version-2004)volgt u de onderstaande stappen.
 
@@ -85,11 +85,11 @@ Als het apparaat een build van het besturingssysteem heeft vóór de update van 
 5. Verbinding maken USB-C Hub naar HoloLens apparaat.
 6. Plaats de HoloLens
 7. Druk op **de knop Volume omlaag en Aan/uit** om het inrichtingspakket toe te passen.
-8. De technicus kan oobe nu volgen en na het voltooien de Instellingen-app openen om het MAC-adres van het apparaat op te halen.
+8. De technicus kan nu OOBE volgen en, wanneer dit is voltooid, de Instellingen-app openen om het MAC-adres van het apparaat op te halen.
 
 ### <a name="benefits"></a>Voordelen
 
-Hierdoor kan het apparaat met één toets het juiste inrichtingspakket toepassen en het MAC-adres van het apparaat verzamelen. [Inrichtingspakketten kunnen worden gemaakt volgens de richtlijnen hier.](hololens-provisioning.md)
+Hierdoor kan een 'Single touch' van het apparaat het juiste inrichtingspakket toepassen en het MAC-adres van het apparaat verzamelen. [Inrichtingspakketten kunnen worden gemaakt volgens de richtlijnen hier.](hololens-provisioning.md)
 
 ## <a name="autopilot-with-intune-enrollment"></a>Autopilot met Intune-inschrijving
 
@@ -101,7 +101,7 @@ Hierdoor kan het apparaat met één toets het juiste inrichtingspakket toepassen
 - Intune instellen en inschakelen voor de tenant van de klant
 - Apparaat geregistreerd voor Autopilot en geïmporteerd in de tenant van de klant
 - Intune-beleidsregels die zijn gedefinieerd voor het apparaat:
-   - Informatie over draadloze netwerken en certificaat
+   - Informatie over draadloze netwerken en certificaat bevatten
    - Met alle andere vereiste inrichtingsinstellingen
 
 Hierdoor kan een klant met geavanceerde netwerkvereisten de apparaten inschrijven in een hands-off, schaalbare benadering
@@ -122,17 +122,17 @@ Er zijn aanvullende vereisten nodig, zoals hieronder wordt beschreven:
 
 4. Op het apparaat worden de vereiste Wi-Fi certificaten en andere configuratie toegepast, indien nodig via Intune.
 
-5. Als u klaar bent, kan de technicus de Intune-portal (Endpoint Manager) laden en inzoomen op de pagina apparaateigenschappen op **Start ->-apparaten -> DeviceName -> Hardware.**
+5. Als u klaar bent, kan de technicus de Intune-portal (Endpoint Manager) laden en inzoomen op de pagina met apparaateigenschappen op **Start -> Devices -> DeviceName -> Hardware**.
 
 6. Het Wi-Fi MAC-adres wordt weergegeven in de Intune-portal.
 
-   ![MAC-adres via Intune](images/mac-address-intune.jpg)
+   ![MAC-adres via Intune.](images/mac-address-intune.jpg)
 
 7. De technicus voegt dit MAC-adres toe als een toegestaan apparaat.
 
 ### <a name="benefits"></a>Voordelen
 
-Hierdoor is een 'Kop-op-kop'-implementatie mogelijk voor de technicus, omdat het apparaat vanaf de doos kan worden ingeschreven bij Azure AD en Intune zonder dat de technicus het apparaat moet dragen of handmatig met de HoloLens-omgeving moet werken.
+Hierdoor is een 'Kop-op-kop'-implementatie mogelijk voor de technicus, omdat het apparaat vanaf de doos kan worden ingeschreven bij Azure AD en Intune zonder dat de technicus het apparaat moet dragen of handmatig moet communiceren met de HoloLens-omgeving.
 
 ## <a name="reporting-of-mac-addresses-to-the-technician"></a>Rapportage van MAC-adressen aan de technicus
 
@@ -155,7 +155,7 @@ Get-IntuneManagedDevice -Filter "model eq 'Hololens 2'" | where {$_.enrolledDate
 
 Hiermee worden de naam en het MAC-adres van alle HoloLens die in de afgelopen 30 dagen zijn geregistreerd.
 
-![MAC-adres via PowerShell](images/mac-address-powershell.jpg)
+![MAC-adres via PowerShell.](images/mac-address-powershell.jpg)
 
 ### <a name="process"></a>Proces
 

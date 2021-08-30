@@ -13,22 +13,22 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f76c8bb669f45ddde539c0149159287724b73707765703bf310530adb4e300c6
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 587253a7ec3d3959e7861fedc474d6a2e39dd369
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662058"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189899"
 ---
 # <a name="hololens-1st-gen-hardware"></a>HoloLens hardware (1e generatie)
 
-![Microsoft HoloLens (eerste generatie)](images/see-through-400px.jpg)
+![Microsoft HoloLens (eerste generatie).](images/see-through-400px.jpg)
 
 Microsoft HoloLens (eerste generatie) is de eerste volledig ongebonden holografische computer ter wereld. HoloLens persoonlijke computing opnieuw definiëren via holografische ervaringen om u op nieuwe manieren te helpen. HoloLens geavanceerde optiek en sensoren voor het leveren van 3D hologrammen die zijn vastgemaakt aan de echte wereld om u heen.
 
 ## <a name="hololens-components"></a>HoloLens onderdelen
 
-![Afbeelding van de inhoud van het vak](images/hololens-box-contents.png)
+![Afbeelding van de inhoud van het vak.](images/hololens-box-contents.png)
 
 Uw HoloLens bevat de volgende functies:
 
@@ -44,14 +44,14 @@ Uw HoloLens bevat de volgende functies:
 
 Het HoloLens bevat de volgende items:
 
-- **Neuspaden**. Selecteer een neusblok dat past bij de vorm van uw neus en die geschikt is voor uw oog.
+- **Neuspaden**. Selecteer een neusblok dat past bij de vorm van uw neus en plaats uw oog.
 - **Overheadband**. Wanneer u het apparaat HoloLens bewegen, gebruikt u de overheadband om het apparaat op zijn plek te houden. Als u het apparaat bovendien langere tijd HoloLens dragen, is het mogelijk dat u het apparaat beter kunt laten dragen met behulp van de overheadband.
-- **Micro USB-kabel.** Gebruik de micro-USB-kabel om uw HoloLens te verbinden met de voeding voor laden, of gebruik deze om uw apparaat te HoloLens uw computer.
+- **Micro USB-kabel.** Gebruik de micro-USB-kabel om uw HoloLens te verbinden met de voeding voor laden of gebruik deze om uw apparaat te HoloLens uw computer.
 - **Voeding .** Sluit aan op een power-aansluiting.
-- **Microfiber-1.** Gebruik de energie om uw HoloLens op te schonen.
+- **Microfiber-1.** Gebruik de toer om uw HoloLens op te schonen.
 
 >[!TIP]
->De [clicker](hololens1-clicker.md) wordt geleverd met HoloLens (1e generatie), in een afzonderlijk vak.
+>De [clicker](hololens1-clicker.md) wordt geleverd met HoloLens (1e Gen), in een afzonderlijk vak.
 
 ### <a name="power-supply-details"></a>Stroomvoorzieningsdetails
 
@@ -59,13 +59,13 @@ De voeding en de USB-kabel die bij het apparaat worden meegeleverd, zijn het mee
 
 De laadsnelheid en snelheid kunnen variëren, afhankelijk van de omgeving waarin het apparaat wordt uitgevoerd.
 
-Als u het interne acculadingspercentage wilt behouden/verhogen terwijl het apparaat is aan, moet het minimaal zijn verbonden met een accu van 15W.
+Als u het percentage interne acculadingen wilt behouden/verhogen terwijl het apparaat is aan staat, moet het minimaal zijn verbonden met een acculading van 15W.
 
 ## <a name="device-specifications"></a>Apparaatspecificaties
 
 ### <a name="display"></a>Weergave
 
-![HoloLens heeft een holografische lens](images/displays-400px.jpg)
+![HoloLens heeft een holografische lens.](images/displays-400px.jpg)
 
 | &nbsp; | &nbsp; |
 |---|---|
@@ -76,7 +76,7 @@ Als u het interne acculadingspercentage wilt behouden/verhogen terwijl het appar
 
 ### <a name="sensors"></a>Sensoren
 
-![HoloLens heeft sensoren om inzicht te krijgen in de omgeving en gebruikersacties](images/sensor-bar-400px.jpg)
+![HoloLens heeft sensoren om inzicht te krijgen in de omgeving en gebruikersacties.](images/sensor-bar-400px.jpg)
 
 - 1 IMU (inertial measurement unit)
 - 4 omgevingskennis over camera's
@@ -108,7 +108,7 @@ Als u het interne acculadingspercentage wilt behouden/verhogen terwijl het appar
 
 ### <a name="processors"></a>Processors
 
-![Het moederbord voor Microsoft HoloLens](images/motherboard-400px.jpg)
+![Het moederbord voor Microsoft HoloLens.](images/motherboard-400px.jpg)
 
 - Intel 32-bits architectuur met TPM 2.0-ondersteuning
 - Aangepaste Microsoft Holographic Processing Unit (HPU 1.0)
@@ -158,15 +158,15 @@ HoloLens is getest en voldoet aan de basisvereisten voor beveiliging tegen impac
 
 ## <a name="care-and-cleaning"></a>Zorg en ops cleaning
 
-Uw gegevens HoloLens zorgvuldig afhandelen. Als u uw apparaat wilt optillen, HoloLens en aanpassen, gebruikt u de arm van het apparaat en niet de &mdash; overheadband. Om het visor vrij te houden van vingerafdrukken en om te voorkomen dat u er iets aan moet doen. Herhaalde opsporing kan de visor beschadigen, dus probeer uw apparaat schoon te houden.
+Zorg dat u HoloLens gegevens zorgvuldig verwerkt. Als u uw apparaat wilt optillen, HoloLens en aanpassen, gebruikt u de arm van het apparaat en niet de &mdash; overheadband. Om het visor vrij te houden van vingerafdrukken en om te voorkomen dat u er iets aan moet doen. Herhaalde opsporing kan de visor beschadigen, dus probeer uw apparaat schoon te houden.
 
 Gebruik geen schoonmakers of schappen op uw HoloLens en verstop het niet in water of pas er rechtstreeks water op toe.
 
 Als u de visor wilt opsnetsen, verwijdert u alle water met behulp van een bril of een bril in de vorm van een bril. Maak de microfiber licht koud met een kleine hoeveelheid gedistilleerd water en gebruik het vervolgens om de visor in een cirkelvormige beweging te wissen.
 
-Als u de rest van het apparaat, met inbegrip van de hoofdband en de arm van het apparaat, wilt ops schonen, gebruikt u een lint-vrije 1200000000000000000000. Laat uw HoloLens volledig leeg voordat u deze opnieuw gebruikt.
+Als u de rest van het apparaat wilt ops schonen, met inbegrip van de hoofdband en de arm van het apparaat, gebruikt u een lint-vrije 15000000000000. Laat uw HoloLens volledig leeg voordat u deze opnieuw gebruikt.
 
-![Afbeelding die laat zien hoe u de visor opschoont](images/hololens-cleaning-visor.png)
+![Afbeelding die laat zien hoe u het visor kunt ops schonen.](images/hololens-cleaning-visor.png)
 
 ## <a name="finding-the-serial-number"></a>Het serienummer zoeken
 
@@ -185,4 +185,4 @@ Het serienummer kan ook worden gevonden via een verbonden pc:
    <img src="images/hl1-serial-number.png" width="400" height="600" alt="Properties page in Windows 10 for HoloLens-3TNKV"/>
 
 > [!div class="nextstepaction"]
-> [Uw HoloLens instellen en starten (eerste generatie)](hololens1-setup.md)
+> [Uw HoloLens (eerste generatie) instellen en starten](hololens1-setup.md)

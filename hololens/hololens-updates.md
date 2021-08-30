@@ -1,6 +1,6 @@
 ---
 title: Updates HoloLens beheren
-description: Meer informatie over hoe uw beheerders beheer van mobiele apparaten kunnen gebruiken om updates voor HoloLens beheren.
+description: Meer informatie over hoe uw beheerders mobile device management kunnen gebruiken voor het beheren van updates voor HoloLens apparaten.
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -19,54 +19,54 @@ ms.custom:
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 635e2cc274101fcf08fd05f2b3b54ce6c2f79182011d76409a51c722ea47ecc7
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 3afe3d2aecd64c2b4724f4805571cb3c46112875
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662784"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190035"
 ---
 # <a name="manage-hololens-updates"></a>Updates HoloLens beheren
 
-HoloLens gebruikt Windows Update op dezelfde manier als andere Windows 10 apparaten. Wanneer een update beschikbaar is, wordt deze automatisch gedownload en geïnstalleerd de volgende keer dat uw apparaat op het netnet werkt en is verbonden met internet. In dit artikel wordt beschreven hoe u updates beheert in een onderneming of een andere beheerde omgeving. Zie Update HoloLens voor informatie over het beheren van updates HoloLens afzonderlijke [HoloLens.](hololens-update-hololens.md)
+HoloLens gebruikt Windows Update op dezelfde manier als andere Windows 10 apparaten. Wanneer een update beschikbaar is, wordt deze automatisch gedownload en geïnstalleerd de volgende keer dat uw apparaat op het netnet werkt en is verbonden met internet. In dit artikel wordt beschreven hoe u updates beheert in een onderneming of een andere beheerde omgeving. Zie Update HoloLens voor meer informatie over het beheren van updates HoloLens afzonderlijke [HoloLens.](hololens-update-hololens.md)
 
 ## <a name="manage-updates-automatically"></a>Updates automatisch beheren
 
 ### <a name="managing-updates-by-using-windows-update-for-business"></a>Updates beheren met behulp van Windows Update voor Bedrijven
 
-Windows Holographic for Business kunt Windows [Update voor Bedrijven gebruiken om](/windows/deployment/update/waas-manage-updates-wufb) updates te beheren. Alle HoloLens 2 kunnen gebruikmaken van Windows Holographic for Business. Zorg ervoor dat ze Windows Holographic for Business build 10.0.18362.1042 of een latere build gebruiken. Als u apparaten HoloLens (eerste generatie) hebt, moet u ze upgraden naar Windows Holographic for Business [om](hololens1-upgrade-enterprise.md) hun updates te beheren.
+Windows Holographic for Business kunt Windows [Update voor Bedrijven gebruiken om](/windows/deployment/update/waas-manage-updates-wufb) updates te beheren. Alle HoloLens 2 kunnen deze Windows Holographic for Business. Zorg ervoor dat ze Windows Holographic for Business build 10.0.18362.1042 of een latere build gebruiken. Als u apparaten HoloLens (eerste generatie) hebt, moet u ze upgraden naar Windows Holographic for Business [om](hololens1-upgrade-enterprise.md) de updates te beheren.
 
-Windows Update voor Bedrijven verbindt HoloLens apparaten rechtstreeks met de Windows Update-service. Met behulp Windows Update voor Bedrijven kunt u meerdere aspecten van het updateproces beheren, dat wil zeggen, welke apparaten op welk moment &mdash; updates ontvangen. U kunt bijvoorbeeld updates naar een subset van apparaten uitrollen om te testen en vervolgens later updates voor de resterende apparaten uitrollen. U kunt ook verschillende updateschema's voor verschillende typen updates definiëren.
+Windows Update voor Bedrijven verbindt HoloLens apparaten rechtstreeks met de Windows Update-service. Met behulp Windows Update voor Bedrijven kunt u meerdere aspecten van het updateproces beheren, dat wil zeggen welke apparaten op welk moment &mdash; updates krijgen. U kunt bijvoorbeeld updates voor een subset van apparaten voor testtesten uitrollen en vervolgens updates voor de resterende apparaten uitrollen. U kunt ook verschillende updateschema's voor verschillende typen updates definiëren.
 
 > [!NOTE]  
-> Voor HoloLens apparaten kunt u automatisch functie-updates beheren (twee keer per jaar uitgebracht) en kwaliteitsupdates (maandelijks of indien nodig uitgebracht, inclusief essentiële beveiligingsupdates). Zie Typen updates die worden beheerd door Windows Update voor Bedrijven voor meer informatie over [updatetypen.](/windows/deployment/update/waas-manage-updates-wufb#types-of-updates-managed-by-windows-update-for-business)
+> Voor HoloLens apparaten kunt u automatisch functie-updates beheren (twee keer per jaar uitgebracht) en kwaliteitsupdates (maandelijks of naar vereist uitgebracht, inclusief essentiële beveiligingsupdates). Zie Typen updates die worden beheerd door Windows Update voor Bedrijven voor meer informatie over [updatetypen.](/windows/deployment/update/waas-manage-updates-wufb#types-of-updates-managed-by-windows-update-for-business)
 
-U kunt de instellingen Windows Update voor Bedrijven voor HoloLens configureren met behulp van beleid in een MDM-oplossing (Mobile Device Management), zoals Microsoft Intune.
+U kunt de instellingen Windows Update voor Bedrijven voor HoloLens configureren met behulp van beleidsregels in een MDM-oplossing (Mobile Device Management), zoals Microsoft Intune.
 
-### <a name="managing-windows-update-for-business-by-using-microsoft-intune"></a>Windows Update voor Bedrijven beheren met behulp van Microsoft Intune
+### <a name="managing-windows-update-for-business-by-using-microsoft-intune"></a>Een Windows Update voor Bedrijven beheren met behulp van Microsoft Intune
 
-Zie Manage Windows 10 software updates in Intune (Software-updates beheren [in Intune)](/intune/protect/windows-update-for-business-configure)Windows gedetailleerde informatie over het gebruik van Intune voor het configureren van Windows Update voor Bedrijven. Zie Intune-functies voor updatebeheer die HoloLens ondersteunt voor meer informatie over de specifieke [Intune HoloLens functionaliteit](#intune-update-management-functions-that-hololens-supports)die wordt ondersteund.
+Zie Manage Windows 10 software updates in Intune (Software-updates beheren [in Intune)](/intune/protect/windows-update-for-business-configure)Windows gedetailleerde informatie over het gebruik van Intune voor het configureren van Windows Update voor Bedrijven. Zie Intune-updatebeheerfuncties die worden ondersteund HoloLens in Intune voor meer informatie over de specifieke [Intune HoloLens functionaliteit.](#intune-update-management-functions-that-hololens-supports)
 
 > [!IMPORTANT]  
-> Intune biedt twee beleidstypen voor het beheren van updates: *Windows 10 updatering* en *Windows 10 functie-update*. Het Windows 10 voor het bijwerken van functies is momenteel in openbare preview en wordt niet ondersteund voor HoloLens.
+> Intune biedt twee beleidstypen voor het beheren van updates: *Windows 10 updatering* en *Windows 10 functie-update.* Het Windows 10 updatebeleidstype voor functies is momenteel in openbare preview en wordt niet ondersteund voor HoloLens.
 >  
 > U kunt een Windows 10 bijwerken om de updates HoloLens 2 beheren.
 
 ### <a name="configure-update-policies-for-hololens-2-or-hololens-1st-gen"></a>Updatebeleid configureren voor HoloLens 2 of HoloLens (eerste generatie)
 
-In deze sectie worden de beleidsregels beschreven die u kunt gebruiken voor het beheren van updates voor HoloLens 2 of HoloLens (1e generatie). Zie Update-implementaties plannen en configureren voor HoloLens 2 voor meer informatie over de functionaliteit die beschikbaar [is voor HoloLens 2.](#plan-and-configure-update-rollouts-for-hololens-2)
+In deze sectie worden de beleidsregels beschreven die u kunt gebruiken voor het beheren van updates voor HoloLens 2 of HoloLens (eerste generatie). Zie Update-implementaties plannen en configureren voor HoloLens 2 voor meer informatie over de functionaliteit die beschikbaar [is voor HoloLens 2.](#plan-and-configure-update-rollouts-for-hololens-2)
 
-[Beleids-CSP: Update](/windows/client-management/mdm/policy-csp-update) definieert de beleidsregels die Windows Update voor Bedrijven.
+[Beleids-CSP: Met Bijwerken](/windows/client-management/mdm/policy-csp-update) worden de beleidsregels voor het configureren Windows Update voor Bedrijven.
 
 > [!NOTE]  
 > Zie [Beleids-CSP's](/windows/client-management/mdm/policy-configuration-service-provider#policy-csps-supported-by-hololens-devices)die worden ondersteund door HoloLens-apparaten voor een lijst met specifieke beleidsconfiguratieserviceproviders (CSP's) die worden ondersteund door specifieke edities van HoloLens.
 
 #### <a name="configure-automatic-checks-for-updates"></a>Automatische controles voor updates configureren
 
-U kunt het beleid **Update/AllowAutoUpdate gebruiken** om het gedrag van automatische updates te beheren, zoals het scannen, downloaden en installeren van updates. Zie [Update/AllowAutoUpdate](/windows/client-management/mdm/policy-csp-update#update-allowautoupdate)voor meer informatie over de beschikbare instellingen voor dit beleid.
+U kunt het **beleid Update/AllowAutoUpdate gebruiken om** het gedrag van automatische updates te beheren, zoals het scannen, downloaden en installeren van updates. Zie [Update/AllowAutoUpdate](/windows/client-management/mdm/policy-csp-update#update-allowautoupdate)voor meer informatie over de beschikbare instellingen voor dit beleid.
 
 > [!NOTE]  
-> In Microsoft Intune kunt u automatisch **updategedrag gebruiken om** dit beleid te wijzigen. Zie Manage [Windows 10 software updates in Intune (Software-updates beheren in Intune) voor meer informatie.](/intune/windows-update-for-business-configure)
+> In Microsoft Intune kunt u Automatisch **updategedrag gebruiken om** dit beleid te wijzigen. Zie Manage [Windows 10 software updates in Intune (Software-updates beheren in Intune) voor meer informatie.](/intune/windows-update-for-business-configure)
 
 #### <a name="configure-an-update-schedule"></a>Een updateschema configureren
 
@@ -77,17 +77,17 @@ Gebruik de volgende beleidsregels om te configureren hoe en wanneer updates word
   - Standaardwaarde: **0** (elke dag)
 - [Update/ScheduledInstallTime](/windows/client-management/mdm/policy-csp-update#update-scheduledinstalltime)
   - Waarden: 0-23 (0 = middernacht, 23 = 21 PM)
-  - Standaardwaarde: 03:00 uur
+  - Standaardwaarde: 3:00 uur
 
 #### <a name="configure-active-hours"></a>Actieve uren configureren
-Vanaf Windows Holographic kan een IT-beheerder versie [20H2](hololens-release-notes.md#windows-holographic-version-20h2) het bereik voor actieve uren voor HoloLens 2 opgeven.
+Vanaf Windows Holographic kan een IT-beheerder met versie [20H2](hololens-release-notes.md#windows-holographic-version-20h2) het bereik voor actieve uren voor HoloLens 2 opgeven.
 
-Actieve uren bepalen de periode waarin u verwacht dat het apparaat in gebruik is. Automatisch opnieuw opstarten na een update wordt uitgevoerd buiten de actieve uren. Het opgegeven bereik wordt geteld vanaf de begintijd van de actieve uren. U kunt MDM gebruiken, zoals beschreven in [Actieve uren configureren met MDM.](/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm) MDM maakt gebruik van de instellingen Update/ActiveHoursStart en Update/ActiveHoursEnd en Update/ActiveHoursMaxRange in de beleids-CSP om de actieve uren te configureren.
+Gebruiksuren bepalen de periode waarin u verwacht dat het apparaat in gebruik is. Automatisch opnieuw opstarten na een update wordt uitgevoerd buiten de actieve uren. Het opgegeven bereik wordt geteld vanaf de begintijd van de actieve uren. U kunt MDM gebruiken, zoals beschreven in [Actieve uren configureren met MDM.](/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm) MDM maakt gebruik van de instellingen Update/ActiveHoursStart en Update/ActiveHoursEnd en Update/ActiveHoursMaxRange in de beleids-CSP om de actieve uren te configureren.
 
--   [Update/ActiveHoursEnd:](/windows/client-management/mdm/policy-csp-update#update-activehoursend) met deze waarde stelt u de eindtijd in. Er geldt een maximum van 12 uur vanaf de begintijd.
+-   [Update/ActiveHoursEnd: met](/windows/client-management/mdm/policy-csp-update#update-activehoursend) deze waarde stelt u de eindtijd in. De begintijd is maximaal 12 uur.
     -   Ondersteunde waarden zijn 0-23, waarbij 0 12:00 uur, 1 is 1:00 uur, enzovoort.
     -   De standaardwaarde is 17 (17:00 uur).
--   [Update/ActiveHoursMaxRange:](/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange) met deze waarde stelt u het maximum aantal actieve uren in vanaf de begintijd.
+-   [Update/ActiveHoursMaxRange: met](/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange) deze waarde stelt u het maximum aantal actieve uren vanaf de begintijd in.
     -   Ondersteunde waarden zijn 8-18.
     -   De standaardwaarde is 18 (uur).
 -   [Update/ActiveHoursStart:](/windows/client-management/mdm/policy-csp-update#update-activehoursstart) met deze waarde stelt u de begintijd in. De eindtijd is maximaal 12 uur.
@@ -104,11 +104,11 @@ U kunt het volgende updatebeleid gebruiken om apparaten te configureren voor het
 
 ### <a name="plan-and-configure-update-rollouts-for-hololens-2"></a>Update-implementaties plannen en configureren voor HoloLens 2
 
-HoloLens 2 ondersteunt meer functies voor updateautomatisering dan HoloLens (eerste generatie). Dit geldt met name als u een Microsoft Intune voor het beheren van Windows Update voor Bedrijven-beleid. Deze functies maken het eenvoudiger voor u om update-implementaties in uw organisatie te plannen en te implementeren.
+HoloLens 2 biedt meer automatiseringsfuncties voor updates dan HoloLens (eerste generatie). Dit geldt met name als u een Microsoft Intune voor het beheren van Windows Update voor Bedrijven-beleid. Deze functies maken het eenvoudiger voor u om update-implementaties in uw organisatie te plannen en te implementeren.
 
 #### <a name="plan-the-update-strategy"></a>De updatestrategie plannen
 
-Windows Updates voor Bedrijven ondersteunt uitstelbeleid. Nadat Microsoft een update heeft uitgebracht, kunt u een uitstelbeleid gebruiken om te bepalen hoe lang moet worden gewacht voordat deze update op apparaten wordt geïnstalleerd. Door subsets van uw apparaten (ook wel *updateringen* genoemd) te koppelen aan verschillende uitstelbeleidsregels, kunt u een strategie voor update-implementatie voor uw organisatie coördineren.
+Windows Updates voor Bedrijven ondersteunt uitstelbeleid. Nadat Microsoft een update heeft uitgebracht, kunt u een uitstelbeleid gebruiken om te bepalen hoe lang moet worden gewacht voordat deze update op apparaten wordt geïnstalleerd. Door subsets van uw apparaten (ook wel *updateringen* genoemd) te koppelen aan verschillende beleidsregels voor uitstel, kunt u een strategie voor update-implementatie voor uw organisatie coördineren.
 
 Denk bijvoorbeeld aan een organisatie die 1000 apparaten heeft en de apparaten in vijf golven moet bijwerken. De organisatie kan vijf updateringen maken, zoals wordt weergegeven in de volgende tabel.
 
@@ -120,15 +120,15 @@ Denk bijvoorbeeld aan een organisatie die 1000 apparaten heeft en de apparaten i
 |Grp 4 (hoofd 2) |300 |150 |
 |Grp 5 (hoofd 3) |395 |180 |
 
-Hier is te zien hoe de implementatie in de tijd verloopt voor de hele organisatie.
+Hier wordt de voortgang van de implementatie in de tijd voor de hele organisatie bespreekt.
 
-![Tijdlijn voor het implementeren van updates](./images/hololens-updates-timeline.png)
+![Tijdlijn voor het implementeren van updates.](./images/hololens-updates-timeline.png)
 
-#### <a name="configure-an-update-deferral-policy"></a>Een beleid voor uitstel van updates configureren
+#### <a name="configure-an-update-deferral-policy"></a>Een beleid voor het uitstellen van updates configureren
 
-Een uitstelbeleid geeft het aantal dagen aan tussen de datum waarop een update beschikbaar komt en de datum waarop de update wordt aangeboden aan een apparaat.
+Een beleid voor uitstel bepaalt het aantal dagen tussen de datum waarop een update beschikbaar komt en de datum waarop de update wordt aangeboden aan een apparaat.
 
-U kunt verschillende uitstelen configureren voor functie-updates en kwaliteitsupdates. De volgende tabel bevat de specifieke beleidsregels voor elk type en de maximale uitstel voor elk type.
+U kunt verschillende uitstelinstellingen configureren voor functie-updates en kwaliteitsupdates. De volgende tabel bevat de specifieke beleidsregels voor elk type en de maximale uitstel voor elk type.
 
 |Categorie |Beleid |Maximum uitstellen |
 | --- | --- | --- |
@@ -137,14 +137,14 @@ U kunt verschillende uitstelen configureren voor functie-updates en kwaliteitsup
 
 #### <a name="pause-updates-via-device"></a>Updates onderbreken via apparaat
 
-Als gebruikers geen toegang hebben tot MDM, kunnen ze updates maximaal 35 dagen handmatig onderbreken op een HoloLens 2-apparaat op build [Windows Holographic, versie 2004](hololens-release-notes.md#windows-holographic-version-2004) of hoger. Gebruikers kunnen deze instelling bereiken door te navigeren naar **Instellingen > Update & Security > Geavanceerde** opties schuif omlaag naar **Updates** onderbreken en selecteer de datum tot de updates worden onderbroken. Zodra een gebruiker de limiet voor onderbreken heeft bereikt, moet het apparaat nieuwe updates ontvangen voordat deze opnieuw kan worden onderbroken. 
+Als gebruikers geen toegang hebben tot MDM, kunnen ze updates maximaal 35 dagen handmatig onderbreken op een HoloLens 2-apparaat op build [Windows Holographic, versie 2004](hololens-release-notes.md#windows-holographic-version-2004) of hoger. Gebruikers kunnen deze instelling bereiken door te navigeren naar Instellingen > Update & Security > Advanced options (Geavanceerde opties voor Update **>)** schuif omlaag naar **Updates** onderbreken en selecteer de datum totdat ze updates zullen onderbreken. Zodra een gebruiker de limiet voor onderbreken heeft bereikt, moet het apparaat nieuwe updates ontvangen voordat deze opnieuw kan worden onderbroken. 
 
 Vanaf Windows [Holographic, versie 20H2,](hololens-release-notes.md#windows-holographic-version-20h2)kan deze functie voor het onderbreken van updates worden beheerd voor HoloLens 2 apparaten. 
 - [Update/SetDisablePauseUXAccess](/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess).
     - 0 (standaardinstelling) : ingeschakeld
     - 1 : uitgeschakeld
 
-#### <a name="intune-update-management-functions-that-hololens-supports"></a>Intune-updatebeheerfuncties die HoloLens ondersteunen
+#### <a name="intune-update-management-functions-that-hololens-supports"></a>Intune-updatebeheerfuncties die HoloLens ondersteunt
 
 U kunt de volgende Intune-functies voor updatebeheer gebruiken om updates voor HoloLens.
 
@@ -181,7 +181,7 @@ De volgende instellingen zijn ingeschakeld als onderdeel van het beheeroppervlak
 Enkele waarschuwingen over deze preview-aanbieding:
 
 - HoloLens ondersteuning is in deze preview beperkt tot alleen updates van het besturingssysteem.
-- Windows Holographic for Business ondersteunt alleen HTTP-downloadmodi en downloads van een [Microsoft Verbonden cache-eindpunt;](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) Peer-to-peer downloadmodi en groepstoewijzingen worden momenteel niet ondersteund voor HoloLens-apparaten.
+- Windows Holographic for Business ondersteunt alleen HTTP-downloadmodi en downloads van een [Microsoft Verbonden cache-eindpunt;](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache) Peer-to-peer downloadmodi en groepstoewijzingen worden op dit HoloLens ondersteund.
 - HoloLens biedt geen ondersteuning voor implementatie of delivery optimization voor Windows Server Update Services eindpunten.
 - Voor het oplossen van problemen zijn diagnostische gegevens op de Verbonden cache-server of het verzamelen van een trace op HoloLens op HoloLens vereist via **Instellingen**  >  **Update & Security**  >   **Troubleshooting** Windows  >   **Update**.
 
@@ -204,12 +204,12 @@ U kunt updates terugdraaien en terugkeren naar een eerdere versie van HoloLens 2
 
 Als u wilt terugkeren naar een eerdere versie van HoloLens 2, volgt u deze stappen:
 
-1. Zorg ervoor dat u geen telefoons of apparaten Windows aangesloten op uw computer.
-1. Download op uw computer de [Advanced Recovery Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) van de Microsoft Store.
+1. Zorg ervoor dat er geen telefoons of apparaten Windows aangesloten op uw computer.
+1. Download advanced Recovery [Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) op uw computer van de Microsoft Store.
 1. Download de [meest recente HoloLens 2 release](https://aka.ms/hololens2download).
 1. Nadat deze downloads zijn gedownload, **opent** u Bestandenverkenner Downloads, klikt u met de rechtermuisknop op de gecomprimeerde map (.zip) die u zojuist hebt gedownload en selecteert u alles uitpakken om het bestand uit te  >     >   vouwen.
 1. Gebruik een USB-A-naar-USB-C-kabel om uw HoloLens te verbinden met uw computer. Zelfs als u andere kabels hebt gebruikt om uw HoloLens, werkt dit type kabel het beste.
-1. De Companion voor geavanceerd herstel detecteert automatisch uw HoloLens apparaat. Selecteer de **Microsoft HoloLens** tegel.
+1. De Advanced Recovery Companion detecteert automatisch uw HoloLens apparaat. Selecteer de **Microsoft HoloLens** tegel.
 1. Selecteer in het volgende scherm **Handmatige pakketselectie** en open vervolgens de map die u eerder hebt uit vouwd.
 1. Selecteer het installatiebestand (.ffu).
 1. Selecteer **Software installeren** en volg de instructies.
@@ -227,7 +227,7 @@ Als u wilt terugkeren naar een eerdere versie van HoloLens (eerste generatie), v
 1. Download op uw computer de [Windows Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379).
 1. Download het [herstelpakket HoloLens Jubileumupdate.](https://aka.ms/hololensrecovery)
 1. Nadat de downloads zijn gedownload, **opent** u Bestandenverkenner Downloads, klikt u met de rechtermuisknop op de gecomprimeerde map (.zip) die u zojuist hebt gedownload en selecteert u alles uitpakken om het bestand uit te  >     >   vouwen.
-1. Gebruik de micro-USB-kabel die samen met uw HoloLens is geleverd om uw apparaat HoloLens uw computer te verbinden. Zelfs als u andere kabels hebt gebruikt om uw apparaat HoloLens verbinden, werkt deze het beste.
+1. Gebruik de micro-USB-kabel die samen met uw HoloLens is geleverd om uw HoloLens te verbinden met uw computer. Zelfs als u andere kabels hebt gebruikt om uw apparaat HoloLens verbinden, werkt deze het beste.
 1. De WDRT detecteert automatisch uw HoloLens apparaat. Selecteer de **Microsoft HoloLens** tegel.
 1. Selecteer in het volgende scherm **Handmatige pakketselectie** en open vervolgens de map die u eerder hebt uit vouwd.
 1. Selecteer het installatiebestand (.ffu).

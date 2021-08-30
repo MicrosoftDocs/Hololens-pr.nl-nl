@@ -12,19 +12,19 @@ ms.localizationpriority: medium
 ms.date: 05/21/2021
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8273813d85c3b2df2c1a551fb0322a867a5a9c64fdd05e9a85a2097b1590fb62
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 8605d1a889fb9facdab0e9585a43a61880155952
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664408"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188896"
 ---
 # <a name="planning-hololens-2-deployment-in-a-commercial-environment"></a>Implementatie HoloLens 2 in een commerciële omgeving plannen
 
 ## <a name="overview"></a>Overzicht
 
 > [!NOTE]
-> Dit overzicht is bedoeld om IT-professionals inzicht te geven in overwegingen voor het implementeren en beheren Microsoft HoloLens 2 apparaten binnen een organisatie. Zie Get your HoloLens 2 ready to use to get started (Uw apparaat voorbereiden om aan de slag [te gaan) voor](hololens2-setup.md) eindgebruikers van apparaten.
+> Dit overzicht is bedoeld om IT-professionals inzicht te geven in overwegingen voor het implementeren en beheren Microsoft HoloLens 2 apparaten binnen een organisatie. Zie Get your [HoloLens 2 ready to use (Uw apparaat voorbereiden om aan de](hololens2-setup.md) slag te gaan) voor eindgebruikers van apparaten.
 
 HoloLens 2 wordt uitgevoerd op Windows 10 Holographic waarmee organisaties robuuste, flexibele, ingebouwde technologieën voor het beheer van mobiele apparaten en apps kunnen gebruiken. Windows 10 Holographic biedt ondersteuning voor end-to-end levenscyclusbeheer van apparaten, om bedrijven controle te geven over hun apparaten, gegevens en apps. De HoloLens 2 kunnen eenvoudig worden opgenomen in standaard levenscyclusprocedures, van apparaatinschrijving, configuratie en toepassingsbeheer tot onderhoud en pensioen met behulp van een uitgebreide beheeroplossing voor mobiele apparaten.
 
@@ -32,11 +32,11 @@ De volgende stappen en video kunnen u helpen bij het doorlopen van HoloLens 2 in
 
 | &nbsp; | &nbsp; |
 |--|--|
-| ![Stap 1](images/1green.png)| <br/> **[Algemene implementatiescenario's:](hololens-requirements.md)** inzicht in implementatiescenario's en verken de belangrijkste onderdelen die nodig zijn om HoloLens 2 implementeren. |
-| ![Stap 2](images/2green.png)| <br/> **[Voorbereiden:](#prepare)** vertrouwd raken met de essentiële infrastructuur die nodig is voor HoloLens 2. |
-| ![Stap 3](images/3green.png) | <br/> **[Configureren:](#configure)** meer informatie over het configureren van uw essentiële onderdelen voor een cloudimplementatie. |
-| ![Stap 4](images/4green.png) | <br/> **[Implementeren:](#deploy)** ontdek hoe u uw apparaten implementeert en uw toepassingen veilig en efficiënt distribueert. |
-| ![Stap 5](images/5green.png) | <br/> **[Onderhouden:](#maintain)** ontdek wat er nodig is om de status van uw apparaten op de juiste HoloLens 2 te houden en ervoor te zorgen dat het bedrijfsbeleid wordt nageleefd. |
+| ![Stap 1.](images/1green.png)| <br/> **[Algemene implementatiescenario's:](hololens-requirements.md)** inzicht in implementatiescenario's en verken de belangrijkste onderdelen die nodig zijn om HoloLens 2 implementeren. |
+| ![Stap 2.](images/2green.png)| <br/> **[Voorbereiden:](#prepare)** vertrouwd raken met de infrastructuur essentials die nodig zijn voor HoloLens 2. |
+| ![Stap 3.](images/3green.png) | <br/> **[Configureren:](#configure)** meer informatie over het configureren van uw essentiële onderdelen voor een cloudimplementatie. |
+| ![Stap 4.](images/4green.png) | <br/> **[Implementeren:](#deploy)** ontdek hoe u uw apparaten implementeert en uw toepassingen veilig en efficiënt distribueert. |
+| ![Stap 5.](images/5green.png) | <br/> **[Onderhouden:](#maintain)** ontdek wat er nodig is om de status van uw apparaten op de juiste HoloLens 2 te houden en ervoor te zorgen dat het bedrijfsbeleid wordt nageleefd. |
 
 <br/>
 
@@ -49,8 +49,8 @@ Meer informatie over essentiële infrastructuurservices die nodig zijn om de vol
 | Onderdeel | Beschrijving |
 |-----------|------------|
 | [Azure AD](hololens-identity.md) | Biedt identiteits- en toegangsbeheer voor de HoloLens 2  |
-| [Beheer van mobiele apparaten](hololens-mdm-configure.md)| Beheert HoloLens 2 die zijn verbonden met uw tenant  |
-| [Wi-Fi-netwerk](hololens-commercial-infrastructure.md)| Wi-Fi is beschikbaar en apparaten kunnen worden verbonden met internet  |
+| [Beheer van mobiele apparaten](hololens-mdm-configure.md)| Beheert HoloLens 2 apparaten die zijn verbonden met uw tenant  |
+| [Wi-Fi-netwerk](hololens-commercial-infrastructure.md)| Wi-Fi beschikbaar is en apparaten kunnen worden verbonden met internet  |
 
 ## <a name="configure"></a>Configureren
 
@@ -69,14 +69,14 @@ Distribueer uw HoloLens 2 apparaten en valideer de configuratie.
 | Onderdeel | Beschrijving |
 |-----------|------------|
 | [Validatie van inschrijving](hololens2-corp-connected-deploy.md#enrollment-validation) | Controleren of het apparaat is samengevoegd met Azure AD vanuit Instellingen of de Azure-portal |
-| [Certificaatvalidatie](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation) | Controleer de instellingen en controleer of deze correct zijn gedistribueerd |
+| [Certificaatvalidatie](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation) | Controleer de instellingen en controleer of ze correct zijn gedistribueerd |
 | [App-installaties valideren](hololens2-corp-connected-deploy.md#validate-lob-app-install) | Controleer of de app aanwezig is en aan uw HoloLens 2 |
 
 ## <a name="maintain"></a>Onderhouden
 
-Gebruik Windows Update voor Bedrijven samen met uw MDM-systeem of de Microsoft Store om uw HoloLens 2 apps en apps bij te werken.
+Gebruik Windows Update voor Bedrijven samen met uw MDM-systeem of de Microsoft Store om uw HoloLens 2 apps bij te werken.
 
 | Onderdeel | Beschrijving |
 |-----------|------------|
-| [De HoloLens 2](hololens-updates.md) | Configureer updates naar behoefte via Windows Updates voor Bedrijven |
+| [Werk HoloLens 2](hololens-updates.md) | Configureer updates naar behoefte via Windows Updates voor Bedrijven |
 | [Apps bijwerken](app-deploy-overview.md) | Configureren via uw MDM-systeem of de Microsoft Store

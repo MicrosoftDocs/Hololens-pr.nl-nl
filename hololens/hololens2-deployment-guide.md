@@ -13,16 +13,16 @@ ms.reviewer: ''
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 476ea17dfad114741191595fa0ce3bd1c7bca28d
-ms.sourcegitcommit: 7b666c63a0367032a4a3f366b7f9029b2613e345
+ms.openlocfilehash: d5cd9c380e0d276f0a8aa9efac14cf44885446e5
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122401130"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190324"
 ---
 # <a name="deploy-cloud-connected-hololens-2-to-external-clients"></a>Cloud verbonden HoloLens 2 naar externe clients implementeren
 
-Deze handleiding is een aanvulling op de [Cloud Connected Deployment Guide](hololens2-cloud-connected-overview.md). Het wordt gebruikt in situaties waarin uw organisatie apparaten HoloLens 2 verzenden naar de faciliteit van een externe client voor kort of op lange termijn. De externe client zal zich aanmelden bij het HoloLens 2 apparaat met behulp van de referenties van uw organisatie en Remote Assist [contact](/dynamics365/mixed-reality/remote-assist/ra-overview) opnemen met uw experts. Deze handleiding bevat algemene [aanbevelingen HoloLens 2](#general-deployment-recommendations) implementatie die van toepassing zijn op de [](#common-external-client-deployment-concerns) meeste externe HoloLens 2-implementatiescenario's en veelvoorkomende problemen die klanten hebben bij het implementeren van Remote Assist voor extern gebruik. 
+Deze handleiding is een aanvulling op de [Cloud Connected Deployment Guide](hololens2-cloud-connected-overview.md). Het wordt gebruikt in situaties waarin uw organisatie HoloLens 2 apparaten naar de faciliteit van een externe client wil verzenden voor kort of op lange termijn. De externe client zal zich aanmelden bij het HoloLens 2 apparaat met behulp van de referenties van uw organisatie, en gebruikt Remote Assist [om](/dynamics365/mixed-reality/remote-assist/ra-overview) contact op te nemen met uw experts. Deze handleiding bevat algemene [aanbevelingen HoloLens 2](#general-deployment-recommendations) implementatie die van toepassing zijn op [](#common-external-client-deployment-concerns) de meeste externe HoloLens 2-implementatiescenario's en veelvoorkomende problemen die klanten hebben bij het implementeren van Remote Assist voor extern gebruik. 
 
 ## <a name="prerequisites"></a>Vereisten
 
@@ -35,9 +35,9 @@ De volgende infrastructuur moet zijn geïmplementeerd volgens de [Cloud Connecte
 ### <a name="remote-assist-licensing-and-requirements"></a>Remote Assist en vereisten
 
 - Azure AD-account (vereist voor het kopen van het abonnement en het toewijzen van licenties)
-- [Remote Assist (of](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) Remote Assist [proefversie](/dynamics365/mixed-reality/remote-assist/try-remote-assist))
+- [Remote Assist abonnement](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) (of [Remote Assist proefversie](/dynamics365/mixed-reality/remote-assist/try-remote-assist))
 
-Zie [Meer informatie over Remote Assist](/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist).
+Zie [Meer informatie over Remote Assist.](/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist)
 
 ### <a name="dynamics-365-remote-assist-user"></a>Dynamics 365 Remote Assist gebruiker
 
@@ -55,7 +55,7 @@ U wordt aangeraden de volgende stappen uit te voeren HoloLens 2 externe implemen
 
 1. Gebruik de [meest recente HoloLens versie van het besturingssysteem](https://aka.ms/hololens2download) als uw basislijn-build.
 1. Wijs licenties op basis van gebruikers of apparaten toe door de onderstaande stappen te volgen:
-    1. [Maak een groep in AAD en voeg leden toe](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members) voor HoloLens/RA-gebruikers.
+    1. [Maak een groep in AAD en voeg leden toe voor](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members) HoloLens/RA-gebruikers.
     1. [Wijs licenties op basis van apparaten](/azure/active-directory/enterprise-users/licensing-groups-assign#:~:text=In%20this%20article%201%20Assign%20the%20required%20licenses,3%20Check%20for%20license%20problems%20and%20resolve%20them) of gebruikers toe aan deze groep.
     1. (Optioneel) Doelgroepen voor [MDM-beleid (Mobile Device](hololens-enroll-mdm.md) Management).
 
@@ -114,7 +114,7 @@ De tweede optie is het maken van een afzonderlijke tenant die clients host (zie 
 
 **Afbeelding 1.1**
 
-![Afbeelding van service-tenant](./images/hololens-service-tenant-image.png)
+![Afbeelding van service-tenant.](./images/hololens-service-tenant-image.png)
 
 ### <a name="hidden-or-restricted-apps"></a>Verborgen of beperkte apps
 
@@ -129,7 +129,7 @@ De tweede optie is het maken van een afzonderlijke tenant die clients host (zie 
 
 ### <a name="ensure-that-clients-wont-have-access-to-chat-history"></a>Zorg ervoor dat clients geen toegang hebben tot de chatgeschiedenis
 
-Remote Assist na elke sessie wordt de chatgeschiedenis geweken. De chatgeschiedenis is echter beschikbaar voor Microsoft Teams gebruikers.
+Remote Assist wordt de chatgeschiedenis na elke sessie geweken. De chatgeschiedenis is echter beschikbaar voor Microsoft Teams gebruikers.
 
 > [!NOTE]
 > Omdat een aanmelding is ingeschakeld, is het belangrijk om de browser uit te schakelen met behulp [van Windows Defender Application Control (WDAC).](/hololens/windows-defender-application-control-wdac)  Als een externe client de browser opent en gebruikmaakt van de webversie van Teams, heeft de client toegang tot de aanroep-/chatgeschiedenis.
