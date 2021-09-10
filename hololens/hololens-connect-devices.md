@@ -1,6 +1,6 @@
 ---
-title: Verbinding maken voor Bluetooth USB-C-apparaten
-description: Ga aan de slag met het maken Bluetooth en USB-C-apparaten en -accessoires van uw HoloLens mixed reality apparaten.
+title: Verbinding maken voor Bluetooth usb-C-apparaten
+description: Ga aan de slag met het maken Bluetooth en USB-C-apparaten en accessoires van uw HoloLens mixed reality apparaten.
 ms.assetid: 01af0848-3b36-4c13-b797-f38ad3977e30
 ms.prod: hololens
 ms.sitesec: library
@@ -14,19 +14,19 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: d9c8b813ba54edbcfef8d1a32e641dad39a7f193
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189083"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427240"
 ---
-# <a name="connect-to-bluetooth-and-usb-c-devices"></a>Verbinding maken voor Bluetooth USB-C-apparaten
+# <a name="connect-to-bluetooth-and-usb-c-devices"></a>Verbinding maken voor Bluetooth usb-C-apparaten
 
 ## <a name="pair-bluetooth-devices"></a>Apparaten Bluetooth koppelen
 
 HoloLens 2 ondersteunt de volgende klassen van Bluetooth apparaten:
 
-- [HADOEEN:](/windows-hardware/drivers/hid/)
+- [VERBORGEN:](/windows-hardware/drivers/hid/)
     - Muis
     - Toetsenbord
 - Audio-uitvoerapparaten (A2DP)
@@ -35,22 +35,22 @@ HoloLens 2 ondersteunt de volgende Bluetooth API's:
 - [GATT-server](/windows/uwp/devices-sensors/gatt-server) en [-client](/windows/uwp/devices-sensors/gatt-client)
 - [RFCOMM](/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm)
 >[!IMPORTANT]
-> Mogelijk moet u bijbehorende companion-apps installeren van Microsoft Store om daadwerkelijk gebruik te kunnen maken van de APPARATEN VAN HET PROGRAMMA en de GATT.
+> Mogelijk moet u bijbehorende bijbehorende companion-apps van Microsoft Store om daadwerkelijk gebruik te kunnen maken van de HID- en GATT-apparaten.
 
-HoloLens (eerste generatie) ondersteunt de volgende klassen van Bluetooth apparaten:
+HoloLens (eerste generatie) ondersteunt de volgende klassen Bluetooth apparaten:
 
 - Muis
 - Toetsenbord
-- [HoloLens (eerste generatie) clicker](hololens1-clicker.md)
+- [HoloLens (1e generatie) clicker](hololens1-clicker.md)
 
 > [!NOTE]
-> Andere typen Bluetooth apparaten, zoals sprekers, headsets, smartphones en gamepads, kunnen worden vermeld als beschikbaar in HoloLens instellingen. Deze apparaten worden echter niet ondersteund op HoloLens (eerste generatie). Zie HoloLens Instellingen apparaten [als beschikbaar, maar de](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work)apparaten werken niet voor meer informatie.
+> Andere typen Bluetooth apparaten, zoals sprekers, headsets, smartphones en gamepads, kunnen worden vermeld als beschikbaar in HoloLens instellingen. Deze apparaten worden echter niet ondersteund op HoloLens (eerste generatie). Zie HoloLens Instellingen apparaten als beschikbaar, maar de apparaten [werken niet voor meer informatie.](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work)
 
 ### <a name="pair-a-bluetooth-keyboard-or-mouse"></a>Een toetsenbord Bluetooth muis koppelen
 
-1. Schakel uw toetsenbord of muis in en maak het detecteerbaar. Als u wilt weten hoe u het apparaat detecteerbaar maakt, gaat u naar informatie op het apparaat (of de documentatie) of gaat u naar de website van de fabrikant.
+1. Schakel uw toetsenbord of muis in en maak het detecteerbaar. Als u wilt weten hoe u het apparaat detecteerbaar maakt, gaat u naar informatie over het apparaat (of de documentatie) of gaat u naar de website van de fabrikant.
 
-1. Gebruik het bloemgebaar (HoloLens (eerste generatie)) of het beginbewegingen (HoloLens 2) om naar **Start** te gaan en selecteer vervolgens **Instellingen**.
+1. Gebruik de bloembewegingen (HoloLens (eerste generatie)) of de beginbewegingen (HoloLens 2) om naar **Start** te gaan en selecteer vervolgens **Instellingen**.
 
 1. Selecteer **Apparaten** en zorg ervoor dat Bluetooth is.  
 
@@ -58,33 +58,33 @@ HoloLens (eerste generatie) ondersteunt de volgende klassen van Bluetooth appara
 
 ## <a name="disable-bluetooth"></a>Schakel Bluetooth
 
-Met deze procedure worden de RF-onderdelen van de Bluetooth uitgeschakeld en worden alle Bluetooth uitgeschakeld op Microsoft HoloLens.
+Met deze procedure worden de RF-onderdelen van het Bluetooth uitgeschakeld en worden alle Bluetooth uitgeschakeld op Microsoft HoloLens.
 
-1. Gebruik de bloembewegingen (HoloLens (eerste generatie)) of het beginbewegingen (HoloLens 2) om naar **Start** te gaan en selecteer vervolgens **Instellingen**  >  **Apparaten.**
+1. Gebruik de bloembewegingen (HoloLens (1e generatie)) of de beginbewegingen (HoloLens 2) om naar **Start** te gaan en selecteer vervolgens **Instellingen**  >  **Apparaten.**
 
-1. Verplaats de schuifregelaar voor **Bluetooth** naar de **positie Uit.**
+1. Verplaats de schuifregelaar voor **Bluetooth** naar de **uit-positie.**
 
 ## <a name="hololens-2-connect-usb-c-devices"></a>HoloLens 2: Verbinding maken USB-C-apparaten
 
 HoloLens 2 ondersteunt de volgende klassen USB-C-apparaten:
 
 - Apparaten voor massaopslag (zoals vingerafdrukstations)
-- Ethernet-adapters (inclusief ethernet plus laadsnelheid)
-- Digitale USB-C-naar-3.5mm-audioadapters
+- Ethernet-adapters (inclusief ethernet en laadtijd)
+- Digitale USB-C-naar-3,5mm-audioadapters
 - Digitale USB-C-audio-headsets (inclusief headsetadapters plus laden)
 - Externe USB-C-microfoons[(Windows Holographic, versie 21H1](hololens-release-notes.md#windows-holographic-version-21h1) en hoger)
 - Bekabelde muis
 - Bekabeld toetsenbord
-- Combinatie van PD-hubs (USB A plus PD-laadtijd)
+- Combinatie van PD-hubs (USB A plus PD-kosten)
 
 
 > [!NOTE]
-> Als reactie op feedback van klanten hebben we beperkte ondersteuning ingeschakeld voor mobiele connectiviteit die rechtstreeks naar de HoloLens via USB-C. Zie [Verbinding maken voor mobiel en 5G](hololens-cellular.md) voor meer informatie.
+> In reactie op feedback van klanten hebben we beperkte ondersteuning ingeschakeld voor mobiele connectiviteit die rechtstreeks aan de HoloLens via USB-C. Zie [Verbinding maken voor mobiel en 5G](hololens-cellular.md) voor meer informatie.
 
 ### <a name="usb-c-external-microphone-support"></a>Ondersteuning voor externe USB-C-microfoon
 
 > [!IMPORTANT]
-> Als u een **USB-microfoon aansluit, wordt deze niet automatisch ingesteld als invoerapparaat.** Bij het aansluiten van een set USB-C-hoofdtelefoon zien gebruikers dat de audio van de hoofdtelefoon automatisch wordt omgeleid naar de hoofdtelefoon, maar het besturingssysteem van de HoloLens geeft prioriteit aan de interne microfoon array boven elk ander invoerapparaat. **Volg de onderstaande stappen om een USB-C-microfoon te gebruiken.**
+> Als u een **USB-microfoon aansluit, wordt deze niet automatisch ingesteld als invoerapparaat.** Bij het aansluiten van een set USB-C-headsets zullen gebruikers zien dat de audio van de microfoon automatisch wordt omgeleid naar de laptop, maar het HoloLens-besturingssysteem geeft prioriteit aan de interne microfoon array boven elk ander invoerapparaat. **Volg de onderstaande stappen om een USB-C-microfoon te gebruiken.**
 
 > [!NOTE]
 > Externe microfoons kunnen niet worden gebruikt in builds vóór [Windows Holographic, versie 21H1](hololens-release-notes.md#windows-holographic-version-21h1) en hoger. 
@@ -96,9 +96,9 @@ Open de **Instellingen app** en selecteer   >  **Systeemgeluid.**
 ![Geluid Instellingen.](images/usbc-mic-1.jpg)
 
 > [!IMPORTANT]
-> Als u externe microfoons wilt **gebruiken Remote Assist**, moeten gebruikers op de hyperlink 'Geluidsapparaten beheren' klikken.
+> Als u externe microfoons wilt **gebruiken Remote Assist,** moeten gebruikers op de hyperlink Geluidsapparaten beheren klikken.
 >
-> Gebruik vervolgens de vervolgkeuzeset om de externe microfoon in te stellen als **Standaardmicrofoon** of **Communicatie standaard.** Als **u Standaard** kiest, wordt de externe microfoon overal gebruikt.
+> Gebruik vervolgens de vervolgkeuzeset om de externe microfoon in te stellen als **Standaardmicrofoon** of **Standaardcommunicatie.** Als **u Standaard** kiest, wordt de externe microfoon overal gebruikt.
 >
 > Als **u Standaardcommunicatie** kiest, wordt de externe microfoon gebruikt in Remote Assist en andere communicatie-apps, maar de HoloLens mic-matrix kan nog steeds worden gebruikt voor andere taken.
 
@@ -106,15 +106,15 @@ Open de **Instellingen app** en selecteer   >  **Systeemgeluid.**
 
 <br>
 
-![Stel de standaardwaarde voor de microfoon in.](images/usbc-mic-3.jpg)
+![Stel de microfoon standaard in.](images/usbc-mic-3.jpg)
 
 #### <a name="what-about-bluetooth-microphone-support"></a>Hoe zit het Bluetooth microfoonondersteuning?
 
-Helaas worden Bluetooth microfoons nog steeds niet ondersteund op HoloLens 2.
+Helaas worden Bluetooth microfoons momenteel nog niet ondersteund op HoloLens 2.
 
 ### <a name="usb-c-hubs"></a>USB-C Hubs
 
-Sommige gebruikers moeten mogelijk meerdere apparaten tegelijk verbinden. Voor gebruikers die een [USB-C-microfoon](#usb-c-external-microphone-support) samen met een ander aangesloten apparaat willen gebruiken, passen USB-C-hubs mogelijk aan de behoeften van de klant. Microsoft heeft deze apparaten niet getest en we kunnen ook geen specifieke merken aanbevelen.
+Sommige gebruikers moeten mogelijk meerdere apparaten tegelijk verbinden. Voor gebruikers die een [USB-C-microfoon](#usb-c-external-microphone-support) en een ander aangesloten apparaat willen gebruiken, kunnen USB-C-hubs aan de behoeften van de klant worden gekoppeld. Microsoft heeft deze apparaten niet getest en we kunnen ook geen specifieke merken aanbevelen.
 
 **Vereisten voor USB-C-hub en verbonden apparaten:**
 
@@ -128,7 +128,7 @@ Als u Miracast, volgt u deze stappen:
 1. Voer een van de volgende handelingen uit:  
 
    - Open het **menu Start** en selecteer het **pictogram** Weergeven.
-   - Zeg 'Verbinding maken' terwijl u naar het **menu Start start.**  
+   - Zeg 'Verbinding maken' terwijl u naar het **menu Start kijkt.**  
 
 1. Selecteer een beschikbaar apparaat in de lijst met apparaten die wordt weergegeven.
 

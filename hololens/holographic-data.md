@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ad210c9d31d8d7c226345618b6dfabf8457ee2398882935920d7b3217259a644
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 18dc962b869dafaea9ff9c605eef51fcbb35bfb2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664873"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428356"
 ---
 # <a name="find-open-and-save-files-on-hololens"></a>Bestanden zoeken, openen en opslaan op HoloLens
 
@@ -31,9 +31,9 @@ Bestanden die u op uw HoloLens, inclusief foto's en video's, worden rechtstreeks
 - Binnen de opslag van een app.
 - In een speciale map (zoals de video- of muziekbibliotheek).
 - Het gebruik van een opslagservice met een app en een bestandsverlener (zoals OneDrive).
-- Een desktopcomputer gebruiken die is verbonden met uw HoloLens met behulp van een USB-kabel, met behulp van MTP -ondersteuning (Media Transfer Protocol).
+- Een desktopcomputer gebruiken die is verbonden met uw HoloLens via een USB-kabel, met behulp van MTP-ondersteuning (Media Transfer Protocol).
 
-## <a name="view-files-on-hololens-using-file-explorer"></a>Bestanden op een HoloLens met behulp van Verkenner
+## <a name="view-files-on-hololens-using-file-explorer"></a>Bestanden op een HoloLens verkenner
 
 > Is van toepassing op alle HoloLens 2-apparaten en HoloLens (eerste generatie) vanaf de update van Windows 10 april [2018 (RS4) voor HoloLens](/windows/mixed-reality/release-notes-april-2018).
 
@@ -46,7 +46,7 @@ Als u geen bestanden ziet in Verkenner, is het filter Recent mogelijk actief (kl
 
 ## <a name="find-and-view-your-photos-and-videos"></a>Uw foto's en video's zoeken en bekijken
 
-[Met Mixed Reality Capture](holographic-photos-and-videos.md) kunt u mixed reality foto's en video's op HoloLens.  Deze foto's en video's worden opgeslagen in de map Camera Roll van het apparaat.
+[Met Mixed Reality Capture](holographic-photos-and-videos.md) kunt u foto mixed reality s en video's maken op HoloLens.  Deze foto's en video's worden opgeslagen in de map Camera Roll van het apparaat.
 
 U kunt foto's en video's bekijken die zijn gemaakt met HoloLens door:
 
@@ -62,13 +62,13 @@ U kunt ook de app [OneDrive van](https://www.microsoft.com/p/onedrive/9wzdncrfj1
 
 ### <a name="onedrive-app"></a>OneDrive app
 
-[OneDrive](https://onedrive.live.com/) kunt u uw foto's en video's openen, beheren en delen met elk apparaat en met elke gebruiker. Als u toegang wilt krijgen tot de foto HoloLens en video's die op uw HoloLens zijn vastgelegd, downloadt u de [OneDrive-app](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) via de Microsoft Store op uw HoloLens. Nadat u de app hebt gedownload, opent OneDrive app en selecteert u Instellingen Camera uploaden en zet  >  u Camera **uploaden in.**
+[OneDrive](https://onedrive.live.com/) kunt u uw foto's en video's openen, beheren en delen met elk apparaat en met elke gebruiker. Voor toegang tot de foto's en video's die zijn vastgelegd op HoloLens, downloadt u de [OneDrive-app](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) via de Microsoft Store op uw HoloLens. Nadat u de app hebt gedownload, opent OneDrive app en selecteert u Instellingen Camera uploaden en zet  >  u Camera **uploaden in.**
 
 ### <a name="connect-to-a-pc"></a>Verbinding maken naar een pc
 
-Als op uw HoloLens de [update van Windows 10 april 2018 of](/windows/mixed-reality/release-notes-april-2018) hoger wordt uitgevoerd, kunt u uw HoloLens verbinden met een Windows 10-pc met behulp van een USB-kabel om door foto's en video's op het apparaat te bladeren met behulp van MTP (mediaoverdrachtprotocol). U moet ervoor zorgen dat het apparaat is ontgrendeld om door bestanden te bladeren als u een pincode of wachtwoord op uw apparaat hebt ingesteld.  
+Als op uw HoloLens de update van Windows 10 april [2018 of](/windows/mixed-reality/release-notes-april-2018) hoger wordt uitgevoerd, kunt u uw HoloLens verbinden met een Windows 10-pc met behulp van een USB-kabel om door foto's en video's op het apparaat te bladeren met behulp van MTP (mediaoverdrachtprotocol). U moet ervoor zorgen dat het apparaat is ontgrendeld om door bestanden te bladeren als u een pincode of wachtwoord op uw apparaat hebt ingesteld.  
 
-Als u de Windows Apparaatportal hebt [ingeschakeld,](/windows/mixed-reality/using-the-windows-device-portal)kunt u deze gebruiken om de foto's en video's die op uw apparaat zijn opgeslagen te bladeren, op te halen en te beheren.
+Als u de Windows Apparaatportal hebt [ingeschakeld,](/windows/mixed-reality/using-the-windows-device-portal)kunt u deze gebruiken voor het bladeren, ophalen en beheren van de foto's en video's die op uw apparaat zijn opgeslagen.
 
 ## <a name="access-files-within-an-app"></a>Toegang tot bestanden in een app
 
@@ -86,19 +86,19 @@ HoloLens ondersteunt een aantal bekende [mappen die](/windows/mixed-reality/app-
 
 Net als bij andere mobiele apparaten maakt u HoloLens verbinding met uw desktopcomputer met behulp van MTP (Media Transfer Protocol) en opent u Verkenner op de pc voor toegang tot uw HoloLens-bibliotheken voor eenvoudige overdracht.
 
-Als u uw bestanden HoloLens in Verkenner op uw pc:
+Uw bestanden HoloLens in Verkenner op uw pc weergeven:
 
 1. Meld u aan bij HoloLens sluit deze vervolgens aan op de pc met behulp van de USB-kabel die bij de HoloLens.
 
 1. Selecteer **Apparaat openen om bestanden weer te geven met Verkenner** of open Verkenner op de pc en navigeer naar het apparaat.
 
-Als u informatie over uw HoloLens, klikt u met de rechtermuisknop op de apparaatnaam in Verkenner op uw pc en selecteert u **vervolgens Eigenschappen.**
+Als u informatie over uw HoloLens, klikt u met de rechtermuisknop op de apparaatnaam in Verkenner op uw pc en selecteert u **eigenschappen**.
 
 > [!NOTE]
 > HoloLens (eerste generatie) biedt geen ondersteuning voor het maken van verbinding met externe harde schijven of SD-kaarten.
 
 ## <a name="sync-to-the-cloud"></a>Synchroniseren met de cloud
 
-Als u foto's en andere bestanden van uw HoloLens wilt synchroniseren met de cloud, installeert en stelt u de OneDrive in HoloLens. Als u OneDrive wilt, zoekt u deze in de Microsoft Store op uw HoloLens.
+Als u foto's en andere bestanden van uw HoloLens naar de cloud wilt synchroniseren, installeert en stelt u OneDrive in HoloLens. Als u OneDrive wilt, zoekt u deze in de Microsoft Store op uw HoloLens.
 
 HoloLens maakt geen back-up van app-bestanden en -gegevens, dus is het een goed idee om uw belangrijke zaken op te slaan in OneDrive. Op die manier wordt er een back-up van uw gegevens als u uw apparaat opnieuw instuurt of een app verwijdert.

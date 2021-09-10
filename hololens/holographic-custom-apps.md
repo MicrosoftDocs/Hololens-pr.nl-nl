@@ -17,22 +17,22 @@ ms.custom:
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: b6769c36f821ee3619ac9b62efd637ac561192bb
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123188845"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428520"
 ---
 # <a name="manage-custom-apps-for-hololens-1st-gen"></a>Aangepaste apps voor HoloLens beheren (eerste generatie)
 
-HoloLens ondersteunt veel bestaande toepassingen uit de Microsoft Store, evenals nieuwe apps die specifiek zijn gebouwd voor HoloLens. Dit artikel is gericht op aangepaste holografische toepassingen.  
+HoloLens biedt ondersteuning voor veel bestaande toepassingen van Microsoft Store, evenals nieuwe apps die specifiek zijn gebouwd voor HoloLens. Dit artikel is gericht op aangepaste holografische toepassingen.  
 
-Zie Apps beheren met de Store voor [meer informatie over Store-apps.](holographic-store-apps.md)
+Zie Apps beheren met de Store voor meer informatie over [Store-apps.](holographic-store-apps.md)
 
 > [!IMPORTANT]
-> De volgende informatie is gemaakt voor de HoloLens (1e generatie), op dat moment ook wel de HoloLens Developer Edition genoemd. Het sideloaden van apps via de apparaatportal en het installeren van apps via Visual Studio waren toen heel gebruikelijk. Voor bedrijfsimplementaties wordt niet aangeraden de ontwikkelaarsmodus in te schakelen, die door beide methoden wordt gebruikt. Als u geïnteresseerd bent in een implementatiemethode voor beveiligde apps, raadpleegt u [app-beheer: overzicht.](app-deploy-overview.md)
+> De volgende informatie is gemaakt voor de HoloLens (1e generatie), op dat moment ook wel de HoloLens Developer Edition genoemd. Het sideloaden van apps via de apparaatportal en het installeren van apps via Visual Studio waren toen gebruikelijk. Voor bedrijfsimplementaties raden we niet aan om de ontwikkelaarsmodus in te schakelen, die door beide methoden wordt gebruikt. Als u geïnteresseerd bent in een implementatiemethode voor beveiligde apps, raadpleegt u [appbeheer: overzicht.](app-deploy-overview.md)
 >
-> Als u een van beide methoden voor het installeren van apps voor HoloLens 2 zoekt, raadpleegt u:
+> Als u op zoek bent naar een van beide ontwikkelaarsmethodes voor app-installatie voor HoloLens 2 apparaten, raadpleegt u:
 >
 > - [Apparaatportal: Een app installeren](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)
 > - [Apps Visual Studio implementeren en fouten opsporen](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
@@ -52,7 +52,7 @@ U kunt uw eigen toepassingen op HoloLens installeren met behulp van de Apparaatp
    > [!IMPORTANT]
    > Zorg ervoor dat u verwijst naar alle bijbehorende afhankelijkheids- en certificaatbestanden.
 
-1. Selecteer **Go**.
+1. Selecteer **Go.**
 
    > [!div class="mx-imgBorder"]
    > ![Installeer het app-formulier in Windows Apparaatportal op Microsoft HoloLens.](images/deviceportal-appmanager.jpg)
@@ -77,4 +77,4 @@ U kunt uw eigen toepassingen op HoloLens installeren met behulp van de Apparaatp
    
 1. De toepassing wordt geïnstalleerd en automatisch op uw HoloLens.
 
-Nadat u een app hebt geïnstalleerd, vindt u deze in Alle apps **lijst** (**Start**  >  **Alle apps**).
+Nadat u een app hebt geïnstalleerd, vindt  u deze in de Alle apps **(Start**  >  **Alle apps).**

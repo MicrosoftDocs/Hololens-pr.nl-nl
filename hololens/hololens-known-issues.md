@@ -1,5 +1,5 @@
 ---
-title: Bekende problemen voor HoloLens (1st Gen)
+title: Bekende problemen voor HoloLens (1e generatie)
 description: Blijf op de hoogte van onze lijst met bekende problemen en tijdelijke oplossingen die van invloed kunnen zijn op HoloLens klanten en ontwikkelaars die Unity en de Windows Apparaatportal.
 keywords: probleem oplossen, bekend probleem, help
 author: mattzmsft
@@ -15,13 +15,13 @@ ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
 ms.openlocfilehash: 5c942bae91c7684f2c2d36aca6ace6306b5fed54
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189287"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124429005"
 ---
-# <a name="known-issues-for-hololens-1st-gen"></a>Bekende problemen voor HoloLens (1st Gen)
+# <a name="known-issues-for-hololens-1st-gen"></a>Bekende problemen voor HoloLens (1e generatie)
 
 Hier is de huidige lijst met bekende problemen voor HoloLens apparaten. Controleer hier eerst of u vreemd gedrag ziet. Deze lijst wordt bijgewerkt wanneer nieuwe problemen worden ontdekt of gerapporteerd, of wanneer problemen in de toekomst worden opgelost HoloLens software-updates.
 
@@ -31,7 +31,7 @@ Hier is de huidige lijst met bekende problemen voor HoloLens apparaten. Controle
 
 
 - [Bekende problemen voor alle HoloLens generaties](#known-issues-for-all-hololens-generations)
-- [Bekende problemen voor HoloLens (1st Gen)](#known-issues-for-hololens-1st-gen)
+- [Bekende problemen voor HoloLens (1e generatie)](#known-issues-for-hololens-1st-gen)
 
 ## <a name="known-issues-for-all-hololens-generations"></a>Bekende problemen voor alle HoloLens generaties
 
@@ -56,9 +56,9 @@ Oplossingen:
 
 - Indien geschikt voor uw bedrijf, wordt automatisch uploaden van camera's ondersteund op Microsoft-accounts van consumenten. U kunt zich aanmelden bij uw Microsoft-account naast uw werk- of schoolaccount (de OneDrive-app ondersteunt dubbele aanmelding). Vanuit uw Microsoft-account in OneDrive kunt u automatisch uploaden van camera's op de achtergrond inschakelen.
 
-- Als u een consumentenaccount niet veilig kunt Microsoft-account om uw foto's automatisch te uploaden, kunt u handmatig foto's uploaden naar uw werk- of schoolaccount vanuit de OneDrive app. Zorg ervoor dat u bent aangemeld bij uw werk- of schoolaccount in de OneDrive app. Selecteer de **+** knop en kies **Upload**. Zoek de foto's of video's die u wilt uploaden door te navigeren naar **Afbeeldingen > Camera Roll**. Selecteer de foto's of video's die u wilt uploaden en selecteer vervolgens de **knop** Openen.
+- Als u een consumentenaccount niet veilig kunt Microsoft-account om uw foto's automatisch te uploaden, kunt u foto's handmatig uploaden naar uw werk- of schoolaccount vanuit de OneDrive app. Zorg ervoor dat u bent aangemeld bij uw werk- of schoolaccount in de OneDrive app. Selecteer de **+** knop en kies **Upload**. Zoek de foto's of video's die u wilt uploaden door te navigeren naar **Afbeeldingen > Camera Roll**. Selecteer de foto's of video's die u wilt uploaden en selecteer vervolgens de **knop** Openen.
 
-## <a name="known-issues-for-hololens-1st-gen"></a>Bekende problemen voor HoloLens (1st Gen)
+## <a name="known-issues-for-hololens-1st-gen"></a>Bekende problemen voor HoloLens (1e generatie)
 
 ### <a name="unable-to-connect-and-deploy-to-hololens-through-visual-studio"></a>Kan geen verbinding maken en implementeren naar HoloLens via Visual Studio
 
@@ -67,7 +67,7 @@ Oplossingen:
 
 Visual Studio VS 2019 versie 16.2 is uitgebracht, waaronder een oplossing voor dit probleem. We raden u aan om bij te werken naar deze nieuwste versie om te voorkomen dat deze fout zich voordeed.
 
-Hoofdoorzaak van probleem: gebruikers die Visual Studio 2015 of vroege versies van Visual Studio 2017 hebben gebruikt voor het implementeren en opsporen van fouten in toepassingen op hun HoloLens en vervolgens de nieuwste versies van Visual Studio 2017 of Visual Studio 2019 met dezelfde HoloLens hebben gebruikt, worden beïnvloed. De nieuwere versies van Visual Studio een nieuwe versie van een onderdeel implementeren, maar bestanden van de oudere versie worden overgelaten op het apparaat, waardoor de nieuwere versie mislukt.  Dit veroorzaakt het volgende foutbericht: DEP0100: Zorg ervoor dat de ontwikkelaarsmodus voor het doelapparaat is ingeschakeld. Kan geen ontwikkelaarslicentie verkrijgen op \<ip\> vanwege een 80004005.
+Hoofdoorzaak van probleem: gebruikers die Visual Studio 2015 of vroege versies van Visual Studio 2017 hebben gebruikt voor het implementeren en opsporen van fouten in toepassingen op hun HoloLens en vervolgens de nieuwste versies van Visual Studio 2017 of Visual Studio 2019 met dezelfde HoloLens hebben gebruikt, worden beïnvloed. De nieuwere versies van Visual Studio implementeren een nieuwe versie van een onderdeel, maar bestanden van de oudere versie worden overgelaten op het apparaat, waardoor de nieuwere versie mislukt.  Dit veroorzaakt het volgende foutbericht: DEP0100: Zorg ervoor dat de ontwikkelaarsmodus voor het doelapparaat is ingeschakeld. Kan geen ontwikkelaarslicentie verkrijgen op vanwege \<ip\> een 80004005.
 
 #### <a name="workaround"></a>Tijdelijke oplossing
 
@@ -79,9 +79,9 @@ Ons team werkt momenteel aan een oplossing. In de tussentijd kunt u de volgende 
 
 1. Selecteer **Visual C#**  >  **Windows Desktop**  >  **Console-app (.NET Framework)**.
 
-1. Geef het project een naam (zoals HoloLensDeploymentFix) en zorg ervoor dat het Framework is ingesteld op ten minste .NET Framework 4.5 en selecteer **vervolgens OK.**
+1. Geef het project een naam (zoals HoloLensDeploymentFix) en zorg ervoor dat het framework is ingesteld op ten minste .NET Framework 4.5 en selecteer **vervolgens OK.**
 
-1. Klik met de rechtermuisknop op **het** knooppunt Verwijzingen in Solution Explorer voeg de volgende verwijzingen toe (selecteer de sectie **Bladeren** en selecteer **Bladeren**):
+1. Klik met de rechtermuisknop **op het** knooppunt Verwijzingen in Solution Explorer voeg de volgende verwijzingen toe (selecteer de sectie **Bladeren** en selecteer **Bladeren**):
 
     ```console
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Deploy.dll
@@ -96,9 +96,9 @@ Ons team werkt momenteel aan een oplossing. In de tussentijd kunt u de volgende 
 
 1. Blader naar C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86 en wijzig het filter in **Alle bestanden ( . \* \* )**.
 
-1. Selecteer zowel SirepClient.dll als SshClient.dll en selecteer **Toevoegen.**
+1. Selecteer zowel SirepClient.dll als SshClient.dll en Selecteer **Toevoegen.**
 
-1. Zoek en selecteer beide bestanden in Solution Explorer (deze moeten onderaan de lijst met bestanden staan) en wijzig **Copy to Output Directory** in het venster **Properties** in **Copy always**.
+1. Zoek en selecteer beide bestanden in Solution Explorer (deze moeten onderaan de lijst met bestanden staan)  en wijzig Kopiëren naar uitvoermap **in** het venster Eigenschappen in **Altijd kopiëren.**
 
 1. Voeg bovenaan het bestand het volgende toe aan de bestaande lijst met `using` -instructies:
 
@@ -123,7 +123,7 @@ Ons team werkt momenteel aan een oplossing. In de tussentijd kunt u de volgende 
 
 1. Open een opdrachtpromptvenster en ga naar de map met het gecompileerde .exe-bestand (bijvoorbeeld C:\MyProjects\HoloLensDeploymentFix\bin\Debug).
 
-1. Voer het uitvoerbare bestand uit en geef het IP-adres van het apparaat op als opdrachtregelargument. (Als u via USB bent verbonden, kunt u 127.0.0.1 gebruiken, anders gebruikt u het ip-adres van Wi-Fi apparaat.)  Bijvoorbeeld HoloLensDeploymentFix 127.0.0.1.
+1. Voer het uitvoerbare bestand uit en geef het IP-adres van het apparaat op als opdrachtregelargument. (Als u via USB bent verbonden, kunt u 127.0.0.1 gebruiken, anders het ip-adres van het Wi-Fi gebruiken.)  Bijvoorbeeld HoloLensDeploymentFix 127.0.0.1.
 
 1. Nadat het hulpprogramma is afgesloten zonder berichten (dit duurt slechts enkele seconden), kunt u nu implementeren en fouten opsporen vanaf Visual Studio 2017 of nieuwer.  Verder gebruik van het hulpprogramma is niet nodig.
 
@@ -132,23 +132,23 @@ We bieden verdere updates zodra deze beschikbaar komen.
 ### <a name="issues-launching-the-microsoft-store-and-apps-on-hololens"></a>Problemen met het starten Microsoft Store apps op HoloLens
 
 > [!NOTE]
-> Laatste update: 4/2 @ 10:00 - Probleem opgelost.
+> Laatste update: 4/2 @ 10:00 uur - Probleem opgelost.
 
 U kunt problemen ervaren bij het starten van de Microsoft Store apps op HoloLens. We hebben vastgesteld dat het probleem optreedt wanneer updates van achtergrond-apps een nieuwere versie van frameworkpakketten in specifieke reeksen implementeren terwijl een of meer van de afhankelijke apps nog steeds worden uitgevoerd. In dit geval heeft een automatische app-update een nieuwe versie van het systeemeigen .NET Framework geleverd (versie 10.0.25531 tot 10.0.27413) waardoor de apps die worden uitgevoerd, niet correct zijn bijgewerkt voor alle apps die de vorige versie van het framework gebruiken.  De stroom voor frameworkupdate is als volgt:
 
 1. Het nieuwe frameworkpakket wordt gedownload uit de Store en geïnstalleerd.
 
-1. Alle apps oudere framework gebruiken, worden 'bijgewerkt' om de nieuwere versie te gebruiken.
+1. Alle apps oudere framework worden 'bijgewerkt' om de nieuwere versie te gebruiken.
 
 Als stap 2 vóór voltooiing wordt onderbroken, kunnen apps waarvoor het nieuwere framework niet is geregistreerd, niet worden starten vanuit het menu Start.  We zijn van mening dat elke app HoloLens dit probleem kan worden beïnvloed.
 
 Sommige gebruikers hebben gemeld dat het probleem voor hen wordt opgelost door vast te sluiten en andere apps te starten, zoals Feedback-hub, 3D-viewer of Foto's. Dit werkt echter niet 100% van de tijd.
 
-De hoofdoorzaak is dat dit probleem niet de update zelf heeft veroorzaakt, maar een fout in het besturingssysteem die ertoe heeft geleid dat de update systeemeigen .NET framework onjuist is verwerkt. We zijn blij te kunnen aankondigen dat we een oplossing hebben geïdentificeerd en een update hebben uitgebracht (besturingssysteemversie 17763.380) met de oplossing.  
+De hoofdoorzaak is dat dit probleem niet de update zelf heeft veroorzaakt, maar een fout in het besturingssysteem die ertoe heeft geleid dat de systeemeigen .NET frameworkupdate onjuist is verwerkt. We zijn blij te kunnen aankondigen dat we een oplossing hebben geïdentificeerd en een update hebben uitgebracht (besturingssysteemversie 17763.380) met de oplossing.  
 
 Ga als volgende te werk om te zien of uw apparaat de update kan gebruiken:
 
-1. Ga naar de Instellingen-app en open **Update & Security.**
+1. Ga naar de Instellingen app en open **Update & Security.**
 
 1. Selecteer **Controleren op updates.**
 
@@ -156,7 +156,7 @@ Ga als volgende te werk om te zien of uw apparaat de update kan gebruiken:
 
 1. Bij het bijwerken naar deze versie van het besturingssysteem moeten de apps werken zoals verwacht.
 
-Daarnaast hebben we, net als bij elke HoloLens-versie van het besturingssysteem, de FFU-afbeelding geplaatst in het [Microsoft Downloadcentrum.](https://aka.ms/hololensdownload/10.0.17763.380)
+Daarnaast hebben we, net als bij elke HoloLens versie van het besturingssysteem, de FFU-afbeelding geplaatst in het [Microsoft Downloadcentrum.](https://aka.ms/hololensdownload/10.0.17763.380)
 
 Als u de update niet wilt gebruiken, hebben we vanaf 3/29 een nieuwe versie van de Microsoft Store UWP-app uitgebracht. Nadat u de bijgewerkte versie van de Store hebt:
 
@@ -172,37 +172,37 @@ Als uw apparaat nog steeds geen apps kan laden, kunt u een versie van het systee
 
 1. Controleer of uw apparaat is ontgrendeld.  Als u dat nog niet eerder hebt gedaan, zie [De](/windows/mixed-reality/using-the-windows-device-portal) Windows Apparaatportal voor instructies.
 
-1. Vervolgens wilt u naar de Windows Apparaatportal. Het wordt aanbevolen dit via USB te doen. Dit doet u door in http://127.0.0.1:10080 uw browser te typen.
+1. Vervolgens gaat u naar de Windows Apparaatportal. Het wordt aanbevolen dit via USB te doen. Dit doet u door in http://127.0.0.1:10080 uw browser te typen.
 
 1. Nadat u de Windows Apparaatportal, moet u de twee bestanden die u hebt gedownload aan de zijkant laden. Als u dit wilt doen, gaat u naar de linkerzijbalk totdat u bij de **sectie Apps** bent en selecteert u **Apps.**
 
-1. Vervolgens ziet u een scherm dat vergelijkbaar is met het onderstaande.  Ga naar de sectie App  installeren en blader naar de plek waar u deze twee APPX-bestanden hebt uitgepakt. U kunt slechts één voor één doen, dus nadat u het eerste hebt geselecteerd, klikt u op 'Ga' in de sectie Implementeren. Doe dit vervolgens voor het tweede APPX-bestand.
+1. Vervolgens ziet u een scherm dat vergelijkbaar is met het onderstaande.  Ga naar de sectie App  installeren en blader naar de plek waar u deze twee APPX-bestanden hebt uitgepakt. U kunt slechts één voor één doen, dus nadat u de eerste hebt geselecteerd, klikt u onder de sectie Implementeren op Go. Doe dit vervolgens voor het tweede APPX-bestand.
 
    ![Windows Apparaatportal u de app Side-Loaded installeren.](images/20190322-DevicePortal.png)
 
-1. Op dit moment zijn we van mening dat uw toepassingen opnieuw moeten werken en dat u ook bij de Store kunt komen.
+1. Op dit punt zijn we van mening dat uw toepassingen opnieuw moeten werken en dat u ook naar de Store kunt gaan.
 
-1. In sommige gevallen is het nodig om de extra stap uit te voeren om de app 3D-viewer starten voordat de betreffende apps worden uitgevoerd.
+1. In sommige gevallen is het nodig om de extra stap voor het starten van de 3D-viewer uit te voeren voordat de betreffende apps worden gelanceerd.
 
-We stellen uw geduld zeer op prijs omdat we het proces hebben doorlopen om dit probleem op te lossen en we kijken ernaar uit om samen met onze community een succesvolle Mixed Reality creëren.
+We waarderen uw geduld omdat we het proces hebben doorlopen om dit probleem op te lossen en we kijken ernaar uit om samen met onze community een succesvolle Mixed Reality creëren.
 
 ### <a name="device-update"></a>Apparaat bijwerken
 
-- 30 seconden na een nieuwe update kan de shell één keer verdwijnen. Voer de **bloembewegingen uit** om uw sessie te hervatten.
+- 30 seconden na een nieuwe update kan de shell één keer verdwijnen. Voer de bloembewegingen **uit** om uw sessie te hervatten.
 
 ### <a name="visual-studio"></a>Visual Studio
 
 - Zie [De hulpprogramma's](/windows/mixed-reality/install-the-tools) installeren voor de meest recente versie van Visual Studio die wordt aanbevolen voor HoloLens ontwikkeling.
 
-- Wanneer u een app implementeert vanuit Visual Studio naar uw HoloLens, ziet u mogelijk de volgende fout: De aangevraagde bewerking kan niet worden uitgevoerd op een bestand met een door de gebruiker toegesneden **sectie geopend. (Uitzondering van HRESULT: 0x800704C8)**. Als dit het geval is, probeert u het opnieuw en slaagt uw implementatie doorgaans.
+- Wanneer u een app implementeert vanuit Visual Studio naar uw HoloLens, ziet u mogelijk de volgende fout: De aangevraagde bewerking kan niet worden uitgevoerd op een bestand met een door de gebruiker toegesneden **sectie geopend. (Uitzondering van HRESULT: 0x800704C8)**. Als dit gebeurt, probeert u het opnieuw en slaagt uw implementatie over het algemeen.
 
 ### <a name="api"></a>API
 
-- Als de toepassing het [focuspunt](/windows/mixed-reality/focus-point-in-unity) achter de gebruiker of het normale op camera.forward in stelt, worden hologrammen niet weergegeven in Vastleggen in mixed reality foto's of video's. Totdat deze fout in Windows opgelost, moeten toepassingen, als ze het focuspunt actief instellen, ervoor zorgen dat het normale vlak wordt ingesteld tegenovergestelde camera-forward (bijvoorbeeld normaal = -camera.forward). [](/windows/mixed-reality/focus-point-in-unity)
+- Als de toepassing het [focuspunt](/windows/mixed-reality/focus-point-in-unity) achter de gebruiker of de normale naar camera.forward in stelt, worden hologrammen niet weergegeven in Vastleggen in mixed reality of video's. Totdat deze fout in Windows opgelost, moeten toepassingen, als toepassingen het focuspunt actief instellen, ervoor zorgen dat het vlak normaal is ingesteld tegen de camera vooruit (bijvoorbeeld normaal = -camera.forward). [](/windows/mixed-reality/focus-point-in-unity)
 
 ### <a name="xbox-wireless-controller"></a>Xbox Wireless Controller
 
-- Xbox Wireless Controller S moet worden bijgewerkt voordat deze kan worden gebruikt met HoloLens. Zorg ervoor dat u [up-to-date bent](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) voordat u de controller aan een HoloLens.
+- Xbox Wireless Controller S moet worden bijgewerkt voordat deze kan worden gebruikt met HoloLens. Zorg ervoor dat u [up-to-date bent](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) voordat u uw controller aan een HoloLens.
 
 - Als u de HoloLens opnieuw opstart terwijl de Xbox Wireless Controller is verbonden, maakt de controller niet automatisch opnieuw verbinding met HoloLens. Het lampje van de knop Gids knippert langzaam totdat de controller na 3 minuten wordt uitgeschakeld. Als u de controller onmiddellijk opnieuw wilt verbinden, schakelt u de controller uit door de knop Gids ingedrukt te houden totdat het licht wordt uitgeschakeld. Wanneer u de controller opnieuw in bedrijf neemt, wordt er opnieuw verbinding met de HoloLens.
 

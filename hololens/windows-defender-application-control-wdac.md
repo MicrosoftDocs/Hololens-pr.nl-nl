@@ -1,44 +1,46 @@
 ---
-title: Windows Defender Toepassingsbeheer - WDAC
-description: Overzicht van wat Windows Defender Toepassingsbeheer is en hoe u dit kunt gebruiken voor het beheren HoloLens mixed reality apparaten.
+title: Windows Defender Toepassingsbeheer (WDAC)
+description: Overzicht van wat Windows Defender Application Control is en hoe u dit kunt gebruiken om uw HoloLens mixed reality beheren.
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
 ms.author: v-evmill
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/26/2020
+ms.date: 9/3/2021
 ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ab05f1bbe1570d4966932d6f8ac857e5bd2d8a7d3a8f5b93aaba0335eda05b01
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b5c3b55273346f330580b07e5294e7e8e65ea12d
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665553"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427895"
 ---
 # <a name="windows-defender-application-control---wdac"></a>Windows Defender Toepassingsbeheer - WDAC
 
-Met WDAC kan een IT-beheerder zijn apparaten configureren om het starten van apps op apparaten te blokkeren. Dit verschilt van de apparaatbeperkingsmethoden, zoals de kioskmodus, waarbij de gebruiker een gebruikersinterface krijgt te zien die de apps op het apparaat verbergt, maar nog steeds kan worden gestart. Terwijl WDAC is geïmplementeerd, zijn de apps nog steeds zichtbaar in de lijst Alle apps, maar WDAC voorkomt dat deze apps en processen kunnen worden gestart door de gebruiker van het apparaat.
+## <a name="overview"></a>Overzicht
 
-Aan een apparaat kan meer dan één WDAC-beleid worden toegewezen. Als er meerdere WDAC-beleidsregels zijn ingesteld op een systeem, worden de meest beperkende beleidsregels van kracht. 
+Met WDAC kunt u een HoloLens het starten van apps te blokkeren. Het verschilt van de kioskmodus, waarbij de gebruikersinterface de apps verbergt, maar ze nog steeds kunnen worden gestart. Met WDAC kunt u de apps zien, maar ze kunnen niet worden gestart.
 
 > [!NOTE]
-> Wanneer eindgebruikers proberen een app te starten die is geblokkeerd door WDAC, ontvangen ze op HoloLens geen melding dat ze die app niet kunnen starten.
+> Wanneer eindgebruikers proberen een app te starten die is geblokkeerd door WDAC op HoloLens, krijgen ze geen melding dat ze de app niet kunnen starten.
 
-Hier volgt een handleiding voor gebruikers voor meer informatie over het gebruik van [WDAC](/mem/intune/configuration/custom-profile-hololens)en Windows PowerShell voor het toestaan of blokkeren van apps op HoloLens 2-apparaten met Microsoft Intune.
+Aan een apparaat kan meer dan één WDAC-beleid worden toegewezen. Als er meerdere WDAC-beleidsregels zijn ingesteld op een systeem, worden de meeste beperkende beleidsregels van kracht. 
 
-Wanneer gebruikers zoeken naar apps die zijn geïnstalleerd op hun Windows 10 pc met behulp van de eerste voorbeeldstap, moeten ze mogelijk enkele pogingen doen om de resultaten te beperken.
+Hier volgt een handleiding voor gebruikers om te leren hoe ze [WDAC](/mem/intune/configuration/custom-profile-hololens)en Windows PowerShell gebruiken om apps toe te staan of te blokkeren op HoloLens 2-apparaten met Microsoft Intune .
+
+Wanneer gebruikers zoeken naar apps die op hun Windows 10 pc zijn geïnstalleerd met behulp van de eerste voorbeeldstap, moeten ze mogelijk enkele pogingen doen om de resultaten te beperken.
 
 ```powershell
 $package1 = Get-AppxPackage -name *<applicationname>*
 ``` 
 
-Als u de volledige naam van het pakket niet weet, moet u mogelijk 'Get-AppxPackage -name YourBestGuess' een paar keer uitvoeren om het te \* \* vinden. Wanneer u de naam hebt, voer dan '$package 1 = Get-AppxPackage -name Actual.PackageName' uit
+Als u de volledige naam van het pakket niet weet, moet u mogelijk een paar keer 'Get-AppxPackage -name YourBestGuess' uitvoeren om het te \* \* vinden. Voer vervolgens '$package 1 = Get-AppxPackage -name Actual.PackageName' uit als u de naam hebt
 
-Als u bijvoorbeeld het volgende Microsoft Edge, wordt er meer dan één resultaat weergegeven, maar uit die lijst kunt u zien dat de volledige naam die u nodig hebt Microsoft.MicrosoftEdge is.
+Als u bijvoorbeeld de volgende code voor een Microsoft Edge meer dan één resultaat retourneren, maar uit die lijst kunt u zien dat de volledige naam die u nodig hebt Microsoft.MicrosoftEdge is.
 
 ```powershell
 Get-AppxPackage -name *edge*
@@ -46,9 +48,9 @@ Get-AppxPackage -name *edge*
 
 ## <a name="package-family-names-for-apps-on-hololens"></a>Familienamen van pakketten voor apps op HoloLens
 
-In de bovenstaande handleiding kunt u handmatig de newPolicy.xml en regels toevoegen voor toepassingen die alleen zijn geïnstalleerd op HoloLens met de familienamen van pakketten. Soms zijn er apps die u kunt gebruiken en die zich niet op uw desktop-pc die u aan het beleid wilt toevoegen.
+In de bovenstaande handleiding kunt u handmatig de newPolicy.xml bewerken en regels toevoegen voor toepassingen die alleen zijn geïnstalleerd op HoloLens met de familienamen van pakketten. Soms zijn er apps die u kunt gebruiken die zich niet op uw desktop-pc die u wilt toevoegen aan het beleid.
 
-Hier is een lijst met veelgebruikte en In-Box apps voor HoloLens 2 apparaten.
+Hier is een lijst met veelgebruikte en In-Box voor HoloLens 2 apparaten.
 
 | App-naam                   | Naam pakketfamilie                                |
 |----------------------------|----------------------------------------------------|
@@ -69,18 +71,17 @@ Hier is een lijst met veelgebruikte en In-Box apps voor HoloLens 2 apparaten.
 | Instellingen                   | HolographicSystemSettings_cw5n1h2txyewy            |
 | Tips                       | Microsoft.HoloLensTips_8wekyb3d8bbwe               |
 
-- 1: als App-installatieprogramma blokkeert, wordt alleen de App-installatieprogramma-app geblokkeerd en niet apps die zijn geïnstalleerd vanuit andere bronnen, zoals de Microsoft Store of van uw MDM-oplossing.
+- 1: het blokkeren App-installatieprogramma blokkeert alleen de App-installatieprogramma-app en niet apps die zijn geïnstalleerd vanuit andere bronnen, zoals de Microsoft Store of van uw MDM-oplossing.
 
-### <a name="how-to-find-a-package-family-name"></a>Een pakketfamilienaam zoeken
+### <a name="how-to-find-a-package-family-name"></a>Een pakketfamilienaam vinden
 
-Als een app niet in deze lijst staat, kan een gebruiker Apparaatportal gebruiken, verbonden met een HoloLens 2 die de app heeft geïnstalleerd, om de PackageRelativeID te bepalen en van hieruit de PackageFamilyName op te halen.
+Als een app niet in deze lijst staat, kan een gebruiker Apparaatportal gebruiken, verbonden met een HoloLens 2 die de app heeft geïnstalleerd en geblokkeerd, om de PackageRelativeID te bepalen en vervolgens PackageFamilyName op te halen.
 
-1. Installeer de app op HoloLens 2 apparaat. 
+1. Installeer de app op uw HoloLens 2 apparaat. 
 1. Open Instellingen -> Updates & Security -> For developers en schakel de **ontwikkelaarsmodus** en vervolgens **Apparaatportal in.** 
-    1. Lees hier meer informatie over de installatie [en het gebruik van de apparaatportal.](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
+    1. Meer informatie over instructies voor meer informatie over [het instellen en gebruiken van de apparaatportal is hier te vinden.](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
 1. Zodra Apparaatportal is verbonden, gaat u naar **Weergaven en** vervolgens **naar Apps.** 
-1. Gebruik in het deelvenster Geïnstalleerde apps de vervolgkeuze selecteren om de geïnstalleerde app te selecteren. 
+1. Gebruik in het deelvenster Geïnstalleerde apps de vervolgkeuzekeuze om de geïnstalleerde app te selecteren. 
 1. Zoek de PackageRelativeID. 
-1. Kopieer app-tekens vóór de . Deze tekens zijn uw PackageFamilyName.
-
+1. Kopieer app-tekens vóór `!` de . Deze tekens zijn uw PackageFamilyName.
 

@@ -14,11 +14,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: d21a63aae94f5ea5269f61fe319a9036626de1b4
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189525"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428400"
 ---
 # <a name="enterprise-enrollment-of-hololens-devices-in-mac-address-restricted-wi-fi-environment"></a>Enterprise Enrollment of HoloLens Devices in MAC address restricted Wi-Fi Environment
 
@@ -26,16 +26,16 @@ In dit document wordt een veelvoorkomende scenario beschreven dat we hebben geï
 
 ## <a name="example-scenario"></a>Voorbeeldscenario
 
-Veel klanten in beveiligde omgevingen hebben beperkingen voor hun draadloze of bekabelde netwerken waardoor alleen goedgekeurde apparaten (op basis van MAC-adressen) verbinding kunnen maken. Dit kan worden afgedwongen door mac-adresfiltering op een draadloos toegangspunt of via een DHCP-server. Bovendien sommige draadloze netwerken kunnen worden beveiligd met PEAP, waarvoor een certificaat moet worden toegepast op het apparaat vóór de authenticatie op het draadloze netwerk.
+Veel klanten in beveiligde omgevingen hebben beperkingen voor hun draadloze of bekabelde netwerken waarmee alleen goedgekeurde apparaten (op basis van MAC-adressen) verbinding kunnen maken. Dit kan worden afgedwongen via MAC-adres filteren op een draadloos toegangspunt of via een DHCP-server. Bovendien sommige draadloze netwerken kunnen worden beveiligd met PEAP, waarvoor een certificaat moet worden toegepast op het apparaat vóór de authenticatie op het draadloze netwerk.
 
 In dit scenario kunnen twee belangrijke vereisten vertragingen tot gevolg hebben of handmatig ingrijpen vereisen bij het HoloLens apparaten aan het netwerk:
 
 - Het draadloze PEAP-certificaat moet worden toegepast op het apparaat voordat het apparaat kan worden aangesloten op het draadloze netwerk.
-- Het MAC-adres van de HoloLens Wi-Fi adapter moet worden geregistreerd.
+- Het MAC-adres van de HoloLens Wi-Fi adaptor moet worden geregistreerd.
 
 De belangrijkste uitdagingen met de bovenstaande vereisten zijn:
 
-1. Het MAC-adres kan momenteel alleen worden geïdentificeerd vanuit de Instellingen-app op het apparaat of vanuit Intune na een geslaagde inschrijving.
+1. Het MAC-adres kan momenteel alleen worden geïdentificeerd vanuit de Instellingen app op het apparaat of vanuit Intune na een geslaagde inschrijving.
 
 2. Zonder het MAC-adres kan het apparaat geen lid worden Wi-Fi netwerk om de inschrijving te starten.
 
@@ -47,19 +47,19 @@ Er zijn veel manieren om deze situatie te verbeteren, afhankelijk van de infrast
 
 | Oplossing | Voordelen | Vereisten |
 | --- | --- | --- |
-| Inrichtingspakket met Ethernet-adapter | Verbetert de OOBE-ervaring en maakt een snellere techniciervaring mogelijk. | HoloLens compatibele USB-C Hub + Ethernet-adapter, en de technicus moet nog steeds communiceren met het apparaat voor MAC Capture en OOBE-finalisatie |
-| Autopilot met Intune-registratie via Ethernet | Dit is een verbinding in één stap en de registratie van het apparaat bij de klantomgeving. MAC-opname kan worden voltooid zonder interactie met het apparaat | Intune ingeschakeld voor de AAD-tenant van de klant en een HoloLens compatibele USB-C Ethernet-adapter |
-| Automatische rapportage van MAC-adressen | Wanneer apparaten zijn geregistreerd bij de Intune-tenant, kan een script het MAC-adres rapporteren aan de technicus. | Intune PowerShell-cmdlets |
+| Inrichtingspakket met Ethernet-adapter | Verbetert de OOBE-ervaring en maakt een snellere techniciervaring mogelijk. | HoloLens compatibele USB-C Hub + Ethernet-adapter, en de technicus moet nog steeds communiceren met het apparaat voor MAC-opname en OOBE-finalisatie |
+| Autopilot met Intune-registratie via Ethernet | Dit is een verbinding met één stap en de registratie van het apparaat bij de klantomgeving. MAC-opname kan worden voltooid zonder interactie met het apparaat | Intune ingeschakeld voor de AAD-tenant van de klant en een HoloLens compatibele USB-C Ethernet-adapter |
+| Automatische rapportage van MAC-adressen | Wanneer apparaten zijn geregistreerd bij de Intune-tenant, kan een script het MAC-adres rapporteren aan de monteur. | Intune PowerShell-cmdlets |
 
 ## <a name="provisioning-package-with-ethernet-adaptor"></a>Inrichtingspakket met Ethernet-adapter
 
 > [!NOTE] 
-> Als het bekabelde netwerk ook onderhevig is aan MAC-beperkingen, moet ook het MAC-adres van de USB-C Hub + Ethernet-adapter vooraf worden goedgekeurd. Zorg ervoor dat u deze adapter gebruikt, omdat hiermee toegang tot het netwerk wordt toegestaan vanaf andere apparaten.
+> Als het bekabelde netwerk ook onderhevig is aan MAC-beperkingen, moet het MAC-adres van de USB-C Hub + Ethernet-adapter ook vooraf worden goedgekeurd. Zorg ervoor dat u deze adapter gebruikt, omdat hiermee toegang tot het netwerk wordt toegestaan vanaf andere apparaten.
 
 ### <a name="requirements"></a>Vereisten
 
 - Bekabelde netwerkpoort met toegang tot het klantnetwerk
-- HoloLens Compatibele USB-C Hub met Ethernet-adapter: elke adapter waarvoor geen extra stuurprogramma's of toepassings installeren nodig is, moet geschikt zijn.
+- HoloLens Compatibele USB-C Hub met Ethernet-adapter: elke adapter waarvoor geen extra stuurprogramma's of installatie van toepassingen nodig zijn, moet geschikt zijn.
 - Inrichtingspakket met:
   - Informatie over draadloze netwerken en certificaat bevatten
   - Optioneel met inschrijvingsgegevens voor De Azure AD van de organisatie
@@ -67,14 +67,14 @@ Er zijn veel manieren om deze situatie te verbeteren, afhankelijk van de infrast
 
 ### <a name="process"></a>Proces
 
-Het proces kan variëren, afhankelijk van het softwareniveau van het apparaat. Als het apparaat de update [van mei 2004 heeft,](hololens-release-notes.md#windows-holographic-version-2004)volgt u de onderstaande stappen.
+Het proces kan variëren, afhankelijk van het softwareniveau van het apparaat. Als het apparaat de [update van mei 2004 heeft,](hololens-release-notes.md#windows-holographic-version-2004)volgt u de onderstaande stappen.
 
 1. Plaats het inrichtingspakket in de hoofdmap van een USB-stick en sluit het aan op de hub.
 2. Verbinding maken Ethernetkabel naar de Hub + Ethernet-adapter.
 3. Verbinding maken USB-C Hub naar HoloLens apparaat.
 4. Schakel de HoloLens in en zet het apparaat op.
-5. Druk op **de knop Volume omlaag en Aan/uit om** het inrichtingspakket toe te passen.
-6. De technicus kan nu OOBE volgen en, wanneer dit is voltooid, de Instellingen-app openen om het MAC-adres van het apparaat op te halen.
+5. Druk op **de knop Volume omlaag en aan/uit om** het inrichtingspakket toe te passen.
+6. De technicus kan nu OOBE volgen en wanneer dit is voltooid, opent u de Instellingen-app om het MAC-adres van het apparaat op te halen.
 
 Als het apparaat een build van het besturingssysteem heeft vóór de update van mei [2004,](hololens-release-notes.md#windows-holographic-version-2004)volgt u de onderstaande stappen.
 
@@ -84,12 +84,12 @@ Als het apparaat een build van het besturingssysteem heeft vóór de update van 
 4. Verbinding maken Ethernetkabel naar de hub.
 5. Verbinding maken USB-C Hub naar HoloLens apparaat.
 6. Plaats de HoloLens
-7. Druk op **de knop Volume omlaag en Aan/uit** om het inrichtingspakket toe te passen.
-8. De technicus kan nu OOBE volgen en, wanneer dit is voltooid, de Instellingen-app openen om het MAC-adres van het apparaat op te halen.
+7. Druk op **de knop Volume omlaag en aan/uit** om het inrichtingspakket toe te passen.
+8. De technicus kan nu OOBE volgen en wanneer dit is voltooid, opent u de Instellingen-app om het MAC-adres van het apparaat op te halen.
 
 ### <a name="benefits"></a>Voordelen
 
-Hierdoor kan een 'Single touch' van het apparaat het juiste inrichtingspakket toepassen en het MAC-adres van het apparaat verzamelen. [Inrichtingspakketten kunnen worden gemaakt volgens de richtlijnen hier.](hololens-provisioning.md)
+Hierdoor kan een 'single touch' van het apparaat het juiste inrichtingspakket toepassen en het MAC-adres van het apparaat verzamelen. [Inrichtingspakketten kunnen worden gemaakt volgens de richtlijnen hier.](hololens-provisioning.md)
 
 ## <a name="autopilot-with-intune-enrollment"></a>Autopilot met Intune-inschrijving
 
@@ -106,7 +106,7 @@ Hierdoor kan een 'Single touch' van het apparaat het juiste inrichtingspakket to
 
 Hierdoor kan een klant met geavanceerde netwerkvereisten de apparaten inschrijven in een hands-off, schaalbare benadering
 
-Er zijn aanvullende vereisten nodig, zoals hieronder wordt beschreven:
+Er zijn aanvullende vereisten nodig zoals hieronder wordt beschreven:
 1. [Schakel de tenant in voor de Autopilot-preview.](hololens2-autopilot.md)
 1. Maak de HoloLens om het inrichtingspakket in Intune te vervangen.
 1. Maak de HoloLens Intune-beleid.
@@ -114,7 +114,7 @@ Er zijn aanvullende vereisten nodig, zoals hieronder wordt beschreven:
 
 ### <a name="process"></a>Proces
 
-1. Verbinding maken ethernetkabel naar de adapter en sluit de adapter aan op de USB-C-poort op HoloLens 2 apparaat.
+1. Verbinding maken ethernetkabel aansluiten op de adapter en sluit de adapter aan op de USB-C-poort op HoloLens 2 apparaat.
 
 2. Schakel de HoloLens.
 
@@ -122,28 +122,28 @@ Er zijn aanvullende vereisten nodig, zoals hieronder wordt beschreven:
 
 4. Op het apparaat worden de vereiste Wi-Fi certificaten en andere configuratie toegepast, indien nodig via Intune.
 
-5. Als u klaar bent, kan de technicus de Intune-portal (Endpoint Manager) laden en inzoomen op de pagina met apparaateigenschappen op **Start -> Devices -> DeviceName -> Hardware**.
+5. Wanneer dit is voltooid, kan de technicus de Intune-portal (Endpoint Manager) laden en inzoomen op de pagina apparaateigenschappen op Start **-> Devices -> DeviceName -> Hardware.**
 
 6. Het Wi-Fi MAC-adres wordt weergegeven in de Intune-portal.
 
    ![MAC-adres via Intune.](images/mac-address-intune.jpg)
 
-7. De technicus voegt dit MAC-adres toe als een toegestaan apparaat.
+7. De monteur voegt dit MAC-adres toe als een toegestaan apparaat.
 
 ### <a name="benefits"></a>Voordelen
 
-Hierdoor is een 'Kop-op-kop'-implementatie mogelijk voor de technicus, omdat het apparaat vanaf de doos kan worden ingeschreven bij Azure AD en Intune zonder dat de technicus het apparaat moet dragen of handmatig moet communiceren met de HoloLens-omgeving.
+Hierdoor is een 'koppen uit'-implementatie mogelijk voor de monteur, met het apparaat vanaf het vak naar ingeschreven bij Azure AD en Intune zonder dat de monteur het apparaat moet dragen of handmatig met de HoloLens-omgeving moet werken.
 
-## <a name="reporting-of-mac-addresses-to-the-technician"></a>Rapportage van MAC-adressen aan de technicus
+## <a name="reporting-of-mac-addresses-to-the-technician"></a>Rapportage van MAC-adressen aan de monteur
 
 ### <a name="requirements"></a>Vereisten
 
 - Autorisatie van 'Intune Graph PowerShell' voor de tenant van de klant
-- Installatie van de Intune Graph PowerShell op de technicimachine.
+- Installatie van de Intune Graph PowerShell op de machine van de technici.
 - [https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0)
 - Leestoegang tot de elementen Beheerde apparaten van Intune. (Helpdesk-operator of hoger, of een aangepaste rol)
 
-Er is momenteel geen eenvoudige manier om een automatiseringsopdracht te activeren op basis van de inschrijving van een nieuw apparaat in Intune. Daarom biedt deze opdracht de technicus een eenvoudige manier om het MAC-adres op te halen zonder dat hij zich hoeft aan te melden bij de portal en het handmatig op te halen.
+Er is momenteel geen 'eenvoudige' manier om een automatiseringsopdracht te activeren op basis van de inschrijving van een nieuw apparaat in Intune. Daarom biedt deze opdracht de monteur een eenvoudige manier om het MAC-adres op te halen zonder dat hij zich hoeft aan te melden bij de portal en het handmatig op te halen.
 
 ```powershell
 Import-Module Microsoft.Graph.Intune
@@ -153,7 +153,7 @@ Connect-MSGraph
 Get-IntuneManagedDevice -Filter "model eq 'Hololens 2'" | where {$_.enrolledDateTime -gt (get-date).AddDays(-30)}  | select deviceName, wiFiMacAddress 
 ```
 
-Hiermee worden de naam en het MAC-adres van alle HoloLens die in de afgelopen 30 dagen zijn geregistreerd.
+Hiermee worden de naam en het MAC-adres van alle HoloLens die in de afgelopen 30 dagen zijn ingeschreven.
 
 ![MAC-adres via PowerShell.](images/mac-address-powershell.jpg)
 

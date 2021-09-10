@@ -15,11 +15,11 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 70ee881eb0c2ffaade173b31e5168371d042bbb2
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190069"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124426978"
 ---
 # <a name="getting-around-hololens-1st-gen"></a>Aan de HoloLens (eerste generatie)
 
@@ -35,11 +35,11 @@ Het holografische frame plaatst uw hologrammen waar uw ogen het meest gevoelig z
 
 ## <a name="use-hololens-with-your-hands"></a>Gebruik HoloLens met uw handen
 
-U kunt HoloLens gebruiken, net als bij het gebruik van uw smartphone. U kunt uw handen gebruiken om holografische vensters, menu's en knoppen te bewerken.  In plaats van te wijzen, te klikken of tikken, gebruikt u uw staren, uw stem en gebaren om apps en hologrammen te selecteren en rond te HoloLens. [](hololens-cortana.md)
+Het is HoloLens om uw telefoon te gebruiken. U kunt uw handen gebruiken om holografische vensters, menu's en knoppen te bewerken.  In plaats van te wijzen, te klikken of tikken, gebruikt u uw staren, uw stem en gebaren om apps en hologrammen te selecteren en om rond te HoloLens. [](hololens-cortana.md)
 
 Wanneer u deze basisinteracties kent, is het eenvoudig om HoloLens te gaan.
 
-De eerste keer dat u uw toepassing gebruikt, worden de basisprincipes HoloLens. U vindt ook een zelfstudie over gebaren in het **menu Start.** Zoek naar de app Learn Gestures.
+De eerste keer dat u uw toepassing gebruikt, worden de basisprincipes HoloLens. U vindt ook een zelfstudie over gebaren in het menu **Start.** Zoek naar de app Learn Gestures.
 
 ### <a name="the-hand-tracking-frame"></a>Het handtrackingframe
 
@@ -52,12 +52,12 @@ HoloLens sensoren die een paar meter aan beide zijden van u kunnen zien. Wanneer
 Het menu **Start openen:**
 
 1. Houd uw hand voor u, zodat deze zich in het bewegingsframe houdt.
-1. Bloom: breng al uw vingers bij elkaar en open uw hand.
+1. Bloom: breng al uw vingers bij elkaar en open vervolgens uw hand.
   ![Animatie van de bloembewegingen.](./images/hololens-bloom.gif)
 
 ### <a name="select-holograms-with-gaze-and-air-tap"></a>Hologrammen selecteren met staren en tikken in de lucht
 
-Als u een app of ander hologram wilt selecteren, tikt u er in de lucht op terwijl u rechtstreeks naar het hologram kijkt dat u selecteert. Voer hiervoor de volgende stappen uit:
+Als u een app of ander hologram wilt selecteren, tikt u in de lucht terwijl u rechtstreeks naar het hologram kijkt dat u selecteert. Voer hiervoor de volgende stappen uit:
 
 1. Staren naar het hologram dat u wilt selecteren.
 1. Wijs uw wijsvinger recht naar het plafond.
@@ -74,13 +74,13 @@ Als u een app of ander hologram wilt selecteren, tikt u er in de lucht op terwij
 
 Nu is het tijd om gebaren op de proef te stellen.
 
-U vindt uw geïnstalleerde apps in [de Startmenu](holographic-home.md) en er zijn meer apps voor HoloLens (eerste generatie) in de Microsoft Store.
+U vindt uw geïnstalleerde apps in de [Startmenu](holographic-home.md) en er zijn meer apps voor HoloLens (eerste generatie) in de Microsoft Store.
 
 Open het **menu Start** en selecteer een app.
 
 Het gebruik van apps HoloLens is iets anders dan op een pc: sommige apps gebruiken een 2D-weergave en zien eruit als andere Windows toepassingen. Andere apps (immersive apps) gebruiken een 3D-weergave en wanneer u ze start, worden ze de enige app die u ziet.
 
-Wanneer u een app-venster of startscherm voor apps zet, blijft deze staan totdat u het verwijdert. U kunt deze hologrammen in uw Mixed Reality Startpagina op elk moment verplaatsen of de Mixed Reality Startpagina.
+Wanneer u een app-venster of startscherm voor apps zet, blijft deze staan totdat u het verwijdert. U kunt deze hologrammen in uw Mixed Reality Startpagina op elk moment verplaatsen of het Mixed Reality Startpagina.
 
 ## <a name="move-resize-and-rotate-apps"></a>Apps verplaatsen, het izeseren en draaien
 
@@ -94,7 +94,7 @@ Het verplaatsen en het formaat van apps op HoloLens werkt iets anders dan op een
 Staren naar de app (op de titelbalk van een app-venster) en vervolgens een van de volgende stappen uit.
 
 - Tik en houd deze vast om de app te selecteren. Verplaats uw hand om de app te plaatsen en beweeg uw vinger om deze te plaatsen.
-- Selecteer **Aanpassen,** tik en houd uw hand vast om de app te positionen. Hef uw vinger om deze te plaatsen en selecteer vervolgens **Done**.
+- Selecteer **Aanpassen,** tik en houd uw hand in de hand om de app te positionen. Hef uw vinger om deze te plaatsen en selecteer vervolgens **Done**.
 - Selecteer **Aanpassen,** klik en houd de clicker vast en verplaats uw hand om de app te positionen. Laat de aanklikker los en selecteer vervolgens **Done**.
 
 > [!TIP]
@@ -104,9 +104,9 @@ Staren naar de app (op de titelbalk van een app-venster) en vervolgens een van d
 
 Staren naar de app en vervolgens een van de volgende dingen doen.
 
-- Staren naar een hoek of rand van een app-venster en tikken en vasthouden. Verplaats uw hand om de grootte van de app te wijzigen en beweeg uw vinger wanneer u klaar bent.
+- Staren naar een hoek of rand van een app-venster en tikken en vasthouden. Beweeg uw hand om de grootte van de app te wijzigen en steek uw vinger op wanneer u klaar bent.
 - Selecteer **Aanpassen.** Staren naar een van de blauwe vierkanten in de hoeken van de app, tikken en vasthouden, en vervolgens uw hand bewegen om het scherm van de app te wijzer te maken. Hef uw vinger om deze vrij te geven en selecteer vervolgens **Done**.
-- Selecteer **Aanpassen.** Staren naar een van de blauwe vierkanten in de hoeken van de app, klik en houd de kliker vast en verplaats vervolgens uw hand om de app te wijzer te maken. Laat de aanklikker los en selecteer vervolgens **Done**.
+- Selecteer **Aanpassen.** Kijk naar een van de blauwe vierkanten in de hoeken van de app, klik en houd de kliker vast en verplaats vervolgens uw hand om de app te wijzer te maken. Laat de aanklikker los en selecteer vervolgens **Done**.
 
 > [!TIP]
 > In de modus Aanpassen kunt u elk hologram verplaatsen of het ize aanpassen.
@@ -121,7 +121,7 @@ Staren naar de inhoud van het app-venster. Tik en houd uw hand iets omhoog of om
 
 ## <a name="meet-the-hololens-1st-gen-clicker"></a>Maak kennis met HoloLens (1e generatie) Clicker
 
-De [HoloLens (1e generatie) biedt](hololens1-clicker.md) u een andere manier om te communiceren met hologrammen. [Koppel deze](hololens-connect-devices.md) aan uw HoloLens gebruik het vervolgens samen met uw staren om te selecteren, te schuiven en meer.
+De [HoloLens (1e generatie) biedt](hololens1-clicker.md) u een andere manier om te communiceren met hologrammen. [Koppel deze](hololens-connect-devices.md) aan uw HoloLens en gebruik deze vervolgens samen met uw staren om te selecteren, te schuiven en meer.
 
 ## <a name="next-steps"></a>Volgende stappen
 
@@ -135,9 +135,9 @@ Nu kunt u uw HoloLens (eerste generatie) configureren om te voldoen aan uw speci
 
 ### <a name="help-i-dont-see-my-holograms"></a>Help! Ik zie mijn hologrammen niet
 
-Als u geen hologrammen ziet die u tijdens het gebruik van HoloLens, kunt u het volgende proberen:
+Als u geen hologrammen ziet die u hebt geplaatst tijdens het gebruik van HoloLens, kunt u het volgende proberen:
 
 - Zorg ervoor dat u in het rechtergebied kijkt. Vergeet niet dat &mdash; hologrammen blijven waar u ze hebt gelaten.
 - Zorg ervoor dat u zich in een goed belichte ruimte zonder veel directe steno hebt.
 - Wachten. Wanneer HoloLens problemen hebt met het herkennen van uw ruimte, kan het tot een minuut duren voor eerder geplaatste hologrammen opnieuw worden vermeld.
-- Als het probleem zich blijft voordoen, kunt u uw Hologrammen-opslaggegevens in **Instellingen** System Hologrammen verwijderen en vervolgens weer hologrammen in Mixed Reality Startpagina  >    >  plaatsen.
+- Als het probleem zich blijft voordoen, kunt u uw Hologrammen-opslaggegevens in **Instellingen** System Hologrammen verwijderen en weer hologrammen in Mixed Reality Startpagina  >    >  plaatsen.

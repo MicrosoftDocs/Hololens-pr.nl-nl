@@ -1,5 +1,5 @@
 ---
-title: 'Implementatiehandleiding : cloudgeconnecteerde HoloLens 2 implementatie op schaal met Remote Assist - Voorbereiden'
+title: Implementatiehandleiding - Cloudgeconnecteerde HoloLens 2 implementatie op schaal met Remote Assist - Voorbereiden
 description: Meer informatie over het voorbereiden van de registratie van HoloLens via een cloudnetwerk met behulp van Azure Active Directory en identiteitsbeheer.
 keywords: HoloLens, beheer, verbonden met de cloud, Remote Assist, AAD, Azure AD, MDM, Mobile Device Management
 author: evmill
@@ -14,27 +14,27 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f6c2e514024a171661b182a310145e26280e114a1cff65ef5b03b16feae8371a
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 21fffdc24f8682bc44779e1cebe8cd6eacb59619
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660173"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428087"
 ---
 # <a name="prepare---cloud-connected-guide"></a>Voorbereiden - Handleiding voor verbonden cloud
 
-Aan het einde van dit artikel hebt u Azure AD, MDM ingesteld en meer inzicht in het gebruik van Azure AD-accounts en netwerkvereisten. Deze sectie van de handleiding helpt u en uw organisatie bij het voorbereiden van de implementatie van HoloLens 2 in de cloud en het gebruik van Dynamics 365 Remote Assist. Het gaat over het belang van elk onderdeel van uw infrastructuur en biedt koppelingen naar handleidingen om u te helpen deze onderdelen zo nodig in te stellen.
+Aan het einde van dit artikel hebt u Azure AD, MDM ingesteld en meer inzicht in het gebruik van Azure AD-accounts en netwerkvereisten. Deze sectie van de handleiding helpt u en uw organisatie bij het voorbereiden van de implementatie HoloLens 2 in de cloud en het gebruik van Dynamics 365 Remote Assist. Het gaat over het belang van elk onderdeel van uw infrastructuur en biedt koppelingen naar handleidingen om u te helpen deze onderdelen zo nodig in te stellen.
 
 ## <a name="infrastructure-essentials"></a>Infrastructure Essentials
 
-Voor zowel persoonlijke als zakelijke implementatiescenario's is een MDM-systeem de essentiële infrastructuur die vereist is voor het implementeren en beheren Windows 10 Holographic apparaten. Een Azure AD Premium-abonnement wordt aanbevolen als id-provider en is vereist voor de ondersteuning van bepaalde mogelijkheden.
+Voor zowel persoonlijke als zakelijke implementatiescenario's is een MDM-systeem de essentiële infrastructuur die is vereist voor het implementeren en beheren Windows 10 Holographic apparaten. Een Azure AD Premium-abonnement wordt aanbevolen als id-provider en is vereist voor de ondersteuning van bepaalde mogelijkheden.
 
 ### <a name="azure-active-directory"></a>Azure Active Directory
 
 Azure AD is een cloudgebaseerde adreslijstservice die identiteits- en toegangsbeheer biedt. Organisaties die gebruikmaken van Microsoft Office 365 of Intune, maken al gebruik van Azure AD. Deze heeft drie edities: Free, Premium P1 en Premium P2 (zie [Azure Active Directory editions](https://azure.microsoft.com/documentation/articles/active-directory-editions).) Alle edities ondersteunen Azure AD-apparaatregistratie, maar Premium P1 is vereist voor het inschakelen van automatische inschrijving bij MDM, die we later in deze handleiding gaan gebruiken.
 
 > [!IMPORTANT]
-> Het is essentieel om een Azure Active Directory te HoloLens on-premises AD-join niet ondersteunen. Als u&#39;nog geen Azure Active Directory hebt ingesteld, gaat u naar Een nieuwe [tenant maken in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
+> Het is essentieel dat u over een Azure Active Directory hebt, HoloLens apparaten geen ondersteuning bieden voor on-premises AD-join. Als u&#39;nog geen Azure Active Directory hebt ingesteld, gaat u naar Een nieuwe [tenant maken in Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-access-create-new-tenant)
 
 ## <a name="identity-management"></a>Identiteitsbeheer
 
@@ -43,26 +43,26 @@ Werknemers kunnen slechts één account gebruiken om een apparaat te initialiser
 In deze handleiding hebben we [](/hololens/hololens-identity) ervoor gekozen om voor de gebruikte identiteit Azure AD-accounts of Azure Active Directory gebruiken. Er zijn verschillende voordelen voor Azure AD-accounts die we willen gebruiken, zoals:
 
 - Werknemers gebruiken hun Azure AD-account om het apparaat te registreren bij Azure AD en registreren het automatisch bij de organisatie&#39;s MDM-oplossing (Azure AD+ MDM- vereist Azure AD Premium).
-- Azure AD-accounts bieden ondersteuning [voor een enkele aanmelding.](/azure/active-directory/manage-apps/what-is-single-sign-on) Wanneer een gebruiker zich Remote Assist, wordt de identiteit van de aangemelde Azure AD-gebruiker herkend en wordt de gebruiker aangemeld bij de app voor een gestroomlijnde ervaring.
+- Azure AD-accounts bieden ondersteuning [voor een enkele aanmelding.](/azure/active-directory/manage-apps/what-is-single-sign-on) Wanneer een gebruiker zich bij Remote Assist, wordt de identiteit van de aangemelde Azure AD-gebruiker herkend en wordt de gebruiker aangemeld bij de app voor een gestroomlijnde ervaring.
 - Azure AD-accounts hebben extra [verificatieopties](/hololens/hololens-identity) via [Windows Hello for Business.](/windows/security/identity-protection/hello-for-business/hello-identity-verification) Naast iris-aanmelding kunnen gebruikers zich aanmelden vanaf een ander apparaat of gebruikmaken van FIDO-beveiligingssleutels.
 
 ### <a name="mobile-device-management"></a>Beheer van mobiele apparaten
 
-Microsoft [Intune,](/mem/intune/fundamentals/what-is-intune)onderdeel van de Enterprise Mobility + Security, is een cloudgebaseerd MDM-systeem dat apparaten beheert die zijn verbonden met uw tenant. Net als Office 365 gebruikt Intune Azure AD voor identiteitsbeheer, zodat werknemers dezelfde referenties gebruiken om apparaten in te schrijven bij Intune die ze gebruiken om zich aan te melden bij Office 365. Intune ondersteunt ook apparaten met andere besturingssystemen, zoals iOS en Android, om een volledige MDM-oplossing te bieden. In deze handleiding richten we ons&#39;het gebruik van Intune voor het inschakelen van een cloudimplementatie op schaal met HoloLens 2.
+Microsoft [Intune,](/mem/intune/fundamentals/what-is-intune)onderdeel van de Enterprise Mobility + Security, is een cloudgebaseerd MDM-systeem dat apparaten beheert die zijn verbonden met uw tenant. Net Office 365 gebruikt Intune Azure AD voor identiteitsbeheer, zodat werknemers dezelfde referenties gebruiken om apparaten in te schrijven bij Intune die ze gebruiken om zich aan te melden bij Office 365. Intune ondersteunt ook apparaten met andere besturingssystemen, zoals iOS en Android, om een volledige MDM-oplossing te bieden. In deze handleiding richten we ons&#39;op het gebruik van Intune voor het inschakelen van een cloudimplementatie op schaal met HoloLens 2.
 
 > [!IMPORTANT]
 > Het is essentieel om Mobile Device Management te hebben. Als u deze&#39;nog niet hebt ingesteld, volgt u deze handleiding en [gaat u aan de slag met Intune.](/mem/intune/fundamentals/free-trial-sign-up)
 
 > [!NOTE]
-> Meerdere MDM-systemen ondersteunen Windows 10 en bieden de meeste ondersteuning voor implementatiescenario's voor persoonlijke en zakelijke apparaten. MDM-providers die ondersteuning Windows 10 Holographic zijn onder andere: AirWatch, MobileIron en andere. De meeste toonaangevende MDM-leveranciers ondersteunen al integratie met Azure AD. U vindt de MDM-leveranciers die Azure AD ondersteunen in [Azure Marketplace.](https://azure.microsoft.com/marketplace/)
+> Meerdere MDM-systemen ondersteunen Windows 10 en bieden de meeste ondersteuning voor implementatiescenario's voor persoonlijke en zakelijke apparaten. MDM-providers die ondersteuning Windows 10 Holographic zijn onder andere: AirWatch, MobileIron en andere. De meeste toonaangevende MDM-leveranciers ondersteunen al integratie met Azure AD. U vindt de MDM-leveranciers die Azure AD ondersteunen in [Azure Marketplace](https://azure.microsoft.com/marketplace/).
 
 ## <a name="network"></a>Netwerk
 
-In deze installatie verwachten we dat HoloLens 2 verbinding maken met internet vanaf elke beschikbare open Wi-Fi netwerk. Omdat een gebruiker de netwerkverbinding mogelijk moet wijzigen op basis van de locatie, moet hij of zij leren hoe deze verbinding HoloLens [met Wi-Fi.](/hololens/hololens-network)
+In deze installatie verwachten we dat HoloLens 2 verbinding maken met internet vanaf elke beschikbare open Wi-Fi netwerk. Omdat een gebruiker de netwerkverbinding mogelijk moet wijzigen op basis van de locatie, moet hij leren hoe hij of zij verbinding HoloLens [met Wi-Fi.](/hololens/hololens-network)
 
-Er Dynamics 365 Remote Assist diverse netwerkomstandigheden, waaronder bandbreedte, latentie, jitter en pakketverlies, die van invloed kunnen zijn op uw ervaring met videobellen. Hoewel audio- en videoaanroepen mogelijk zijn in omgevingen met een lagere bandbreedte, kan het zijn dat de functie afneemt. Wanneer u Dynamics 365 Remote Assist op HoloLens, zijn dit de netwerkvereisten waar u rekening mee moet houden:
+Er Dynamics 365 Remote Assist diverse netwerkomstandigheden, waaronder bandbreedte, latentie, jitter en pakketverlies, die van invloed kunnen zijn op uw ervaring met videobellen. Hoewel audio- en videoaanroepen mogelijk zijn in omgevingen met een lagere bandbreedte, kan het zijn dat u last hebt van verminderde functies. Wanneer u Dynamics 365 Remote Assist op HoloLens zijn de volgende netwerkvereisten waar u rekening mee moet houden:
 
-**Minimaal:** 1,5 Mbps omhoog/omlaag is vereist voor peer-to-peer video-oproepen van HD-kwaliteit met een resolutie van HD 1080p bij 30 mbps.
+**Minimaal:** 1,5 Mbps omhoog/omlaag is vereist voor peer-to-peer video-oproepen van HD-kwaliteit met een resolutie van HD 1080p bij 30 fps.
 
 **Optimaal:** Voor peer-to-peer video-oproepen van HD-kwaliteit met een resolutie van HD 1080p moet 4-5 Mbps omhoog/omlaag worden verwacht.
 
@@ -73,7 +73,7 @@ Meer informatie:
 
 ### <a name="optional-connect-your-hololens-to-vpn"></a>Optioneel: Verbinding maken verbinding HoloLens VPN
 
-De apparaten die in deze handleiding worden verbonden, gaan verbinding maken met het netwerk via en het externe cloudnetwerk. Het kan zijn dat u voor toegang tot bedrijfsbronnen&#39;uw apparaten via VPN moet verbinden. Er zijn verschillende manieren om uw apparaten te verbinden met VPN, zowel waar de eindgebruiker verbinding kan maken via de gebruikersinterface van het apparaat, als de apparaten kunnen worden beheerd en het VPN-profiel kunnen ontvangen van een PPKG of MDM. Het instellen van VPN zal&#39;niet worden behandeld in dit artikel. Als u meer wilt weten over de verschillende VPN-protocollen of manieren om VPN te beheren&#39;, gaat u naar deze handleidingen voor informatie over [HoloLens en VPN.](/hololens/hololens-network#vpn)
+De apparaten die in deze handleiding worden verbonden, gaan verbinding maken met het netwerk via en het externe cloudnetwerk. Het kan zijn dat u voor toegang tot bedrijfsbronnen&#39;uw apparaten via VPN moet verbinden. Er zijn verschillende manieren om uw apparaten te verbinden met VPN, zowel waar de eindgebruiker verbinding kan maken via de gebruikersinterface van het apparaat, als de apparaten kunnen worden beheerd en het VPN-profiel kunnen ontvangen van een PPKG of MDM. Het instellen van VPN&#39;niet behandeld in dit artikel, dus als u&#39;meer wilt weten over de verschillende VPN-protocollen of manieren om VPN te beheren, gaat u naar deze handleidingen voor informatie over [HoloLens en VPN.](/hololens/hololens-network#vpn)
 
 ## <a name="next-step"></a>Volgende stap
 

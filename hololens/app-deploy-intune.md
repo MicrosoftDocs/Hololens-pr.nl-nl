@@ -17,12 +17,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f1c178c940224ed3cd07c58b886b176108614caf7a8463af089e2f2357f45553
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b192732f5e7edffaa1d0ab081454e4034c416191
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665247"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427100"
 ---
 # <a name="intune--company-portal"></a>Intune-& Bedrijfsportal
 
@@ -39,7 +39,7 @@ Met Mobile Device Management (MDM) kunt u uw eigen aangepaste apps via [Microsof
 
 ## <a name="assignment-types"></a>Toewijzingstypen
 
-Als u wilt dat uw app na de inschrijving automatisch op het apparaat wordt geïnstalleerd, moet u **Vereist selecteren** voor die groep(en).
+Als u wilt dat uw app na de inschrijving automatisch op het apparaat wordt geïnstalleerd, selecteert u **Vereist** voor die groep(en).
 Als u uw app beschikbaar wilt maken voor downloaden naar apparaten die zijn ingeschreven via de bedrijfsportal, selecteert u **Beschikbaar voor ingeschreven apparaten.**
 
 ## <a name="end-user-experience"></a>De ervaring voor de eindgebruiker
@@ -50,7 +50,7 @@ Volg deze stappen om uw app(s) automatisch op te halen:
 
 1. Schrijf uw apparaat in bij uw tenant.
 2. Zodra het apparaat is ingeschreven, ontvangt u de app op uw apparaat.
-3. Als u uw app niet direct ziet, gaat u naar Instellingen Accounts **Werk-** of schoolaccountgegevens en schuift u omlaag om informatie over de status van de  >    >    >   geïnstalleerde app weer te geven.
+3. Als u uw app niet direct ziet, gaat u naar Instellingen Accounts **Werk-** of schoolaccountgegevens en scrolt u omlaag om informatie over de status van de  >    >    >   geïnstalleerde app weer te geven.
 
 Apps openen via de Bedrijfsportal:
 

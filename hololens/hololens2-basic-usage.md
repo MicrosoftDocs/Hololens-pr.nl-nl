@@ -13,11 +13,11 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: cf3770dd55498dbe98abf88d002247646e4db9be
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189882"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427786"
 ---
 # <a name="getting-around-hololens-2"></a>Kennismaken met HoloLens 2
 
@@ -26,22 +26,22 @@ Bent u klaar om de wereld van hologrammen te verkennen?
 Deze handleiding bevat een introductie tot:
 
 - Interactie met mixed reality
-- Uw handen en spraak gebruiken voor interactie met hologrammen op HoloLens 2
+- Uw handen en stem gebruiken voor interactie met hologrammen op HoloLens 2
 - Navigeren Windows 10 op HoloLens (Windows Holographic)
 
-## <a name="discover-mixed-reality"></a>Mixed reality
+## <a name="discover-mixed-reality"></a>De mixed reality
 
 Op HoloLens worden hologrammen de digitale wereld gecombineerd met uw fysieke omgeving om er uit te zien en te klinken alsof ze deel uitmaken van uw wereld. Zelfs wanneer hologrammen om u heen staan, kunt u altijd uw omgeving zien, vrij bewegen en communiceren met mensen en objecten. We noemen deze ervaring 'mixed reality'.
 
-Het holografische frame positioneert uw hologrammen waar uw ogen het meest gevoelig zijn voor details en de doorzichtlenzen uw randapparaat niet zien. Met ruimtelijk geluid kunt u een hologram aanwijzen door te luisteren, zelfs als het achter u staat. En omdat HoloLens uw fysieke omgeving begrijpt, kunt u hologrammen op en rond echte objecten zoals tabellen en muren plaatsen.
+Het holografische frame plaatst uw hologrammen waar uw ogen het meest gevoelig zijn voor details en de doorzichtlenzen uw randapparaat niet zien. Met ruimtelijk geluid kunt u een hologram aanwijzen door te luisteren, zelfs als het achter u staat. En omdat HoloLens uw fysieke omgeving begrijpt, kunt u hologrammen op en rond echte objecten zoals tabellen en muren plaatsen.
 
-Het is HoloLens u uw smartphone kunt gebruiken. U kunt uw handen gebruiken om holografische vensters, menu's en knoppen aan te raken en te bewerken.  
+Het is HoloLens om uw telefoon te gebruiken. U kunt uw handen gebruiken om holografische vensters, menu's en knoppen aan te raken en te bewerken.  
 
 Zodra u deze basisinteracties kent, is het een HoloLens om aan de HoloLens te komen.
 
 > [!TIP]
-> Als u momenteel een HoloLens bij u in de buurt hebt, biedt de **Tips-app** letterlijke praktijkzelfstudies voor handinteracties op HoloLens.  
-> Gebruik de startbewegingen om naar Start te **gaan** of zeg 'Ga naar start' en selecteer **Tips**.
+> Als u momenteel een HoloLens bij u in de buurt hebt, biedt de **Tips-app** letterlijke praktijkstudies voor handinteracties op HoloLens.  
+> Gebruik de startbewegingen om naar Start te **gaan** of 'Ga naar start' te zeggen en selecteer **Tips**.
 
 ## <a name="the-hand-tracking-frame"></a>Het handtrackingframe
 
@@ -53,85 +53,85 @@ HoloLens sensoren die een paar meter aan beide zijden van u kunnen zien. Wanneer
 
 Wanneer een hologram bij u in de buurt is, brengt u uw hand dicht bij u in de buurt en wordt er een witte ring weergegeven op de punt van uw wijsvinger.  Dit is de **aanraakcursor** waarmee u hologrammen nauwkeurig kunt aanraken en gebruiken. Als **u iets** wilt selecteren, **tikt u** er gewoon op met de aanraakcursor. **Schuif** door met **uw vinger** naar het oppervlak van de inhoud te vegen, net zoals u een aanraakscherm gebruikt.
 
-Als **u een** hologram bij u in de buurt wilt pakken, knijpt u uw **vingerafdruk** en **wijsvinger** bij elkaar op het hologram en houdt u het vast. Laat uw vingers los om te laten gaan. Gebruik deze **handgebaar om** 3D-objecten en app-vensters te verplaatsen, de 3D-objecten en de app-vensters in Mixed Reality Startpagina.
+Als **u een** hologram bij u in de buurt wilt pakken, knijpt u uw **vingerafdruk** en **wijsvinger** bij elkaar op het hologram en houdt u het vast. Laat uw vingers los om te laten gaan. Gebruik deze **handbewegingen om** 3D-objecten en app-vensters te verplaatsen, het 3D-aantal te Mixed Reality Startpagina.
 
-Als u een **contextmenu wilt** weergeven, zoals de menu's die u op een app-tegel in de Startmenu **vindt,** tikt en houdt u deze vast zoals op een aanraakscherm.
+Als u een **contextmenu wilt weergeven,** zoals op een app-tegel in de **Startmenu,** tikt en houdt u deze vast, zoals u op een aanraakscherm doet.
 
 ## <a name="use-hand-ray-for-holograms-out-of-reach"></a>Hand ray gebruiken voor hologrammen die niet bereikbaar zijn
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3ZOum]
 
-Wanneer er geen hologrammen in  de buurt van uw handen zijn, wordt de aanraakcursor automatisch verborgen en worden **handfoto's** weergegeven in de handen. Handfoto's stellen u in staat om vanaf een afstand te communiceren met hologrammen.
+Wanneer er geen hologrammen in  de buurt van uw handen zijn, wordt de aanraakcursor automatisch verborgen en worden **de handfoto's** weergegeven op de ogen van uw handen. Handfoto's stellen u in staat om vanaf een afstand te communiceren met hologrammen.
 
 > [!TIP]
-> Als u de handfoto's storend vindt, kunt u ze verbergen door 'Handfoto's verbergen' te zeggen. Als u ze weer wilt laten verschijnen, zegt u 'Handgesteente tonen'.
+> Als handfoto's storend zijn, kunt u ze verbergen door 'Handfoto's verbergen' te zeggen. Als u ze weer wilt laten verschijnen, zegt u 'Handfoto's laten zien'.
 
-### <a name="select-using-air-tap"></a>Selecteer met behulp van een tik in de lucht
+### <a name="select-using-air-tap"></a>Selecteren met behulp van een tik in de lucht
 
-Als u iets wilt selecteren **met behulp van hand ray**, volgt u deze stappen:
+Als u iets wilt selecteren met **behulp van hand ray**, volgt u deze stappen:
 
-1. Gebruik een hand ray van uw bedrijf om het item als doel te nemen. U hoeft niet uw hele arm te hijsen, u kunt uw elleboog laag en vertrouwd houden.
+1. Gebruik een hand ray van uw moeder om het item als doel te nemen. U hoeft niet uw hele arm omhoog te bewegen, u kunt uw arm laag en vertrouwd houden.
 1. Wijs uw wijsvinger recht naar het plafond.
-1. Als u de beweging **voor tikken in de** lucht wilt uitvoeren, knijpt u uw vingerafdruk en wijsvinger samen en laat u ze snel los.
+1. Als u de beweging **voor tikken in de** lucht wilt uitvoeren, moet u uw vingerafdruk en wijsvinger samenknelen en ze vervolgens snel vrijgeven.
 
    ![Animatie van beweging in de lucht tikken.](./images/hololens-air-tap.gif)
 
-### <a name="grab-using-air-tap-and-hold"></a>Pakken met behulp van tikken en in de lucht houden
+### <a name="grab-using-air-tap-and-hold"></a>Pak met behulp van tikken in de lucht en houd deze vast
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Wxnh]
 
-Als u inhoud van een hologram- of scroll-app-venster wilt halen met behulp van **hand** ray , begint u met een tik in de **lucht,** maar houdt u uw vingers bij elkaar in plaats van ze vrij te geven.
+Als u inhoud van een hologram of scroll-app-venster wilt gebruiken met behulp van **hand** ray, begint u met een tik in de **lucht,** maar houdt u uw vingers bij elkaar in plaats van ze vrij te geven.
 
-Tik **in de lucht en houd deze** vast om de volgende acties uit te voeren met hand ray:
+Gebruik **tikken in de lucht en houd** deze vast om de volgende acties uit te voeren met hand ray:
 
-- **Schuif door**. Als u door de inhoud van het app-venster wilt schuiven, tikt u in de lucht op de inhoud en houdt u de inhoud in de lucht vast en beweegt u vervolgens uw hand ray omhoog of omlaag of naast elkaar.
-- **Pak**. Als u een app-venster of hologram wilt pakken, richt u de titelbalk of het hologram van de app met uw hand ray en tikt en houdt u de lucht in de lucht.
+- **Schuif door**. Als u door de inhoud van het app-venster wilt schuiven, tikt u in de lucht op de inhoud en houdt u deze in de lucht vast en beweegt u vervolgens uw hand ray omhoog en omlaag of naast elkaar.
+- **Pak**. Als u een app-venster of hologram wilt pakken, richt u zich op de titelbalk of het hologram van de app met uw handfoto en tikt en houdt u de lucht in de lucht.
 - **Contextmenu's openen.** Als u contextmenu's wilt openen, tikt u in de lucht en houdt u deze vast met uw hand ray.
 
 ## <a name="start-gesture"></a>Beweging starten
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Wxng]
 
-Met de beweging Start wordt het **Startmenu.**  Als u het startgebaar wilt uitvoeren, houdt u uw hand in handen met uw oog op u. U ziet dat er een **pictogram Start** wordt weergegeven boven uw binnenste hand. Tik op dit pictogram met uw andere hand.  De Startmenu wordt **geopend waar u op zoek bent.**
+Met de beweging Start wordt het **Startmenu.**  Als u de beweging Start wilt uitvoeren, houdt u uw hand uit met uw oog op u. Er wordt een pictogram **Start weergegeven** boven uw binnenste hand. Tik op dit pictogram met uw andere hand.  De Startmenu wordt **geopend waar u op zoek bent.**
 
 > [!TIP]
 >
 > - U kunt de beweging Start gebruiken zolang uw handen zich in het handtrackingframe houden.  U hoeft niet op het pictogram Start te kijken. Houd uw elleboog laag en vertrouwd en kijk in de richting waarin u de Startmenu wilt openen.
-> - Als de Startmenu niet is geopend op de positie die u wilt, beweegt u uw hoofd om deze te verplaatsen.
-> - Als u problemen hebt met het lezen van de kleinere tekst op Startmenu, gaat u dichter bij de tekst nadat deze is geopend.
-> - Als uw hand iets aan de zijkant van het frame ligt, kunt u de Startmenu mogelijk nog steeds weergeven door op uw binnenste draag te tikken, zelfs als u het pictogram niet ziet.
+> - Als de Startmenu niet is geopend op de 2e positie, gaat u gewoon met uw hoofd om de positie ervan te verplaatsen.
+> - Als u problemen hebt met het lezen van de kleinere tekst op Startmenu, komt u er dichter bij nadat deze is geopend.
+> - Als uw hand iets aan de zijkant van het frame ligt, kunt u de Startmenu mogelijk nog steeds weergeven door op uw binnenste hand te tikken, zelfs als u het pictogram niet ziet.
 
-![Afbeelding met het pictogram Start en de beweging Starten.](./images/hololens-2-start-gesture.png)
+![Afbeelding met het pictogram Start en de beweging Start.](./images/hololens-2-start-gesture.png)
 
-Als **u de** Startmenu wilt sluiten, doet u het gebaar Starten wanneer de Startmenu geopend is.  U kunt ook de Startmenu en 'Sluiten' zeggen.
+Als **u de** Startmenu wilt sluiten, doet u de beweging Starten wanneer de Startmenu geopend is.  U kunt ook de Startmenu en 'Sluiten' zeggen.
 
-### <a name="one-handed-start-gesture"></a>Eenhandig Start-gebaar
+### <a name="one-handed-start-gesture"></a>Eenhandig startgebaar
 
 > [!IMPORTANT]
-> De eenhandige Start-beweging werkt als volgende:
+> De eenhandige Start-beweging werkt als het volgende werkt:
 >
 > 1. U moet bijwerken naar de update van november 2019 (build 18363.1039) of hoger.
-> 1. Uw ogen moeten worden ge kalibreerd op het apparaat, zodat het volgen van de ogen goed werkt. Als u geen cirkelvormige stippen rond het startpictogram ziet wanneer u deze bekijkt, worden uw ogen niet ge [kalibreerd](/hololens/hololens-calibration#calibrating-your-hololens-2) op het apparaat.
+> 1. Uw ogen moeten worden ge kalibreerd op het apparaat, zodat de oogtracking goed werkt. Als u geen cirkelvormige stippen rond het startpictogram ziet wanneer u deze bekijkt, worden uw ogen niet ge [kalibreerd](/hololens/hololens-calibration#calibrating-your-hololens-2) op het apparaat.
 
-U kunt de beweging Starten ook met slechts één hand uitvoeren. Als u dit wilt doen, houdt u uw hand in het oog en bekijkt u het **startpictogram** aan uw binnenste hand. **Houd het pictogram in de gaten en beweeg** uw vingerafdruk en wijsvinger bij elkaar.
+U kunt de beweging Start ook met slechts één hand uitvoeren. Om dit te doen, houdt u uw hand met uw handen naar u toe en bekijkt u het **startpictogram** aan uw binnenste hand. **Houd het pictogram in de gaten en** beweeg uw vingerafdruk en wijsvinger samen.
 
-![Afbeelding van het startpictogram en het eenhandige startbewegingen.](./images/hololens-2-start-alternative.png)
+![Afbeelding met het startpictogram en het eenhandige startbewegingen.](./images/hololens-2-start-alternative.png)
 
 ## <a name="start-menu-mixed-reality-home-and-apps"></a>Startmenu, Mixed Reality Startpagina en apps
 
 Klaar om al deze handinteracties te testen?
 
-U vindt uw geïnstalleerde apps in de [Startmenu](holographic-home.md) en u vindt aanvullende apps voor HoloLens in [de Microsoft Store.](holographic-store-apps.md)
+U vindt uw geïnstalleerde apps in de [Startmenu](holographic-home.md) en u vindt aanvullende apps voor HoloLens in [de Microsoft Store](holographic-store-apps.md).
 
-Net zoals Windows pc altijd de ervaring op het bureaublad start, HoloLens altijd **in** Mixed Reality Startpagina ingeschakeld.  Met de Startmenu kunt u app-vensters openen en plaatsen, evenals starters voor apps en 3D-inhoud in Mixed Reality Startpagina. Hun plaatsingen in uw fysieke ruimte worden onthouden door HoloLens.
+Net zoals Windows pc altijd op het bureaublad wordt gestart, HoloLens altijd **in** Mixed Reality Startpagina ingeschakeld.  Met behulp Startmenu kunt u app-vensters openen en plaatsen, evenals starters voor apps en 3D-inhoud in Mixed Reality Startpagina. Hun plaatsingen in uw fysieke ruimte worden onthouden door HoloLens.
 
 Open de **Startmenu** en selecteer vervolgens de **Instellingen** app. Er wordt een app-venster voor u geopend.
 
 Instellingen is een voorbeeld van een HoloLens-app die gebruikmaakt van een **2D-app-venster.**  Het is vergelijkbaar met een Windows-toepassing op de pc.
 
-Nu kunt u de Startmenu **openen** en de tegel **Tips** app selecteren. Er wordt een **3D-starter** voor de app voor u weergegeven. Als u de app wilt openen, moet u de knop **Afspelen** in het startstarter selecteren.
+Nu kunt u de Startmenu **openen** en de tegel Tips **app** selecteren. Er wordt een **3D-starter** voor de app voor u weergegeven. Als u de app wilt openen, moet u de knop **Afspelen** selecteren in het startstart.
 
-Tips is een voorbeeld van een **in immersieve app**. Een in immersieve app leidt u weg van Mixed Reality Startpagina wanneer deze wordt uitgevoerd en wordt de enige app die u ziet.  Als u wilt afsluiten, moet u de Startmenu en de knop **Mixed Reality Startpagina** selecteren.
+Tips is een voorbeeld van een **in immersieve app**. Een in immersieve app leidt u weg van Mixed Reality Startpagina wanneer deze wordt uitgevoerd en wordt de enige app die u ziet.  Als u wilt afsluiten, moet u de Startmenu en de knop **Mixed Reality Startpagina** onderaan selecteren.
 
 ### <a name="power-menu-from-start"></a>Aan/uit-menu vanaf het startmenu
 
@@ -159,7 +159,7 @@ Een nieuw menu waarmee de gebruiker zich kan af- en afsluiten en het apparaat op
 
 ## <a name="move-resize-and-rotate-holograms"></a>Hologrammen verplaatsen, het izeseren en draaien
 
-In Mixed Reality Startpagina kunt u app-vensters en 3D-objecten verplaatsen, het iseren en roteren met behulp van uw handen, hand ray- en spraakopdrachten.
+In Mixed Reality Startpagina kunt u app-vensters en 3D-objecten verplaatsen, het iseren en draaien met behulp van uw handen, hand ray en spraakopdrachten.
 
 ### <a name="moving-holograms"></a>Hologrammen verplaatsen
 
@@ -194,7 +194,7 @@ U kunt ook een 3D-hologram of app-venster met beide **handen** (of hand ray) teg
 
 ### <a name="follow-me-stop-following"></a>Volg mij, stop met het volgende
 
-Hologrammen en app-vensters blijven waar u ze in de wereld hebt geplaatst.  Dat is niet altijd handig als u wilt verplaatsen en u wilt dat een toepassing zichtbaar blijft. Als u een app wilt vragen om te starten of stoppen met volgen, selecteert u Volg **mij** in de rechterbovenhoek van het app-venster (naast de **knop** Sluiten).  In een app-venster dat volgt, wordt u ook in een uit-app doorvervolgd.
+Hologrammen en app-vensters blijven waar u ze ter wereld hebt geplaatst.  Dat is niet altijd handig als u wilt verplaatsen en u wilt dat een toepassing zichtbaar blijft. Als u een app wilt vragen om te starten of stoppen met volgen, selecteert u Volg **mij** in de rechterbovenhoek van het app-venster (naast de **knop** Sluiten).  In een app-venster dat volgt, volgt u ook een uit-app.
 
 ## <a name="use-hololens-with-your-voice"></a>Uw HoloLens gebruiken
 
@@ -202,7 +202,7 @@ U kunt uw stem gebruiken om de meeste dingen te doen die u ook doet met hands on
 
 | Functie | Stel dit |
 | - | - |
-| Het Startmenu openen | Ga naar start |
+| Het Startmenu openen | 'Ga naar start' |
 | Selecteer | Zeg 'selecteren' om de cursor te laten staren. Zet vervolgens uw hoofd om de cursor te plaatsen op het ding dat u wilt selecteren en zeg nogmaals 'selecteren'. |
 | Beschikbare spraakopdrachten bekijken | "Wat kan ik zeggen?" |
 
@@ -210,15 +210,15 @@ U kunt uw stem gebruiken om de meeste dingen te doen die u ook doet met hands on
 
 ## <a name="swipe-to-type"></a>Veeg om te typen
 
-Sommige klanten vinden het sneller 'typen' op virtuele toetsenborden door de vorm te vegen van het woord dat ze willen typen. Met [Windows Holographic, versie 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)kunt u nu met één woord tegelijk vegen door de punt van uw vinger door het vlak van het holografische toetsenbord te bewegen, de vorm van het woord te vegen en vervolgens de punt van uw vinger vanaf het vlak van het toetsenbord in te trekken. U kunt vervolgwoorden swipen zonder dat u op de spatiebalk hoeft te drukken door uw vinger tussen woorden van het toetsenbord te verwijderen. U weet dat de functie werkt als u een veegtrail ziet na de beweging van uw vinger op het toetsenbord.
+Sommige klanten vinden het sneller 'typen' op virtuele toetsenborden door de vorm te vegen van het woord dat ze willen typen. Met [Windows Holographic, versie 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)kunt u nu met één woord tegelijk vegen door de punt van uw vinger door het vlak van het holografische toetsenbord te bewegen, de vorm van het woord te vegen en vervolgens de punt van uw vinger uit het vlak van het toetsenbord te halen. U kunt de volgende woorden swipen zonder op de spatiebalk te hoeven drukken door uw vinger tussen woorden van het toetsenbord te verwijderen. U weet dat de functie werkt als u een veegtrail ziet na de beweging van uw vinger op het toetsenbord.
 
 Houd er rekening mee dat deze functie lastig te gebruiken en te beheersen kan zijn vanwege de aard van een holografische toetsenbord waar u geen bescherming tegen uw vinger hebt (in tegenstelling tot een mobiele telefoonweergave). We evalueren deze functie voor openbare release, dus uw feedback is belangrijk; Of u de functie nuttig vindt of dat u opbouwende feedback hebt, laat het ons weten via [Feedback-hub](hololens-feedback.md).
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Gefeliciteerd! U kunt nu de HoloLens 2.
+Gefeliciteerd! U bent klaar om uw HoloLens 2.
 
-Nu kunt u uw HoloLens 2 om aan uw specifieke behoeften te voldoen.  Andere dingen die u misschien wilt proberen, zijn:
+Nu kunt u uw HoloLens 2 om te voldoen aan uw specifieke behoeften.  Andere dingen die u misschien wilt proberen, zijn:
 
 - [Bluetooth-apparaten verbinden, zoals een muis en toetsenbord](hololens-connect-devices.md)
 - [Apps installeren vanuit de Store](holographic-store-apps.md)

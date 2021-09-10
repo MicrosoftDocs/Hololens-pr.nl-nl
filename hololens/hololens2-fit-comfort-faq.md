@@ -13,33 +13,33 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9edcf4e49d92bbdcab523206e4685f2d7a8d8b0e2c2ccf8391ea2b32e304201f
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 158354c23e93abe770875491af1ab559e47557a7
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659791"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427294"
 ---
 # <a name="hololens-2-fit-and-comfort-frequently-asked-questions"></a>HoloLens 2 veelgestelde vragen over fit en comfort
 
-Hier vindt u enkele tips over hoe u vertrouwd blijft en de beste ervaring hebt met het gebruik van uw HoloLens.
+Hier vindt u enkele tips over hoe u vertrouwd blijft en de beste ervaring hebt met het gebruik van HoloLens.
 
 Zie Get your HoloLens 2 ready to use (Uw apparaat voorbereiden voor gebruik) voor stapsgewijse instructies en een video over het in- en aanpassen [van uw apparaat.](hololens2-setup.md)
 
 > [!NOTE]
 > De tips voor passendheid en comfort in dit onderwerp zijn alleen bedoeld als algemene richtlijnen die geen wetten of voorschriften vervangen, of uw goede oordeel bij het gebruik &mdash; van HoloLens. Blijf veilig en veel plezier!
 
-Hier vindt u enkele tips over hoe u vertrouwd blijft en de beste ervaring hebt met het gebruik van uw HoloLens.
+Hier vindt u enkele tips over hoe u vertrouwd blijft en de beste ervaring hebt met het gebruik van HoloLens.
 
 ## <a name="im-experiencing-discomfort-when-i-use-my-device-what-should-i-do"></a>Ik ondervind problemen wanneer ik mijn apparaat gebruik. Wat moet ik doen?
 
-Als u het behaaglijk vindt, neem dan even de tijd totdat u zich beter voelen. Probeer eens in een goed belichte ruimte te zitten en even te gaan zitten. De volgende keer dat u uw HoloLens, probeert u deze eerst voor een kortere periode te gebruiken.
+Als u het behaaglijk vindt, neem dan even de tijd totdat u zich beter voelen. Probeer eens in een goed belichte ruimte te zitten en een beetje te verversen. De volgende keer dat u uw HoloLens, probeert u deze eerst voor een kortere periode te gebruiken.
 
-Zie Health and safety on HoloLens (Status en [veiligheid op HoloLens).](https://go.microsoft.com/fwlink/p/?LinkId=746661)
+Zie Health [and safety on HoloLens](https://go.microsoft.com/fwlink/p/?LinkId=746661)(Status en veiligheid op HoloLens).
 
 ## <a name="i-cant-see-the-whole-holographic-frame-or-my-holograms-are-cut-off"></a>Ik kan het hele holografische frame niet zien of mijn hologrammen zijn afgesneden
 
-Als u de bovenrand van het holografische frame wilt zien, verplaatst u het apparaat zodat het hoger op uw hoofd staat of plaatst u de hoofdband iets vooraan in de hoek. Als u de onderrand wilt zien, moet u het apparaat lager op uw hoofd laten zitten of de hoofdband iets voorin laten vallen. Als de linker- of rechterrand van het weergaveframe niet zichtbaar is, moet u ervoor zorgen dat HoloLens visor op uw hart is gecentreerd.
+Als u de bovenrand van het holografische frame wilt zien, verplaatst u het apparaat zodat het hoger op uw hoofd staat of plaatst u de hoofdband iets vooraan in de hoek. Als u de onderrand wilt zien, verplaatst u het apparaat naar beneden op uw hoofd of laat u de hoofdband iets naar beneden vallen. Als de linker- of rechterrand van het weergaveframe niet zichtbaar is, moet u ervoor zorgen dat HoloLens visor op uw hart is gecentreerd.
 
 ## <a name="i-need-to-look-up-or-down-to-see-holograms"></a>Ik moet omhoog of omlaag kijken om hologrammen te zien
 
@@ -52,15 +52,15 @@ Probeer de positie van uw apparaat-visor aan te passen, zodat het holografische 
 
 Zie de HoloLens 2 [stappen voor probleemoplossing weer te geven.](hololens2-display.md)
 
-## <a name="the-device-slides-down-when-im-using-it-or-i-need-to-make-the-headband-too-tight-to-keep-it-secure"></a>Het apparaat schuift omlaag wanneer ik het gebruik, of ik moet de hoofdband te dicht maken om het te beveiligen
+## <a name="the-device-slides-down-when-im-using-it-or-i-need-to-make-the-headband-too-tight-to-keep-it-secure"></a>Het apparaat schuift omlaag wanneer ik het gebruik of ik moet de hoofdband te dicht maken om het te beveiligen
 
-De overhead-overhead kan helpen uw HoloLens uw hoofd te beveiligen, met name als u veel verplaatst. Met de snoer kunt u de hoofdband ook een beetje verdraaien. [Meer informatie over het gebruik ervan.](hololens2-setup.md#adjust-fit)
+De overhead-overhead kan helpen uw HoloLens op uw hoofd te houden, met name als u veel verplaatst. Met de snoer kunt u de hoofdband ook een beetje laten binden. [Meer informatie over het gebruik ervan.](hololens2-setup.md#adjust-fit)
 
 U kunt ook experimenteren met de positie van de hoofdband, afhankelijk van de grootte en vorm van uw hoofd. Mogelijk moet u deze omhoog of omlaag schuiven om de hoofdband op uw auto &mdash; te plaatsen.
 
-## <a name="how-can-i-adjust-hololens-to-fit-with-my-glasses"></a>Hoe kan ik de HoloLens op mijn bril passen?
+## <a name="how-can-i-adjust-hololens-to-fit-with-my-glasses"></a>Hoe kan ik de HoloLens aanpassen aan mijn bril?
 
-U kunt de visor kantelen om ruimte te bieden voor oogletsel.
+U kunt de visor kantelen om oogcontacten mogelijk te maken.
 
 ## <a name="my-arm-gets-tired-when-i-use-gestures-what-can-i-do"></a>Mijn arm wordt uitgeput wanneer ik gebaren gebruik. Wat kan ik doen?
 

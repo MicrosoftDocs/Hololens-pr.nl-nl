@@ -1,7 +1,7 @@
 ---
 title: 'Implementatiehandleiding : zakelijk verbonden HoloLens 2 met Dynamics 365 Guides - Implementeren'
 description: Meer informatie over het instellen van implementaties van HoloLens 2 apparaten via een bedrijfsnetwerk verbonden met Dynamics 365 Guides.
-keywords: HoloLens, beheer, zakelijk verbonden, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Device Management
+keywords: HoloLens, beheer, verbonden bedrijf, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile Device Management
 author: joyjaz
 ms.author: v-jjaswinski
 ms.reviewer: aboeger
@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 7df2b00b2d87be7b9ad4a5d84c83251ec0ebec4d
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189678"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428121"
 ---
 # <a name="deploy---corporate-connected-guide"></a>Implementeren - Corporate Connected Guide
 
@@ -31,7 +31,7 @@ Daarna kunt u bevestigen dat u zowel een testhandleiding kunt maken als gebruike
 
 ## <a name="enrollment-validation"></a>Validatie van inschrijving
 
-Nu alles goed is geconfigureerd voor Azure AD- en MDM-inschrijving, moet de rest een uitlijning zijn. U hebt een Wi-Fi- en HoloLens en een van de eerder geconfigureerde Azure AD-gebruikersaccounts nodig.
+Nu alles goed is geconfigureerd voor Azure AD- en MDM-inschrijving, is de rest nu een module. U hebt een Wi-Fi- en HoloLens apparaat en een van de eerder geconfigureerde Azure AD-gebruikersaccounts nodig.
 
 Als uw apparaat momenteel niet de status fabrieksinstellingen heeft, is dit een goed moment om het apparaat opnieuw [te gebruiken.](/hololens/hololens-recovery#clean-reflash-the-device)
 
@@ -45,7 +45,7 @@ Als uw apparaat momenteel niet de status fabrieksinstellingen heeft, is dit een 
 
 5. Zodra u op de start Mixed Reality, opent u de Startmenu met behulp van de **gebaar Start** die u zojuist hebt geleerd.
 
-6. Selecteer de **Instellingen app** en selecteer **Systeem**. Het eerste stukje informatie dat u ziet, is de apparaatnaam, die voor uw HoloLens 2 hololens is, gevolgd door een &quot; &quot; tekenreeks van zes tekens.
+6. Selecteer de **Instellingen app** en selecteer **Systeem.** Het eerste stukje informatie dat u ziet, is de apparaatnaam, die voor uw HoloLens 2 hololens is, gevolgd door &quot; &quot; een tekenreeks van zes tekens.
 
 7. Noteer deze naam.
 
@@ -53,14 +53,14 @@ Als uw apparaat momenteel niet de status fabrieksinstellingen heeft, is dit een 
 
 8. Controleer of uw apparaat is verbonden met Azure AD. Er zijn twee manieren:
 
-    1.  De Instellingen app. Selecteer **Instellingen** Accounts **Toegang tot** werk of  ->  **school.** In dit scherm kunt u controleren of u bent ingeschreven door Verbonden met naamvanAAD te zien&#39;&quot; Azure AD. Verbonden door *yourusername@nameofAAD.onmicrosoft.com* . Hiermee wordt gecontroleerd of uw apparaat is verbonden met uw organisatie&#39;Azure AD.
+    1.  De Instellingen app. Selecteer **Instellingen** Accounts **Toegang tot** werk of  ->  **school.** In dit scherm kunt u controleren of u bent ingeschreven. Zie Verbonden met &quot; naamvanAAD&#39;Azure AD. Verbonden door *yourusername@nameofAAD.onmicrosoft.com* . Hiermee wordt gecontroleerd of uw apparaat is verbonden met uw organisatie&#39;Azure AD.
 
-    1. De [Azure Portal](https://portal.azure.com/#home). Ga naar **Azure Active Directory**  ->  **Apparaten**  ->  **Alle apparaten en** zoek de naam van het apparaat. Onder Jointype wordt deze als 'Azure AD-lid' weer geven.
+    1. De [Azure Portal](https://portal.azure.com/#home). Ga naar **Azure Active Directory**  ->  **Apparaten**  ->  **Alle apparaten** en zoek de naam van het apparaat. Onder Jointype wordt deze als 'Azure AD-lid' weer geven.
         ![Controleer het jointype in Azure AD.](./images/hololens2-devices-all-devices.png)
 
 9. Controleer of uw apparaat is ingeschreven bij MDM. Er zijn twee manieren:
 
-    1. Selecteer **Instellingen** accounts **Toegang tot** werk of  ->  **school.** In dit scherm kunt u controleren of u bent ingeschreven door Verbonden met naamvanAAD te zien&#39;&quot; Azure AD. Verbonden door *yourusername@nameofAAD.onmicrosoft.com* . Selecteer in dit Toegangsaccount voor werk of school &quot; Verbonden met naamofAAD&#39;Azure AD. Verbonden door yourusername@nameofAAD.onmicrosoft.com &quot; en selecteer de knop **Info.**
+    1. Selecteer **Instellingen** accounts **Toegang tot** werk  ->  **of school.** In dit scherm kunt u controleren of u bent ingeschreven. Zie Verbonden met &quot; naamvanAAD&#39;Azure AD. Verbonden door *yourusername@nameofAAD.onmicrosoft.com* . Selecteer vanuit dit Toegangsaccount voor werk of school de optie Verbonden met &quot; naamofAAD&#39;Azure AD. Verbonden door yourusername@nameofAAD.onmicrosoft.com &quot; en selecteer de knop **Info.**
 
     1. [Microsoft Endpoint Manager-beheercentrum.](https://endpoint.microsoft.com/#home) Meld u aan en selecteer **Apparaten** en **vervolgens Alle apparaten.** Hier kunt u de naam van HoloLens apparaat&#39;zoeken. Als het goed is, kunt u uw HoloLens in Intune zien.
 
@@ -69,19 +69,19 @@ Als uw apparaat momenteel niet de status fabrieksinstellingen heeft, is dit een 
 
 ## <a name="wi-fi-certificate-validation"></a>Wi-Fi certificaatvalidatie
 
-Op dit moment moet het apparaat het Wi-Fi ontvangen. De eenvoudigste validatie die u kunt uitvoeren, is verbinding maken met Wi-Fi verbinding waarvoor u&#39;certificaat hebt ontvangen. Open de  Instellingen app, navigeer naar **Network &amp; Internet**  ->  **Wi-Fi** en selecteer de Wi-Fi-verbinding. Nadat u verbinding hebt gemaakt, opent u Microsoft Edge app en bevestigt u dat u naar een website kunt navigeren.
+Op dit moment moet het apparaat het Wi-Fi ontvangen. De eenvoudigste validatie die u kunt uitvoeren, is proberen verbinding te maken met Wi-Fi verbinding waarvoor u&#39;certificaat hebt ontvangen. Open de  Instellingen app, navigeer naar **Network &amp; Internet**  ->  **Wi-Fi** en selecteer de Wi-Fi-verbinding. Nadat u verbinding hebt gemaakt, opent u Microsoft Edge app en bevestigt u dat u naar een website kunt navigeren.
 
 Als u wilt bevestigen dat u het certificaat op het apparaat hebt ontvangen, kunt u [certificaatbeheer gebruiken.](/hololens/certificate-manager)
 
 ## <a name="validate-lob-app-install"></a>Installatie van LOB-app valideren
 
-Als u de voortgang van de installatie van een beheerde app wilt bekijken, controleert u of de app is geïnstalleerd of Instellingen. Door een LOB-app te configureren als een vereiste installatie voor onze groep, wordt de app na inschrijving van de HoloLens met een gebruiker in de toegewezen groep automatisch gedownload naar de HoloLens.
+Als u de voortgang van de installatie van een beheerde app wilt bekijken, controleert u of de app is geïnstalleerd of Instellingen. Door een LOB-app te configureren als een vereiste installatie voor onze groep, wordt de app, nadat de HoloLens is ingeschreven bij een gebruiker in de toegewezen groep, automatisch gedownload naar de HoloLens.
 
 Open het Startmenu en selecteer **Alle apps**. Afhankelijk van het aantal apps dat u hebt, moet u mogelijk de knoppen Pagina **omhoog** of Omlaag **gebruiken.**
 
 Als u de installatie van de app op het apparaat wilt valideren, kunt u dit doen via Instellingen-accounts Toegang tot werk of school. Selecteer het account en vervolgens de knop Info en schuif omlaag om verschillende configuraties en apps te zien die op het apparaat zijn toegepast vanuit  ->    ->  MDM. 
 
-Als u de installatie vanuit Intune wilt valideren, gaat u naar de [pagina Mem portal](https://endpoint.microsoft.com/#home)  ->  **Apps** -> All **apps**  -> *TheNameOfYourApp*  ->  **Device install status** page.
+Als u de installatie vanuit Intune wilt valideren, gaat u naar de pagina Apps -> Alle apps van de [MEM-portal](https://endpoint.microsoft.com/#home)  ->     -> *TheNameOfYourApp*  ->  **Device install status.**
 
 Meer informatie: [Intune-app-implementatie voor HoloLens](/hololens/app-deploy-intune)
 

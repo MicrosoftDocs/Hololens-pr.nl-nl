@@ -1,6 +1,6 @@
 ---
 title: Overzicht van cloud verbonden HoloLens 2 met Remote Assist
-description: Meer informatie over het inschrijven van HoloLens 2 via een met de cloud verbonden netwerk met behulp van Dynamics 365 Remote Assist.
+description: Meer informatie over het inschrijven HoloLens 2 apparaten via een met de cloud verbonden netwerk met behulp van Dynamics 365 Remote Assist.
 keywords: HoloLens, beheer, verbonden met de cloud, Remote Assist, AAD, Azure AD, MDM, Mobile Device Management
 author: evmill
 ms.author: v-evmill
@@ -15,17 +15,17 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 66e543dd699edbd54ab41474f3ea86fa313bf6ba
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189644"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428070"
 ---
 # <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>Implementatiehandleiding - Cloud verbonden HoloLens 2 met Remote Assist – Overzicht
 
 Deze handleiding helpt IT-professionals bij het plannen en implementeren van Microsoft HoloLens 2 apparaten met Remote Assist in hun organisatie. Dit dient als een model voor proof-of-concept-implementaties in uw organisatie voor HoloLens 2 gebruiksgevallen. De installatie is vergelijkbaar met [Scenario A: Implementeren naar apparaten die verbinding maken met de cloud.](common-scenarios.md#scenario-a) 
 
-Tijdens de handleiding wordt belijnd hoe u uw apparaten kunt registreren bij uw apparaatbeheer, licenties kunt toepassen als dat nodig is, en hoe u kunt valideren dat uw eindgebruikers de apparaten direct kunnen gebruiken Remote Assist de installatie van het apparaat. Om dit te doen, gaan we de belangrijke onderdelen van de infrastructuur door die nodig zijn om de implementatie op schaal te HoloLens 2. Er worden geen andere apparaatbeperkingen of configuraties toegepast in deze handleiding, maar we raden u aan deze opties na het afronden te verkennen.
+Tijdens de handleiding wordt belijnd hoe u uw apparaten kunt registreren bij uw apparaatbeheer, licenties kunt toepassen wanneer dat nodig is en hoe u kunt valideren dat uw eindgebruikers de apparaten direct kunnen gebruiken Remote Assist de installatie van het apparaat. Hiervoor gaan we in op de belangrijke onderdelen van de infrastructuur die nodig zijn om alles in te stellen en te laten werken: implementatie op schaal bereiken met HoloLens 2. Er worden geen andere apparaatbeperkingen of configuraties toegepast in deze handleiding, maar we raden u aan deze opties na het afronden te verkennen.
 
 ## <a name="prerequisites"></a>Vereisten
 
@@ -38,12 +38,12 @@ Dit is een installatie die vergelijkbaar is met [Scenario A:](/hololens/common-s
 - Gebruikers melden zich aan met hun eigen bedrijfsaccount (Azure AD)
     - Eén of meerdere gebruikers per apparaat worden ondersteund.
 
-:::image type="content" alt-text="Scenario dat is verbonden met de cloud." source="./images/deployment-guides-revised-scenario-a.png" lightbox="./images/deployment-guides-revised-scenario-a.png":::
+:::image type="content" alt-text="Scenario met cloud verbonden." source="./images/deployment-guides-revised-scenario-a.png" lightbox="./images/deployment-guides-revised-scenario-a.png":::
 
 
 ## <a name="learn-about-remote-assist"></a>Meer informatie over Remote Assist
 
-Remote Assist voor samenwerking onderhoud en reparatie, externe inspectie, kennisdeling en training. Door verbinding te maken met personen in verschillende rollen en locaties, kan een monteur die gebruikmaakt van Remote Assist verbinding maken met een externe samenwerker op Microsoft Teams. Ze kunnen video's, schermopnamen en aantekeningen combineren om problemen in realtime op te lossen, zelfs wanneer ze zich niet op dezelfde locatie bevinden. Externe samenwerkers kunnen referentieafbeeldingen, schema's en andere nuttige informatie over de fysieke ruimte van de monteur invoegen, zodat ze naar het schema kunnen verwijzen tijdens het werken zonder kop en zonder HoloLens.
+Remote Assist voor samenwerking onderhoud en reparatie, externe inspectie, evenals kennisdeling en training. Door verbinding te maken met personen in verschillende rollen en locaties, kan een technicus die gebruikmaakt van Remote Assist verbinding maken met een externe medewerker op Microsoft Teams. Ze kunnen video's, schermopnamen en aantekeningen combineren om problemen in realtime op te lossen, zelfs wanneer ze zich niet op dezelfde locatie bevinden. Externe samenwerkers kunnen referentieafbeeldingen, schema's en andere nuttige informatie over de fysieke ruimte van de technicus invoegen, zodat ze naar het schema kunnen verwijzen tijdens het werken zonder kop en zonder HoloLens.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -59,10 +59,10 @@ Remote Assist voor samenwerking onderhoud en reparatie, externe inspectie, kenni
 
 #### <a name="microsoft-teams-user"></a>Microsoft Teams gebruiker
 
-- Microsoft Teams of [Teams Freemium](https://products.office.com/microsoft-teams/free).
+- Microsoft Teams of [Teams Freemium.](https://products.office.com/microsoft-teams/free)
 - Netwerkverbinding
 
-Als u van plan bent dit scenario voor [verschillende tenants te implementeren,](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)hebt u mogelijk een licentie voor informatiebarrières nodig. Zie Leveranciers en klanten gebruiken volledige mogelijkheden om te bepalen of een licentie voor een [Dynamics 365 Remote Assist is vereist.](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation)
+Als u van plan bent dit scenario voor verschillende [tenants te implementeren,](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)hebt u mogelijk een licentie voor informatiebarrières nodig. Zie Leveranciers en klanten gebruiken volledige mogelijkheden Dynamics 365 Remote Assist om te bepalen of een licentie voor [Dynamics 365 Remote Assist is vereist.](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation)
 
 ## <a name="in-this-guide-you-will"></a>In deze handleiding gaat u het volgende doen:
 

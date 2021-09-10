@@ -13,24 +13,24 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: fe29e4ed611f86764f0db576b1a8794fa0ceec3047cadd26f502209faadea8b0
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 74eb003aafd23218b90988abe113d35f1fc3035a
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661825"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427735"
 ---
 # <a name="install-localized-versions-of-hololens-1st-gen"></a>Gelokaliseerde versies van HoloLens (eerste generatie) installeren
 
 Als u wilt overschakelen naar de Chinese of Japanse versie van HoloLens, moet u de Windows Device Recovery Tool (WDRT) gebruiken om de build voor de taal te downloaden op een pc en deze vervolgens op uw HoloLens.
 
 > [!IMPORTANT]
-> Als u WDRT gebruikt om de Chinese of Japanse builds van HoloLens verwijdert u bestaande gegevens, zoals persoonlijke bestanden en instellingen, uit uw HoloLens. 
+> Met WDRT voor het installeren van de Chinese of Japanse builds van HoloLens worden bestaande gegevens, zoals persoonlijke bestanden en instellingen, uit uw HoloLens. 
 
 1. Download en installeer de Windows [Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379)op uw pc.
 1. Download het pakket voor de taal die u op uw pc wilt: [Vereenvoudigd Chinees](https://aka.ms/hololensdownload-ch) of [Japans.](https://aka.ms/hololensdownload-jp)
 1. Wanneer het downloaden is voltooien, selecteert **u**  >  **Bestandenverkenner Downloads.** Klik met de rechtermuisknop op de ingepakte map die u zojuist hebt gedownload en selecteer **Alles** uitpakken om het uit  >   tepakken.
-1. Verbinding maken uw HoloLens naar uw pc met behulp van de micro-USB-kabel die wordt meegeleverd. (Zelfs als u andere kabels hebt gebruikt om uw HoloLens, werkt deze het beste.)
+1. Verbinding maken uw HoloLens op uw pc met behulp van de micro-USB-kabel die wordt meegeleverd. (Zelfs als u andere kabels hebt gebruikt om uw HoloLens, werkt deze het beste.)
 1. Nadat het hulpprogramma uw apparaat automatisch detecteert HoloLens, selecteert u de Microsoft HoloLens tegel.
 1. Selecteer in het **** volgende scherm Handmatige pakketselectie en selecteer het installatiebestand dat zich in de map bevindt die u in stap   4 hebt uitgepakt. (Zoek naar een bestand met de extensie ".ffu".) 
 1. Selecteer **Software installeren** en volg de instructies. 
@@ -41,4 +41,4 @@ Wanneer u klaar bent met de installatie, gaat u naar **Instellingen** Update & S
 > [!NOTE]
 >  
 > - U kunt de app Instellingen gebruiken om de systeemtaal te wijzigen tussen Engels, Japans en Chinees. Het flashen van een nieuwe build is de enige ondersteunde manier om de taal van het apparaatsysteem te wijzigen.
-> - Hoewel u het scherm Pinyin toetsenbord vereenvoudigd Chinees of Japans kunt invoeren, wordt het gebruik van een Bluetooth hardware toetsenbord vereenvoudigd Chinees of Japans tekst op dit moment niet ondersteund.  Op Chinese of Japanse HoloLens kunt u echter een Bluetooth-toetsenbord gebruiken om in het Engels te typen (als u een hardwaretoetsenbord in het Engels wilt typen, drukt u op de ~ toets).
+> - Hoewel u het scherm pinyin toetsenbord vereenvoudigd Chinees of Japans tekst invoeren kunt, met behulp van een Bluetooth hardware toetsenbord vereenvoudigd Chinees of Japans tekst wordt op dit moment niet ondersteund.  Op Chinese of Japanse HoloLens kunt u echter een Bluetooth-toetsenbord gebruiken om in het Engels te typen (als u een hardwaretoetsenbord in het Engels wilt typen, drukt u op de ~ toets).

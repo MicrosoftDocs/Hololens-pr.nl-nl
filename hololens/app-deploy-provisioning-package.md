@@ -1,6 +1,6 @@
 ---
 title: Inrichtingspakket
-description: Meer informatie over app-verpakking, inrichting, implementatie en implementatie van bedrijfsapps voor HoloLens apparaten.
+description: Meer informatie over app-verpakking, inrichting, implementatie en implementatie van bedrijfsapps HoloLens apparaten.
 keywords: app, app-implementatie, implementatie van bedrijfsapps, inrichting
 author: evmill
 ms.author: v-evmill
@@ -15,25 +15,25 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: d071f4326a35a9ea61e2069618da7107bb808f04
-ms.sourcegitcommit: f480d3cc8d549fa356e05df6ce15e9517f5b978a
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "123610986"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427644"
 ---
 # <a name="provisioning-package"></a>Inrichtingspakket
 
-Inrichtingspakketten kunnen worden gebruikt voor het voorbereiden en configureren van apparaten in een omgeving zonder toegang tot eindpuntbeheer. Ze kunnen ook worden geïmplementeerd op een apparaat, ongeacht de identiteit van de gebruiker, de inschrijvingsstatus, tijdens de Out-of-Box Experience (OOBE) of door een inrichtingspakket toe te passen tijdens de [installatie](/hololens/hololens-provisioning##apply-a-provisioning-package-to-hololens-during-setup).
+Inrichtingspakketten kunnen worden gebruikt om apparaten voor te bereiden en te configureren in een omgeving zonder toegang tot eindpuntbeheer. Ze kunnen ook worden geïmplementeerd op een apparaat, ongeacht de identiteit van de gebruiker, de inschrijvingsstatus, tijdens de Out-of-Box Experience (OOBE) of door een inrichtingspakket toe te passen tijdens de [installatie](/hololens/hololens-provisioning##apply-a-provisioning-package-to-hololens-during-setup).
 
 ## <a name="provisioning-packages-considerations"></a>Overwegingen bij inrichtingspakketten
 
 * Niet-openbare apps
 * Alleen USB-side-load
-* Geen automatische update (vereist handmatige updates via PPKG's)
+* Geen automatische update (handmatige updates via PPKG's vereist)
 
 Apps die zijn geïnstalleerd via een inrichtingspakket, moeten zijn ondertekend met een certificaat in het lokale computeropslag. Met inrichtingspakketten kunnen alleen certificaten worden geïnstalleerd op het apparaatopslag (lokale computer). Daarom kunnen een app en een certificaat worden geïnstalleerd via hetzelfde inrichtingspakket. Als u uw certificaat van MDM implementeert of installeert via [Certificaatbeheer,](certificate-manager.md)moet u het certificaat implementeren in de store van de lokale computer om apps te ondertekenen die op deze manier zijn geïnstalleerd.
 
-Als u de basisbeginselen van het maken van een inrichtingspakket voor HoloLens apparaten wilt leren, gaat u [HoloLens Inrichting.](/hololens/hololens-provisioning) Als u een app wilt implementeren, moet u beginnen met geavanceerde inrichting.
+Voor meer informatie over de basisbeginselen van het maken van een inrichtingspakket HoloLens apparaten, gaat u [HoloLens Inrichting.](/hololens/hololens-provisioning) Als u een app wilt implementeren, moet u beginnen met geavanceerde inrichting.
 
 > [!NOTE]
 > HoloLens (eerste generatie) biedt beperkte ondersteuning voor het installeren van apps **(UniversalAppInstall)** met behulp van een inrichtingspakket. HoloLens apparaten (eerste generatie) bieden alleen ondersteuning voor het installeren van een app via PPKG tijdens OOBE en alleen met installatie van gebruikerscontext.

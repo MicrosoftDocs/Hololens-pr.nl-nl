@@ -1,6 +1,6 @@
 ---
 title: Een nieuwe HoloLens
-description: Meer informatie over het voorbereiden, aanpassen en instellen van uw HoloLens (eerste generatie) mixed reality apparaat voor de eerste keer.
+description: Meer informatie over het voorbereiden, aanpassen en instellen van uw HoloLens (1e generatie) mixed reality apparaat voor de eerste keer.
 ms.prod: hololens
 ms.sitesec: library
 author: JesseMcCulloch
@@ -13,15 +13,15 @@ manager: jarrettr
 appliesto:
 - Hololens (1st gen)
 ms.openlocfilehash: 5918e3dcb7f2504ae6e85cb584aaf21bc87217bc
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189253"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427111"
 ---
 # <a name="get-your-hololens-1st-gen-ready-to-use"></a>Uw HoloLens (eerste generatie) gereed maken voor gebruik
 
-Volg de instructies om een HoloLens (1e generatie) voor het eerst in te stellen.
+Volg de instructies om een HoloLens (1e generatie) voor de eerste keer in te stellen.
 
 ## <a name="charge-your-hololens-1st-gen"></a>Uw HoloLens (eerste generatie) in rekening brengen
 
@@ -29,10 +29,10 @@ Als u uw HoloLens, sluit u de voeding aan op de laadpoort met behulp van de meeg
 
 ![Afbeelding die laat zien hoe u de Micro USB-kabel aan de HoloLens.](./images/hololens-charging.png)
 
-Wanneer uw HoloLens is, toont de batterijindicator het accuniveau in stappen. Wanneer slechts een van de vijf lampen is aan, is het accuniveau lager dan 20 procent. Als het accuniveau kritiek laag is en u het apparaat probeert in te zetten, gaat er kort één lampje knipperen en gaat u uit.
+Wanneer uw HoloLens is, toont de batterijindicator het accuniveau in stappen. Wanneer slechts een van de vijf lampen is aan, is het accuniveau lager dan 20 procent. Als het accuniveau kritiek laag is en u het apparaat probeert in te zetten, gaat er kort één lampje knipperen en gaat het uit.
 
 > [!TIP]
-> Als u een schatting wilt maken van uw huidige accuniveau, zegt u "Hey Cortana, hoeveel accu heb ik nog?"
+> Als u een schatting wilt maken van uw huidige accuniveau, zegt u 'Hallo Cortana hoeveel accu heb ik nog?'
 
 De voeding en usb-kabel die bij het apparaat worden meegeleverd, zijn de beste manier om uw apparaat HoloLens (1e generatie) op te laden.  De voeding biedt 18W aan stroom (9V 2A).
 
@@ -73,7 +73,7 @@ HoloLens wordt automatisch in stand-by gezet na 3 minuten inactiviteit. Wanneer 
 
 Als u de stroom wilt afsluiten (uitschakelen) HoloLens u de aan/uit-knop vier seconden ingedrukt. De accuindicatoren worden één voor één uitgeschakeld en het apparaat wordt afgesloten.
 
-HoloLens wordt automatisch afgesloten wanneer het accuniveau daalt tot één procent, zelfs als het aangesloten is. Nadat u de accu hebt op geladen tot drie procent, kunt u de accu HoloLens weer in.
+HoloLens wordt automatisch afgesloten wanneer het accuniveau daalt tot één procent, zelfs als deze is aangesloten. Nadat u de accu hebt op geladen tot drie procent, kunt u de accu HoloLens weer in.
 
 ## <a name="adjust-volume-and-brightness"></a>Volume en helderheid aanpassen
 
@@ -85,7 +85,7 @@ De helderheid- en volumeknoppen staan boven op het volume van de apparaatarmen a
 
 ![Afbeelding met de HoloLens indicatorlichten.](./images/hololens-lights.png)
 
-Weet u niet zeker wat de indicator op uw HoloLens betekent? Hier is wat hulp.
+Weet u niet zeker wat de indicator op uw HoloLens betekent? Hier is hulp.
 
 |Wanneer de lichten dit doen |Dit betekent dat |
 |---|---|
@@ -101,11 +101,11 @@ Weet u niet zeker wat de indicator op uw HoloLens betekent? Hier is wat hulp.
 
 ### <a name="use-in-safe-surroundings"></a>Gebruiken in een veilige omgeving
 
-Gebruik uw HoloLens in een veilige ruimte waar u zich niet kunt bejegend en kunt ijpen. Gebruik deze niet wanneer u een duidelijk gezichtsveld en uw volledige aandacht nodig hebt, zoals wanneer u een voertuig gebruikt of andere mogelijk gevaarlijke activiteiten doet.
+Gebruik uw HoloLens in een veilige ruimte zonder obstakels en trippingsgelasten. Gebruik deze niet wanneer u een duidelijk gezichtsveld en uw volledige aandacht nodig hebt, zoals wanneer u een voertuig gebruikt of andere mogelijk gevaarlijke activiteiten doet.
 
 ### <a name="stay-comfortable"></a>Blijf vertrouwd
 
-Houd uw eerste paar sessies met HoloLens kort en zorg ervoor dat u even pauzes neemt. Als u het behaaglijk vindt, stopt u en rest u totdat u zich beter gaat voelen. Dit kan bestaan uit tijdelijke gevoelens van het bewegen, bewegen, gevoel, desoriëntatie, angst, angst, overbelasting van de ogen of het gebruik van een bloedig gezicht.
+Houd uw eerste paar sessies met HoloLens kort en zorg ervoor dat u even pauzes neemt. Als u het behaaglijk vindt, stopt u en rest u totdat u zich beter gaat voelen. Dit kan bestaan uit tijdelijke gevoelens van hn, bewegingsbelasting, gevoel, desoriëntatie, angst, last, overbelasting van de ogen of bloedige ogen.
 
 > [!div class="nextstepaction"]
 > [Uw HoloLens (eerste generatie) starten en configureren](hololens1-start.md)

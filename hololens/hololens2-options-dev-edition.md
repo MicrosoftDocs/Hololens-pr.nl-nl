@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: ee2b87823324f3183d86763d47b38ca0503f0aeb
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123190341"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427033"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 Development Edition
 
@@ -30,7 +30,7 @@ Begin met het bouwen mixed reality deze aanbieding die HoloLens 2 combineert met
 > [!NOTE]
 > De Development Edition mag niet worden geïmplementeerd met een commercieel gedistribueerde oplossing. De Development Edition mag worden geïmplementeerd bij het ontwikkelen en/of testen van toepassingen in een commerciële omgeving.  
 
-De HoloLens 2 Development Edition bevat een HoloLens 2, $ 500 aan Azure-tegoed, een Unity Pro-proefversie van drie maanden en een proefversie van een PiXYZ-invoegvoegversie van drie maanden:
+De HoloLens 2 Development Edition bevat een HoloLens 2, $ 500 aan Azure-tegoed, een Unity Pro-proefversie van drie maanden en een proefversie van drie maanden voor de PiXYZ-invoegversie:
 
 | Bundelfunctie | Description |
 |---|---|
@@ -43,7 +43,7 @@ De HoloLens 2 Development Edition bevat een HoloLens 2, $ 500 aan Azure-tegoed, 
 ## <a name="redeem-your-credits"></a>Uw tegoed inwisselen
 
 ### <a name="unity"></a>Unity
-U hebt een unieke code ontvangen. Aanwijzingen voor het inwisselen van unity Pro proefversie:
+U hebt een unieke code ontvangen. Aanwijzingen voor het inwisselen van Unity Pro proefversie:
 1. Ga [id.unity.com](http://id.unity.com/)
 1. Meld u aan met uw Unity-id of maak er een
 1. Klik **op Een productcode inwisselen**
@@ -60,11 +60,11 @@ U hebt een unieke code ontvangen. Aanwijzingen voor het inwisselen van de proefv
 Meer informatie over het inwisselen [van uw Pixyz-licentie.](https://www.pixyz-software.com/documentations/html/2020.1/review/TrialLicense.html) Neem zo [nodig contact op met pixyz-ondersteuning](https://www.pixyz-software.com/support/) voor hulp.
 
 ### <a name="azure"></a>Azure
-Hier vindt u enkele algemene [Azure-producten voor Mixed Reality](https://azure.microsoft.com/topic/mixed-reality/) u uw Azure-tegoed kunt inwisselen.
+Hier vindt u enkele algemene [Azure-producten voor Mixed Reality](https://azure.microsoft.com/topic/mixed-reality/) u mogelijk uw Azure-tegoed wilt inwisselen.
 Azure-tegoed inwisselen: als u uw Azure-tegoed van $ 500 wilt inwisselen, moet u uw promotiecode Azure Pass en uw abonnement activeren. [Meer informatie.](hololens2-development-edition-faq.yml#how-can-i-redeem-my--500-azure-credit-)
 
 - [Meer informatie over hoe Azure Spatial Anchors u kunt helpen bij het bouwen van apps die 3D-inhoud in kaart brengen, delen en persistent maken](https://azure.microsoft.com/services/spatial-anchors/)
-- [Leer hoe Azure Remote Rendering interactieve 3D-inhoud van hoge kwaliteit kunt renderen en deze in realtime naar uw apparaten kunt streamen](https://azure.microsoft.com/services/remote-rendering/)
+- [Meer informatie Azure Remote Rendering interactieve 3D-inhoud van hoge kwaliteit kan renderen en deze in realtime naar uw apparaten kunt streamen](https://azure.microsoft.com/services/remote-rendering/)
 
 ## <a name="get-started-developing"></a>Aan de slag met ontwikkelen
 
@@ -79,7 +79,7 @@ Kies uw engine, download uw hulpprogramma's en gebruik het toetsenbord. Welkom b
 ## <a name="developer-edition-additional-resources"></a>Aanvullende resources voor Developer Edition
 
 - [HoloLens 2 Veelgestelde vragen over Development Edition](hololens2-development-edition-faq.yml)
-- [Zorg ervoor dat u de hulpprogramma's voor het ontwikkelen HoloLens installeren.](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
+- [Zorg ervoor dat u de hulpprogramma's voor HoloLens ontwikkeling installeert.](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 - [Meer informatie over het ontwikkelen HoloLens 2 met Unity](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
 - [Meer informatie over het combineren van MRTK met Unity](/windows/mixed-reality/develop/unity/mrtk-getting-started).
 - [Meer informatie over het implementeren van uw gebouwde apps.](app-deploy-overview.md)

@@ -18,19 +18,19 @@ appliesto:
 - HoloLens 2
 keywords: HoloLens 2, commercieel, functies, mdm, beheer van mobiele apparaten, kioskmodus, toepassingen, identiteit, Bitlocker, iris, Windows Hello, Azure, Autopilot, mixed reality, WDAC
 ms.openlocfilehash: 0c47eedad0d5a23249c48356765b74e4dbeac33e
-ms.sourcegitcommit: 58b124ba1722b2dff31d93723dd269df0f8319c4
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/04/2021
-ms.locfileid: "123483195"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427210"
 ---
 # <a name="hololens-2-capabilities-and-solutions"></a>HoloLens 2 en oplossingen
 
 ## <a name="why-hololens"></a>Waarom HoloLens?
 
-Dankzij de HoloLens 2 en Mixed Reality kunnen werknemers nu zonder grenzen samenwerken, met precisie handelen en de productiviteit verhogen.
+Dankzij de HoloLens 2 en Mixed Reality kunnen werknemers nu zonder grenzen samenwerken, nauwkeurig werken en de productiviteit verhogen.
 
-Werk zonder grenzen samen en werk nauwkeurig om de productiviteit van werknemers te verhogen met mixed reality toepassingen op HoloLens 2. Blijf betrokken, handen langer vrij en met ingebouwde spraakopdrachten, oogregistratie en world-anchoring voor continue focus op het veilig voltooien van taken zonder fouten. Verbinding maken in realtime met externe collega's en werk samen via een uitgebreid holografische canvas dat is vertraagd in uw fysieke omgeving om snel problemen op het werk op te lossen. Direct rendement op investeringen realiseren met een robuust ecosysteem van toepassingen die worden ondersteund met de beveiliging, betrouwbaarheid en schaalbaarheid van Microsoft.  
+Werk zonder grenzen samen en werk nauwkeurig om de productiviteit van werknemers te verhogen met mixed reality toepassingen op HoloLens 2. Blijf bij met de ingebouwde spraakopdrachten, het bijhouden van ogen en wereldankeren, en blijf met de handen vrij en blijf continu bezig met het veilig uitvoeren van taken zonder fouten. Verbinding maken in realtime met externe collega's en werk samen via een uitgebreid holografische canvas dat is vertraagd in uw fysieke omgeving om snel problemen op het werk op te lossen. Direct rendement op investeringen realiseren met een robuust ecosysteem van toepassingen die worden ondersteund met de beveiliging, betrouwbaarheid en schaalbaarheid van Microsoft.  
 
 We hopen dat dit artikel u inspireren om na te denken over alle manieren waarop mixed reality (MR) uw bedrijf zal helpen.
 
@@ -42,9 +42,9 @@ Wat maakt de HoloLens 2 zo krachtig?
 |---------|-------------|
 | Wereldankering | Ankerde hologrammen blijven nauwkeurig op hun plaats. HoloLens 2 begrijpt uw werkruimte. Digitale inhoud blijft dus in de tijd bestaan en is verankerd in objecten of oppervlakken waar u werkt. |
 | Handtracking | Hologrammen aanraken, begrijpen en verplaatsen op een natuurlijke manier. HoloLens 2 past zich aan uw handen aan voor nieuwe tevredenheid over uw interacties. |
-| Oog bijhouden | Profiteer van een nieuw niveau van context en menselijk inzicht. HoloLens 2 precies begrijpt waar u naar op zoek bent, zodat het uw intentie kan begrijpen en de hologrammen in realtime aan uw ogen kan aanpassen. |
-| Spraak ingeschakeld | Met ingebouwde spraakopdrachten kunt u snel navigeren en HoloLens 2 wanneer u een taak in handen hebt. |
-| Ergonomische | HoloLens 2 is licht (3,28 kg) met een inbelgepast systeem voor uitgebreid gebruik. |
+| Oog bijhouden | Profiteer van een nieuw niveau van context en menselijk begrip. HoloLens 2 precies begrijpt waar u naar op zoek bent, zodat het uw intentie kan begrijpen en de hologrammen in realtime aan uw ogen kan aanpassen. |
+| Spraak ingeschakeld | Met ingebouwde spraakopdrachten kunt u snel navigeren en HoloLens 2 wanneer uw handen een taak in beslag nemen. |
+| Ergonomische | HoloLens 2 is licht (3,28 kg) en bevat een inbelsysteem voor uitgebreid gebruik. |
 | Grote fov | Vouw uw holografische canvas uit met grote weergaveweergaven met een hoge resolutie. |
 | Onderwatervoertuigen | Verplaats u vrij, zonder kabels of externe packs om uw weg te vinden. |
 | Door Azure mogelijk gemaakt | Stream 3D-inhoud van hoge kwaliteit die kan worden verankerd in een locatie en/of object dat blijft bestaan voor gebruikers met Azure mixed reality services.
@@ -120,7 +120,7 @@ Wat maakt de HoloLens 2 zo krachtig?
 
 ---
 
-## <a name="managing-hololens-2-in-your-organization"></a>Beheer van HoloLens 2 in uw organisatie
+## <a name="managing-hololens-2-in-your-organization"></a>Beheer HoloLens 2 in uw organisatie
 
 HoloLens 2 bevat functies die het voor organisaties eenvoudiger maken om apparaten te beheren HoloLens gebruiken. Sommige functies zijn opgenomen in het apparaat, terwijl andere kunnen worden ingeschakeld door [Mobile Device Management (MDM)](hololens-mdm-configure.md) voor HoloLens of via [inrichtingspakketten](hololens-provisioning.md) met [behulp van Windows Configuration Designer.](app-deploy-provisioning-package.md#setup)
 
@@ -142,7 +142,7 @@ Meer informatie over [licentievereisten](hololens-licenses-requirements.md) voor
 
 ## <a name="next-steps"></a>Volgende stappen
 > [!div class="nextstepaction"]
-> [Opties HoloLens 2 verkennen](hololens2-options.md)
+> [De HoloLens 2 verkennen](hololens2-options.md)
 
 > [!div class="nextstepaction"]
 >[Implementatie HoloLens 2 plannen](hololens-requirements.md) 

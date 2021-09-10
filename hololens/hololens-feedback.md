@@ -1,6 +1,6 @@
 ---
 title: Stuur ons feedback
-description: Maak feedback die actie kan ondernemen voor HoloLens en Windows Mixed Reality met behulp van de Feedback-hub.
+description: Maak feedback die actie kan ondernemen HoloLens en Windows Mixed Reality ontwikkelaars met behulp van de Feedback-hub.
 ms.assetid: b9b24c72-ff86-44a9-b30d-dd76c49479a9
 author: mattzmsft
 ms.author: mazeller
@@ -18,11 +18,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: 214b2b9cda33eb074b06a9157429d1f52bfe0716
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189423"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428576"
 ---
 # <a name="feedback-for-hololens"></a>Feedback voor HoloLens
 
@@ -32,15 +32,15 @@ Feedback-hub is een uitstekende manier om het technische team te waarschuwen voo
 
 > [!NOTE]  
 >  
-> - Zorg ervoor dat u de huidige versie van Feedback-hub. Hiervoor selecteert u **Start** Microsoft Store en selecteert u vervolgens het  >  beletselletsel **(...**). Selecteer vervolgens **Downloads en updates Updates**  >  **downloaden.**  
+> - Zorg ervoor dat u de huidige versie van Feedback-hub. Als u dit wilt doen,  >  **selecteert Microsoft Store** en selecteert u vervolgens het beletselletsel **(...**). Selecteer vervolgens **Downloads en updates Updates**  >  **downloaden.**  
 >  
 > - We raden u ten zeerste aan om de telemetrie van uw apparaat in te stellen op Optioneel om de best mogelijke gegevens te bieden voor het **oplossen van problemen.** U kunt deze waarde instellen tijdens de OUT-of-Box-Experience (OOBE) of met behulp van de Instellingen app. Als u dit wilt doen met behulp Instellingen, **selecteert u Start**  >  **Instellingen**  >  **Privacy**  >  **App Diagnostics**  >  **On**.
 
 ## <a name="use-the-feedback-hub"></a>Gebruik de Feedback-hub
 
-1. Gebruik de **beweging Starten** om het menu **Start te** openen en selecteer vervolgens **Feedback-hub**. De app wordt geopend in uw omgeving.
+1. Gebruik de **beweging Start** om het menu **Start te** openen en selecteer vervolgens **Feedback-hub**. De app wordt geopend in uw omgeving.
 
-   ![Feedback-app op HoloLens Startmenu.](./images/hololens2-feedbackhub-tile.png)
+   ![Feedback-app over HoloLens Startmenu.](./images/hololens2-feedbackhub-tile.png)
    > [!NOTE]  
    > Als u de lijst **Feedback-hub,** selecteert u **Alle apps om** de volledige lijst met apps op het apparaat weer te geven.
 
@@ -64,7 +64,7 @@ Feedback-hub is een uitstekende manier om het technische team te waarschuwen voo
    |Apps starten, plaatsen, aanpassen en afsluiten |Feedback over het starten of stoppen van 2D- of 3D-apps. |
    |Miracast |Feedback over Miracast. |
    |Spaties en persistentie |Feedback over hoe HoloLens ruimten herkent en hologrammen in de ruimte behoudt. |
-   |Startmenu en alle apps |Feedback over het **menu Start** en de lijst met alle apps. |
+   |Startmenu lijst met apps en alle apps |Feedback over het **menu Start** en de lijst met alle apps. |
    |Toewijzing van surface |Feedback over surface mapping. |
    |Foto's en video's maken |Feedback over mixed reality vastleggen. |
    |Video hologram afspelen |Feedback over het afspelen van video hologrammen. |

@@ -1,6 +1,6 @@
 ---
 title: 'Implementatiehandleiding : Cloudgeconnecteerde HoloLens 2 implementatie op schaal met Remote Assist - Onderhouden'
-description: Blijf op de hoogte met onze tips voor het onderhouden en ondersteunen HoloLens apparaten via een verbonden cloudnetwerk.
+description: Blijf op de hoogte met onze tips voor het onderhouden en ondersteunen van HoloLens via een met de cloud verbonden netwerk.
 keywords: HoloLens, beheer, verbonden met de cloud, Remote Assist, AAD, Azure AD, MDM, Mobile Device Management
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 879f89d84bbae5b4cc187bc8b1fca627036269145b1c2dd82787e3789fef259d
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 941de296d59713c098718b16431fa793bd1b60e6
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660372"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124428041"
 ---
 # <a name="maintain---cloud-connected-guide"></a>Onderhouden - Handleiding voor verbonden cloud
 
@@ -37,22 +37,22 @@ Een ondersteuningsplan is uitstekend om te hebben. Het is handig om iemand of ee
 
 1. Uw ondersteuningsdesk.
 2. Uw HoloLens Expert-team
-3. [HoloLens Docs](/hololens/)  /  [HoloLens docs voor probleemoplossing](/hololens/hololens-troubleshooting)
+3. [HoloLens Docs](/hololens/)  /  [HoloLens Docs voor probleemoplossing](/hololens/hololens-troubleshooting)
 4. [Contact opnemen met ondersteuning](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f)
 
 ## <a name="development-plan"></a>Ontwikkelingsplan
 
-Nu uw apparaat is ingeschreven, bent u klaar om LOB-apps (Line-Of-Business) op uw apparaten te implementeren. Dit zijn aangepaste apps die zijn gebouwd voor uw organisatie&#39;de behoeften van uw organisatie.
+Nu uw apparaat is ingeschreven, bent u klaar om LOB-apps (Line-Of-Business) op uw apparaten te implementeren. Dit zijn aangepaste apps die zijn gebouwd voor uw organisatie&#39;uw behoeften.
 
-Als u al een Line-Of-Business-app hebt, kunt&#39;[app implementeren via MDM.](/hololens/app-deploy-intune) Als u&#39;liever een andere methode gebruikt, bekijkt u het overzicht van de toepassingsimplementatie voor [HoloLens 2](/hololens/app-deploy-overview) voor meer methoden voor het implementeren van uw LOB-app op uw apparaten.
+Als u al een Line-Of-Business-app hebt, kunt&#39;[app implementeren via MDM.](/hololens/app-deploy-intune) Als u&#39;liever een andere methode gebruikt, bekijkt u het overzicht van toepassingsimplementatie voor [HoloLens 2](/hololens/app-deploy-overview) voor meer methoden voor het implementeren van uw LOB-app op uw apparaten.
 
-Als u nog&#39;LOB-app wilt maken of nog bezig bent met het maken, bekijkt u onze mixed reality-ontwikkelings docs om te beginnen met het ontwerpen en [prototypen](/windows/mixed-reality/design/design) of om de belangrijkste concepten te leren om aan de slag te gaan met [mixed reality-ontwikkeling.](/windows/mixed-reality/discover/get-started-with-mr)
+Als u&#39;lob-app nog moet maken of nog bezig bent met het maken, bekijkt u onze mixed reality-ontwikkel docs om te beginnen met het ontwerpen en maken van [prototypen](/windows/mixed-reality/design/design) of om de belangrijkste concepten te leren om aan de slag te gaan met [mixed reality-ontwikkeling.](/windows/mixed-reality/discover/get-started-with-mr)
 
 ## <a name="device-management"></a>Apparaatbeheer 
 
 Hoewel in deze handleiding werd gesproken over het instellen van Mobile Device Management (MDM), werd het niet gebruikt om apparaatbeperkingen of beleidsregels toe te passen op apparaten. Apparaatbeheer kan worden gebruikt om toegang toe te staan door certificaten te pushen of de toegang te beperken met verschillende apparaatbeperkingen. 
 
-In veel gevallen kunnen apparaten verbindingsbeperkingen hebben, zoals Bluetooth, VPN, USB of zelfs het uitschakelen van de toegang tot de camera of microfoon. Als u een van deze interesses hebt, raden we u aan onze pagina met algemene [apparaatbeperkingen te lezen.](hololens-common-device-restrictions.md)
+In veel gevallen kunnen apparaten verbindingsbeperkingen hebben, zoals Bluetooth, VPN, USB of zelfs het uitschakelen van de toegang tot de camera of microfoon. Als u een van deze interesses hebt, raden we u aan onze algemene pagina met [apparaatbeperkingen te lezen.](hololens-common-device-restrictions.md)
 
 Er zijn andere complexere apparaatbeperkingen die u kunt gebruiken. Zoals:
 

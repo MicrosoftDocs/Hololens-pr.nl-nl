@@ -1,6 +1,6 @@
 ---
 title: Uw HoloLens 2
-description: Leer hoe u uw HoloLens 2 voor de eerste keer via Wi-Fi-netwerk in te stellen met een Microsoft-account (MSA) of een Azure Active Directory-account (AAD).
+description: Leer hoe u uw HoloLens 2 voor het eerst via een Wi-Fi-netwerk in te stellen met een Microsoft-account (MSA) of een Azure Active Directory(AAD)-account.
 ms.assetid: 507305f4-e85a-47c5-a055-a3400ae8a10e
 ms.date: 6/09/2021
 keywords: hololens
@@ -13,40 +13,40 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 8f07ed42c873b62b3b4201c2756b55bbb29707d3
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189763"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427833"
 ---
 # <a name="set-up-your-hololens-2"></a>Uw HoloLens 2
 
-De eerste keer dat u uw HoloLens in zet, wordt u begeleid bij het instellen van uw apparaat, het aanmelden met een gebruikersaccount en het HoloLens uw ogen.  In deze sectie wordt de HoloLens 2 eerste configuratie-ervaring.
+De eerste keer dat u uw HoloLens in te stellen, wordt u begeleid bij het instellen van uw apparaat, het aanmelden met een gebruikersaccount en het HoloLens in uw ogen.  In deze sectie wordt de HoloLens 2 eerste installatie-ervaring.
 
-In de volgende sectie leert u hoe u kunt werken met HoloLens en communiceren met hologrammen. Als u verder wilt gaan met dat artikel, gaat [u naar HoloLens 2](hololens2-basic-usage.md).
+In de volgende sectie leert u hoe u kunt werken met HoloLens en communiceren met hologrammen. Als u verder wilt gaan met dat artikel, gaat [u naar HoloLens 2.](hololens2-basic-usage.md)
 
 ## <a name="before-you-start"></a>Voordat u begint
 
 Voordat u aan de slag gaat, moet u ervoor zorgen dat het volgende beschikbaar is:
 
-**Een netwerkverbinding.** U moet uw HoloLens verbinden met een netwerk om dit in te stellen. Met HoloLens 2 kunt u verbinding maken met Wi-Fi of met behulp van ethernet (u hebt een USB-C-naar-Ethernet-adapter nodig). De eerste keer dat u verbinding maakt, hebt u een open of met een wachtwoord beveiligd netwerk nodig waarvoor u niet naar een website hoeft te navigeren of certificaten hoeft te gebruiken om verbinding te maken. [Meer informatie over de websites die HoloLens gebruikt.](hololens-offline.md)
+**Een netwerkverbinding.** U moet uw netwerkverbinding HoloLens met een netwerk om dit in te stellen. Met HoloLens 2 kunt u verbinding maken met Wi-Fi of met behulp van ethernet (u hebt een USB-C-naar-Ethernet-adapter nodig). De eerste keer dat u verbinding maakt, hebt u een open of met een wachtwoord beveiligd netwerk nodig waarvoor u niet hoeft te navigeren naar een website of certificaten hoeft te gebruiken om verbinding te maken. [Meer informatie over de websites die HoloLens gebruikt.](hololens-offline.md)
 
-**Een Microsoft-account**. U moet zich ook aanmelden bij HoloLens met een Microsoft-account (of met uw werkaccount, als uw organisatie eigenaar is van het apparaat). Als u nog geen Microsoft-account hebt, gaat u [naar account.microsoft.com](https://account.microsoft.com) en stelt u er gratis een in.
+**Een Microsoft-account**. U moet zich ook aanmelden bij HoloLens met een Microsoft-account (of met uw werkaccount, als uw organisatie eigenaar is van het apparaat). Als u nog geen Microsoft-account hebt, gaat u naar [account.microsoft.com](https://account.microsoft.com) en stelt u er gratis een in.
 
-**Een veilige, goed belichte ruimte zonder tripping-risico's.** [Informatie over status en veiligheid.](https://go.microsoft.com/fwlink/p/?LinkId=746661)
+**Een veilige, goed belichte ruimte zonder trippingrisico's.** [Informatie over status en veiligheid.](https://go.microsoft.com/fwlink/p/?LinkId=746661)
 
-**De optionele comfortaccesses** die bij uw HoloLens, om u te helpen de meest geschikte keuze te maken. [Meer informatie over passend en comfort.](hololens2-setup.md#adjust-fit)
+**De optionele comfortaccessoires** die bij uw HoloLens, om u te helpen de meest geschikte keuze te krijgen. [Meer informatie over aanpassen en comfort.](hololens2-setup.md#adjust-fit)
 
 ## <a name="set-up-windows"></a>Windows installeren
 
-De eerste keer dat u uw HoloLens 2 start, is uw eerste taak het instellen van Windows Holographic.  Wanneer u uw HoloLens, hoort u muziek en ziet u een Microsoft-logo.
+De eerste keer dat u uw HoloLens 2, is het instellen van Windows Holographic.  Wanneer u uw HoloLens, hoort u muziek en ziet u een Microsoft-logo.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGGGk]
 
 <br/>
 <img src="images/01-magic-moment.png" width="500px" alt="First screen during first boot">
 
-U ziet een enorme vogel ronddraaien.
+U ziet dat er een enorme merel rondvriest.
 
 <img src="images/hummingbird-1.png" width="500px" alt="Hummingbird flying">
 
@@ -54,7 +54,7 @@ Deze volgt uw hand.
 
 <img src="images/hummingbird-2.png" width="500px" alt="Hummingbird flying close up">
 
-Er wordt een knop met een Microsoft-logo weergeven. Druk op de knop en HoloLens 2 u door de volgende stappen:
+Er wordt een knop met een Microsoft-logo weergeven. Druk op de knop om HoloLens 2 volgende stappen te doorlopen:
 
 1. Selecteer uw taal.
 
@@ -70,28 +70,28 @@ Er wordt een knop met een Microsoft-logo weergeven. Druk op de knop en HoloLens 
     
     <img src="images/06-et-corners.png" width="500px" alt="Calibration selection screen">
     
-    2. Als u wilt kalibreren, bekijkt u een set doelen (gems genoemd). Het is prima als u tijdens de kalibratie knippert of uw ogen sluit, maar probeer niet te staren naar andere objecten in de ruimte of fysieke ruimte. HoloLens maakt gebruik van dit proces om meer te weten te komen over uw oogpositie, zodat uw holografische wereld beter kan worden weergegeven. 
+    2. Als u wilt kalibreren, bekijkt u een set doelen (gems genoemd). Het is prima als u tijdens de kalibratie knippert of uw ogen sluit, maar probeer niet naar andere objecten in de ruimte of fysieke ruimte te staren. HoloLens dit proces gebruikt om meer te weten te komen over uw oogpositie, zodat uw holografische wereld beter kan worden weergegeven. 
 
         <img src="images/07-adjust-eyes.png" width="500px" alt="Adjust for your eyes">
 
-        Na de kalibratie worden hologrammen correct weergegeven, zelfs wanneer het visor op uw hoofd verschuift. Kalibratie-informatie wordt lokaal op het apparaat opgeslagen en is niet gekoppeld aan accountgegevens. Zie Gegevens en beveiliging [voor meer informatie.](hololens-calibration.md#calibration-data-and-security)
+        Na kalibratie worden hologrammen correct weergegeven, zelfs wanneer de visor naar uw hoofd verschuift. Kalibratiegegevens worden lokaal op het apparaat opgeslagen en zijn niet gekoppeld aan accountgegevens. Zie Kalibratiegegevens en beveiliging [voor meer informatie.](hololens-calibration.md#calibration-data-and-security)
 
         <img src="images/calibration-complete.png" width="500px" alt="Calibration is complete">
 
 1. Verbinding maken verbinding maken met internet (selecteer Wi-Fi of uw ethernetverbinding).
 
-     HoloLens wordt uw tijdzone automatisch op basis van gegevens die zijn verkregen van het Wi-Fi netwerk. Nadat de installatie is voltooien, kunt u de tijdzone wijzigen met behulp van de Instellingen app.
+     HoloLens wordt uw tijdzone automatisch op basis van gegevens die zijn verkregen van het Wi-Fi netwerk. Nadat de installatie is geïnstalleerd, kunt u de tijdzone wijzigen met behulp van de Instellingen app.
 
     ![Verbinding maken naar Wi-Fi.](images/11-network.png)
 
     > [!NOTE] 
-    > Als u verder gaat dan de Wi-Fi-stap en later moet overschakelen naar een ander netwerk  terwijl u nog bezig bent met de installatie, kunt u tegelijkertijd op de knoppen **Volume** omlaag en Aan/uit drukken om terug te keren naar deze stap als u vanaf oktober 2019 of later een versie van het besturingssysteem gebruikt. Voor eerdere versies moet u [](hololens-recovery.md) het apparaat mogelijk opnieuw instellen of opnieuw opstarten op een locatie waar het Wi-Fi-netwerk niet beschikbaar is om te voorkomen dat het automatisch verbinding maakt.
+    > Als u verder bent dan de Wi-Fi-stap en later moet overschakelen naar een ander netwerk  terwijl u nog in de installatie bent, kunt u tegelijkertijd op de knoppen **Volume** omlaag en Aan/uit drukken om terug te keren naar deze stap als u een versie van het besturingssysteem van oktober 2019 of hoger gebruikt. Voor eerdere versies moet u [](hololens-recovery.md) het apparaat mogelijk opnieuw instellen of opnieuw opstarten op een locatie waar het Wi-Fi-netwerk niet beschikbaar is om te voorkomen dat het automatisch verbinding maakt.
     > 
-    > Houd er ook rekening mee HoloLens tijdens het instellen van de referenties een time-out van twee minuten is. De gebruikersnaam en het wachtwoord moeten binnen twee minuten worden ingevoerd, anders wordt het veld gebruikersnaam automatisch geweerd.
+    > Houd er ook rekening mee HoloLens tijdens het instellen van de referenties een time-out van twee minuten is. De gebruikersnaam/het wachtwoord moet binnen twee minuten worden ingevoerd, anders wordt het veld gebruikersnaam automatisch geweerd.
 
 1. HoloLens 2 zoekt en past een Autopilot-profiel toe als er een bestaat. Er is geen actie nodig op dit scherm.
  
-    ![Autopilot-profiel zoeken.](images/autopilot-profile-search.png) 
+    ![Zoeken in Autopilot-profielen.](images/autopilot-profile-search.png) 
 
 1. Klik **op Accepteren** in het licentiescherm.
 
@@ -100,20 +100,20 @@ Er wordt een knop met een Microsoft-logo weergeven. Druk op de knop en HoloLens 
 1. Meld u aan bij uw gebruikersaccount. U kiest tussen Mijn werk of **school is eigenaar en** ik ben **eigenaar.**
 
     ![Stel gebruiker in.](images/13-device-owner.png)
-    - Wanneer u Mijn **werk of school is eigenaar kiest,** meldt u zich aan met een Azure AD-account. Als uw organisatie gebruikmaakt Azure AD Premium en automatische MDM-inschrijving heeft geconfigureerd, HoloLens automatisch ingeschreven bij MDM. Als uw organisatie geen gebruik Azure AD Premium, is automatische MDM-inschrijving niet beschikbaar. In dat geval moet u de inschrijving handmatig [HoloLens in apparaatbeheer.](hololens-enroll-mdm.md#different-ways-to-enroll)
+    - Wanneer u Mijn **werk of school is eigenaar kiest,** meldt u zich aan met een Azure AD-account. Als uw organisatie gebruikmaakt Azure AD Premium automatische MDM-inschrijving heeft geconfigureerd, HoloLens automatisch ingeschreven bij MDM. Als uw organisatie geen gebruik maakt Azure AD Premium, is automatische MDM-inschrijving niet beschikbaar. In dat geval moet u de inschrijving [handmatig HoloLens in apparaatbeheer.](hololens-enroll-mdm.md#different-ways-to-enroll)
 
         1. Voer de accountgegevens van uw organisatie in.
         1. Accepteer de privacyverklaring en de gebruikslicentieovereenkomst.
         1. Meld u aan met uw Azure AD-referenties. Dit kan worden omgeleid naar de aanmeldingspagina van uw organisatie.
         1. Ga door met het instellen van het apparaat.
 
-    - Wanneer u I **own it kiest,** moet u zich aanmelden met een Microsoft-account. Nadat de installatie is voltooid, kunt u deze handmatig [HoloLens in apparaatbeheer.](hololens-enroll-mdm.md#different-ways-to-enroll)
+    - Wanneer u I **own it kiest,** kunt u zich aanmelden met een Microsoft-account. Nadat de installatie is voltooid, kunt u deze handmatig inschrijven [HoloLens apparaatbeheer.](hololens-enroll-mdm.md#different-ways-to-enroll)
 
         1. Voer uw Microsoft-account in.
-        2. Voer uw wachtwoord in. Als uw Microsoft-account [verificatie in twee stappen (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/)vereist, voltooit u het verificatieproces.
+        2. Voer uw wachtwoord in. Als uw Microsoft-account verificatie [in twee stappen (2FA)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/)vereist, voltooit u het verificatieproces.
 
         
-1. Stel Iris-aanmelding in door Volgende **te selecteren.** U krijgt een vergelijkbare ervaring als de oogcontacten. Selecteer **Voltooid** wanneer de scan is voltooid. U kunt ook Overslaan selecteren **om** deze stap over te slaan.
+1. Stel Iris-aanmelding in door Volgende **te selecteren.** U doormaakt een vergelijkbare ervaring als de kalibratie van het oog. Selecteer **Voltooid** wanneer de scan is voltooid. U kunt ook Overslaan selecteren **om** deze stap over te slaan.
     
     <img src="images/setup-iris.png" width="500px" alt="Iris setup">
 
@@ -138,7 +138,7 @@ Er wordt een knop met een Microsoft-logo weergeven. Druk op de knop en HoloLens 
     
     <img src="images/setup-location-services.png" width="500px" alt="Enable location services">
 
-1. Selecteer uw telemetrieniveau. Schakel desgewenst Optionele telemetrie in. Deze informatie helpt het technische team HoloLens te helpen.
+1. Selecteer uw telemetrieniveau. Schakel desgewenst Optionele telemetrie in. Deze informatie helpt het technische team van HoloLens echt.
 
     <img src="images/24-telemetry.png" width="500px" alt="Telemetry level">
 
@@ -151,11 +151,11 @@ Er wordt een knop met een Microsoft-logo weergeven. Druk op de knop en HoloLens 
     
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Wxng]
     
-    Gefeliciteerd  De installatie is voltooid en u bent klaar om deze te HoloLens.
+    Gefeliciteerd  De installatie is voltooid en u kunt de HoloLens.
 
 ## <a name="next-steps"></a>Volgende stappen
 
-1. Ga direct aan de slag met Mixed Reality en navigeer naar Windows 10 op uw HoloLens. Bekijk de **Tips-app** voor praktijkstudies voor handinteracties. Gebruik de startbewegingen om naar Start te gaan of 'Ga naar start' te zeggen en selecteer Tips.
+1. Ga direct aan de slag met Mixed Reality en navigeer naar Windows 10 op uw HoloLens. Bekijk de **Tips-app** voor praktijkzelfstudies voor handinteracties. Gebruik het startgebaar om naar Start te gaan of 'Ga naar start' te zeggen en selecteer Tips.
 
 1. Klik hieronder om door te gaan met het lezen van HoloLens 2.
 

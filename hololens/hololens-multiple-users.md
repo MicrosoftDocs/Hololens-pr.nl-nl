@@ -1,34 +1,41 @@
 ---
-title: Uw HoloLens delen met meerdere personen
+title: Uw gegevens HoloLens met meerdere personen
 description: U kunt configureren HoloLens worden gedeeld door meerdere Azure Active Directory-accounts of door meerdere gebruikers die één account gebruiken.
 ms.prod: hololens
 ms.sitesec: library
-author: scooley
-ms.author: scooley
+author: qianw211
+ms.author: v-qianwen
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 09/16/2019
+ms.date: 9/3/2021
 ms.reviewer: ''
-manager: laurawi
+manager: sekerawa
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 821ef2d17531226177e508b1428af82012c16406e9fbce3ed1a5617c767adfe8
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: e3acd2665e93e44bce2c5dad467c825dc768bfed
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663069"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427476"
 ---
-# <a name="share-your-hololens-with-multiple-people"></a>Uw HoloLens delen met meerdere personen
+# <a name="share-your-hololens-with-multiple-people"></a>Uw gegevens HoloLens met meerdere personen
 
-Het is gebruikelijk om één apparaat HoloLens veel mensen te delen of om veel mensen een set apparaten HoloLens laten delen.  In dit artikel worden de verschillende manieren beschreven waarop u een apparaat kunt delen.
+## <a name="overview"></a>Overzicht
+Bedrijven investeren vaak in veel gedeelde HoloLens apparaten. Hoe u HoloLens is flexibel over de hele wereld, afhankelijk van uw afzonderlijke vereisten. Hier is een voorbeeld van een aantal ervaringen voor meerdere gebruikers: 
 
-## <a name="share-with-multiple-people-each-using-their-own-account"></a>Delen met meerdere personen, elk met hun eigen account
+- Apparaten waarvoor kosten in rekening worden gebracht en waarvoor Dynamics 365 Guides zijn ingeschakeld en waarmee uw werknemers de Instellingen-app kunnen openen om wijzigingen aan te brengen in de benodigde Wi-Fi, maar het beleid voor zichtbaarheid van Pagina Instellingen is ingeschakeld om het aantal pagina's dat beschikbaar is in de Instellingen-app te beperken.
+- Apparaten die voor Remote Assist zijn en uw Line-Of-Business-app die worden verhuurd aan andere bedrijven. Deze apparaten hebben kiosken die alleen uw app en Remote Assist. WDAC wordt gebruikt om ervoor te zorgen dat de Instellingen-app Microsoft Edge start. Opgenomen in de verhuur is een USB-C-accupakket om de apparaten volledig op te laden via meerdere ploegendiensten.
+- Al uw apparaten zijn ingesteld voor Autopilot en downloaden al uw bedrijfsapps. U hebt een aantal verschillende Kiosk-profielen ingesteld, gericht op verschillende Azure AD-groepen. Elke gebruiker meldt zich aan bij HoloLens FIDO2-sleutels en meldt zich aan bij zijn eigen Azure AD-account en krijgt een op maat gemaakte ervaring te zien.
+
+
+
+## <a name="share-with-multiple-people-each-using-their-own-account"></a>Delen met meerdere personen, elk met een eigen account
 
 **Vereiste:** op HoloLens apparaat moet Windows 10 versie 1803 of hoger worden uitgevoerd.  HoloLens (eerste generatie) moet ook worden geüpgraded [naar Windows Holographic for Business](hololens-upgrade-enterprise.md).
 
-Wanneer ze hun eigen azure Azure Active Directory accounts (Azure AD) gebruiken, kunnen meerdere gebruikers elk hun eigen gebruikersinstellingen en gebruikersgegevens op het apparaat behouden.
+Wanneer ze hun eigen azure Azure Active Directory accounts (Azure AD) gebruiken, kunnen meerdere gebruikers elk hun eigen gebruikersinstellingen en gebruikersgegevens op het apparaat bewaren.
 
 Volg deze stappen om deze te configureren om ervoor te zorgen dat meerdere personen hun eigen accounts op uw HoloLens gebruiken:
 
@@ -40,14 +47,14 @@ Volg deze stappen om deze te configureren om ervoor te zorgen dat meerdere perso
 
 Als u HoloLens, volgt elke gebruiker deze stappen:
 
-1. Als een andere gebruiker het apparaat heeft gebruikt, doet u het volgende:
+1. Als een andere gebruiker het apparaat heeft gebruikt, kiest u een van de volgende opties:
    - Druk eenmaal op de aan/uit-knop om naar stand-by te gaan en druk vervolgens nogmaals op de aan/uit-knop om terug te keren naar het vergrendelingsscherm
    - HoloLens 2 gebruikers kunnen de tegel Gebruiker selecteren in de Startmenu de huidige gebruiker af te melden.
 
 1. Gebruik de referenties van uw Azure AD-account om u aan te melden bij het apparaat.  
-    Als dit de eerste keer is dat u [](hololens-calibration.md) het apparaat gebruikt, moet HoloLens aan uw eigen ogen kalibreren.
+    Als het de eerste keer is dat u het [](hololens-calibration.md) apparaat gebruikt, moet u het HoloLens uw eigen ogen kalibreren.
 
-Als u een lijst met de apparaatgebruikers wilt bekijken of een gebruiker van het apparaat wilt verwijderen, gaat u **naar Instellingen**  >  **Accounts**  >  **Andere gebruikers.**
+Als u een lijst met de apparaatgebruikers wilt zien of als u een gebruiker van het apparaat wilt verwijderen, gaat u **naar Instellingen**  >  **Accounts**  >  **Andere gebruikers.**
 
 ## <a name="share-with-multiple-people-all-using-the-same-account"></a>Delen met meerdere personen, allemaal met hetzelfde account
 

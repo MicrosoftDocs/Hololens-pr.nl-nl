@@ -1,5 +1,5 @@
 ---
-title: HoloLens kioskreferentiegegevens
+title: HoloLens naslaginformatie over kiosken
 description: Informatie en voorbeelden voor kiosken op HoloLens apparaten.
 ms.prod: hololens
 ms.sitesec: library
@@ -14,15 +14,15 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: 9f8cfd0013ac5b8cf85a334cbb89c458440820d9
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122863936"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427127"
 ---
 # <a name="hololens-kiosk-reference-information"></a>HoloLens Naslaginformatie over kiosken
 
-Deze pagina bevat nuttige informatie voor het instellen van HoloLens kioskmodus van uw apparaat. Deze verwijzingen bevatten AUMID's voor Postvak IN-apps en het zoeken naar uw eigen apps, en verschillende XML-voorbeelden voor de kioskmodus, die slechts enkele bewerkingen zijn verwijderd van het feit dat ze klaar zijn voor gebruik voor verschillende scenario's. Lees de pagina Een kiosk instellen voor meer informatie over [het instellen van een kiosk.](hololens-kiosk.md)
+Deze pagina bevat nuttige informatie voor het instellen van HoloLens kioskmodus van uw apparaat. Deze verwijzingen bevatten AUMID's voor Postvak IN-apps en het zoeken naar uw eigen apps, en verschillende XML-voorbeelden voor de kioskmodus, die slechts een paar bewerkingen zijn verwijderd van het gereed zijn voor gebruik voor verschillende scenario's. Lees de pagina Een kiosk instellen voor meer informatie over [het instellen van een kiosk.](hololens-kiosk.md)
 
 ## <a name="hololens-application-user-model-ids-aumids"></a>HoloLens Model-ID's van toepassingsgebruikers (AUMID's)  
 
@@ -74,9 +74,9 @@ Ga terug naar [Ondersteunde scenario's voor de kioskmodus op basis van het ident
 1. [Meerdere app-profiel voor algemeen toegewezen toegang, met uitzondering van apparaateigenaren](#multiple-app-global-assigned-access-profile-excluding-device-owners)
 1. [Meerdere apps toegewezen toegangsprofiel voor een lokaal account of AAD-gebruikersaccount](#multiple-app-assigned-access-profile-for-a-local-account-or-aad-user-account)
 1. [Meerdere app-toegewezen toegangsprofielen voor twee AAD-gebruikers of meer](#multiple-app-assigned-access-profiles-for-two-aad-users-or-more)
-1. [Aan meerdere apps toegewezen toegangsprofiel voor één AAD-groep](#multiple-app-assigned-access-profile-for-one-aad-group)
+1. [Meerdere app-toegewezen toegangsprofiel voor één AAD-groep](#multiple-app-assigned-access-profile-for-one-aad-group)
 1. [Meerdere app-toegewezen toegangsprofiel voor twee AAD-groepen of meer](#multiple-app-assigned-access-profile-for-two-aad-groups-or-more)
-1. [Meerdere aan apps toegewezen toegangsprofiel voor één AAD-account en één AAD-groep](#multiple-app-assigned-access-profile-for-one-aad-account-and-one-aad-group)
+1. [Aan meerdere apps toegewezen toegangsprofiel voor één AAD-account en één AAD-groep](#multiple-app-assigned-access-profile-for-one-aad-account-and-one-aad-group)
 1. [Aan meerdere apps toegewezen toegangsprofiel voor bezoekers](#multiple-app-assigned-access-profile-for-visitors)
 
 > [!NOTE]

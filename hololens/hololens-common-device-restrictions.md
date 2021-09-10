@@ -13,16 +13,16 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 6a09766a06fff912aae20dc07974b723d812bd370562a33297552dc0d2f7f12c
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 769cacc1803af9d9e9bf1079f8cd5671f194c3bc
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664280"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427960"
 ---
 # <a name="common-device-restrictions"></a>Algemene apparaatbeperkingen 
 
-Deze handleiding helpt IT-professionals inzicht te krijgen in de meer gebruikte beheeropties die beschikbaar zijn voor Windows 10 Holographic besturingssysteem in de onderneming. Raadpleeg de documentatie van uw MDM-systeem voor meer informatie over hoe dit beleid wordt ingeschakeld door uw MDM-leverancier. Niet alle MDM-systemen ondersteunen elke instelling die in deze handleiding wordt beschreven. Sommige bieden ondersteuning voor aangepast beleid via OMA-URI XML-bestanden. Zie [Microsoft Intune ondersteuning voor aangepast beleid.](/mem/intune/configuration/custom-settings-windows-10) Naamconventen kunnen ook per MDM-leverancier verschillen.
+Deze handleiding helpt IT-professionals inzicht te krijgen in de meestgebruikte beheeropties die beschikbaar zijn voor Windows 10 Holographic besturingssysteem in de onderneming. Raadpleeg de documentatie van uw MDM-systeem voor meer informatie over hoe dit beleid wordt ingeschakeld door uw MDM-leverancier. Niet alle MDM-systemen ondersteunen elke instelling die in deze handleiding wordt beschreven. Sommige bieden ondersteuning voor aangepast beleid via OMA-URI XML-bestanden. Zie [Microsoft Intune ondersteuning voor aangepast beleid.](/mem/intune/configuration/custom-settings-windows-10) Naamconventen kunnen ook per MDM-leverancier verschillen.
 
 ## <a name="prevent-changing-of-settings"></a>Wijzigen van instellingen voorkomen
 Werknemers mogen doorgaans bepaalde persoonlijke apparaatinstellingen wijzigen die u mogelijk wilt vergrendelen op bedrijfsapparaten. Werknemers kunnen bepaalde instellingen van de HoloLens via de gebruikersinterface voor instellingen. Met MDM kunt u beperken wat gebruikers mogen wijzigen. Hieronder vindt u een lijst met veelgebruikte MDM-instellingen die Windows 10 Holographic voor het configureren van instellingenbeperkingen:
@@ -49,6 +49,6 @@ Hieronder vindt u een lijst met veelgebruikte MDM-instellingen die Windows 10 Ho
 -   [Camera beperken:](/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccesscamera) Hiermee geeft u op Windows apps toegang hebben tot de camera.
 -   [Microfoons beperken:](/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccessmicrophone) Hiermee geeft u op Windows apps toegang hebben tot de microfoon.
 
-Toegevoegd in [Windows Holographic, versie 20H2](hololens-release-notes.md#windows-holographic-version-20h2) voor HoloLens 2 apparaten. 
+Toegevoegd aan [Windows Holographic, versie 20H2 voor](hololens-release-notes.md#windows-holographic-version-20h2) HoloLens 2 apparaten. 
 - [DisplayOffTimeoutOnBattery](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery) Stel de hoeveelheid tijd in totdat de weergave wordt uitgeschakeld en door het scherm uit te schakelen, wordt het apparaat vergrendeld. 
 - [DisplayOffTimeoutPluggedIn](/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin) Stel de hoeveelheid tijd in totdat de weergave wordt uitgeschakeld en door het scherm uit te schakelen, wordt het apparaat vergrendeld. 
