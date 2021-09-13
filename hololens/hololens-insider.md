@@ -1,27 +1,27 @@
 ---
 title: Insider-preview voor Microsoft HoloLens
-description: Leer hoe u aan de slag gaat met Insider-builds en waardevolle feedback kunt geven voor onze volgende belangrijke update van het besturingssysteem voor HoloLens.
+description: Leer hoe u aan de slag gaat met Insider-builds en waardevolle feedback geeft voor onze volgende belangrijke update van het besturingssysteem voor HoloLens.
 ms.prod: hololens
 ms.sitesec: library
-author: scooley
-ms.author: scooley
+author: evmill
+ms.author: v-evmill
 ms.topic: article
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 08/16/2021
+ms.date: 09/10/2021
 ms.reviewer: ''
-manager: laurawi
+manager: ranjibb
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cabf35d44cdd144151e048d7a6e14e391629d00a
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.openlocfilehash: 84ec45a4bb05eb28106e4bfdc915a18ae6330767
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427428"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032605"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider-preview voor Microsoft HoloLens
 
@@ -31,7 +31,7 @@ Welkom bij de nieuwste Insider Preview-builds voor HoloLens. Het is eenvoudig om
 
 We zijn blij om nieuwe functies opnieuw te kunnen Windows Insiders. Voor nieuwe builds worden de dev- en bètakanalen gebruikt voor de nieuwste updates. We blijven deze pagina bijwerken wanneer we meer functies en updates toevoegen aan onze Windows Insider-builds. Word enthousiast en bereid u voor om deze updates in uw realiteit te combineren.
 
-Dit gaat over de verbeterde probleemoplossing en apparaatrapporten, een aantal opgeloste fouten in de kioskmodus en de certificaatviewer, het uitgebreide beheerbaarheidsoppervlak en de verbeterde betrouwbaarheid van updates. Een nieuwe functie van deze functie-update die binnenkort HoloLens is onze modus Voor platform verplaatsen. Bekijk alle nieuwe geweldige functies voor HoloLens 2.
+Dit gaat over de verbeterde probleemoplossing en apparaatrapporten, enkele opgeloste fouten in de kioskmodus en de certificaatviewer, het uitgebreide beheerbaarheidsoppervlak en de verbeterde betrouwbaarheid van updates. Een nieuwe functie van deze functie-update die binnenkort HoloLens is onze modus Voor platform verplaatsen. Bekijk alle nieuwe geweldige functies voor HoloLens 2.
 
 | Functie                 | Beschrijving                | Gebruiker of scenario | Build geïntroduceerd |
 |-------------------------|----------------------------|--------------|------------------|
@@ -59,7 +59,7 @@ Dit gaat over de verbeterde probleemoplossing en apparaatrapporten, een aantal o
 
 ### <a name="moving-platform-mode"></a>Platformmodus verplaatsen
 
-Vanaf **Insider-build 20348.1411** is bètaondersteuning toegevoegd voor het bijhouden van bewegingsplatformen met weinig dynamische beweging op HoloLens 2. Nadat u de build hebt geïnstalleerd en de Moving Platform-modus hebt inschakelen, kunt u uw HoloLens 2 gebruiken in eerder ontoegankelijke omgevingen, zoals grote schip en grote zeebaars. Op dit moment is de functie gericht op het inschakelen van deze specifieke platformen voor verplaatsen. Hoewel niets voorkomt dat u de functie in andere omgevingen probeert te gebruiken, is de functie gericht op het toevoegen van ondersteuning voor deze omgevingen.
+Vanaf **Insider-build 20348.1411** is bètaondersteuning toegevoegd voor het bijhouden van bewegingsplatforms met weinig dynamische beweging op HoloLens 2. Nadat u de build hebt geïnstalleerd en de moving platformmodus hebt inschakelen, kunt u uw HoloLens 2 gebruiken in eerder ontoegankelijke omgevingen, zoals grote vrachten en grote zee- en containeromgevingen. Op dit moment is de functie gericht op het inschakelen van deze specifieke platformen voor verplaatsen. Hoewel niets voorkomt dat u de functie in andere omgevingen probeert te gebruiken, is de functie gericht op het toevoegen van ondersteuning voor deze omgevingen.
 
 Ga naar de pagina voor het verplaatsen van platformen voor meer informatie over wat wordt ondersteund en hoe u deze nieuwe functie [kunt inschakelen.](hololens2-moving-platform.md)
 
@@ -89,13 +89,13 @@ Omdat gebruikers vaak offlinediagnose gebruiken als mechanisme voor het verzamel
 
 Deze nieuwe functie wordt ingeschakeld wanneer uw apparaat wordt bijgewerkt en hoeft niet te worden ingeschakeld of beheerd. In elk geval dat deze nieuwe feedback niet kan worden weergegeven of gehoord, wordt offlinediagnose nog steeds gegenereerd.
 
-We hopen dat het met deze nieuwere toevoeging van feedback gemakkelijker is om diagnostische gegevens te verzamelen en sneller in staat zijn om uw problemen op te lossen.
+We hopen dat het met deze nieuwere toevoeging van feedback gemakkelijker is om diagnostische gegevens te verzamelen en sneller in staat te zijn om uw problemen op te lossen.
 
-### <a name="low-storage-log-collection-improvements"></a>Verbeteringen in het verzamelen van logboeken met weinig opslag
+### <a name="low-storage-log-collection-improvements"></a>Verbeteringen in de verzameling met logboeken met weinig opslag
 
-In scenario's waarin een apparaat weinig schijfruimte lijkt te hebben wanneer diagnostische logboeken worden verzameld, wordt er een extra rapport met de **StorageDiagnostics.zip** gemaakt. De drempelwaarde voor lage opslag wordt automatisch bepaald door de Windows [opslag.](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)
+In scenario's waarin een apparaat weinig schijfruimte lijkt te hebben wanneer diagnostische logboeken worden verzameld, wordt **er een extra** rapport met deStorageDiagnostics.zipgemaakt. De drempelwaarde voor lage opslag wordt automatisch bepaald door de Windows [opslag te bepalen.](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)
 
-### <a name="csp-changes-for-reporting-hololens-details"></a>CSP-wijzigingen voor rapportage HoloLens details
+### <a name="csp-changes-for-reporting-hololens-details"></a>CSP-wijzigingen voor rapportagegegevens HoloLens details
 
 - Geïntroduceerd in Windows Insider-build, 20348.1403
 
@@ -103,7 +103,7 @@ De volgende CSP's zijn bijgewerkt met nieuwe manieren om informatie van uw HoloL
 
 #### <a name="devdetail-csp---free-storage"></a>DevDetail CSP - Gratis Storage
 
-DevDetail CSP rapporteert nu ook vrije opslagruimte op HoloLens apparaat. Dit moet ongeveer overeenkomen met de waarde die wordt weergegeven op Instellingen pagina van Storage app. Hieronder volgt het specifieke knooppunt met deze informatie.
+DevDetail CSP rapporteert nu ook vrije opslagruimte op HoloLens apparaat. Dit moet ongeveer overeenkomen met de waarde die wordt weergegeven op Instellingen pagina van Storage app. Hieronder vindt u het specifieke knooppunt met deze informatie.
 
 - ./DevDetail/Ext/Microsoft/FreeStorage (alleen GET-bewerking)
 
@@ -111,8 +111,8 @@ DevDetail CSP rapporteert nu ook vrije opslagruimte op HoloLens apparaat. Dit mo
 
 DeviceStatus CSP rapporteert nu ook SSID en BSSID van Wi-Fi netwerk waarmee HoloLens actief is verbonden. Hieronder vindt u de specifieke knooppunten die deze informatie bevatten.
 
-- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/mac address *of Wi-Fi adapter*/SSID
-- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/mac address *of Wi-Fi adapter*/BSSID
+- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac-adres van Wi-Fi adapter*/SSID
+- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac-adres van Wi-Fi adapter*/BSSID
 
 Voorbeeld van syncml-blob (voor MDM-leveranciers) om een query uit te voeren voor NetworkIdentifiers
 
@@ -136,7 +136,7 @@ Voorbeeld van syncml-blob (voor MDM-leveranciers) om een query uit te voeren voo
 
 ### <a name="auto-login-policy-controlled-by-csp"></a>Beleid voor automatisch aanmelden beheerd door CSP
 
-Dit nieuwe beleid AutoLogonUser bepaalt of een gebruiker automatisch wordt aangemeld. Sommige klanten willen apparaten instellen die zijn gekoppeld aan een identiteit, maar geen aanmeldingservaring willen. Imagine apparaat ophalen en direct hulp op afstand gebruiken. Of hebben het voordeel dat ze snel apparaten kunnen HoloLens distribueren en hun eindgebruikers in staat stellen om hun aanmelding te versnellen.
+Met dit nieuwe beleid AutoLogonUser bepaalt u of een gebruiker automatisch wordt aangemeld. Sommige klanten willen apparaten instellen die zijn gekoppeld aan een identiteit, maar geen aanmeldingservaring willen. Imagine apparaat ophalen en direct hulp op afstand gebruiken. Of hebben een voordeel van het snel distribueren van HoloLens apparaten en hun eindgebruikers in staat stellen zich sneller aan te melden.
 
 Wanneer het beleid is ingesteld op een niet-lege waarde, wordt het e-mailadres van de gebruiker voor automatische aanmelding opgegeven. De opgegeven gebruiker moet zich ten minste één keer bij het apparaat laten aanmelding inschakelen.
 
@@ -144,16 +144,16 @@ De OMA-URI van nieuwe `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogon
 
 - De gebruiker met hetzelfde e-mailadres heeft automatische aanmelding ingeschakeld.
 
-Op een apparaat waarop dit beleid is geconfigureerd, moet de gebruiker die is opgegeven in het beleid ten minste één keer worden aanmelding. Na het opnieuw opstarten van het apparaat na de eerste aanmelding wordt de opgegeven gebruiker automatisch aangemeld. Er wordt slechts één gebruiker voor automatische aanmelding ondersteund. Zodra dit is ingeschakeld, kan de automatisch aangemelde gebruiker zich niet meer handmatig afmelden. Als u zich als een andere gebruiker wilt laten aanmeldingen, moet het beleid eerst worden uitgeschakeld.
+Op een apparaat waarop dit beleid is geconfigureerd, moet de gebruiker die is opgegeven in het beleid ten minste één keer worden aanmelding. Als het apparaat na de eerste aanmelding opnieuw wordt opgestart, wordt de opgegeven gebruiker automatisch aangemeld. Er wordt slechts één gebruiker voor automatische aanmelding ondersteund. Zodra deze is ingeschakeld, kan de automatisch aangemelde gebruiker zich niet meer handmatig afmelden. Als u zich als een andere gebruiker wilt laten aanmeldingen, moet het beleid eerst worden uitgeschakeld.
 
 > [!NOTE]
 >
 > - Voor sommige gebeurtenissen, zoals belangrijke updates van het besturingssysteem, moet de opgegeven gebruiker zich mogelijk opnieuw bij het apparaat laten aanmeldingen om automatisch aanmeldingsgedrag te hervatten.
 > - Automatische aanmelding wordt alleen ondersteund voor MSA- en AAD-gebruikers.
 
-### <a name="improved-update-restart-detection-and-notifications"></a>Verbeterde detectie van opnieuw opstarten van updates en meldingen
+### <a name="improved-update-restart-detection-and-notifications"></a>Verbeterde detectie en meldingen voor opnieuw opstarten van updates
 
-Tussen actieve uren en beleidsregels voor de installatietijd is het mogelijk om te voorkomen dat apparaten HoloLens opnieuw worden opgestart wanneer ze in gebruik zijn. Het zou echter ook de acceptatie van updates vertragen als er niet opnieuw wordt opgestart om de installatie van een vereiste update te voltooien. We hebben nu beleidsregels toegevoegd om IT deadlines en vereiste herstarts te laten afdwingen en ervoor te zorgen dat de installatie van een update tijdig wordt voltooid. Gebruikers kunnen een melding ontvangen voordat het opnieuw opstarten wordt gestart en ze kunnen het opnieuw opstarten vertragen in overeenstemming met het IT-beleid.
+Tussen actieve uren en het beleid voor de installatietijd is het mogelijk om te voorkomen dat HoloLens apparaten opnieuw worden opgestart wanneer ze in gebruik zijn. Het zou echter ook de acceptatie van updates vertragen als er geen herstart wordt uitgevoerd om de installatie van een vereiste update te voltooien. We hebben nu beleidsregels toegevoegd waarmee IT deadlines en vereiste herstarts kan afdwingen en ervoor te zorgen dat de installatie van een update tijdig is voltooid. Gebruikers kunnen een melding ontvangen voordat het opnieuw opstarten wordt gestart en ze kunnen het opnieuw opstarten vertragen in overeenstemming met het IT-beleid.
 
 De volgende updatebeleidsregels zijn toegevoegd:
 
@@ -169,11 +169,11 @@ De volgende updatebeleidsregels zijn toegevoegd:
 
 ### <a name="smart-retry-for-app-updates"></a>Slim opnieuw proberen voor app-updates
 
-Nu ingeschakeld voor HoloLens is een nieuw beleid waarmee IT-beheerders een terugkerende of eenmalige datum kunnen instellen voor het opnieuw opstarten van apps waarvan de update is mislukt omdat de app in gebruik is, zodat de update kan worden toegepast. Deze kunnen worden ingesteld op basis van een aantal verschillende triggers, zoals een gepland tijdstip of aanmelding. Zie [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)voor meer informatie over het gebruik van deze beleidsweergave.
+Nu ingeschakeld voor HoloLens is een nieuw beleid waarmee IT-beheerders een terugkerende of eenmalige datum kunnen instellen voor het opnieuw opstarten van apps waarvan de update is mislukt omdat de app in gebruik is, zodat de update kan worden toegepast. Deze kunnen worden ingesteld op basis van een aantal verschillende triggers, zoals een gepland tijdstip of aanmelding. Zie [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)voor meer informatie over het gebruik van dit beleid.
 
 ### <a name="use-only-private-store-apps-for-microsoft-store"></a>Alleen persoonlijke Store-apps gebruiken voor Microsoft Store
 
-Het beleid RequirePrivateStoreOnly is ingeschakeld voor HoloLens. Met dit beleid kan Microsoft Store-app zodanig worden geconfigureerd dat alleen de persoonlijke opslag wordt weer geven die voor uw organisatie is geconfigureerd. De toegang beperken tot alleen de apps die u beschikbaar hebt gemaakt.
+Het beleid RequirePrivateStoreOnly is ingeschakeld voor HoloLens. Met dit beleid kan Microsoft Store-app zodanig worden geconfigureerd dat alleen de persoonlijke opslag wordt weer te geven die voor uw organisatie is geconfigureerd. Beperk de toegang tot alleen de apps die u beschikbaar hebt gemaakt.
 
 Meer informatie over [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
 
@@ -183,12 +183,14 @@ U kunt nu WDAC gebruiken om te blokkeren dat apps of processen worden gelanceerd
 
 ### <a name="fixes-and-improvements"></a>Oplossingen en verbeteringen
 
-- Er is een bekend probleem opgelost Apparaatportal er geen prompt [was om vergrendelde bestanden te downloaden.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
-- Er is [een bekend probleem opgelost Apparaatportal problemen met time-outs voor](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out) het uploaden en downloaden van bestanden.
-- Behandelt problemen met het rapporteren van nalevingseigenschappen van HoloLens apparaten; Opnieuw opstarten kan vereist zijn om de juiste rapportage te kunnen triggeren op Insider-builds.  
-- Er is een [API](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348&preserve-view=true) voor toegewezen toegang ingeschakeld, zodat apps nu kunnen bepalen of een HoloLens wordt uitgevoerd in een kioskmodus voor de gebruiker die is aangemeld bij de HoloLens.
+- Er is [een bekend probleem opgelost voor Apparaatportal waar er geen prompt was om vergrendelde bestanden te downloaden.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
+- Er is [een bekend probleem opgelost voor Apparaatportal met time-outs voor](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out) het uploaden en downloaden van bestanden.
+- Behandelt problemen met het rapporteren van nalevingseigenschappen van HoloLens apparaten; Mogelijk moet u opnieuw opstarten om de juiste rapportage te kunnen starten op Insider-builds.  
+- Een TOEGEWEZEN [toegangs-API](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348&preserve-view=true) ingeschakeld, zodat apps nu kunnen bepalen of een HoloLens wordt uitgevoerd in een kioskmodus voor de gebruiker die is aangemeld bij de HoloLens.
 - De in-box-versie van de Remote Assist is geïnstalleerd op nieuwe flashes.
-- Verwerking van Gamepad voor 2D-apps is uitgeschakeld in Insider-builds. Door deze te verwijderen, kunnen apps de Gamepad-API's nu rechtstreeks gebruiken en toegang hebben tot de hele set besturingselementen en doen wat ze willen. Ontwikkelaars moeten de Gamepad-API's gebruiken om Gamepad-invoer te gebruiken. Hier is een voorbeeld voor [Gamepad Class (Windows. Gaming.Input) - Windows UWP-toepassingen](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true)
+- Verwerking van Gamepad voor 2D-apps is uitgeschakeld in Insider-builds. Door deze te verwijderen, kunnen apps nu rechtstreeks gebruikmaken van de Gamepad-API's en hebben ze toegang tot de volledige set besturingselementen en kunnen ze doen wat ze willen. Ontwikkelaars moeten de Gamepad-API's gebruiken om Gamepad-invoer te gebruiken. Hier is een voorbeeld voor [Gamepad-klasse (Windows. Gaming.Input) - Windows UWP-toepassingen](/uwp/api/windows.gaming.input.gamepad?view=winrt-20348&preserve-view=true)
+- Er is een probleem opgelost waarbij OOBE na de eerste aanmelding van gebruikers werd beëindigd in scenario's waarin op AAD-groepen gebaseerde kioskconfiguraties werden gebruikt.
+- Er is een probleem opgelost met het weergeven van updatemeldingen en dialoogvensterprompts om het apparaat opnieuw op te starten.
 
 ## <a name="start-receiving-insider-builds"></a>Beginnen met het ontvangen van Insider-builds
 
@@ -202,19 +204,19 @@ U kunt nu WDAC gebruiken om te blokkeren dat apps of processen worden gelanceerd
 
 Ga op HoloLens 2 apparaat naar **Instellingen**  >  **Update & Security**  >  **Windows Insider-programma** en selecteer **Aan de slag.** Koppel het account dat u hebt gebruikt om u te registreren als Windows Insider.
 
-Windows insider wordt verplaatst naar Kanalen. De **snelle** ring wordt het **Dev-kanaal,** de langzame **ring** wordt de **bèta-kanaal** en de **Release Preview-ring** wordt het **Release Preview-kanaal.** Deze toewijzing ziet er als volgende uit:
+Windows insider gaat nu over op Kanalen. De **Fast-ring** wordt het **Dev-kanaal,** de langzame **ring** wordt de **bèta-kanaal** en de **Release Preview-ring** wordt het **Release Preview-kanaal.** Deze toewijzing ziet er als volgende uit:
 
-![Windows Uitleg insider-kanalen.](images/WindowsInsiderChannels.png)
+![Windows Uitleg van Insider Channels.](images/WindowsInsiderChannels.png)
 
-Zie [Introducing Windows Insider Channels (Introductie Windows Insider-kanalen)](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) op Windows Blogs.
-Selecteer vervolgens **Actieve ontwikkeling van Windows**, kies of u het **Dev-kanaal** wilt ontvangen of **bèta-kanaal** builds en bekijk de programmavoorwaarden.
-Selecteer **Bevestigen > Nu opnieuw opstarten om** te voltooien. Nadat het apparaat opnieuw is opgestart, gaat u **naar Instellingen > Update & Security > Controleren** op updates om de nieuwste build te downloaden.
+Zie [Introducing Windows Insider Channels (Introductie Windows Insider Channels)](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) op Windows Blogs.
+Selecteer vervolgens **Actieve ontwikkeling van Windows**, kies of u het **Dev-kanaal** wilt ontvangen of bèta-kanaal **builds** en bekijk de programmavoorwaarden.
+Selecteer **Bevestigen > Nu opnieuw opstarten om** te voltooien. Nadat het apparaat opnieuw is opgestart, gaat u naar **Instellingen > Update & Security > Controleren** op updates om de nieuwste build te downloaden.
 
 ### <a name="update-error-0x80070490-work-around"></a>Updatefout 0x80070490 work-around
 
-Als er een updatefout 0x80070490 tijdens het bijwerken op het kanaal Dev of Beta, probeert u de volgende korte-termijn work-around. Het omvat het verplaatsen van uw insider-kanaal, het ophalen van de update en vervolgens het terug verplaatsen van uw Insider-kanaal.
+Als er een updatefout wordt 0x80070490 bij het bijwerken op het kanaal Dev of Beta, probeert u de volgende korte-termijn-work-around. Dit omvat het verplaatsen van uw insider-kanaal, het ophalen van de update en vervolgens het terug verplaatsen van uw Insider-kanaal.
 
-#### <a name="stage-one---release-preview"></a>Fase 1 - releasevoorbeeld
+#### <a name="stage-one---release-preview"></a>Fase 1 - preview-versie
 
 1. Instellingen, Update & Security en selecteer Windows Insider-programma **Release Preview Channel.**
 
@@ -224,40 +226,40 @@ Als er een updatefout 0x80070490 tijdens het bijwerken op het kanaal Dev of Beta
 
 1. Instellingen, Update & Security en Windows Insider-programma **Dev Channel.**
 
-2. Instellingen, & bijwerken, Windows Bijwerken, **Controleren op updates.**
+2. Instellingen, & bijwerken, Windows Bijwerken, Controleren **op updates.**
 
 ## <a name="ffu-download-and-flash-directions"></a>FFU-download- en flashbeschrijvingen
 
-Als u wilt testen met een ffu die is ondertekend met een vlucht, moet u eerst uw apparaat ontgrendelen voordat de ffu met een ondertekende vlucht wordt geflitst.
+Als u wilt testen met een ffu die is ondertekend met een vlucht, moet u eerst uw apparaat ontgrendelen voordat de met vlucht ondertekende ffu wordt geflitst.
 
 1. Op pc:
     1. Download ffu naar uw pc vanaf [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) .
 
     1. Installeer ARC (Advanced Recovery Companion) vanuit de Microsoft Store: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) .
 
-1. On HoloLens- Flight Unlock: Open **Instellingen** Update & Security Windows Insider-programma registreer het apparaat  >    >   en start het opnieuw op.
+1. Op HoloLens: Ontgrendelen met vlucht: **open** Instellingen Update & Security Windows Insider-programma registreer het apparaat  >    >   en start het opnieuw op.
 
-1. Flash-FFU: u kunt nu de met vlucht ondertekende FFU met ARC flashen.
+1. Flash-FFU: u kunt nu de met vlucht ondertekende FFU flashen met behulp van ARC.
 
-### <a name="provide-feedback-and-report-issues"></a>Feedback geven en problemen melden
+### <a name="provide-feedback-and-report-issues"></a>Feedback geven en problemen rapporteren
 
-Gebruik de [Feedback-hub-app op](hololens-feedback.md) uw HoloLens feedback te geven en problemen te melden. Het Feedback-hub zorgt ervoor dat alle benodigde diagnostische gegevens worden opgenomen om onze technici te helpen het probleem snel op te sporen en op te lossen.  Problemen met de Chinese en Japanse versie van HoloLens moeten op dezelfde manier worden gerapporteerd.
+Gebruik de [Feedback-hub-app op](hololens-feedback.md) uw HoloLens feedback te geven en problemen te melden. Door Feedback-hub zorgt u ervoor dat alle benodigde diagnostische gegevens worden opgenomen om onze technici te helpen het probleem snel op te sporen en op te lossen.  Problemen met de Chinese en Japanse versie van HoloLens moeten op dezelfde manier worden gerapporteerd.
 
 > [!NOTE]
-> Zorg ervoor dat u de prompt accepteert waarin wordt gevraagd of u Feedback-hub documenten wilt openen (selecteer **Ja** wanneer u hier om wordt gevraagd).
+> Zorg ervoor dat u de prompt accepteert waarin u wordt gevraagd of u Feedback-hub documenten wilt openen (selecteer **Ja** wanneer u hier om wordt gevraagd).
 
 ## <a name="note-for-developers"></a>Opmerking voor ontwikkelaars
 
-U bent welkom en aangemoedigd om uw toepassingen te ontwikkelen met insider-builds van HoloLens.  Bekijk de documentatie [HoloLens ontwikkelaars om aan](https://developer.microsoft.com/windows/mixed-reality/development) de slag te gaan. Deze instructies werken met Insider-builds van HoloLens.  U kunt dezelfde builds van Unity en Visual Studio die u al gebruikt voor HoloLens ontwikkeling.
+U bent welkom en aangemoedigd om te proberen uw toepassingen te ontwikkelen met insider-builds van HoloLens.  Bekijk de documentatie [HoloLens ontwikkelaars om aan](https://developer.microsoft.com/windows/mixed-reality/development) de slag te gaan. Dezelfde instructies werken met Insider-builds van HoloLens.  U kunt dezelfde builds van Unity en Visual Studio die u al gebruikt voor HoloLens ontwikkeling.
 
 ## <a name="stop-receiving-insider-builds"></a>Geen Insider-builds meer ontvangen
 
 Als u geen Insider-builds van Windows Holographic meer wilt ontvangen, kunt u zich uitloggen wanneer op [](hololens-recovery.md) uw HoloLens een productie-build wordt uitgevoerd, of u kunt uw apparaat herstellen met behulp van Advanced Recovery Companion om uw apparaat te herstellen naar een niet-Insider-versie van Windows Holographic.
 
 > [!CAUTION]
-> Er is een bekend probleem waarbij gebruikers die de registratie van Insider Preview-builds ongedaan maken nadat ze handmatig een nieuwe preview-build hebben geïnstalleerd, een blauw scherm krijgen. Daarna moeten ze hun apparaat handmatig herstellen. Bekijk meer over dit bekende probleem voor meer informatie over of u hier al dan niet [mee te maken zou krijgen.](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
+> Er is een bekend probleem waarbij gebruikers die de registratie van Insider Preview-builds ongedaan maken nadat ze handmatig een nieuwe preview-build hebben geïnstalleerd, een blauw scherm krijgen. Daarna moeten ze hun apparaat handmatig herstellen. Bekijk meer over dit bekende probleem voor meer informatie over of u al dan niet [wordt beïnvloed.](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 
-Controleren of uw HoloLens een productie-build wordt uitgevoerd:
+Om te controleren of uw HoloLens een productie-build wordt uitgevoerd:
 
 1. Ga naar **Instellingen > System > About** en zoek het buildnummer.
 
@@ -267,4 +269,4 @@ Als u zich wilt af melden voor Insider-builds:
 
 1. Ga op HoloLens met een productie-build naar Update **Instellingen > Update & Security > Windows Insider-programma** en selecteer Stop Insider **builds.**
 
-1. Volg de instructies om uw apparaat uit te kiezen.
+1. Volg de instructies voor het opt-outen van uw apparaat.

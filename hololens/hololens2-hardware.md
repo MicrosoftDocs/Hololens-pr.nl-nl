@@ -13,11 +13,11 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: c1d83577400126903a80999c46ddaeabddaba029
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428269"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126035953"
 ---
 # <a name="about-hololens-2"></a>Over HoloLens 2
 
@@ -138,20 +138,20 @@ Als u het percentage interne acculadingen wilt behouden/verhogen terwijl het app
 
 | &nbsp; | &nbsp; |
 |---|---|
-| **Windows Holographic Operating System** | Met [Windows Holographic OS](hololens-release-notes.md)kunnen gebruikers Windows 10 apps en games in een mixed reality gebruiken via de HoloLens 2.
+| **Windows Holographic Operating System** | Met [Windows Holographic OS](hololens-release-notes.md)kunnen Windows 10 een aantal van hun apps en games in een mixed reality gebruiken via de HoloLens 2.
 | **3D-viewer** | [3D-viewer](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) kunt u eenvoudig 3D-modellen en animaties in realtime bekijken.|
 | **Cortana** | [Cortana,](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab)uw persoonlijke productiviteitsassistent, kunt u op de hoogte blijven van wat belangrijk is en tijd besparen bij het vinden van wat u nodig hebt.  |
 | **Dynamics 365 Guides** |  [Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab) helpt werknemers om sneller nieuwe vaardigheden te leren op HoloLens apparaten. |
-| **Dynamics 365 Remote Assist** | [Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) kunnen technici samenwerken en problemen met externe samenwerkers oplossen met behulp van Microsoft Teams of Dynamics 365 Remote Assist.  |
+| **Dynamics 365 Remote Assist** | [Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab) stelt technici in staat om samen te werken en problemen met externe samenwerkers op te lossen met behulp van Microsoft Teams of Dynamics 365 Remote Assist.  |
 | **Feedback-hub** | [Feedback-hub](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab) kunt u feedback geven over Windows apps door uw suggesties of problemen te delen.  |
 | **Verkenner** | Verkenner biedt een grafische gebruikersinterface voor toegang tot de bestandssystemen. |
 | **E-mail en agenda** | Met [de apps Mail en Agenda](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) kunt u up-to-date blijven met uw e-mail, uw planning beheren en op de hoogte blijven van uw contactpersonen. |
 | **Microsoft Edge** | Microsoft Edge biedt u prestaties van wereldklasse met meer privacy, productiviteit en meer waarde tijdens het bladeren. |
 | **Microsoft Store** | De [Microsoft Store](https://www.microsoft.com) is uw go-to-bron voor apps en games die werken met HoloLens.|
 | **Films & TV** | [Films & tv](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab) brengt u de nieuwste entertainment in één eenvoudige, snelle en elegante app. |
-| **OneDrive** | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) kunt u overal vanaf al uw apparaten bestanden openen en bewerken.  |
-| **Foto's** | [Foto's](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab) kunt u uw foto's en video's bekijken en bewerken, films maken en een foto maken.  |
-| **Instellingen** | De Instellingen-app is de plek waar u de manier waarop Windows Holographic werkt, kunt aanpassen.  |
+| **OneDrive** | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab) kunt u uw bestanden vanaf al uw apparaten overal openen en bewerken.  |
+| **Foto's** | [Foto's](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab) kunt u uw foto's en video's bekijken en bewerken, films maken en maken.  |
+| **Instellingen** | De Instellingen app is de plek waar u de manier waarop Windows Holographic werkt, kunt aanpassen.  |
 | **Tips** | [Tips](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab) kunt u verrassende en minder bekende dingen leren die u kunt doen in Windows Holographic. |
 
 ## <a name="device-certifications"></a>Apparaatcertificeringen
@@ -160,7 +160,7 @@ Als u het percentage interne acculadingen wilt behouden/verhogen terwijl het app
 
 * [Product Safety](https://support.microsoft.com/en-us/help/4023454/safety-information)
 * [Waarschuwingen en instructies voor product safety](https://support.microsoft.com/en-us/help/4558037/product-safety-warnings-and-instructions)
-* Oogbeveiliging: HoloLens 2 is getest en voldoet aan de basisvereisten voor impactbeveiliging van ANSI Z87.1, CSA Z94.3 en EN 166.
+* Oogbeveiliging: HoloLens 2 is getest en voldoet aan de basisvereisten voor beveiliging tegen impact van ANSI Z87.1, CSA Z94.3 en EN 166.
 * [SAR-informatie](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ### <a name="regulatory-information"></a>Informatie over regelgeving
@@ -192,7 +192,7 @@ Niet bedoeld voor gebruik door kinderen die jonger zijn dan 13.
 
 > [!NOTE]
 > - Eenheid: Het zwarte vak in retailstijl waarin HoloLens 2 wordt verkocht.
-> - 1000 shipper: de verpakking van de verpakking van de verpakking rond unit.
+> - 14000 Shipper: De verpakking van de verpakking van de verpakking rond unit.
 
 ## <a name="finding-the-serial-number"></a>Het serienummer zoeken
 
@@ -200,7 +200,7 @@ Het serienummer voor HoloLens 2 apparaten wordt onder de visor afgedrukt.
 
 1. Til de visor van het apparaat omhoog.
 1. Kijk in de buurt van hetrow-pad.
-1. U vindt het serienummer dat zich dicht bij de auto bevindt.
+1. U vindt het serienummer in de buurt van het serienummer.
 
    <img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 
@@ -216,7 +216,7 @@ Het serienummer kan ook worden gevonden via een verbonden pc:
 ## <a name="next-steps"></a>Volgende stap(en)
 
 > [!div class="nextstepaction"]
-> [HoloLens 2-edities vergelijken](hololens2-options.md)
+> [De HoloLens 2 vergelijken](hololens2-options.md)
 
 > [!div class="nextstepaction"]
-> [Uw HoloLens 2 en HoloLens 2](hololens2-setup.md)
+> [Uw HoloLens 2](hololens2-setup.md)

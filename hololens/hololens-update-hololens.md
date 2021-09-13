@@ -15,19 +15,19 @@ manager: sekerawa
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: f39fc2c6c0aaf16f304f38216a424c3811eb439d
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427002"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032865"
 ---
 # <a name="update-hololens-2"></a>Werk HoloLens 2
 
 ## <a name="overview"></a>Overzicht
 
-We werken altijd aan nieuwe functies, foutfixes en beveiligingsupdates. U ontvangt een melding wanneer deze updates gereed zijn.
+We werken altijd aan nieuwe functies, oplossingen voor fouten en beveiligingsupdates. U ontvangt een melding wanneer deze updates gereed zijn.
 
-Op basis van uw voorkeur downloadt en installeert uw HoloLens automatisch systeemupdates wanneer deze zijn aangesloten op stroom, zijn verbonden met internet en zelfs stand-by.
+Op basis van uw voorkeur downloadt en installeert uw HoloLens systeemupdates automatisch wanneer deze zijn aangesloten op stroomvoorziening, zijn verbonden met internet en zelfs stand-by.
 
 Om ervoor te HoloLens dat uw apparaat altijd wordt bijgewerkt, laat u het aangesloten op het bijgeleverde apparaat. U wilt ook dat uw HoloLens zijn verbonden met internet. Op deze manier worden systeemupdates automatisch gedownload en geïnstalleerd. 
 
@@ -38,7 +38,7 @@ Met Windows Update-service kunt u meerdere aspecten van het updateproces beheren
 Voor HoloLens kunt u automatisch twee typen updates beheren. 
 
 - Functie-updates: twee keer per jaar uitgebracht.
-- Kwaliteitsupdates: inclusief essentiële beveiligingsupdates. Ze worden maandelijks vrijgegeven of indien nodig.
+- Kwaliteitsupdates: inclusief essentiële beveiligingsupdates. Ze worden maandelijks vrijgegeven, of indien nodig.
 
 Gebruik  / **AllowAutoUpdate bijwerken om** het scannen, downloaden en installeren van updates te beheren. 
 
@@ -46,13 +46,13 @@ Gebruik  / **AllowAutoUpdate bijwerken om** het scannen, downloaden en installer
 
 U kunt ook een updateschema instellen. Dit kan op een bepaalde dag of elke dag op een bepaald tijdstip zijn. Bijvoorbeeld om 17:00 uur of buiten de werkuren.
 
-Ten slotte nog enkele woorden over het plannen van uw updatestrategie. We ondersteunen uitstel van updates. U kunt dus bepalen hoe lang moet worden gewacht nadat Microsoft een update heeft uitgebracht om die update op apparaten te installeren.
+Ten slotte nog enkele woorden over het plannen van uw updatestrategie. Wij ondersteunen uitstel van updates. U kunt dus bepalen hoe lang moet worden gewacht nadat Microsoft een update heeft uitgebracht om die update op apparaten te installeren.
 
-Soms probeert een bedrijf eerst alle nieuwe functies om te controleren of alles werkt en is het bedrijf bekend met de nieuwe updates, zodat het ondersteuningsteam wordt voorbereid. Zodra ze hebben bevestigd dat alles goed is, worden de updates voor het hele bedrijf uitrollen. Door subsets van uw apparaten te koppelen aan verschillende beleidsregels voor uitstel, ook wel updateringen genoemd, kunt u een strategie voor update-implementatie voor uw organisatie coördineren.
+Soms probeert een bedrijf eerst alle nieuwe functies om er zeker van te zijn dat alles werkt en is het bedrijf bekend met de nieuwe updates, zodat het ondersteuningsteam wordt voorbereid. Zodra ze hebben bevestigd dat alles goed is, worden de updates voor het hele bedrijf uitgebracht. Door subsets van uw apparaten te koppelen aan verschillende beleidsregels voor uitstel, ook wel updateringen genoemd, kunt u een strategie voor update-implementatie voor uw organisatie coördineren.
 
 ## <a name="hololens-update-tools"></a>HoloLens-updatehulpprogramma's
 
-In deze sectie wordt u door de HoloLens voor:
+In deze sectie wordt u door de HoloLens voor het volgende:
 
 - controleren op updates
 - handmatig bijwerken HoloLens
@@ -64,48 +64,48 @@ In deze sectie wordt u door de HoloLens voor:
 U kunt op elk gewenst moment controleren op updates in de instellingen.  Beschikbare updates bekijken en controleren op nieuwe updates:
 
 1. Open de app **Instellingen**.
-1. Navigeer **naar Update & Security** Windows  >  **Update**.
+1. **Navigeer naar Update & Security** Windows  >  **Update**.
 1. Selecteer **Controleren op updates**.
 
-Als er een update beschikbaar is, wordt de nieuwe versie gedownload. Nadat het downloaden is voltooid, selecteert u de knop **Nu** opnieuw opstarten om de installatie te activeren. Als uw apparaat minder dan 40% is en niet is aangesloten, wordt de update niet opnieuw opgestart.
+Als er een update beschikbaar is, wordt de nieuwe versie gedownload. Nadat het downloaden is voltooid, selecteert u de knop **Nu** opnieuw opstarten om de installatie te activeren. Als uw apparaat minder dan 40% is en niet is aangesloten, wordt de update niet opnieuw geïnstalleerd.
 
 Terwijl uw HoloLens update installeert, worden er draaiende tandwielen en een voortgangsindicator weergegeven. Schakel uw HoloLens gedurende deze tijd niet uit. Deze wordt automatisch opnieuw opgestart zodra de installatie is voltooid.
 
-HoloLens wordt één update tegelijk toegepast.  Als uw HoloLens meer dan één versie achter de meest recente versie ligt, moet u het updateproces mogelijk meerdere keren uitvoeren om deze volledig up-to-date te krijgen.
+HoloLens wordt één update tegelijk toegepast.  Als uw HoloLens meer dan één versie achter de meest recente versie ligt, moet u het updateproces mogelijk meerdere keren doorlopen om deze volledig up-to-date te krijgen.
 
 ### <a name="check-your-operating-system-version-build-number"></a>Controleer de versie van uw besturingssysteem (buildnummer)
 
-U kunt het systeemversienummer (buildnummer) controleren door Instellingen **en** **Systeem over te**  >  **selecteren.**
+U kunt het systeemversienummer (buildnummer) controleren door Instellingen **en** **Selecteer Systeem**  >  **over.**
 
 ### <a name="go-back-to-a-previous-version"></a>Terug naar een eerdere versie
 
-In sommige gevallen wilt u mogelijk teruggaan naar een eerdere versie van de HoloLens software. De aanbevolen stappen zijn:
+In sommige gevallen wilt u misschien teruggaan naar een eerdere versie van de HoloLens software. De aanbevolen stappen zijn:
 
 1. Neem contact op met de ondersteuning om te zien of ze uw probleem kunnen oplossen.
-    1. Zorg ervoor **dat Optionele** of **Volledige** telemetrie is ingeschakeld. Hierdoor kan uw fout beter worden ondernomen en kunnen technici gemakkelijker een diagnose stellen.
-    1. [Bestandsfeedback](hololens-feedback.md) is zo beschrijvend mogelijk. Noteer de titel of gebruik de functie voor delen, zodat u uw fout kunt delen met ondersteuning.
-    1. Neem contact [op met ondersteuning](https://aka.ms/hlsupport). Als uw probleem een probleem is dat moet worden opgelost door terug te keren naar een eerdere versie, kunnen ze u de FFU leveren om uw apparaat te laten knipperen.
+    1. Zorg ervoor **dat Optionele** **of Volledige** telemetrie is ingeschakeld. Dit maakt uw fout bruikbaarder en gemakkelijker te diagnosticeren voor technici.
+    1. [Bestandsfeedback](hololens-feedback.md) is zo beschrijvend mogelijk. Noteer de titel of gebruik de sharefunctie, zodat u uw fout kunt delen met ondersteuning.
+    1. Neem contact [op met ondersteuning](https://aka.ms/hlsupport). Als uw probleem een probleem is dat moet worden opgelost door terug te keren naar een eerdere versie, kunnen ze u de FFU geven om uw apparaat te laten knipperen.
 
-1. Als dat niet werkt, stelt u uw HoloLens 2 opnieuw in [met de Advanced Recovery Companion](hololens-recovery.md).
+1. Als dat niet werkt, stelt u de gegevens opnieuw in of haalt u een [reflash op HoloLens 2 advanced Recovery Companion](hololens-recovery.md).
     1. Download advanced Recovery [Companion](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?activetab=pivot:overviewtab) op uw pc van de Microsoft Store.
-    1. Zorg ervoor dat u geen telefoons of apparaten Windows aangesloten op uw pc.
-    1. Kies naar welke versie u wilt flashen:
+    1. Zorg ervoor dat u geen telefoons of apparaten hebt Windows zijn aangesloten op uw pc.
+    1. Kies welke versie u wilt flashen:
         1. U kunt de meest [recente versie HoloLens 2 downloaden.](https://aka.ms/hololens2download)
-        1. U kunt de standaard build gebruiken die ARC-hosts gebruikt. (Als u deze optie kiest, slaat u de volgende stap over.)
+        1. U kunt de standaard build gebruiken die ARC-hosts bevat. (Als u deze optie kiest, slaat u de volgende stap over.)
         1. U kunt een build-ondersteuning gebruiken die u hebt geleverd.
-    1. Wanneer u deze downloads hebt voltooid, opent u **Bestandenverkenner**  >  **Downloads.** Klik met de rechtermuisknop op de ingepakte map die u hebt gedownload en selecteer **Alles** uitpakken  >  **om** deze uit tepakken.
+    1. Wanneer u deze downloads hebt voltooid, opent u **Bestandenverkenner**  >  **Downloads.** Klik met de rechtermuisknop op de ingepakte map die u hebt gedownload en selecteer **Alles** uitpakken  >  **om** het uit tepakken.
     1. Verbinding maken verbinding HoloLens uw pc met behulp van een USB-A-naar-USB-C-kabel. (Zelfs als u andere kabels hebt gebruikt om uw HoloLens, werkt deze het beste.)
-    1. De Advanced Recovery Companion detecteert automatisch uw HoloLens. Selecteer de **Microsoft HoloLens** tegel.
-    1. Selecteer in het volgende scherm **Handmatige pakketselectie** en selecteer vervolgens het installatiebestand in de map die u in stap 4 hebt uitgepakt. (Zoek naar een bestand met de `.ffu` extensie.)
+    1. Advanced Recovery Companion detecteert automatisch uw HoloLens. Selecteer de **Microsoft HoloLens** tegel.
+    1. Selecteer in het  volgende scherm Handmatige pakketselectie en selecteer vervolgens het installatiebestand in de map die u in stap 4 hebt uitgepakt. (Zoek naar een bestand met de `.ffu` extensie.)
     1. Selecteer **Software installeren** en volg de instructies.
 
 > [!NOTE]
 > Als u terug gaat naar een eerdere versie, worden uw persoonlijke bestanden en instellingen verwijderd.
 
-Als u de momenteel geïnstalleerde versie wilt blijven, kunt u updates ook [handmatig onderbreken.](hololens-updates.md#pause-updates-via-device) Dit geeft het technische team tijd om het probleem op te lossen.
+Als u de momenteel geïnstalleerde versie wilt blijven, kunt u bovendien updates [handmatig onderbreken.](hololens-updates.md#pause-updates-via-device) Hierdoor krijgt het technische team de tijd om het probleem op te lossen.
 
 ## <a name="windows-insider-program-on-hololens"></a>Windows Insider-programma op HoloLens
 
-Wilt u de nieuwste functies in HoloLens?  Als dat het zo is, voegt u de Windows Insider-programma; U krijgt toegang tot preview-builds van HoloLens software-updates voordat deze beschikbaar zijn voor het algemene publiek.
+Wilt u de nieuwste functies in HoloLens?  Als dit het is, voegt u de Windows Insider-programma; U krijgt toegang tot preview-builds van HoloLens software-updates voordat ze beschikbaar zijn voor het algemene publiek.
 
-[Bekijk Windows Insider preview voor Microsoft HoloLens](hololens-insider.md).
+[Bekijk Windows Insider-preview voor Microsoft HoloLens.](hololens-insider.md)

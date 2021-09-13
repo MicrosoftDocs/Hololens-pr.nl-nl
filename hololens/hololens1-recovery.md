@@ -17,13 +17,13 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 4840535030cc81f222cb25357474f1c751426e91
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427327"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032793"
 ---
-# <a name="restart-reset-or-recover-hololens-1st-gen"></a>Opnieuw opstarten, opnieuw instellen of HoloLens herstellen (1st Gen)
+# <a name="restart-reset-or-recover-hololens-1st-gen"></a>Opnieuw opstarten, opnieuw instellen of HoloLens herstellen (1e generatie)
 
 Als u problemen ondervindt met uw HoloLens, kunt u proberen opnieuw op te starten of opnieuw in te stellen, of het apparaat zelfs opnieuw instellen met behulp van apparaatherstel. Dit artikel begeleidt u door de aanbevolen herstelstappen in de volgorde.
 
@@ -46,11 +46,11 @@ De veiligste manier om de HoloLens opnieuw op te starten, is door Cortana te geb
 1. Schakel uw HoloLens.
 1. Zorg ervoor dat een gebruiker is aangemeld en dat het apparaat niet wacht op een wachtwoord om het te ontgrendelen.
 2. Zeg 'Hey Cortana, reboot' of 'Hey Cortana, restart'.
-3. Cortana reageert en u wordt gevraagd om dit te bevestigen. Wacht tot er na de vraag een geluid wordt afspelen en zeg vervolgens Ja. Het apparaat wordt opnieuw opgestart.
+3. Cortana antwoordt en u wordt gevraagd om te bevestigen. Wacht tot er na de vraag een geluid wordt afspelen en zeg vervolgens Ja. Het apparaat wordt opnieuw opgestart.
 
 ### <a name="use-the-power-button-to-do-a-safe-restart"></a>De aan/uit-knop gebruiken om veilig opnieuw op te starten
 
-Als u het apparaat nog steeds niet opnieuw kunt opstarten, probeert u het apparaat opnieuw op te starten met behulp van de **aan/uit-knop:**
+Als u het apparaat nog steeds niet opnieuw kunt opstarten, probeert u het opnieuw op te starten met behulp van de **aan/uit-knop:**
 
 1. Houd de **aan/uit-knop** vijf seconden ingedrukt. Na 1 seconde gaan alle vijf led's uit en schakelen ze één voor één van rechts naar links uit. Na 5 seconden zijn alle LED's uitgeschakeld, wat aangeeft dat het afsluiten is geslaagd.
       
@@ -66,14 +66,14 @@ Als u het apparaat nog steeds niet opnieuw kunt opstarten, probeert u het appara
 
 Als de vorige procedure niet werkt, probeert u het apparaat opnieuw op te starten met behulp [van Windows Apparaatportal](/windows/mixed-reality/using-the-windows-device-portal). Zoek in de rechterbovenhoek de optie om het apparaat opnieuw op te starten of af te sluiten.
 
-### <a name="do-an-unsafe-forced-restart"></a>Een onveilig geforceerd opnieuw opstarten
+### <a name="do-an-unsafe-forced-restart"></a>Onveilig geforceerd opnieuw opstarten
 
 Als de vorige methoden uw apparaat niet opnieuw hebben HoloLens, forceer dan opnieuw opstarten. Deze methode is gelijk aan het verwijderen en opnieuw installeren van de batterij. Dit is gevaarlijk omdat uw apparaat hierdoor beschadigd kan raken. Als dat gebeurt, moet u uw HoloLens.  
 
 > [!WARNING]
 > Dit is een mogelijk schadelijke methode en mag alleen worden gebruikt als de eerder genoemde methoden niet werken.
 
-1. Houd de **aan/uit-knop** ten minste 10 seconden ingedrukt.
+1. Houd de **aan/uit-knop** ten minste tien seconden ingedrukt.
    - Het is geen probleem om de knop langer dan 10 seconden ingedrukt te houden.
    - Het is veilig om led-activiteiten te negeren.
 1. Laat de knop los en wacht 2-3 seconden.

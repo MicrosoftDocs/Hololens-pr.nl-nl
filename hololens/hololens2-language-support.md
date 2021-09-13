@@ -18,11 +18,11 @@ manager: jarrettr
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: dc3de0c95f17c821816bad278de5717bc24a2c29
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427767"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032662"
 ---
 # <a name="supported-languages-for-hololens-2"></a>Ondersteunde talen voor HoloLens 2
 
@@ -59,9 +59,9 @@ Het installatieproces configureert uw HoloLens voor een specifieke regio en taal
 > [!NOTE]  
 > Uw spraak- en dicteertaal is afhankelijk van (en is gelijk aan) de Windows weergavetaal.
 
-### <a name="to-change-the-windows-display-language"></a>De weergavetaal van Windows wijzigen
+### <a name="to-change-the-windows-display-language"></a>De weergavetaal Windows wijzigen
 
-1. Open het **menu Start** en selecteer vervolgens **Instellingen** Tijd  >  **en**  >  **taaltaal.**
+1. Open het **menu Start** en selecteer vervolgens **Instellingen**  >  **Tijd en**  >  **taaltaal.**
 2. Selecteer **Windows weergavetaal** en selecteer vervolgens een taal.  
 
 Als de ondersteunde taal die u zoekt niet in het menu staat, volgt u deze stappen:  
@@ -77,6 +77,6 @@ Als u een toetsenbordindeling wilt toevoegen of verwijderen, opent u het menu **
 Als uw HoloLens meerdere toetsenbordindelingen heeft,  gebruikt u de lay-outtoets om ertussen te schakelen. De  lay-outsleutel staat in de rechterbenedenhoek van het schermtoetsenbord.
 
 > [!NOTE]  
-> Het toetsenbord op het scherm kan IME (Input Method Editor) gebruiken om tekens in te voeren in talen, zoals Japans. Deze HoloLens echter geen ondersteuning voor Bluetooth toetsenborden die gebruikmaken van IME.
+> Het toetsenbord op het scherm kan IME (Input Method Editor) gebruiken om tekens in te voeren in talen, zoals Japans. Deze HoloLens echter geen ondersteuning voor externe Bluetooth toetsenborden die gebruikmaken van IME.
 >  
 > Terwijl u IME samen met het toetsenbord op het scherm gebruikt, kunt u doorgaan met het Bluetooth toetsenbord in het Engels te typen. Als u wilt schakelen tussen toetsenborden, drukt u op de knop tilde teken ( **~** ).

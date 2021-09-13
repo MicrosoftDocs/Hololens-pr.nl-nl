@@ -15,25 +15,25 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: d071f4326a35a9ea61e2069618da7107bb808f04
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427644"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032206"
 ---
 # <a name="provisioning-package"></a>Inrichtingspakket
 
-Inrichtingspakketten kunnen worden gebruikt om apparaten voor te bereiden en te configureren in een omgeving zonder toegang tot eindpuntbeheer. Ze kunnen ook worden geïmplementeerd op een apparaat, ongeacht de identiteit van de gebruiker, de inschrijvingsstatus, tijdens de Out-of-Box Experience (OOBE) of door een inrichtingspakket toe te passen tijdens de [installatie](/hololens/hololens-provisioning##apply-a-provisioning-package-to-hololens-during-setup).
+Inrichtingspakketten kunnen worden gebruikt voor het voorbereiden en configureren van apparaten in een omgeving zonder toegang tot eindpuntbeheer. Ze kunnen ook worden geïmplementeerd op een apparaat, ongeacht de identiteit van de gebruiker, de inschrijvingsstatus, tijdens de Out-of-Box Experience (OOBE) of door een inrichtingspakket toe te passen tijdens de [installatie](/hololens/hololens-provisioning##apply-a-provisioning-package-to-hololens-during-setup).
 
 ## <a name="provisioning-packages-considerations"></a>Overwegingen bij inrichtingspakketten
 
 * Niet-openbare apps
 * Alleen USB-side-load
-* Geen automatische update (handmatige updates via PPKG's vereist)
+* Geen automatische update (vereist handmatige updates via PPKG's)
 
-Apps die zijn geïnstalleerd via een inrichtingspakket, moeten zijn ondertekend met een certificaat in het lokale computeropslag. Met inrichtingspakketten kunnen alleen certificaten worden geïnstalleerd op het apparaatopslag (lokale computer). Daarom kunnen een app en een certificaat worden geïnstalleerd via hetzelfde inrichtingspakket. Als u uw certificaat van MDM implementeert of installeert via [Certificaatbeheer,](certificate-manager.md)moet u het certificaat implementeren in de store van de lokale computer om apps te ondertekenen die op deze manier zijn geïnstalleerd.
+Apps die zijn geïnstalleerd via een inrichtingspakket, moeten zijn ondertekend met een certificaat in het lokale computeropslag. Met inrichtingspakketten kunnen alleen certificaten worden geïnstalleerd in het apparaatopslag (lokale computer). Daarom kunnen een app en een certificaat worden geïnstalleerd via hetzelfde inrichtingspakket. Als u uw certificaat van MDM implementeert of installeert via [Certificaatbeheer,](certificate-manager.md)moet u het certificaat implementeren in de store van de lokale computer om apps te ondertekenen die op deze manier zijn geïnstalleerd.
 
-Voor meer informatie over de basisbeginselen van het maken van een inrichtingspakket HoloLens apparaten, gaat u [HoloLens Inrichting.](/hololens/hololens-provisioning) Als u een app wilt implementeren, moet u beginnen met geavanceerde inrichting.
+Als u de basisbeginselen van het maken van een inrichtingspakket voor HoloLens apparaten wilt leren, gaat u [naar HoloLens Inrichting.](/hololens/hololens-provisioning) Als u een app wilt implementeren, moet u beginnen met geavanceerde inrichting.
 
 > [!NOTE]
 > HoloLens (eerste generatie) biedt beperkte ondersteuning voor het installeren van apps **(UniversalAppInstall)** met behulp van een inrichtingspakket. HoloLens apparaten (eerste generatie) bieden alleen ondersteuning voor het installeren van een app via PPKG tijdens OOBE en alleen met installatie van gebruikerscontext.
@@ -48,7 +48,7 @@ In [Windows Configuration Designer volgt](https://www.microsoft.com/store/produc
 
    U kunt deze Apparaatportal op een apparaat waar u uw app al op hebt geïnstalleerd. Ga naar de pagina Apps en bekijk de regel PackageRelativeID, met alle informatie vóór de '!' Is uw **PackageFamilyName.**
 
-3. Vervolgens ziet u dat u een nieuwe sectie hebt, **ApplicationFile**. Gebruik dit gebied om uw appx-bundel te uploaden.
+3. Vervolgens ziet u dat u een nieuwe sectie hebt, **ApplicationFile.** Gebruik dit gebied om uw appx-bundel te uploaden.
 
 4. Afhankelijk van of u uw app hebt aangeschaft of uw eigen LOB-app hebt gebouwd, moet u het licentiebestand of beveiligingscertificaat uploaden.
 
@@ -58,4 +58,4 @@ In [Windows Configuration Designer volgt](https://www.microsoft.com/store/produc
 
 Zorg ervoor dat u uw project op een veilige locatie op slaan. Exporteert het vervolgens als **een inrichtingspakket.**   
 
-Zie ook: [Uw inrichtingspakket toepassen op HoloLens](/hololens/hololens-provisioning#apply-a-provisioning-package-to-hololens-during-setup).
+Zie ook: [Uw inrichtingspakket toepassen op HoloLens.](/hololens/hololens-provisioning#apply-a-provisioning-package-to-hololens-during-setup)

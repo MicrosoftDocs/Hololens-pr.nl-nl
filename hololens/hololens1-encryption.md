@@ -14,11 +14,11 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: d5cf7385dd0a53c6b17f79e16364e84ab6ec867d
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428214"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032849"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>HoloLens (1e generatie) BitLocker-versleuteling
 
@@ -88,7 +88,7 @@ Inrichtingspakketten zijn bestanden die zijn gemaakt door het hulpprogramma Wind
 1. Druk kort op de knoppen **Volume omlaag en** **Aan/uit** en laat ze tegelijkertijd los.
 1. HoloLens wordt weergegeven als een apparaat in Verkenner op de pc.
 1. Sleep in Verkenner het inrichtingspakket (.ppkg) naar de apparaatopslag.
-1. Druk even op de knoppen **Volume omlaag en** **Aan/uit** terwijl u op de pagina **Passend staat.**
+1. Druk even op de knoppen **Volume omlaag en** **Aan/uit** terwijl u op de pagina Passend **staat.**
 1. Het apparaat vraagt u of u het pakket vertrouwt en het wilt toepassen. Bevestig dat u het pakket vertrouwt.
 1. U ziet of het pakket al dan niet is toegepast. Als dit is mislukt, kunt u het pakket herstellen en het opnieuw proberen. Als dit is gelukt, gaat u verder met het instellen van het apparaat.
 

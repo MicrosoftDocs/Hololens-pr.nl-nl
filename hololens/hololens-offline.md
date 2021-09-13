@@ -1,6 +1,6 @@
 ---
-title: Verbindings eindpunten beheren voor HoloLens
-description: Meer informatie over het instellen van een HoloLens via een Wi-Fi netwerk tijdens het beheren en configureren van verbindings eindpunten.
+title: Verbindings-eindpunten beheren voor HoloLens
+description: Meer informatie over het instellen van een HoloLens via een Wi-Fi netwerk tijdens het beheren en configureren van verbindings-eindpunten.
 keywords: hololens, offline, OOBE
 audience: ITPro
 ms.date: 07/01/2019
@@ -19,19 +19,19 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: f2d9faafac2f84b727b1e10be83d4d1b53a707b4
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428570"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036183"
 ---
-# <a name="manage-connection-endpoints-for-hololens"></a>Verbindings eindpunten beheren voor HoloLens
+# <a name="manage-connection-endpoints-for-hololens"></a>Verbindings-eindpunten beheren voor HoloLens
 
-Sommige HoloLens, apps en gerelateerde services dragen gegevens over naar Microsoft-netwerk eindpunten. In dit artikel worden verschillende eindpunten en URL's vermeld die in uw netwerkconfiguratie (bijvoorbeeld proxy of firewall) moeten worden toegestaan om deze onderdelen functioneel te maken.    
+Sommige HoloLens, apps en gerelateerde services dragen gegevens over naar Microsoft-netwerk eindpunten. In dit artikel worden verschillende eindpunten en URL's vermeld die moeten worden toegestaan in uw netwerkconfiguratie (bijvoorbeeld proxy of firewall) om deze onderdelen functioneel te maken.    
 
 ## <a name="near-offline-setup"></a>Bijna offline instellen
 
-HoloLens biedt ondersteuning voor een beperkte set offline-ervaringen voor klanten met netwerkomgevingsbeperkingen. Voor HoloLens moet de netwerkverbinding echter worden gemaakt via de initiële apparaatset en moeten de volgende URL's worden ingeschakeld:
+HoloLens biedt ondersteuning voor een beperkte set offline-ervaringen voor klanten met netwerkomgevingsbeperkingen. Voor HoloLens moet echter eerst een netwerkverbinding worden ingesteld en moeten de volgende URL's worden ingeschakeld:
 
 | Doel | URL |
 |------|------|
@@ -96,7 +96,7 @@ Naast de bovenstaande lijst moeten de volgende eindpunten worden ingeschakeld in
 | Microsoft-account                                   | login.msa.akadns6.net                                               |
 |                                                     | us.configsvc1.live.com.akadns.net                                   |
 | Microsoft Edge                                      | iecvlist.microsoft.com                                              |
-| Microsoft Forward Link Redirection Service (FWLink) | go.microsoft.com                                                    |
+| Omleidingsservice voor Microsoft Forward Link (FWLink) | go.microsoft.com                                                    |
 | Microsoft Store                                     | *.wns.windows.com                                                   |
 |                                                     | storecatalogrevocation.storequality.microsoft.com                   |
 |                                                     | img-prod-cms-rt-microsoft-com*                                      |
@@ -156,8 +156,8 @@ Naast de bovenstaande lijst moeten de volgende eindpunten worden ingeschakeld in
 
 - [Diagnostische Windows configureren in uw organisatie](/windows/privacy/configure-windows-diagnostic-data-in-your-organization)
 - [Verbindings eindpunten beheren voor Windows 10 Enterprise, versie 1903](/windows/privacy/manage-windows-1903-endpoints)
-- [Verbindingen beheren van Windows 10-besturingssysteemonderdelen naar Microsoft-services](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services)
-- [Verbindingen beheren van Windows 10-besturingssysteemonderdelen naar Microsoft-services met Microsoft Intune MDM-server](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
+- [Verbindingen beheren van Windows 10 besturingssysteemonderdelen naar Microsoft-services](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services)
+- [Verbindingen beheren van onderdelen Windows 10 besturingssysteem naar Microsoft-services met Microsoft Intune MDM-server](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm)
 - [Netwerkconfiguratievereisten en bandbreedte voor Intune](/intune/fundamentals/network-bandwidth-use#network-communication-requirements)
 - [Netwerkeindpunten voor Microsoft Intune](/intune/fundamentals/intune-endpoints)
 - [Office 365-URL's en IP-adresbereiken](/office365/enterprise/urls-and-ip-address-ranges)

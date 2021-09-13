@@ -13,11 +13,11 @@ manager: evmill
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 6f7da0263e8637486f0151fd2b9da55da8feccc1
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427708"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126035906"
 ---
 # <a name="connect-to-cellular-and-5g"></a>Verbinding maken naar mobiel en 5G
 
@@ -38,7 +38,7 @@ Aan de meeste mobiele connectiviteitsbehoeften kan een hotspot worden voldaan. H
 
 ## <a name="usb-c-tethering"></a>USB-C-tethering
 
-USB-C-tethering kan een lagere latentie bieden voor geavanceerde werkbelastingen die dit nodig hebben. [Azure Remote Rendering](https://azure.microsoft.com/services/remote-rendering)kan bijvoorbeeld profiteren van tethering. Houd er rekening mee dat voor tethering een kabel tussen het mobiele apparaat en HoloLens is vereist en dat tethering wordt ondersteund door een beperkt aantal apparaten.
+USB-C-tethering kan een lagere latentie bieden voor geavanceerde werkbelastingen die dit nodig hebben. [Azure Remote Rendering](https://azure.microsoft.com/services/remote-rendering)kan bijvoorbeeld profiteren van tethering. Houd er rekening mee dat voor tethering een kabel tussen het mobiele apparaat en HoloLens vereist is en dat tethering wordt ondersteund door een beperkt aantal apparaten.
 
 ### <a name="usb-c-compatibility"></a>COMPATIBILITEIT MET USB-C
 

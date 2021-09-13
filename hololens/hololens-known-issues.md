@@ -15,11 +15,11 @@ ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
 ms.openlocfilehash: 5c942bae91c7684f2c2d36aca6ace6306b5fed54
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124429005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032207"
 ---
 # <a name="known-issues-for-hololens-1st-gen"></a>Bekende problemen voor HoloLens (1e generatie)
 
@@ -67,7 +67,7 @@ Oplossingen:
 
 Visual Studio VS 2019 versie 16.2 is uitgebracht, waaronder een oplossing voor dit probleem. We raden u aan om bij te werken naar deze nieuwste versie om te voorkomen dat deze fout zich voordeed.
 
-Hoofdoorzaak van probleem: gebruikers die Visual Studio 2015 of vroege versies van Visual Studio 2017 hebben gebruikt voor het implementeren en opsporen van fouten in toepassingen op hun HoloLens en vervolgens de nieuwste versies van Visual Studio 2017 of Visual Studio 2019 met dezelfde HoloLens hebben gebruikt, worden beïnvloed. De nieuwere versies van Visual Studio implementeren een nieuwe versie van een onderdeel, maar bestanden van de oudere versie worden overgelaten op het apparaat, waardoor de nieuwere versie mislukt.  Dit veroorzaakt het volgende foutbericht: DEP0100: Zorg ervoor dat de ontwikkelaarsmodus voor het doelapparaat is ingeschakeld. Kan geen ontwikkelaarslicentie verkrijgen op vanwege \<ip\> een 80004005.
+Hoofdoorzaak van probleem: gebruikers die Visual Studio 2015 of vroege versies van Visual Studio 2017 hebben gebruikt voor het implementeren en opsporen van fouten in toepassingen op hun HoloLens en vervolgens de nieuwste versies van Visual Studio 2017 of Visual Studio 2019 met dezelfde HoloLens hebben gebruikt, worden beïnvloed. De nieuwere versies van Visual Studio een nieuwe versie van een onderdeel implementeren, maar bestanden van de oudere versie worden overgelaten op het apparaat, waardoor de nieuwere versie mislukt.  Dit veroorzaakt het volgende foutbericht: DEP0100: Zorg ervoor dat de ontwikkelaarsmodus voor het doelapparaat is ingeschakeld. Kan geen ontwikkelaarslicentie verkrijgen op \<ip\> vanwege een 80004005.
 
 #### <a name="workaround"></a>Tijdelijke oplossing
 
@@ -79,7 +79,7 @@ Ons team werkt momenteel aan een oplossing. In de tussentijd kunt u de volgende 
 
 1. Selecteer **Visual C#**  >  **Windows Desktop**  >  **Console-app (.NET Framework)**.
 
-1. Geef het project een naam (zoals HoloLensDeploymentFix) en zorg ervoor dat het framework is ingesteld op ten minste .NET Framework 4.5 en selecteer **vervolgens OK.**
+1. Geef het project een naam (zoals HoloLensDeploymentFix) en zorg ervoor dat het Framework is ingesteld op ten minste .NET Framework 4.5 en selecteer **vervolgens OK.**
 
 1. Klik met de rechtermuisknop **op het** knooppunt Verwijzingen in Solution Explorer voeg de volgende verwijzingen toe (selecteer de sectie **Bladeren** en selecteer **Bladeren**):
 
@@ -98,7 +98,7 @@ Ons team werkt momenteel aan een oplossing. In de tussentijd kunt u de volgende 
 
 1. Selecteer zowel SirepClient.dll als SshClient.dll en Selecteer **Toevoegen.**
 
-1. Zoek en selecteer beide bestanden in Solution Explorer (deze moeten onderaan de lijst met bestanden staan)  en wijzig Kopiëren naar uitvoermap **in** het venster Eigenschappen in **Altijd kopiëren.**
+1. Zoek en selecteer beide bestanden in Solution Explorer (deze moeten onderaan de lijst met bestanden staan)  en wijzig **Kopiëren** naar uitvoermap in het venster Eigenschappen in **Altijd kopiëren.**
 
 1. Voeg bovenaan het bestand het volgende toe aan de bestaande lijst met `using` -instructies:
 
@@ -138,7 +138,7 @@ U kunt problemen ervaren bij het starten van de Microsoft Store apps op HoloLens
 
 1. Het nieuwe frameworkpakket wordt gedownload uit de Store en geïnstalleerd.
 
-1. Alle apps oudere framework worden 'bijgewerkt' om de nieuwere versie te gebruiken.
+1. Alle apps oudere framework gebruiken, worden 'bijgewerkt' om de nieuwere versie te gebruiken.
 
 Als stap 2 vóór voltooiing wordt onderbroken, kunnen apps waarvoor het nieuwere framework niet is geregistreerd, niet worden starten vanuit het menu Start.  We zijn van mening dat elke app HoloLens dit probleem kan worden beïnvloed.
 
@@ -148,7 +148,7 @@ De hoofdoorzaak is dat dit probleem niet de update zelf heeft veroorzaakt, maar 
 
 Ga als volgende te werk om te zien of uw apparaat de update kan gebruiken:
 
-1. Ga naar de Instellingen app en open **Update & Security.**
+1. Ga naar de Instellingen-app en open **Update & Security.**
 
 1. Selecteer **Controleren op updates.**
 
@@ -158,7 +158,7 @@ Ga als volgende te werk om te zien of uw apparaat de update kan gebruiken:
 
 Daarnaast hebben we, net als bij elke HoloLens versie van het besturingssysteem, de FFU-afbeelding geplaatst in het [Microsoft Downloadcentrum.](https://aka.ms/hololensdownload/10.0.17763.380)
 
-Als u de update niet wilt gebruiken, hebben we vanaf 3/29 een nieuwe versie van de Microsoft Store UWP-app uitgebracht. Nadat u de bijgewerkte versie van de Store hebt:
+Als u de update niet wilt gebruiken, is er vanaf 3/29 een nieuwe versie van de Microsoft Store UWP-app uitgebracht. Nadat u de bijgewerkte versie van de Store hebt:
 
 1. Open de Store en bevestig dat deze wordt geladen.
 1. Gebruik de bloembewegingen om het menu te openen.
@@ -166,45 +166,45 @@ Als u de update niet wilt gebruiken, hebben we vanaf 3/29 een nieuwe versie van 
 1. Als de app nog steeds niet kan worden gestart, tikt en houdt u het pictogram van de defecte app vast en selecteert u Verwijderen.
 1. Installeer deze apps opnieuw uit de Store.
 
-Als uw apparaat nog steeds geen apps kan laden, kunt u een versie van het systeemeigen .NET Framework en Runtime sideloaden via het downloadcentrum door de volgende stappen uit te voeren:
+Als uw apparaat nog steeds geen apps kan laden, kunt u een versie van systeemeigen .NET Framework en Runtime sideloaden via het downloadcentrum door de volgende stappen uit te voeren:
 
-1. Download dit [ZIP-bestand](https://download.microsoft.com/download/8/5/C/85C23745-794C-419D-B8D7-115FBCCD6DA7/netfx_1.7.zip) via het Microsoft Downloadcentrum. Als u het bestand uit een uitziëpt, worden er twee bestanden geproduceerd.  Microsoft .NET.Native.Runtime.1.7.appx en Microsoft .NET.Native.Framework.1.7.appx.
+1. Download dit [ZIP-bestand](https://download.microsoft.com/download/8/5/C/85C23745-794C-419D-B8D7-115FBCCD6DA7/netfx_1.7.zip) via het Microsoft Downloadcentrum. Als u het uit elkaar halen, worden er twee bestanden geproduceerd.  Microsoft .NET.Native.Runtime.1.7.appx en Microsoft .NET.Native.Framework.1.7.appx.
 
 1. Controleer of uw apparaat is ontgrendeld.  Als u dat nog niet eerder hebt gedaan, zie [De](/windows/mixed-reality/using-the-windows-device-portal) Windows Apparaatportal voor instructies.
 
-1. Vervolgens gaat u naar de Windows Apparaatportal. Het wordt aanbevolen dit via USB te doen. Dit doet u door in http://127.0.0.1:10080 uw browser te typen.
+1. Vervolgens wilt u naar de Windows Apparaatportal. Het wordt aanbevolen dit via USB te doen. Dit doet u door in http://127.0.0.1:10080 uw browser te typen.
 
 1. Nadat u de Windows Apparaatportal, moet u de twee bestanden die u hebt gedownload aan de zijkant laden. Als u dit wilt doen, gaat u naar de linkerzijbalk totdat u bij de **sectie Apps** bent en selecteert u **Apps.**
 
-1. Vervolgens ziet u een scherm dat vergelijkbaar is met het onderstaande.  Ga naar de sectie App  installeren en blader naar de plek waar u deze twee APPX-bestanden hebt uitgepakt. U kunt slechts één voor één doen, dus nadat u de eerste hebt geselecteerd, klikt u onder de sectie Implementeren op Go. Doe dit vervolgens voor het tweede APPX-bestand.
+1. Vervolgens ziet u een scherm dat vergelijkbaar is met het onderstaande.  Ga naar de sectie App  installeren en blader naar de plek waar u deze twee APPX-bestanden hebt uitgepakt. U kunt slechts één voor één doen, dus nadat u het eerste hebt geselecteerd, klikt u op 'Ga' in de sectie Implementeren. Doe dit vervolgens voor het tweede APPX-bestand.
 
-   ![Windows Apparaatportal u de app Side-Loaded installeren.](images/20190322-DevicePortal.png)
+   ![Windows Apparaatportal de app Side-Loaded installeren.](images/20190322-DevicePortal.png)
 
-1. Op dit punt zijn we van mening dat uw toepassingen opnieuw moeten werken en dat u ook naar de Store kunt gaan.
+1. Op dit moment zijn we van mening dat uw toepassingen opnieuw moeten werken en dat u ook bij de Store kunt komen.
 
-1. In sommige gevallen is het nodig om de extra stap voor het starten van de 3D-viewer uit te voeren voordat de betreffende apps worden gelanceerd.
+1. In sommige gevallen moet de extra stap voor het starten van de app 3D-viewer de betreffende apps worden uitgevoerd.
 
-We waarderen uw geduld omdat we het proces hebben doorlopen om dit probleem op te lossen en we kijken ernaar uit om samen met onze community een succesvolle Mixed Reality creëren.
+We waarderen uw geduld omdat we het proces hebben doorlopen om dit probleem op te lossen en we kijken ernaar uit om samen met onze community te blijven werken aan een succesvolle Mixed Reality ervaring.
 
 ### <a name="device-update"></a>Apparaat bijwerken
 
-- 30 seconden na een nieuwe update kan de shell één keer verdwijnen. Voer de bloembewegingen **uit** om uw sessie te hervatten.
+- 30 seconden na een nieuwe update kan de shell één keer verdwijnen. Voer de **bloembewegingen uit** om uw sessie te hervatten.
 
 ### <a name="visual-studio"></a>Visual Studio
 
 - Zie [De hulpprogramma's](/windows/mixed-reality/install-the-tools) installeren voor de meest recente versie van Visual Studio die wordt aanbevolen voor HoloLens ontwikkeling.
 
-- Wanneer u een app implementeert vanuit Visual Studio naar uw HoloLens, ziet u mogelijk de volgende fout: De aangevraagde bewerking kan niet worden uitgevoerd op een bestand met een door de gebruiker toegesneden **sectie geopend. (Uitzondering van HRESULT: 0x800704C8)**. Als dit gebeurt, probeert u het opnieuw en slaagt uw implementatie over het algemeen.
+- Wanneer u een app implementeert vanuit Visual Studio naar uw HoloLens, ziet u mogelijk de volgende fout: De aangevraagde bewerking kan niet worden uitgevoerd op een bestand met een door de gebruiker toegesneden **sectie geopend. (Uitzondering van HRESULT: 0x800704C8)**. Als dit het geval is, probeert u het opnieuw en slaagt uw implementatie doorgaans.
 
 ### <a name="api"></a>API
 
-- Als de toepassing het [focuspunt](/windows/mixed-reality/focus-point-in-unity) achter de gebruiker of de normale naar camera.forward in stelt, worden hologrammen niet weergegeven in Vastleggen in mixed reality of video's. Totdat deze fout in Windows opgelost, moeten toepassingen, als toepassingen het focuspunt actief instellen, ervoor zorgen dat het vlak normaal is ingesteld tegen de camera vooruit (bijvoorbeeld normaal = -camera.forward). [](/windows/mixed-reality/focus-point-in-unity)
+- Als de toepassing het [focuspunt](/windows/mixed-reality/focus-point-in-unity) achter de gebruiker of het normale op camera.forward in stelt, worden hologrammen niet weergegeven in Vastleggen in mixed reality foto's of video's. Totdat deze fout in Windows opgelost, moeten toepassingen, als ze het focuspunt actief instellen, ervoor zorgen dat het normale vlak wordt ingesteld tegenovergestelde camera-forward (bijvoorbeeld normaal = -camera.forward). [](/windows/mixed-reality/focus-point-in-unity)
 
 ### <a name="xbox-wireless-controller"></a>Xbox Wireless Controller
 
-- Xbox Wireless Controller S moet worden bijgewerkt voordat deze kan worden gebruikt met HoloLens. Zorg ervoor dat u [up-to-date bent](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) voordat u uw controller aan een HoloLens.
+- Xbox Wireless Controller S moet worden bijgewerkt voordat deze kan worden gebruikt met HoloLens. Zorg ervoor dat u [up-to-date bent](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) voordat u de controller aan een HoloLens.
 
 - Als u de HoloLens opnieuw opstart terwijl de Xbox Wireless Controller is verbonden, maakt de controller niet automatisch opnieuw verbinding met HoloLens. Het lampje van de knop Gids knippert langzaam totdat de controller na 3 minuten wordt uitgeschakeld. Als u de controller onmiddellijk opnieuw wilt verbinden, schakelt u de controller uit door de knop Gids ingedrukt te houden totdat het licht wordt uitgeschakeld. Wanneer u de controller opnieuw in bedrijf neemt, wordt er opnieuw verbinding met de HoloLens.
 
-- Als uw HoloLens stand-by komt terwijl de Xbox Wireless Controller is verbonden, wordt het apparaat door invoer op de controller HoloLens. U kunt dit voorkomen door uw controller uit te schakelen wanneer u klaar bent met het gebruik ervan.
+- Als uw HoloLens stand-by komt terwijl de Xbox Wireless Controller is verbonden, wordt de verbinding door invoer op de controller HoloLens. U kunt dit voorkomen door uw controller uit te schakelen wanneer u klaar bent met het gebruik ervan.
 

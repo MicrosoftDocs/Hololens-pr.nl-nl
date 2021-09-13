@@ -14,17 +14,17 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: b312f9d20c9a75c5e4c1906c4ec55f42fda977f6
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428046"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032166"
 ---
 # <a name="configure-csps-and-device-management-overview"></a>Overzicht van CSP's en apparaatbeheer configureren
 
-IT-beheerders kunnen beleidsinstellingen definiëren en implementeren op HoloLens 2. Welke configuratie-instellingen u gebruikt, is afhankelijk van het implementatiescenario en bedrijfsapparaten bieden IT het breedste beheerbereik. In Windows 10 zijn CSP's (Configuration Service Providers) een interface voor het lezen, instellen, wijzigen of verwijderen van configuratie-instellingen op het apparaat. Deze instellingen worden aan registersleutels of bestanden toe te passen. Sommige configuratieserviceproviders ondersteunen de WAP-indeling, sommige bieden ondersteuning voor SyncML en sommige ondersteunen beide.
+IT-beheerders kunnen beleidsinstellingen definiëren en implementeren op HoloLens 2. Welke configuratie-instellingen u gebruikt, is afhankelijk van het implementatiescenario en bedrijfsapparaten bieden IT het breedste beheerbereik. In Windows 10 CSP's (Configuration Service Providers) een interface voor het lezen, instellen, wijzigen of verwijderen van configuratie-instellingen op het apparaat. Deze instellingen worden aan registersleutels of bestanden toe te passen. Sommige configuratieserviceproviders ondersteunen de WAP-indeling, sommige bieden ondersteuning voor SyncML en sommige ondersteunen beide.
 
-Zie de volledige lijst met CSP'Windows 10 Holographic ondersteund [in HoloLens-apparaten voor meer](/windows/client-management/mdm/configuration-service-provider-reference#hololens)informatie over CSP HoloLens s voor apparaatbeheer.
+Zie de volledige lijst met CSP Windows 10 Holographic s die worden ondersteund in HoloLens apparaten voor meer informatie over het [beheren van CSP HoloLens s.](/windows/client-management/mdm/configuration-service-provider-reference#hololens)
 IT-beheerders kunnen ook beleids-CSP's op apparaten beheren. Zie de volledige lijst met beleids-CSP's die worden ondersteund [door HoloLens 2.](/windows/client-management/mdm/policy-csps-supported-by-hololens2)
 
 ## <a name="configuration-methods"></a>Configuratiemethoden
@@ -35,7 +35,7 @@ CSP's en beleidsregels kunnen eenvoudig worden beheerd op elk persoonlijk of zak
 
 ### <a name="configure-with-provisioning-packages"></a>Configureren met inrichtingspakketten
 
-HoloLens 2 ondersteunt ook het instellen van een beperkte set CSP-configuraties voor HoloLens 2 apparaten via aangepaste inrichtingspakketten. Inrichtingspakketten worden doorgaans gebruikt voor niet door MDM beheerde apparaten en moeten handmatig op elk apparaat worden toegepast. Lees meer informatie over het bouwen [van aangepaste inrichtingspakketten voor HoloLens.](hololens-provisioning.md)
+HoloLens 2 ondersteunt ook het instellen van een beperkte set CSP-configuraties voor HoloLens 2 apparaten via aangepaste inrichtingspakketten. Inrichtingspakketten worden doorgaans gebruikt voor niet door MDM beheerde apparaten en moeten handmatig op elk apparaat worden toegepast. Lees informatie over het bouwen [van aangepaste inrichtingspakketten voor HoloLens.](hololens-provisioning.md)
 
 ## <a name="configurations"></a>Configuraties
 

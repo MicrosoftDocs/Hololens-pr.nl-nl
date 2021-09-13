@@ -1,5 +1,5 @@
 ---
-title: Aangepaste apps voor HoloLens beheren (eerste generatie)
+title: Aangepaste apps beheren voor HoloLens (eerste generatie)
 description: Meer informatie over het installeren, verwijderen en side loaden van aangepaste holographic-apps op HoloLens apparaten met behulp van de Apparaatportal en Visual Studio.
 ms.assetid: 6bd124c4-731c-4bcc-86c7-23f9b67ff616
 ms.date: 12/10/2020
@@ -17,15 +17,15 @@ ms.custom:
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: b6769c36f821ee3619ac9b62efd637ac561192bb
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428520"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032213"
 ---
-# <a name="manage-custom-apps-for-hololens-1st-gen"></a>Aangepaste apps voor HoloLens beheren (eerste generatie)
+# <a name="manage-custom-apps-for-hololens-1st-gen"></a>Aangepaste apps beheren voor HoloLens (eerste generatie)
 
-HoloLens biedt ondersteuning voor veel bestaande toepassingen van Microsoft Store, evenals nieuwe apps die specifiek zijn gebouwd voor HoloLens. Dit artikel is gericht op aangepaste holografische toepassingen.  
+HoloLens ondersteunt veel bestaande toepassingen uit de Microsoft Store, evenals nieuwe apps die specifiek zijn gebouwd voor HoloLens. Dit artikel is gericht op aangepaste holografische toepassingen.  
 
 Zie Apps beheren met de Store voor meer informatie over [Store-apps.](holographic-store-apps.md)
 
@@ -35,7 +35,7 @@ Zie Apps beheren met de Store voor meer informatie over [Store-apps.](holographi
 > Als u op zoek bent naar een van beide ontwikkelaarsmethodes voor app-installatie voor HoloLens 2 apparaten, raadpleegt u:
 >
 > - [Apparaatportal: Een app installeren](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)
-> - [Apps Visual Studio implementeren en fouten opsporen](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
+> - [Apps Visual Studio implementeren en fouten opsporen met behulp van apps](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
 
 ## <a name="install-custom-apps"></a>Aangepaste apps installeren
 
@@ -43,7 +43,7 @@ U kunt uw eigen toepassingen op HoloLens installeren met behulp van de Apparaatp
 
 ### <a name="installing-an-application-package-with-the-device-portal"></a>Een toepassingspakket installeren met de Apparaatportal
 
-1. Stel een verbinding tot [stand Apparaatportal](/windows/mixed-reality/using-the-windows-device-portal) de doelverbinding met HoloLens.
+1. Stel een verbinding tot [stand Apparaatportal](/windows/mixed-reality/using-the-windows-device-portal) de doelverbinding HoloLens.
 
 1. Navigeer in het linkernavigatievenster naar de **pagina Apps.**
 
@@ -77,4 +77,4 @@ U kunt uw eigen toepassingen op HoloLens installeren met behulp van de Apparaatp
    
 1. De toepassing wordt geïnstalleerd en automatisch op uw HoloLens.
 
-Nadat u een app hebt geïnstalleerd, vindt  u deze in de Alle apps **(Start**  >  **Alle apps).**
+Nadat u een app hebt geïnstalleerd, vindt u deze in Alle apps **lijst** (**Start**  >  **Alle apps**).

@@ -18,11 +18,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: b192732f5e7edffaa1d0ab081454e4034c416191
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427100"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032195"
 ---
 # <a name="intune--company-portal"></a>Intune-& Bedrijfsportal
 
@@ -50,11 +50,11 @@ Volg deze stappen om uw app(s) automatisch op te halen:
 
 1. Schrijf uw apparaat in bij uw tenant.
 2. Zodra het apparaat is ingeschreven, ontvangt u de app op uw apparaat.
-3. Als u uw app niet direct ziet, gaat u naar Instellingen Accounts **Werk-** of schoolaccountgegevens en scrolt u omlaag om informatie over de status van de  >    >    >   geïnstalleerde app weer te geven.
+3. Als u uw app niet direct ziet, gaat u naar Instellingen Accounts **Werk-** of schoolaccountgegevens en schuift u omlaag om informatie over de status van de geïnstalleerde  >    >    >   app weer te geven.
 
 Apps openen via de Bedrijfsportal:
 
-1. Open het **menu Start** en selecteer **Microsoft Store**.
+1. Open het **menu Start** en selecteer **Microsoft Store.**
 2. Zoek naar **Bedrijfsportal** en download de app.
 3. Meld u aan bij uw account.
 4. Selecteer de app die u wilt ontvangen en download deze.

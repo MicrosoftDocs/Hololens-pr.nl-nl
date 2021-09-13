@@ -1,6 +1,6 @@
 ---
 title: Implementatie HoloLens 2 in een commerciële omgeving plannen
-description: Meer informatie over de belangrijkste behoeften voor het implementeren en beheren HoloLens in bedrijfsomgevingen, waaronder infrastructuur, Azure Active Directory en Mobile Device Management.
+description: Meer informatie over de belangrijkste behoeften voor het implementeren en beheren van HoloLens in bedrijfsomgevingen, waaronder infrastructuur, Azure Active Directory en Mobile Device Management.
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
@@ -13,11 +13,11 @@ ms.date: 05/21/2021
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 8605d1a889fb9facdab0e9585a43a61880155952
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428419"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032174"
 ---
 # <a name="planning-hololens-2-deployment-in-a-commercial-environment"></a>Implementatie HoloLens 2 in een commerciële omgeving plannen
 
@@ -26,7 +26,7 @@ ms.locfileid: "124428419"
 > [!NOTE]
 > Dit overzicht is bedoeld om IT-professionals inzicht te geven in overwegingen voor het implementeren en beheren Microsoft HoloLens 2 apparaten binnen een organisatie. Zie Uw apparaat voorbereiden HoloLens 2 [om](hololens2-setup.md) aan de slag te gaan voor eindgebruikers van apparaten.
 
-HoloLens 2 wordt uitgevoerd op Windows 10 Holographic waarmee organisaties robuuste, flexibele, ingebouwde technologieën voor het beheer van mobiele apparaten en apps kunnen gebruiken. Windows 10 Holographic biedt ondersteuning voor end-to-end levenscyclusbeheer van apparaten, om bedrijven controle te geven over hun apparaten, gegevens en apps. De HoloLens 2 kunnen eenvoudig worden opgenomen in standaard levenscyclusprocedures, van apparaatinschrijving, configuratie en toepassingsbeheer tot onderhoud en pensioen met behulp van een uitgebreide beheeroplossing voor mobiele apparaten.
+HoloLens 2 wordt uitgevoerd op Windows 10 Holographic waarmee organisaties robuuste, flexibele, ingebouwde technologieën voor het beheer van mobiele apparaten en apps kunnen gebruiken. Windows 10 Holographic biedt ondersteuning voor end-to-end levenscyclusbeheer van apparaten, om bedrijven controle te geven over hun apparaten, gegevens en apps. De HoloLens 2 kunnen eenvoudig worden opgenomen in standaard levenscyclusprocedures, van apparaatinschrijving, configuratie en toepassingsbeheer tot onderhoud en pensioen met behulp van een uitgebreide oplossing voor het beheer van mobiele apparaten.
 
 De volgende stappen en video kunnen u helpen bij het doorlopen van HoloLens 2 ingebruikname binnen uw organisatie.
 
@@ -50,7 +50,7 @@ Meer informatie over essentiële infrastructuurservices die nodig zijn om de vol
 |-----------|------------|
 | [Azure AD](hololens-identity.md) | Biedt identiteits- en toegangsbeheer voor de HoloLens 2  |
 | [Beheer van mobiele apparaten](hololens-mdm-configure.md)| Beheert HoloLens 2 die zijn verbonden met uw tenant  |
-| [Wi-Fi-netwerk](hololens-commercial-infrastructure.md)| Wi-Fi beschikbaar is en apparaten kunnen worden verbonden met internet  |
+| [Wi-Fi-netwerk](hololens-commercial-infrastructure.md)| Wi-Fi is beschikbaar en apparaten kunnen worden verbonden met internet  |
 
 ## <a name="configure"></a>Configureren
 
@@ -68,13 +68,13 @@ Distribueer uw HoloLens 2 apparaten en valideer de configuratie.
 
 | Onderdeel | Beschrijving |
 |-----------|------------|
-| [Validatie van inschrijving](hololens2-corp-connected-deploy.md#enrollment-validation) | Controleren of azure AD is samengevoegd op het apparaat vanuit Instellingen of de Azure-portal |
+| [Validatie van inschrijving](hololens2-corp-connected-deploy.md#enrollment-validation) | Controleren of aan het apparaat Azure AD is Instellingen of de Azure-portal |
 | [Certificaatvalidatie](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation) | Controleer de instellingen en controleer of deze correct zijn gedistribueerd |
 | [App-installaties valideren](hololens2-corp-connected-deploy.md#validate-lob-app-install) | Controleer of de app aanwezig is en aan uw HoloLens 2 |
 
 ## <a name="maintain"></a>Onderhouden
 
-Gebruik Windows Update voor Bedrijven samen met uw MDM-systeem of de Microsoft Store om uw HoloLens 2 apps en apps bij te werken.
+Gebruik Windows Update voor Bedrijven samen met uw MDM-systeem of de Microsoft Store om uw HoloLens 2 apps en apps bijgewerkt te houden.
 
 | Onderdeel | Beschrijving |
 |-----------|------------|

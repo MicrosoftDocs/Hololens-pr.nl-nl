@@ -1,5 +1,5 @@
 ---
-title: Gelokaliseerde versies van HoloLens
+title: Gelokaliseerde versies van de HoloLens
 description: Meer informatie over het installeren van de gelokaliseerde versies van HoloLens (eerste generatie), waaronder Chinese en Japanse versies.
 ms.prod: hololens
 ms.mktglfcycl: manage
@@ -14,25 +14,25 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 74eb003aafd23218b90988abe113d35f1fc3035a
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032801"
 ---
-# <a name="install-localized-versions-of-hololens-1st-gen"></a>Gelokaliseerde versies van HoloLens (eerste generatie) installeren
+# <a name="install-localized-versions-of-hololens-1st-gen"></a>Gelokaliseerde versies van HoloLens (1e generatie) installeren
 
 Als u wilt overschakelen naar de Chinese of Japanse versie van HoloLens, moet u de Windows Device Recovery Tool (WDRT) gebruiken om de build voor de taal te downloaden op een pc en deze vervolgens op uw HoloLens.
 
 > [!IMPORTANT]
-> Met WDRT voor het installeren van de Chinese of Japanse builds van HoloLens worden bestaande gegevens, zoals persoonlijke bestanden en instellingen, uit uw HoloLens. 
+> Als u WDRT gebruikt om de Chinese of Japanse builds van HoloLens verwijdert u bestaande gegevens, zoals persoonlijke bestanden en instellingen, uit uw HoloLens. 
 
 1. Download en installeer de Windows [Device Recovery Tool (WDRT)](https://support.microsoft.com/help/12379)op uw pc.
 1. Download het pakket voor de taal die u op uw pc wilt: [Vereenvoudigd Chinees](https://aka.ms/hololensdownload-ch) of [Japans.](https://aka.ms/hololensdownload-jp)
 1. Wanneer het downloaden is voltooien, selecteert **u**  >  **Bestandenverkenner Downloads.** Klik met de rechtermuisknop op de ingepakte map die u zojuist hebt gedownload en selecteer **Alles** uitpakken om het uit  >   tepakken.
-1. Verbinding maken uw HoloLens op uw pc met behulp van de micro-USB-kabel die wordt meegeleverd. (Zelfs als u andere kabels hebt gebruikt om uw HoloLens, werkt deze het beste.)
-1. Nadat het hulpprogramma uw apparaat automatisch detecteert HoloLens, selecteert u de Microsoft HoloLens tegel.
-1. Selecteer in het **** volgende scherm Handmatige pakketselectie en selecteer het installatiebestand dat zich in de map bevindt die u in stap   4 hebt uitgepakt. (Zoek naar een bestand met de extensie ".ffu".) 
+1. Verbinding maken uw HoloLens naar uw pc met behulp van de micro-USB-kabel die wordt meegeleverd. (Zelfs als u andere kabels hebt gebruikt om uw HoloLens, werkt deze het beste.)
+1. Nadat het hulpprogramma uw apparaat automatisch detecteert HoloLens selecteert u de Microsoft HoloLens tegel.
+1. Selecteer in het **** volgende scherm Handmatige pakketselectie en selecteer het installatiebestand dat zich bevindt in de map die u in stap   4 hebt uitgepakt. (Zoek naar een bestand met de extensie ".ffu".) 
 1. Selecteer **Software installeren** en volg de instructies. 
 1. Nadat de build is geïnstalleerd, HoloLens de installatie automatisch gestart. Plaats het apparaat en volg de instructies voor het instellen. 
 

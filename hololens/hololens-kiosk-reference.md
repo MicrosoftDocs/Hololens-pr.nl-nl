@@ -14,11 +14,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: 9f8cfd0013ac5b8cf85a334cbb89c458440820d9
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427127"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032565"
 ---
 # <a name="hololens-kiosk-reference-information"></a>HoloLens Naslaginformatie over kiosken
 
@@ -110,7 +110,7 @@ Ga terug naar [Ondersteunde scenario's voor de kioskmodus op basis van het ident
 [Terug naar lijst](#kiosk-xml-code-samples) <br>
 Ga terug naar [Ondersteunde scenario's voor de kioskmodus op basis van het identiteitstype](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
-### <a name="multiple-app-assigned-access-profile-for-one-aad-group"></a>Aan meerdere apps toegewezen toegangsprofiel voor één AAD-groep
+### <a name="multiple-app-assigned-access-profile-for-one-aad-group"></a>Meerdere app-toegewezen toegangsprofiel voor één AAD-groep
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-one-aad-group.xml" highlight="28":::
 
@@ -124,7 +124,7 @@ Ga terug naar [Ondersteunde scenario's voor de kioskmodus op basis van het ident
 [Terug naar lijst](#kiosk-xml-code-samples) <br>
 Ga terug naar [Ondersteunde scenario's voor de kioskmodus op basis van het identiteitstype](hololens-kiosk.md#supported-scenarios-for-kiosk-mode-based-on-identity-type)
 
-### <a name="multiple-app-assigned-access-profile-for-one-aad-account-and-one-aad-group"></a>Meerdere aan apps toegewezen toegangsprofiel voor één AAD-account en één AAD-groep
+### <a name="multiple-app-assigned-access-profile-for-one-aad-account-and-one-aad-group"></a>Aan meerdere apps toegewezen toegangsprofiel voor één AAD-account en één AAD-groep
 
 :::code language="xml" source="samples/kiosk-sample-multi-app-for-aad-user-and-aad-group.xml" highlight="22-24,52,53,80,91":::
 

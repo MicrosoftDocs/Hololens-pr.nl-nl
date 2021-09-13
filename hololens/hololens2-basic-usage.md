@@ -13,11 +13,11 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: cf3770dd55498dbe98abf88d002247646e4db9be
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427786"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126035969"
 ---
 # <a name="getting-around-hololens-2"></a>Kennismaken met HoloLens 2
 
@@ -92,12 +92,12 @@ Gebruik **tikken in de lucht en houd** deze vast om de volgende acties uit te vo
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Wxng]
 
-Met de beweging Start wordt het **Startmenu.**  Als u de beweging Start wilt uitvoeren, houdt u uw hand uit met uw oog op u. Er wordt een pictogram **Start weergegeven** boven uw binnenste hand. Tik op dit pictogram met uw andere hand.  De Startmenu wordt **geopend waar u op zoek bent.**
+Met de beweging Start wordt de **Startmenu.**  Als u de beweging Start wilt uitvoeren, houdt u uw hand uit met uw oog op u. Er wordt een pictogram **Start weergegeven** boven uw binnenste hand. Tik op dit pictogram met uw andere hand.  De Startmenu wordt **geopend waar u op zoek bent.**
 
 > [!TIP]
 >
 > - U kunt de beweging Start gebruiken zolang uw handen zich in het handtrackingframe houden.  U hoeft niet op het pictogram Start te kijken. Houd uw elleboog laag en vertrouwd en kijk in de richting waarin u de Startmenu wilt openen.
-> - Als de Startmenu niet is geopend op de 2e positie, gaat u gewoon met uw hoofd om de positie ervan te verplaatsen.
+> - Als de Startmenu niet is geopend op de 2e positie, beweegt u uw hoofd om deze te verplaatsen.
 > - Als u problemen hebt met het lezen van de kleinere tekst op Startmenu, komt u er dichter bij nadat deze is geopend.
 > - Als uw hand iets aan de zijkant van het frame ligt, kunt u de Startmenu mogelijk nog steeds weergeven door op uw binnenste hand te tikken, zelfs als u het pictogram niet ziet.
 
@@ -123,7 +123,7 @@ Klaar om al deze handinteracties te testen?
 
 U vindt uw geïnstalleerde apps in de [Startmenu](holographic-home.md) en u vindt aanvullende apps voor HoloLens in [de Microsoft Store](holographic-store-apps.md).
 
-Net zoals Windows pc altijd op het bureaublad wordt gestart, HoloLens altijd **in** Mixed Reality Startpagina ingeschakeld.  Met behulp Startmenu kunt u app-vensters openen en plaatsen, evenals starters voor apps en 3D-inhoud in Mixed Reality Startpagina. Hun plaatsingen in uw fysieke ruimte worden onthouden door HoloLens.
+Net zoals Windows pc altijd de ervaring op het bureaublad start, HoloLens altijd **in** Mixed Reality Startpagina ingeschakeld.  Met behulp Startmenu kunt u app-vensters openen en plaatsen, evenals starters voor apps en 3D-inhoud in Mixed Reality Startpagina. Hun plaatsingen in uw fysieke ruimte worden onthouden door HoloLens.
 
 Open de **Startmenu** en selecteer vervolgens de **Instellingen** app. Er wordt een app-venster voor u geopend.
 
@@ -131,7 +131,7 @@ Instellingen is een voorbeeld van een HoloLens-app die gebruikmaakt van een **2D
 
 Nu kunt u de Startmenu **openen** en de tegel Tips **app** selecteren. Er wordt een **3D-starter** voor de app voor u weergegeven. Als u de app wilt openen, moet u de knop **Afspelen** selecteren in het startstart.
 
-Tips is een voorbeeld van een **in immersieve app**. Een in immersieve app leidt u weg van Mixed Reality Startpagina wanneer deze wordt uitgevoerd en wordt de enige app die u ziet.  Als u wilt afsluiten, moet u de Startmenu en de knop **Mixed Reality Startpagina** onderaan selecteren.
+Tips is een voorbeeld van een **in immersieve app**. Een in immersieve app leidt u weg van Mixed Reality Startpagina wanneer deze wordt uitgevoerd en wordt de enige app die u ziet.  Als u wilt afsluiten, moet u de Startmenu en de knop **Mixed Reality Startpagina** selecteren onderaan.
 
 ### <a name="power-menu-from-start"></a>Aan/uit-menu vanaf het startmenu
 
@@ -159,7 +159,7 @@ Een nieuw menu waarmee de gebruiker zich kan af- en afsluiten en het apparaat op
 
 ## <a name="move-resize-and-rotate-holograms"></a>Hologrammen verplaatsen, het izeseren en draaien
 
-In Mixed Reality Startpagina kunt u app-vensters en 3D-objecten verplaatsen, het iseren en draaien met behulp van uw handen, hand ray en spraakopdrachten.
+In Mixed Reality Startpagina kunt u app-vensters en 3D-objecten verplaatsen, het iseren en draaien met behulp van uw handen, hand ray- en spraakopdrachten.
 
 ### <a name="moving-holograms"></a>Hologrammen verplaatsen
 
@@ -212,13 +212,13 @@ U kunt uw stem gebruiken om de meeste dingen te doen die u ook doet met hands on
 
 Sommige klanten vinden het sneller 'typen' op virtuele toetsenborden door de vorm te vegen van het woord dat ze willen typen. Met [Windows Holographic, versie 21H1,](hololens-release-notes.md#windows-holographic-version-21h1)kunt u nu met één woord tegelijk vegen door de punt van uw vinger door het vlak van het holografische toetsenbord te bewegen, de vorm van het woord te vegen en vervolgens de punt van uw vinger uit het vlak van het toetsenbord te halen. U kunt de volgende woorden swipen zonder op de spatiebalk te hoeven drukken door uw vinger tussen woorden van het toetsenbord te verwijderen. U weet dat de functie werkt als u een veegtrail ziet na de beweging van uw vinger op het toetsenbord.
 
-Houd er rekening mee dat deze functie lastig te gebruiken en te beheersen kan zijn vanwege de aard van een holografische toetsenbord waar u geen bescherming tegen uw vinger hebt (in tegenstelling tot een mobiele telefoonweergave). We evalueren deze functie voor openbare release, dus uw feedback is belangrijk; Of u de functie nuttig vindt of dat u opbouwende feedback hebt, laat het ons weten via [Feedback-hub](hololens-feedback.md).
+Houd er rekening mee dat deze functie lastig te gebruiken en te beheersen kan zijn vanwege de aard van een holografische toetsenbord waar u geen bescherming tegen uw vinger hebt (in tegenstelling tot een mobiele telefoonweergave). We evalueren deze functie voor openbare release, dus uw feedback is belangrijk; Laat het ons weten via de Feedback-hub, ongeacht of u de [functie nuttig vindt Feedback-hub.](hololens-feedback.md)
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Gefeliciteerd! U bent klaar om uw HoloLens 2.
+Gefeliciteerd! U kunt nu de HoloLens 2.
 
-Nu kunt u uw HoloLens 2 om te voldoen aan uw specifieke behoeften.  Andere dingen die u misschien wilt proberen, zijn:
+Nu kunt u uw HoloLens 2 om aan uw specifieke behoeften te voldoen.  Andere dingen die u misschien wilt proberen, zijn:
 
 - [Bluetooth-apparaten verbinden, zoals een muis en toetsenbord](hololens-connect-devices.md)
 - [Apps installeren vanuit de Store](holographic-store-apps.md)

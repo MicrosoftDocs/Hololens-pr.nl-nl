@@ -1,7 +1,7 @@
 ---
 title: 'Implementatiehandleiding : Cloudgeconnecteerde HoloLens 2 implementatie op schaal met Remote Assist - Onderhouden'
 description: Blijf op de hoogte met onze tips voor het onderhouden en ondersteunen van HoloLens via een met de cloud verbonden netwerk.
-keywords: HoloLens, beheer, verbonden met de cloud, Remote Assist, AAD, Azure AD, MDM, Mobile Device Management
+keywords: HoloLens, beheer, cloud verbonden, Remote Assist, AAD, Azure AD, MDM, Mobile Device Management
 author: evmill
 ms.author: v-evmill
 ms.reviewer: aboeger
@@ -15,19 +15,19 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 941de296d59713c098718b16431fa793bd1b60e6
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428041"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032737"
 ---
 # <a name="maintain---cloud-connected-guide"></a>Onderhouden - Handleiding voor verbonden cloud
 
 ## <a name="updates"></a>Updates
 
-Microsoft heeft Windows Update voor Bedrijven ontworpen om IT-beheerders aanvullende Windows op updates gerichte beheermogelijkheden te bieden, zoals de mogelijkheid om updates te implementeren op groepen apparaten en om onderhoudsvensters te definiëren voor het installeren van updates.
+Microsoft heeft Windows Update voor Bedrijven ontworpen om IT-beheerders aanvullende Windows Op updates gerichte beheermogelijkheden te bieden, zoals de mogelijkheid om updates te implementeren op groepen apparaten en om onderhoudsvensters te definiëren voor het installeren van updates.
 
-Meer informatie over [het HoloLens van updates,](/hololens/hololens-updates) waaronder geplande dagen, geplande tijd en het instellen van actieve uren op het apparaat, zodat deze buiten werkuren worden bijgewerkt.
+Meer informatie over het [HoloLens van updates,](/hololens/hololens-updates) waaronder geplande dagen, geplande tijd en het instellen van actieve uren op het apparaat, zodat het buiten werkuren wordt bijgewerkt.
 
 Remote Assist is een In-Box-app en kan worden bijgewerkt via de Microsoft Store app. Voor alle apps die worden gedownload via de Microsoft Store kunnen ze handmatig worden bijgewerkt [via Microsoft Store](/hololens/holographic-store-apps#update-apps) app zelf.
 
@@ -42,11 +42,11 @@ Een ondersteuningsplan is uitstekend om te hebben. Het is handig om iemand of ee
 
 ## <a name="development-plan"></a>Ontwikkelingsplan
 
-Nu uw apparaat is ingeschreven, bent u klaar om LOB-apps (Line-Of-Business) op uw apparaten te implementeren. Dit zijn aangepaste apps die zijn gebouwd voor uw organisatie&#39;uw behoeften.
+Nu uw apparaat is ingeschreven, bent u klaar om LOB-apps (Line-Of-Business) op uw apparaten te implementeren. Dit zijn aangepaste apps die zijn gebouwd voor uw organisatie&#39;de behoeften van uw organisatie.
 
-Als u al een Line-Of-Business-app hebt, kunt&#39;[app implementeren via MDM.](/hololens/app-deploy-intune) Als u&#39;liever een andere methode gebruikt, bekijkt u het overzicht van toepassingsimplementatie voor [HoloLens 2](/hololens/app-deploy-overview) voor meer methoden voor het implementeren van uw LOB-app op uw apparaten.
+Als u al een Line-Of-Business-app hebt, kunt&#39;[app implementeren via MDM.](/hololens/app-deploy-intune) Als u&#39;liever een andere methode gebruikt, bekijkt u het overzicht van de implementatie van toepassingen voor [HoloLens 2](/hololens/app-deploy-overview) voor meer methoden voor het implementeren van uw LOB-app op uw apparaten.
 
-Als u&#39;lob-app nog moet maken of nog bezig bent met het maken, bekijkt u onze mixed reality-ontwikkel docs om te beginnen met het ontwerpen en maken van [prototypen](/windows/mixed-reality/design/design) of om de belangrijkste concepten te leren om aan de slag te gaan met [mixed reality-ontwikkeling.](/windows/mixed-reality/discover/get-started-with-mr)
+Als u&#39;uw eigen LOB-app wilt maken of nog bezig bent met het maken, bekijkt u onze mixed reality-ontwikkel docs om te beginnen met het ontwerpen en [prototypen](/windows/mixed-reality/design/design) of om de belangrijkste concepten te leren om aan de slag te gaan met [mixed reality-ontwikkeling.](/windows/mixed-reality/discover/get-started-with-mr)
 
 ## <a name="device-management"></a>Apparaatbeheer 
 

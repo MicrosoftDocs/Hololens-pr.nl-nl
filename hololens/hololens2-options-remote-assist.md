@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 540bdcaefafcc50cc38d5e9a67dea3b9cb596f05
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428801"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126035925"
 ---
 # <a name="hololens-2-with-remote-assist"></a>HoloLens 2 met Remote Assist
 
@@ -33,7 +33,7 @@ Ga op dag één aan de slag met HoloLens 2 en de ultieme mixed reality communica
 
 ## <a name="heres-what-to-do-next-with-the-hololens-2-with-dynamics-365-remote-assist-edition"></a>Dit is wat u nu moet doen met de HoloLens 2 met Dynamics 365 Remote Assist edition
 
-We hebben een specifieke handleiding gemaakt om u te helpen bij het op schaal HoloLens implementeren van apparaten. De handleiding bevat end-to-end-instellingen voor Azure Active Directory valideren van een Remote Assist-aanroep. Bekijk onze [implementatiehandleiding - Cloud verbonden HoloLens 2 met Remote Assist](hololens2-cloud-connected-overview.md) voor meer informatie.
+We hebben een specifieke handleiding gemaakt om u te helpen HoloLens apparaten op schaal te implementeren. De handleiding bevat end-to-end-instellingen voor Azure Active Directory valideren van een Remote Assist-aanroep. Bekijk onze [implementatiehandleiding - Cloud verbonden HoloLens 2 met Remote Assist](hololens2-cloud-connected-overview.md) voor meer informatie.
 
 | Controlepunt  | Resultaat                                |
 |-------------|----------------------------------------|
@@ -44,7 +44,7 @@ We hebben een specifieke handleiding gemaakt om u te helpen bij het op schaal Ho
 
 ## <a name="next-steps"></a>Volgende stappen
 
-1. Ga direct aan de slag met Mixed Reality en navigeer naar Windows 10 op uw HoloLens. Bekijk de **Tips-app** voor praktijkstudies voor handinteracties. Gebruik de startbewegingen om naar Start te gaan of 'Ga naar start' te zeggen en selecteer Tips.
+1. Ga direct aan de slag met Mixed Reality en navigeer naar Windows 10 op uw HoloLens. Bekijk de **Tips-app** voor praktijkstudies voor handinteracties. Gebruik de startbewegingen om naar Start te gaan of 'Ga naar Start' te zeggen en selecteer Tips.
 1. Klik hieronder om door te gaan met het lezen van HoloLens 2.
 
 > [!div class="nextstepaction"]

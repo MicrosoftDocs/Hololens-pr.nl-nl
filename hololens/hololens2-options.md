@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2-edities
-description: Meer informatie over HoloLens 2 apparaateditie hetzelfde of anders is en wat u moet doen nadat u een eigen apparaat hebt.
+description: Ontdek hoe HoloLens 2 apparaateditie hetzelfde of anders is en wat u moet doen nadat u een eigen editie hebt.
 keywords: HoloLens 2 aankoopopties, HoloLens, Developer Edition
 author: evmill
 ms.author: v-evmill
@@ -15,17 +15,17 @@ manager: sekerawa
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 2da84a11a8f9613999e2b376fefeb6cb2b83cd00
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428278"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126035921"
 ---
 # <a name="compare-hololens-2-options"></a>Opties HoloLens 2 vergelijken
 
 HoloLens is een mixed reality apparaat dat wordt gebruikt *powered by hologrammen* en apps en oplossingen biedt waarmee de samenwerking wordt verbeterd. Met HoloLens 2 u nieuwe productiviteits- en innovatiehoogten ervaren om slimmer te kunnen werken.
 
-Of u nu een [IT-professional](https://www.microsoft.com/hololens/apps) bent [](https://www.microsoft.com/hololens/developers) die op zoek is naar uw [](https://www.microsoft.com/hololens/apps) volgende brancheoplossing, een ontwikkelaar die ervaringen wil creëren voor een nieuwe realiteit of een zakelijke beslisser die denkt over uw volgende innovatie: HoloLens 2 is uw nieuwe realiteit voor computing.
+Of u nu een [IT-professional](https://www.microsoft.com/hololens/apps) bent [](https://www.microsoft.com/hololens/developers) die op zoek is naar uw [](https://www.microsoft.com/hololens/apps) volgende brancheoplossing, een ontwikkelaar die ervaringen wil creëren voor een nieuwe realiteit of een zakelijke besluiter die denkt over uw volgende innovatie: HoloLens 2 is uw nieuwe realiteit voor computing.
 
 <br>
 
@@ -45,20 +45,20 @@ Of u nu een [IT-professional](https://www.microsoft.com/hololens/apps) bent [](h
 
 - <sup>1:</sup> bevat $ 500 Azure-tegoed en proefversies van drie maanden voor Unity Pro en Pixyz-invoegversie.
 - <sup>2</sup> - Ontvang 's nachts een vervangend apparaat of verzend sneller (sneller van de beschikbare opties) voordat het defecte apparaat wordt ontvangen door Microsoft.
-- <sup>3</sup> - Neem contact op met Trimble voor vragen over garantie, ondersteuning en certificering voor [trimble](https://fieldtech.trimble.com/en/contact-support)XR10 HoloLens 2 edition.
+- <sup>3</sup> - Voor vragen over garantie, ondersteuning en certificering voor de Trimble XR10 met HoloLens 2-editie, neem dan contact op met [Trimble.](https://fieldtech.trimble.com/en/contact-support)
 
 
 ## <a name="options-overview"></a>Overzicht van opties
 
 **[HoloLens 2 (alleen apparaat)](hololens2-options-device-only.md)**: HoloLens 2 biedt de meest vertrouwde en mixed reality-ervaring die beschikbaar is, verbeterd door de betrouwbaarheid, beveiliging en schaalbaarheid van cloud- en AI-services van Microsoft.
 
-**[HoloLens 2 met Dynamics 365 Remote Assist:](hololens2-options-remote-assist.md)** ga op dag één aan de slag met HoloLens 2 en de mixed reality communicatie-app van Microsoft, samen beschikbaar. Help uw hele bedrijf productiever te zijn en te innoveren met een beter doel. Ervaring mixed reality met Dynamics 365 en oplossingen van branchepartners.
+**[HoloLens 2 met Dynamics 365 Remote Assist:](hololens2-options-remote-assist.md)** ga op dag één aan de slag met HoloLens 2 en de ultieme mixed reality communicatie-app van Microsoft, samen beschikbaar. Help uw hele bedrijf productiever te zijn en te innoveren met een beter doel. Ervaring mixed reality met Dynamics 365 en oplossingen van branchepartners.
 
 **[HoloLens 2 Industrial Edition:](hololens2-options-industrial-edition.md)** De HoloLens 2 Industrial Edition is ontworpen, gebouwd en getest ter ondersteuning van omgevingen met schone ruimten met standaarden die variëren van ISO-klasse 6 tot ISO-klasse 8. De HoloLens 2 Industrial Edition is UL-klasse I, Division 2 gecertificeerd en wordt ondersteund met een garantie van twee jaar en een snel vervangingsprogramma.
 
-**[Trimble XR10 met HoloLens 2:](hololens2-options-trimble-xr10-edition.md)** Het doel dat is gebouwd voor werknemers in vervuilde, hard en met veiligheid beheerde omgevingen, de Trimble XR10 met HoloLens 2 brengt mixed reality recht op uw werksite.
+**[Trimble XR10 met HoloLens 2:](hololens2-options-trimble-xr10-edition.md)** Met het doel dat is gebouwd voor werknemers in vervuilde, hard en met veiligheid beheerde omgevingen, brengt de Trimble XR10 met HoloLens 2 mixed reality direct naar uw werksite.
 
-**[HoloLens 2 Development Edition:](hololens2-options-dev-edition.md)** begin met het bouwen voor mixed reality met deze aanbieding die HoloLens 2 combineert met gratis proefversies van Unity-software en Azure-tegoed voor cloudservices. Meer informatie over het verder gaan van de basisprincipes en het ontwikkelen voor mixed reality.
+**[HoloLens 2 Development Edition:](hololens2-options-dev-edition.md)** begin met het bouwen voor mixed reality met deze aanbieding die HoloLens 2 combineert met gratis proefversies van Unity-software en Azure-tegoed voor cloudservices. Meer informatie over het verder gaan van de basisbeginselen en het ontwikkelen voor mixed reality.
 
 Meer informatie over ons uitgebreide [HoloLens 2 portfolio](https://www.microsoft.com/hololens/buy).
 
@@ -76,12 +76,12 @@ Verken deze aanvullende oplossingen die zijn gebouwd voor HoloLens mixed reality
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Zie Get your HoloLens 2 ready to [use (Uw apparaat voorbereiden om aan de](hololens2-setup.md) slag te gaan) voor eindgebruikers van apparaten.
+Zie Get your HoloLens 2 ready to [use (Uw apparaat voorbereiden om](hololens2-setup.md) aan de slag te gaan) voor eindgebruikers van apparaten.
 
 > [!div class="nextstepaction"]
 > [Uw HoloLens 2 gereed voor gebruik](hololens2-setup.md)
 
-Voor IT-beheerders ontgrendelt het implementeren van apparaten in uw organisatie krachtige mixed reality ervaring. Ga aan de slag door HoloLens 2 implementatievereisten en -scenario's te bekijken voor een scala aan IT-infrastructuurconfiguraties.
+Voor IT-beheerders ontgrendelt het implementeren van apparaten in uw organisatie krachtige mixed reality ervaring. Ga aan de slag door HoloLens 2 implementatievereisten en -scenario's voor een scala aan IT-infrastructuurconfiguraties te bekijken.
 
 > [!div class="nextstepaction"]
 > [Een HoloLens 2 in een commerciële omgeving implementeren](hololens-requirements.md)

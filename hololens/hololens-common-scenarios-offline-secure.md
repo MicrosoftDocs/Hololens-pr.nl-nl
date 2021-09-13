@@ -15,11 +15,11 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 10d1955249630202a05fbf2057e1d175855ce0b5
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427456"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032177"
 ---
 # <a name="common-scenarios--offline-secure-hololens-2"></a>Algemene scenario's : offline beveiligde HoloLens 2
 
@@ -38,10 +38,10 @@ Deze handleiding bevat richtlijnen voor het toepassen van een voorbeeld van een 
 ## <a name="prepare"></a>Voorbereiden
 
 Windows 10 Pc-installatie
-1. [Download het meest recente HoloLens 2 het besturingssysteem](https://aka.ms/hololens2download) rechtstreeks naar een pc. 
+1. [Download het meest recente HoloLens 2 besturingssysteembestand](https://aka.ms/hololens2download) rechtstreeks naar een pc. 
    1. Ondersteuning voor deze configuratie is opgenomen in build 19041.1117 en hoger.
 1. Download/installeer het hulpprogramma Advanced Recovery Companion (ARC) [van de Microsoft Store](https://www.microsoft.com/store/productId/9P74Z35SFRS8) op uw pc
-1. Download/installeer het meest [recente Windows WCD-hulpprogramma (Configuration Designer)](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?activetab=pivot:overviewtab) van de Microsoft Store op uw pc.
+1. Download/installeer het meest [recente Windows wcd-hulpprogramma (Configuration Designer)](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?activetab=pivot:overviewtab) van de Microsoft Store op uw pc.
 1. [Download de OfflineSecureHL2_Sample map met de projectbestanden om](https://aka.ms/HoloLensDocs-SecureOfflineSample) de PPKG te bouwen.
 1. Bereid uw offline [Line-Of-Business-toepassing voor op ppkg-implementatie.](app-deploy-provisioning-package.md) 
 
@@ -76,7 +76,7 @@ Een pakket voor beveiligde configuratie-inrichting bouwen
    |     Policies/System/AllowLocation                       |     No                            |     Hiermee voorkomt u dat het apparaat locatiegegevens probeert bij te houden.                                                                        |
    |     Beleid/Wi-Fi/AllowWiFi                             |     No                            |     Schakelt Wi-Fi                                                                                                                 |
 
-1. Selecteer onder Runtime Instellingen **accounts / gebruikers / gebruikersnaam: Holo / wachtwoord.**
+1. Selecteer onder Runtime Instellingen **Accounts / Users / UserName: Holo / Password.**
 
    Noteer het wachtwoord en stel het indien gewenst opnieuw in.
 

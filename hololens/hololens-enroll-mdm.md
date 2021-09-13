@@ -1,6 +1,6 @@
 ---
 title: Registratie van HoloLens in MDM
-description: Meer informatie over het registreren HoloLens in Mobile Device Management (MDM) voor eenvoudiger beheer van meerdere apparaten.
+description: Meer informatie over het inschrijven HoloLens in Mobile Device Management (MDM) voor eenvoudiger beheer van meerdere apparaten.
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 2a9b3fca-8370-44ec-8b57-fb98b8d317b0
@@ -15,28 +15,28 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: a368c622c137374ea9cc544490d3492fa9d3f8c1
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427674"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032165"
 ---
 # <a name="enroll-hololens-in-mdm"></a>Registratie van HoloLens in MDM
 
-U kunt meerdere apparaten Microsoft HoloLens tegelijkertijd beheren met behulp van oplossingen zoals [Microsoft Intune](/intune/windows-holographic-for-business). U kunt instellingen beheren, apps selecteren om beveiligingsconfiguraties te installeren en instellen die zijn afgestemd op de behoefte van uw organisatie. Zie Apparaten met [Windows Holographic](/intune/windows-holographic-for-business)beheren met Microsoft Intune, de configuratieserviceproviders [(CSP's)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference#hololens)die worden ondersteund in Windows Holographic en het beleid dat wordt ondersteund [door Windows Holographic for Business](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#hololenspolicies).
+U kunt meerdere apparaten tegelijk Microsoft HoloLens met behulp van oplossingen zoals [Microsoft Intune](/intune/windows-holographic-for-business). U kunt instellingen beheren, apps selecteren om beveiligingsconfiguraties te installeren en instellen die zijn afgestemd op de behoefte van uw organisatie. Zie Apparaten met [Windows Holographic](/intune/windows-holographic-for-business)beheren met Microsoft Intune, de configuratieserviceproviders [(CSP's)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference#hololens)die worden ondersteund in Windows Holographic en het beleid dat wordt ondersteund [door Windows Holographic for Business](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#hololenspolicies).
 
 > [!NOTE]
 > Mobile Device Management (MDM), met inbegrip van de functies vpn, Bitlocker en kioskmodus, is alleen beschikbaar wanneer u een upgrade naar [Windows Holographic for Business.](hololens1-upgrade-enterprise.md)
 
 ## <a name="requirements"></a>Vereisten
 
- Uw organisatie moet Mobile Device Management (MDM) hebben ingesteld om de apparaten HoloLens beheren. Uw MDM-provider kan een Microsoft Intune een externe provider zijn die gebruikmaakt van Microsoft MDM-API's.
+ Uw organisatie moet Mobile Device Management (MDM) hebben ingesteld om uw apparaten HoloLens beheren. Uw MDM-provider kan een Microsoft Intune een externe provider zijn die gebruikmaakt van Microsoft MDM-API's.
 
 ## <a name="different-ways-to-enroll"></a>Verschillende manieren om in te schrijven
 
 Afhankelijk van het type identiteit [dat is gekozen](hololens-identity.md) tijdens OOBE of na het aanmelden, zijn er verschillende registratiemethoden.
 
-- Als Identiteit Azure AD is, klikt u tijdens OOBE of Instellingen op de knop **App**  ->  Access Work Verbinding maken **School.**  ->  
+- Als Identiteit Azure AD is, klikt u tijdens OOBE of Instellingen **de** knop App Access Work Verbinding maken  ->  **School.**  ->  
     - Voor Azure AD [vindt automatische MDM-inschrijving](hololens-enroll-mdm.md#auto-enrollment-in-mdm) alleen plaats als Azure AD is geconfigureerd met inschrijvings-URL's.
 
 - Als De identiteit Azure AD is en het apparaat vooraf is geregistreerd bij de Intune MDM-server met een specifiek configuratieprofiel dat is toegewezen, vinden Azure AD-Join en automatische [MDM-inschrijving](hololens-enroll-mdm.md#auto-enrollment-in-mdm) plaats tijdens OOBE.

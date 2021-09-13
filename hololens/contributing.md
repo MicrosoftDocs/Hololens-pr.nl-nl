@@ -1,23 +1,23 @@
 ---
 title: Bijdragende instructies
-description: Meer informatie over hoe u kunt bijdragen aan HoloLens documenten op het docs.microsoft.com platform met behulp GitHub Markdown met een smaak.
+description: Meer informatie over hoe u kunt bijdragen aan HoloLens documenten op het docs.microsoft.com platform met behulp GitHub markdown met een eigen smaak.
 author: hferrone
 ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
 ms.openlocfilehash: d511156d6940574deda7448a6f634c0004b8f053
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427163"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032173"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>Bijdragen aan de HoloLens documentatie
 
 Welkom bij de [HoloLens documentatie](https://github.com/MicrosoftDocs/Hololens)! Alle artikelen die u in deze repo maakt of **bewerkt, zijn zichtbaar voor het publiek.** 
 
-HoloLens documenten worden weergegeven op het docs.microsoft.com-platform, dat gebruikmaakt van GitHub markdown met Markdig-functies. De inhoud die u in deze repo bewerkt, wordt opgemaakt in niet-geformatteerde pagina's die worden weergegeven op /hololens.
+HoloLens documenten worden weergegeven op het docs.microsoft.com-platform, dat gebruikmaakt GitHub markdown met Markdig-functies. De inhoud die u in deze repo bewerkt, wordt opgemaakt in niet-geformatteerde pagina's die worden weergegeven op /hololens.
 
 Deze pagina bevat de basisstappen en richtlijnen voor bijdragen en koppelingen naar de basisbeginselen van Markdown. Bedankt voor uw bijdrage!
 
@@ -31,7 +31,7 @@ Deze pagina bevat de basisstappen en richtlijnen voor bijdragen en koppelingen n
 
 ## <a name="before-you-start"></a>Voordat u begint
 
-Als u nog geen account hebt, moet u een GitHub [maken.](https://github.com/join)
+Als u er nog geen hebt, moet u een account GitHub [maken.](https://github.com/join)
 
 >[!NOTE]
 >Als u een Microsoft-medewerker bent, koppelt u uw GitHub-account aan uw Microsoft-alias in de [Microsoft Open Source-portal.](https://repos.opensource.microsoft.com/) Word lid **van de organisaties Microsoft** en **MicrosoftDocs.**
@@ -68,7 +68,7 @@ Gebruik de volgende werkstroom om een bestaand artikel *via* een GitHub in een w
 
    * **titel:** paginatitel die wordt weergegeven op het browsertabblad wanneer het artikel wordt weergegeven. Paginatitels worden gebruikt voor ZOEKMACHINE- en indexering, dus wijzig de titel niet tenzij dit nodig is (hoewel dit minder kritiek is voordat de documentatie openbaar wordt).
    * **beschrijving:** schrijf een korte beschrijving van de inhoud van het artikel, waardoor SEO en detectie worden versterkt.
-   * **auteur:** als u de primaire eigenaar van de pagina bent, voegt u hier uw alias GitHub toe.
+   * **auteur:** als u de primaire eigenaar van de pagina bent, voegt u hier uw GitHub alias toe.
    * **ms.author:** als u de primaire eigenaar van de pagina bent, voegt u hier uw Microsoft-alias toe (u hebt niet alleen de @microsoft.com alias nodig).
    * **ms.date:** werk de datum bij als u belangrijke inhoud aan de pagina toevoegt, maar niet voor oplossingen zoals verduidelijking, opmaak, grammatica of spelling.
    * **trefwoorden: Trefwoorden** helpen bij zoekmachineoptimalisatie. Voeg trefwoorden toe, gescheiden door een komma en een spatie, die specifiek zijn voor uw artikel, maar geen leestekens na het laatste trefwoord in de lijst. U hoeft geen algemene trefwoorden toe te voegen die van toepassing zijn op alle artikelen, omdat deze elders worden beheerd. 
@@ -81,9 +81,9 @@ Gebruik de volgende werkstroom om een bestaand artikel *via* een GitHub in een w
 
 ## <a name="renaming-or-deleting-an-existing-article"></a>De naam van een bestaand artikel wijzigen of verwijderen
 
-Als de naam van een bestaand artikel wordt gewijzigd of verwijderd, moet u een omleiding toevoegen. Op die manier komt iedereen met een koppeling naar het bestaande artikel nog steeds op de juiste plaats terecht. Omleidingen worden beheerd door de .openpublishing.redirection.jsbestand in de hoofdmap van de repo.
+Als de naam van een bestaand artikel wordt gewijzigd of verwijderd, moet u een omleiding toevoegen. Op die manier komt iedereen met een koppeling naar het bestaande artikel nog steeds op de juiste plaats terecht. Omleidingen worden beheerd door het bestand .openpublishing.redirection.json in de hoofdmap van de repo.
 
-Als u een omleiding wilt toevoegen .openpublishing.redirection.jsaan, voegt u een vermelding toe aan de `redirections` matrix:
+Als u een omleiding wilt toevoegen aan .openpublishing.redirection.json, voegt u een vermelding toe aan de `redirections` matrix:
 
 ```json
 {
@@ -160,48 +160,48 @@ De volgende bronnen helpen u bij het bewerken van documentatie met behulp van de
 
 Vanwege de manier waarop docs.microsoft.com stijlen, hebben ze geen randen of aangepaste stijlen, zelfs niet als u inline CSS gebruikt. Het lijkt korte tijd te werken, maar uiteindelijk zal het platform de stijl uit de tabel stripen. Plan dus vooruit en houd uw tabellen eenvoudig. Hier is een site die Markdown-tabellen eenvoudig maakt: [Tables Generator]] ( https://www.tablesgenerator.com/markdown_tables) .
 
-De [Docs Markdown-extensie voor Visual Studio Code](/teamblog/docs-extension) maakt het ook eenvoudig om tabel te genereren als u Visual Studio Code [(zie hieronder)](#using-visual-studio-code) gebruikt om de documentatie te bewerken.
+Met [de Docs Markdown-extensie voor Visual Studio Code](/teamblog/docs-extension) kunt u ook eenvoudig tabelgeneraties uitvoeren als u Visual Studio Code [(zie hieronder)](#using-visual-studio-code) gebruikt om de documentatie te bewerken.
 
 ### <a name="adding-images"></a>Afbeeldingen toevoegen
 
-U moet uw afbeeldingen uploaden naar de map mixed-reality-docs/images in de repo en er vervolgens naar verwijzen in het artikel. Afbeeldingen worden automatisch op volledige grootte weer geven, wat betekent dat grote afbeeldingen de volledige breedte van het artikel vullen. We raden u aan de afbeelding vooraf in te delen voordat u ze uploadt. De aanbevolen breedte ligt tussen 600 en 700 pixels, maar u moet de grootte omhoog of omlaag aanpassen als het een compacte schermopname of een fractie van een schermopname is.
+U moet uw afbeeldingen uploaden naar de map mixed-reality-docs/images in de repo en er vervolgens naar verwijzen in het artikel. Afbeeldingen worden automatisch op volledige grootte weer geven, wat betekent dat grote afbeeldingen de volledige breedte van het artikel vullen. We raden u aan de afbeelding vooraf te izingen voordat u ze uploadt. De aanbevolen breedte ligt tussen 600 en 700 pixels, maar u moet de grootte omhoog of omlaag aanpassen als het een compacte schermopname of een fractie van een schermopname is.
 
 >[!IMPORTANT]
->U kunt alleen afbeeldingen uploaden naar uw gevorkte repo voordat u ze samenvoegt. Dus als u van plan bent om afbeeldingen toe te voegen aan een artikel, moet u [Visual Studio Code](#using-visual-studio-code) gebruiken om de afbeeldingen eerst toe te voegen aan de map 'afbeeldingen' van uw fork of om ervoor te zorgen dat u het volgende hebt gedaan in een webbrowser:
+>U kunt alleen afbeeldingen uploaden naar uw gevorkte repo voordat u deze samenvoegt. Dus als u van plan bent om afbeeldingen toe te voegen aan een artikel, moet u [Visual Studio Code](#using-visual-studio-code) gebruiken om de afbeeldingen eerst toe te voegen aan de map 'afbeeldingen' van uw fork of om ervoor te zorgen dat u het volgende hebt gedaan in een webbrowser:
 >
->1. De MicrosoftDocs-/mixed-reality-repo is gevorkt.
+>1. De MicrosoftDocs-/mixed reality-repo is gevorkt.
 >2. U hebt het artikel in uw fork bewerkt.
->3. De afbeeldingen die u in uw artikel verwijst, hebben geüpload naar de map mixed-reality-docs/images in uw fork.
+>3. U hebt de afbeeldingen waar u in uw artikel naar verwijst, geüpload naar de map mixed-reality-docs/images in uw fork.
 >4. U hebt een **pull-aanvraag gemaakt** om uw fork samen te voegen in de mastervertakking MicrosoftDocs/mixed-reality. 
 >
 >Volg de instructies voor het maken van een nieuw artikel voor meer informatie over het instellen van uw eigen [gevorkte repo.](#creating-a-new-article)
 
 ## <a name="previewing-your-work"></a>Een voorbeeld van uw werk bekijken
 
-Tijdens het bewerken in GitHub webbrowser, kunt u het tabblad **Preview** bovenaan de pagina selecteren om een voorbeeld van uw werk te bekijken voordat u uw werk gaat uitvoeren. 
+Tijdens het bewerken in GitHub via een webbrowser, kunt u het tabblad **Preview** bovenaan de pagina selecteren om een voorbeeld van uw werk te bekijken voordat u uw werk gaat uitvoeren. 
 
 >[!NOTE]
->Een voorbeeld van uw wijzigingen review.docs.microsoft.com is alleen beschikbaar voor Microsoft-medewerkers
+>Een voorbeeld van uw wijzigingen op review.docs.microsoft.com is alleen beschikbaar voor Microsoft-medewerkers
 
-Microsoft-medewerkers: wanneer uw bijdragen zijn samengevoegd in de standaard branch, _hoofd_, kunt u de inhoud controleren voordat deze openbaar wordt op </hololens?branch=master>. Zoek uw artikel met behulp van de inhoudsopgave in de linkerkolom.
+Microsoft-medewerkers: wanneer uw bijdragen zijn samengevoegd met de standaard branch, _master,_ kunt u de inhoud controleren voordat deze openbaar wordt op </hololens?branch=master>. Zoek uw artikel met behulp van de inhoudsopgave in de linkerkolom.
 
 ## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>Bewerken in de browser versus bewerken met een desktopclient
 
 Bewerken in de browser is de eenvoudigste manier om snelle wijzigingen aan te brengen, maar er zijn enkele nadelen:
 
 - U krijgt geen spellingcontrole.
-- U krijgt geen slimme koppeling naar andere artikelen (u moet handmatig de bestandsnaam van het artikel typen).
+- U krijgt geen slimme koppeling naar andere artikelen (u moet de bestandsnaam van het artikel handmatig typen).
 - Het uploaden en verwijzen naar afbeeldingen kan een probleem zijn.
 
-Als u deze problemen liever niet wilt oplossen, gebruikt u een desktopclient zoals [Visual Studio Code](https://code.visualstudio.com/) met een aantal nuttige extensies [bij](#useful-extensions) het bijdragen.
+Als u deze problemen liever niet wilt oplossen, gebruikt u een desktopclient zoals [Visual Studio Code](https://code.visualstudio.com/) met een aantal nuttige extensies bij [het](#useful-extensions) bijdragen.
 
 ## <a name="using-visual-studio-code"></a>Visual Studio Code gebruiken
 
-Om de bovenstaande redenen [kunt](#editing-in-the-browser-vs-editing-with-a-desktop-client)u de voorkeur geven aan het gebruik van een desktopclient om documentatie te bewerken in plaats van een webbrowser. We raden u aan Visual Studio [code te gebruiken.](https://code.visualstudio.com/)
+Om de bovenstaande redenen [kunt](#editing-in-the-browser-vs-editing-with-a-desktop-client)u de voorkeur geven aan het gebruik van een desktopclient om documentatie te bewerken in plaats van een webbrowser. We raden u aan [Visual Studio code te gebruiken.](https://code.visualstudio.com/)
 
 ### <a name="setup"></a>Instellen
 
-Volg deze stappen om uw Visual Studio code te configureren om met deze repo te werken:
+Volg deze stappen om Visual Studio code te configureren om met deze repo te werken:
 
 1. In een webbrowser:
     1. Installeer [Git voor uw pc.](https://git-scm.com/downloads)
@@ -213,16 +213,16 @@ Volg deze stappen om uw Visual Studio code te configureren om met deze repo te w
     2. Typ 'Git: Clone'.
     3. Plak de URL die u hebt gekopieerd.
     4. Kies waar u de kloon wilt opslaan op uw pc.
-    5. Selecteer **Open repo** in het pop-uppop-up.
+    5. Selecteer In de pop-up de optie **Repo** openen.
 
 ### <a name="editing-documentation"></a>Documentatie bewerken
 
 Gebruik de volgende werkstroom om wijzigingen aan te brengen in de documentatie met Visual Studio Code:
 
 >[!NOTE]
->Alle richtlijnen voor het [bewerken](#editing-an-existing-article) en [maken](#creating-a-new-article) van artikelen, en de basisbeginselen voor het bewerken van [Markdown,](#markdown-basics)van hierboven, zijn ook van toepassing wanneer u Visual Studio Code gebruikt.
+>Alle richtlijnen voor het [bewerken](#editing-an-existing-article) en [maken](#creating-a-new-article) van artikelen, en de basisbeginselen van het bewerken van [Markdown,](#markdown-basics)hierboven, zijn ook van toepassing wanneer u Visual Studio Code gebruikt.
 
-1. Zorg ervoor dat uw gekloonde fork is bijgewerkt met de officiële repo.
+1. Zorg ervoor dat de gekloonde fork is bijgewerkt met de officiële repo.
 
    1. Maak in een webbrowser een pull-aanvraag om recente wijzigingen van andere inzenders in de standaardvertakking MicrosoftDocs/mixed-reality, _master,_ te synchroniseren met uw fork (zorg ervoor dat de pijl naar de juiste bestemming wijst).
       
@@ -230,25 +230,25 @@ Gebruik de volgende werkstroom om wijzigingen aan te brengen in de documentatie 
       
    2. In Visual Studio Code selecteert u de synchronisatieknop om uw zojuist bijgewerkte fork te synchroniseren met de lokale kloon.
       
-      ![Klik op de afbeelding van de knop Synchroniseren.](images/sync-clone.png)
+      ![Klik op de afbeelding van de synchronisatieknop.](images/sync-clone.png)
       
 2. Maak of bewerk artikelen in uw gekloonde repo met behulp Visual Studio Code.
 
    1. Bewerk een of meer artikelen (voeg indien nodig afbeeldingen toe aan de map afbeeldingen).
    
-   2. **Sla de** wijzigingen op in **Explorer.**
+   2. **Sla de** wijzigingen op in **Explorer**.
       
       ![Kies Alles opslaan in Explorer](images/explorer-save.png)
       
-   3. **Alle wijzigingen in** **Broncodebeheer (schrijf** het commit-bericht wanneer hier om wordt gevraagd) door.
+   3. **Alle wijzigingen** in **Broncodebeheer (schrijf** het commit-bericht wanneer hier om wordt gevraagd) door.
    
-      !['Alles commit' kiezen in Broncodebeheer](images/source-control-commit.png)
+      ![Kies Alles doorbesturingselementen in Broncodebeheer](images/source-control-commit.png)
       
-   4. Selecteer de **synchronisatieknop** om uw wijzigingen weer naar de oorsprong te synchroniseren (uw fork op GitHub).
+   4. Selecteer de **synchronisatieknop** om uw wijzigingen terug te synchroniseren naar de oorsprong (uw fork op GitHub).
       
       ![Klik op de knop Synchroniseren.](images/sync-back.png)
       
-3. Maak in een webbrowser een pull-aanvraag om nieuwe wijzigingen in uw fork terug te synchroniseren met MicrosoftDocs/mixed-reality _master_ (zorg ervoor dat de pijl naar de juiste bestemming wijst).
+3. Maak in een webbrowser een pull-aanvraag om nieuwe wijzigingen in uw fork te synchroniseren met MicrosoftDocs/mixed-reality _master_ (zorg ervoor dat de pijl naar de juiste bestemming wijst).
 
    ![Maak een pull-aanvraag van uw fork in MicrosoftDocs/mixed-reality.](images/pr-to-master.png)
 
@@ -259,6 +259,6 @@ De volgende Visual Studio code-extensies zijn nuttig bij het bewerken van docume
 - [Docs Markdown-extensie voor Visual Studio Code:](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) gebruik **Alt+M om** een menu met ontwerpopties voor documenten weer te geven, zoals:
    - Zoek en verwijs naar afbeeldingen die u hebt geüpload.
    - Voeg opmaak toe, zoals lijsten, tabellen en docs-specifieke aanroepen, zoals `>[!NOTE]` .
-   - Interne koppelingen en bladwijzers zoeken en hier naar verwijzen (koppelingen naar specifieke secties op een pagina).
-   - Opmaakfouten worden gemarkeerd (beweeg de muisaanwijzer over de fout voor meer informatie).
+   - Interne koppelingen en bladwijzers zoeken en hier naar verwijzen (koppelingen naar specifieke secties binnen een pagina).
+   - Opmaakfouten zijn gemarkeerd (beweeg de muisaanwijzer over de fout voor meer informatie).
 - [Code Spell Checker:](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) verkeerd gespelde woorden worden onderstreept; klik met de rechtermuisknop op een verkeerd gespeld woord om het te wijzigen of op te slaan in de woordenlijst.

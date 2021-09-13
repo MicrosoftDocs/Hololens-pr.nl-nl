@@ -15,11 +15,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: e23bd458e26668f1f4a9a361ffaadf8fc377933e
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428718"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126035903"
 ---
 # <a name="configure-your-network-for-hololens"></a>Uw netwerk configureren voor HoloLens
 
@@ -38,7 +38,7 @@ Essentiële cloudservices zijn onder andere:
 - Azure active directory (Azure AD)
 - Windows Bijwerken (WU)
 
-Commerciële klanten hebben een enterprise mobility management-infrastructuur (EMM) of MDM-infrastructuur (Mobile Device Management) nodig om apparaten op schaal HoloLens beheren.  Deze handleiding gebruikt [Microsoft Intune](https://www.microsoft.com/enterprise-mobility-security/microsoft-intune) als voorbeeld, hoewel elke provider met volledige ondersteuning voor Microsoft Policy ondersteuning kan bieden HoloLens.  Vraag uw provider voor het beheer van mobiele apparaten of deze ondersteuning HoloLens 2.
+Commerciële klanten hebben een enterprise mobility management-infrastructuur (EMM) of MDM-infrastructuur (Mobile Device Management) nodig om apparaten op schaal HoloLens beheren.  In deze handleiding [wordt Microsoft Intune](https://www.microsoft.com/enterprise-mobility-security/microsoft-intune) voorbeeld gebruikt, maar elke provider met volledige ondersteuning voor Microsoft Policy kan ondersteuning bieden HoloLens.  Vraag uw provider voor het beheer van mobiele apparaten of deze ondersteuning HoloLens 2.
 
 HoloLens biedt ondersteuning voor een beperkte set niet-verbonden cloudervaringen.
 
@@ -90,7 +90,7 @@ Zie de volgende [instructies voor](/azure/active-directory/fundamentals/add-user
 1. Zorg ervoor dat aan de gebruikers van uw bedrijf (of een groep gebruikers) de benodigde licenties zijn toegewezen.
 Als u licenties moet toewijzen, volgt u [deze instructies.](/azure/active-directory/fundamentals/license-users-groups)
 
-1. Doe deze stap alleen als van gebruikers wordt verwacht dat ze hun HoloLens/mobiele apparaat bij u inschrijven (er zijn drie opties) Deze stappen zorgen ervoor dat de gebruikers van uw bedrijf (of een groep gebruikers) apparaten kunnen toevoegen.
+1. Doe deze stap alleen als van gebruikers wordt verwacht dat ze hun HoloLens/mobiele apparaat bij u inschrijven (er zijn drie opties) Met deze stappen zorgt u ervoor dat de gebruikers van uw bedrijf (of een groep gebruikers) apparaten kunnen toevoegen.
     1. **Optie 1:** Geef alle gebruikers toestemming om apparaten aan Azure AD toe te sluiten.
 **Meld u als Azure Portal aan bij de Azure Portal**  >  **Azure Active Directory**  >  **Apparaten**  >  **Apparaat Instellingen**  >
  **Stel Gebruikers mogen apparaten aan Azure AD deelnemen in op *Alle***
@@ -160,7 +160,7 @@ Zie de volgende stappen voor het gebruik van [SCEP.](/intune/protect/certificate
 > [!NOTE]
 > Windows Holographics for Business (commerciële suite) is alleen bedoeld voor apparaten HoloLens eerste generatie. Het profiel wordt niet toegepast op HoloLens 2 apparaten.
 
-U vindt de aanwijzingen voor het upgraden naar de commerciële suite in de [documentatie voor holographic-upgrades.](/intune/configuration/holographic-upgrade)
+U vindt een routebeschrijving voor het upgraden naar de commerciële suite in de [documentatie over de holographic-upgrade.](/intune/configuration/holographic-upgrade)
 
 ### <a name="how-to-configure-kiosk-mode-using-microsoft-intune"></a>Kioskmodus configureren met Microsoft Intune
 
@@ -168,25 +168,25 @@ U vindt de aanwijzingen voor het upgraden naar de commerciële suite in de [docu
 
 1. Uw app-instellingen controleren
     1. Meld u aan bij Microsoft Store Business-account
-    1. **> producten en services beheren > apps en software-> Selecteer de app die u wilt synchroniseren > beschikbaarheid van de privéopslag > Selecteer 'Iedereen' of 'Specifieke groepen'**
+    1. **> Producten en services beheren > Apps en Software > Selecteer de app die u wilt synchroniseren > Beschikbaarheid van de privé-store > Selecteer 'Iedereen' of 'Specifieke groepen'**
         >[!NOTE]
-        >Als u de gezochte app niet ziet, moet u de app 'downloaden' door in de Store naar uw app te zoeken. Klik op de balk Zoeken in de rechterbovenhoek > de naam van de app > klik op de app > **selecteer 'Get'**.
+        >Als u de gezochte app niet ziet, moet u de app 'downloaden' door in de Store te zoeken naar uw app. Klik op de balk Zoeken in de rechterbovenhoek > typ de naam van de app > klik op de app om **> 'Get' te selecteren.**
     1. Als u uw apps niet ziet in **Intune > Client Apps > Apps,** moet u uw apps mogelijk [opnieuw](/intune/apps/windows-store-for-business#synchronize-apps) synchroniseren.
 
 1. [Een apparaatprofiel maken voor de kioskmodus](/intune/configuration/kiosk-settings#create-the-profile)
 
 > [!NOTE]
-> U kunt verschillende gebruikers configureren voor verschillende kioskmoduservaringen door 'Azure AD' te gebruiken als het aanmeldingstype Gebruiker. Deze optie is echter alleen beschikbaar in de kioskmodus voor meerdere apps. De kioskmodus voor meerdere apps werkt met slechts één app en met meerdere apps.
+> U kunt verschillende gebruikers configureren voor verschillende kioskmoduservaringen door 'Azure AD' te gebruiken als aanmeldingstype gebruiker. Deze optie is echter alleen beschikbaar in de kioskmodus voor meerdere apps. De kioskmodus voor meerdere apps werkt met slechts één app en met meerdere apps.
 
 ![Afbeelding van de configuratie van de kioskmodus in Intune.](images/aad-kioskmode.png)
 
-Voor andere MDM-services raadpleegt u de documentatie van uw provider voor instructies. Raadpleeg de instructies [HoloLens kiosk als](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) u een aangepaste instelling en volledige XML-configuratie moet gebruiken om een kiosk in uw MDM-service in te stellen.
+Raadpleeg de documentatie van uw provider voor instructies voor andere MDM-services. Raadpleeg de instructies [HoloLens kiosk als](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) u een aangepaste instelling en een volledige XML-configuratie moet gebruiken om een kiosk in uw MDM-service in te stellen.
 
 ## <a name="certificates-and-authentication"></a>Certificaten en verificatie
 
 Certificaten kunnen worden geïmplementeerd via uw MDM (zie Certificaten in de [sectie MDM).](hololens-commercial-infrastructure.md#mobile-device-manager-guidance) Certificaten kunnen ook worden geïmplementeerd op de HoloLens via pakket inrichten. Zie HoloLens [Inrichting voor](hololens-provisioning.md) meer informatie.
 
-### <a name="additional-intune-quick-links"></a>Aanvullende Snelle koppelingen voor Intune
+### <a name="additional-intune-quick-links"></a>Aanvullende Snelkoppelingen voor Intune
 
 1. [Profielen maken:](/intune/configuration/device-profile-create) Met profielen kunt u instellingen toevoegen en configureren die naar de apparaten in uw organisatie worden pushen.
 

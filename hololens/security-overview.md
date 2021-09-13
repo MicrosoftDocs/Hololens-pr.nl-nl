@@ -14,16 +14,16 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: bbf05404193f684bdc43d7d6a37159e17678d604
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428810"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126035900"
 ---
 # <a name="security-overview"></a>Beveiligingsoverzicht
 
 Om te voldoen aan de uitdagingen van een modern bedreigingslandschap en de bijbehorende risico's, is de HoloLens 2-beveiligingsarchitectuur volledig opnieuw ontworpen om geavanceerde, innovatieve beveiliging en privacybescherming end-to-end te bieden.
 
-Met HoloLens 2 hebben bedrijven en klanten een echt modern, geavanceerde besturingssysteem met een sterk, ingebouwd beveiligingsraamwerk. Met dit moderne besturingssysteem kunnen ontwikkelaars toepassingen ontwerpen, bouwen en leveren met een uitzonderlijke beveiligingsstrategie om een complex bedreigingslandschap en de bijbehorende risico's effectief te bestrijden. 
+Met HoloLens 2 hebben bedrijven en klanten een echt modern, geavanceerde besturingssysteem met een sterk, ingebouwd beveiligings framework. Met dit moderne besturingssysteem kunnen ontwikkelaars toepassingen ontwerpen, bouwen en leveren met een uitzonderlijke beveiligingsstrategie om een complex bedreigingslandschap en de bijbehorende risico's effectief te bestrijden. 
 
-De volgende beveiligings hoofdstuk bevat een overzicht van onze zich ontwikkelende Windows HoloLens 2 beveiliging, waarmee ontwikkelaars succesvollere en veilige toepassingen met hoge prestaties kunnen bouwen. In deze secties worden Windows HoloLens 2 beveiligingsarchitectuur van het besturingssysteem, de beveiligde locaties en gerelateerde beveiligingsfuncties en -mechanismen beschreven.
+De volgende beveiligings hoofdstuk bevat een overzicht van onze zich ontwikkelende Windows HoloLens 2 beveiliging, waarmee ontwikkelaars succesvollere en veilige toepassingen met hoge prestaties kunnen bouwen. In deze secties worden de Windows HoloLens 2 de beveiligingsarchitectuur van het besturingssysteem, de beveiligde locaties en de bijbehorende beveiligingsfuncties en -mechanismen beschreven.

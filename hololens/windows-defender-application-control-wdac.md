@@ -1,6 +1,6 @@
 ---
 title: Windows Defender Toepassingsbeheer (WDAC)
-description: Overzicht van wat Windows Defender Application Control is en hoe u dit kunt gebruiken om uw HoloLens mixed reality beheren.
+description: Overzicht van wat Windows Defender Toepassingsbeheer is en hoe u dit kunt gebruiken voor het beheren van HoloLens mixed reality apparaten.
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -13,11 +13,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: b5c3b55273346f330580b07e5294e7e8e65ea12d
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032924"
 ---
 # <a name="windows-defender-application-control---wdac"></a>Windows Defender Toepassingsbeheer - WDAC
 
@@ -30,9 +30,9 @@ Met WDAC kunt u een HoloLens het starten van apps te blokkeren. Het verschilt va
 
 Aan een apparaat kan meer dan één WDAC-beleid worden toegewezen. Als er meerdere WDAC-beleidsregels zijn ingesteld op een systeem, worden de meeste beperkende beleidsregels van kracht. 
 
-Hier volgt een handleiding voor gebruikers om te leren hoe ze [WDAC](/mem/intune/configuration/custom-profile-hololens)en Windows PowerShell gebruiken om apps toe te staan of te blokkeren op HoloLens 2-apparaten met Microsoft Intune .
+Hier volgt een handleiding voor gebruikers voor meer informatie over het gebruik van [WDAC](/mem/intune/configuration/custom-profile-hololens)en Windows PowerShell voor het toestaan of blokkeren van apps op HoloLens 2-apparaten met Microsoft Intune .
 
-Wanneer gebruikers zoeken naar apps die op hun Windows 10 pc zijn geïnstalleerd met behulp van de eerste voorbeeldstap, moeten ze mogelijk enkele pogingen doen om de resultaten te beperken.
+Wanneer gebruikers zoeken naar apps die zijn geïnstalleerd op hun Windows 10 pc met behulp van de eerste voorbeeldstap, moeten ze mogelijk enkele pogingen doen om de resultaten te beperken.
 
 ```powershell
 $package1 = Get-AppxPackage -name *<applicationname>*
@@ -50,7 +50,7 @@ Get-AppxPackage -name *edge*
 
 In de bovenstaande handleiding kunt u handmatig de newPolicy.xml bewerken en regels toevoegen voor toepassingen die alleen zijn geïnstalleerd op HoloLens met de familienamen van pakketten. Soms zijn er apps die u kunt gebruiken die zich niet op uw desktop-pc die u wilt toevoegen aan het beleid.
 
-Hier is een lijst met veelgebruikte en In-Box voor HoloLens 2 apparaten.
+Hier is een lijst met veelgebruikte en In-Box apps voor HoloLens 2 apparaten.
 
 | App-naam                   | Naam pakketfamilie                                |
 |----------------------------|----------------------------------------------------|
@@ -71,11 +71,11 @@ Hier is een lijst met veelgebruikte en In-Box voor HoloLens 2 apparaten.
 | Instellingen                   | HolographicSystemSettings_cw5n1h2txyewy            |
 | Tips                       | Microsoft.HoloLensTips_8wekyb3d8bbwe               |
 
-- 1: het blokkeren App-installatieprogramma blokkeert alleen de App-installatieprogramma-app en niet apps die zijn geïnstalleerd vanuit andere bronnen, zoals de Microsoft Store of van uw MDM-oplossing.
+- 1: als App-installatieprogramma blokkeert, wordt alleen de App-installatieprogramma-app geblokkeerd en niet apps die zijn geïnstalleerd vanuit andere bronnen, zoals de Microsoft Store of van uw MDM-oplossing.
 
 ### <a name="how-to-find-a-package-family-name"></a>Een pakketfamilienaam vinden
 
-Als een app niet in deze lijst staat, kan een gebruiker Apparaatportal gebruiken, verbonden met een HoloLens 2 die de app heeft geïnstalleerd en geblokkeerd, om de PackageRelativeID te bepalen en vervolgens PackageFamilyName op te halen.
+Als een app niet in deze lijst staat, kan een gebruiker Apparaatportal gebruiken, verbonden met een HoloLens 2 die de app heeft geïnstalleerd en geblokkeerd, om de PackageRelativeID te bepalen en daar de PackageFamilyName op te halen.
 
 1. Installeer de app op uw HoloLens 2 apparaat. 
 1. Open Instellingen -> Updates & Security -> For developers en schakel de **ontwikkelaarsmodus** en vervolgens **Apparaatportal in.** 

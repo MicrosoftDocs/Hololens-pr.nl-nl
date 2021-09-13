@@ -17,12 +17,12 @@ manager: skerewa
 appliesto:
 - HoloLens 2
 keywords: HoloLens 2, commercieel, functies, mdm, beheer van mobiele apparaten, kioskmodus, toepassingen, identiteit, Bitlocker, iris, Windows Hello, Azure, Autopilot, mixed reality, WDAC
-ms.openlocfilehash: 0c47eedad0d5a23249c48356765b74e4dbeac33e
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.openlocfilehash: aef0bfd8672464eb71d147eeffa3e0ea245dbbd0
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427210"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126035904"
 ---
 # <a name="hololens-2-capabilities-and-solutions"></a>HoloLens 2 en oplossingen
 
@@ -32,7 +32,7 @@ Dankzij de HoloLens 2 en Mixed Reality kunnen werknemers nu zonder grenzen samen
 
 Werk zonder grenzen samen en werk nauwkeurig om de productiviteit van werknemers te verhogen met mixed reality toepassingen op HoloLens 2. Blijf bij met de ingebouwde spraakopdrachten, het bijhouden van ogen en wereldankeren, en blijf met de handen vrij en blijf continu bezig met het veilig uitvoeren van taken zonder fouten. Verbinding maken in realtime met externe collega's en werk samen via een uitgebreid holografische canvas dat is vertraagd in uw fysieke omgeving om snel problemen op het werk op te lossen. Direct rendement op investeringen realiseren met een robuust ecosysteem van toepassingen die worden ondersteund met de beveiliging, betrouwbaarheid en schaalbaarheid van Microsoft.  
 
-We hopen dat dit artikel u inspireren om na te denken over alle manieren waarop mixed reality (MR) uw bedrijf zal helpen.
+We hopen dat dit artikel u inspireren om na te denken over alle manieren waarop mixed reality (MR) uw bedrijf ten goede komt.
 
 ## <a name="hololens-2-capabilities"></a>HoloLens 2 mogelijkheden
 
@@ -40,10 +40,10 @@ Wat maakt de HoloLens 2 zo krachtig?
 
 | Functie | Beschrijving |
 |---------|-------------|
-| Wereldankering | Ankerde hologrammen blijven nauwkeurig op hun plaats. HoloLens 2 begrijpt uw werkruimte. Digitale inhoud blijft dus in de tijd bestaan en is verankerd in objecten of oppervlakken waar u werkt. |
+| Wereldankering | Ankerde hologrammen blijven nauwkeurig op hun plaats. HoloLens 2 begrijpt uw werkruimte. Digitale inhoud blijft dus in de tijd bestaan: verankerd in objecten of oppervlakken waar u werkt. |
 | Handtracking | Hologrammen aanraken, begrijpen en verplaatsen op een natuurlijke manier. HoloLens 2 past zich aan uw handen aan voor nieuwe tevredenheid over uw interacties. |
-| Oog bijhouden | Profiteer van een nieuw niveau van context en menselijk begrip. HoloLens 2 precies begrijpt waar u naar op zoek bent, zodat het uw intentie kan begrijpen en de hologrammen in realtime aan uw ogen kan aanpassen. |
-| Spraak ingeschakeld | Met ingebouwde spraakopdrachten kunt u snel navigeren en HoloLens 2 wanneer uw handen een taak in beslag nemen. |
+| Oog bijhouden | Profiteer van een nieuw niveau van context en menselijk begrip. HoloLens 2 begrijpt precies waar u zoekt, zodat het uw intentie kan begrijpen en de hologrammen in realtime aan uw ogen kan aanpassen. |
+| Spraak ingeschakeld | Met ingebouwde spraakopdrachten kunt u snel navigeren en werken HoloLens 2 wanneer uw handen een taak in beslag nemen. |
 | Ergonomische | HoloLens 2 is licht (3,28 kg) en bevat een inbelsysteem voor uitgebreid gebruik. |
 | Grote fov | Vouw uw holografische canvas uit met grote weergaveweergaven met een hoge resolutie. |
 | Onderwatervoertuigen | Verplaats u vrij, zonder kabels of externe packs om uw weg te vinden. |
@@ -57,7 +57,7 @@ Wat maakt de HoloLens 2 zo krachtig?
 
 [!INCLUDE [solutions](includes/hlsolutions.md)]
 
-## <a name="how-hololens-2-is-transforming-industries"></a>Hoe HoloLens 2 branches transformeert
+## <a name="how-hololens-2-is-transforming-industries"></a>Hoe HoloLens 2 is het transformeren van branches
 
 :::row:::
     :::column:::
@@ -77,7 +77,7 @@ Wat maakt de HoloLens 2 zo krachtig?
     :::column-end:::
     :::column span="2":::
         ### <a name="sheba-medical-center-uses-microsofts-hololens-for-ventilators-training"></a>[Sheba Medical Center maakt gebruik van de HoloLens van Microsoft voor het trainen van ventilatoren.](https://customers.microsoft.com/en-us/story/1388628932382960935-sheba-health-provider-azure-en-israel)
-        HoloLens in tijden van crisis in dienst van medische training.
+        Het personeel van Het Sheba Medical Center gebruikte HoloLens om personeel en andere ondersteuningsmedewerkers te trainen op het gebruik van beademingsmachines die tijdens de COVID-19-pandelegering door de honderden werden geïmplementeerd.
     :::column-end:::
 :::row-end:::
 
@@ -101,7 +101,7 @@ Wat maakt de HoloLens 2 zo krachtig?
     :::column-end:::
     :::column span="2":::
         ### <a name="tokyu-construction-improves-engineering-precision-and-increases-productivity-with-azure-remote-rendering-on-hololens-2"></a>[Tokyu Construction verbetert de nauwkeurigheid van de engineering en verhoogt de productiviteit met Azure Remote Rendering op HoloLens 2.](https://customers.microsoft.com/en-us/story/1333933369626897988-tokyu-construction-manufacturing-azure-holo-lens-2)
-        Tenzij u een getrainde architectuurtechnicus bent, kan het lastig zijn om een 2D-blauwdruk te bekijken en te visualiseren hoe een gebouw er in 3D uit ziet. 
+        Tenzij u een getrainde architectuurtechnicus bent, kan het lastig zijn om een 2D-blauwdruk te bekijken en te visualiseren hoe een gebouw er daadwerkelijk uit zal zien in 3D. 
     :::column-end:::
 :::row-end:::
 
@@ -112,7 +112,7 @@ Wat maakt de HoloLens 2 zo krachtig?
         [<img src="images/mda-hl2.jpg" alt="MDA" width=350px>](https://customers.microsoft.com/en-us/story/1377057233739728271-mda-manufacturing-hololens-canada)
     :::column-end:::
     :::column span="2":::
-        ### <a name="mda-takes-mixed-reality-into-orbit-with-hololens-2"></a>[MDA brengt mixed reality in een baan om de HoloLens 2.](https://customers.microsoft.com/en-us/story/1377057233739728271-mda-manufacturing-hololens-canada)
+        ### <a name="mda-takes-mixed-reality-into-orbit-with-hololens-2"></a>[MDA gaat mixed reality in een baan om de HoloLens 2.](https://customers.microsoft.com/en-us/story/1377057233739728271-mda-manufacturing-hololens-canada)
         MDA maakt gebruik van mixed reality om technici te helpen ontwerpen te visualiseren, diagnostische problemen te versnellen en astronauten en grondcontrollers te trainen.
     :::column-end:::
 :::row-end:::

@@ -1,6 +1,6 @@
 ---
-title: HoloLens hardware (1e generatie)
-description: Meer informatie over de onderdelen waaruit de Microsoft HoloLens (1e generatie), de meest recente ontwikkeling van een niet-thered, holografische Microsoft-computer met Windows 10.
+title: HoloLens hardware (eerste generatie)
+description: Meer informatie over de onderdelen waaruit de Microsoft HoloLens (1e generatie), de meest recente ontwikkeling van een niet-thered holographic Microsoft-computer met Windows 10.
 ms.assetid: 527d494e-2ab6-46ca-bd5a-bfc6b43cc833
 ms.date: 09/16/2019
 keywords: hololens
@@ -14,13 +14,13 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 587253a7ec3d3959e7861fedc474d6a2e39dd369
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427737"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032798"
 ---
-# <a name="hololens-1st-gen-hardware"></a>HoloLens hardware (1e generatie)
+# <a name="hololens-1st-gen-hardware"></a>HoloLens hardware (eerste generatie)
 
 ![Microsoft HoloLens (eerste generatie).](images/see-through-400px.jpg)
 
@@ -32,8 +32,8 @@ Microsoft HoloLens (eerste generatie) is de eerste volledig ongebonden holografi
 
 Uw HoloLens bevat de volgende functies:
 
-- **Visor**. Bevat de HoloLens sensoren en weergaven. U kunt het visor omhoog draaien terwijl u de HoloLens.
-- **Hoofdband**. Als u de HoloLens aan wilt zetten, gebruikt u het aanpassingswiel om de hoofdband uit te vouwen. Als de HoloLens is, verstrapt u het aanpassingswiel totdat de hoofdband vertrouwd is.
+- **Visor**. Bevat de HoloLens sensoren en weergaven. U kunt het visor omhoog draaien terwijl u de visor HoloLens.
+- **Hoofdband**. Als u de HoloLens aan wilt zetten, gebruikt u het aanpassingswiel om de hoofdband uit te vouwen. Als de HoloLens is, moet u het aanpassingswiel aanspann totdat de hoofdband vertrouwd is.
 - **Helderheidsknoppen.** Wanneer u het apparaat HoloLens, staan de helderheidsknoppen aan de linkerkant van het apparaat.
 - **Volumeknoppen.** Wanneer u de HoloLens, staan de volumeknoppen aan de rechterkant van het apparaat.
 - **Apparaatarmen**. Wanneer u uw apparaat oppikt, aan- of HoloLens, houdt u deze altijd vast of houdt u deze vast aan de arm van het apparaat.
@@ -45,7 +45,7 @@ Uw HoloLens bevat de volgende functies:
 Het HoloLens bevat de volgende items:
 
 - **Neuspaden.** Selecteer een neusblok dat past bij de vorm van uw neus en die geschikt is voor uw oog.
-- **Overheadband**. Wanneer u het apparaat HoloLens bewegen, gebruikt u de overheadband om het apparaat op zijn plaats te houden. Als u het apparaat bovendien langere tijd HoloLens dragen, kan het apparaat dankzij de overheadband meer vertrouwd zijn met de kleding.
+- **Overheadband**. Wanneer u het apparaat HoloLens bewegen, gebruikt u de overheadband om het apparaat op zijn plaats te houden. Als u het apparaat bovendien langere tijd HoloLens dragen, kan het apparaat met behulp van de overheadband meer vertrouwd zijn met de kleding.
 - **Micro USB-kabel.** Gebruik de micro-USB-kabel om uw HoloLens te verbinden met de voeding voor laden of gebruik deze om uw apparaat te HoloLens uw computer.
 - **Voeding**. Sluit aan op een power-aansluiting.
 - **Microfiber 1.** Gebruik de weer om uw HoloLens op te schonen.
@@ -158,19 +158,19 @@ HoloLens is getest en voldoet aan de basisvereisten voor beveiliging tegen impac
 
 ## <a name="care-and-cleaning"></a>Zorg en ops cleaning
 
-Zorg dat u HoloLens gegevens zorgvuldig verwerkt. Als u uw apparaat wilt optillen, HoloLens en aanpassen, gebruikt u de arm van het &mdash; apparaat, niet de overheadband. Om het visor vrij te houden van handen en vingerafdrukken en om te voorkomen dat u het aandurft. Herhaalde opsporing kan de visor beschadigen, dus probeer het apparaat schoon te houden.
+Zorg dat u HoloLens gegevens zorgvuldig verwerkt. Als u uw apparaat wilt optillen, HoloLens en aanpassen, gebruikt u de arm van het &mdash; apparaat, niet de overheadband. Om het visor vrij van handen en vingerafdrukken te houden en te voorkomen dat u het aandurft. Herhaalde opsporing kan de visor beschadigen, dus probeer het apparaat schoon te houden.
 
-Gebruik geen schoonmakers of schoonmakers op uw HoloLens en verstop het niet in water of pas er rechtstreeks water op toe.
+Gebruik geen schoonmakers of schoonmakers op uw HoloLens en verstop het niet in water of pas er water rechtstreeks op toe.
 
 Als u de visor wilt ops schonen, verwijdert u alle welke welke pijpen met behulp van een bril of een lens in de vorm van een bril. Maak de microfiber een beetje koud met een kleine hoeveelheid gedisteerd water en gebruik het vervolgens om de visor in een cirkelvormige beweging te wissen.
 
-Als u de rest van het apparaat wilt ops schonen, met inbegrip van de hoofdband en de arm van het apparaat, gebruikt u een lint-vrije 1200000000000000. Laat uw HoloLens volledig leeg voordat u deze opnieuw gebruikt.
+Als u de rest van het apparaat wilt ops schonen, met inbegrip van de hoofdband en de arm van het apparaat, gebruikt u een lintloze 120000000000000000. Laat uw HoloLens volledig leeg voordat u deze opnieuw gebruikt.
 
 ![Afbeelding die laat zien hoe u het visor kunt ops schonen.](images/hololens-cleaning-visor.png)
 
 ## <a name="finding-the-serial-number"></a>Het serienummer zoeken
 
-Het serienummer voor HoloLens apparaten (eerste generatie) wordt onder de rechterlens afgedrukt.
+Het serienummer voor HoloLens apparaten (eerste generatie) wordt afgedrukt onder de rechterlens.
 1. Houd het apparaat voor u vast alsof u het op uw hoofd zou dragen. Met het apparaat naar voren en naar voren gericht.
 1. Met de lens nog steeds naar voren, spiegelt u het apparaat omlaag zodat u de onderkant ziet.
 1. De rechterlens is nu aan de linkerkant. Onder de lens op de band wordt het serienummer afgedrukt. 

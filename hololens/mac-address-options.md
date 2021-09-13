@@ -14,11 +14,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: d21a63aae94f5ea5269f61fe319a9036626de1b4
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428400"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036231"
 ---
 # <a name="enterprise-enrollment-of-hololens-devices-in-mac-address-restricted-wi-fi-environment"></a>Enterprise Enrollment of HoloLens Devices in MAC address restricted Wi-Fi Environment
 
@@ -28,7 +28,7 @@ In dit document wordt een veelvoorkomende scenario beschreven dat we hebben geï
 
 Veel klanten in beveiligde omgevingen hebben beperkingen voor hun draadloze of bekabelde netwerken waarmee alleen goedgekeurde apparaten (op basis van MAC-adressen) verbinding kunnen maken. Dit kan worden afgedwongen via MAC-adres filteren op een draadloos toegangspunt of via een DHCP-server. Bovendien sommige draadloze netwerken kunnen worden beveiligd met PEAP, waarvoor een certificaat moet worden toegepast op het apparaat vóór de authenticatie op het draadloze netwerk.
 
-In dit scenario kunnen twee belangrijke vereisten vertragingen tot gevolg hebben of handmatig ingrijpen vereisen bij het HoloLens apparaten aan het netwerk:
+In dit scenario kunnen twee belangrijke vereisten vertragingen tot gevolg hebben of handmatige interventie vereisen bij het HoloLens apparaten aan het netwerk:
 
 - Het draadloze PEAP-certificaat moet worden toegepast op het apparaat voordat het apparaat kan worden aangesloten op het draadloze netwerk.
 - Het MAC-adres van de HoloLens Wi-Fi adaptor moet worden geregistreerd.
@@ -62,12 +62,12 @@ Er zijn veel manieren om deze situatie te verbeteren, afhankelijk van de infrast
 - HoloLens Compatibele USB-C Hub met Ethernet-adapter: elke adapter waarvoor geen extra stuurprogramma's of installatie van toepassingen nodig zijn, moet geschikt zijn.
 - Inrichtingspakket met:
   - Informatie over draadloze netwerken en certificaat bevatten
-  - Optioneel met inschrijvingsgegevens voor De Azure AD van de organisatie
+  - Optioneel met inschrijvingsgegevens voor de Azure AD van de organisatie
   - Met alle andere vereiste inrichtingsinstellingen
 
 ### <a name="process"></a>Proces
 
-Het proces kan variëren, afhankelijk van het softwareniveau van het apparaat. Als het apparaat de [update van mei 2004 heeft,](hololens-release-notes.md#windows-holographic-version-2004)volgt u de onderstaande stappen.
+Het proces kan variëren, afhankelijk van het softwareniveau van het apparaat. Als het apparaat de update [van mei 2004 heeft,](hololens-release-notes.md#windows-holographic-version-2004)volgt u de onderstaande stappen.
 
 1. Plaats het inrichtingspakket in de hoofdmap van een USB-stick en sluit het aan op de hub.
 2. Verbinding maken Ethernetkabel naar de Hub + Ethernet-adapter.
@@ -159,4 +159,4 @@ Hiermee worden de naam en het MAC-adres van alle HoloLens die in de afgelopen 30
 
 ### <a name="process"></a>Proces
 
-Nadat de Intune-inschrijving is voltooid, zou de technicus het bovenstaande script uitvoeren om het MAC-adres op te halen.
+Nadat de Intune-inschrijving is voltooid, zou de monteur het bovenstaande script uitvoeren om het MAC-adres op te halen.

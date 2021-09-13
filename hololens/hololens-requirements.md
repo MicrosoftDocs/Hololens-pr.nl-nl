@@ -13,29 +13,29 @@ ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 5a4f251f3ca6eae5e85e4d763074e035039159cb
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428761"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032870"
 ---
 # <a name="common-deployment-scenarios"></a>Algemene implementatiescenario's
 
 ## <a name="overview"></a>Overzicht
 
-Het kan lastig zijn om te weten hoe u een nieuw apparaat implementeert wanneer u het de eerste keer probeert. Hier delen we verschillende manieren voor het implementeren en beheren van Microsoft HoloLens twee apparaten binnen de organisatie.
+Het kan lastig zijn om erachter te komen hoe u een nieuw apparaat implementeert wanneer u het de eerste keer probeert. Hier delen we verschillende manieren voor het implementeren en beheren van Microsoft HoloLens 2 apparaten binnen de organisatie.
 
-U wilt oplossingen die op schaal worden geïmplementeerd. We willen u graag helpen. Laten we eerst eens kijken naar de stappen voor het implementeren van apparaten, dus hologrammen, om waarde te bereiken voor uw doel-mixed reality-scenario, of u nu D365 Remote Assist, Guides of een Azure mixed reality-servicetoepassing gebruikt die u hebt gemaakt.
+U wilt oplossingen op schaal implementeren. We willen u er graag bij krijgen. Laten we eerst eens kijken naar de stappen voor het implementeren van apparaten, dus hologrammen, om waarde te creëren voor uw doel-mixed reality-scenario, of u nu D365 Remote Assist, Guides of een Azure mixed reality-servicetoepassing gebruikt die u hebt gemaakt.
 
-Mogelijk bent u een zakelijke beslisser, IT-professional of een innovatieteam dat op zoek is naar HoloLens binnen uw organisatie. Tijdens het bouwen van een proof-of-concept tot een geschaalde implementatie, maken onze implementatiehandleidingen zinvol HoloLens binnen uw IT-infrastructuur, ongeacht hoe groot of klein. De volgende implementatiescenario's komen het meest voor:
+Mogelijk bent u een zakelijke beslisser, IT-professional of een innovatieteam dat op zoek is naar HoloLens binnen uw organisatie. Bij het bouwen van een proof-of-concept naar een geschaalde implementatie, zijn onze implementatiehandleidingen zinvol voor HoloLens binnen uw IT-infrastructuur, ongeacht hoe groot of klein. De volgende implementatiescenario's komen het meest voor:
 
 | Scenario |Gebruik | Belangrijkste punten |
 |---------|---------|---------|
 | [Scenario A: Met de cloud verbonden apparaten](hololens2-cloud-connected-overview.md) | Wanneer u de implementatie voor het eerst start, kunt u klein beginnen en één apparaat implementeren dat is verbonden met de cloud om het basisproces te zien. | Apparaten worden verbonden met cloudservices en openbaar internet. Dit is het meest geschikt voor gebruiksgevallen van klanten, veldservices en proof-of-concept.|
-| [Scenario B: Netwerk van organisatie](hololens2-corp-connected-overview.md) | Wanneer u op schaal in productie implementeert, moet u mogelijk integreren met het netwerk van uw eigen organisatie. | Apparaten worden verbonden met een 'zakelijk' Wi-Fi-netwerk. Dit is het meest geschikt voor interne gebruikers of voor gebruik binnen de bedrijfsomgeving.|
-| [Scenario C: Offline beveiligde omgeving](hololens-common-scenarios-offline-secure.md) | Voor sommige bedrijfskritieke processen of bepaalde bedrijfsbeleidsregels kan het gebruik van offlineomgevingen worden vereist. | Apparaten worden verbonden met een zeer beperkend netwerk of zijn uitsluitend offlineapparaten. Dit is het meest geschikt voor uiterst veilige omgevingen of internetverbindingsbeperkingen in externe gebieden. |
+| [Scenario B: Netwerk van organisatie](hololens2-corp-connected-overview.md) | Wanneer u op schaal in productie implementeert, moet u mogelijk integreren met het netwerk van uw eigen organisatie. | Apparaten worden verbonden met een Wi-Fi-netwerk 'Zakelijk'. Dit is het meest geschikt voor interne gebruikers of voor gebruik binnen de bedrijfsomgeving.|
+| [Scenario C: Offline beveiligde omgeving](hololens-common-scenarios-offline-secure.md) | Voor sommige bedrijfskritieke processen of sommige bedrijfsbeleidsregels kan het gebruik van offlineomgevingen worden vereist. | Apparaten worden verbonden met een zeer beperkend netwerk of zijn uitsluitend offlineapparaten. Dit is het meest geschikt voor uiterst veilige omgevingen of beperkingen voor internetverbinding in externe gebieden. |
 
-## <a name="scenario-a-deploy-to-cloud-connected-devices"></a>Scenario A: Implementeren op met de cloud verbonden apparaten
+## <a name="scenario-a-deploy-to-cloud-connected-devices"></a>Scenario A: Implementeren naar met de cloud verbonden apparaten
 
 Dit scenario is vergelijkbaar met het implementeren van beheerde mobiele apparaten binnen een bedrijf. HoloLens 2 wordt geïmplementeerd voor gebruik voornamelijk in omgevingen buiten een bedrijfsnetwerk. Bedrijfsresources worden niet gebruikt of kunnen worden beperkt via VPN.
 
@@ -45,35 +45,35 @@ Dit scenario is vergelijkbaar met het implementeren van beheerde mobiele apparat
 
 Overweeg dit implementatiemodel voor:
 
-* Proof-of-concept- en fieldservices implementeren
-* Implementatie van [Remote Assist](hololens2-options-remote-assist.md)
+* Proof-of-concept- en praktijkservices implementeren
+* Implementatie [van Remote Assist](hololens2-options-remote-assist.md)
 
 ### <a name="basic-common-configurations"></a>Algemene basisconfiguraties
 
 * Wi-Fi netwerken zijn doorgaans volledig open voor internet en cloudservices
 * Azure AD Join with Mobile Device Management (MDM) Auto Enrollment --MDM (Intune) Managed
 * Gebruikers melden zich aan met hun eigen bedrijfsaccount (Azure AD)
-  * Eén of meerdere gebruikers per ondersteund apparaat
-* Verschillende niveaus van vergrendelingsconfiguraties voor apparaten worden toegepast op basis van specifieke gebruiksgevallen, van Volledig geopend tot Kiosk voor één app.
+  * Ondersteunde één of meerdere gebruikers per apparaat
+* Verschillende niveaus van apparaatvergrendelingsconfiguraties worden toegepast op basis van specifieke gebruiksgevallen, van Volledig geopend tot Kiosk voor één app.
 * Een of meer toepassingen worden geïmplementeerd via MDM
 
 ### <a name="common-challenges"></a>Veelvoorkomende uitdagingen
 
 * Bepalen welke MDM-configuraties moeten worden toegepast op de HoloLens 2 op basis van scenariovereisten
 
-In de bijbehorende Cloud Connected-handleiding wordt beschrijft hoe u HoloLens 2 kunt registreren bij uw apparaatbeheer, licenties kunt toepassen wanneer dat nodig is en hoe u kunt valideren dat uw eindgebruikers de Remote Assist onmiddellijk kunnen gebruiken bij de installatie van het apparaat.
+De bijbehorende handleiding Cloud Connected bevat informatie over het inschrijven van HoloLens 2 bij uw apparaatbeheer, het toepassen van licenties wanneer dat nodig is en het valideren dat uw eindgebruikers direct Remote Assist kunnen gebruiken bij het instellen van het apparaat.
 
 > [!div class="nextstepaction"]
-> [Cloud Connected-implementatiehandleiding](hololens2-cloud-connected-overview.md)
+> [Implementatiehandleiding voor verbonden cloud](hololens2-cloud-connected-overview.md)
 
-Gebruik de handleiding Externe clients om apparaten te implementeren op een externe site voor extern gebruik op korte of lange termijn.
+Gebruik de handleiding Externe clients om apparaten te implementeren op een externe site voor extern gebruik op de korte of lange termijn.
 
 > [!div class="nextstepaction"]
 > [Implementatiehandleiding voor cloud verbonden (externe clients)](hololens2-deployment-guide.md)
 
 ## <a name="scenario-b-deploy-inside-your-organizations-network"></a>Scenario B: Implementeren binnen het netwerk van uw organisatie
 
-Dit scenario is identiek aan een klassieke implementatie voor de meeste Windows 10 pc's. HoloLens 2 is geïmplementeerd voor gebruik in het bedrijfsnetwerk met toegang tot interne bedrijfsresources. Internet- en cloudservices zijn mogelijk beperkt. 
+Dit scenario is identiek aan een klassieke implementatie voor de meeste Windows 10 pc's. HoloLens 2 is geïmplementeerd voor gebruik voornamelijk op het bedrijfsnetwerk met toegang tot interne bedrijfsresources. Internet- en cloudservices zijn mogelijk beperkt. 
 
 [![Diagram van scenario B1.](images/deployment-guides-revised-scenario-b-01-1.png)](images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
 
@@ -88,24 +88,24 @@ Overweeg dit implementatiemodel voor:
 
 ### <a name="basic-common-configurations"></a>Algemene basisconfiguraties
 
-* Wi-Fi netwerk is een intern bedrijfsnetwerk met toegang tot interne resources en beperkte toegang tot internet of cloudservices.
+* Wi-Fi is een intern bedrijfsnetwerk met toegang tot interne resources en beperkte toegang tot internet of cloudservices.
 * Azure AD Join met automatische MDM-inschrijving
 * MDM (Intune) Beheerd
 * Gebruikers melden zich aan met hun eigen bedrijfsaccount (Azure AD)
-  * Eén of meerdere gebruikers per ondersteund apparaat
-* Verschillende niveaus van vergrendelingsconfiguraties voor apparaten worden toegepast op basis van specifieke gebruiksgevallen, van Volledig geopend tot Kiosk voor één app.
+  * Ondersteunde één of meerdere gebruikers per apparaat
+* Verschillende niveaus van apparaatvergrendelingsconfiguraties worden toegepast op basis van specifieke gebruiksgevallen, van Volledig geopend tot Kiosk voor één app.
 * Een of meer toepassingen worden geïmplementeerd via MDM
 
 ### <a name="common-challenges"></a>Veelvoorkomende uitdagingen
 
-* HoloLens 2 biedt geen ondersteuning voor on-premises AD-join of System Center Configuration Manager (SCCM). Alleen Azure AD-join met MDM. Veel bedrijven implementeren momenteel nog steeds Windows 10-pc's in dit scenario als on-premises AD-apparaten die worden beheerd door SCCM en hebben mogelijk niet de infrastructuur geïmplementeerd/geconfigureerd voor het beheren van interne Windows 10-apparaten via cloudgebaseerde MDM-oplossingen.
+* HoloLens 2 biedt geen ondersteuning voor on-premises AD-join of System Center Configuration Manager (SCCM). Alleen Azure AD-join met MDM. Veel bedrijven implementeren momenteel nog steeds Windows 10-pc's in dit scenario als on-premises AD-apparaten die worden beheerd door SCCM en hebben mogelijk niet de infrastructuur geïmplementeerd/geconfigureerd voor het beheren van interne Windows 10-apparaten via MDM-oplossingen in de cloud.
 * Omdat HoloLens 2 een eerste cloudapparaat is, is het sterk afhankelijk van internet- en cloudservices voor gebruikersverificatie, updates van het besturingssysteem, MDM-beheer, en meer. Wanneer u verbinding maakt met een bedrijfsnetwerk, moeten proxy-/firewallregels waarschijnlijk worden aangepast om toegang mogelijk te maken voor HoloLens 2 en de toepassingen die erop worden uitgevoerd.
-* Voor Wi-Fi bedrijfsconnectiviteit zijn doorgaans certificaten vereist om het apparaat of de gebruiker bij het netwerk te verifiëren. De vereiste infrastructuur of instellingen voor het implementeren van certificaten Windows 10 apparaten via MDM kan lastig zijn om te configureren.
+* Voor Wi-Fi bedrijfsconnectiviteit zijn doorgaans certificaten vereist om het apparaat of de gebruiker bij het netwerk te verifiëren. De vereiste infrastructuur of instellingen voor het implementeren van certificaten op Windows 10 apparaten via MDM kan lastig te configureren zijn.
 
 De bijbehorende handleiding Verbonden met het bedrijf geeft informatie over het inschrijven van HoloLens 2 bij uw bestaande apparaatbeheer, het toepassen van licenties naar behoefte en het valideren dat uw eindgebruikers een Dynamics 365-handleiding kunnen gebruiken en aangepaste Line-Of-Business-apps kunnen gebruiken nadat het apparaat is ingesteld.
 
 > [!div class="nextstepaction"]
-> [Implementatiehandleiding voor Verbonden bedrijfsnetwerk](hololens2-corp-connected-overview.md)
+> [Implementatiehandleiding voor verbonden bedrijfsgegevens](hololens2-corp-connected-overview.md)
 
 ## <a name="scenario-c-deploy-in-secure-offline-environment"></a>Scenario C: Implementeren in een beveiligde offline omgeving
 
@@ -117,17 +117,17 @@ Dit is een typische implementatie voor zeer veilige of vertrouwelijke locaties. 
 
 Overweeg dit implementatiemodel voor:
 
-* Uiterst veilige omgevingen waarin gegevens in eigen ruimte moeten worden bewaard
+* Uiterst veilige omgevingen waarin gegevens in eigen huis moeten worden bewaard
 * Ervaringen waar het publiek de apparaten gaat gebruiken
 * Probleem met internetverbinding in het externe gebied
 
 ### <a name="basic-common-configurations"></a>Algemene basisconfiguraties
 
-* Wi-Fi connectiviteit is uitgeschakeld. Indien nodig kan Ethernet via USB worden ingeschakeld voor LAN-connectiviteit
+* Wi-Fi connectiviteit is uitgeschakeld. Ethernet via USB kan indien nodig worden ingeschakeld voor LAN-connectiviteit
 * Niet beheerd
-* Lokaal gebruikersaccount voor apparaat aanmelden
+* Lokaal gebruikersaccount voor het aanmelden bij het apparaat
   * HoloLens 2 ondersteunt slechts één lokaal account
-* Verschillende niveaus van vergrendelingsconfiguraties voor apparaten worden toegepast via Inrichtingspakketten op basis van specifieke gebruiksgevallen. Deze configuraties zijn doorgaans beperkt vanwege vereisten voor beveiligde omgevingen
+* Er worden verschillende niveaus van vergrendelingsconfiguraties voor apparaten toegepast via Inrichtingspakketten op basis van specifieke gebruiksgevallen. Deze configuraties zijn doorgaans beperkt vanwege de vereisten voor een veilige omgeving
 * Een of meer toepassingen worden geïmplementeerd via Inrichtingspakket
 
 ### <a name="common-challenges"></a>Veelvoorkomende uitdagingen
@@ -136,7 +136,7 @@ Overweeg dit implementatiemodel voor:
 * Cloudservices kunnen niet worden gebruikt, waardoor de mogelijkheden van HoloLens 2 beperkt.
 * Hogere administratieve overhead omdat deze apparaten handmatig moeten worden ingesteld, geconfigureerd en bijgewerkt.
 
-De bijbehorende offline beveiligde handleiding bevat instructies voor het toepassen van een voorbeeld van een inrichtingspakket dat een HoloLens 2 voor gebruik in beveiligde omgevingen.
+De bijbehorende offline beveiligde handleiding bevat instructies voor het toepassen van een voorbeeld van een inrichtingspakket dat een HoloLens 2 vergrendelt voor gebruik in beveiligde omgevingen.
 
 > [!div class="nextstepaction"]
 > [Implementatiehandleiding voor offline beveiligde omgeving](hololens-common-scenarios-offline-secure.md)

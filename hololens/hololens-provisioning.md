@@ -1,6 +1,6 @@
 ---
 title: Een HoloLens configureren met behulp van een inrichtingspakket (HoloLens)
-description: Windows inrichten maakt het eenvoudig voor IT-beheerders om apparaten van eindgebruikers te configureren zonder dat er een beeld wordt gemaakt.
+description: Windows inrichten kunnen IT-beheerders eenvoudig apparaten van eindgebruikers configureren zonder afbeeldingen te maken.
 ms.prod: hololens
 ms.sitesec: library
 author: dansimp
@@ -17,15 +17,15 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: 9474774b47858003cc11363a5f325f589b0732ab
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428708"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032905"
 ---
 # <a name="configure-hololens-by-using-a-provisioning-package"></a>Een HoloLens configureren met behulp van een inrichtingspakket
 
-[Windows inrichten maakt](/windows/configuration/provisioning-packages/provisioning-packages) het eenvoudig voor IT-beheerders om apparaten van eindgebruikers te configureren zonder dat er een beeld wordt gemaakt. Windows Configuration Designer is een hulpprogramma voor het configureren van installatieprogramma's en runtime-instellingen die vervolgens worden ingebouwd in inrichtingspakketten.
+[Windows inrichten kunnen](/windows/configuration/provisioning-packages/provisioning-packages) IT-beheerders eenvoudig apparaten van eindgebruikers configureren zonder afbeeldingen te maken. Windows Configuration Designer is een hulpprogramma voor het configureren van installatieprogramma's en runtime-instellingen die vervolgens worden ingebouwd in inrichtingspakketten.
 
 Enkele van de HoloLens die u in een inrichtingspakket kunt toepassen, zijn onder andere:
 
@@ -36,18 +36,18 @@ Enkele van de HoloLens die u in een inrichtingspakket kunt toepassen, zijn onder
 - Ontwikkelaarsmodus inschakelen
 - Configureer de kioskmodus door onze gedetailleerde [instructies te volgen.](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens)
 
-## <a name="provisioning-package-hololens-wizard"></a>Inrichtingspakket voor HoloLens wizard
+## <a name="provisioning-package-hololens-wizard"></a>Wizard Inrichtingspakket HoloLens inrichten
 
 Met HoloLens wizard kunt u de volgende instellingen configureren in een inrichtingspakket:
 
 - Upgraden naar de Enterprise-editie
 
     > [!NOTE]
-    > Dit mag alleen worden gebruikt voor apparaten HoloLens eerste generatie. Instellingen in een inrichtingspakket worden alleen toegepast als het inrichtingspakket een editie-upgradelicentie voor Windows Holographic for Business bevat of als het apparaat al is geüpgraded [naar Windows Holographic for Business](hololens1-upgrade-enterprise.md).
+    > Dit mag alleen worden gebruikt voor HoloLens apparaten van de eerste generatie. Instellingen in een inrichtingspakket worden alleen toegepast als het inrichtingspakket een editie-upgradelicentie voor Windows Holographic for Business bevat of als het apparaat al is geüpgraded naar [Windows Holographic for Business.](hololens1-upgrade-enterprise.md)
 
-- De HoloLens first experience (OOBE) configureren
-- Het netwerk Wi-Fi configureren
-- Het apparaat registreren bij Azure Active Directory of een lokaal account maken
+- De eerste HoloLens (OOBE) configureren
+- Het Wi-Fi configureren
+- Schrijf het apparaat in Azure Active Directory of maak een lokaal account
 - Certificaten toevoegen
 - Ontwikkelaarsmodus inschakelen
 - Configureer de kioskmodus door gedetailleerde [instructies te volgen.](hololens-kiosk.md?tabs=ppkgmak#steps-in-configuring-kiosk-mode-for-hololens)
@@ -63,14 +63,14 @@ Inrichtingspakketten kunnen beheerinstructies en beleidsregels, aangepaste netwe
 ## <a name="steps-for-creating-provisioning-packages"></a>Stappen voor het maken van inrichtingspakketten
 
 1. **Optie 1:** [Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22). Dit omvat HoloLens 2 mogelijkheden.
-2. **Optie 2:** [uit de Windows Assessment and Deployment Kit (ADK) voor Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). Als u Windows Configuration Designer installeert vanuit de Windows ADK, selecteert u **Configuration Designer** in het dialoogvenster Selecteer de functies die u **wilt** installeren. Deze optie omvat geen HoloLens 2 mogelijkheden.
+2. **Optie 2:** [uit Windows Assessment and Deployment Kit (ADK) voor Windows 10.](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) Als u Windows Configuration Designer installeert vanuit de Windows ADK, selecteert u **Configuration Designer** in het dialoogvenster Selecteer de functies die u **wilt** installeren. Deze optie omvat geen HoloLens 2 mogelijkheden.
 
 > [!NOTE]
-> Als u weet dat u een offline pc gebruikt die toegang nodig heeft tot Windows Configuration Designer, volgt u de instructies [offline app install(hololens-recovery.md#download-arc-without-using-the-app-store) voor Advanced Recovery Companion. Maak Windows Configuration Designer uw selectie. 
+> Als u weet dat u een offline pc gebruikt die toegang nodig heeft tot Windows Configuration Designer, volgt u de instructies [offline app install(hololens-recovery.md#downloading-arc-without-using-the-app-store) voor Advanced Recovery Companion. Maak Windows Configuration Designer uw selectie. 
 
 ### <a name="2-create-the-provisioning-package"></a>2. Het inrichtingspakket maken
 
-Gebruik het hulpprogramma Windows Configuration Designer om een inrichtingspakket te maken.
+Gebruik het Windows Configuration Designer om een inrichtingspakket te maken.
 
 1. Open Windows Configuration Designer (standaard %windir%\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe).
 
@@ -80,7 +80,7 @@ Gebruik het hulpprogramma Windows Configuration Designer om een inrichtingspakke
 
 3. Noem uw project en selecteer **Voltooien.**
 
-4. Lees de instructies op de **pagina Aan de slag** en selecteer **Volgende.** De pagina's voor het inrichten van bureaubladen helpen u bij het doorlopen van de volgende stappen.
+4. Lees de instructies op de pagina **Aan de slag** en selecteer **Volgende.** De pagina's voor het inrichten van het bureaublad helpen u bij de volgende stappen.
   
 > [!IMPORTANT]
 > Wanneer u een inrichtingspakket bouwt, kunt u gevoelige informatie opnemen in de projectbestanden en in het inrichtingspakketbestand (.ppkg). Hoewel u de mogelijkheid hebt om het PPKG-bestand te versleutelen, worden projectbestanden niet versleuteld. Sla de projectbestanden op een veilige locatie op en verwijder de projectbestanden wanneer ze niet meer nodig zijn.
@@ -88,20 +88,20 @@ Gebruik het hulpprogramma Windows Configuration Designer om een inrichtingspakke
 ### <a name="configure-settings"></a>Instellingen configureren
 
 <table>
-<tr><td style="width:45%" valign="top"><a id="one"></a><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br>Blader naar en selecteer het licentiebestand van de onderneming om de editie HoloLens upgraden.</br></br>U kunt ook Ja of <strong>Nee in-/uitschakelen</strong> <strong>om</strong> delen van de eerste ervaring te verbergen.</br></br>Als u het apparaat wilt instellen zonder dat u verbinding hoeft te maken met een Wi-Fi netwerk, schakelt u <strong>Overslaan Wi-Fi in op</strong> <strong>Aan.</strong></br></br>Selecteer een regio en tijdzone waarin het apparaat wordt gebruikt. </td><td><img src="images/set-up-device-details.png" alt="Select enterprise licence file and configure OOBE"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="two"></a><img src="images/two.png" alt="step two"/>  <img src="images/set-up-network.png" alt="set up network"/></br></br>In deze sectie kunt u de details van het Wi-Fi draadloze netwerk dat het apparaat automatisch verbinding moet maken. Selecteer hiervoor <strong>Aan,</strong>voer de SSID, het netwerktype (<strong>Open</strong> of <strong>WPA2-Personal)</strong>in en (als <strong>WPA2-Personal)</strong>het wachtwoord voor het draadloze netwerk.</td><td><img src="images/set-up-network-details-desktop.png" alt="Enter network SSID and type"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="three"></a><img src="images/three.png" alt="step three"/>  <img src="images/account-management.png" alt="account management"/></br></br>U kunt het apparaat registreren bij Azure Active Directory of een lokaal account maken op het apparaat</br></br>Voordat u een configuratiewizard Windows Configureren om bulksgewijs Azure AD-inschrijving te configureren, stelt u <a href="/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](/azure/active-directory/active-directory-azureadjoin-setup)">Azure AD Join in uw organisatie in.</a> Het <strong>maximum aantal apparaten per gebruikersinstelling</strong> in uw Azure AD-tenant bepaalt hoe vaak het bulk-token dat u in de wizard krijgt, kan worden gebruikt. Als u het apparaat wilt registreren bij Azure AD, selecteert u die optie en voert u een gebruiksvriendelijke naam in voor het bulk-token dat u krijgt met behulp van de wizard. Stel een vervaldatum in voor het token (maximum is 30 dagen vanaf de datum waarop u het token krijgt). Selecteer <strong>Bulk-token krijgen.</strong> Voer in <strong>het&#39;</strong> u aangemeld krijgen een account in dat machtigingen heeft om een apparaat aan Azure AD te toevoegen en vervolgens het wachtwoord. Selecteer <strong>Accepteren om</strong> de Windows Configuration Designer de benodigde machtigingen te geven. </br></br>Als u een lokaal account wilt maken, selecteert u die optie en voert u een gebruikersnaam en wachtwoord in. </br></br><strong>Belangrijk:</strong> <br />(Alleen Windows 10 versie 1607) Als u een lokaal account in het inrichtingspakket maakt, moet u het wachtwoord elke 42 <strong>dagen</strong> wijzigen met behulp Instellingen app. Als het wachtwoord gedurende die periode niet wordt gewijzigd, is het account mogelijk vergrendeld en kan het niet worden aanmelden.  </td><td><img src="images/account-management-details.png" alt="join  Azure AD or create a local  account"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="one"></a><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br>Blader naar en selecteer het licentiebestand van de onderneming om de editie van HoloLens upgraden.</br></br>U kunt ook Ja of <strong>Nee in-</strong> of <strong>uitschakelen om</strong> delen van de eerste ervaring te verbergen.</br></br>Als u het apparaat wilt instellen zonder dat u verbinding hoeft te maken met een Wi-Fi netwerk, zet u Overslaan <strong>Wi-Fi instellen op</strong> <strong>Aan.</strong></br></br>Selecteer een regio en tijdzone waarin het apparaat wordt gebruikt. </td><td><img src="images/set-up-device-details.png" alt="Select enterprise licence file and configure OOBE"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="two"></a><img src="images/two.png" alt="step two"/>  <img src="images/set-up-network.png" alt="set up network"/></br></br>In deze sectie kunt u de details van het Wi-Fi draadloze netwerk dat het apparaat automatisch verbinding moet maken. Selecteer hiervoor Aan, voer de SSID, het netwerktype (<strong>Open</strong> of <strong>WPA2-Personal)</strong>in en (als <strong>WPA2-Personal</strong>) het wachtwoord voor het draadloze netwerk. <strong></strong></td><td><img src="images/set-up-network-details-desktop.png" alt="Enter network SSID and type"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="three"></a><img src="images/three.png" alt="step three"/>  <img src="images/account-management.png" alt="account management"/></br></br>U kunt het apparaat registreren bij Azure Active Directory of een lokaal account maken op het apparaat</br></br>Voordat u een wizard Windows Configuration Designer gebruikt om bulksgewijs Azure AD-inschrijving te configureren, stelt u <a href="/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](/azure/active-directory/active-directory-azureadjoin-setup)">Azure AD Join in uw organisatie in.</a> Het <strong>maximum aantal apparaten per gebruiker</strong> in uw Azure AD-tenant bepaalt hoe vaak het bulk-token dat u in de wizard krijgt, kan worden gebruikt. Als u het apparaat wilt registreren bij Azure AD, selecteert u die optie en voert u een gebruiksvriendelijke naam in voor het bulk-token dat u met de wizard krijgt. Stel een vervaldatum in voor het token (maximum is 30 dagen vanaf de datum waarop u het token krijgt). Selecteer <strong>Get bulk token</strong>. Voer in <strong>het venster&#39;</strong> u aangemeld krijgen een account in dat machtigingen heeft om een apparaat aan Azure AD te toevoegen en voer vervolgens het wachtwoord in. Selecteer <strong>Accepteren om</strong> Windows Configuration Designer de benodigde machtigingen te geven. </br></br>Als u een lokaal account wilt maken, selecteert u die optie en voert u een gebruikersnaam en wachtwoord in. </br></br><strong>Belangrijk:</strong> <br />(Alleen Windows 10 versie 1607) Als u een lokaal account in het inrichtingspakket maakt, moet u het wachtwoord elke 42 dagen wijzigen met behulp van <strong>de Instellingen app.</strong> Als het wachtwoord in die periode niet is gewijzigd, is het account mogelijk vergrendeld en kan het niet worden aanmelden.  </td><td><img src="images/account-management-details.png" alt="join  Azure AD or create a local  account"/></td></tr>
 <tr><td style="width:45%" valign="top"><a id="four"></a><img src="images/four.png" alt="step four"/> <img src="images/add-certificates.png" alt="add certificates"/></br></br>Als u het apparaat wilt inrichten met een certificaat, klikt <strong>u op Een certificaat toevoegen.</strong> Voer een naam in voor het certificaat, blader naar en selecteer het certificaat dat moet worden gebruikt.</td><td><img src="images/add-certificates-details.png" alt="add a certificate"/></td></tr> 
-<tr><td style="width:45%" valign="top"><a id="five"></a><img src="images/five.png" alt="step five"/> <img src="images/developer-setup.png" alt="Developer Setup"/></br></br>Schakel <strong>Ja</strong> of <strong>Nee in om</strong> de ontwikkelaarsmodus in te schakelen op de HoloLens. <a href="/windows/uwp/get-started/enable-your-device-for-development#developer-mode" data-raw-source="[Learn more about Developer Mode.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)">Meer informatie over de ontwikkelaarsmodus.</a></td><td><img src="images/developer-setup-details.png" alt="Enable Developer Mode"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="six"></a><img src="images/six.png" alt="step six"/> <img src="images/finish.png" alt="finished"/></br></br>Stel geen wachtwoord in om uw inrichtingspakket te beveiligen. Als het inrichtingspakket wordt beveiligd met een wachtwoord, mislukt het inrichten van HoloLens apparaat.</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="five"></a><img src="images/five.png" alt="step five"/> <img src="images/developer-setup.png" alt="Developer Setup"/></br></br>Schakel <strong>Ja</strong> of <strong>Nee in om</strong> de ontwikkelaarsmodus in te schakelen op HoloLens. <a href="/windows/uwp/get-started/enable-your-device-for-development#developer-mode" data-raw-source="[Learn more about Developer Mode.](/windows/uwp/get-started/enable-your-device-for-development#developer-mode)">Meer informatie over de ontwikkelaarsmodus.</a></td><td><img src="images/developer-setup-details.png" alt="Enable Developer Mode"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="six"></a><img src="images/six.png" alt="step six"/> <img src="images/finish.png" alt="finished"/></br></br>Stel geen wachtwoord in om uw inrichtingspakket te beveiligen. Als het inrichtingspakket wordt beveiligd met een wachtwoord, mislukt het inrichten HoloLens apparaat.</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
 </table>
 
-Selecteer **Maken** als u klaar bent. Dit duurt slechts enkele seconden. Wanneer het pakket is gebouwd, wordt de locatie waar het pakket is opgeslagen, weergegeven als een hyperlink onder aan de pagina.
+Selecteer **Maken** als u klaar bent. Dit duurt slechts enkele seconden. Wanneer het pakket is gebouwd, wordt de locatie waar het pakket is opgeslagen weergegeven als een hyperlink onder aan de pagina.
 
 ### <a name="3-create-a-provisioning-package-for-hololens-by-using-advanced-provisioning"></a>3. Een inrichtingspakket voor HoloLens maken met behulp van geavanceerde inrichting
 
 > [!NOTE]
-> Een inrichtingspakket dat u **maakt** in Geavanceerde inrichting hoeft geen editie-upgradelicentie op te nemen om Windows Holographic for Business succesvol toe te passen op een HoloLens (1e generatie). [Zie meer over Windows Holographic for Business voor HoloLens (1e generatie)](hololens1-upgrade-enterprise.md).
+> Een inrichtingspakket dat u **maakt** in Geavanceerde inrichting hoeft geen editie-upgradelicentie op te nemen om Windows Holographic for Business succesvol toe te passen op een HoloLens (eerste generatie). [Zie meer over Windows Holographic for Business voor HoloLens (1e generatie)](hololens1-upgrade-enterprise.md).
 
 1. Selecteer op Windows startpagina van Configuration Designer de optie **Geavanceerde inrichting.**
 2. Geef in **het venster Projectdetails** invoeren een naam op voor uw project en de locatie voor uw project. Voer desgewenst een korte beschrijving in om uw project te beschrijven.
@@ -112,10 +112,10 @@ Selecteer **Maken** als u klaar bent. Dit duurt slechts enkele seconden. Wanneer
 
 5. Selecteer **Finish**.
 
-6. Vouw **Runtime-instellingen uit** en pas het pakket aan met behulp van een van de instellingen [die later in dit artikel worden beschreven.](#what-you-can-configure)
+6. Vouw **Runtime-instellingen uit** en pas het pakket aan met behulp van een van de instellingen die [verder in dit artikel worden beschreven.](#what-you-can-configure)
 
     > [!IMPORTANT]
-    > (Alleen Windows 10 versie 1607) Als u een lokaal account in het inrichtingspakket maakt, moet u het wachtwoord elke 42 **dagen** wijzigen met behulp Instellingen app. Als het wachtwoord gedurende die periode niet wordt gewijzigd, is het account mogelijk vergrendeld en kan het niet worden aanmelden. Als het gebruikersaccount is vergrendeld, moet u [een volledig apparaatherstel uitvoeren.](https://developer.microsoft.com/windows/mixed-reality/reset_or_recover_your_hololens#perform_a_full_device_recovery)
+    > (Alleen Windows 10 versie 1607) Als u een lokaal account in het inrichtingspakket maakt, moet u het wachtwoord elke 42 dagen wijzigen met behulp van **de Instellingen app.** Als het wachtwoord in die periode niet is gewijzigd, is het account mogelijk vergrendeld en kan het niet worden aanmelden. Als het gebruikersaccount is vergrendeld, moet u [een volledig apparaatherstel uitvoeren.](https://developer.microsoft.com/windows/mixed-reality/reset_or_recover_your_hololens#perform_a_full_device_recovery)
 
 7. Selecteer **Bestand**  >  **Opslaan.**
 
@@ -126,7 +126,7 @@ Selecteer **Maken** als u klaar bent. Dit duurt slechts enkele seconden. Wanneer
 
 9. Selecteer   >  **Inrichtingspakket exporteren.**
 
-10. Wijzig **Eigenaar in** **IT-beheerder**. Hiermee wordt de prioriteit van dit inrichtingspakket hoger dan de inrichtingspakketten die vanuit andere bronnen op dit apparaat worden toegepast. Selecteer **Next**.
+10. Wijzig **Eigenaar** in **IT-beheerder.** Hiermee stelt u de prioriteit van dit inrichtingspakket hoger in dan de inrichtingspakketten die vanuit andere bronnen op dit apparaat worden toegepast. Selecteer **Next**.
 
 11. Stel een waarde in voor **Pakketversie**.
 
@@ -138,7 +138,7 @@ Selecteer **Maken** als u klaar bent. Dit duurt slechts enkele seconden. Wanneer
     > [!WARNING]
     > Als u het inrichtingspakket versleutelt, mislukt het inrichten HoloLens apparaat.  
 
-13. Selecteer **Volgende** om de uitvoerlocatie op te geven waar u het inrichtingspakket naartoe wilt laten gaan zodra het is gebouwd. Standaard gebruikt Windows Configuration Designer de projectmap als uitvoerlocatie.
+13. Selecteer **Volgende** om de uitvoerlocatie op te geven waar u het inrichtingspakket naartoe wilt laten gaan zodra het is gebouwd. Configuration Designer gebruikt Windows standaard de projectmap als uitvoerlocatie.
 
     U kunt eventueel Bladeren selecteren **om de** standaarduitvoerlocatie te wijzigen.
 

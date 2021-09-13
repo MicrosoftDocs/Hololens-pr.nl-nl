@@ -14,16 +14,16 @@ manager: bradke
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 6224cd5e07794d9fca3c0a406e787d1a3fd88b43
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428018"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126036196"
 ---
 # <a name="license-requirements"></a>Licentievereisten
 
 ## <a name="overview"></a>Overzicht
-Deze pagina biedt een overzicht op hoog niveau van de licenties en accounts die nodig zijn voor het implementeren van zowel beheerde als HoloLens 2 apparaten in uw organisatie. Het bevat ook informatie over licentieverlening voor Dynamics 365 [Remote Assist](#dynamics-365-remote-assist) en [Guides.](#dynamics-365-guides)
+Deze pagina biedt een overzicht op hoog niveau van de licenties en accounts die nodig zijn voor het implementeren van zowel beheerde als HoloLens 2-apparaten in uw organisatie. Het bevat ook informatie over licentieverlening voor Dynamics 365 [Remote Assist](#dynamics-365-remote-assist) en [Guides.](#dynamics-365-guides)
 
 ## <a name="hololens-2-license-and-account-requirements"></a>HoloLens 2 licentie- en accountvereisten
 
@@ -59,7 +59,7 @@ Deze pagina biedt een overzicht op hoog niveau van de licenties en accounts die 
 #### <a name="admin"></a>Beheerder
 
 - Azure AD-account (vereist voor het kopen van het abonnement en het toewijzen van licenties)
-- [Remote Assist (of](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) Remote Assist [Proefversie](/dynamics365/mixed-reality/remote-assist/try-remote-assist))
+- [Remote Assist (of](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) [Remote Assist-proefversie](/dynamics365/mixed-reality/remote-assist/try-remote-assist))
     
 #### <a name="dynamics-365-remote-assist-user"></a>Dynamics 365 Remote Assist gebruiker
 
@@ -76,7 +76,7 @@ Deze pagina biedt een overzicht op hoog niveau van de licenties en accounts die 
 
 - Azure AD-account
 
-- Microsoft Teams [of Teams Freemium](https://products.office.com/microsoft-teams/free)
+- Microsoft Teams of [Teams Freemium](https://products.office.com/microsoft-teams/free)
 
 - Netwerkverbinding
 

@@ -14,11 +14,11 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 00e99d3f67e9e4371da12612b9b01c3ce58e71bd
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427544"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126035895"
 ---
 # <a name="using-3d-viewer-beta-on-hololens-1st-gen"></a>3D-viewer Beta gebruiken in HoloLens (1e generatie)
 
@@ -119,7 +119,7 @@ Als het 3D-model niet goed wordt uitgevoerd vanwege de complexiteit van het mode
 
 - Het aantal veelhoeken verminderen
 - Het aantal basisen in een animatie verminderen
-- Zelf-occlusie voorkomen
+- Zelf-occlusie vermijden
 
 Dubbelzijdige rendering wordt ondersteund in 3D-viewer Beta, hoewel deze standaard is uitgeschakeld om prestatieredenen. Dit kan worden ingeschakeld via de **knop Dubbelzijd** op de **pagina Details.** Voor de beste prestaties hoeft u geen dubbelzijdige rendering in uw inhoud te gebruiken.
 
@@ -131,7 +131,7 @@ Valideer uw model door het te openen in 3D-viewer Beta op HoloLens. Selecteer de
 
 Standaard geeft 3D-viewer Beta 3D-modellen weer met een goede grootte en positie ten opzichte van de gebruiker. Als het echter belangrijk is om een 3D-model met echte metingen weer te geven (bijvoorbeeld bij het evalueren van modellen in een ruimte), kan de maker van de inhoud een vlag instellen in de metagegevens van het bestand om te voorkomen dat de toepassing en de gebruiker het formaat van dat model kunnen veranderen.
 
-Als u het schalen van het model wilt voorkomen, voegt u een aangepast Booleaanse kenmerk toe aan een object in de scène met de naam Microsoft_DisableScale en stelt u dit in op true. 3D-viewer Beta respecteert vervolgens de informatie over FbxSystemUnit in het FBX-bestand. Schalen in 3D-viewer Beta is 1 meter per FBX-eenheid.
+Als u het schalen van het model wilt voorkomen, voegt u een aangepast Booleaanse kenmerk toe aan een object in de scène met de Microsoft_DisableScale en stelt u dit in op true. 3D-viewer Beta respecteert vervolgens de FbxSystemUnit-informatie in het FBX-bestand. Schalen in 3D-viewer Beta is 1 meter per FBX-eenheid.
 
 ## <a name="viewing-fbx-files-on-hololens"></a>FBX-bestanden weergeven op HoloLens
 
@@ -143,7 +143,7 @@ FBX-bestanden kunnen rechtstreeks vanaf een website worden geopend met behulp Mi
 1. Selecteer het bestand om het te downloaden.
 1. Wanneer het downloaden is voltooid, selecteert u de knop **Openen** in Microsoft Edge om het bestand te openen in 3D-viewer Beta.
 
-Het gedownloade bestand kan later worden geopend en opnieuw worden geopend met behulp van Downloads in Microsoft Edge. Als u een 3D-model wilt opslaan en de toegang wilt waarborgen, downloadt u het bestand op uw pc en OneDrive op. Het bestand kan vervolgens worden geopend vanuit de OneDrive app op HoloLens.
+Het gedownloade bestand kan later worden geopend en opnieuw worden geopend met behulp van Downloads in Microsoft Edge. Als u een 3D-model wilt opslaan en ervoor wilt zorgen dat het nog steeds toegankelijk is, downloadt u het bestand op uw pc en OneDrive op. Het bestand kan vervolgens worden geopend vanuit de OneDrive app op HoloLens.
 
 > [!NOTE]
 > Sommige websites met downloadbare FBX-modellen bieden deze in gecomprimeerde ZIP-indeling. 3D-viewer Beta kan geen ZIP-bestanden rechtstreeks openen. Gebruik in plaats daarvan uw pc om het FBX-bestand uit te extraheren en op te slaan in OneDrive account. Het bestand kan vervolgens worden geopend vanuit de OneDrive app op HoloLens.

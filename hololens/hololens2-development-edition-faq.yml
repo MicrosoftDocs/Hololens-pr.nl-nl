@@ -16,11 +16,11 @@ metadata:
   appliesto:
   - HoloLens 2
   ms.openlocfilehash: 85631d756285f4111016e39dc946733bb1e12d3c
-  ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+  ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
   ms.translationtype: MT
   ms.contentlocale: nl-NL
-  ms.lasthandoff: 09/10/2021
-  ms.locfileid: "124427151"
+  ms.lasthandoff: 09/13/2021
+  ms.locfileid: "126032678"
 title: HoloLens 2 Veelgestelde vragen over Development Edition
 summary: ''
 sections:
@@ -29,13 +29,13 @@ sections:
   - question: >
       Wat krijg ik met de HoloLens 2 Development Edition?
     answer: >
-      De HoloLens 2 Development Edition bevat een HoloLens 2, $ 500 aan Azure-tegoed, een Unity Pro-proefversie van drie maanden en een proefversie van de Pixyz-invoegversie van drie maanden.
+      De HoloLens 2 Development Edition bevat een HoloLens 2, $ 500 aan Azure-tegoed, een unity-Pro-proefversie van drie maanden en een proefversie van 3 maanden voor pixyz-invoegabonnementen.
   - question: >
       Wat is het verschil tussen HoloLens 2 en HoloLens 2 Development Edition?
     answer: >
-      U kunt de HoloLens 2 Development Edition alleen gebruiken om interne bedrijfstoepassingen te bouwen en te testen voor gebruik met de HoloLens 2 (commerciële editie) in een productieomgeving. Als onderdeel van de aanschaf van de Development Edition kan Microsoft u naar eigen goed inzicht bepaalde rechten bieden die tijdens het betalingsproces zijn geïdentificeerd. Deze rechten omvatten het recht om bepaalde kortingstegoeden of proeftoegang tot bepaalde services of hulpprogramma's van Microsoft of derden voor een beperkte periode in te wisselen. [Meer informatie](hololens2-options-dev-edition.md)
+      U kunt de HoloLens 2 Development Edition alleen gebruiken om interne bedrijfstoepassingen te bouwen en te testen voor gebruik met de HoloLens 2 (commerciële editie) in een productie-instelling. Als onderdeel van de aanschaf van de Development Edition kan Microsoft u naar eigen goed inzicht bepaalde rechten verlenen die tijdens het uitcheckproces zijn geïdentificeerd. Deze rechten omvatten het recht om bepaalde kortingstegoeden of proeftoegang tot bepaalde Services of hulpprogramma's van Microsoft of derden in te wisselen voor een beperkte periode. [Meer informatie](hololens2-options-dev-edition.md)
   - question: >
-      Kan een editie van HoloLens 2 worden gebruikt om te ontwikkelen?
+      Kan elke editie van HoloLens 2 worden gebruikt om te ontwikkelen?
     answer: >
       Ja. Elke editie van HoloLens 2 kan worden gebruikt om apps te ontwikkelen.
   - question: >
@@ -43,19 +43,19 @@ sections:
     answer: >
       Uw kortingstegoed of proefversie wordt opgenomen in uw HoloLens 2 Development Edition.
   - question: >
-      Kan ik mijn HoloLens 2 (alleen apparaat) upgraden naar de HoloLens 2 Development Edition om het proeftegoed te krijgen?
+      Kan ik mijn apparaat 'upgraden' HoloLens 2 (alleen apparaat) naar de HoloLens 2 Development Edition om het proeftegoed te krijgen?
     answer: >
-      Nee, er worden geen abonnementen voor apparaatoverdracht aangeboden. Er is geen mogelijkheid om van een editie over te dragen naar een andere editie.
+      Nee, we bieden geen abonnementen voor apparaatoverdracht. Er is geen mogelijkheid om van een editie over te dragen naar een andere editie.
   - question: >
       Wat is Unity Pro?
     answer: >
       Unity Pro is een realtime 3D-platform voor kleine/middelgrote studio's/bedrijven. Het is ontworpen voor teams met een combinatie van technische en niet-technische vaardigheden. [Meer informatie](https://store.unity.com/products/unity-pro)
   - question: >
-      Wat is de Pixyz-invoeg-app?
+      Wat is pixyz-invoeghoek?
     answer: >
       De Pixyz-invoegtoepassingen lezen en converteren bijna elke indeling, optimaliseert en plaatst deze in Unity en faseert deze om gebruiksklaar assets te bieden voor realtime-toepassingen. [Meer informatie](https://unity.com/products/pixyz)
   - question: >
-      Is er een HoloLens 2 Development Edition beschikbaar?
+      Is de HoloLens 2 Development Edition beschikbaar?
     answer: "Ja, [voor HoloLens 2 Development Edition](https://ms.liftforward.com/hololens?product=hololens-development-edition) is nu alleen beschikbaar in de Verenigde Staten. \n"
   - question: >
       Wie ik contact opnemen met vragen over mijn HoloLens 2 Development Edition-rechten?
@@ -65,23 +65,23 @@ sections:
     answer: "Dit apparaat is voor ontwikkelaars die mixed reality bouwen. We beperken één aankoop per klanttransactie. Als uw bedrijf meerdere Development Edition-apparaten wil kopen, zijn er afzonderlijke transacties nodig om namens het bedrijf HoloLens 2 Development Edition-apparaten te kopen. \n"
   - question: "Kan ik mijn HoloLens 2 Development Edition-apparaat aan mijn klanten laten zien? \n"
     answer: >
-      Ja, dit apparaat is bedoeld om te worden gebruikt voor het maken van prototypen en het testen mixed reality oplossingen.
+      Ja, dit apparaat is bedoeld om te worden gebruikt voor het maken van prototypen en het testen van mixed reality oplossingen.
   - question: "Waar kan ik de HoloLens 2 Development Edition kopen? \n"
     answer: "HoloLens 2 Development Edition wordt uitsluitend verkocht aan Microsoft Store.  \n"
   - question: "Kan ik mijn HoloLens 2 Development Edition retourneren?  \n"
     answer: >
-      Alle verkopen zijn definitief en er zijn geen restituties beschikbaar op HoloLens 2 Development Edition.
+      Alle verkopen zijn definitief en er zijn geen restituties beschikbaar voor HoloLens 2 Development Edition.
   - question: >
-      Zijn er verschillende hardwarevereisten voor Developer Edition die verschillen van de HoloLens 2?
-    answer: "Nee, dit apparaat is hetzelfde vanuit het perspectief van hardwarevereisten. De Development Edition mag worden geïmplementeerd bij het ontwikkelen en/of testen van toepassingen in een commerciële omgeving. \n"
+      Gelden er voor Developer Edition verschillende hardwarevereisten die afwijken van de HoloLens 2?
+    answer: "Nee, dit apparaat is hetzelfde vanuit het oogpunt van hardwarevereisten. De Development Edition mag worden geïmplementeerd bij het ontwikkelen en/of testen van toepassingen in een commerciële omgeving. \n"
   - question: >
       Hoe kan ik Mixed Reality Toolkit Unity gebruiken voor het ontwikkelen op mijn HoloLens 2 Development Edition?
     answer: >
       MRTK-Unity is een door Microsoft aangestuurd project dat een set van componenten en functies biedt, die gebruikt worden om cross-platform MR-appontwikkeling in Unity te versnellen. [Meer informatie](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
   - question: >
-      Hoe kan ik Mixed Reality Toolkit – Unreal UXT gebruiken voor het ontwikkelen op mijn HoloLens 2 Development Edition?
+      Hoe kan ik Mixed Reality Toolkit - Unreal UXT gebruiken voor het ontwikkelen op mijn HoloLens 2 Development Edition?
     answer: >
-      MRTK-Unreal is het eerste UX Tools-onderdeel dat wordt uitgebracht en momenteel alleen wordt ondersteund op HoloLens 2. De onderdeelinvoegvoegcode bevat code, blauwdrukken en voorbeeldactiva van veelgebruikte UX-functies voor invoersimulatie, actors voor handinteractie, onderdelen van de knop die op de knop kunnen drukken, manipulatoronderdelen en gedragsonderdelen volgen. [Meer informatie](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/WelcomeToUXTools.html)
+      MRTK-Unreal is het eerste UX Tools-onderdeel dat wordt uitgebracht en momenteel alleen wordt ondersteund op HoloLens 2. De onderdeelinvoegcode bevat code, blauwdrukken en voorbeeldactiva van algemene UX-functies voor invoersimulatie, actors voor handinteractie, componenten van knoppen die kunnen worden ingedrukt, manipulatoronderdelen en gedragsonderdelen volgen. [Meer informatie](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/WelcomeToUXTools.html)
   - question: >
       Zijn versies van het besturingssysteem HoloLens 2 Development Edition hetzelfde als HoloLens 2?
     answer: >
@@ -89,11 +89,11 @@ sections:
   - question: >
       Kan ik uitgebrachte toepassingen (sideloaden of opslaan) uitvoeren op mijn HoloLens 2 Development Edition-apparaat?
     answer: >
-      Als u zich aan de voorwaarden van HoloLens 2 Development Edition houden, ja, kunt u elke uitgebrachte toepassing uitvoeren in de Developer Edition. Het gebruik van sideloaded of opgeslagen toepassingen voor deze SKU wordt niet beperkt.
+      Als u zich aan de voorwaarden van HoloLens 2 Development Edition houden, ja, kunt u elke uitgebrachte toepassing uitvoeren in de Developer Edition. Het gebruik van sideloaden of opgeslagen toepassingen voor deze SKU wordt niet beperkt.
   - question: >
       Waar vind ik meer informatie over de HoloLens 2 Development Edition?
     answer: >
-      Ga naar HoloLens 2 Development Edition-documentatiepagina. [Meer informatie](hololens2-options.md?tabs=device)
+      Ga naar de HoloLens 2 Development Edition-documentatiepagina. [Meer informatie](hololens2-options.md?tabs=device)
   - question: >
       Waar vind ik meer informatie over het ontwikkelen Mixed Reality oplossingen?
     answer: >
@@ -101,7 +101,7 @@ sections:
   - question: >
       Waar vind ik meer informatie over het ontwerpen Mixed Reality oplossingen?
     answer: >
-      Ga naar de documentatie Inleiding tot Mixed Reality-ontwerp. [Meer informatie](/windows/mixed-reality/design/design)
+      Ga naar de inleiding tot Mixed Reality ontwerpdocumentatie. [Meer informatie](/windows/mixed-reality/design/design)
   - question: >
       Waar kan ik ondersteuning krijgen voor HoloLens Developer Edition?
     answer: >
@@ -111,10 +111,10 @@ sections:
   - question: >
       Wat is inbegrepen bij mijn Unity-proefversie?
     answer: >
-      Met een Unity-proefversie Pro van drie kalendermaanden hebt u toegang tot de volledige oplossing&#39;Unity voor professionals om te maken, te gebruiken en geld te verdienen. De gerelateerde Unity Pro-proefversie heeft geen deadline om in te wisselen.
+      Een unity-proefversie van drie kalendermaanden Pro toegang tot unity&#39;een volledige oplossing voor professionals om te maken, te gebruiken en geld te verdienen. De gerelateerde Unity Pro-proefversie heeft geen deadline om in te wisselen.
 
 
-      Deze aanbieding is voor nieuwe gebruikers en is niet van toepassing op bestaande Unity Pro-abonnementen. Unity Pro-proefversie kan onderhevig zijn aan aanvullende voorwaarden die beschikbaar worden gesteld bij inwisseling. Bekijk de toepasselijke [voorwaarden &amp; en](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) [het privacybeleid.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)
+      Deze aanbieding is voor nieuwe gebruikers en is niet van toepassing op bestaande Unity Pro-abonnementen. Voor Pro unity-proefversie gelden mogelijk aanvullende voorwaarden die beschikbaar worden gesteld tijdens de inwisseling. Bekijk de toepasselijke [voorwaarden &amp; en](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) het [privacybeleid.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)
   - question: >
       Hoe kan ik mijn Unity-Pro inwisselen?
     answer: >
@@ -136,18 +136,18 @@ sections:
     answer: >
       Ja, u kunt toepassingen bouwen met alle compatibele versies van Unity.
   - question: >
-      Hoe kan ik contact opnemen met unity-ondersteuning?
+      Hoe kan ik contact op met unity-ondersteuning?
     answer: >
-      Als u hulp nodig hebt bij vragen over uw Unity-id, -account, -organisatie(s) en -abonnementen, gaat u naar support.unity3d.com.
+      Als u hulp wilt krijgen bij vragen over uw Unity-id, -account, -organisatie(s) en -abonnementen, gaat u naar support.unity3d.com.
 - name: Pixyz
   questions:
   - question: >
       Wat is inbegrepen bij de proefversie van mijn Pixyz-invoegversie?
     answer: >
-      Een proefversie van de Pixyz-invoegversie van drie kalendermaanden die toegang biedt tot Pixyz om kant-en-klaar assets te maken met perfecte tessellated meshes, beperkt aantal veelhoeken en automatische UV. De gerelateerde proefversie van de Pixyz-invoegversie heeft geen deadline om in te wisselen.
+      Een proefversie van de Pixyz-invoegversie van drie kalendermaanden waarmee toegang tot Pixyz kan worden gemaakt om kant-en-klaar assets te maken met perfecte meshes die worden verkocht, een beperkt aantal veelhoeken en automatische UV. De gerelateerde proefversie van de Pixyz-invoegversie heeft geen deadline om in te wisselen.
 
 
-      Deze aanbieding is voor nieuwe gebruikers en wordt niet gestapeld op bestaande Pixyz-abonnementen. De Pixyz-invoegcode kan onderhevig zijn aan aanvullende voorwaarden die worden gemaakt bij het inwisselen. Bekijk de toepasselijke [voorwaarden &amp; en](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) [het privacybeleid.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)
+      Deze aanbieding is voor nieuwe gebruikers en wordt niet gestapeld op bestaande Pixyz-abonnementen. De Pixyz-invoegcode kan onderhevig zijn aan aanvullende voorwaarden die worden gemaakt bij inwisselen. Bekijk de toepasselijke [voorwaarden &amp; en](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) het [privacybeleid.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)
   - question: >
       Hoe kan ik mijn proefversie van de Pixyz-invoegversie inwisselen?
     answer: >
@@ -158,28 +158,28 @@ sections:
 
       2. Meld u aan met uw Pixyz of maak een account
 
-      3. Klik &#39;Een productcode inwisselen&#39;
+      3. Klik &#39;een productcode inwisselen&#39;
 
-      4. Voer productcode in en klik &#39;Een productcode inwisselen&#39;
+      4. Voer productcode in en klik op &#39;Een productcode inwisselen&#39;
 
 
       Ga naar HoloLens 2 Development Edition voor [meer informatie](hololens2-options.md?tabs=device)
   - question: >
-      Hoe kan ik contact opnemen met pixyz-ondersteuning?
+      Hoe kan ik contact op met de ondersteuning van Pixyz?
     answer: >
-      Als u hulp nodig hebt bij vragen over uw Unity-id, -account, -organisatie(s) en -abonnementen, gaat u naar support.unity3d.com
+      Als u hulp wilt krijgen bij vragen over uw Unity-id, -account, -organisatie(s) en -abonnementen, gaat u naar support.unity3d.com
 
 
-      Voor specifieke ondersteuning voor Pixyz (nadat u uw proefversie hebt ingewisseld), gaat u [naar Pixyz-software.com/support](http://pixyz-software.com/support)
+      Voor pixyz-specifieke ondersteuning (nadat u uw proefversie hebt ingewisseld), gaat u [naar Pixyz-software.com/support](http://pixyz-software.com/support)
 - name: Azure
   questions:
   - question: >
       Hoe kan ik mijn Azure-tegoed van $ 500 inwisselen?
     answer: >
-      Als u uw Azure-tegoed van $ 500 wilt inwisselen, moet Azure Pass promotiecode inwisselen en uw abonnement activeren. [Meer informatie](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
+      Als u uw Azure-tegoed van $ 500 wilt inwisselen, kunt u Azure Pass promotiecode inwisselen en uw abonnement activeren. [Meer informatie](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
 
 
-      Bekijk de [Azure Pass-abonnementsovereenkomst en](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) de [details van de aanbieding.](https://azure.microsoft.com/en-us/offers/azure-pass/)
+      Bekijk de [Azure Pass-abonnementsovereenkomst en](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) [aanbiedingsdetails.](https://azure.microsoft.com/en-us/offers/azure-pass/)
   - question: >
       Wanneer verloopt mijn Azure-tegoed van $ 500?
     answer: >
@@ -187,7 +187,7 @@ sections:
   - question: >
       Wat kan ik doen met mijn Azure-tegoed?
     answer: >
-      Met uw Azure-tegoed kunt u beginnen met het bouwen met Microsoft&#39;groeiende set cloudservices. De Azure-tegoeden die zijn opgenomen in HoloLens 2 Development Edition zijn om klanten in staat te stellen snel aan de slag te gaan met het bouwen en testen mixed reality toepassingen in Azure. Ga naar Azure-resources voor meer informatie over het bouwen [op Azure](https://azure.microsoft.com/en-us/resources/)
+      Met uw Azure-tegoed kunt u beginnen met het bouwen met Microsoft&#39;steeds groter wordende set cloudservices. De Azure-tegoeden die zijn opgenomen in de HoloLens 2 Development Edition zijn om klanten in staat te stellen snel aan de slag te gaan met het bouwen en testen mixed reality toepassingen in Azure. Ga naar Azure-resources voor meer informatie over het bouwen [in Azure](https://azure.microsoft.com/en-us/resources/)
   - question: >
       Waar vind ik meer informatie over Azure mixed reality services?
     answer: Microsoft biedt een set mixed reality-services waarmee ontwikkelaars oplossingen kunnen bouwen en mixed reality testen. [Meer informatie](/windows/mixed-reality/develop/mixed-reality-cloud-services)
