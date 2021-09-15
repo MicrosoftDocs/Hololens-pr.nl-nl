@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 082a263bdd7eba694c13124abf40763644c83dfa
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 2cbf3005293f4fde91b22f3ff87edc6041e53336
+ms.sourcegitcommit: 16897df83c309acecf04e2bcfea310891cb6681b
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032169"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "127817273"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>Diagnostische gegevens verzamelen en gebruiken van HoloLens apparaten
 
@@ -56,7 +56,8 @@ Een HoloLens kan de Microsoft Feedback-hub desktop-app gebruiken om diagnostisch
 > **Commerciële of zakelijke gebruikers:** Als u de Feedback-hub-app gebruikt om een probleem te melden dat betrekking heeft op MDM, inrichting of een ander aspect van apparaatbeheer, wijzigt u de categorie van de app in de categorie Enterprise **Management**  >  **Device.**
 
 >[!IMPORTANT]
-> Als u de best mogelijke gegevens wilt bieden voor het oplossen van problemen, raden we u ten zeerste aan de telemetrie van uw apparaat in te stellen op **Optioneel.** U kunt deze waarde instellen tijdens de OUT-of-Box-Experience  (OOBE) of met behulp van de Instellingen app. Als u dit wilt doen met behulp Instellingen, selecteert u **> Instellingen > Privacy > App Diagnostics > Aan.**
+> Als u de best mogelijke gegevens wilt bieden voor het oplossen van problemen, raden we u ten zeerste aan de telemetrie van uw apparaat in te stellen op **Optioneel.** U kunt deze waarde instellen tijdens de OUT-of-Box-Experience  (OOBE) of met behulp van de Instellingen app. Als u dit wilt doen met behulp Instellingen, selecteert u **> Instellingen > Privacy > App Diagnostics > Op**.
+
 ### <a name="prerequisites"></a>Vereisten
 
 - Het apparaat is verbonden met een netwerk.
@@ -82,18 +83,19 @@ Een HoloLens kan de app **Instellingen** op het apparaat gebruiken om problemen 
 1. Open de Instellingen app en selecteer **de pagina &**  >  **Beveiligingsproblemen** bijwerken.
 1. Selecteer het juiste gebied en selecteer **Starten.**
 1. Reproduceer het probleem.
-1. Nadat u het probleem hebt gereproduceerd, gaat u terug Instellingen selecteert u **Stoppen.**
+1. Nadat u het probleem hebt gereproduceerd, gaat u Instellingen selecteert u **Stoppen.**
 
-Een gebruiker kan ook het gedrag van  Terugvaldiagnose configureren vanuit de Instellingen app. **Navigeer naar de > Privacy ->** deze instelling te configureren.
+Een gebruiker kan ook het gedrag van  Terugvaldiagnose configureren vanuit de Instellingen app. Ga naar **de pagina Privacy -> probleemoplossing** om deze instelling te configureren.
 > [!NOTE]
 > Als er MDM-beleid is geconfigureerd voor het apparaat, kan de gebruiker dat gedrag niet overschrijven.
 
 ### <a name="os-update-troubleshooter"></a>Probleemoplosser voor besturingssysteemupdates
 Op builds [Windows Holographic, versie 21H1](hololens-release-notes.md#windows-holographic-version-21h1) en meer:
-- Naast de vorige probleemoplossers in de Instellingen-app, is er een nieuwe probleemoplosser toegevoegd met de toevoeging van de nieuwe Instellingen-app voor updates van het besturingssysteem. **Navigeer Instellingen -> Update & Security -> Troubleshoot -> Windows Update** en selecteer **Start.** Hiermee kunt u traceringen verzamelen tijdens het reproduceren van uw probleem met updates van het besturingssysteem, zodat u beter kunt helpen bij het oplossen van problemen met uw IT of ondersteuning.
+- Naast de vorige probleemoplossers in de Instellingen-app, is er een nieuwe probleemoplosser toegevoegd met de toevoeging van de nieuwe Instellingen-app voor updates van het besturingssysteem. **Navigeer naar Instellingen -> Update & Security -> Troubleshoot -> Windows Update** en selecteer **Start.** Hiermee kunt u traceringen verzamelen tijdens het reproduceren van uw probleem met updates van het besturingssysteem, zodat u beter kunt helpen bij het oplossen van problemen met uw IT of ondersteuning.
+
 ### <a name="prerequisites"></a>Vereisten
 
-- De **Instellingen-app** wordt geïnstalleerd op het apparaat en is beschikbaar voor de gebruiker.
+- De **Instellingen-app** is geïnstalleerd op het apparaat en is beschikbaar voor de gebruiker.
 
 ### <a name="data-locations-access-and-retention"></a>Gegevenslocaties, toegang en retentie
 
@@ -108,9 +110,13 @@ De diagnostische gegevens worden op het apparaat opgeslagen. Als het apparaat is
 
 De diagnostische gegevens blijven op deze locaties totdat de gebruiker deze verwijdert.
 
+### <a name="view-diagnostic-report"></a>Diagnostisch rapport weergeven
+
+Als u de MDM Diagnostics op HoloLens 2 wilt weergeven, selecteert u uw Wi-Fi-pictogram en navigeert u vervolgens naar Instellingen Accounts Access work **or** school en selecteert  ->    >   u **Export your management logs**. HoloLens verzendt de logboekbestanden naar uw account en geeft hun locatie weer op uw desktopcomputer.
+
 ## <a name="diagnosticlog-csp"></a>DiagnosticLog-CSP
 
-In een MDM-omgeving (Mobile Device Management) kan de IT-beheerder de DiagnosticLog-configuratieserviceprovider [(CSP)](/windows/client-management/mdm/diagnosticlog-csp) gebruiken om diagnostische instellingen te configureren op geregistreerde HoloLens apparaten. De IT-beheerder kan deze instellingen configureren voor het verzamelen van logboeken van ingeschreven apparaten.
+In een MDM-omgeving (Mobile Device Management) kan de IT-beheerder de [CSP (DiagnosticLog](/windows/client-management/mdm/diagnosticlog-csp) Configuration Service Provider) gebruiken om diagnostische instellingen te configureren op ingeschreven HoloLens apparaten. De IT-beheerder kan deze instellingen configureren voor het verzamelen van logboeken van ingeschreven apparaten.
 
 Meer informatie:
 - [Diagnostische gegevens verzamelen van een Windows apparaat](/mem/intune/remote-actions/collect-diagnostics)
@@ -125,41 +131,48 @@ Meer informatie:
 
 Omdat het apparaat deel uitmaakt van de beheerde omgeving, geeft de gebruiker impliciet toestemming voor beheerderstoegang tot diagnostische gegevens.
 
-De IT-beheerder gebruikt de DiagnosticLog-CSP om het beleid voor gegevensopslag, -retentie en -toegang te configureren, met inbegrip van de beleidsregels die van toepassing zijn op het volgende:
+De IT-beheerder gebruikt de DiagnosticLog-CSP om het beleid voor gegevensopslag, -retentie en -toegang te configureren, inclusief de beleidsregels die van toepassing zijn op het volgende:
 
 - De cloudinfrastructuur die de diagnostische gegevens opgeslagen.
 - De bewaarperiode voor de diagnostische gegevens.
 - Machtigingen die de toegang tot de diagnostische gegevens bepalen.
 
 ## <a name="offline-diagnostics"></a>Offlinediagnose
-In situaties waarin het apparaat geen diagnostische gegevens kan verzamelen via Feedback-hub of de probleemoplosser Instellingen, kunt u diagnostische gegevens handmatig verzamelen. Een scenario waarin dit nodig is, is wanneer het apparaat geen verbinding kan maken met Wi-Fi of wanneer u geen toegang hebt tot andere hierboven genoemde methoden. De diagnostische gegevens verzamelen crashdumps en logboeken van het apparaat die een Ondersteuningstechnicus van Microsoft helpen bij het isoleren van problemen.
+In situaties waarin het apparaat geen diagnostische gegevens kan verzamelen via Feedback-hub of de probleemoplosser Instellingen, kunt u diagnostische gegevens handmatig verzamelen. Een scenario waarin dit nodig is, is wanneer het apparaat geen verbinding kan maken met Wi-Fi of wanneer u geen toegang hebt tot andere methoden die hierboven worden vermeld. De diagnostische gegevens verzamelen crashdumps en logboeken van het apparaat die een Ondersteuningstechnicus van Microsoft helpen bij het isoleren van problemen.
 
 Dit werkt wanneer het apparaat wordt weergegeven in Verkenner nadat het via een USB-kabel is verbonden met een pc.
 
 > [!NOTE]
-> Het genereren en beheren van offlinediagnose wordt verschillend beheerd, afhankelijk van de versie van uw besturingssysteem. Voorheen werd het beheerd door de telemetrie-instelling, maar wordt nu rechtstreeks beheerd via MDM-beleid. Als deze is uitgeschakeld via een instellings- of MDM-beleid, kunnen diagnostische logboeken niet worden verzameld met behulp van dit mechanisme.
+> Het genereren en beheren van offline diagnostische gegevens wordt anders beheerd, afhankelijk van de versie van uw besturingssysteem. Voorheen werd dit beheerd door de telemetrie-instelling, maar dit wordt nu rechtstreeks beheerd via MDM-beleid. Als deze instelling of het MDM-beleid is uitgeschakeld, kunnen er geen diagnostische logboeken worden verzameld met behulp van dit mechanisme.
 
 Gedrag [vóór Windows Holographic, versie 20H2:](hololens-release-notes.md#windows-holographic-version-20h2)
- - Offlinediagnose is alleen ingeschakeld wanneer de gebruiker oobe of de beleidswaarde [System\AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) doormaakt, is ingesteld op Volledig (Basic is de standaardwaarde voor HoloLens). 
-- Als u Offlinediagnose wilt uitschakelen, gaat **u naar Instellingen privacypagina** van App > en selecteert u **Basic** in **Diagnostische gegevens.** Op builds waarbij offlinediagnose afhankelijk is van de telemetrie-instelling, heeft dit alleen invloed op het al dan niet verzamelen van logboeken. Het heeft geen invloed op welke bestanden worden verzameld.
-- Als het apparaat is vergrendeld, worden er geen logboeken weergegeven.
+ - Offlinediagnose is alleen ingeschakeld wanneer de gebruiker oobe of de beleidswaarde [System\AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) doormaakt, is ingesteld op Volledig (Basic is de standaardwaarde op HoloLens). 
+- Als u Offlinediagnose wilt uitschakelen, gaat **u Instellingen App > Privacy-pagina** en **selecteert u Basic** in **Diagnostische gegevens.** Op builds waarbij offlinediagnose afhankelijk is van de instelling van telemetrie, heeft dit alleen invloed op het al dan niet verzamelen van logboeken. Het heeft geen invloed op welke bestanden worden verzameld.
+- Als het apparaat is vergrendeld, worden de logboeken niet weergegeven.
 
 Op builds [Windows Holographic, versie 20H2](hololens-release-notes.md#windows-holographic-version-20h2) en hoger:
 - Wanneer Terugvaldiagnose is ingeschakeld, wordt beheerd door een specifiek MDM-beleid met de bijbehorende instelling [MixedReality/FallbackDiagnostics](/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics)
-- Als het apparaat is vergrendeld, worden er geen logboeken weergegeven.
+- Als het apparaat is vergrendeld, worden de logboeken niet weergegeven.
 
 Bekijk deze video voor meer informatie.
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
 
-Volg deze stappen om diagnostische gegevens te verzamelen:
-1.  Verbinding maken apparaat met een USB-kabel naar uw pc.
-2.  Navigeer in Verkenner op uw pc naar **'This PC \<hololens-device> \Internal Storage'**.
-3.  Als de **map Storage** niet wordt weergeven, wacht het apparaat tot een gebruiker zich heeft aanmelden. U kunt het apparaat aanmelden of het apparaat aan-/uit-zetten door de AAN/uit-knop tien seconden ingedrukt te houden.
-4.  Druk op de knoppen **Power + Volume Down en** laat deze onmiddellijk los.
-5.  Wacht een minuut totdat het apparaat de ZIP-archieven heeft voorbereid. (Een tijdelijk bestand met de naam HololensDiagnostics.temp kan zichtbaar worden terwijl het apparaat de ZIP-archieven genereert. U kunt dit bestand niet openen of opslaan. Wanneer het proces is voltooien, wordt het vervangen door de ZIP-archieven.)
-6.  Vernieuw Verkenner en navigeer naar de map **\Documents.**
+Volg deze stappen voor het verzamelen van diagnostische gegevens:
+
+1.  Verbinding maken het apparaat met een USB-kabel op uw pc.
+
+2.  Navigeer in Verkenner op uw pc naar **'Deze pc \<hololens-device> \Interne Storage'**.
+
+3.  Als de **map Storage** niet wordt weergeven, wacht het apparaat tot een gebruiker zich heeft aanmelden. U kunt het apparaat aanmelden of de stroomcyclus van het apparaat ingedrukt houden door de aan/uit-knop 10 seconden ingedrukt te houden.
+
+4.  Druk op de knoppen **Power + Volume Down** en laat deze onmiddellijk los.
+
+5.  Wacht een minuut totdat het apparaat de ZIP-archieven heeft voorbereid. (Een tijdelijk bestand met de naam HololensDiagnostics.temp kan zichtbaar worden terwijl het apparaat de ZIP-archieven genereert. U hoeft dat bestand niet te openen of op te slaan. Wanneer het proces is voltooien, wordt dit vervangen door de ZIP-archieven.)
+
+6.  Vernieuw verkenner en navigeer naar de map **'\Documents'.**
+
 7.  Kopieer de ZIP-bestanden voor diagnostische gegevens en deel deze met het ondersteuningsteam van Microsoft.
 
-> [!NOTE]
-> Sommige diagnostische ZIP-bestanden kunnen PII bevatten.
+    > [!NOTE]
+    > Sommige diagnostische ZIP-bestanden kunnen PII bevatten.
