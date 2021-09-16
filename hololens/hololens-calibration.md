@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: kalibratie, comfort, visuals, kwaliteit, ipd, HoloLens, Windows Mixed Reality, VR-headsets
-ms.openlocfilehash: b3d917c71ac7441aeaf8dcbc25748ee07b9fbfa3
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: cdeef216cbf6d1fb165737ae194071c60b31146a
+ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126035899"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127833553"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>De kwaliteit en het comfort van de visual verbeteren
 
@@ -29,7 +29,7 @@ Hoewel beide apparaten moeten kalibreren voor de beste hologramweergave-ervaring
 
 ## <a name="calibrating-your-hololens-2"></a>Uw HoloLens 2
 
-HoloLens 2 maakt gebruik van technologie voor het bijhouden van de gaten om uw ervaring met en interactie met de virtuele omgeving te verbeteren. Door de HoloLens 2 zorgt u ervoor dat uw ogen (en de ogen van anderen die het apparaat gebruiken) nauwkeurig kunnen worden gevolgd. Het helpt ook bij het comfort van gebruikers, de uitlijning van hologrammen en het bijhouden van de hand. Na kalibratie worden hologrammen correct weergegeven, zelfs wanneer de visor op uw hoofd verschuift.
+HoloLens 2 maakt gebruik van technologie voor het bijhouden van de gaten om uw ervaring met het zien en communiceren met de virtuele omgeving te verbeteren. Door de HoloLens 2 zorgt u ervoor dat uw ogen (en de ogen van anderen die het apparaat gebruiken) nauwkeurig kunnen worden gevolgd. Het helpt ook bij het comfort van gebruikers, de uitlijning van hologrammen en het bijhouden van de hand. Na kalibratie worden hologrammen correct weergegeven, zelfs wanneer de visor naar uw hoofd verschuift.
 
 HoloLens 2 gebruiker wordt gevraagd het apparaat te kalibreren onder de volgende omstandigheden:
 
@@ -39,16 +39,15 @@ HoloLens 2 gebruiker wordt gevraagd het apparaat te kalibreren onder de volgende
 - De gebruiker heeft zijn kalibratieprofielen verwijderd
 - Het apparaat wordt uitgeschakeld en weer aan gezet en een van de bovenstaande omstandigheden is van toepassing 
 
-
 ![Kalibratieprompt voor het aanpassen van de ogen.](./images/07-et-adjust-for-your-eyes.png)
 
-Tijdens dit proces bekijkt u een set doelen (gems). Het is prima als u tijdens de kalibratie knippert, maar probeer gericht te blijven op de gems in plaats van andere objecten in de ruimte.  Als u zich op de gems richt, HoloLens u meer te weten komen over uw oogpositie om uw holografische wereld weer te geven.
+Tijdens dit proces bekijkt u een set doelen (gems). Het is prima als u tijdens de kalibratie knippert, maar probeer gericht te blijven op de gems in plaats van andere objecten in de ruimte.  Als u zich op de gems richt, HoloLens u meer te weten komen over de positie van uw oog om uw holografische wereld weer te geven.
 
 ![Prompt voor kalibratie dat de gebruiker het hoofd stil moet houden en punten met zijn ogen moet volgen.](./images/07-et-hold-head-still.png)
 
 ![Prompt voor kalibratie met gem-voorbeeld.](./images/08-et-gems.png)
 
-![Prompt voor kalibratie aanpassen.](./images/09-et-adjusting.png)
+![Kalibratieprompt aanpassen.](./images/09-et-adjusting.png)
 
 Als de kalibratie is geslaagd, ziet u een successcherm.  Zo niet, lees dan meer over [het diagnosticeren van kalibratiefouten.](hololens2-display.md#troubleshooting)
 
@@ -56,21 +55,21 @@ Als de kalibratie is geslaagd, ziet u een successcherm.  Zo niet, lees dan meer 
 
 ### <a name="calibration-when-sharing-a-device-or-session"></a>Kalibratie bij het delen van een apparaat of sessie
 
-Meerdere gebruikers kunnen een HoloLens 2 delen, zonder dat elke persoon het apparaat hoeft in te stellen. Wanneer een nieuwe gebruiker het apparaat voor het eerst op zijn hoofd plaatst, HoloLens 2 de gebruiker automatisch gevraagd om visuals te kalibreren. Wanneer een gebruiker met eerder ge kalibreerd visuele elementen het apparaat op het hoofd plaatst, wordt het scherm naadloos aangepast voor kwaliteit en een vertrouwd weergave-ervaring.  
+Meerdere gebruikers kunnen een HoloLens 2 delen, zonder dat elke persoon het apparaat hoeft in te stellen. Wanneer een nieuwe gebruiker het apparaat voor het eerst op het hoofd plaatst, wordt HoloLens 2 de gebruiker automatisch gevraagd om visuals te kalibreren. Wanneer een gebruiker met eerder ge kalibreerd visuele elementen het apparaat op het hoofd plaatst, wordt het scherm naadloos aangepast voor kwaliteit en een vertrouwd weergave-ervaring.  
 
-### <a name="manually-starting-the-calibration-process"></a>Het kalibratieproces handmatig starten
+### <a name="manually-starting-the-calibration-process"></a>Handmatig het kalibratieproces starten
 
-1. Gebruik het beginbewegingen om de [**Startmenu.**](hololens2-basic-usage.md#start-gesture)
+1. Gebruik de beweging Start om de [**Startmenu.**](hololens2-basic-usage.md#start-gesture)
 1. Als de Instellingen-app niet is vastgemaakt aan **Start,** selecteert **u Alle apps.**
 1. Selecteer **Instellingen** en selecteer vervolgens **Systeem**  >  **kalibratie** oog  >  **kalibratie** Run eye  >  **kalibratie**.
 
-   ![De Instellingen app, met de optie Run eye kalibratie.](./images/C-Settings.Calibration.png)
+   ![De Instellingen app, met de optie Ooguitbreeding uitvoeren.](./images/C-Settings.Calibration.png)
 
 ### <a name="auto-eye-position-support"></a>Ondersteuning voor automatische oogpositie
 
 In HoloLens 2 zorgen oogposities voor nauwkeurige positiebepaling van hologrammen, een goede weergave-ervaring en verbeterde weergavekwaliteit. Oogposities worden intern berekend als onderdeel van de berekening voor het bijhouden van de ogen. Dit vereist echter dat elke gebruiker de kalibratie van oogtracking doormaakt, zelfs wanneer voor de ervaring mogelijk geen ooginvoer nodig is.
 
-**Auto Eye Position (AEP)** maakt deze scenario's mogelijk met een interactieloze manier om oogposities voor de gebruiker te berekenen. Automatische oogpositie werkt automatisch op de achtergrond vanaf het moment dat de gebruiker het apparaat in gebruik neemt. Als de gebruiker geen voorafgaande kalibratie voor het bijhouden van de ogen heeft, geeft Automatische oogpositie de oogposities van de gebruiker aan het weergavesysteem na een verwerkingstijd van 20 tot 30 seconden. De gebruikersgegevens blijven niet op het apparaat behouden en dit proces wordt herhaald als de gebruiker opstart en het apparaat weer in gebruik neemt of als het apparaat opnieuw wordt opgestart of uit de slaapstand wordt halen.
+**Automatische oogpositie (AEP)** maakt deze scenario's mogelijk met een interactieloze manier om oogposities voor de gebruiker te berekenen. Automatische oogpositie werkt automatisch op de achtergrond vanaf het moment dat de gebruiker het apparaat in gebruik neemt. Als de gebruiker geen voorafgaande kalibratie voor het bijhouden van de ogen heeft, geeft Automatische oogpositie de oogposities van de gebruiker aan het weergavesysteem na een verwerkingstijd van 20 tot 30 seconden. De gebruikersgegevens blijven niet op het apparaat behouden en dit proces wordt herhaald als de gebruiker opstart en het apparaat weer in gebruik neemt of als het apparaat opnieuw wordt opgestart of uit de slaapstand wordt halen.
 
 Er zijn enkele wijzigingen in het systeemgedrag met de functie Automatische oogpositie wanneer een niet-gecalibreerde gebruiker het apparaat in gebruik neemt. In deze context verwijst een niet-gecalibreerde gebruiker naar iemand die het kalibratieproces voor het bijhouden van de ogen op het apparaat nog niet eerder heeft doorlopen.
 
@@ -81,39 +80,46 @@ Er zijn enkele wijzigingen in het systeemgedrag met de functie Automatische oogp
 
 Als de gebruiker overstapt van een toepassing zonder staren naar een toepassing die toegang heeft tot de staringsgegevens, wordt de kalibratieprompt weergegeven. 
 
-Al het andere systeemgedrag is vergelijkbaar met wanneer de huidige gebruiker geen actieve kalibratie van oogtracking heeft. De eenhandige startbewegingen worden bijvoorbeeld niet ingeschakeld. De Out-Of-Box-Experience wordt niet gewijzigd voor de eerste installatie.
+Al het andere systeemgedrag is vergelijkbaar met wanneer de huidige gebruiker geen actieve kalibratie van oogtracking heeft. Het eenhandige startgebaar wordt bijvoorbeeld niet ingeschakeld. De Out-Of-Box-Experience wordt niet gewijzigd voor de eerste installatie.
 
-Voor ervaringen waarvoor oogcontactgegevens of nauwkeurige positie van hologrammen zijn vereist, raden we niet-gecalibreerde gebruikers aan om kalibratie van oogtracking uit te voeren. De app is toegankelijk via de prompt voor het traceren van de ogen of door de Instellingen-app te starten vanuit het menu Start en vervolgens **Systeem > Kalibratie >** Oog kalibratie te selecteren > Oogin kalibratie uitvoeren.
+Voor ervaringen waarvoor oogcontactgegevens of nauwkeurige positie van hologrammen zijn vereist, raden we niet-gecalibreerde gebruikers aan om kalibratie van de oogtracking uit te voeren. De app is toegankelijk via de prompt voor het traceren van de oogvolgending of door de Instellingen-app te starten vanuit het menu Start en vervolgens **System > Kalibratie > Eye-kalibratie te** selecteren > Run eye kalibratie .
 
-#### <a name="deferred-calibration-prompt"></a>Uitgestelde kalibratieprompt
+#### <a name="deferred-calibration-prompt"></a>Uitgestelde prompt voor kalibratie
 
-Met Automatische oogpositie wordt het dialoogvenster Prompt voor kalibratie van oog bijhouden uitgesteld totdat een toepassing oogcontactgegevens aanvraagt. Dit zorgt ervoor dat de gebruiker niet wordt gevraagd om te kijken wanneer er geen staring nodig is voor de actieve toepassing. Als voor de toepassing wel staringsgegevens nodig zijn en de huidige gebruiker niet is ge kalibreerd, krijgt de gebruiker een kalibratieprompt te zien. Dit gedrag kan worden gebruikt om de prompt voor het traceren van de ogen weer te geven op een geschikt tijdstip voor de ervaring. Deze methode wordt aanbevolen om de volgende redenen
+Met Automatische oogpositie wordt het dialoogvenster Kalibratieprompt voor oog bijhouden uitgesteld totdat een toepassing oogcontactgegevens aanvraagt. Dit zorgt ervoor dat de gebruiker niet wordt gevraagd om te kijken wanneer er geen staring nodig is voor de actieve toepassing. Als voor de toepassing wel staringsgegevens nodig zijn en de huidige gebruiker niet is ge kalibreerd, krijgt de gebruiker een kalibratieprompt te zien. Dit gedrag kan worden gebruikt om een prompt voor het bijhouden van de kalibratie van een oog weer te geven op een geschikt tijdstip voor de ervaring. Deze methode wordt aanbevolen om de volgende redenen:
 
-1.  Het dialoogvenster Prompt voor kalibratie van oogtracking biedt de gebruiker details over waarom oogtracking nodig is.
+1.  Het dialoogvenster Prompt voor kalibratie van oog tracering biedt de gebruiker details over waarom oogtracking nodig is.
 2.  Biedt de gebruiker een manier om te weigeren om zijn ogen te kalibreren.
 
 Als de gebruiker ervoor kiest om de kalibratie van oogvolgendheid te starten, moet de focus terugkeren naar de oorspronkelijke toepassing nadat de kalibratie is voltooid. 
 
 ### <a name="calibration-data-and-security"></a>Kalibratiegegevens en beveiliging
 
-Kalibratiegegevens worden lokaal op het apparaat opgeslagen en zijn niet gekoppeld aan accountgegevens. Er is geen record van wie het apparaat heeft gebruikt zonder kalibratie. Dit betekent dat nieuwe gebruikers wordt gevraagd visuals te kalibreren wanneer ze het apparaat voor het eerst gebruiken, en gebruikers die zich eerder hebben af-van-kalibratie of als de kalibratie is mislukt.
+Kalibratiegegevens worden lokaal op het apparaat opgeslagen en zijn niet gekoppeld aan accountgegevens. Er is geen record van wie het apparaat heeft gebruikt zonder kalibratie. Dit betekent dat nieuwe gebruikers wordt gevraagd visuals te kalibreren wanneer ze het apparaat voor het eerst gebruiken en dat gebruikers die zich eerder hebben af- of als kalibratie is mislukt, worden gevraagd om visualisaties te kalibreren.
 
 Op het apparaat kunnen maximaal 50 kalibratieprofielen lokaal worden opgeslagen. Nadat dit nummer is bereikt, verwijdert het apparaat automatisch het oudste ongebruikte profiel.
 
-Kalibratie-informatie kan altijd worden verwijderd van het apparaat in **Instellingen**  >  **Privacy**  >  **Eye Tracker**.  
+Kalibratiegegevens kunnen altijd worden verwijderd van het apparaat in **Instellingen**  >  **Privacy**  >  **Eye Tracker**.  
 
 ### <a name="disable-calibration"></a>Kalibrering uitschakelen
 
-U kunt de kalibratieprompt ook uitschakelen door de volgende stappen uit te voeren:
+#### <a name="eye-calibration-behavior-on-hololens-2-builds-20h2-and-newer"></a>Gedrag van kalibratie van oog HoloLens 2 builds 20H2 en hoger
+
+Sinds de start van [Auto Eye Position Support](hololens-release-notes.md#auto-eye-position-support) Windows Holographic, versie 20H2, hoeft u kalibratie niet uit te schakelen. De kalibratieprompt wordt alleen automatisch weergegeven als u een app met oogvolgsysteem gebruikt.
+
+#### <a name="disabling-eye-calibration-on-hololens-2-older-builds"></a>Oog kalibratie uitschakelen op HoloLens 2 oudere builds
+
+U kunt een wisselknop Instellingen op de headset om kalibratie uit te schakelen, maar de status van de switch is mogelijk niet eenvoudig te bepalen. Deze is verwijderd en vervangen door [Auto Eye Position Support,](hololens-release-notes.md#auto-eye-position-support)waarmee kalibratie wordt uitgesteld en tegelijkertijd kleurcorrectie en hologrampositie wordt mogelijk.
+
+#### <a name="disabling-eye-calibration-on-hololens-1st-gen"></a>Kalibratie van oog op HoloLens (1e generatie) uitschakelen
+
+Voor [HoloLens (eerste generatie)](#calibrating-your-hololens-1st-gen)kalibratie kunt u de prompt voor het kalibratieproces voor het oog uitschakelen door de volgende stappen uit te voeren:
 
 1. Selecteer **Instellingen**  >  **systeem kalibratie**  >  .
 1. Schakel Uit Wanneer een nieuwe persoon deze HoloLens gebruikt, vraagt u automatisch om **oogbrabratie uit te voeren.**
 
    > [!IMPORTANT]
    > Deze instelling kan een negatieve invloed hebben op de kwaliteit en het comfort van hologramweergaven.  Wanneer u deze instelling uit schakelen, werken functies die afhankelijk zijn van het bijhouden van de ogen (zoals het scrollen van tekst) niet meer in in immersieve toepassingen.
-
-> [!NOTE]
-> De Instellingen is verwijderd vanaf Windows Holographic versie 20H2 met het begin van [Auto Eye Position Support.](hololens-release-notes.md#auto-eye-position-support) De kalibratieprompt wordt alleen automatisch weergegeven als een niet-gecalibreerde gebruiker een app met ingeschakelde oogtracking gebruikt.
 
 ### <a name="hololens-2-eye-tracking-technology"></a>HoloLens 2-trackingtechnologie
 
@@ -125,19 +131,19 @@ HoloLens toepassingen gebruiken oogtracking om bij te houden waar u in realtime 
 
 ## <a name="calibrating-your-hololens-1st-gen"></a>Uw HoloLens (eerste generatie)
 
-HoloLens (eerste generatie) past de hologramweergave aan op basis van uw [interpupillary distance](https://en.wikipedia.org/wiki/Interpupillary_distance) (IPD). Als de IPD niet nauwkeurig is, kunnen hologrammen instabiel of op een onjuiste afstand lijken. U kunt de kwaliteit van uw visuals verbeteren door het apparaat te kalibreren naar uw interpupillary distance (IPD).
+HoloLens (1e generatie) past de hologramweergave aan op basis van uw [interpupillary distance](https://en.wikipedia.org/wiki/Interpupillary_distance) (IPD). Als de IPD niet nauwkeurig is, kunnen hologrammen instabiel of op een onjuiste afstand lijken. U kunt de kwaliteit van uw visuals verbeteren door het apparaat te kalibreren naar uw interpupillary distance (IPD).
 
-Wanneer u uw apparaat HoloLens (1e generatie) in te stellen, wordt u gevraagd om uw visuals te kalibreren nadat Cortana zichzelf introduceert. Het is raadzaam om de kalibratiestap tijdens deze installatiefase te voltooien. U kunt dit echter overslaan door te wachten totdat Cortana u wordt gevraagd en vervolgens 'Overslaan' te zeggen.
+Wanneer u uw apparaat HoloLens (1e generatie) in te stellen, wordt u gevraagd om uw visuals te kalibreren nadat Cortana zichzelf introduceert. Het is raadzaam dat u de stap voor het kalibratieproces voltooit tijdens deze installatiefase. U kunt dit echter overslaan door te wachten totdat Cortana u wordt gevraagd en vervolgens 'Overslaan' te zeggen.
 
-Tijdens het kalibratieproces wordt HoloLens gevraagd om uw vinger uit te lijnen met een reeks van zes doelen per oog. HoloLens dit proces gebruikt om de IP-adress voor uw ogen correct in te stellen.
+Tijdens het kalibratieproces wordt HoloLens u gevraagd om uw vinger uit te lijnen met een reeks van zes doelen per oog. HoloLens dit proces gebruikt om de IP-adres-ip-adres correct in te stellen voor uw ogen.
 
 ![Scherm voor uitlijning van IPD-vinger bij de tweede stap.](./images/ipd-finger-alignment-300px.jpg)
 
-### <a name="manually-start-the-calibration-process"></a>Het kalibratieproces handmatig starten
+### <a name="manually-start-the-calibration-process"></a>Handmatig het kalibratieproces starten
 
 Als u de kalibratie moet bijwerken of als een nieuwe gebruiker deze moet aanpassen, kunt u de Kalibratie-app op elk moment handmatig uitvoeren. De kalibratie-app wordt standaard geïnstalleerd. U kunt deze openen met behulp van het menu **Start** of de Instellingen app.
 
-Volg deze stappen **om het** menu Start te gebruiken om de Kalibratie-app uit te voeren:
+Volg deze stappen **om het** menu Start te gebruiken om de kalibratie-app uit te voeren:
 
 1. Gebruik de [bloembewegingen](hololens1-basic-usage.md) om het menu **Start te** openen.
 1. Als u alle apps wilt weergeven, selecteert **+** u .
@@ -145,7 +151,7 @@ Volg deze stappen **om het** menu Start te gebruiken om de Kalibratie-app uit te
 
    ![Toegang tot de kalibratie-app vanuit de shell.](./images/calibration-shell.png)
 
-   ![De kalibratie-app die wordt weergegeven als een livekubus nadat deze is gestart.](./images/calibration-livecube-200px.png)
+   ![De kalibratie-app wordt weergegeven als een livekubus nadat deze is gestart.](./images/calibration-livecube-200px.png)
 
 Als u de app Instellingen gebruiken om de kalibratie-app uit te voeren, volgt u deze stappen:
 
@@ -154,12 +160,12 @@ Als u de app Instellingen gebruiken om de kalibratie-app uit te voeren, volgt u 
 1. Selecteer **Instellingen**.
 1. Selecteer   >  **Systeemprogramma's**  >  **Kalibratie openen.**
 
-   ![De kalibratie-app starten vanuit de instellingen-app.](./images/calibration-settings-500px.jpg)
+   ![Start de kalibratie-app vanuit de instellingen-app.](./images/calibration-settings-500px.jpg)
 
 ## <a name="immersive-headsets"></a>Immersive headsets
 
-Sommige immersive headsets bieden de mogelijkheid om de IPD-instelling aan te passen. Als u de IP-adres voor uw headset wilt wijzigen, opent u de app Instellingen en selecteert u **Mixed Reality** Headset display en verplaatst u vervolgens het  >  schuifregelaar. U ziet de wijzigingen in realtime in uw headset. Als u uw IP-adres kent, bijvoorbeeld van een bezoek aan de optometator, kunt u deze ook rechtstreeks invoeren.
+Sommige immersive headsets bieden de mogelijkheid om de IPD-instelling aan te passen. Als u de IP-adres voor uw headset wilt wijzigen, opent u de app Instellingen en selecteert u **Mixed Reality** Headset display en verplaatst u vervolgens het  >  schuifregelaarsbesturingselement. U ziet de wijzigingen in realtime in uw headset. Als u uw IP-adres kent, bijvoorbeeld van een bezoek aan de optometrist, kunt u deze ook rechtstreeks invoeren.
 
-U kunt deze instelling ook aanpassen op uw pc door te Instellingen  >  **Mixed Reality** Headset weer te  >  **geven.**
+U kunt deze instelling ook op uw pc aanpassen door Instellingen  >  **Mixed Reality** Headset weer te  >  **geven.**
 
 Als uw headset geen ondersteuning biedt voor IPD-aanpassing, wordt deze instelling uitgeschakeld.

@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2cbf3005293f4fde91b22f3ff87edc6041e53336
-ms.sourcegitcommit: 16897df83c309acecf04e2bcfea310891cb6681b
+ms.openlocfilehash: e977d0d42831760749bb5c6c469d2482e2ca72e7
+ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "127817273"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127833519"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>Diagnostische gegevens verzamelen en gebruiken van HoloLens apparaten
 
@@ -61,7 +61,7 @@ Een HoloLens kan de Microsoft Feedback-hub desktop-app gebruiken om diagnostisch
 ### <a name="prerequisites"></a>Vereisten
 
 - Het apparaat is verbonden met een netwerk.
-- De Feedback-hub-app is beschikbaar op de desktopcomputer van de gebruiker en de gebruiker kan bestanden uploaden naar de Microsoft Cloud.
+- De Feedback-hub-app is beschikbaar op de desktopcomputer van de gebruiker en de gebruiker kan bestanden uploaden naar de Microsoft-cloud.
 
 ### <a name="data-locations-access-and-retention"></a>Gegevenslocaties, toegang en retentie
 
@@ -83,13 +83,14 @@ Een HoloLens kan de app **Instellingen** op het apparaat gebruiken om problemen 
 1. Open de Instellingen app en selecteer **de pagina &**  >  **Beveiligingsproblemen** bijwerken.
 1. Selecteer het juiste gebied en selecteer **Starten.**
 1. Reproduceer het probleem.
-1. Nadat u het probleem hebt gereproduceerd, gaat u Instellingen selecteert u **Stoppen.**
+1. Nadat u het probleem hebt gereproduceerd, gaat u terug Instellingen selecteert u **Stoppen.**
 
 Een gebruiker kan ook het gedrag van  Terugvaldiagnose configureren vanuit de Instellingen app. Ga naar **de pagina Privacy -> probleemoplossing** om deze instelling te configureren.
 > [!NOTE]
 > Als er MDM-beleid is geconfigureerd voor het apparaat, kan de gebruiker dat gedrag niet overschrijven.
 
 ### <a name="os-update-troubleshooter"></a>Probleemoplosser voor besturingssysteemupdates
+
 Op builds [Windows Holographic, versie 21H1](hololens-release-notes.md#windows-holographic-version-21h1) en meer:
 - Naast de vorige probleemoplossers in de Instellingen-app, is er een nieuwe probleemoplosser toegevoegd met de toevoeging van de nieuwe Instellingen-app voor updates van het besturingssysteem. **Navigeer naar Instellingen -> Update & Security -> Troubleshoot -> Windows Update** en selecteer **Start.** Hiermee kunt u traceringen verzamelen tijdens het reproduceren van uw probleem met updates van het besturingssysteem, zodat u beter kunt helpen bij het oplossen van problemen met uw IT of ondersteuning.
 
@@ -106,7 +107,7 @@ De diagnostische gegevens worden op het apparaat opgeslagen. Als het apparaat is
 > Dit interne \\ \<*HoloLens device name*> \\ pc Storage \\ documenten \\ trace \<*ddmmyyhhmmss*> .etl
 
 > [!NOTE]  
-> In dit bestandspad en de naam vertegenwoordigt de naam van het HoloLens apparaat en vertegenwoordigt de datum en tijd \<*HoloLens device name*> waarop het bestand is \<*ddmmyyhhmmss*> gemaakt.
+> In dit bestandspad en de naam vertegenwoordigt de naam van HoloLens apparaat en vertegenwoordigt de datum en tijd \<*HoloLens device name*> waarop het bestand is \<*ddmmyyhhmmss*> gemaakt.
 
 De diagnostische gegevens blijven op deze locaties totdat de gebruiker deze verwijdert.
 
@@ -138,6 +139,7 @@ De IT-beheerder gebruikt de DiagnosticLog-CSP om het beleid voor gegevensopslag,
 - Machtigingen die de toegang tot de diagnostische gegevens bepalen.
 
 ## <a name="offline-diagnostics"></a>Offlinediagnose
+
 In situaties waarin het apparaat geen diagnostische gegevens kan verzamelen via Feedback-hub of de probleemoplosser Instellingen, kunt u diagnostische gegevens handmatig verzamelen. Een scenario waarin dit nodig is, is wanneer het apparaat geen verbinding kan maken met Wi-Fi of wanneer u geen toegang hebt tot andere methoden die hierboven worden vermeld. De diagnostische gegevens verzamelen crashdumps en logboeken van het apparaat die een Ondersteuningstechnicus van Microsoft helpen bij het isoleren van problemen.
 
 Dit werkt wanneer het apparaat wordt weergegeven in Verkenner nadat het via een USB-kabel is verbonden met een pc.
