@@ -1,51 +1,51 @@
 ---
-title: Registratie van HoloLens in MDM
-description: Meer informatie over het inschrijven HoloLens in Mobile Device Management (MDM) voor eenvoudiger beheer van meerdere apparaten.
+title: Registratie HoloLens in MDM
+description: Meer informatie over het registreren HoloLens in Mobile Device Management (MDM) voor eenvoudiger beheer van meerdere apparaten.
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 2a9b3fca-8370-44ec-8b57-fb98b8d317b0
-author: scooley
-ms.author: scooley
+author: evmill
+ms.author: v-evmill
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/06/2019
+ms.date: 9/15/2021
 ms.reviewer: ''
-manager: laurawi
+manager: ranjibb
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: a368c622c137374ea9cc544490d3492fa9d3f8c1
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: b6206f7121d1ba78908d96f71c5c809ec97b06d5
+ms.sourcegitcommit: 6c8406bbcc79c1f624736cc68e1aaeab70436902
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032165"
+ms.lasthandoff: 09/17/2021
+ms.locfileid: "127904341"
 ---
-# <a name="enroll-hololens-in-mdm"></a>Registratie van HoloLens in MDM
+# <a name="enroll-hololens-in-mdm"></a>Registratie HoloLens in MDM
 
-U kunt meerdere apparaten tegelijk Microsoft HoloLens met behulp van oplossingen zoals [Microsoft Intune](/intune/windows-holographic-for-business). U kunt instellingen beheren, apps selecteren om beveiligingsconfiguraties te installeren en instellen die zijn afgestemd op de behoefte van uw organisatie. Zie Apparaten met [Windows Holographic](/intune/windows-holographic-for-business)beheren met Microsoft Intune, de configuratieserviceproviders [(CSP's)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference#hololens)die worden ondersteund in Windows Holographic en het beleid dat wordt ondersteund [door Windows Holographic for Business](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#hololenspolicies).
+U kunt meerdere apparaten Microsoft HoloLens beheren met behulp van oplossingen zoals [Microsoft Intune](/intune/windows-holographic-for-business). U kunt instellingen beheren, apps selecteren om beveiligingsconfiguraties te installeren en in te stellen die zijn afgestemd op de behoefte van uw organisatie. Zie Apparaten met [Windows Holographic](/intune/windows-holographic-for-business)beheren met Microsoft Intune, de configuratieserviceproviders [(CSP's)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference#hololens)die worden ondersteund in Windows Holographic en de beleidsregels die door Windows Holographic for Business [.](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#hololenspolicies)
 
 > [!NOTE]
-> Mobile Device Management (MDM), met inbegrip van de functies vpn, Bitlocker en kioskmodus, is alleen beschikbaar wanneer u een upgrade naar [Windows Holographic for Business.](hololens1-upgrade-enterprise.md)
+> Mobile Device Management (MDM), met inbegrip van de functies voor VPN, Bitlocker en kioskmodus, is alleen beschikbaar wanneer u een upgrade naar [Windows Holographic for Business.](hololens1-upgrade-enterprise.md)
 
 ## <a name="requirements"></a>Vereisten
 
- Uw organisatie moet Mobile Device Management (MDM) hebben ingesteld om uw apparaten HoloLens beheren. Uw MDM-provider kan een Microsoft Intune een externe provider zijn die gebruikmaakt van Microsoft MDM-API's.
+ Uw organisatie moet Mobile Device Management (MDM) hebben ingesteld om de apparaten HoloLens beheren. Uw MDM-provider kan een Microsoft Intune een externe provider zijn die gebruikmaakt van Microsoft MDM-API's.
 
 ## <a name="different-ways-to-enroll"></a>Verschillende manieren om in te schrijven
 
-Afhankelijk van het type identiteit [dat is gekozen](hololens-identity.md) tijdens OOBE of na het aanmelden, zijn er verschillende registratiemethoden.
+Afhankelijk van het type identiteit [dat](hololens-identity.md) is gekozen tijdens OOBE of na het aanmelden, zijn er verschillende registratiemethoden.
 
-- Als Identiteit Azure AD is, klikt u tijdens OOBE of Instellingen **de** knop App Access Work Verbinding maken  ->  **School.**  ->  
+- Als Identiteit Azure AD is, klikt u tijdens OOBE of **Instellingen knop App** Access Work of  ->  **School**  ->  **Verbinding maken** gebruiken.
     - Voor Azure AD [vindt automatische MDM-inschrijving](hololens-enroll-mdm.md#auto-enrollment-in-mdm) alleen plaats als Azure AD is geconfigureerd met inschrijvings-URL's.
 
-- Als De identiteit Azure AD is en het apparaat vooraf is geregistreerd bij de Intune MDM-server met een specifiek configuratieprofiel dat is toegewezen, vinden Azure AD-Join en automatische [MDM-inschrijving](hololens-enroll-mdm.md#auto-enrollment-in-mdm) plaats tijdens OOBE.
-    - Ook wel [autopilot-stroom beschikbaar](hololens2-autopilot.md) in [builds van 19041.1103+](hololens-release-notes.md#windows-holographic-version-2004).
+- Als Identiteit Azure AD is en het apparaat vooraf is geregistreerd bij de Intune MDM-server met een specifiek configuratieprofiel dat is toegewezen, vinden Azure AD-Join en automatische [MDM-inschrijving](hololens-enroll-mdm.md#auto-enrollment-in-mdm) plaats tijdens OOBE.
+    - Ook wel [autopilot-stroom genoemd,](hololens2-autopilot.md) beschikbaar in [19041.1103+-builds.](hololens-release-notes.md#windows-holographic-version-2004)
 
 
 - Als Identiteit MSA is, gebruikt u Instellingen **knop Toegang** tot werk of  ->  **school**  ->  **Verbinding maken** app.
-    - Ook wel werkaccountstroom (AWA) toevoegen genoemd.
-- Als Identiteit lokale gebruiker is, gebruikt u Instellingen **de koppeling Werk-** of schoolinschrijving voor app-toegang alleen  ->    ->  **in apparaatbeheer.**
+    - Ook wel werkaccount toevoegen (AWA)-stroom genoemd.
+- Als Identiteit lokale gebruiker is, gebruikt u Instellingen **app-toegang** Werk- of  ->  **schoolinschrijving** alleen in de koppeling  ->  **Apparaatbeheer.**
     - Ook wel pure MDM-inschrijvingsstroom genoemd.
 
 Zodra het apparaat is ingeschreven bij uw MDM-server, geeft Instellingen app aan dat het apparaat is ingeschreven bij apparaatbeheer.
@@ -56,16 +56,22 @@ Als uw organisatie een [Azure Premium-abonnement](https://azure.microsoft.com/ov
 
 Wanneer automatische inschrijving is ingeschakeld, is er geen extra handmatige inschrijving nodig. Wanneer de gebruiker zich met een Azure AD-account heeft aangemeld, wordt het apparaat ingeschreven bij MDM nadat de eerste run-ervaring is uitgevoerd.
 
-Wanneer een apparaat lid is van Azure AD, kan dit van invloed zijn op wie de eigenaar [van het apparaat heeft beschouwd.](security-adminless-os.md#device-owner)
+Wanneer een apparaat lid is van Azure AD, kan dit van invloed zijn op wie als de eigenaar [van het apparaat wordt beschouwd.](security-adminless-os.md#device-owner)
 
 ## <a name="unenroll-hololens-from-intune"></a>Registratie van HoloLens bij Intune
 
-Afhankelijk van de inschrijvingsmethode is het uitschrijving van uw apparaat mogelijk niet beschikbaar.
+Afhankelijk van de inschrijvingsmethode is het mogelijk dat de registratie van uw apparaat niet beschikbaar is.
 
-Als uw apparaat is ingeschreven met een Azure AD-account of Autopilot, kan het niet worden uitgeschreven bij Intune. Als u de aaneenvoeging wilt HoloLens Azure AD of opnieuw wilt worden lid van een andere Azure AD-tenant, moet u het apparaat opnieuw [instellen/reflashen.](hololens-recovery.md#reset-the-device)
+Als uw apparaat is ingeschreven met een Azure AD-account of Autopilot, kan het niet worden uitgeschreven bij Intune. Als u de aaneenvoeging HoloLens Azure AD wilt verwijderen of opnieuw wilt worden lid van een andere Azure AD-tenant, moet u het apparaat opnieuw [instellen/reflashen.](hololens-recovery.md#reset-the-device)
 
-Als uw apparaat is ingeschreven vanuit een MSA-account dat een werkaccount heeft toegevoegd of van een lokaal account dat alleen is ingeschreven bij apparaatbeheer, kunt u de registratie van het apparaat in de uitschrijving van het apparaat in- of verwijderen. Open het Startmenu en selecteer vervolgens Instellingen de knop **Verbinding verbreken** met Werk- of  ->  **schoolaccount** van  ->    ->  **app-toegang.**
+Als uw apparaat is ingeschreven via een MSA-account dat een werkaccount heeft toegevoegd of van een lokaal account dat alleen is ingeschreven bij apparaatbeheer, kunt u de registratie van het apparaat in de hand nemen. Open het Startmenu selecteer vervolgens Instellingen **knop App** Access Work  ->  **or School**  ->  *YourAccount*  ->  **Disconnect.**
 
-## <a name="ensure-that-mdm-enrollment-isnt-blocked-for-windows-devices"></a>Zorg ervoor dat MDM-inschrijving niet wordt geblokkeerd voor Windows apparaten
+## <a name="enrollment-troubleshooting"></a>Problemen met inschrijving oplossen
+
+### <a name="ensure-valid-license-is-assigned-to-the-user"></a>Controleren of een geldige licentie is toegewezen aan de gebruiker
+
+Raadpleeg [](/troubleshoot/mem/intune/troubleshoot-windows-enrollment-errors#check-device-type-restrictions) [Troubleshoot Windows device enrollment problems in Microsoft Intune](/troubleshoot/mem/intune/troubleshoot-windows-enrollment-errors) (Problemen met apparaatinschrijving oplossen in Microsoft Intune) met name de volgende secties, dat wil zeggen Beperkingen voor apparaattype controleren en Een geldige licentie toewijzen aan de [gebruiker.](/troubleshoot/mem/intune/troubleshoot-windows-enrollment-errors#assign-a-valid-license-to-the-user)
+
+### <a name="ensure-that-mdm-enrollment-isnt-blocked-for-windows-devices"></a>Zorg ervoor dat MDM-inschrijving niet is geblokkeerd voor Windows apparaten
 
 Als u de inschrijving wilt laten slagen, moet u ervoor zorgen dat uw HoloLens kunnen worden ingeschreven. Aangezien HoloLens wordt beschouwd als een Windows apparaat, hoeven er geen inschrijvingsbeperkingen te zijn die uw implementatie kunnen blokkeren. [Bekijk deze lijst met beperkingen](/mem/intune/enrollment/enrollment-restrictions-set) en zorg ervoor dat u uw apparaten kunt registreren.
