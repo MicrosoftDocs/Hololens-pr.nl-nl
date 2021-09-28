@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft HoloLens
-summary: Microsoft HoloLens is de eerste volledig zelfstandige holografische computer die de Windows 10. Nu, met de introductie van HoloLens 2, biedt elk HoloLens-apparaat commerciële beheermogelijkheden die worden verbeterd door de betrouwbaarheid, beveiliging en schaalbaarheid van cloud- en AI-services van Microsoft.
+summary: Microsoft HoloLens is de eerste volledig zelfstandige holografische computer die wordt uitgevoerd Windows 10. Nu, met de introductie van HoloLens 2, biedt elk HoloLens-apparaat commerciële beheermogelijkheden die worden verbeterd door de betrouwbaarheid, beveiliging en schaalbaarheid van cloud- en AI-services van Microsoft.
 metadata:
   title: Microsoft HoloLens
   description: Landingspagina voor Microsoft HoloLens.
@@ -11,12 +11,12 @@ metadata:
   ms.author: v-jjaswinski
   ms.date: 05/24/2021
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: c0189c7a75ad27d6d301721e78de6391f6ac76f7
-  ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+  ms.openlocfilehash: 2d0d57406c0d8b1759c53bf5847d8369f98a865e
+  ms.sourcegitcommit: 2b541bacb32279ccec0d7b7caef216626634a2ad
   ms.translationtype: MT
   ms.contentlocale: nl-NL
-  ms.lasthandoff: 09/13/2021
-  ms.locfileid: "126032912"
+  ms.lasthandoff: 09/28/2021
+  ms.locfileid: "129145927"
 landingContent:
 - title: De HoloLens 2
   linkLists:
@@ -38,7 +38,7 @@ landingContent:
       url: hololens2-options-industrial-edition.md
     - text: Ontwikkelingseditie
       url: hololens2-options-dev-edition.md
-    - text: Trimble XR10 with HoloLens 2
+    - text: XR10 inkorten met HoloLens 2
       url: hololens2-options-trimble-xr10-edition.md
 - title: Aan de slag
   linkLists:
@@ -60,14 +60,30 @@ landingContent:
       url: hololens2-autopilot-registration-support.md
   - linkListType: deploy
     links:
-    - text: 'Implementatiehandleiding: cloudgeconnecteerde HoloLens 2 implementatie op schaal met Remote Assist'
+    - text: 'Implementatiehandleiding : Cloudgeconnecteerde HoloLens 2 implementatie op schaal met Remote Assist'
       url: hololens2-cloud-connected-overview.md
     - text: Implementatiehandleiding - Externe clients (verbonden met de cloud)
       url: hololens2-deployment-guide.md
-    - text: Implementatiehandleiding- Bedrijfsgeconnecteerde HoloLens 2 met Dynamics 365 Guides
+    - text: Implementatiehandleiding - Implementatie van bedrijfsgeconnecteerde HoloLens 2 met Dynamics 365 Guides
       url: hololens2-corp-connected-overview.md
     - text: Implementatiehandleiding - Offline beveiligd
       url: hololens-common-scenarios-offline-secure.md
+- title: Mixed Reality partnerresources
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Mixed Reality partnerresources
+      url: https://www.microsoft.com/en-us/hololens/mixed-reality-partners
+    - text: Mixed Reality partnerforum
+      url: https://techcommunity.microsoft.com/t5/mixed-reality-partners/bd-p/MixedRealityPartnersForum
+    - text: Mixed Reality Partner Blog
+      url: https://aka.ms/MRPartnerBlog
+    - text: Beginnen met ontwerpen en prototypen
+      url: https://docs.microsoft.com/en-us/windows/mixed-reality/design/design
+    - text: Platformmodus verplaatsen
+      url: /hololens/hololens2-moving-platform
+    - text: Milieuoverwegingen
+      url: /hololens/hololens-environment-considerations
 - title: Problemen oplossen
   linkLists:
   - linkListType: how-to-guide
@@ -94,7 +110,7 @@ landingContent:
       url: hololens-insider.md
   - linkListType: reference
     links:
-    - text: Waar u een HoloLens 2
+    - text: Waar kunt u HoloLens 2
       url: hololens2-purchase.md
     - text: Opties voor ondersteuning en hulp
       url: hololens2-support.md
@@ -110,7 +126,7 @@ landingContent:
       url: /windows/mixed-reality/design
     - text: Inleiding tot Mixed Reality ontwikkeling
       url: /windows/mixed-reality/development?tabs=unity
-    - text: Cloud Services overzicht
+    - text: Cloud Services Overzicht
       url: /windows/mixed-reality/mixed-reality-cloud-services#overview
     - text: Microsoft Mesh (preview)
       url: /mesh/overview
