@@ -1,10 +1,10 @@
 ---
 title: Stuur ons feedback
-description: Maak feedback die actie kan ondernemen voor HoloLens en Windows Mixed Reality met behulp van de Feedback-hub.
+description: Maak feedback die actie kan ondernemen HoloLens en Windows Mixed Reality ontwikkelaars met behulp van de Feedback-hub.
 ms.assetid: b9b24c72-ff86-44a9-b30d-dd76c49479a9
-author: mattzmsft
-ms.author: mazeller
-ms.date: 12/17/2020
+author: evmill
+ms.author: v-evmill
+ms.date: 9/28/2021
 ms.custom:
 - CI 116157
 - CSSTroubleshooting
@@ -12,29 +12,31 @@ audience: ITPro
 ms.prod: hololens
 ms.topic: article
 keywords: feedback, bug, probleem, fout, probleem, probleemoplossing, hulp
-manager: jarrettr
+manager: ranjibb
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 214b2b9cda33eb074b06a9157429d1f52bfe0716
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 40619e6d891ddd56d26be227df11aae758f880ae
+ms.sourcegitcommit: 0b42c241c44c98e94dc9043bd5891d26776bc745
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032602"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "129191206"
 ---
 # <a name="feedback-for-hololens"></a>Feedback voor HoloLens
 
-Gebruik de Feedback-hub ons te laten weten van welke functies u houdt, welke functies u zonder kunt doen en hoe iets beter kan. Het technische team gebruikt intern hetzelfde mechanisme om fouten bij te houden en op te lossen. Gebruik daarom Feedback-hub om eventuele fouten te rapporteren die u ziet. We luisteren!
+Gebruik de Feedback-hub ons te laten weten welke functies u wilt, welke functies u zonder kunt doen en hoe iets beter kan. Het technische team gebruikt intern hetzelfde mechanisme om fouten bij te houden en op te lossen. Gebruik daarom Feedback-hub om eventuele fouten te melden die u ziet. We luisteren!
 
-Feedback-hub is een uitstekende manier om het technische team te waarschuwen voor fouten en om ervoor te zorgen dat toekomstige updates gezond zijn en consistenter vrij zijn van fouten. Er Feedback-hub echter geen antwoord. Als u direct hulp nodig hebt, kunt u feedback geven, de samenvatting noteren die u hebt  opgegeven voor uw feedback en vervolgens contact op nemen met HoloLens-ondersteuning: gebruik de functie Delen in Feedback-hub om een directe koppeling naar de URL [te](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) delen. Feedback-hub dagelijks veel gegevens op haalt, helpt de URL ons uw feedback snel te identificeren.
+Feedback-hub is een uitstekende manier om het technische team te waarschuwen voor fouten en ervoor te zorgen dat toekomstige updates gezond zijn en consistenter vrij zijn van fouten. Er Feedback-hub echter geen antwoord. Als u direct hulp nodig hebt, kunt u feedback geven, de samenvatting noteren die u hebt  opgegeven voor uw feedback en vervolgens contact op nemen met HoloLens-ondersteuning. Gebruik de functie Delen in Feedback-hub om een directe koppeling naar de URL [te](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) delen. Feedback-hub dagelijks veel gegevens op te halen: de URL helpt ons uw feedback snel te identificeren.
 
-> [!NOTE]  
->  
-> - Zorg ervoor dat u de huidige versie van Feedback-hub. Als u dit wilt doen,  >  **selecteert Microsoft Store** en selecteert u vervolgens het beletsel **(...**). Selecteer vervolgens **Downloads en updates Updates**  >  **downloaden.**  
->  
-> - We raden u ten zeerste aan om de telemetrie van uw apparaat in te stellen op Optioneel om de best mogelijke gegevens te bieden voor het **oplossen van problemen.** U kunt deze waarde instellen tijdens de OOBE (Out-of-Box-Experience) of met behulp van de Instellingen app. Als u dit wilt doen met behulp Instellingen, **selecteert u**  >  **Start Instellingen**  >  **Privacy** App  >  **Diagnostics**  >  **op**.
+> [!NOTE]
+> Zorg ervoor dat u de huidige versie van Feedback-hub. Als u dit wilt doen,  >  **selecteert Microsoft Store** en selecteert u vervolgens het beletsel **(...**). Selecteer vervolgens **Downloads en updates Updates**  >  **downloaden.** Meer informatie over het [bijwerken van Store-apps.](holographic-store-apps.md#update-apps)
+
+> [!IMPORTANT]
+> We raden u ten zeerste aan om de telemetrie van uw apparaat in te stellen op Optioneel om de best mogelijke gegevens te bieden voor het **oplossen van problemen.** Als u deze extra telemetrie niet inschakelen, kan uw fout of feedback onbruikbaar worden.
+>
+> U kunt deze waarde instellen tijdens de OOBE (Out-of-Box-Experience) of met behulp van de Instellingen app. Als u dit wilt doen met behulp Instellingen, selecteert u  >  **Start Instellingen**  >  **Privacy**  >  **Diagnostics & feedback** Optional  >  **diagnostics data**  >  **On**.
 
 ## <a name="use-the-feedback-hub"></a>Gebruik de Feedback-hub
 
@@ -45,12 +47,12 @@ Feedback-hub is een uitstekende manier om het technische team te waarschuwen voo
    > Als u de lijst **Feedback-hub,** selecteert u **Alle apps om** de volledige lijst met apps op het apparaat weer te geven.
 
 1. Als u wilt zien of iemand anders soortgelijke feedback heeft gegeven, voert u een aantal trefwoorden over het onderwerp in het **zoekvak Feedback** in.
-1. Als u vergelijkbare feedback vindt, selecteert u deze,  voegt u eventuele aanvullende informatie toe in het vak Een opmerking schrijven en selecteert **u vervolgens Upvote**.
+1. Als u vergelijkbare feedback vindt, selecteert u deze,  voegt u eventuele aanvullende informatie toe in het vak Een opmerking schrijven en selecteert u **vervolgens Upvote**.
 1. Als u geen vergelijkbare feedback vindt, selecteert u **Nieuwe feedback toevoegen.**
 
    ![Voeg nieuwe feedback toe.](./images/hololens-feedback-1.png)
 
-1. Voer **in Uw feedback samenvatten** een korte samenvatting van uw feedback in. Voeg vervolgens details toe in **het vak Uitleg in meer** detail. Hoe meer details u op geeft, zoals hoe u dit probleem reproduceert en wat het effect ervan is, hoe nuttiger uw feedback is. Wanneer u klaar bent, selecteert u **Volgende.**
+1. Voer **in Uw feedback samenvatten** een korte samenvatting van uw feedback in. Voeg vervolgens details toe in **het vak Uitleg in meer** details. Hoe meer details u op geeft, zoals hoe u dit probleem reproduceert en wat het effect ervan is, hoe nuttiger uw feedback is. Wanneer u klaar bent, selecteert u **Volgende.**
 
 1. Selecteer een onderwerp **in Een categorie kiezen** en selecteer vervolgens een subcategorie in Een **subcategorie selecteren.** In de volgende tabel worden de categorieën beschreven die beschikbaar zijn in Windows Holographic-categorie.
 
@@ -59,7 +61,7 @@ Feedback-hub is een uitstekende manier om het technische team te waarschuwen voo
 
    |Categorie |Beschrijving |
    | --- | --- |
-   |Oog bijhouden |Feedback over het bijhouden van de ogen, aanmelden bij irissen of kalibratie. |
+   |Oog bijhouden |Feedback over het bijhouden van ogen, aanmelden bij irissen of kalibratie. |
    |Hologramnauwkeurigheid, stabiliteit en betrouwbaarheid |Feedback over hoe hologrammen in de ruimte worden weergegeven. |
    |Apps starten, plaatsen, aanpassen en afsluiten |Feedback over het starten of stoppen van 2D- of 3D-apps. |
    |Miracast |Feedback over Miracast. |
