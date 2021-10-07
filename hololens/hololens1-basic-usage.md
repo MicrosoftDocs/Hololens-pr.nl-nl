@@ -1,25 +1,25 @@
 ---
 title: Een HoloLens (eerste generatie)
-description: Ga aan de slag met een korte rondleiding door HoloLens interface (eerste generatie), functies voor handtracking en het gebruik van holografische toepassingen.
+description: Ga aan de slag met een korte rondleiding door HoloLens interface (1e generatie), functies voor handtracking en het gebruik van holografische toepassingen.
 ms.assetid: 064f7eb0-190e-4643-abeb-ed3b09312042
-ms.date: 9/16/2019
-ms.reviewer: jarrettr
-manager: jarrettr
+ms.date: 8/9/2021
+ms.reviewer: sean-kerawala
+manager: sean-kerawala
 keywords: hololens
 ms.prod: hololens
 ms.sitesec: library
-author: v-miegge
-ms.author: v-miegge
+author: qianw211
+ms.author: v-qianwen
 ms.topic: article
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 70ee881eb0c2ffaade173b31e5168371d042bbb2
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 3723a30499c0237f19d85b48109b40ca643c6bdb
+ms.sourcegitcommit: be1393d24a98381e37bd1f56183c1f381f87cbd4
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126032857"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129600743"
 ---
 # <a name="getting-around-hololens-1st-gen"></a>Een HoloLens (eerste generatie)
 
@@ -35,9 +35,9 @@ Het holografische frame positioneert uw hologrammen waar uw ogen het meest gevoe
 
 ## <a name="use-hololens-with-your-hands"></a>Gebruik HoloLens handen
 
-Het is HoloLens om uw telefoon te gebruiken. U kunt uw handen gebruiken om holografische vensters, menu's en knoppen te bewerken.  In plaats van te wijzen, te klikken of tikken, gebruikt u uw staren, uw stem en gebaren om apps en hologrammen te selecteren en om rond te HoloLens. [](hololens-cortana.md)
+Het is HoloLens u uw smartphone kunt gebruiken. U kunt uw handen gebruiken om holografische vensters, menu's en knoppen te bewerken.  In plaats van te wijzen, te klikken of tikken, gebruikt u uw staren, uw stem en gebaren om apps en hologrammen te selecteren en om rond te HoloLens. [](hololens-cortana.md)
 
-Wanneer u deze basisinteracties kent, is het HoloLens een uitlijning.
+Wanneer u deze basisinteracties kent, is het een HoloLens om te gaan.
 
 De eerste keer dat u uw toepassing gebruikt, worden de basisprincipes HoloLens. U vindt ook een zelfstudie over gebaren in het **menu Start.** Zoek naar de app Learn Gestures.
 
@@ -47,7 +47,7 @@ HoloLens sensoren die een paar meter aan beide zijden van u kunnen zien. Wanneer
 
 ![Afbeelding van het HoloLens frame voor handtracking.](./images/hololens-2-gesture-frame.png)
 
-### <a name="open-the-start-menu-with-bloom"></a>Open de Startmenu met een bloem
+### <a name="open-the-start-menu-with-bloom"></a>Open de Startmenu met de bloemen
 
 Het menu **Start openen:**
 
@@ -57,7 +57,7 @@ Het menu **Start openen:**
 
 ### <a name="select-holograms-with-gaze-and-air-tap"></a>Hologrammen selecteren met staren en tikken in de lucht
 
-Als u een app of ander hologram wilt selecteren, tikt u er in de lucht op terwijl u rechtstreeks naar het hologram kijkt dat u selecteert. Voer hiervoor de volgende stappen uit:
+Als u een app of ander hologram wilt selecteren, tikt u er in de lucht op terwijl u rechtstreeks naar het hologram kijkt dat u selecteert. Volg deze stappen:
 
 1. Kijk naar het hologram dat u wilt selecteren.
 1. Wijs uw wijsvinger recht naar het plafond.
@@ -78,9 +78,9 @@ U vindt uw geïnstalleerde apps in de [Startmenu](holographic-home.md) en er zij
 
 Open het **menu Start** en selecteer een app.
 
-Het gebruik van apps HoloLens werkt iets anders dan op een pc: sommige apps gebruiken een 2D-weergave en zien eruit als andere Windows toepassingen. Andere apps (immersieve apps) gebruiken een 3D-weergave en wanneer u ze start, worden ze de enige app die u ziet.
+Het gebruik van apps HoloLens is iets anders dan op een pc: sommige apps gebruiken een 2D-weergave en zien eruit als andere Windows toepassingen. Andere apps (immersieve apps) gebruiken een 3D-weergave en wanneer u ze start, worden ze de enige app die u ziet.
 
-Wanneer u een app-venster of startscherm voor apps zet, blijft het staan totdat u het verwijdert. U kunt deze hologrammen op elk moment in uw Mixed Reality Startpagina verplaatsen of het izeriseren.
+Wanneer u een app-venster of startscherm voor apps zet, blijft het staan totdat u het verwijdert. U kunt deze hologrammen op elk moment in uw Mixed Reality Startpagina verplaatsen of het izereren.
 
 ## <a name="move-resize-and-rotate-apps"></a>Apps verplaatsen, het izeseren en draaien
 
@@ -91,11 +91,11 @@ Het verplaatsen en het formaat van apps op HoloLens werkt iets anders dan op een
 
 ### <a name="move-an-app"></a>Een app verplaatsen
 
-Staren naar de app (op de titelbalk van een app-venster) en vervolgens een van de volgende stappen uit.
+Staren naar de app (op de titelbalk van een app-venster) en vervolgens een van de volgende dingen doen.
 
 - Tik en houd deze vast om de app te selecteren. Verplaats uw hand om de app te positionen en beweeg uw vinger om deze te plaatsen.
 - Selecteer **Aanpassen,** tik en houd uw hand vast om de app te positionen. Maak uw vinger omhoog om deze te plaatsen en selecteer vervolgens **Done**.
-- Selecteer **Aanpassen,** klik op de klikmer en houd deze vast en verplaats uw hand om de app te positionen. Laat de clicker los en selecteer vervolgens **Done**.
+- Selecteer **Aanpassen,** klik en houd de clicker vast en verplaats uw hand om de app te positionen. Laat de clicker los en selecteer vervolgens **Done.**
 
 > [!TIP]
 > Als u apps neer zet wanneer u ze verplaatst, houdt u uw hand in het bewegingsframe door deze te volgen met uw staren.
@@ -105,8 +105,8 @@ Staren naar de app (op de titelbalk van een app-venster) en vervolgens een van d
 Staren naar de app en vervolgens een van de volgende dingen doen.
 
 - Staren naar een hoek of rand van een app-venster en tikken en vasthouden. Beweeg uw hand om de grootte van de app te wijzigen en steek uw vinger omhoog wanneer u klaar bent.
-- Selecteer **Aanpassen.** Staren naar een van de blauwe vierkanten in de hoeken van de app, tikken en in de hand houden, en vervolgens uw hand bewegen om de app het ize te geven. Maak uw vinger omhoog om deze vrij te geven en selecteer vervolgens **Done**.
-- Selecteer **Aanpassen.** Kijk naar een van de blauwe vierkanten in de hoeken van de app, klik en houd de kliker vast en verplaats vervolgens uw hand om de app het ize te geven. Laat de clicker los en selecteer vervolgens **Done**.
+- Selecteer **Aanpassen.** Staren naar een van de blauwe vierkanten in de hoeken van de app, tikken en in de wacht houden, en vervolgens uw hand bewegen om de app het ize te geven. Maak uw vinger omhoog om deze vrij te geven en selecteer vervolgens **Done**.
+- Selecteer **Aanpassen.** Kijk naar een van de blauwe vierkanten in de hoeken van de app, klik en houd de kliker vast en verplaats vervolgens uw hand om de app het ize te geven. Laat de clicker los en selecteer vervolgens **Done.**
 
 > [!TIP]
 > In de modus Aanpassen kunt u elk hologram verplaatsen of het ize aanpassen.
@@ -119,15 +119,44 @@ Staren naar de app en met beide handen tikken en vasthouden om deze te selectere
 
 Staren naar de inhoud van het app-venster. Tik en houd uw hand iets omhoog of omlaag om de inhoud te schuiven.
 
-## <a name="meet-the-hololens-1st-gen-clicker"></a>Maak kennis met HoloLens clicker (eerste generatie)
+## <a name="share-your-hololens-with-multiple-people"></a>Uw HoloLens delen met meerdere personen
 
-De [HoloLens (eerste generatie) biedt](hololens1-clicker.md) u een andere manier om te communiceren met hologrammen. [Koppel het](hololens-connect-devices.md) aan uw HoloLens gebruik het vervolgens samen met uw staren om te selecteren, te schuiven en meer.
+Het is gebruikelijk om één HoloLens met veel mensen te delen of om veel mensen een set apparaten HoloLens delen.  
+
+### <a name="share-with-multiple-people-each-using-their-own-account"></a>Delen met meerdere personen, elk met hun eigen account
+
+**Vereiste:** HoloLens (eerste generatie) moet worden bijgewerkt [naar Windows Holographic for Business](hololens-upgrade-enterprise.md).
+
+Wanneer ze hun eigen Azure AD Azure Active Directory accounts gebruiken, kunnen meerdere gebruikers elk hun eigen gebruikersinstellingen en gebruikersgegevens op het apparaat behouden.
+
+Volg deze stappen om ervoor te zorgen dat meerdere personen hun eigen accounts op uw HoloLens gebruiken:
+
+1. Wanneer u het apparaat in stelt, selecteert u Mijn werk of **school is** eigenaar en meldt u zich aan met een Azure AD-account.
+1. Nadat u de installatie hebt voltooien, moet u ervoor zorgen dat de accountinstellingen (**Instellingen**  >  **Accounts**) **Andere gebruikers bevatten.**
+
+Als u HoloLens, moet elke gebruiker de volgende stappen volgen:
+
+1. Als een andere gebruiker het apparaat heeft gebruikt, drukt u eenmaal op de aan/uit-knop om stand-by te gaan. Druk vervolgens nogmaals op de aan/uit-knop om terug te keren naar het vergrendelingsscherm.
+
+1. Gebruik de referenties van uw Azure AD-account om u aan te melden bij het apparaat. Als het de eerste keer is dat u het [](hololens-calibration.md) apparaat gebruikt, moet u de HoloLens naar uw eigen ogen kalibreren.
+
+Als u een lijst met de apparaatgebruikers wilt zien of als u een gebruiker van het apparaat wilt verwijderen, gaat u **naar Instellingen**  >  **Accounts**  >  **Andere gebruikers.**
+
+### <a name="share-with-multiple-people-all-using-the-same-account"></a>Delen met meerdere personen, allemaal met hetzelfde account
+
+Meerdere gebruikers kunnen ook een HoloLens delen met behulp van één gebruikersaccount.
+
+Gebruikers die hetzelfde account delen, moeten de HoloLens **opnieuw** Instellingen.  Lees meer over [kalibratie](hololens-calibration.md).
+
+## <a name="meet-the-hololens-1st-gen-clicker"></a>Maak kennis met de HoloLens (eerste generatie) Clicker
+
+De [HoloLens (1e generatie) biedt](hololens1-clicker.md) u een andere manier om te communiceren met hologrammen. [Koppel deze](hololens-connect-devices.md) aan uw HoloLens en gebruik deze vervolgens samen met uw staren om te selecteren, te schuiven en meer.
 
 ## <a name="next-steps"></a>Volgende stappen
 
-Gefeliciteerd! u bent klaar om HoloLens (1e generatie) te gebruiken.
+Gefeliciteerd! u bent klaar om de HoloLens (eerste generatie) te gebruiken.
 
-U kunt nu uw HoloLens (eerste generatie) configureren om te voldoen aan uw specifieke behoeften.
+Nu kunt u uw HoloLens (eerste generatie) configureren om te voldoen aan uw specifieke behoeften.
 
 [Verbinding maken Bluetooth-apparaten zoals muis en toetsenbord](hololens-connect-devices.md)
 
@@ -139,5 +168,5 @@ Als u geen hologrammen ziet die u hebt geplaatst tijdens het gebruik van HoloLen
 
 - Zorg ervoor dat u in het rechtergebied kijkt. Vergeet niet dat &mdash; hologrammen blijven waar u ze hebt gelaten.
 - Zorg ervoor dat u zich in een goed belichte ruimte zonder veel directe steno hebt.
-- Wachten. Wanneer HoloLens problemen hebt met het herkennen van uw ruimte, kan het tot een minuut duren voor de eerder geplaatste hologrammen opnieuw worden gebruikt.
-- Als het probleem zich blijft voordoen, kunt u uw Hologrammen-opslaggegevens in **Instellingen** System Hologrammen verwijderen en vervolgens hologrammen opnieuw in Mixed Reality Startpagina  >    >  plaatsen.
+- Wachten. Wanneer HoloLens uw ruimte niet kunt herkennen, kan het tot een minuut duren voor eerder geplaatste hologrammen opnieuw worden gebruikt.
+- Als het probleem zich blijft voordoen, kunt u uw Hologrammen-opslaggegevens in **Instellingen** System Hologrammen verwijderen en vervolgens weer hologrammen in Mixed Reality Startpagina  >    >  plaatsen.
