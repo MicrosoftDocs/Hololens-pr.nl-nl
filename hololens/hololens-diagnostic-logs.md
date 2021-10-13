@@ -3,7 +3,7 @@ title: Diagnostische gegevens verzamelen en gebruiken van HoloLens apparaten
 description: Meer informatie over het verzamelen, gebruiken en bewaren van diagnostische gegevens van HoloLens apparaten.
 author: Teresa-Motiv
 ms.author: v-tea
-ms.date: 10/15/2020
+ms.date: 9/12/2021
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e977d0d42831760749bb5c6c469d2482e2ca72e7
-ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
+ms.openlocfilehash: 4f62a70430d78087157b3adcdf76af53183db708
+ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "127833519"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129924410"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>Diagnostische gegevens verzamelen en gebruiken van HoloLens apparaten
 
@@ -35,7 +35,7 @@ HoloLens gebruikers en beheerders kunnen kiezen uit vier verschillende methoden 
 - Offlinediagnose
 
 > [!IMPORTANT]  
-> Diagnostische logboeken van apparaten bevatten persoonlijk identificeerbare informatie (PII), zoals over welke processen of toepassingen de gebruiker start tijdens typische bewerkingen. Wanneer meerdere gebruikers een HoloLens-apparaat delen (bijvoorbeeld wanneer gebruikers zich op hetzelfde apparaat aanmelden met behulp van verschillende Microsoft Azure Active Directory-accounts (Azure AD), kunnen de diagnostische logboeken PII-gegevens bevatten die van toepassing zijn op meerdere gebruikers. Zie Privacyverklaring van [Microsoft voor meer informatie.](https://privacy.microsoft.com/privacystatement)
+> Diagnostische logboeken van apparaten bevatten persoonsgegevens, zoals over welke processen of toepassingen de gebruiker start tijdens typische bewerkingen. Wanneer meerdere gebruikers een HoloLens-apparaat delen (bijvoorbeeld wanneer gebruikers zich op hetzelfde apparaat aanmelden met behulp van verschillende Microsoft Azure Active Directory-accounts (Azure AD), kunnen de diagnostische logboeken PII-gegevens bevatten die van toepassing zijn op meerdere gebruikers. Zie Privacyverklaring van [Microsoft voor meer informatie.](https://privacy.microsoft.com/privacystatement)
 
 In de volgende tabel worden verschillende verzamelingsmethoden vergeleken. De namen van de methoden zijn gekoppeld aan gedetailleerdere informatie in de secties na de tabel.
 
@@ -56,7 +56,7 @@ Een HoloLens kan de Microsoft Feedback-hub desktop-app gebruiken om diagnostisch
 > **Commerciële of zakelijke gebruikers:** Als u de Feedback-hub-app gebruikt om een probleem te melden dat betrekking heeft op MDM, inrichting of een ander aspect van apparaatbeheer, wijzigt u de categorie van de app in de categorie Enterprise **Management**  >  **Device.**
 
 >[!IMPORTANT]
-> Als u de best mogelijke gegevens wilt bieden voor het oplossen van problemen, raden we u ten zeerste aan de telemetrie van uw apparaat in te stellen op **Optioneel.** U kunt deze waarde instellen tijdens de OUT-of-Box-Experience  (OOBE) of met behulp van de Instellingen app. Als u dit wilt doen met behulp Instellingen, selecteert u **> Instellingen > Privacy > App Diagnostics > Op**.
+> Als u de best mogelijke gegevens wilt bieden voor het oplossen van problemen, raden we u ten zeerste aan de telemetrie van uw apparaat in te stellen op **Optioneel.** U kunt deze waarde instellen tijdens de Out-of-Box-Experience  (OOBE) of met behulp van de Instellingen app. Als u dit wilt doen met behulp Instellingen, selecteert u **> Instellingen > Privacy > App Diagnostics > Aan.**
 
 ### <a name="prerequisites"></a>Vereisten
 
@@ -78,14 +78,14 @@ De Feedback-hub biedt twee locaties voor de gebruiker om diagnostische gegevens 
 
 ## <a name="settings-troubleshooter"></a>Instellingen Probleemoplosser
 
-Een HoloLens kan de app **Instellingen** op het apparaat gebruiken om problemen op te lossen en diagnostische gegevens te verzamelen. Voer hiervoor de volgende stappen uit:
+Een HoloLens kan de app Instellingen **op** het apparaat gebruiken om problemen op te lossen en diagnostische gegevens te verzamelen. Voer hiervoor de volgende stappen uit:
 
 1. Open de Instellingen app en selecteer **de pagina &**  >  **Beveiligingsproblemen** bijwerken.
 1. Selecteer het juiste gebied en selecteer **Starten.**
 1. Reproduceer het probleem.
-1. Nadat u het probleem hebt gereproduceerd, gaat u terug Instellingen selecteert u **Stoppen.**
+1. Nadat u het probleem hebt gereproduceerd, gaat u terug Instellingen selecteert u **stoppen.**
 
-Een gebruiker kan ook het gedrag van  Terugvaldiagnose configureren vanuit de Instellingen app. Ga naar **de pagina Privacy -> probleemoplossing** om deze instelling te configureren.
+Een gebruiker kan ook het gedrag van  Terugvaldiagnose configureren vanuit de Instellingen app. **Navigeer naar de > Privacy ->** deze instelling te configureren.
 > [!NOTE]
 > Als er MDM-beleid is geconfigureerd voor het apparaat, kan de gebruiker dat gedrag niet overschrijven.
 
@@ -96,7 +96,7 @@ Op builds [Windows Holographic, versie 21H1](hololens-release-notes.md#windows-h
 
 ### <a name="prerequisites"></a>Vereisten
 
-- De **Instellingen-app** is geïnstalleerd op het apparaat en is beschikbaar voor de gebruiker.
+- De **Instellingen-app** wordt geïnstalleerd op het apparaat en is beschikbaar voor de gebruiker.
 
 ### <a name="data-locations-access-and-retention"></a>Gegevenslocaties, toegang en retentie
 
@@ -113,11 +113,11 @@ De diagnostische gegevens blijven op deze locaties totdat de gebruiker deze verw
 
 ### <a name="view-diagnostic-report"></a>Diagnostisch rapport weergeven
 
-Als u de MDM Diagnostics op HoloLens 2 wilt weergeven, selecteert u uw Wi-Fi-pictogram en navigeert u vervolgens naar Instellingen Accounts Access work **or** school en selecteert  ->    >   u **Export your management logs**. HoloLens verzendt de logboekbestanden naar uw account en geeft hun locatie weer op uw desktopcomputer.
+Als u de MDM Diagnostics op HoloLens 2 wilt weergeven, selecteert u het Wi-Fi-pictogram en navigeert u naar **Instellingen** Accounts Toegang tot werk of school en selecteert u Uw beheerlogboeken  ->    >   **exporteren.** HoloLens verzendt de logboekbestanden naar uw account en geeft hun locatie weer op uw desktopcomputer.
 
 ## <a name="diagnosticlog-csp"></a>DiagnosticLog-CSP
 
-In een MDM-omgeving (Mobile Device Management) kan de IT-beheerder de [CSP (DiagnosticLog](/windows/client-management/mdm/diagnosticlog-csp) Configuration Service Provider) gebruiken om diagnostische instellingen te configureren op ingeschreven HoloLens apparaten. De IT-beheerder kan deze instellingen configureren voor het verzamelen van logboeken van ingeschreven apparaten.
+In een MDM-omgeving (Mobile Device Management) kan de IT-beheerder de DiagnosticLog-configuratieserviceprovider [(CSP)](/windows/client-management/mdm/diagnosticlog-csp) gebruiken om diagnostische instellingen te configureren op geregistreerde HoloLens apparaten. De IT-beheerder kan deze instellingen configureren voor het verzamelen van logboeken van ingeschreven apparaten.
 
 Meer informatie:
 - [Diagnostische gegevens verzamelen van een Windows apparaat](/mem/intune/remote-actions/collect-diagnostics)
@@ -132,7 +132,7 @@ Meer informatie:
 
 Omdat het apparaat deel uitmaakt van de beheerde omgeving, geeft de gebruiker impliciet toestemming voor beheerderstoegang tot diagnostische gegevens.
 
-De IT-beheerder gebruikt de DiagnosticLog-CSP om het beleid voor gegevensopslag, -retentie en -toegang te configureren, inclusief de beleidsregels die van toepassing zijn op het volgende:
+De IT-beheerder gebruikt de DiagnosticLog-CSP om het beleid voor gegevensopslag, -retentie en -toegang te configureren, met inbegrip van de beleidsregels die van toepassing zijn op het volgende:
 
 - De cloudinfrastructuur die de diagnostische gegevens opgeslagen.
 - De bewaarperiode voor de diagnostische gegevens.
@@ -140,16 +140,16 @@ De IT-beheerder gebruikt de DiagnosticLog-CSP om het beleid voor gegevensopslag,
 
 ## <a name="offline-diagnostics"></a>Offlinediagnose
 
-In situaties waarin het apparaat geen diagnostische gegevens kan verzamelen via Feedback-hub of de probleemoplosser Instellingen, kunt u diagnostische gegevens handmatig verzamelen. Een scenario waarin dit nodig is, is wanneer het apparaat geen verbinding kan maken met Wi-Fi of wanneer u geen toegang hebt tot andere methoden die hierboven worden vermeld. De diagnostische gegevens verzamelen crashdumps en logboeken van het apparaat die een Ondersteuningstechnicus van Microsoft helpen bij het isoleren van problemen.
+In situaties waarin het apparaat geen diagnostische gegevens kan verzamelen via Feedback-hub of de probleemoplosser van Instellingen, kunt u diagnostische gegevens handmatig verzamelen. Een scenario waarin dit nodig is, is wanneer het apparaat geen verbinding kan maken met Wi-Fi of wanneer u geen toegang hebt tot andere hierboven genoemde methoden. De diagnostische gegevens verzamelen crashdumps en logboeken van het apparaat die een Ondersteuningstechnicus van Microsoft helpen bij het isoleren van problemen.
 
 Dit werkt wanneer het apparaat wordt weergegeven in Verkenner nadat het via een USB-kabel is verbonden met een pc.
 
 > [!NOTE]
-> Het genereren en beheren van offline diagnostische gegevens wordt anders beheerd, afhankelijk van de versie van uw besturingssysteem. Voorheen werd dit beheerd door de telemetrie-instelling, maar dit wordt nu rechtstreeks beheerd via MDM-beleid. Als deze instelling of het MDM-beleid is uitgeschakeld, kunnen er geen diagnostische logboeken worden verzameld met behulp van dit mechanisme.
+> Het genereren en beheren van offlinediagnose wordt anders beheerd, afhankelijk van de versie van uw besturingssysteem. Voorheen werd het beheerd door de telemetrie-instelling, maar wordt nu rechtstreeks beheerd via MDM-beleid. Als deze instelling of het MDM-beleid is uitgeschakeld, kunnen er geen diagnostische logboeken worden verzameld met behulp van dit mechanisme.
 
 Gedrag [vóór Windows Holographic, versie 20H2:](hololens-release-notes.md#windows-holographic-version-20h2)
- - Offlinediagnose is alleen ingeschakeld wanneer de gebruiker oobe of de beleidswaarde [System\AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) doormaakt, is ingesteld op Volledig (Basic is de standaardwaarde op HoloLens). 
-- Als u Offlinediagnose wilt uitschakelen, gaat **u Instellingen App > Privacy-pagina** en **selecteert u Basic** in **Diagnostische gegevens.** Op builds waarbij offlinediagnose afhankelijk is van de instelling van telemetrie, heeft dit alleen invloed op het al dan niet verzamelen van logboeken. Het heeft geen invloed op welke bestanden worden verzameld.
+ - Offlinediagnose is alleen ingeschakeld wanneer de gebruiker oobe of de beleidswaarde [System\AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) doormaakt, is ingesteld op Volledig (Basic is de standaardwaarde voor HoloLens). 
+- Als u Offlinediagnose wilt uitschakelen, gaat **u Instellingen App > Privacy-pagina** en **selecteert u Basic** in **Diagnostische gegevens.** Op builds waarbij offlinediagnose afhankelijk is van telemetrie-instellingen, heeft dit alleen invloed op het al dan niet verzamelen van logboeken. Het heeft geen invloed op welke bestanden worden verzameld.
 - Als het apparaat is vergrendeld, worden de logboeken niet weergegeven.
 
 Op builds [Windows Holographic, versie 20H2](hololens-release-notes.md#windows-holographic-version-20h2) en hoger:
@@ -160,21 +160,54 @@ Bekijk deze video voor meer informatie.
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
 
-Volg deze stappen voor het verzamelen van diagnostische gegevens:
+Volg deze stappen om diagnostische gegevens te verzamelen:
 
-1.  Verbinding maken het apparaat met een USB-kabel op uw pc.
+1.  Verbinding maken apparaat met een USB-kabel naar uw pc.
 
 2.  Navigeer in Verkenner op uw pc naar **'Deze pc \<hololens-device> \Interne Storage'**.
 
-3.  Als de **map Storage** niet wordt weergeven, wacht het apparaat tot een gebruiker zich heeft aanmelden. U kunt het apparaat aanmelden of de stroomcyclus van het apparaat ingedrukt houden door de aan/uit-knop 10 seconden ingedrukt te houden.
+3.  Als de **map Storage** niet wordt weergeven, wacht het apparaat tot een gebruiker zich heeft aanmelden. U kunt het apparaat aanmelden of het apparaat aan-/uit-kringen door de aan/uit-knop 10 seconden ingedrukt te houden.
 
-4.  Druk op de knoppen **Power + Volume Down** en laat deze onmiddellijk los.
+4.  Druk op de knoppen **Power + Volume Down en** laat deze onmiddellijk los.
 
-5.  Wacht een minuut totdat het apparaat de ZIP-archieven heeft voorbereid. (Een tijdelijk bestand met de naam HololensDiagnostics.temp kan zichtbaar worden terwijl het apparaat de ZIP-archieven genereert. U hoeft dat bestand niet te openen of op te slaan. Wanneer het proces is voltooien, wordt dit vervangen door de ZIP-archieven.)
+5.  Wacht een minuut totdat het apparaat de ZIP-archieven heeft voorbereid. (Een tijdelijk bestand met de naam HololensDiagnostics.temp kan zichtbaar worden terwijl het apparaat de ZIP-archieven genereert. U hoeft dit bestand niet te openen of op te slaan. Wanneer het proces is voltooien, wordt het vervangen door de ZIP-archieven.)
 
-6.  Vernieuw verkenner en navigeer naar de map **'\Documents'.**
+6.  Vernieuw Verkenner en navigeer naar de map **\Documents.**
 
 7.  Kopieer de ZIP-bestanden voor diagnostische gegevens en deel deze met het ondersteuningsteam van Microsoft.
 
-    > [!NOTE]
-    > Sommige diagnostische ZIP-bestanden kunnen PII bevatten.
+> [!NOTE]
+> Sommige diagnostische ZIP-bestanden kunnen PII bevatten.
+
+### <a name="offline-diagnostics-notifications"></a>Offline diagnostische meldingen
+
+- Geïntroduceerd in [Windows Holographic, versie 21H2.](hololens-release-notes.md#windows-holographic-version-21h2)
+
+Dit is een update voor een bestaande functie met de [naam Offlinediagnose.](hololens-diagnostic-logs.md#offline-diagnostics) Voorheen was er geen duidelijke indicator voor gebruikers dat ze de diagnostische verzameling hadden geactiveerd of dat deze was voltooid.
+Nu toegevoegd aan Windows Insider-builds, zijn er twee soorten feedback voor offlinediagnose. De eerste zijn pop-upmeldingen die worden weergegeven voor zowel wanneer de verzameling wordt gestart als voltooid. Deze worden weergegeven wanneer de gebruiker is aangemeld en visuals heeft.
+
+![Pop-up voor het verzamelen van logboeken.](./images/logcollection1.jpg)
+
+![Pop-up wanneer het verzamelen van logboeken is voltooid.](./images/logcollection2.jpg)
+
+Omdat gebruikers vaak offlinediagnose gebruiken als mechanisme voor het verzamelen van terugvallogboeken wanneer ze geen toegang hebben tot een weergave, zich niet kunnen aanmelden of zich nog steeds in OOBE kunnen aanmelden, wordt er ook een audio-cue afgespeeld wanneer logboeken worden verzameld. Dit geluid wordt afgespeeld naast de pop-upmelding.
+
+Deze nieuwe functie wordt ingeschakeld wanneer uw apparaat wordt bijgewerkt en hoeft niet te worden ingeschakeld of beheerd. In elk geval dat deze nieuwe feedback niet kan worden weergegeven of gehoord, wordt offlinediagnose nog steeds gegenereerd.
+
+We hopen dat het met deze nieuwere toevoeging van feedback gemakkelijker is om diagnostische gegevens te verzamelen en sneller in staat te zijn om uw problemen op te lossen.
+
+### <a name="low-storage-log-collection-improvements"></a>Verbeteringen in de verzameling met logboeken met weinig opslag
+
+- Geïntroduceerd in [Windows Holographic, versie 21H2.](hololens-release-notes.md#windows-holographic-version-21h2)
+
+In scenario's waarin een apparaat weinig schijfruimte lijkt te hebben wanneer diagnostische logboeken worden verzameld, wordt er een extra rapport met de **StorageDiagnostics.zip** gemaakt. De drempelwaarde voor lage opslag wordt automatisch bepaald door de Windows [opslag te bepalen.](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)
+
+## <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>Geavanceerd diagnostisch rapport weergeven in Instellingen op HoloLens
+
+- Geïntroduceerd in [Windows Holographic, versie 21H2.](hololens-release-notes.md#windows-holographic-version-21h2)
+
+Voor beheerde apparaten bij het oplossen van problemen is het bevestigen dat een verwachte beleidsconfiguratie wordt toegepast een belangrijke stap. Voorheen moest dit voor deze nieuwe functie buiten het apparaat worden uitgevoerd via MDM of in de buurt van het apparaat na het exporteren van diagnostische MDM-logboeken die zijn verzameld via  ->  **Instellingen-accounts** Toegang tot werk of  >  **school,** en selecteert u **Uw beheerlogboeken** exporteren en weergeven op een pc in de buurt.
+
+De MDM-diagnostische gegevens kunnen nu worden weergegeven op het apparaat met behulp van de Edge-browser. Als u het diagnostischE MDM-rapport eenvoudiger wilt weergeven, gaat u naar de pagina Werk- of schoolrapport openen en **selecteert u Geavanceerd diagnostisch rapport weergeven.** Hiermee wordt het rapport gegenereerd en geopend in een nieuw Edge-venster.
+
+![Bekijk het geavanceerde diagnostische rapport in Instellingen app.](./images/view-advanced-diagnostic-report.jpg)

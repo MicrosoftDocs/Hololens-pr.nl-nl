@@ -1,22 +1,22 @@
 ---
 title: Microsoft Store voor Bedrijven
-description: Meer informatie over het werken met de Microsoft Store voor Bedrijven om uw mixed reality naar uw bedrijf te publiceren.
+description: Meer informatie over het werken met de Microsoft Store voor Bedrijven om uw mixed reality te publiceren naar uw bedrijf.
 keywords: Microsoft Store voor Bedrijven, msfb, app-implementatie, store
 author: evmill
 ms.author: v-evmill
-ms.date: 9/22/2021
+ms.date: 10/13/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: HoloLens
 manager: yannisle
-ms.openlocfilehash: b60795d7a5a4f9fab980ee16a23250faa6025bb5
-ms.sourcegitcommit: ab86b31357004726d8a28ebae76123728adc8e59
+ms.openlocfilehash: 5bc719539aaa254b8aacb05e24554152231f7e5a
+ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "128306145"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129924319"
 ---
 # <a name="microsoft-store-for-business"></a>Microsoft Store voor Bedrijven
 
@@ -26,7 +26,7 @@ U kunt Microsoft Store apps en persoonlijke Line-Of-Business-apps in één inven
 
 Wanneer Microsoft Store voor Bedrijven wordt gebruikt door een eindgebruiker, wordt de app Microsoft Store start. Zodra de gebruiker is gestart, kan het tabblad met de naam van de organisatie worden geselecteerd. Vervolgens worden de apps weergegeven die voor hen of dat apparaat beschikbaar zijn.
 
-> [!Note] 
+> [!Note]
 > Microsoft Store voor Bedrijven apps worden niet automatisch gedownload (push) naar apparaten. Apps van de Microsoft Store voor Bedrijven kunnen echter worden gekoppeld aan uw MDM-server (Device Management) om apps te targeten en te synchroniseren met apparaten.
 
 Ga naar de volgende pagina's voor meer informatie over het gebruik van de Microsoft Store voor Bedrijven:
@@ -39,3 +39,17 @@ Als u uw Microsoft Store voor Bedrijven wilt koppelen, gaat u naar [Uw Microsoft
 
 > [!Tip]
 > Meer informatie over [het distribueren van offline-apps](/microsoft-store/distribute-offline-apps) wanneer u apps zoals Advanced Recovery Companion (ARC) en Windows Configuration Designer (WCD) gebruikt.
+
+## <a name="use-only-private-store-apps-for-microsoft-store"></a>Alleen persoonlijke Store-apps gebruiken voor Microsoft Store
+
+- Geïntroduceerd in [Windows Holographic, versie 21H2.](hololens-release-notes.md#windows-holographic-version-21h2)
+
+Het beleid RequirePrivateStoreOnly is ingeschakeld voor HoloLens. Met dit beleid kan Microsoft Store app zodanig worden geconfigureerd dat alleen de persoonlijke opslag wordt weer geven die voor uw organisatie is geconfigureerd. De toegang beperken tot alleen de apps die u beschikbaar hebt gemaakt.
+
+Meer informatie over [ApplicationManagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+
+## <a name="smart-retry-for-app-updates"></a>Slim opnieuw proberen voor app-updates
+
+- Geïntroduceerd in [Windows Holographic, versie 21H2.](hololens-release-notes.md#windows-holographic-version-21h2)
+
+Nu ingeschakeld voor HoloLens is een nieuw beleid waarmee IT-beheerders een terugkerende of eenmalige datum kunnen instellen om apps opnieuw op te starten waarvan de update is mislukt omdat de app in gebruik is, waardoor de update kan worden toegepast. Deze kunnen worden ingesteld op basis van een aantal verschillende triggers, zoals een gepland tijdstip of aanmelding. Zie [ApplicationManagement/ScheduleForceRestartForUpdateFailures](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)voor meer informatie over het gebruik van dit beleid.
