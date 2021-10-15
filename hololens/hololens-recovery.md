@@ -1,7 +1,7 @@
 ---
 title: Opnieuw opstarten, opnieuw instellen of HoloLens
 ms.reviewer: Follow along with our basic and advanced instructions for rebooting or resetting your HoloLens 2 device.
-description: Advanced Recovery Companion gebruiken om een afbeelding te flashen om een HoloLens 2.
+description: Advanced Recovery Companion gebruiken om een afbeelding te flashen voor HoloLens 2.
 keywords: how-to, reboot, reset, recover, hard reset, soft reset, power cycle, HoloLens, shut down, arc, advanced recovery companion
 ms.prod: hololens
 ms.sitesec: library
@@ -16,26 +16,26 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e9aad32891bb093cbce18671b76549788b19afcb
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 0efcfd0adf9bd380007e5ed4f905cb130b76d4b8
+ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126036171"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130034219"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>Opnieuw opstarten, opnieuw instellen of HoloLens 2
 
 >[!IMPORTANT]
 > Voordat u een probleemoplossingsprocedure start, moet u ervoor zorgen dat uw apparaat, indien mogelijk, wordt op geladen tot **20 tot 40** procent van de accucapaciteit. De [accuindicatorlichten onder](hololens2-setup.md#lights-that-indicate-the-battery-level) de aan/uit-knop zijn een snelle manier om de accucapaciteit te controleren zonder u aan te melden bij het apparaat.
 
-Gebruik de [kabel en de USB Type-C-kabel](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) die bij de HoloLens 2 omdat dit de beste manier is om uw apparaat op te laden. De goederen leveren 18 W aan stroom (9V bij 2A). Door gebruik te maken van de meegeleverde HoloLens 2 de accu in minder dan 65 minuten vol wanneer het apparaat stand-by is. Als deze accessoires niet beschikbaar zijn, moet u ervoor zorgen dat de beschikbare thee ten minste 15W aan stroom kan ondersteunen.
+Gebruik de [kabel en de USB Type-C-kabel](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1) die bij de HoloLens 2 omdat dit de beste manier is om uw apparaat op te laden. De goederen leveren 18 W aan stroom (9V bij 2A). Met behulp van de meegeleverde wallen kunnen HoloLens 2 de accu in minder dan 65 minuten vol laden wanneer het apparaat stand-by is. Als deze accessoires niet beschikbaar zijn, moet u ervoor zorgen dat de beschikbare thee ten minste 15W aan stroom kan ondersteunen.
 
 > [!NOTE]
 > Vermijd indien mogelijk het gebruik van een pc om het apparaat via USB op te laden, wat traag is.
 
 Als het apparaat correct is opgestart en actief is, zijn er drie manieren om het laadniveau van de accu te controleren:
 
-- Vanuit het hoofdmenu van de HoloLens gebruikersinterface van het apparaat.
+- In het hoofdmenu van de HoloLens gebruikersinterface van het apparaat.
 - Bekijk de LED dicht bij de aan/uit-knop (voor een kosten van 40 procent ziet u ten minste twee solide LED's).
     - Wanneer het apparaat wordt op laden, wordt de accu-indicator licht om het huidige laadniveau aan te geven.  Het laatste licht vervaagt in en uit om aan te geven dat de kosten actief zijn.
     - Wanneer uw HoloLens is aan, geeft de batterijindicator het accuniveau in vijf stappen weer.
@@ -43,15 +43,21 @@ Als het apparaat correct is opgestart en actief is, zijn er drie manieren om het
     - Als het accuniveau kritiek laag is en u het apparaat probeert in te zetten, gaat er kort één lampje uit en gaat u uit.
 - Open Verkenner op uw host-pc **en** zoek uw apparaat HoloLens 2 aan de linkerkant onder **Deze pc.** Klik met de rechtermuisknop op het apparaat en selecteer **Eigenschappen.** In een dialoogvenster wordt het acculadingsniveau weergegeven.
 
-   ![In HoloLens 2 scherm eigenschappen wordt het niveau van de batterijwijziging weergegeven.](images/ResetRecovery2.png)
+   ![Een scherm HoloLens 2 eigenschappen toont het niveau van de batterijwijziging.](images/ResetRecovery2.png)
 
-Als het apparaat niet kan worden opgestart naar het opstartmenu, noteer dan de LED-weergave en apparaatinsemulatie op de host-pc. Volg vervolgens de gids [voor probleemoplossing.](hololens-troubleshooting.md) Als de status van het apparaat niet overeen komt met een van de statussen die worden vermeld in de gids voor probleemoplossing, voert u de [procedure](hololens-recovery.md#hard-reset-procedure) voor het opnieuw instellen uit met het apparaat dat is verbonden met de voeding en niet met uw host-pc. Wacht ten minste één uur totdat het apparaat wordt op belast.
+Als het apparaat niet kan worden opgestart naar het opstartmenu, noteer dan de LED-weergave en apparaatinsemulatie op de host-pc. Volg vervolgens de gids [voor probleemoplossing.](hololens-troubleshooting.md) Als de status van het apparaat niet overeen komt met een van de statussen die worden vermeld in de gids voor probleemoplossing, voert u de [procedure](hololens-recovery.md#hard-restart-procedure) voor het opnieuw instellen uit met het apparaat dat is verbonden met de voeding en niet met uw host-pc. Wacht ten minste één uur totdat het apparaat wordt op belast.
 
-## <a name="reset-the-device"></a>Het apparaat opnieuw instellen
+> [!NOTE]
+> Laten we beginnen met het definiëren van termen.\
+> Opnieuw opstarten betekent gewoon dat het apparaat uit en in moet worden schakelen.\
+> 'Opnieuw instellen' betekent dat het apparaat wordt teruggezet naar de standaardinstellingen via Instellingen gebruikersinterface om de huidige installatie te installeren.\
+> Reflash betekent dat het apparaat is verbonden met een pc en dat er een nieuwe installatieafbeelding (optioneel een andere) moet worden geïnstalleerd.
 
-Onder bepaalde omstandigheden moet u het apparaat mogelijk handmatig opnieuw instellen zonder de gebruikersinterface van de software te gebruiken.
+## <a name="restart-the-device"></a>Start het apparaat opnieuw op
 
-### <a name="standard-procedure"></a>Standaardprocedure
+Onder bepaalde omstandigheden moet u het apparaat mogelijk handmatig opnieuw opstarten zonder de gebruikersinterface van de software te gebruiken. Dit kan u helpen bij het oplossen van een probleem dat u ondervindt zonder dat u uw apparaat opnieuw moet instellen of een reflash moet gebruiken.
+
+### <a name="standard-restart-procedure"></a>Standaardprocedure voor opnieuw opstarten
 
 1. Koppel de Type-C-kabel los om het apparaat los te koppelen van de voeding of de host-pc.
 
@@ -63,7 +69,7 @@ Onder bepaalde omstandigheden moet u het apparaat mogelijk handmatig opnieuw ins
 
    ![HoloLens 2 MicrosoftOloLensRecovery-devive manager.](images/MicrosoftHoloLens_DeviceManager.png)
 
-### <a name="hard-reset-procedure"></a>Procedure voor hard opnieuw instellen
+### <a name="hard-restart-procedure"></a>Procedure voor hard opnieuw opstarten
 
 Als de standaardprocedure voor opnieuw instellen niet werkt, gebruikt u de procedure voor hard opnieuw instellen:
 
@@ -92,23 +98,23 @@ Er zijn twee manieren om het apparaat te gebruiken. Voor beide moet u eerst [Adv
 >[!WARNING]
 >Als u een reflash op uw apparaat gebruikt, worden al uw persoonlijke gegevens, apps en instellingen gewist, inclusief informatie over het opnieuw instellen van TPM.
 
-Advanced Recovery Companion is standaard ingesteld om de meest recente build van de functiere release te downloaden; Zie voor meer informatie over de nieuwste functieversie [HoloLens 2 opmerkingen bij de release.](hololens-release-notes.md) Als u het meest recente HoloLens 2 pakket met volledige flashupdate (FFU) wilt downloaden om uw apparaat te reflashen via Advanced Recovery Companion, downloadt u de meest recente maandelijkse HoloLens 2 afbeelding: [https://aka.ms/hololens2download](https://aka.ms/hololens2download) . Deze versie is de meest recente algemeen beschikbare build.
+Advanced Recovery Companion is standaard ingesteld om de meest recente build van de functiere release te downloaden. Zie de opmerkingen bij de release voor HoloLens 2 informatie over [de nieuwste functieversie.](hololens-release-notes.md) Als u het meest recente HoloLens 2 pakket met volledige flashupdate (FFU) wilt downloaden om uw apparaat te reflashen via Advanced Recovery Companion, downloadt u de meest recente maandelijkse HoloLens 2 afbeelding: [https://aka.ms/hololens2download](https://aka.ms/hololens2download) . Deze versie is de meest recente algemeen beschikbare build.
 
 Voordat u de reflash-procedure start, moet u ervoor zorgen dat de app is geïnstalleerd en wordt uitgevoerd op uw Windows 10 pc en klaar is om het apparaat te detecteren. Zorg er ook voor dat uw HoloLens minimaal 40% in rekening wordt gebracht.
 
-![HoloLens 2 scherm met een schone reflash.](images/ARC1.png)
+![HoloLens 2 scherm met schone reflash.](images/ARC1.png)
 
-### <a name="normal-procedure"></a>Normale procedure
+### <a name="normal-flashing-procedure"></a>Procedure voor normaal knipperen
 
 1. Terwijl het HoloLens apparaat wordt uitgevoerd, verbindt u het met de Windows 10 pc waarop u eerder de Advanced Recovery Companion-app hebt geopend.
 
    Het apparaat wordt automatisch gedetecteerd en de gebruikersinterface van de Geavanceerde herstel companion-app start het updateproces:
 
-   ![HoloLens 2 eerste scherm met schone reflash.)](images/ARC2.png)
+   ![HoloLens 2 eerste scherm van de schone reflash.](images/ARC2.png)
 
-1. Selecteer het HoloLens 2 in de gebruikersinterface van de Advanced Recovery Companion-app en volg de instructies om de reflash te voltooien.
+1. Selecteer het HoloLens 2 in de gebruikersinterface van de Geavanceerde herstel companion-app en volg de instructies om de reflash te voltooien.
 
-### <a name="manual-procedure"></a>Handmatige procedure
+### <a name="manual-flashing-mode-procedure"></a>Procedure voor handmatige knippermodus
 
 Mogelijk moet u het apparaat in de herstelmodus zetten als:
 
@@ -122,7 +128,7 @@ Mogelijk moet u het apparaat in de herstelmodus zetten als:
 
 3. Druk terwijl u **op de volumeknop omhoog** drukt op de **aan/uit-knop** om het apparaat te starten. Wacht 15 seconden en laat het **volume vervolgens los.** Alleen de middelste LED van de vijf LED's wordt licht licht.
 
-4. Verbinding maken apparaat naar de host-pc en open Apparaatbeheer. (Druk Windows 10 op **Windows** toets en vervolgens op **de X-toets** en selecteer **Apparaatbeheer**.) Zorg ervoor dat het apparaat correct wordt Microsoft HoloLens zoals wordt weergegeven in de volgende afbeelding:
+4. Verbinding maken apparaat naar de host-pc en open Apparaatbeheer. (Druk Windows 10 op **Windows** toets en vervolgens op **de X-toets** en selecteer **Apparaatbeheer**.) Zorg ervoor dat het apparaat op de juiste manier Microsoft HoloLens zoals wordt weergegeven in de volgende afbeelding:
 
    ![HoloLens 2 MicrosoftOloLensRecovery.](images/MicrosoftHoloLensRecovery.png)
 
@@ -130,7 +136,7 @@ Mogelijk moet u het apparaat in de herstelmodus zetten als:
 
    ![HoloLens 2 het scherm schone reflash.](images/ARC2.png)
 
-6. Selecteer het HoloLens 2 in de gebruikersinterface van de Advanced Recovery Companion-app en volg de instructies om de reflash te voltooien.
+6. Selecteer het HoloLens 2 in de gebruikersinterface van de Geavanceerde herstel companion-app en volg de instructies om de reflash te voltooien.
 
 ## <a name="troubleshoot-advanced-recovery-companion"></a>Problemen met geavanceerde herstel-companion oplossen
 
@@ -146,14 +152,14 @@ Mogelijk moet u het apparaat in de herstelmodus zetten als:
 
 1. Als ARC uw apparaat niet detecteert, controleert u of u verbinding kunt maken met uw apparaat via Verkenner op uw pc. Als dat niet mogelijk is,
 
-    1. Het is mogelijk dat uw apparaat USB-beleidsregels heeft die die verbinding uitschakelen. Probeer in dat opzicht [handmatige knippermodus](hololens-recovery.md#manual-procedure)uit.
+    1. Het is mogelijk dat uw apparaat USB-beleidsregels heeft die die verbinding uitschakelen. Probeer in dat opzicht [handmatige knippermodus](hololens-recovery.md#manual-flashing-mode-procedure)uit.
     2. Als er geen beleidsregels zijn, probeert u een andere USB-kabel.
 
 1. Controleer of op uw apparaat geen [1-3-5-LED-patroon wordt weergegeven.](hololens2-setup.md#lights-to-indicate-problems)
 
 ## <a name="download-arc-without-using-the-app-store"></a>ARC downloaden zonder de App Store te gebruiken
 
-Als de IT-omgeving het gebruik van de Windows Store-app voorkomt of de toegang tot de winkel beperkt, kan de IT-beheerder deze app beschikbaar maken via een offline implementatiepad.
+Als de IT-omgeving het gebruik van de Windows Store-app voorkomt of de toegang tot de winkel beperkt, kan de IT-beheerder deze app beschikbaar maken via een 'offline' implementatiepad.
 
  >[!NOTE]
  > - IT-beheerders kunnen deze app ook distribueren via System Center Configuration Manager (SCCM) of Intune.
@@ -163,31 +169,31 @@ Volg deze stappen om het implementatiepad in te stellen:
 
 1. Ga naar de [Microsoft Store voor Bedrijven](https://businessstore.microsoft.com) en meld u aan met een Azure Active Directory identiteit.
 
-1. Ga naar **Beheren - Instellingen.** Schakel **Offline-apps tonen in** onder **Winkelervaring.**
+1. Ga naar **Beheren – Instellingen**. Schakel **Offline-apps tonen in** onder **Winkelervaring.**
 
-1. Ga naar **winkel voor mijn groep en** zoek naar Advanced Recovery [**_Companion_**](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
+1. Ga naar **de winkel voor mijn groep en** zoek naar Advanced Recovery [**_Companion_**](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8).
 
 1. Wijzig het **licentietype** in **_offline_*_, en selecteer _* Beheren.**
 
-1. Selecteer **onder Pakket downloaden voor offlinegebruik** de tweede blauwe knop **Downloaden.** Zorg ervoor dat de bestandsextensie *.appxbundle is.*
+1. Selecteer **onder Het pakket downloaden voor offlinegebruik** de tweede blauwe knop **Downloaden.** Zorg ervoor dat de bestandsextensie *.appxbundle is.*
 
     - Als de desktop-pc in dit stadium internettoegang heeft, dubbelklikt u op het pakket om de app te installeren.
 
     - Als de doel-pc geen internetverbinding heeft, volgt u deze stappen:
        1. Selecteer de niet-gecodeerde licentie en selecteer vervolgens **Licentie genereren.**
        2. Selecteer **onder Vereiste frameworks** de optie **Downloaden.**
-       3. Gebruik DISM om het pakket toe te passen met de afhankelijkheid en licentie. Voer vanaf een administratoropdrachtprompt de volgende opdracht uit:
+       3. Gebruik DISM om het pakket toe te passen met de afhankelijkheid en licentie. Voer vanaf een opdrachtprompt van de beheerder de volgende opdracht uit:
 
           ```console
           C:\WINDOWS\system32>dism /online /Add-ProvisionedAppxPackage /PackagePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_1.19050.1301.0_neutral_~_8wekyb3d8bbwe.appxbundle" /DependencyPackagePath:"C:\ARCoffline\Microsoft.VCLibs.140.00.UWPDesktop_14.0.27629.0_x86__8wekyb3d8bbwe.appx" /LicensePath:"C:\ARCoffline\Microsoft.AdvancedRecoveryCompanion_8wekyb3d8bbwe_f72ce112-dd2e-d771-8827-9cbcbf89f8b5.xml" /Region:all
           ```
           > [!NOTE]
-          > Het versienummer in dit codevoorbeeld komt mogelijk niet overeen met de momenteel beschikbare versie. Mogelijk hebt u ook een andere downloadlocatie gekozen dan in het voorbeeld. Voer zo nodig wijzigingen aan in de opdracht .
+          > Het versienummer in dit codevoorbeeld komt mogelijk niet overeen met de momenteel beschikbare versie. Mogelijk hebt u ook een andere downloadlocatie gekozen dan in het voorbeeld. Wijzig de opdracht naar behoefte.
 
 > [!TIP]
-> Wanneer u van plan bent Advanced Recovery Companion te gebruiken om een FFU offline te installeren, kan het handig zijn om uw flash-installatieafbeelding te downloaden. [**Download de huidige afbeelding voor HoloLens 2**](https://aka.ms/hololens2download).
+> Wanneer u van plan bent Advanced Recovery Companion te gebruiken om een FFU offline te installeren, kan het handig zijn om uw flash-installatie afbeelding te downloaden. [**Download de huidige afbeelding voor HoloLens 2**](https://aka.ms/hololens2download).
 
 Andere resources:
 
 - [Offline-apps distribueren](/microsoft-store/distribute-offline-apps) 
-- [DISM-app-pakket (.appx of .appxbundle) met opdrachtregelopties](/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options)
+- [Service-opdrachtregelopties voor DISM-app-pakket (.appx of .appxbundle)](/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options)
