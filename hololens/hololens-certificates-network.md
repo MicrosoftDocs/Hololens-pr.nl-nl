@@ -1,6 +1,6 @@
 ---
 title: Certificaten en netwerkprofielen voorbereiden voor HoloLens 2
-description: Meer informatie over het configureren, gebruiken, implementeren en oplossen van problemen met certificaten voor het netwerk op HoloLens 2 mixed reality apparaten.
+description: Meer informatie over het configureren, gebruiken, implementeren en oplossen van problemen met certificaten voor HoloLens 2 mixed reality netwerkapparaten.
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -13,21 +13,21 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 62eedd0c05bb23f11a4e17a97b4ab5441a2931cf
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: c7c15cc0630f11d1687db19f2e6b28b8347dd4c3
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126035905"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151674"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-hololens-2"></a>Certificaten en netwerkprofielen voorbereiden voor HoloLens 2
 
-Verificatie op basis van certificaten is een algemene vereiste voor klanten die gebruikmaken van HoloLens 2. Mogelijk hebt u certificaten nodig voor toegang tot Wi-Fi, om verbinding te maken met VPN-oplossingen of om toegang te krijgen tot interne resources in uw organisatie.
+Verificatie op basis van certificaten is een algemene vereiste voor klanten die HoloLens 2. Mogelijk hebt u certificaten nodig voor toegang tot Wi-Fi, om verbinding te maken met VPN-oplossingen of om toegang te krijgen tot interne resources in uw organisatie.
 
-Omdat HoloLens 2-apparaten doorgaans worden samengevoegd met Azure Active Directory (Azure AD) en worden beheerd door Intune of een andere MDM-provider, moet u dergelijke certificaten implementeren met behulp van een Simple Certificate Enrollment Protocol(SCEP) of PKCS-certificaatinfrastructuur (Public Key Cryptography Standard) die is geïntegreerd met uw MDM-oplossing. 
+Omdat HoloLens 2-apparaten doorgaans worden samengevoegd met Azure Active Directory (Azure AD) en worden beheerd door Intune of een andere MDM-provider, moet u dergelijke certificaten implementeren met behulp van een Simple Certificate Enrollment Protocol-certificaatinfrastructuur (SCEP) of pkcs-certificaatinfrastructuur (Public Key Cryptography Standard) die is geïntegreerd met uw MDM-oplossing. 
 
 >[!NOTE]
-> Als u geen MDM-provider hebt, kunt u nog steeds certificaten implementeren via een inrichtingspakket [in](hololens-provisioning.md#steps-for-creating-provisioning-packages) [Windows Configuration Designer of](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab) via Certificate [Manager](certificate-manager.md) door naar Instellingen > Update & Security > Certificate Manager te **gaan.**
+> Als u geen MDM-provider hebt, kunt u nog steeds certificaten implementeren via een inrichtingspakket [in](hololens-provisioning.md#create-the-provisioning-package) [Windows Configuration Designer of](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab) via Certificate [Manager](certificate-manager.md) door naar Instellingen > Update & Security > Certificate Manager te **gaan.**
 
 ## <a name="certificate-requirements"></a>Certificaatvereisten
 Basiscertificaten zijn vereist voor het implementeren van certificaten via een SCEP- of PKCS-infrastructuur. Voor andere toepassingen en services in uw organisatie moeten mogelijk ook basiscertificaten op uw HoloLens 2 geïmplementeerd. 
@@ -49,7 +49,7 @@ Volg deze stappen om certificaten en profielen te implementeren:
 1.  Maak een profiel voor elke SCEP- of PKCS-certificaten (zie Een SCEP-certificaatprofiel maken of Een [PKCS-certificaatprofiel](/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)maken) Elk van deze profielen moet een beschrijving hebben met een vervaldatum in DD/MM/YYYY-indeling. **Certificaatprofielen zonder een vervaldatum worden niet geïmplementeerd.**
 
     > [!NOTE]
-    > Omdat de HoloLens 2 wordt beschouwd als een gedeeld apparaat, meerdere gebruikers per apparaat, wordt het aanbevolen om waar mogelijk apparaatcertificaten te implementeren in plaats van gebruikerscertificaten voor Wi-Fi-verificatie
+    > Omdat de HoloLens 2 wordt beschouwd als een gedeeld apparaat, meerdere gebruikers per apparaat, wordt het aanbevolen om waar mogelijk Apparaatcertificaten te implementeren in plaats van gebruikerscertificaten voor Wi-Fi-verificatie
 
 3.  Maak een profiel voor elk bedrijfsnetwerk Wi-Fi netwerk (zie [Wi-Fi-instellingen voor Windows 10 en latere apparaten).](/intune/wi-fi-settings-windows) 
     > [!NOTE]
@@ -58,7 +58,7 @@ Volg deze stappen om certificaten en profielen te implementeren:
     > [!TIP]
     > U kunt ook een werkprofiel Wi-Fi exporteren vanaf een Windows 10 pc in uw bedrijfsnetwerk. Met deze export maakt u een XML-bestand met alle huidige instellingen. Importeer dit bestand vervolgens in Intune en gebruik het als het Wi-Fi profiel voor uw HoloLens 2 apparaten. Zie [Export and import Wi-Fi settings for Windows devices (Instellingen](/mem/intune/configuration/wi-fi-settings-import-windows-8-1) voor Windows exporteren Windows importeren.
 
-4.  Maak een profiel voor elke zakelijke VPN (zie Windows 10 en [Windows Holographic-apparaatinstellingen](/intune/vpn-settings-windows-10)om VPN-verbindingen toe te voegen met Behulp van Intune).
+4.  Maak een profiel voor elke zakelijke VPN (zie instellingen voor Windows 10 en Windows Holographic-apparaat om VPN-verbindingen toe te voegen met [Behulp van Intune).](/intune/vpn-settings-windows-10)
 
 ## <a name="troubleshooting-certificates"></a>Problemen met certificaten oplossen
 

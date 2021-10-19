@@ -1,13 +1,13 @@
 ---
-title: Opnieuw opstarten, opnieuw instellen of HoloLens
+title: Opnieuw opstarten, opnieuw instellen of HoloLens 2
 ms.reviewer: Follow along with our basic and advanced instructions for rebooting or resetting your HoloLens 2 device.
-description: Advanced Recovery Companion gebruiken om een afbeelding te flashen voor HoloLens 2.
+description: Advanced Recovery Companion gebruiken om een afbeelding te flashen om een HoloLens 2.
 keywords: how-to, reboot, reset, recover, hard reset, soft reset, power cycle, HoloLens, shut down, arc, advanced recovery companion
 ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
-ms.author: mazeller
-ms.date: 08/30/2021
+ms.author: v-beehanson
+ms.date: 10/15/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0efcfd0adf9bd380007e5ed4f905cb130b76d4b8
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 9f8969d018059a3b38d2b3001f8bc983b72d58c7
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034219"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151632"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>Opnieuw opstarten, opnieuw instellen of HoloLens 2
 
@@ -41,16 +41,16 @@ Als het apparaat correct is opgestart en actief is, zijn er drie manieren om het
     - Wanneer uw HoloLens is aan, geeft de batterijindicator het accuniveau in vijf stappen weer.
     - Wanneer slechts een van de vijf lampen is aan, is het accuniveau lager dan 20 procent.
     - Als het accuniveau kritiek laag is en u het apparaat probeert in te zetten, gaat er kort één lampje uit en gaat u uit.
-- Open Verkenner op uw host-pc **en** zoek uw apparaat HoloLens 2 aan de linkerkant onder **Deze pc.** Klik met de rechtermuisknop op het apparaat en selecteer **Eigenschappen.** In een dialoogvenster wordt het acculadingsniveau weergegeven.
+- Open verkenner op uw host-pc **en** zoek uw HoloLens 2 aan de linkerkant onder **Deze pc.** Klik met de rechtermuisknop op het apparaat en selecteer **Eigenschappen.** In een dialoogvenster wordt het acculadingsniveau weergegeven.
 
    ![Een scherm HoloLens 2 eigenschappen toont het niveau van de batterijwijziging.](images/ResetRecovery2.png)
 
-Als het apparaat niet kan worden opgestart naar het opstartmenu, noteer dan de LED-weergave en apparaatinsemulatie op de host-pc. Volg vervolgens de gids [voor probleemoplossing.](hololens-troubleshooting.md) Als de status van het apparaat niet overeen komt met een van de statussen die worden vermeld in de gids voor probleemoplossing, voert u de [procedure](hololens-recovery.md#hard-restart-procedure) voor het opnieuw instellen uit met het apparaat dat is verbonden met de voeding en niet met uw host-pc. Wacht ten minste één uur totdat het apparaat wordt op belast.
+Als het apparaat niet kan worden opgestart naar het opstartmenu, noteer dan de LED-weergave en apparaatinsemulatie op de host-pc. Volg vervolgens de gids [voor probleemoplossing.](hololens-troubleshooting.md) Als de status van het apparaat niet overeen komt met een van [](hololens-recovery.md#hard-restart-procedure) de statussen die worden vermeld in de gids voor probleemoplossing, voert u de procedure voor hard opnieuw opstarten uit met het apparaat dat is verbonden met de voeding, niet met uw host-pc. Wacht ten minste één uur totdat het apparaat wordt op belast.
 
 > [!NOTE]
 > Laten we beginnen met het definiëren van termen.\
 > Opnieuw opstarten betekent gewoon dat het apparaat uit en in moet worden schakelen.\
-> 'Opnieuw instellen' betekent dat het apparaat wordt teruggezet naar de standaardinstellingen via Instellingen gebruikersinterface om de huidige installatie te installeren.\
+> 'Opnieuw instellen' betekent dat het apparaat wordt hersteld naar de standaardinstellingen via Instellingen gebruikersinterface om de huidige installatie van de installatie terug te installeren.\
 > Reflash betekent dat het apparaat is verbonden met een pc en dat er een nieuwe installatieafbeelding (optioneel een andere) moet worden geïnstalleerd.
 
 ## <a name="restart-the-device"></a>Start het apparaat opnieuw op
@@ -65,13 +65,13 @@ Onder bepaalde omstandigheden moet u het apparaat mogelijk handmatig opnieuw ops
 
 3. Wacht 2-3 seconden en druk vervolgens kort op de **aan/uit-knop.** De LED's dicht bij de aan/uit-knop worden aan het licht licht en het apparaat wordt opstart.
 
-4. Verbinding maken apparaat naar de host-pc en open Apparaatbeheer. (Voor Windows 10 drukt u op **de Windows** toets en vervolgens op **de X-toets** en selecteert **u Apparaatbeheer**.) Zorg ervoor dat het apparaat op de juiste manier Microsoft HoloLens *zoals* wordt weergegeven in de volgende afbeelding:
+4. Verbinding maken apparaat naar de host-pc en open Apparaatbeheer. (Voor Windows 10 drukt u op **de Windows** toets en vervolgens op de **X-toets** en selecteert **u Apparaatbeheer**.) Zorg ervoor dat het apparaat op de juiste manier Microsoft HoloLens *zoals* wordt weergegeven in de volgende afbeelding:
 
-   ![HoloLens 2 MicrosoftOloLensRecovery-devive manager.](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftOloLensRecovery-apparaatbeheer.](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### <a name="hard-restart-procedure"></a>Procedure voor hard opnieuw opstarten
 
-Als de standaardprocedure voor opnieuw instellen niet werkt, gebruikt u de procedure voor hard opnieuw instellen:
+Als de standaardprocedure voor opnieuw instellen niet werkt, gebruikt u de procedure voor hard opnieuw opstarten:
 
 1. Koppel de Type-C-kabel los om het apparaat los te koppelen van de voeding of de host-pc.
 
@@ -79,9 +79,17 @@ Als de standaardprocedure voor opnieuw instellen niet werkt, gebruikt u de proce
 
 1. Verbinding maken apparaat naar de host-pc.
 
-1. Open Apparaatbeheer (voor Windows 10 drukt u op **Windows** toets en vervolgens op de **X-toets** en **selecteert u Apparaatbeheer**). Zorg ervoor dat het apparaat op de juiste manier Microsoft HoloLens *zoals* wordt weergegeven in de volgende afbeelding:
+1. Open Apparaatbeheer (druk Windows 10 op **Windows** toets en vervolgens op de **X-toets** en selecteer **Apparaatbeheer**). Zorg ervoor dat het apparaat op de juiste manier wordt Microsoft HoloLens *zoals* wordt weergegeven in de volgende afbeelding:
 
-   ![HoloLens 2 MicrosoftOloLensRecovery-apparaat maanger 2.](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftOloLensRecovery-apparaatbeheer 2.](images/MicrosoftHoloLens_DeviceManager.png)
+
+## <a name="reset-the-device"></a>Het apparaat opnieuw instellen
+
+U kunt uw apparaat rechtstreeks vanuit uw headset opnieuw instellen. Selecteer **Instellingen** en selecteer vervolgens Beveiliging & bijwerken > Opnieuw & herstellen > **dit apparaat opnieuw instellen.**
+
+   ![HoloLens headset opnieuw instellen.](images/headset-reset-recovery.png)
+
+Wanneer u op deze manier opnieuw in stelt, worden alle gebruikersaccounts verwijderd en worden alle gegevens gewist.
 
 ## <a name="clean-reflash-the-device"></a>Schone reflash op het apparaat
 
@@ -98,11 +106,11 @@ Er zijn twee manieren om het apparaat te gebruiken. Voor beide moet u eerst [Adv
 >[!WARNING]
 >Als u een reflash op uw apparaat gebruikt, worden al uw persoonlijke gegevens, apps en instellingen gewist, inclusief informatie over het opnieuw instellen van TPM.
 
-Advanced Recovery Companion is standaard ingesteld om de meest recente build van de functiere release te downloaden. Zie de opmerkingen bij de release voor HoloLens 2 informatie over [de nieuwste functieversie.](hololens-release-notes.md) Als u het meest recente HoloLens 2 pakket met volledige flashupdate (FFU) wilt downloaden om uw apparaat te reflashen via Advanced Recovery Companion, downloadt u de meest recente maandelijkse HoloLens 2 afbeelding: [https://aka.ms/hololens2download](https://aka.ms/hololens2download) . Deze versie is de meest recente algemeen beschikbare build.
+Advanced Recovery Companion is standaard ingesteld om de meest recente build van de functiere release te downloaden. Zie de opmerkingen bij de release voor HoloLens 2 informatie over [de nieuwste functieversie.](hololens-release-notes.md) Download de meest recente maandelijkse HoloLens 2 om het meest recente FFU-pakket (Full Flash Update) op te halen om uw apparaat te reflashen via Advanced Recovery HoloLens 2 Companion: [https://aka.ms/hololens2download](https://aka.ms/hololens2download) . Deze versie is de meest recente algemeen beschikbare build.
 
 Voordat u de reflash-procedure start, moet u ervoor zorgen dat de app is geïnstalleerd en wordt uitgevoerd op uw Windows 10 pc en klaar is om het apparaat te detecteren. Zorg er ook voor dat uw HoloLens minimaal 40% in rekening wordt gebracht.
 
-![HoloLens 2 scherm met schone reflash.](images/ARC1.png)
+![HoloLens 2 scherm met een schone reflash.](images/ARC1.png)
 
 ### <a name="normal-flashing-procedure"></a>Procedure voor normaal knipperen
 
@@ -110,7 +118,7 @@ Voordat u de reflash-procedure start, moet u ervoor zorgen dat de app is geïnst
 
    Het apparaat wordt automatisch gedetecteerd en de gebruikersinterface van de Geavanceerde herstel companion-app start het updateproces:
 
-   ![HoloLens 2 eerste scherm van de schone reflash.](images/ARC2.png)
+   ![HoloLens 2 scherm voor het opslitsen van de reflash.](images/ARC2.png)
 
 1. Selecteer het HoloLens 2 in de gebruikersinterface van de Geavanceerde herstel companion-app en volg de instructies om de reflash te voltooien.
 
@@ -134,9 +142,9 @@ Mogelijk moet u het apparaat in de herstelmodus zetten als:
 
    Het apparaat wordt automatisch gedetecteerd en de gebruikersinterface van de Geavanceerde herstel companion-app start het updateproces:
 
-   ![HoloLens 2 het scherm schone reflash.](images/ARC2.png)
+   ![HoloLens 2 het scherm reflash clean.](images/ARC2.png)
 
-6. Selecteer het HoloLens 2 in de gebruikersinterface van de Geavanceerde herstel companion-app en volg de instructies om de reflash te voltooien.
+6. Selecteer het HoloLens 2 in de gebruikersinterface van de Advanced Recovery Companion-app en volg de instructies om de reflash te voltooien.
 
 ## <a name="troubleshoot-advanced-recovery-companion"></a>Problemen met geavanceerde herstel-companion oplossen
 
@@ -148,7 +156,7 @@ Mogelijk moet u het apparaat in de herstelmodus zetten als:
 
 1. Als uw apparaat niet wordt weergegeven als een HoloLens/HoloLens Recovery-apparaat onder Universal Serial Bus Drivers, controleert u het volgende:
     1. **Poorten**, als een Qualcomm HS-USB-apparaat
-    1. **Andere apparaten**, als QUSB_BULK apparaat: op uw host-pc ontbreken de benodigde stuurprogramma's om uw apparaat te HoloLens. Klik met de rechtermuisknop en selecteer Stuurprogramma bijwerken en zoek online naar stuurprogramma's of schakel [Optionele updates in uw](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674)Windows Instellingen bijwerken in. Nadat het stuurprogramma is gedownload, moet ARC het kunnen detecteren.
+    1. **Andere apparaten**, als QUSB_BULK apparaat: op uw host-pc ontbreken de benodigde stuurprogramma's om uw apparaat HoloLens. Klik met de rechtermuisknop en selecteer Stuurprogramma bijwerken en zoek online naar stuurprogramma's of schakel [Optionele updates in uw](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674)Windows Instellingen bijwerken in. Nadat het stuurprogramma is gedownload, moet ARC het kunnen detecteren.
 
 1. Als ARC uw apparaat niet detecteert, controleert u of u verbinding kunt maken met uw apparaat via Verkenner op uw pc. Als dat niet mogelijk is,
 

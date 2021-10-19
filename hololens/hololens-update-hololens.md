@@ -1,6 +1,6 @@
 ---
-title: De HoloLens 2
-description: Meer informatie over het controleren van HoloLens buildnummer, het up-to-date houden van apparaatupdates, het deelnemen aan het Insiders-programma en het terugdraaien van updates.
+title: Werk HoloLens 2
+description: Informatie over het controleren van HoloLens buildnummer, het up-to-date houden van apparaatupdates, het deelnemen aan het Insiders-programma en het terugdraaien van updates.
 keywords: how-to, update, roll back, HoloLens, check build, build number
 ms.prod: hololens
 ms.sitesec: library
@@ -14,22 +14,22 @@ ms.reviewer: ''
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 49036135ba13a93d2e8be97a7f3a95d50785c5c5
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 080fb184c7eca3fdb978e860a29764f5012a179e
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034260"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151687"
 ---
-# <a name="update-hololens-2"></a>De HoloLens 2
+# <a name="update-hololens-2"></a>Werk HoloLens 2
 
 ## <a name="overview"></a>Overzicht
 
 We werken altijd aan nieuwe functies, foutfixes en beveiligingsupdates. U ontvangt een melding wanneer deze updates gereed zijn.
 
-Op basis van uw voorkeur worden HoloLens systeemupdates automatisch gedownload en geïnstalleerd wanneer deze zijn aangesloten op stroom, zijn verbonden met internet en zelfs stand-by.
+Op basis van uw voorkeur downloadt en installeert uw HoloLens systeemupdates automatisch wanneer deze zijn aangesloten op stroom, zijn verbonden met internet en zelfs stand-by.
 
-Om ervoor te HoloLens dat uw apparaat altijd wordt bijgewerkt, laat u het aangesloten op het bijgeleverde apparaat. U wilt ook dat uw HoloLens zijn verbonden met internet. Op deze manier worden systeemupdates automatisch gedownload en geïnstalleerd. 
+Om ervoor te HoloLens dat uw apparaat altijd wordt bijgewerkt, laat u het aangesloten op het apparaat dat bij de stroom is meegeleverd. U wilt ook dat uw HoloLens zijn verbonden met internet. Op deze manier worden systeemupdates automatisch gedownload en geïnstalleerd. 
 
 Met Windows Update-service kunt u meerdere aspecten van het updateproces beheren, zoals welke apparaten op welk moment updates ontvangen. Dit besturingselement is handig omdat u updates kunt uitrollen naar een subset van HoloLens voor testen. Vervolgens kunt u updates voor de resterende updates uitrollen. U kunt ook verschillende updateschema's voor verschillende typen updates definiëren.
 
@@ -71,7 +71,7 @@ Als er een update beschikbaar is, wordt de nieuwe versie gedownload. Nadat het d
 
 Terwijl uw HoloLens update installeert, worden er draaiende tandwielen en een voortgangsindicator weergegeven. Schakel uw HoloLens gedurende deze tijd niet uit. Deze wordt automatisch opnieuw opgestart zodra de installatie is voltooid.
 
-HoloLens wordt één update tegelijk toegepast.  Als uw HoloLens meer dan één versie achter de meest recente versie ligt, moet u het updateproces mogelijk meerdere keren uitvoeren om deze volledig up-to-date te krijgen.
+HoloLens wordt één update tegelijk toegepast.  Als uw HoloLens meer dan één versie achter de meest recente is, moet u het updateproces mogelijk meerdere keren uitvoeren om deze volledig up-to-date te krijgen.
 
 ### <a name="check-your-operating-system-version-build-number"></a>Controleer de versie van uw besturingssysteem (buildnummer)
 
@@ -86,7 +86,11 @@ In sommige gevallen wilt u mogelijk teruggaan naar een eerdere versie van de Hol
     1. In [Bestandsfeedback](hololens-feedback.md) moet u zo beschrijvend mogelijk zijn. Noteer de titel of gebruik de functie voor delen, zodat u uw fout kunt delen met ondersteuning.
     1. Neem contact [op met ondersteuning](https://aka.ms/hlsupport). Als uw probleem een probleem is dat moet worden opgelost door terug te keren naar een eerdere versie, kunnen ze u de FFU leveren om uw apparaat te laten knipperen.
 
-1. Als dat niet werkt, kunt u uw [HoloLens 2 met de Advanced Recovery Companion](hololens-recovery.md#clean-reflash-the-device).
+1. U kunt uw gegevens ook [opnieuw HoloLens 2 met de Geavanceerde herstel-companion](hololens-recovery.md#clean-reflash-the-device).
+    1.  Kies naar welke versie u wilt flashen: 
+        1.  U kunt de meest [recente versie HoloLens 2 downloaden.](https://aka.ms/hololens2download)
+        1.  U kunt de standaard build gebruiken die ARC-hosts gebruikt.
+        1.  U kunt een build-ondersteuning gebruiken die u hebt geleverd.
 
 > [!NOTE]
 > Als u terug gaat naar een eerdere versie, worden uw persoonlijke bestanden en instellingen verwijderd.
@@ -95,6 +99,6 @@ Als u de momenteel geïnstalleerde versie wilt blijven, kunt u updates ook [hand
 
 ## <a name="windows-insider-program-on-hololens"></a>Windows Insider-programma op HoloLens
 
-Wilt u de nieuwste functies in HoloLens?  Als dat het zo is, voegt u de Windows Insider-programma; U krijgt toegang tot preview-builds van HoloLens software-updates voordat deze beschikbaar zijn voor het algemene publiek.
+Wilt u de nieuwste functies in HoloLens?  Als dat het zo is, voegt u Windows Insider-programma; U krijgt toegang tot preview-builds van HoloLens software-updates voordat deze beschikbaar zijn voor het algemene publiek.
 
-[Bekijk Windows Insider-preview voor Microsoft HoloLens.](hololens-insider.md)
+[Bekijk Windows Insider preview voor Microsoft HoloLens](hololens-insider.md).
