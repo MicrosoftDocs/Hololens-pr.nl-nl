@@ -1,6 +1,6 @@
 ---
 title: Insider-preview voor Microsoft HoloLens
-description: Leer hoe u aan de slag gaat met Insider-builds en waardevolle feedback kunt geven voor onze volgende belangrijke update van het besturingssysteem voor HoloLens.
+description: Leer hoe u aan de slag kunt gaan met Insider-builds en waardevolle feedback kunt geven voor onze volgende belangrijke update van het besturingssysteem voor HoloLens.
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 10/12/2021
+ms.date: 10/19/2021
 ms.reviewer: ''
 manager: ranjibb
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 080eb5949bc80d1ce922d57f099c375668f5633f
-ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
+ms.openlocfilehash: 382c979138068ab1d9682ee4e84831accc9e4553
+ms.sourcegitcommit: 73a1555fb8b84f3d20c480282c648d8d800a6c98
 ms.translationtype: MT
 ms.contentlocale: nl-NL
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129924363"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130351643"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Insider-preview voor Microsoft HoloLens
 
@@ -29,7 +29,26 @@ Welkom bij de nieuwste Insider Preview-builds voor HoloLens. Het is eenvoudig om
 
 ## <a name="windows-insider-release-notes"></a>Windows Opmerkingen bij de release van Insider
 
-We zijn blij dat al onze recente Insider-functies openbaar zijn geworden. Als u hier meer over wilt lezen, raadpleegt u de pagina [met opmerkingen bij de release](hololens-release-notes.md)
+Wat is er nieuw en op het HoloLens? Bekijk deze nieuwe updates die binnenkort HoloLens.
+
+### <a name="colorblind-mode"></a>Kleurenblindheidsmodus
+
+Toegevoegd aan Insider-build 20348.1463
+
+De kleurenblindheidsmodus is handig voor een handige functie HoloLens toegankelijker maakt. De nieuwe modus kleurenblind is te vinden in de Instellingen app onder **Instellingen**  ->  **Toegankelijkheid**  ->  **Kleurfilters.** Er zijn verschillende nieuwe filters beschikbaar. Hier is een visueel voorbeeld van een aantal beschikbare filters.
+
+| Aan | Grijswaarden | Tritanopie |
+|-----|-----------|------------|
+| ![Kleurfilter uit](images/colorblind-off.png)   | ![Kleurfilter grijs schalen](images/colorblind-greyscale.png)         | ![Kleurenfilterseroopie](images/colorblind-tritanopia.png)          |
+
+### <a name="fixes-and-improvements"></a>Oplossingen en verbeteringen
+
+- Er is een bekend probleem opgelost waarbij telkens wanneer [de stroom naar 18 procent gaat,](hololens-troubleshooting.md#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)het apparaat plotseling automatisch wordt afgesloten.
+- Verbeteringen in de platformmodus voor verplaatsen bij het detecteren van de down-richting.
+- Er is een probleem opgelost met updatedialoogvensters.
+- Postvak IN bijgewerkt Microsoft Edge browserversie.
+- Er is een probleem opgelost waarbij het uitschakelen van optionele diagnostische gegevens de gekozen instelling niet heeft behouden op de pagina telemetrie-instellingen na het opnieuw opstarten.
+- Er is een probleem opgelost waarbij QR-codes niet werden herkend toen ze werden gedraaid met een hoek van 45 graden ten opzichte van het apparaat.
 
 ## <a name="start-receiving-insider-builds"></a>Beginnen met het ontvangen van Insider-builds
 
@@ -44,13 +63,13 @@ We zijn blij dat al onze recente Insider-functies openbaar zijn geworden. Als u 
 Ga op HoloLens 2 apparaat naar **Instellingen**  >  **Update & Security**  >  **Windows Insider-programma** en selecteer **Aan de slag.** Koppel het account dat u hebt gebruikt om u te registreren als Windows Insider.
 
 > [!NOTE]
-> Als u uw apparaat wilt inschrijven bij Insider-builds, moet u optionele telemetrie inschakelen. Als u dit nog niet hebt gedaan, opent u de Instellingen-app en selecteert u **Privacy** Diagnostics & feedback en selecteert u vervolgens  ->   **Optionele diagnostische gegevens.**
+> Als u uw apparaat wilt registreren bij Insider-builds, moet u optionele telemetrie inschakelen. Als u dit nog niet hebt gedaan, opent u de Instellingen-app en selecteert u **Privacy** diagnostics & feedback en selecteert u vervolgens  ->   **Optionele diagnostische gegevens.**
 
-Windows insider gaat nu over op Kanalen. De **snelle** ring wordt het **Dev-kanaal,** de langzame **ring** wordt de **bèta-kanaal** en de **Release Preview-ring** wordt het **Release Preview-kanaal.** Deze toewijzing ziet er als volgende uit:
+Windows insider gaat nu over op Kanalen. De **Snelle** ring wordt het **Dev-kanaal,** de langzame **ring** wordt de **bèta-kanaal** en de **Release Preview-ring** wordt het **Release Preview-kanaal.** Deze toewijzing ziet er als volgende uit:
 
 ![Windows Uitleg van Insider Channels.](images/WindowsInsiderChannels.png)
 
-Zie [Introducing Windows Insider Channels (Introductie Windows Insider Channels)](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) op Windows Blogs.
+Zie [Introducing Windows Insider Channels](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) (Introductie Windows Insider Channels) op Windows Blogs.
 Selecteer vervolgens **Actieve ontwikkeling van Windows**, kies of u het **Dev-kanaal** wilt ontvangen of bèta-kanaal **builds** en bekijk de programmavoorwaarden.
 Selecteer **Bevestigen > Nu opnieuw opstarten om** te voltooien. Nadat het apparaat opnieuw is opgestart, gaat u naar **Instellingen > Update & Security > Controleren** op updates om de nieuwste build op te halen.
 
@@ -60,15 +79,15 @@ Als er een updatefout wordt 0x80070490 bij het bijwerken op het kanaal Dev of Be
 
 #### <a name="stage-one---release-preview"></a>Fase 1 - preview-versie
 
-1. Instellingen, Update & Security en selecteer Windows Insider-programma Release **Preview Channel.**
+1. Instellingen, Update & Security en selecteer Windows Insider-programma **Release Preview Channel.**
 
-2. Instellingen, & bijwerken, Windows Bijwerken, Controleren op **updates.** Na de update gaat u verder met Fase 2.
+2. Instellingen, & bijwerken, Windows Bijwerken, **Controleren op updates.** Na de update gaat u verder met Fase 2.
 
 #### <a name="stage-two---dev-channel"></a>Fase 2 - Dev-kanaal
 
 1. Instellingen, Update & Security en selecteer Windows Insider-programma **Dev Channel.**
 
-2. Instellingen, & bijwerken, Windows Bijwerken, Controleren op **updates.**
+2. Instellingen, & bijwerken, Windows Bijwerken, **Controleren op updates.**
 
 ## <a name="ffu-download-and-flash-directions"></a>FFU-download- en flashbeschrijvingen
 
@@ -99,9 +118,9 @@ U bent welkom en aangemoedigd om uw toepassingen te ontwikkelen met insider-buil
 Als u geen Insider-builds van Windows Holographic meer wilt ontvangen, kunt u zich uitloggen wanneer uw [](hololens-recovery.md) HoloLens een productie-build wordt uitgevoerd. U kunt uw apparaat ook herstellen met behulp van advanced recovery companion om uw apparaat te herstellen naar een niet-Insider-versie van Windows Holographic.
 
 > [!CAUTION]
-> Er is een bekend probleem waarbij gebruikers die de registratie van Insider Preview-builds ongedaan maken nadat ze handmatig een nieuwe preview-build hebben geïnstalleerd, een blauw scherm krijgen. Daarna moeten ze hun apparaat handmatig herstellen. Bekijk meer over dit bekende probleem voor meer informatie over of u hier al dan niet [mee te maken zou krijgen.](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
+> Er is een bekend probleem waarbij gebruikers die de registratie van Insider Preview-builds ongedaan maken nadat ze handmatig een nieuwe preview-build hebben geïnstalleerd, een blauw scherm krijgen. Daarna moeten ze hun apparaat handmatig herstellen. Bekijk meer over dit bekende probleem voor meer informatie over of dit al dan niet [wordt beïnvloed.](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)
 
-Controleren of uw HoloLens een productie-build wordt uitgevoerd:
+Controleren of op uw HoloLens een productie-build wordt uitgevoerd:
 
 1. Ga naar **Instellingen > System > About** en zoek het buildnummer.
 
@@ -109,6 +128,6 @@ Controleren of uw HoloLens een productie-build wordt uitgevoerd:
 
 Als u zich wilt af melden voor Insider-builds:
 
-1. Ga op HoloLens met een productie-build naar Update **& Instellingen > Security > Windows Insider-programma** en selecteer Stop Insider **builds.**
+1. Ga op HoloLens met een productie-build naar Update **Instellingen > Security & > Windows Insider-programma** en selecteer Stop Insider **builds.**
 
 1. Volg de instructies om uw apparaat uit te kiezen.
